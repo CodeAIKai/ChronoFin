@@ -1,0 +1,142 @@
+{
+  "runs": 3,
+  "model": "hy3",
+  "per_claim": {
+    "C1": {
+      "verdicts": [
+        "partial",
+        "unsupported",
+        "supported"
+      ],
+      "exact_agreement": false
+    },
+    "C2": {
+      "verdicts": [
+        "partial",
+        "unsupported",
+        "supported"
+      ],
+      "exact_agreement": false
+    },
+    "C3": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": true
+    },
+    "C4": {
+      "verdicts": [
+        "partial",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": false
+    },
+    "C5": {
+      "verdicts": [
+        "partial",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": false
+    }
+  },
+  "claim_exact_agreement_rate": 0.2,
+  "supported_verdict_rate": 0.6,
+  "semantic_augmented_scores": [
+    96.0,
+    96.0,
+    100.0
+  ],
+  "score_population_std": 1.8856180831641267,
+  "traces": [
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "eada4f58fe4ee429db824e00d87c13908889f2eb828b57433ded1aac140d5954",
+      "latency_seconds": 32.031,
+      "usage": {
+        "prompt_tokens": 894,
+        "completion_tokens": 2497,
+        "total_tokens": 3391,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2248
+        }
+      },
+      "request_id_sha256": "32458ebdea031dba2cdf1e474dc9abfc74cee9c8d413bb241d661a167a180a9c",
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "reasons": {
+        "C1": "引文含RMB'Million收入751,766但未指明FY2025期间",
+        "C2": "引文含non-IFRS profit 259,626但未指明FY2025期间",
+        "C3": "引文明确year ended 31 Dec 2025 RMB224.8 billion，计算验证转224,800 million正确",
+        "C4": "利润证据含2025但收入证据无年份，计算验证但期间不完全匹配",
+        "C5": "non-IFRS利润证据无年份、收入证据无年份，计算验证但期间不明"
+      }
+    },
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "eada4f58fe4ee429db824e00d87c13908889f2eb828b57433ded1aac140d5954",
+      "latency_seconds": 41.315,
+      "usage": {
+        "prompt_tokens": 894,
+        "completion_tokens": 3175,
+        "total_tokens": 4069,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2896
+        }
+      },
+      "request_id_sha256": "0bd1ca05ad3ef84d89f0e15ba99c54a8623a87ac2508ec5905b952fa9f41b377",
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "reasons": {
+        "C1": "证据引文仅含Revenues列数字751,766，未明确实体与期间FY2025",
+        "C2": "证据引文含数字259,626但未标注实体与期间FY2025",
+        "C3": "DERIVED计算验证：224.8*1000=224800，证据含RMB224.8 billion for year ended 31 Dec 2025",
+        "C4": "DERIVED计算验证：224800/751766*100=29.9029%，证据提供收入与利润数据",
+        "C5": "DERIVED计算验证：259626/751766*100=34.5355%，证据提供收入与非IFRS利润数据"
+      }
+    },
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "eada4f58fe4ee429db824e00d87c13908889f2eb828b57433ded1aac140d5954",
+      "latency_seconds": 21.277,
+      "usage": {
+        "prompt_tokens": 894,
+        "completion_tokens": 1932,
+        "total_tokens": 2826,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1647
+        }
+      },
+      "request_id_sha256": "37c3419eb3448e70267b0e2dd0bf5fff96a24a024bba88bf3e0613204eab42aa",
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "reasons": {
+        "C1": "Evidence table shows Revenues 751,766 RMB'Million in final column assumed FY2025, matches claim",
+        "C2": "Evidence lists Non-IFRS profit attrib 259,626 RMB'Million, consistent with claim entity/period/unit",
+        "C3": "DERIVED: 224.8 billion *1000=224800 million, evidence confirms 224.8 billion for year ended 31 Dec 2025",
+        "C4": "DERIVED: 224800/751766*100=29.9029%, calculation verified against evidence quotes",
+        "C5": "DERIVED: 259626/751766*100=34.5355%, calculation verified against evidence quotes"
+      }
+    }
+  ],
+  "limitations": [
+    "The judge model family is the same as the answer model, so self-preference may remain.",
+    "Repeat agreement is not human-expert agreement.",
+    "Semantic judgments cannot override deterministic time, identity, or arithmetic gates."
+  ]
+}

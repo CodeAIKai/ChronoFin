@@ -1,0 +1,63 @@
+{
+  "before_publication": {
+    "answerability": "unanswerable",
+    "summary": "As of 2025-12-31, Tencent Holdings Limited FY2025 full-year revenues, profit attributable to equity holders, and derived profit margin are not disclosed in provided evidence; only H1 2025 interim data exists and annualisation is prohibited, and no revenue figures are provided at all.",
+    "score": 100.0,
+    "hard_gates": [],
+    "excluded_documents": [
+      {
+        "document_id": "tencent_2025_annual",
+        "title": "Tencent Holdings Limited Annual Report 2025",
+        "published_at": "2026-04-09",
+        "reason": "published after cutoff 2025-12-31"
+      }
+    ],
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "181c920242c982ef6b2186148defeafa24bc4e94deb1928255b00f036f5ec1b9",
+      "latency_seconds": 56.709,
+      "usage": {
+        "prompt_tokens": 2360,
+        "completion_tokens": 4993,
+        "total_tokens": 7353,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4333
+        }
+      },
+      "request_id_sha256": "92dd237cb097c75e5e999f1e6f036ffb69d0b46d8320e8e98fd149f9e2a4b29e",
+      "attempts": 1,
+      "reasoning_effort": "high"
+    }
+  },
+  "after_publication": {
+    "answerability": "answerable",
+    "summary": "As of 2026-04-10, Tencent Holdings Limited FY2025 full-year revenues were RMB751,766 million (IFRS). IFRS profit attributable to equity holders was RMB224.8 billion (approx RMB224,800 million as rounded text disclosure). Non-IFRS profit attributable was RMB259,626 million (precise table). Derived IFRS profit margin ≈29.9029%, non-IFRS profit margin ≈34.5355%.",
+    "score": 100.0,
+    "hard_gates": [],
+    "excluded_documents": [],
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "37898be59a1a181952813d1cccafdebda7184603e3b80ba50480d0a8d33823cf",
+      "latency_seconds": 66.863,
+      "usage": {
+        "prompt_tokens": 2655,
+        "completion_tokens": 6653,
+        "total_tokens": 9308,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5269
+        }
+      },
+      "request_id_sha256": "9e65f26d1f03cf4baffb963dd98425c96d8319303ee40f005badf50d748923bb",
+      "attempts": 1,
+      "reasoning_effort": "high"
+    }
+  }
+}

@@ -1,0 +1,2075 @@
+{
+  "dataset_id": "chronofin-postfreeze-challenge-v1",
+  "dataset_version": "1.0.0",
+  "frozen_hashes_verified": true,
+  "frozen_hashes": {
+    "data/challenge/challenge_v1.json": "9f7a57883c4f9a38ffba33f7a5aa86faef7eeabdb0c20d05a6c9537597be373e",
+    "data/challenge/source_excerpts/apple_sec_xbrl_fy2024.md": "b626d98fc76bafe4a7900523674ee8ac44640f64450beccbc9ab510f5d4967be",
+    "data/challenge/source_excerpts/microsoft_ir_html_fy2025.md": "ec5dfec21939ceebef048b543de6c633204d6d961d878fe046b8f99e7670faf2",
+    "data/challenge/source_excerpts/nvidia_cfo_pdf_fy2025.md": "400e21c42d1b7e005290d63522a9d027f67b2349bc0ee29eb24458dd28160338"
+  },
+  "execution": {
+    "network_used": false,
+    "model_called": false,
+    "human_annotation_claimed": false,
+    "statistical_heldout_claimed": false,
+    "core_evaluator_modified_for_challenge": false
+  },
+  "coverage": {
+    "companies": 3,
+    "source_formats": [
+      "SEC EDGAR XBRL presentation HTML",
+      "issuer IR HTML with XBRL concept labels",
+      "issuer IR PDF"
+    ],
+    "base_cases": 6,
+    "prepublication_refusals": 3,
+    "postpublication_answers": 3,
+    "future_leak_negatives": 3
+  },
+  "summary": {
+    "all_passed": false,
+    "base_passed": 3,
+    "base_total": 6,
+    "adversarial_passed": 3,
+    "adversarial_total": 3,
+    "mean_valid_gold_score": 60.0,
+    "mean_future_leak_score": 40.0
+  },
+  "limitations": [
+    "AI-curated; no human expert adjudication or inter-annotator agreement.",
+    "Three companies and nine runs are a conformance challenge, not a population estimate.",
+    "Gold answers are deterministic materializations of frozen facts, not outputs from Hy3.",
+    "Offline excerpts preserve exact cited spans and URLs but are not full copyrighted reports.",
+    "The evaluator's no-judge factual-support dimension remains a lexical diagnostic."
+  ],
+  "base_results": [
+    {
+      "case_id": "apple_fy2024_before",
+      "entity": "Apple Inc.",
+      "as_of_date": "2024-10-30",
+      "expected_answerability": "unanswerable",
+      "observed_answerability": "unanswerable",
+      "evaluator_score": 20.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answerability label has no required substantive/UNKNOWN claim structure"
+      ],
+      "oracle": {
+        "passed": false,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": false,
+          "no_hard_gate": false
+        },
+        "value_checks": {}
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0
+            },
+            "issues": [],
+            "method": "lexical_diagnostic_no_entailment_claim"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 0.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 0.0,
+              "answerability_oracle_supplied": 0.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 0.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 0.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 1.0
+            },
+            "issues": [
+              "one or more expected material nuggets are missing",
+              "answerability label is inconsistent with the claim structure"
+            ],
+            "method": "answerability_structure_no_gold_nuggets"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 93.0,
+        "final_score": 20.0,
+        "hard_cap": 20.0,
+        "hard_gate_reasons": [
+          "answerability label has no required substantive/UNKNOWN claim structure"
+        ],
+        "proof_graph": {
+          "nodes": [],
+          "edges": []
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+          "No gold nugget set was supplied; material completeness is structural only.",
+          "No answerability oracle was supplied; refusal validity is limited to exact negative evidence and registry-verified exclusions."
+        ]
+      }
+    },
+    {
+      "case_id": "apple_fy2024_after",
+      "entity": "Apple Inc.",
+      "as_of_date": "2024-11-02",
+      "expected_answerability": "answerable",
+      "observed_answerability": "answerable",
+      "evaluator_score": 100.0,
+      "evaluator_verdict": "excellent",
+      "hard_gate_reasons": [],
+      "oracle": {
+        "passed": true,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": true,
+          "no_hard_gate": true
+        },
+        "value_checks": {
+          "apple.net_sales.FY2024": true,
+          "apple.gaap_net_income.FY2024": true,
+          "apple.gaap_net_income_margin.FY2024": true
+        }
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0
+            },
+            "issues": [],
+            "method": "lexical_diagnostic_no_entailment_claim"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 100.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 0.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0
+            },
+            "issues": [],
+            "method": "gold_nugget_coverage"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 100.0,
+        "final_score": 100.0,
+        "hard_cap": null,
+        "hard_gate_reasons": [],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "apple_fy2024_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_apple_fy2024_sec_xbrl:p28:c1",
+                "document_id": "challenge_apple_fy2024_sec_xbrl",
+                "page": 28,
+                "published_at": "2024-11-01"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_apple_fy2024_sec_xbrl:p28:c1",
+                "document_id": "challenge_apple_fy2024_sec_xbrl",
+                "page": 28,
+                "published_at": "2024-11-01"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 23.971255769943866,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "apple.net_sales.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "apple.gaap_net_income.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "apple.gaap_net_income_margin.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:CALC1",
+              "target": "apple_fy2024_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "excellent",
+        "limitations": [
+          "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+          "No answerability oracle was supplied; refusal validity is limited to exact negative evidence and registry-verified exclusions."
+        ]
+      }
+    },
+    {
+      "case_id": "microsoft_fy2025_before",
+      "entity": "Microsoft Corporation",
+      "as_of_date": "2025-07-29",
+      "expected_answerability": "unanswerable",
+      "observed_answerability": "unanswerable",
+      "evaluator_score": 20.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answerability label has no required substantive/UNKNOWN claim structure"
+      ],
+      "oracle": {
+        "passed": false,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": false,
+          "no_hard_gate": false
+        },
+        "value_checks": {}
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0
+            },
+            "issues": [],
+            "method": "lexical_diagnostic_no_entailment_claim"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 0.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 0.0,
+              "answerability_oracle_supplied": 0.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 0.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 0.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 1.0
+            },
+            "issues": [
+              "one or more expected material nuggets are missing",
+              "answerability label is inconsistent with the claim structure"
+            ],
+            "method": "answerability_structure_no_gold_nuggets"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 93.0,
+        "final_score": 20.0,
+        "hard_cap": 20.0,
+        "hard_gate_reasons": [
+          "answerability label has no required substantive/UNKNOWN claim structure"
+        ],
+        "proof_graph": {
+          "nodes": [],
+          "edges": []
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+          "No gold nugget set was supplied; material completeness is structural only.",
+          "No answerability oracle was supplied; refusal validity is limited to exact negative evidence and registry-verified exclusions."
+        ]
+      }
+    },
+    {
+      "case_id": "microsoft_fy2025_after",
+      "entity": "Microsoft Corporation",
+      "as_of_date": "2025-07-31",
+      "expected_answerability": "answerable",
+      "observed_answerability": "answerable",
+      "evaluator_score": 100.0,
+      "evaluator_verdict": "excellent",
+      "hard_gate_reasons": [],
+      "oracle": {
+        "passed": true,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": true,
+          "no_hard_gate": true
+        },
+        "value_checks": {
+          "microsoft.revenue.FY2025": true,
+          "microsoft.gaap_net_income.FY2025": true,
+          "microsoft.gaap_net_income_margin.FY2025": true
+        }
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0
+            },
+            "issues": [],
+            "method": "lexical_diagnostic_no_entailment_claim"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 100.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 0.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0
+            },
+            "issues": [],
+            "method": "gold_nugget_coverage"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 100.0,
+        "final_score": 100.0,
+        "hard_cap": null,
+        "hard_gate_reasons": [],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "microsoft_fy2025_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_microsoft_fy2025_ir_html:p1:c1",
+                "document_id": "challenge_microsoft_fy2025_ir_html",
+                "page": 1,
+                "published_at": "2025-07-30"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_microsoft_fy2025_ir_html:p1:c1",
+                "document_id": "challenge_microsoft_fy2025_ir_html",
+                "page": 1,
+                "published_at": "2025-07-30"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 36.146015248967075,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "microsoft.revenue.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "microsoft.gaap_net_income.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "microsoft.gaap_net_income_margin.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:CALC1",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "excellent",
+        "limitations": [
+          "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+          "No answerability oracle was supplied; refusal validity is limited to exact negative evidence and registry-verified exclusions."
+        ]
+      }
+    },
+    {
+      "case_id": "nvidia_fy2025_before",
+      "entity": "NVIDIA Corporation",
+      "as_of_date": "2025-02-25",
+      "expected_answerability": "unanswerable",
+      "observed_answerability": "unanswerable",
+      "evaluator_score": 20.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answerability label has no required substantive/UNKNOWN claim structure"
+      ],
+      "oracle": {
+        "passed": false,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": false,
+          "no_hard_gate": false
+        },
+        "value_checks": {}
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0
+            },
+            "issues": [],
+            "method": "lexical_diagnostic_no_entailment_claim"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 0.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 0.0,
+              "answerability_oracle_supplied": 0.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 0.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 0.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 1.0
+            },
+            "issues": [
+              "one or more expected material nuggets are missing",
+              "answerability label is inconsistent with the claim structure"
+            ],
+            "method": "answerability_structure_no_gold_nuggets"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 93.0,
+        "final_score": 20.0,
+        "hard_cap": 20.0,
+        "hard_gate_reasons": [
+          "answerability label has no required substantive/UNKNOWN claim structure"
+        ],
+        "proof_graph": {
+          "nodes": [],
+          "edges": []
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+          "No gold nugget set was supplied; material completeness is structural only.",
+          "No answerability oracle was supplied; refusal validity is limited to exact negative evidence and registry-verified exclusions."
+        ]
+      }
+    },
+    {
+      "case_id": "nvidia_fy2025_after",
+      "entity": "NVIDIA Corporation",
+      "as_of_date": "2025-02-27",
+      "expected_answerability": "answerable",
+      "observed_answerability": "answerable",
+      "evaluator_score": 100.0,
+      "evaluator_verdict": "excellent",
+      "hard_gate_reasons": [],
+      "oracle": {
+        "passed": true,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": true,
+          "no_hard_gate": true
+        },
+        "value_checks": {
+          "nvidia.gaap_revenue.FY2025": true,
+          "nvidia.gaap_net_income.FY2025": true,
+          "nvidia.gaap_net_income_margin.FY2025": true
+        }
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0
+            },
+            "issues": [],
+            "method": "lexical_diagnostic_no_entailment_claim"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 100.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 0.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0
+            },
+            "issues": [],
+            "method": "gold_nugget_coverage"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 100.0,
+        "final_score": 100.0,
+        "hard_cap": null,
+        "hard_gate_reasons": [],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "nvidia_fy2025_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_nvidia_fy2025_cfo_pdf:p2:c1",
+                "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+                "page": 2,
+                "published_at": "2025-02-26"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_nvidia_fy2025_cfo_pdf:p2:c1",
+                "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+                "page": 2,
+                "published_at": "2025-02-26"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 55.848027157712444,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "nvidia.gaap_revenue.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "nvidia.gaap_net_income.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "nvidia.gaap_net_income_margin.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:CALC1",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "excellent",
+        "limitations": [
+          "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+          "No answerability oracle was supplied; refusal validity is limited to exact negative evidence and registry-verified exclusions."
+        ]
+      }
+    }
+  ],
+  "adversarial_results": [
+    {
+      "case_id": "apple_future_leak",
+      "transformation": "reuse the frozen post-publication answer under the frozen pre-publication query without changing evidence or known_at",
+      "evaluator_score": 40.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "source published after the query cutoff"
+      ],
+      "passed": true,
+      "checks": {
+        "score_at_or_below_cap": true,
+        "required_hard_gate_present": true,
+        "future_evidence_count_positive": true
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 0.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 0.0,
+              "future_count": 5.0
+            },
+            "issues": [
+              "future evidence: apple_fy2024_after:E1, apple_fy2024_after:E2, claim:apple_fy2024_after:C1, claim:apple_fy2024_after:C2, claim:apple_fy2024_after:C3"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0
+            },
+            "issues": [],
+            "method": "lexical_diagnostic_no_entailment_claim"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 100.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 0.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0
+            },
+            "issues": [],
+            "method": "gold_nugget_coverage"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 85.0,
+        "final_score": 40.0,
+        "hard_cap": 40.0,
+        "hard_gate_reasons": [
+          "source published after the query cutoff"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "apple_fy2024_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_apple_fy2024_sec_xbrl:p28:c1",
+                "document_id": "challenge_apple_fy2024_sec_xbrl",
+                "page": 28,
+                "published_at": "2024-11-01"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_apple_fy2024_sec_xbrl:p28:c1",
+                "document_id": "challenge_apple_fy2024_sec_xbrl",
+                "page": 28,
+                "published_at": "2024-11-01"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 23.971255769943866,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "apple.net_sales.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "apple.gaap_net_income.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "apple.gaap_net_income_margin.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:CALC1",
+              "target": "apple_fy2024_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+          "No answerability oracle was supplied; refusal validity is limited to exact negative evidence and registry-verified exclusions."
+        ]
+      }
+    },
+    {
+      "case_id": "microsoft_future_leak",
+      "transformation": "reuse the frozen post-publication answer under the frozen pre-publication query without changing evidence or known_at",
+      "evaluator_score": 40.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "source published after the query cutoff"
+      ],
+      "passed": true,
+      "checks": {
+        "score_at_or_below_cap": true,
+        "required_hard_gate_present": true,
+        "future_evidence_count_positive": true
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 0.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 0.0,
+              "future_count": 5.0
+            },
+            "issues": [
+              "future evidence: microsoft_fy2025_after:E1, microsoft_fy2025_after:E2, claim:microsoft_fy2025_after:C1, claim:microsoft_fy2025_after:C2, claim:microsoft_fy2025_after:C3"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0
+            },
+            "issues": [],
+            "method": "lexical_diagnostic_no_entailment_claim"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 100.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 0.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0
+            },
+            "issues": [],
+            "method": "gold_nugget_coverage"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 85.0,
+        "final_score": 40.0,
+        "hard_cap": 40.0,
+        "hard_gate_reasons": [
+          "source published after the query cutoff"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "microsoft_fy2025_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_microsoft_fy2025_ir_html:p1:c1",
+                "document_id": "challenge_microsoft_fy2025_ir_html",
+                "page": 1,
+                "published_at": "2025-07-30"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_microsoft_fy2025_ir_html:p1:c1",
+                "document_id": "challenge_microsoft_fy2025_ir_html",
+                "page": 1,
+                "published_at": "2025-07-30"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 36.146015248967075,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "microsoft.revenue.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "microsoft.gaap_net_income.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "microsoft.gaap_net_income_margin.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:CALC1",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+          "No answerability oracle was supplied; refusal validity is limited to exact negative evidence and registry-verified exclusions."
+        ]
+      }
+    },
+    {
+      "case_id": "nvidia_future_leak",
+      "transformation": "reuse the frozen post-publication answer under the frozen pre-publication query without changing evidence or known_at",
+      "evaluator_score": 40.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "source published after the query cutoff"
+      ],
+      "passed": true,
+      "checks": {
+        "score_at_or_below_cap": true,
+        "required_hard_gate_present": true,
+        "future_evidence_count_positive": true
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 0.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 0.0,
+              "future_count": 5.0
+            },
+            "issues": [
+              "future evidence: nvidia_fy2025_after:E1, nvidia_fy2025_after:E2, claim:nvidia_fy2025_after:C1, claim:nvidia_fy2025_after:C2, claim:nvidia_fy2025_after:C3"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0
+            },
+            "issues": [],
+            "method": "lexical_diagnostic_no_entailment_claim"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 100.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 0.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0
+            },
+            "issues": [],
+            "method": "gold_nugget_coverage"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 85.0,
+        "final_score": 40.0,
+        "hard_cap": 40.0,
+        "hard_gate_reasons": [
+          "source published after the query cutoff"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "nvidia_fy2025_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_nvidia_fy2025_cfo_pdf:p2:c1",
+                "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+                "page": 2,
+                "published_at": "2025-02-26"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_nvidia_fy2025_cfo_pdf:p2:c1",
+                "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+                "page": 2,
+                "published_at": "2025-02-26"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 55.848027157712444,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "nvidia.gaap_revenue.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "nvidia.gaap_net_income.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "nvidia.gaap_net_income_margin.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:CALC1",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+          "No answerability oracle was supplied; refusal validity is limited to exact negative evidence and registry-verified exclusions."
+        ]
+      }
+    }
+  ]
+}

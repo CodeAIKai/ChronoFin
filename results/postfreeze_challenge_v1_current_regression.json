@@ -1,0 +1,2466 @@
+{
+  "dataset_id": "chronofin-postfreeze-challenge-v1",
+  "dataset_version": "1.0.0",
+  "evaluation_mode": "known_data_regression_current_evaluator_v2",
+  "frozen_hashes_verified": true,
+  "frozen_hashes": {
+    "data/challenge/challenge_v1.json": "9f7a57883c4f9a38ffba33f7a5aa86faef7eeabdb0c20d05a6c9537597be373e",
+    "data/challenge/source_excerpts/apple_sec_xbrl_fy2024.md": "b626d98fc76bafe4a7900523674ee8ac44640f64450beccbc9ab510f5d4967be",
+    "data/challenge/source_excerpts/microsoft_ir_html_fy2025.md": "ec5dfec21939ceebef048b543de6c633204d6d961d878fe046b8f99e7670faf2",
+    "data/challenge/source_excerpts/nvidia_cfo_pdf_fy2025.md": "400e21c42d1b7e005290d63522a9d027f67b2349bc0ee29eb24458dd28160338"
+  },
+  "historical_attestation": {
+    "verified": true,
+    "data_hashes": {
+      "data/challenge/challenge_v1.json": "9f7a57883c4f9a38ffba33f7a5aa86faef7eeabdb0c20d05a6c9537597be373e",
+      "data/challenge/source_excerpts/apple_sec_xbrl_fy2024.md": "b626d98fc76bafe4a7900523674ee8ac44640f64450beccbc9ab510f5d4967be",
+      "data/challenge/source_excerpts/microsoft_ir_html_fy2025.md": "ec5dfec21939ceebef048b543de6c633204d6d961d878fe046b8f99e7670faf2",
+      "data/challenge/source_excerpts/nvidia_cfo_pdf_fy2025.md": "400e21c42d1b7e005290d63522a9d027f67b2349bc0ee29eb24458dd28160338"
+    },
+    "historical_evaluator_hashes": {
+      "src/chronofin/evaluator/__init__.py": "003b4a4dc5a2abbb2a84a0d82484bd3c0b854997eb01f2987c223c3b841d4adb",
+      "src/chronofin/evaluator/ablation.py": "f503a21e4334e2ab12aba46543c0a042eebe3591b31d05e09a9b0b8769ea6950",
+      "src/chronofin/evaluator/benchmark.py": "5fcb46022a666f0097ae92d9d7d745d143cf9ee7f8cc8a9e3243b6422703fb71",
+      "src/chronofin/evaluator/citation.py": "5d019b3f03b3d579420c3f96af9661b0e2c951323bb6bd180be984b082f31274",
+      "src/chronofin/evaluator/core.py": "4efe2be25bf40c61342dc34179766bcbcaca5ea97f571a54fc7be44d589ec72a",
+      "src/chronofin/evaluator/mutations.py": "756a5105c10ba65445863063a2cf495b3400aa9b44c757e29eaae8c0a95fd1b8",
+      "src/chronofin/evaluator/numeric.py": "c21fd116697e2ab77bf4d6c30a6a62aae43823a72b8c9be99d7eaacfeee0c6e8",
+      "src/chronofin/evaluator/proof_graph.py": "47bdc509690f193e6b4f74d1edec7dfa243f208c45beecd17aea9677a98dbd86",
+      "src/chronofin/evaluator/semantic.py": "957860dae95034a227cce0f1bce82d54ad82027fb9059a82685238505b36e8f1",
+      "src/chronofin/evaluator/temporal.py": "d4f09b489ae9a676468b4ec723272956e6936494ced104e209208054968be43d"
+    },
+    "historical_result_hashes": {
+      "results/postfreeze_challenge_v1.json": "dd0337fd20b5d34e2b946f005b3b1ab54fec85c053000f54d3174d9c6f959302",
+      "results/postfreeze_challenge_v1_after_adapter_fix.json": "c384b34410ca2d66ee6ecd97d3b5b54031d369e89736af635d1809d6b6dbfa05"
+    },
+    "historical_runner_sha256": "78785e58dd103cb7c0982a6309d5e045c6183b2997e9599c18fdf97fae8aeb08",
+    "current_source_compared_to_v1": false
+  },
+  "code_reference": {
+    "current_evaluator_hashes_verified": true,
+    "current_evaluator_source_hashes_at_run": {
+      "scripts/run_postfreeze_challenge.py": "63b6d8b262827d660cc6c73ebfe04e426ca2faee39d1ad34a14c05922647f8fe",
+      "src/chronofin/evaluator/__init__.py": "003b4a4dc5a2abbb2a84a0d82484bd3c0b854997eb01f2987c223c3b841d4adb",
+      "src/chronofin/evaluator/ablation.py": "f503a21e4334e2ab12aba46543c0a042eebe3591b31d05e09a9b0b8769ea6950",
+      "src/chronofin/evaluator/benchmark.py": "d714e0ddaaca781a95d439b1dbf7aeb47c8f30fab94aa2e46a75b2d8d75bd1bc",
+      "src/chronofin/evaluator/citation.py": "9ed21d4bff122a46fe17dc1a02e79250510fbf96bc14ccdc5e2c589bdb8cb4c0",
+      "src/chronofin/evaluator/core.py": "328f9358aae8c1cca61c548c360de689af7af0aae6204f117669f02dd589143a",
+      "src/chronofin/evaluator/mutations.py": "561590f62f31c9249e87471b8f27b802a326a2c22dfdbeffbb3325c94e8e3110",
+      "src/chronofin/evaluator/numeric.py": "3f4d03ddd87bbd6796e793a22f11045b67dcea958b223ccd69c2829b2c4112c3",
+      "src/chronofin/evaluator/proof_graph.py": "47bdc509690f193e6b4f74d1edec7dfa243f208c45beecd17aea9677a98dbd86",
+      "src/chronofin/evaluator/semantic.py": "957860dae95034a227cce0f1bce82d54ad82027fb9059a82685238505b36e8f1",
+      "src/chronofin/evaluator/temporal.py": "06642ff59e20ece79f5a119962680b0a7cdcbe3e65186da7793692ba15b68f13",
+      "src/chronofin/models.py": "63a04d74e31a31cf0b2ec16fc90826345bea3bc9e7545efea7c8f6eeadf64dd8",
+      "src/chronofin/projection.py": "44438e16cc26e03efad42631a60dbfad2a2c717e41e52cc76ce73c993c8e18c0",
+      "src/chronofin/summary.py": "72f8b8eba11a6cf808613029feb2c29379e4e48abd3d7103cfe28229ba5f61fd"
+    },
+    "runner_sha256_at_run": "63b6d8b262827d660cc6c73ebfe04e426ca2faee39d1ad34a14c05922647f8fe"
+  },
+  "source_registry": [
+    {
+      "document_id": "challenge_apple_fy2024_sec_xbrl",
+      "entity": "Apple Inc.",
+      "published_at": "2024-11-01",
+      "source_format": "SEC EDGAR XBRL presentation HTML",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/R3.htm",
+      "publication_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/0000320193-24-000123-index.htm",
+      "snapshot_path": "data/challenge/source_excerpts/apple_sec_xbrl_fy2024.md",
+      "snapshot_sha256": "b626d98fc76bafe4a7900523674ee8ac44640f64450beccbc9ab510f5d4967be"
+    },
+    {
+      "document_id": "challenge_microsoft_fy2025_ir_html",
+      "entity": "Microsoft Corporation",
+      "published_at": "2025-07-30",
+      "source_format": "issuer IR HTML with XBRL concept labels",
+      "source_url": "https://www.microsoft.com/en-us/Investor/earnings/fy-2025-Q4/income-statements",
+      "publication_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+      "snapshot_path": "data/challenge/source_excerpts/microsoft_ir_html_fy2025.md",
+      "snapshot_sha256": "ec5dfec21939ceebef048b543de6c633204d6d961d878fe046b8f99e7670faf2"
+    },
+    {
+      "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+      "entity": "NVIDIA Corporation",
+      "published_at": "2025-02-26",
+      "source_format": "issuer IR PDF",
+      "source_url": "https://investor.nvidia.com/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf",
+      "publication_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025",
+      "snapshot_path": "data/challenge/source_excerpts/nvidia_cfo_pdf_fy2025.md",
+      "snapshot_sha256": "400e21c42d1b7e005290d63522a9d027f67b2349bc0ee29eb24458dd28160338"
+    }
+  ],
+  "execution": {
+    "network_used": false,
+    "model_called": false,
+    "human_annotation_claimed": false,
+    "statistical_heldout_claimed": false,
+    "current_run_is_regression": true,
+    "current_evaluator_postdates_challenge": true,
+    "challenge_was_known_during_current_hardening": true,
+    "historical_v1_result": "results/postfreeze_challenge_v1_after_adapter_fix.json",
+    "interpretation": "Regression evidence only: it checks that broad red-team hardening did not break the frozen real-company cases; it is not fresh held-out evidence."
+  },
+  "coverage": {
+    "companies": 3,
+    "source_formats": [
+      "SEC EDGAR XBRL presentation HTML",
+      "issuer IR HTML with XBRL concept labels",
+      "issuer IR PDF"
+    ],
+    "base_cases": 6,
+    "prepublication_refusals": 3,
+    "postpublication_answers": 3,
+    "future_leak_negatives": 3
+  },
+  "summary": {
+    "all_passed": false,
+    "base_passed": 0,
+    "base_total": 6,
+    "adversarial_passed": 3,
+    "adversarial_total": 3,
+    "mean_valid_gold_score": 55.0,
+    "mean_future_leak_score": 20.0
+  },
+  "limitations": [
+    "AI-curated; no human expert adjudication or inter-annotator agreement.",
+    "The current evaluator was developed after these cases were visible; this run is regression-only, not held-out validation.",
+    "Three companies and nine runs are a conformance regression, not a population estimate.",
+    "Gold answers are deterministic materializations of frozen facts, not outputs from Hy3.",
+    "Offline excerpts preserve exact cited spans and URLs but are not full copyrighted reports.",
+    "Without a semantic judge, factual credit is restricted to exact evidence spans and canonical calculation projections."
+  ],
+  "base_results": [
+    {
+      "case_id": "apple_fy2024_before",
+      "entity": "Apple Inc.",
+      "as_of_date": "2024-10-30",
+      "expected_answerability": "unanswerable",
+      "observed_answerability": "unanswerable",
+      "evaluator_score": 55.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "oracle": {
+        "passed": false,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": false,
+          "no_hard_gate": false
+        },
+        "value_checks": {}
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0,
+              "known_at_mismatch_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0,
+              "claim_supported_fraction": 1.0,
+              "deterministic_claim_grounding": 1.0,
+              "lexical_overlap_diagnostic": 1.0,
+              "summary_claim_alignment": 1.0,
+              "summary_clause_count": 1.0,
+              "summary_bound_clause_count": 1.0
+            },
+            "issues": [],
+            "method": "deterministic_exact_evidence_or_calculation_projection"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0,
+              "claim_numeric_grounding_accuracy": 1.0,
+              "summary_numeric_grounding_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 93.33333333333333,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0,
+              "source_unit_currency_alignment": 1.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "requested_metric_slot_count": 3.0,
+              "substantive_metric_slot_count": 0.0,
+              "unknown_metric_slot_count": 2.0
+            },
+            "issues": [
+              "claims do not address every detected query metric slot"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 66.66666666666666,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 1.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 0.0,
+              "unknown_claim_count": 1.0,
+              "verified_future_exclusion": 0.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "unknown_epistemic_language_accuracy": 1.0,
+              "unknown_projection_accuracy": 1.0,
+              "summary_claim_alignment": 1.0,
+              "target_aligned_substantive_count": 0.0,
+              "target_aligned_unknown_count": 1.0
+            },
+            "issues": [
+              "one or more requested metric slots lack the required claim type"
+            ],
+            "method": "answerability_structure_no_gold_nuggets"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0,
+              "caveat_projection_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 97.0,
+        "final_score": 55.0,
+        "hard_cap": 55.0,
+        "hard_gate_reasons": [
+          "answer omits one or more detected query metric slots",
+          "substantive entity, fiscal-period, or unit mismatch"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "apple_fy2024_before:UNKNOWN1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "UNKNOWN",
+                "semantic_key": "",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": ""
+              }
+            }
+          ],
+          "edges": []
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit.",
+          "No gold nugget set was supplied; material completeness is structural only."
+        ]
+      }
+    },
+    {
+      "case_id": "apple_fy2024_after",
+      "entity": "Apple Inc.",
+      "as_of_date": "2024-11-02",
+      "expected_answerability": "answerable",
+      "observed_answerability": "answerable",
+      "evaluator_score": 55.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "oracle": {
+        "passed": false,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": false,
+          "no_hard_gate": false
+        },
+        "value_checks": {
+          "apple.net_sales.FY2024": true,
+          "apple.gaap_net_income.FY2024": true,
+          "apple.gaap_net_income_margin.FY2024": true
+        }
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0,
+              "known_at_mismatch_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0,
+              "claim_supported_fraction": 1.0,
+              "deterministic_claim_grounding": 1.0,
+              "lexical_overlap_diagnostic": 1.0,
+              "summary_claim_alignment": 1.0,
+              "summary_clause_count": 3.0,
+              "summary_bound_clause_count": 3.0
+            },
+            "issues": [],
+            "method": "deterministic_exact_evidence_or_calculation_projection"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0,
+              "claim_numeric_grounding_accuracy": 1.0,
+              "summary_numeric_grounding_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 93.33333333333333,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0,
+              "source_unit_currency_alignment": 1.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "requested_metric_slot_count": 3.0,
+              "substantive_metric_slot_count": 2.0,
+              "unknown_metric_slot_count": 0.0
+            },
+            "issues": [
+              "claims do not address every detected query metric slot"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 66.66666666666666,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 1.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "unknown_epistemic_language_accuracy": 1.0,
+              "unknown_projection_accuracy": 1.0,
+              "summary_claim_alignment": 1.0,
+              "target_aligned_substantive_count": 3.0,
+              "target_aligned_unknown_count": 0.0
+            },
+            "issues": [
+              "one or more requested metric slots lack the required claim type"
+            ],
+            "method": "gold_nugget_and_answerability_oracle"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0,
+              "caveat_projection_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 97.0,
+        "final_score": 55.0,
+        "hard_cap": 55.0,
+        "hard_gate_reasons": [
+          "answer omits one or more detected query metric slots",
+          "substantive entity, fiscal-period, or unit mismatch"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "apple_fy2024_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_apple_fy2024_sec_xbrl:p28:c1",
+                "document_id": "challenge_apple_fy2024_sec_xbrl",
+                "page": 28,
+                "published_at": "2024-11-01"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_apple_fy2024_sec_xbrl:p28:c1",
+                "document_id": "challenge_apple_fy2024_sec_xbrl",
+                "page": 28,
+                "published_at": "2024-11-01"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 23.971255769943866,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "apple.net_sales.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "apple.gaap_net_income.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "apple.gaap_net_income_margin.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:CALC1",
+              "target": "apple_fy2024_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit."
+        ]
+      }
+    },
+    {
+      "case_id": "microsoft_fy2025_before",
+      "entity": "Microsoft Corporation",
+      "as_of_date": "2025-07-29",
+      "expected_answerability": "unanswerable",
+      "observed_answerability": "unanswerable",
+      "evaluator_score": 55.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "oracle": {
+        "passed": false,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": false,
+          "no_hard_gate": false
+        },
+        "value_checks": {}
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0,
+              "known_at_mismatch_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0,
+              "claim_supported_fraction": 1.0,
+              "deterministic_claim_grounding": 1.0,
+              "lexical_overlap_diagnostic": 1.0,
+              "summary_claim_alignment": 1.0,
+              "summary_clause_count": 1.0,
+              "summary_bound_clause_count": 1.0
+            },
+            "issues": [],
+            "method": "deterministic_exact_evidence_or_calculation_projection"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0,
+              "claim_numeric_grounding_accuracy": 1.0,
+              "summary_numeric_grounding_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 93.33333333333333,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0,
+              "source_unit_currency_alignment": 1.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "requested_metric_slot_count": 3.0,
+              "substantive_metric_slot_count": 0.0,
+              "unknown_metric_slot_count": 2.0
+            },
+            "issues": [
+              "claims do not address every detected query metric slot"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 66.66666666666666,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 1.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 0.0,
+              "unknown_claim_count": 1.0,
+              "verified_future_exclusion": 0.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "unknown_epistemic_language_accuracy": 1.0,
+              "unknown_projection_accuracy": 1.0,
+              "summary_claim_alignment": 1.0,
+              "target_aligned_substantive_count": 0.0,
+              "target_aligned_unknown_count": 1.0
+            },
+            "issues": [
+              "one or more requested metric slots lack the required claim type"
+            ],
+            "method": "answerability_structure_no_gold_nuggets"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0,
+              "caveat_projection_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 97.0,
+        "final_score": 55.0,
+        "hard_cap": 55.0,
+        "hard_gate_reasons": [
+          "answer omits one or more detected query metric slots",
+          "substantive entity, fiscal-period, or unit mismatch"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "microsoft_fy2025_before:UNKNOWN1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "UNKNOWN",
+                "semantic_key": "",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": ""
+              }
+            }
+          ],
+          "edges": []
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit.",
+          "No gold nugget set was supplied; material completeness is structural only."
+        ]
+      }
+    },
+    {
+      "case_id": "microsoft_fy2025_after",
+      "entity": "Microsoft Corporation",
+      "as_of_date": "2025-07-31",
+      "expected_answerability": "answerable",
+      "observed_answerability": "answerable",
+      "evaluator_score": 55.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "oracle": {
+        "passed": false,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": false,
+          "no_hard_gate": false
+        },
+        "value_checks": {
+          "microsoft.revenue.FY2025": true,
+          "microsoft.gaap_net_income.FY2025": true,
+          "microsoft.gaap_net_income_margin.FY2025": true
+        }
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0,
+              "known_at_mismatch_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0,
+              "claim_supported_fraction": 1.0,
+              "deterministic_claim_grounding": 1.0,
+              "lexical_overlap_diagnostic": 1.0,
+              "summary_claim_alignment": 1.0,
+              "summary_clause_count": 3.0,
+              "summary_bound_clause_count": 3.0
+            },
+            "issues": [],
+            "method": "deterministic_exact_evidence_or_calculation_projection"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0,
+              "claim_numeric_grounding_accuracy": 1.0,
+              "summary_numeric_grounding_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 93.33333333333333,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0,
+              "source_unit_currency_alignment": 1.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "requested_metric_slot_count": 3.0,
+              "substantive_metric_slot_count": 2.0,
+              "unknown_metric_slot_count": 0.0
+            },
+            "issues": [
+              "claims do not address every detected query metric slot"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 66.66666666666666,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 1.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "unknown_epistemic_language_accuracy": 1.0,
+              "unknown_projection_accuracy": 1.0,
+              "summary_claim_alignment": 1.0,
+              "target_aligned_substantive_count": 3.0,
+              "target_aligned_unknown_count": 0.0
+            },
+            "issues": [
+              "one or more requested metric slots lack the required claim type"
+            ],
+            "method": "gold_nugget_and_answerability_oracle"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0,
+              "caveat_projection_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 97.0,
+        "final_score": 55.0,
+        "hard_cap": 55.0,
+        "hard_gate_reasons": [
+          "answer omits one or more detected query metric slots",
+          "substantive entity, fiscal-period, or unit mismatch"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "microsoft_fy2025_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_microsoft_fy2025_ir_html:p1:c1",
+                "document_id": "challenge_microsoft_fy2025_ir_html",
+                "page": 1,
+                "published_at": "2025-07-30"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_microsoft_fy2025_ir_html:p1:c1",
+                "document_id": "challenge_microsoft_fy2025_ir_html",
+                "page": 1,
+                "published_at": "2025-07-30"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 36.146015248967075,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "microsoft.revenue.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "microsoft.gaap_net_income.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "microsoft.gaap_net_income_margin.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:CALC1",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit."
+        ]
+      }
+    },
+    {
+      "case_id": "nvidia_fy2025_before",
+      "entity": "NVIDIA Corporation",
+      "as_of_date": "2025-02-25",
+      "expected_answerability": "unanswerable",
+      "observed_answerability": "unanswerable",
+      "evaluator_score": 55.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "oracle": {
+        "passed": false,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": false,
+          "no_hard_gate": false
+        },
+        "value_checks": {}
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0,
+              "known_at_mismatch_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0,
+              "claim_supported_fraction": 1.0,
+              "deterministic_claim_grounding": 1.0,
+              "lexical_overlap_diagnostic": 1.0,
+              "summary_claim_alignment": 1.0,
+              "summary_clause_count": 1.0,
+              "summary_bound_clause_count": 1.0
+            },
+            "issues": [],
+            "method": "deterministic_exact_evidence_or_calculation_projection"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0,
+              "claim_numeric_grounding_accuracy": 1.0,
+              "summary_numeric_grounding_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 93.33333333333333,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0,
+              "source_unit_currency_alignment": 1.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "requested_metric_slot_count": 3.0,
+              "substantive_metric_slot_count": 0.0,
+              "unknown_metric_slot_count": 2.0
+            },
+            "issues": [
+              "claims do not address every detected query metric slot"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 66.66666666666666,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 1.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 0.0,
+              "unknown_claim_count": 1.0,
+              "verified_future_exclusion": 0.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "unknown_epistemic_language_accuracy": 1.0,
+              "unknown_projection_accuracy": 1.0,
+              "summary_claim_alignment": 1.0,
+              "target_aligned_substantive_count": 0.0,
+              "target_aligned_unknown_count": 1.0
+            },
+            "issues": [
+              "one or more requested metric slots lack the required claim type"
+            ],
+            "method": "answerability_structure_no_gold_nuggets"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0,
+              "caveat_projection_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 97.0,
+        "final_score": 55.0,
+        "hard_cap": 55.0,
+        "hard_gate_reasons": [
+          "answer omits one or more detected query metric slots",
+          "substantive entity, fiscal-period, or unit mismatch"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "nvidia_fy2025_before:UNKNOWN1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "UNKNOWN",
+                "semantic_key": "",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": ""
+              }
+            }
+          ],
+          "edges": []
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit.",
+          "No gold nugget set was supplied; material completeness is structural only."
+        ]
+      }
+    },
+    {
+      "case_id": "nvidia_fy2025_after",
+      "entity": "NVIDIA Corporation",
+      "as_of_date": "2025-02-27",
+      "expected_answerability": "answerable",
+      "observed_answerability": "answerable",
+      "evaluator_score": 55.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "oracle": {
+        "passed": false,
+        "checks": {
+          "answerability": true,
+          "all_expected_values": true,
+          "no_unexpected_values": true,
+          "refusal_has_no_evidence": true,
+          "evaluator_minimum": false,
+          "no_hard_gate": false
+        },
+        "value_checks": {
+          "nvidia.gaap_revenue.FY2025": true,
+          "nvidia.gaap_net_income.FY2025": true,
+          "nvidia.gaap_net_income_margin.FY2025": true
+        }
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 1.0,
+              "future_count": 0.0,
+              "known_at_mismatch_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0,
+              "claim_supported_fraction": 1.0,
+              "deterministic_claim_grounding": 1.0,
+              "lexical_overlap_diagnostic": 1.0,
+              "summary_claim_alignment": 1.0,
+              "summary_clause_count": 3.0,
+              "summary_bound_clause_count": 3.0
+            },
+            "issues": [],
+            "method": "deterministic_exact_evidence_or_calculation_projection"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0,
+              "claim_numeric_grounding_accuracy": 1.0,
+              "summary_numeric_grounding_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 93.33333333333333,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0,
+              "source_unit_currency_alignment": 1.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "requested_metric_slot_count": 3.0,
+              "substantive_metric_slot_count": 2.0,
+              "unknown_metric_slot_count": 0.0
+            },
+            "issues": [
+              "claims do not address every detected query metric slot"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 66.66666666666666,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 1.0,
+              "answerability_match": 1.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "unknown_epistemic_language_accuracy": 1.0,
+              "unknown_projection_accuracy": 1.0,
+              "summary_claim_alignment": 1.0,
+              "target_aligned_substantive_count": 3.0,
+              "target_aligned_unknown_count": 0.0
+            },
+            "issues": [
+              "one or more requested metric slots lack the required claim type"
+            ],
+            "method": "gold_nugget_and_answerability_oracle"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0,
+              "caveat_projection_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 97.0,
+        "final_score": 55.0,
+        "hard_cap": 55.0,
+        "hard_gate_reasons": [
+          "answer omits one or more detected query metric slots",
+          "substantive entity, fiscal-period, or unit mismatch"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "nvidia_fy2025_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_nvidia_fy2025_cfo_pdf:p2:c1",
+                "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+                "page": 2,
+                "published_at": "2025-02-26"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_nvidia_fy2025_cfo_pdf:p2:c1",
+                "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+                "page": 2,
+                "published_at": "2025-02-26"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 55.848027157712444,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "nvidia.gaap_revenue.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "nvidia.gaap_net_income.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "nvidia.gaap_net_income_margin.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:CALC1",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit."
+        ]
+      }
+    }
+  ],
+  "adversarial_results": [
+    {
+      "case_id": "apple_future_leak",
+      "transformation": "reuse the frozen post-publication answer under the frozen pre-publication query without changing evidence or known_at",
+      "evaluator_score": 20.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answerability contradicts the supplied oracle",
+        "source published after the query cutoff",
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "passed": true,
+      "checks": {
+        "score_at_or_below_cap": true,
+        "required_hard_gate_present": true,
+        "future_evidence_count_positive": true
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 0.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 0.0,
+              "future_count": 5.0,
+              "known_at_mismatch_count": 0.0
+            },
+            "issues": [
+              "future evidence: apple_fy2024_after:E1, apple_fy2024_after:E2, claim:apple_fy2024_after:C1, claim:apple_fy2024_after:C2, claim:apple_fy2024_after:C3"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0,
+              "claim_supported_fraction": 1.0,
+              "deterministic_claim_grounding": 1.0,
+              "lexical_overlap_diagnostic": 1.0,
+              "summary_claim_alignment": 1.0,
+              "summary_clause_count": 3.0,
+              "summary_bound_clause_count": 3.0
+            },
+            "issues": [],
+            "method": "deterministic_exact_evidence_or_calculation_projection"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0,
+              "claim_numeric_grounding_accuracy": 1.0,
+              "summary_numeric_grounding_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 93.33333333333333,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0,
+              "source_unit_currency_alignment": 1.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "requested_metric_slot_count": 3.0,
+              "substantive_metric_slot_count": 2.0,
+              "unknown_metric_slot_count": 0.0
+            },
+            "issues": [
+              "claims do not address every detected query metric slot"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 0.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 1.0,
+              "answerability_match": 0.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "unknown_epistemic_language_accuracy": 1.0,
+              "unknown_projection_accuracy": 1.0,
+              "summary_claim_alignment": 1.0,
+              "target_aligned_substantive_count": 3.0,
+              "target_aligned_unknown_count": 0.0
+            },
+            "issues": [
+              "answerability mismatch: expected unanswerable, got answerable",
+              "one or more requested metric slots lack the required claim type"
+            ],
+            "method": "gold_nugget_and_answerability_oracle"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0,
+              "caveat_projection_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 77.333,
+        "final_score": 20.0,
+        "hard_cap": 20.0,
+        "hard_gate_reasons": [
+          "answerability contradicts the supplied oracle",
+          "source published after the query cutoff",
+          "answer omits one or more detected query metric slots",
+          "substantive entity, fiscal-period, or unit mismatch"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "apple_fy2024_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_apple_fy2024_sec_xbrl:p28:c1",
+                "document_id": "challenge_apple_fy2024_sec_xbrl",
+                "page": 28,
+                "published_at": "2024-11-01"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_apple_fy2024_sec_xbrl:p28:c1",
+                "document_id": "challenge_apple_fy2024_sec_xbrl",
+                "page": 28,
+                "published_at": "2024-11-01"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 23.971255769943866,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "apple.net_sales.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "apple.gaap_net_income.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "apple_fy2024_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "apple.gaap_net_income_margin.FY2024",
+                "entity": "Apple Inc.",
+                "period": "FY2024",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E1",
+              "target": "apple_fy2024_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:E2",
+              "target": "apple_fy2024_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "apple_fy2024_after:CALC1",
+              "target": "apple_fy2024_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit."
+        ]
+      }
+    },
+    {
+      "case_id": "microsoft_future_leak",
+      "transformation": "reuse the frozen post-publication answer under the frozen pre-publication query without changing evidence or known_at",
+      "evaluator_score": 20.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answerability contradicts the supplied oracle",
+        "source published after the query cutoff",
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "passed": true,
+      "checks": {
+        "score_at_or_below_cap": true,
+        "required_hard_gate_present": true,
+        "future_evidence_count_positive": true
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 0.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 0.0,
+              "future_count": 5.0,
+              "known_at_mismatch_count": 0.0
+            },
+            "issues": [
+              "future evidence: microsoft_fy2025_after:E1, microsoft_fy2025_after:E2, claim:microsoft_fy2025_after:C1, claim:microsoft_fy2025_after:C2, claim:microsoft_fy2025_after:C3"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0,
+              "claim_supported_fraction": 1.0,
+              "deterministic_claim_grounding": 1.0,
+              "lexical_overlap_diagnostic": 1.0,
+              "summary_claim_alignment": 1.0,
+              "summary_clause_count": 3.0,
+              "summary_bound_clause_count": 3.0
+            },
+            "issues": [],
+            "method": "deterministic_exact_evidence_or_calculation_projection"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0,
+              "claim_numeric_grounding_accuracy": 1.0,
+              "summary_numeric_grounding_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 93.33333333333333,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0,
+              "source_unit_currency_alignment": 1.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "requested_metric_slot_count": 3.0,
+              "substantive_metric_slot_count": 2.0,
+              "unknown_metric_slot_count": 0.0
+            },
+            "issues": [
+              "claims do not address every detected query metric slot"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 0.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 1.0,
+              "answerability_match": 0.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "unknown_epistemic_language_accuracy": 1.0,
+              "unknown_projection_accuracy": 1.0,
+              "summary_claim_alignment": 1.0,
+              "target_aligned_substantive_count": 3.0,
+              "target_aligned_unknown_count": 0.0
+            },
+            "issues": [
+              "answerability mismatch: expected unanswerable, got answerable",
+              "one or more requested metric slots lack the required claim type"
+            ],
+            "method": "gold_nugget_and_answerability_oracle"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0,
+              "caveat_projection_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 77.333,
+        "final_score": 20.0,
+        "hard_cap": 20.0,
+        "hard_gate_reasons": [
+          "answerability contradicts the supplied oracle",
+          "source published after the query cutoff",
+          "answer omits one or more detected query metric slots",
+          "substantive entity, fiscal-period, or unit mismatch"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "microsoft_fy2025_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_microsoft_fy2025_ir_html:p1:c1",
+                "document_id": "challenge_microsoft_fy2025_ir_html",
+                "page": 1,
+                "published_at": "2025-07-30"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_microsoft_fy2025_ir_html:p1:c1",
+                "document_id": "challenge_microsoft_fy2025_ir_html",
+                "page": 1,
+                "published_at": "2025-07-30"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 36.146015248967075,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "microsoft.revenue.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "microsoft.gaap_net_income.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "microsoft_fy2025_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "microsoft.gaap_net_income_margin.FY2025",
+                "entity": "Microsoft Corporation",
+                "period": "FY2025",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E1",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:E2",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "microsoft_fy2025_after:CALC1",
+              "target": "microsoft_fy2025_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit."
+        ]
+      }
+    },
+    {
+      "case_id": "nvidia_future_leak",
+      "transformation": "reuse the frozen post-publication answer under the frozen pre-publication query without changing evidence or known_at",
+      "evaluator_score": 20.0,
+      "evaluator_verdict": "fail",
+      "hard_gate_reasons": [
+        "answerability contradicts the supplied oracle",
+        "source published after the query cutoff",
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "passed": true,
+      "checks": {
+        "score_at_or_below_cap": true,
+        "required_hard_gate_present": true,
+        "future_evidence_count_positive": true
+      },
+      "scorecard": {
+        "dimensions": [
+          {
+            "name": "temporal_integrity",
+            "score": 0.0,
+            "weight": 0.15,
+            "metrics": {
+              "valid_fraction": 0.0,
+              "future_count": 5.0,
+              "known_at_mismatch_count": 0.0
+            },
+            "issues": [
+              "future evidence: nvidia_fy2025_after:E1, nvidia_fy2025_after:E2, claim:nvidia_fy2025_after:C1, claim:nvidia_fy2025_after:C2, claim:nvidia_fy2025_after:C3"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_correctness",
+            "score": 100.0,
+            "weight": 0.14,
+            "metrics": {
+              "identity_accuracy": 1.0,
+              "exact_quote_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "citation_completeness",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "claim_completeness": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "factual_support",
+            "score": 100.0,
+            "weight": 0.1,
+            "metrics": {
+              "supported_fraction": 1.0,
+              "claim_supported_fraction": 1.0,
+              "deterministic_claim_grounding": 1.0,
+              "lexical_overlap_diagnostic": 1.0,
+              "summary_claim_alignment": 1.0,
+              "summary_clause_count": 3.0,
+              "summary_bound_clause_count": 3.0
+            },
+            "issues": [],
+            "method": "deterministic_exact_evidence_or_calculation_projection"
+          },
+          {
+            "name": "numeric_lineage",
+            "score": 100.0,
+            "weight": 0.15,
+            "metrics": {
+              "execution_accuracy": 1.0,
+              "leaf_binding_accuracy": 1.0,
+              "trace_coverage": 1.0,
+              "unit_consistency": 1.0,
+              "claim_value_accuracy": 1.0,
+              "claim_text_accuracy": 1.0,
+              "claim_numeric_grounding_accuracy": 1.0,
+              "summary_numeric_grounding_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "entity_period_unit",
+            "score": 93.33333333333333,
+            "weight": 0.1,
+            "metrics": {
+              "entity_period_alignment": 1.0,
+              "claim_calculation_unit": 1.0,
+              "source_unit_currency_alignment": 1.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "requested_metric_slot_count": 3.0,
+              "substantive_metric_slot_count": 2.0,
+              "unknown_metric_slot_count": 0.0
+            },
+            "issues": [
+              "claims do not address every detected query metric slot"
+            ],
+            "method": "deterministic"
+          },
+          {
+            "name": "proof_graph_validity",
+            "score": 100.0,
+            "weight": 0.09,
+            "metrics": {
+              "issue_count": 0.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "material_completeness",
+            "score": 0.0,
+            "weight": 0.07,
+            "metrics": {
+              "material_coverage": 1.0,
+              "answerability_oracle_supplied": 1.0,
+              "answerability_match": 0.0,
+              "output_structure_valid": 1.0,
+              "refusal_support": 1.0,
+              "substantive_claim_count": 3.0,
+              "unknown_claim_count": 0.0,
+              "verified_future_exclusion": 0.0,
+              "query_target_alignment": 1.0,
+              "query_metric_alignment": 0.6666666666666666,
+              "unknown_epistemic_language_accuracy": 1.0,
+              "unknown_projection_accuracy": 1.0,
+              "summary_claim_alignment": 1.0,
+              "target_aligned_substantive_count": 3.0,
+              "target_aligned_unknown_count": 0.0
+            },
+            "issues": [
+              "answerability mismatch: expected unanswerable, got answerable",
+              "one or more requested metric slots lack the required claim type"
+            ],
+            "method": "gold_nugget_and_answerability_oracle"
+          },
+          {
+            "name": "inference_boundary",
+            "score": 100.0,
+            "weight": 0.06,
+            "metrics": {
+              "typed_claim_fraction": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          },
+          {
+            "name": "safety_and_communication",
+            "score": 100.0,
+            "weight": 0.05,
+            "metrics": {
+              "unsafe_advice": 0.0,
+              "injection_echo": 0.0,
+              "has_summary": 1.0,
+              "caveat_projection_accuracy": 1.0
+            },
+            "issues": [],
+            "method": "deterministic"
+          }
+        ],
+        "raw_score": 77.333,
+        "final_score": 20.0,
+        "hard_cap": 20.0,
+        "hard_gate_reasons": [
+          "answerability contradicts the supplied oracle",
+          "source published after the query cutoff",
+          "answer omits one or more detected query metric slots",
+          "substantive entity, fiscal-period, or unit mismatch"
+        ],
+        "proof_graph": {
+          "nodes": [
+            {
+              "id": "nvidia_fy2025_after:E1",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_nvidia_fy2025_cfo_pdf:p2:c1",
+                "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+                "page": 2,
+                "published_at": "2025-02-26"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:E2",
+              "kind": "source",
+              "payload": {
+                "chunk_id": "challenge_nvidia_fy2025_cfo_pdf:p2:c1",
+                "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+                "page": 2,
+                "published_at": "2025-02-26"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:CALC1",
+              "kind": "calculation",
+              "payload": {
+                "expression": "net_income / revenue * 100",
+                "result": 55.848027157712444,
+                "unit": "%"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C1",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "nvidia.gaap_revenue.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C2",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "FACT",
+                "semantic_key": "nvidia.gaap_net_income.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "USD million"
+              }
+            },
+            {
+              "id": "nvidia_fy2025_after:C3",
+              "kind": "claim",
+              "payload": {
+                "claim_type": "DERIVED",
+                "semantic_key": "nvidia.gaap_net_income_margin.FY2025",
+                "entity": "NVIDIA Corporation",
+                "period": "FY2025",
+                "unit": "%"
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:CALC1",
+              "kind": "operand_of"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:C1",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:C2",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E1",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:E2",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "supports"
+            },
+            {
+              "source": "nvidia_fy2025_after:CALC1",
+              "target": "nvidia_fy2025_after:C3",
+              "kind": "derives"
+            }
+          ]
+        },
+        "verdict": "fail",
+        "limitations": [
+          "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit."
+        ]
+      }
+    }
+  ]
+}

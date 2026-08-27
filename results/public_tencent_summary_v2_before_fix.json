@@ -1,0 +1,67 @@
+{
+  "before_publication": {
+    "answerability": "unanswerable",
+    "summary": "As of 2025-12-31, Tencent Holdings Limited FY2025 full-year revenues, profit attributable to equity holders, and derived profit margin are not disclosed in provided evidence (only FY2024 annual and H1 2025 interim data). Guessing refused; these are unknown.",
+    "score": 55.0,
+    "hard_gates": [
+      "material numeric execution or source-leaf error"
+    ],
+    "excluded_documents": [
+      {
+        "document_id": "tencent_2025_annual",
+        "title": "Tencent Holdings Limited Annual Report 2025",
+        "published_at": "2026-04-09",
+        "reason": "published after cutoff 2025-12-31"
+      }
+    ],
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "dfec3449d468472679badf7c62527c8261b6725750f7adb0f2f50b78c6a99d1c",
+      "latency_seconds": 75.311,
+      "usage": {
+        "prompt_tokens": 2208,
+        "completion_tokens": 6041,
+        "total_tokens": 8249,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4972
+        }
+      },
+      "request_id_sha256": "2df56ad64d589679ac1e3e7887bb6b09ebbd02fdbfcc6beb2a922ce0143c3ddb",
+      "attempts": 1,
+      "reasoning_effort": "high"
+    }
+  },
+  "after_publication": {
+    "answerability": "answerable",
+    "summary": "As of 2026-04-10, Tencent Holdings Limited FY2025 full-year revenues were RMB751,766 million. IFRS profit attributable to equity holders was RMB224.8 billion (approx RMB224,800 million), and non-IFRS profit was RMB259,626 million. Derived IFRS profit margin was 29.91% and non-IFRS profit margin was 34.56%. Figures from annual report published 2026-04-09.",
+    "score": 55.0,
+    "hard_gates": [
+      "material numeric execution or source-leaf error"
+    ],
+    "excluded_documents": [],
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "9c86684161c2a3155f66fb369dff729e033669e72b5442a487a0bcea8aadbf9f",
+      "latency_seconds": 187.765,
+      "usage": {
+        "prompt_tokens": 2104,
+        "completion_tokens": 7408,
+        "total_tokens": 9512,
+        "prompt_tokens_details": {
+          "cached_tokens": 1984
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5990
+        }
+      },
+      "request_id_sha256": "dc8a01d49f2f62586744df2496265a9e1da5b07897b8e056be9a1a1bc0416afa",
+      "attempts": 2,
+      "reasoning_effort": "high"
+    }
+  }
+}

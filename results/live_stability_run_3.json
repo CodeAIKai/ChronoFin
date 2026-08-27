@@ -1,0 +1,298 @@
+{
+  "query": {
+    "question": "截至2025-12-31，云舟科技FY2024收入、净利润及净利率是多少？并说明主要驱动与风险。",
+    "as_of_date": "2025-12-31",
+    "entity": "云舟科技",
+    "requested_period": "FY2024",
+    "language": "zh-CN"
+  },
+  "answerability": "answerable",
+  "executive_summary": "截至2025-12-31，云舟科技FY2024营业收入1,200百万元，归属于股东净利润144百万元，净利率12%（派生）。收入增长主要驱动为云订阅客户数量增加及平均客单价提升；风险为前五大客户贡献48%收入，客户集中度较高可能导致收入波动。",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "云舟科技2024财年营业收入为1,200百万元",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "FY2024",
+      "unit": "百万元",
+      "known_at": "2025-03-18",
+      "value": 1200.0,
+      "evidence_ids": [
+        "E1"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.revenue.FY2024"
+    },
+    {
+      "id": "C2",
+      "text": "云舟科技2024财年归属于股东的净利润为144百万元",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "FY2024",
+      "unit": "百万元",
+      "known_at": "2025-03-18",
+      "value": 144.0,
+      "evidence_ids": [
+        "E2"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.net_profit.FY2024"
+    },
+    {
+      "id": "C3",
+      "text": "云舟科技2024财年净利率为12%",
+      "claim_type": "DERIVED",
+      "entity": "云舟科技",
+      "period": "FY2024",
+      "unit": "%",
+      "known_at": "2025-03-18",
+      "value": 12.0,
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "calculation_id": "CALC1",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.net_margin.FY2024"
+    },
+    {
+      "id": "C4",
+      "text": "管理层表示，云订阅客户数量增加以及平均客单价提升，是 2024 财年收入增长的主要驱动因素。",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "FY2024",
+      "unit": "None",
+      "known_at": "2025-03-18",
+      "value": null,
+      "evidence_ids": [
+        "E3"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.revenue_driver.FY2024"
+    },
+    {
+      "id": "C5",
+      "text": "前五大客户贡献了2024财年收入的48%",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "FY2024",
+      "unit": "%",
+      "known_at": "2025-03-18",
+      "value": 48.0,
+      "evidence_ids": [
+        "E4"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.customer_concentration.FY2024"
+    },
+    {
+      "id": "C6",
+      "text": "客户集中度较高可能导致收入波动风险",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "FY2024",
+      "unit": "None",
+      "known_at": "2025-03-18",
+      "value": null,
+      "evidence_ids": [
+        "E4"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.revenue_risk.FY2024"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "chunk_id": "cloud_2024:p1:c1",
+      "document_id": "cloud_2024",
+      "quote": "云舟科技 2024 财年营业收入为 1,200 百万元",
+      "page": 1,
+      "published_at": "2025-03-18",
+      "source_url": ""
+    },
+    {
+      "id": "E2",
+      "chunk_id": "cloud_2024:p1:c2",
+      "document_id": "cloud_2024",
+      "quote": "云舟科技 2024 财年归属于股东的净利润为 144 百万元",
+      "page": 1,
+      "published_at": "2025-03-18",
+      "source_url": ""
+    },
+    {
+      "id": "E3",
+      "chunk_id": "cloud_2024:p2:c4",
+      "document_id": "cloud_2024",
+      "quote": "管理层表示，云订阅客户数量增加以及平均客单价提升，是 2024 财年收入增长的主要驱动因素。",
+      "page": 2,
+      "published_at": "2025-03-18",
+      "source_url": ""
+    },
+    {
+      "id": "E4",
+      "chunk_id": "cloud_2024:p2:c5",
+      "document_id": "cloud_2024",
+      "quote": "前五大客户贡献了 2024 财年收入的 48%，客户集中度较高可能导致收入波动风险。",
+      "page": 2,
+      "published_at": "2025-03-18",
+      "source_url": ""
+    },
+    {
+      "id": "E5",
+      "chunk_id": "cloud_2024:p1:c3",
+      "document_id": "cloud_2024",
+      "quote": "本报告中的金额除特别说明外均以人民币百万元列示，财年截止日为 2024 年 12 月 31 日。",
+      "page": 1,
+      "published_at": "2025-03-18",
+      "source_url": ""
+    }
+  ],
+  "calculations": [
+    {
+      "id": "CALC1",
+      "expression": "net_profit_2024 / revenue_2024 * 100",
+      "result": 12.0,
+      "unit": "%",
+      "operands": [
+        {
+          "name": "net_profit_2024",
+          "value": 144.0,
+          "unit": "百万元",
+          "evidence_ids": [
+            "E2"
+          ]
+        },
+        {
+          "name": "revenue_2024",
+          "value": 1200.0,
+          "unit": "百万元",
+          "evidence_ids": [
+            "E1"
+          ]
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "金额除特别说明外均以人民币百万元列示，财年截止日为2024年12月31日（据cloud_2024:p1:c3）"
+  ],
+  "excluded_documents": [
+    {
+      "document_id": "cloud_2025_annual",
+      "title": "云舟科技 2025 年年度报告（合成；截止日后的诱饵）",
+      "published_at": "2026-03-20",
+      "reason": "published after cutoff 2025-12-31"
+    }
+  ],
+  "provenance": {
+    "schema_warnings": [],
+    "prompt_version": "chronofin-answer-v1.2",
+    "temporal_filter": true,
+    "eligible_document_ids": [
+      "cloud_2024",
+      "cloud_2025_h1"
+    ],
+    "retrieved_chunk_ids": [
+      "cloud_2024:p2:c4",
+      "cloud_2025_h1:p1:c1",
+      "cloud_2024:p1:c2",
+      "cloud_2024:p1:c3",
+      "cloud_2024:p2:c5",
+      "cloud_2024:p1:c1",
+      "cloud_2025_h1:p2:c3",
+      "cloud_2025_h1:p1:c2",
+      "cloud_2024:p2:c6",
+      "cloud_2025_h1:p2:c4"
+    ],
+    "retrieval_scores": [
+      {
+        "chunk_id": "cloud_2024:p2:c4",
+        "score": 22.890638,
+        "lexical_score": 19.453138,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p1:c1",
+        "score": 17.182746,
+        "lexical_score": 15.307746,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p1:c2",
+        "score": 16.462406,
+        "lexical_score": 13.024906,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "cloud_2024:p1:c3",
+        "score": 15.558978,
+        "lexical_score": 12.121478,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "cloud_2024:p2:c5",
+        "score": 13.441873,
+        "lexical_score": 10.004373,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "cloud_2024:p1:c1",
+        "score": 12.943077,
+        "lexical_score": 9.505577,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p2:c3",
+        "score": 9.851804,
+        "lexical_score": 7.976804,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p1:c2",
+        "score": 9.043804,
+        "lexical_score": 7.168804,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p2:c6",
+        "score": 4.155806,
+        "lexical_score": 0.718306,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p2:c4",
+        "score": 2.659086,
+        "lexical_score": 0.784086,
+        "metadata_score": 1.5
+      }
+    ],
+    "llm": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "a5d5d1b9ea0fc69062e04e3936aec6669fe2f66910191ff725968d66e23917e4",
+      "latency_seconds": 51.036,
+      "usage": {
+        "prompt_tokens": 1972,
+        "completion_tokens": 5895,
+        "total_tokens": 7867,
+        "prompt_tokens_details": {
+          "cached_tokens": 1856
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4687
+        }
+      },
+      "request_id_sha256": "76271582bcdedd0940ccde7e9b5e544d428aaec6aa5142b9190a8772883549ad",
+      "attempts": 1,
+      "reasoning_effort": "high"
+    },
+    "model_called": true
+  }
+}

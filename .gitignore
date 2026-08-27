@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+.idea/
+.vscode/
+build/
+dist/
+data/cache/
+# Sanitized experiment JSON/HTML under results/ are intentional submission
+# artifacts. API keys are never serialized; only prompts hashes and traces are.

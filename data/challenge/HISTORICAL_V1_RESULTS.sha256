@@ -1,0 +1,5 @@
+# Sealed on 2026-08-27 UTC after broad red-team hardening began.
+# This ledger preserves the already-produced v1 artifacts; it is not claimed
+# to have been committed before their execution.
+dd0337fd20b5d34e2b946f005b3b1ab54fec85c053000f54d3174d9c6f959302  results/postfreeze_challenge_v1.json
+c384b34410ca2d66ee6ecd97d3b5b54031d369e89736af635d1809d6b6dbfa05  results/postfreeze_challenge_v1_after_adapter_fix.json

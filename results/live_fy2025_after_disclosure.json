@@ -1,0 +1,237 @@
+{
+  "query": {
+    "question": "截至2026-03-21，云舟科技FY2025全年收入、净利润和净利率是多少？",
+    "as_of_date": "2026-03-21",
+    "entity": "云舟科技",
+    "requested_period": "FY2025",
+    "language": "zh-CN"
+  },
+  "answerability": "answerable",
+  "executive_summary": "截至2026-03-21，云舟科技FY2025全年营业收入为1,680百万元，归属于股东的净利润为252百万元，净利率（派生）为15%。",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "云舟科技FY2025营业收入为1,680百万元",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "FY2025",
+      "unit": "百万元",
+      "known_at": "2026-03-20",
+      "evidence_ids": [
+        "E1"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.revenue.FY2025"
+    },
+    {
+      "id": "C2",
+      "text": "云舟科技FY2025归属于股东的净利润为252百万元",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "FY2025",
+      "unit": "百万元",
+      "known_at": "2026-03-20",
+      "evidence_ids": [
+        "E2"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.net_profit.FY2025"
+    },
+    {
+      "id": "C3",
+      "text": "云舟科技FY2025净利率为15%",
+      "claim_type": "DERIVED",
+      "entity": "云舟科技",
+      "period": "FY2025",
+      "unit": "%",
+      "known_at": "2026-03-20",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "calculation_id": "CALC1",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.net_margin.FY2025"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "chunk_id": "cloud_2025_annual:p1:c1",
+      "document_id": "cloud_2025_annual",
+      "quote": "云舟科技 2025 财年营业收入为 1,680 百万元",
+      "page": 1,
+      "published_at": "2026-03-20",
+      "source_url": ""
+    },
+    {
+      "id": "E2",
+      "chunk_id": "cloud_2025_annual:p1:c2",
+      "document_id": "cloud_2025_annual",
+      "quote": "云舟科技 2025 财年归属于股东的净利润为 252 百万元",
+      "page": 1,
+      "published_at": "2026-03-20",
+      "source_url": ""
+    },
+    {
+      "id": "E3",
+      "chunk_id": "cloud_2025_annual:p1:c3",
+      "document_id": "cloud_2025_annual",
+      "quote": "本年度报告于 2026 年 3 月 20 日对外发布。",
+      "page": 1,
+      "published_at": "2026-03-20",
+      "source_url": ""
+    }
+  ],
+  "calculations": [
+    {
+      "id": "CALC1",
+      "expression": "net_profit_2025 / revenue_2025 * 100",
+      "result": 15.0,
+      "unit": "%",
+      "operands": [
+        {
+          "name": "revenue_2025",
+          "value": 1680.0,
+          "unit": "百万元",
+          "evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "name": "net_profit_2025",
+          "value": 252.0,
+          "unit": "百万元",
+          "evidence_ids": [
+            "E2"
+          ]
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "净利润采用归属于股东的净利润口径；金额单位均为人民币百万元；净利率=归属于股东净利润/营业收入*100%，为派生计算；FY2025财年截止日未直接披露但参照FY2024年报为12月31日。"
+  ],
+  "excluded_documents": [],
+  "provenance": {
+    "schema_warnings": [],
+    "prompt_version": "chronofin-answer-v1.1",
+    "temporal_filter": true,
+    "eligible_document_ids": [
+      "cloud_2024",
+      "cloud_2025_annual",
+      "cloud_2025_h1"
+    ],
+    "retrieved_chunk_ids": [
+      "cloud_2025_h1:p1:c1",
+      "cloud_2025_annual:p1:c2",
+      "cloud_2024:p1:c2",
+      "cloud_2025_h1:p1:c2",
+      "cloud_2025_annual:p1:c1",
+      "cloud_2024:p1:c1",
+      "cloud_2024:p2:c4",
+      "cloud_2025_annual:p1:c3",
+      "cloud_2024:p2:c5",
+      "cloud_2025_h1:p2:c3",
+      "cloud_2024:p1:c3",
+      "cloud_2025_h1:p2:c4"
+    ],
+    "retrieval_scores": [
+      {
+        "chunk_id": "cloud_2025_h1:p1:c1",
+        "score": 17.232555,
+        "lexical_score": 15.357555,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_annual:p1:c2",
+        "score": 16.511906,
+        "lexical_score": 13.074406,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "cloud_2024:p1:c2",
+        "score": 14.365753,
+        "lexical_score": 12.490753,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p1:c2",
+        "score": 13.629111,
+        "lexical_score": 11.754111,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_annual:p1:c1",
+        "score": 12.99585,
+        "lexical_score": 9.55835,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "cloud_2024:p1:c1",
+        "score": 10.795332,
+        "lexical_score": 8.920332,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p2:c4",
+        "score": 7.493617,
+        "lexical_score": 5.618617,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_annual:p1:c3",
+        "score": 6.370921,
+        "lexical_score": 2.933421,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "cloud_2024:p2:c5",
+        "score": 6.277622,
+        "lexical_score": 4.402622,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p2:c3",
+        "score": 6.176074,
+        "lexical_score": 4.301074,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p1:c3",
+        "score": 3.468158,
+        "lexical_score": 1.593158,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p2:c4",
+        "score": 2.7199,
+        "lexical_score": 0.8449,
+        "metadata_score": 1.5
+      }
+    ],
+    "llm": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "2311996fecaeba07c7be1e6c308824fd5eba247a978b5766f2106f4feaa9bd96",
+      "latency_seconds": 31.748,
+      "usage": {
+        "prompt_tokens": 2243,
+        "completion_tokens": 3335,
+        "total_tokens": 5578,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2626
+        }
+      },
+      "request_id_sha256": "660a8d57ceba17fea92f372b55581be93308155352efed20cebadf26b75c424a",
+      "attempts": 1,
+      "reasoning_effort": "high"
+    },
+    "model_called": true
+  }
+}

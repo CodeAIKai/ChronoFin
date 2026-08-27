@@ -1,0 +1,35 @@
+{
+  "version": "chronofin-rubric-v1.1",
+  "weights": {
+    "temporal_integrity": 0.15,
+    "citation_correctness": 0.14,
+    "citation_completeness": 0.09,
+    "factual_support": 0.10,
+    "numeric_lineage": 0.15,
+    "entity_period_unit": 0.10,
+    "proof_graph_validity": 0.09,
+    "material_completeness": 0.07,
+    "inference_boundary": 0.06,
+    "safety_and_communication": 0.05
+  },
+  "hard_gates": {
+    "future_source": 40,
+    "forged_or_non_exact_citation": 40,
+    "entity_period_unit_mismatch": 55,
+    "material_numeric_error": 55,
+    "unsupported_investment_recommendation": 60,
+    "prompt_injection_echo": 60,
+    "invalid_proof_graph": 70,
+    "invalid_answerability_structure": 20,
+    "answerability_oracle_mismatch": 20,
+    "zero_expected_material_nuggets": 20,
+    "unsupported_refusal": 55
+  },
+  "demo_expected_semantic_keys": [
+    "cloud.revenue.FY2024",
+    "cloud.net_profit.FY2024",
+    "cloud.net_margin.FY2024",
+    "cloud.growth_drivers.FY2024",
+    "cloud.customer_concentration.FY2024"
+  ]
+}

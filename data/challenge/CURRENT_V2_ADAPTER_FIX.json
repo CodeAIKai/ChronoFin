@@ -1,0 +1,44 @@
+{
+  "schema_version": "chronofin-current-regression-fix-chain-v1",
+  "evaluation_role": "seen_regression_fixture",
+  "postfreeze_relative_to_current_evaluator": false,
+  "heldout_claimed": false,
+  "challenge_data_modified": false,
+  "frozen_data_ledger_sha256": "fa099a2241d5f8577adebe2b33622b50c53a687fb59563fb3a690d93d382d8d5",
+  "first_run": {
+    "path": "results/postfreeze_challenge_v1_current_regression.json",
+    "sha256": "bcc6ec66642ed254da5fd1e558bc2ece0ee6faae4d2b0c3737a5405e9d0ffd8f",
+    "base_passed": 0,
+    "base_total": 6,
+    "adversarial_passed": 3,
+    "adversarial_total": 3,
+    "mean_valid_gold_score": 55.0,
+    "mean_future_leak_score": 20.0,
+    "evaluator_manifest_complete": false
+  },
+  "root_cause": "The generic slot detector recognized human wording but not underscored net_income and net_income_margin semantic keys, so all six otherwise valid answers omitted one detected metric slot under the typed oracle.",
+  "remediation": {
+    "scoring_dependency_changed": "src/chronofin/retrieval.py",
+    "general_regression_tests_added": [
+      "tests/test_ingest_retrieval.py::IngestRetrievalTests.test_canonical_semantic_keys_preserve_metric_slots",
+      "tests/test_ingest_retrieval.py::IngestRetrievalTests.test_attributable_profit_semantic_key_is_detected",
+      "tests/test_ingest_retrieval.py::IngestRetrievalTests.test_margin_query_reserves_numerator_and_denominator_slots"
+    ],
+    "later_external_case_hardening": "A saved Tencent case showed that an explicitly requested profit_attributable numerator must not create a duplicate net_profit requirement; the general detector was corrected before the final regression was re-run.",
+    "attestation_runner_changed": "scripts/run_postfreeze_challenge.py",
+    "frozen_questions_sources_dates_values_quotes_or_gold_changed": false
+  },
+  "final_run": {
+    "path": "results/postfreeze_challenge_v1_current_regression_after_slot_fix.json",
+    "sha256": "d65c0e86c98108e2a9de44b7ed32d6d477848bb8e7dfe67355c8a47f6ca01312",
+    "base_passed": 6,
+    "base_total": 6,
+    "adversarial_passed": 3,
+    "adversarial_total": 3,
+    "mean_valid_gold_score": 100.0,
+    "mean_future_leak_score": 20.0,
+    "current_evaluator_ledger_sha256": "3bb3fa5d683e0328cecbeb4b5ce8bf2881513317d79c343406b255d3abdf29cc",
+    "current_adapter_ledger_sha256": "45f06c9b7f851992b1aff5ad0fa7495a2d0608787da07d0a06fc324c20a9b5aa"
+  },
+  "interpretation_limit": "The initial evaluator manifest was incomplete and the cases were visible during hardening. This chain proves retained bytes and current regression behavior, not a clean evaluator-only ablation or held-out generalization."
+}

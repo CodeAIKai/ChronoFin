@@ -1,0 +1,6 @@
+# Frozen on 2026-08-26 UTC before the first evaluator run.
+# AI-curated; non-human; non-statistical; not represented as hidden held-out data.
+9f7a57883c4f9a38ffba33f7a5aa86faef7eeabdb0c20d05a6c9537597be373e  data/challenge/challenge_v1.json
+b626d98fc76bafe4a7900523674ee8ac44640f64450beccbc9ab510f5d4967be  data/challenge/source_excerpts/apple_sec_xbrl_fy2024.md
+ec5dfec21939ceebef048b543de6c633204d6d961d878fe046b8f99e7670faf2  data/challenge/source_excerpts/microsoft_ir_html_fy2025.md
+400e21c42d1b7e005290d63522a9d027f67b2349bc0ee29eb24458dd28160338  data/challenge/source_excerpts/nvidia_cfo_pdf_fy2025.md

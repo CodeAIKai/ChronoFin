@@ -1,0 +1,8 @@
+{
+  "experiment": "public_tencent_v1",
+  "status": "failed",
+  "stage": "before_publication",
+  "attempts": 4,
+  "error": "Hy3 responses contained no complete JSON object under max_tokens=6000",
+  "diagnosis": "reasoning/output budget exhaustion on real long-document context"
+}

@@ -1,0 +1,41 @@
+{
+  "dataset": "ChronoFin synthetic point-in-time demo v1",
+  "license": "CC0-1.0",
+  "notice": "All company names and figures are synthetic; do not use for investment decisions.",
+  "documents": [
+    {
+      "id": "cloud_2024",
+      "title": "云舟科技 2024 年年度报告（合成）",
+      "entity": "云舟科技",
+      "published_at": "2025-03-18",
+      "period": "FY2024",
+      "path": "cloud_2024.md",
+      "source_type": "synthetic_official_filing",
+      "currency": "CNY",
+      "unit": "百万元"
+    },
+    {
+      "id": "cloud_2025_h1",
+      "title": "云舟科技 2025 年半年度报告（合成）",
+      "entity": "云舟科技",
+      "published_at": "2025-08-25",
+      "period": "H1 2025",
+      "path": "cloud_2025_h1.md",
+      "source_type": "synthetic_official_filing",
+      "currency": "CNY",
+      "unit": "百万元"
+    },
+    {
+      "id": "cloud_2025_annual",
+      "title": "云舟科技 2025 年年度报告（合成；截止日后的诱饵）",
+      "entity": "云舟科技",
+      "published_at": "2026-03-20",
+      "period": "FY2025",
+      "path": "cloud_2025_annual.md",
+      "source_type": "synthetic_official_filing",
+      "currency": "CNY",
+      "unit": "百万元"
+    }
+  ]
+}
+

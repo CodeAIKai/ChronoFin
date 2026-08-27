@@ -1,0 +1,486 @@
+{
+  "experiment_version": "offline-v1",
+  "data": "CC0 synthetic financial reports; no human labels claimed",
+  "quality_tiers": {
+    "good": {
+      "score": 100.0,
+      "verdict": "excellent",
+      "hard_cap": null
+    },
+    "medium": {
+      "score": 55.0,
+      "verdict": "fail",
+      "hard_cap": 55.0
+    },
+    "bad": {
+      "score": 40.0,
+      "verdict": "fail",
+      "hard_cap": 40.0
+    }
+  },
+  "contrast_evaluator": {
+    "base_score": 100.0,
+    "paired_discrimination_accuracy": 1.0,
+    "invariance_violation_rate": 0.0,
+    "severity_drop_spearman": 0.423555583827871,
+    "results": [
+      {
+        "name": "forged_quote",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 40.0,
+        "score_drop": 60.0,
+        "detected": true,
+        "hard_cap": 40.0
+      },
+      {
+        "name": "citation_metadata_forgery",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 40.0,
+        "score_drop": 60.0,
+        "detected": true,
+        "hard_cap": 40.0
+      },
+      {
+        "name": "future_leak",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 40.0,
+        "score_drop": 60.0,
+        "detected": true,
+        "hard_cap": 40.0
+      },
+      {
+        "name": "known_at_mismatch",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 40.0,
+        "score_drop": 60.0,
+        "detected": true,
+        "hard_cap": 40.0
+      },
+      {
+        "name": "missing_known_at",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 40.0,
+        "score_drop": 60.0,
+        "detected": true,
+        "hard_cap": 40.0
+      },
+      {
+        "name": "wrong_entity",
+        "severity": 2,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "wrong_period",
+        "severity": 2,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "claim_text_wrong_entity",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "claim_text_wrong_period",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "claim_polarity_reversal",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "wrong_query_entity",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "wrong_query_period",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "wrong_query_metric",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "wrong_unit",
+        "severity": 2,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "wrong_fact_unit",
+        "severity": 2,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "wrong_operand_unit",
+        "severity": 2,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "calculation_error",
+        "severity": 2,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "claim_text_numeric_error",
+        "severity": 2,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "extraneous_claim_number",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "chinese_numeral_error",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "summary_numeric_error",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "summary_unsupported_claim",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "missing_citation",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "prompt_injection",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "caveat_prompt_injection",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "caveat_investment_advice",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "imperative_investment_advice",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "false_caveat_assertion",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 55.0,
+        "score_drop": 45.0,
+        "detected": true,
+        "hard_cap": 55.0
+      },
+      {
+        "name": "empty_answer",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "affirmative_unknown_claim",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "blanket_refusal",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "incorrect_refusal",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "irrelevant_future_refusal",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "unrelated_negative_refusal",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "cross_clause_negative_refusal",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "available_source_future_refusal",
+        "severity": 3,
+        "label_preserving": false,
+        "base_score": 100.0,
+        "mutated_score": 20.0,
+        "score_drop": 80.0,
+        "detected": true,
+        "hard_cap": 20.0
+      },
+      {
+        "name": "claim_order",
+        "severity": 0,
+        "label_preserving": true,
+        "base_score": 100.0,
+        "mutated_score": 100.0,
+        "score_drop": 0.0,
+        "detected": true,
+        "hard_cap": null
+      },
+      {
+        "name": "format_whitespace",
+        "severity": 0,
+        "label_preserving": true,
+        "base_score": 100.0,
+        "mutated_score": 100.0,
+        "score_drop": 0.0,
+        "detected": true,
+        "hard_cap": null
+      }
+    ]
+  },
+  "causal_system_oracle": {
+    "mutated_evidence_ids": [
+      "E2"
+    ],
+    "descendant_semantic_keys": [
+      "cloud.net_margin.FY2024",
+      "cloud.net_profit.FY2024"
+    ],
+    "causal_key_response": 1.0,
+    "locality": 1.0,
+    "causal_fidelity": 1.0,
+    "expected_values": {
+      "cloud.net_profit.FY2024": 180.0,
+      "cloud.net_margin.FY2024": 15.0
+    },
+    "observed_values": {
+      "cloud.net_profit.FY2024": 180.0,
+      "cloud.net_margin.FY2024": 15.0
+    }
+  },
+  "point_in_time_ablation": {
+    "query": {
+      "question": "云舟科技 FY2025 全年净利润是多少？",
+      "as_of_date": "2025-12-31",
+      "entity": "云舟科技",
+      "requested_period": "FY2025",
+      "language": "zh-CN"
+    },
+    "strict_future_leak_count": 0,
+    "naive_future_leak_count": 3,
+    "strict_excluded_documents": [
+      {
+        "document_id": "cloud_2025_annual",
+        "title": "云舟科技 2025 年年度报告（合成；截止日后的诱饵）",
+        "published_at": "2026-03-20",
+        "reason": "published after cutoff 2025-12-31"
+      }
+    ],
+    "naive_retrieved_future_chunk_ids": [
+      "cloud_2025_annual:p1:c2",
+      "cloud_2025_annual:p1:c1",
+      "cloud_2025_annual:p1:c3"
+    ]
+  },
+  "repeat_consistency": {
+    "runs": 20,
+    "scores": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "range": 0.0,
+    "exact_agreement": true,
+    "scope": "deterministic evaluation layer only"
+  },
+  "claims_not_made": [
+    "The lexical diagnostic is not semantic entailment.",
+    "Deterministic repeat agreement is not human-human agreement.",
+    "Synthetic-case performance is not evidence of production investment accuracy."
+  ]
+}

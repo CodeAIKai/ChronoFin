@@ -1,0 +1,142 @@
+{
+  "runs": 3,
+  "model": "hy3",
+  "per_claim": {
+    "C1": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": true
+    },
+    "C2": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": true
+    },
+    "C3": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "partial"
+      ],
+      "exact_agreement": false
+    },
+    "C4": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "partial"
+      ],
+      "exact_agreement": false
+    },
+    "C5": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": true
+    }
+  },
+  "claim_exact_agreement_rate": 0.6,
+  "supported_verdict_rate": 0.8666666666666667,
+  "semantic_augmented_scores": [
+    100.0,
+    100.0,
+    98.0
+  ],
+  "score_population_std": 0.9428090415820634,
+  "traces": [
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "aa3d2afcee7c5c6f074ec2604e1de18d6b7e9fc69d039a5f690092092d341d4b",
+      "latency_seconds": 19.786,
+      "usage": {
+        "prompt_tokens": 1607,
+        "completion_tokens": 1829,
+        "total_tokens": 3436,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1574
+        }
+      },
+      "request_id_sha256": "1054deb2892eb596819ca7d21967658664b17733d3564afde5044a26778251f8",
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "reasons": {
+        "C1": "引文表显示2025营收751,766 RMB million，实体期间单位一致",
+        "C2": "引文显示2025非IFRS归母利润259,626 RMB million，一致",
+        "C3": "引文RMB224.8 billion经计算*1000得224800百万，期间实体一致",
+        "C4": "计算式224800/751766*100=29.9029%，引文支持营收与利润",
+        "C5": "计算式259626/751766*100=34.5355%，引文支持营收与非IFRS利润"
+      }
+    },
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "aa3d2afcee7c5c6f074ec2604e1de18d6b7e9fc69d039a5f690092092d341d4b",
+      "latency_seconds": 19.025,
+      "usage": {
+        "prompt_tokens": 1607,
+        "completion_tokens": 1842,
+        "total_tokens": 3449,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1585
+        }
+      },
+      "request_id_sha256": "edbc7d8921fca5ffeff00f72982ea912eef892ca5528ca5aa96cf7eabc482aaf",
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "reasons": {
+        "C1": "Evidence table page4 shows FY2025 revenues 751,766 RMB million matching claim.",
+        "C2": "Evidence page8 shows Non-IFRS profit 259,626 RMB million for 2025.",
+        "C3": "Quote RMB224.8 billion converted via verified calc *1000 gives 224,800 million.",
+        "C4": "Verified calc 224800/751766*100=29.9029% using evidence amounts.",
+        "C5": "Verified calc 259626/751766*100=34.5355% using evidence amounts."
+      }
+    },
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "aa3d2afcee7c5c6f074ec2604e1de18d6b7e9fc69d039a5f690092092d341d4b",
+      "latency_seconds": 29.496,
+      "usage": {
+        "prompt_tokens": 1607,
+        "completion_tokens": 2496,
+        "total_tokens": 4103,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2231
+        }
+      },
+      "request_id_sha256": "abbebee9894186d23c75e7bcf9368d99ec391b9320a038336b256541803686f3",
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "reasons": {
+        "C1": "引文表直接列示2025营收751,766 RMB million，实体期间单位一致",
+        "C2": "引文列示2025 non-IFRS profit 259,626 RMB million，完全匹配",
+        "C3": "引文提供224.8 billion且计算转换数值匹配，但未明确指标为IFRS profit attributable，指标口径缺失",
+        "C4": "营收与224.8 billion引文可计算利润率，但后者未明确为IFRS profit，指标口径缺失",
+        "C5": "引文明确non-IFRS profit与revenue，计算式验证利润率34.5355%匹配"
+      }
+    }
+  ],
+  "limitations": [
+    "The judge model family is the same as the answer model, so self-preference may remain.",
+    "Repeat agreement is not human-expert agreement.",
+    "Semantic judgments cannot override deterministic time, identity, or arithmetic gates."
+  ]
+}

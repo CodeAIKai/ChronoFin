@@ -1,0 +1,148 @@
+{
+  "schema_version": "chronofin-historical-hy3-semantic-stability-v1",
+  "evaluation_scope": "historical_answer_projection",
+  "current_answer_projection_claimed": false,
+  "answer_binding_status": "historical prompt hash retained; prior answer bytes were not separately sealed",
+  "runs": 3,
+  "model": "hy3",
+  "per_claim": {
+    "C1": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": true
+    },
+    "C2": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": true
+    },
+    "C3": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": true
+    },
+    "C4": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": true
+    },
+    "C5": {
+      "verdicts": [
+        "supported",
+        "supported",
+        "supported"
+      ],
+      "exact_agreement": true
+    }
+  },
+  "claim_exact_agreement_rate": 1.0,
+  "supported_verdict_rate": 1.0,
+  "semantic_augmented_scores": [
+    100.0,
+    100.0,
+    100.0
+  ],
+  "score_population_std": 0.0,
+  "traces": [
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "e9129217ddfb79127a532ec0405c9a3033c6aea23f0f80150a7a6fe90f3bbfa3",
+      "latency_seconds": 22.544,
+      "usage": {
+        "prompt_tokens": 1897,
+        "completion_tokens": 1948,
+        "total_tokens": 3845,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1659
+        }
+      },
+      "request_id_sha256": "1f00554b89a91dc6aacd1ffbff65ccb86bcfcd848125cf0dce510c483f457355",
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "reasons": {
+        "C1": "Evidence table shows Tencent FY2025 Revenues 751,766 RMB'Million, matching entity/period/unit/value.",
+        "C2": "Evidence table shows Non-IFRS profit attributable 259,626 RMB'Million for 2025, exact match.",
+        "C3": "Evidence text states Profit attributable (contextually IFRS vs non-IFRS) RMB224.8 billion for 2025, matches claim.",
+        "C4": "DERIVED calculation verified: 224800/751766*100=29.9029%, evidence provides both inputs.",
+        "C5": "DERIVED calculation verified: 259626/751766*100=34.5355%, evidence provides both inputs."
+      }
+    },
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "e9129217ddfb79127a532ec0405c9a3033c6aea23f0f80150a7a6fe90f3bbfa3",
+      "latency_seconds": 25.338,
+      "usage": {
+        "prompt_tokens": 1897,
+        "completion_tokens": 2201,
+        "total_tokens": 4098,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1912
+        }
+      },
+      "request_id_sha256": "ff924ba0ad8f91bd30b07a05d4c7c1819b6dc89f981508b820966a2e1a2ce50d",
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "reasons": {
+        "C1": "Evidence table shows FY2025 Revenues 751,766 RMB million for Tencent, matches claim entity/period/unit/currency.",
+        "C2": "Evidence table shows Non-IFRS profit attributable to equity holders 259,626 RMB million for 2025.",
+        "C3": "Evidence text states Profit attributable (contrasted with Non-IFRS) to equity holders RMB224.8 billion for 2025, matches claim.",
+        "C4": "Derived calculation verified by executor: 224800/751766*100=29.9029%, evidence provides both inputs.",
+        "C5": "Derived calculation verified by executor: 259626/751766*100=34.5355%, evidence provides both inputs."
+      }
+    },
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "e9129217ddfb79127a532ec0405c9a3033c6aea23f0f80150a7a6fe90f3bbfa3",
+      "latency_seconds": 36.629,
+      "usage": {
+        "prompt_tokens": 1897,
+        "completion_tokens": 2844,
+        "total_tokens": 4741,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2588
+        }
+      },
+      "request_id_sha256": "4c9de3b1e81484970484cc4b7d631861ae701663bce436eed7557bdf9c02e77b",
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "reasons": {
+        "C1": "Evidence table shows 2025 Revenues 751,766 RMB million matching claim.",
+        "C2": "Evidence table shows Non-IFRS profit attributable 259,626 RMB million matching claim.",
+        "C3": "Evidence text states Profit attributable to equity holders RMB224.8 billion for 2025 matching claim.",
+        "C4": "Calculation verified: 224800/751766*100=29.9029%, inputs from evidence.",
+        "C5": "Calculation verified: 259626/751766*100=34.5355%, inputs from evidence table."
+      }
+    }
+  ],
+  "limitations": [
+    "This run predates the current deterministic visible-text projection and is not claimed as a semantic evaluation of the current answer bytes.",
+    "The historical answer bytes were not separately sealed, so the prompt hash proves repeat-input identity only within the retained traces.",
+    "The judge model family is the same as the answer model, so self-preference may remain.",
+    "Repeat agreement is not human-expert agreement.",
+    "Semantic judgments cannot override deterministic time, identity, or arithmetic gates."
+  ]
+}

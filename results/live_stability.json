@@ -1,0 +1,109 @@
+{
+  "runs": 3,
+  "model": "hy3",
+  "temperature": 0.0,
+  "answerability": [
+    "answerable",
+    "answerable",
+    "answerable"
+  ],
+  "answerability_exact_agreement": true,
+  "scores": [
+    100.0,
+    100.0,
+    100.0
+  ],
+  "score_mean": 100.0,
+  "score_population_std": 0.0,
+  "semantic_key_pairwise_jaccard_mean": 0.888888888888889,
+  "numeric_agreement": {
+    "云舟科技.net_profit.FY2024": {
+      "values": [
+        144.0,
+        144.0,
+        144.0
+      ],
+      "range": 0.0
+    },
+    "云舟科技.net_margin.FY2024": {
+      "values": [
+        12.0,
+        12.0,
+        12.0
+      ],
+      "range": 0.0
+    },
+    "云舟科技.revenue.FY2024": {
+      "values": [
+        1200.0,
+        1200.0,
+        1200.0
+      ],
+      "range": 0.0
+    }
+  },
+  "future_leak_runs": 0,
+  "limitation": "Repeat stability is not human-expert agreement or correctness proof.",
+  "traces": [
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "a5d5d1b9ea0fc69062e04e3936aec6669fe2f66910191ff725968d66e23917e4",
+      "latency_seconds": 51.982,
+      "usage": {
+        "prompt_tokens": 1972,
+        "completion_tokens": 5205,
+        "total_tokens": 7177,
+        "prompt_tokens_details": {
+          "cached_tokens": 1856
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4035
+        }
+      },
+      "request_id_sha256": "ad6572220c798c2b1a4dc99de9f7c6e663b3ad4838817530738a8fb35ac60c7b",
+      "attempts": 1,
+      "reasoning_effort": "high"
+    },
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "a5d5d1b9ea0fc69062e04e3936aec6669fe2f66910191ff725968d66e23917e4",
+      "latency_seconds": 109.338,
+      "usage": {
+        "prompt_tokens": 1972,
+        "completion_tokens": 5535,
+        "total_tokens": 7507,
+        "prompt_tokens_details": {
+          "cached_tokens": 1856
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4472
+        }
+      },
+      "request_id_sha256": "8495d06d62e3910170514526d645b5855545497477a1a21b035f7856e38c6750",
+      "attempts": 2,
+      "reasoning_effort": "high"
+    },
+    {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "a5d5d1b9ea0fc69062e04e3936aec6669fe2f66910191ff725968d66e23917e4",
+      "latency_seconds": 51.036,
+      "usage": {
+        "prompt_tokens": 1972,
+        "completion_tokens": 5895,
+        "total_tokens": 7867,
+        "prompt_tokens_details": {
+          "cached_tokens": 1856
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4687
+        }
+      },
+      "request_id_sha256": "76271582bcdedd0940ccde7e9b5e544d428aaec6aa5142b9190a8772883549ad",
+      "attempts": 1,
+      "reasoning_effort": "high"
+    }
+  ]
+}

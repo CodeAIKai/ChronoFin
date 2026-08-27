@@ -1,0 +1,239 @@
+{
+  "query": {
+    "question": "截至2025-12-31，云舟科技FY2025全年收入、净利润和净利率是多少？",
+    "as_of_date": "2025-12-31",
+    "entity": "云舟科技",
+    "requested_period": "FY2025",
+    "language": "zh-CN"
+  },
+  "answerability": "unanswerable",
+  "executive_summary": "在截止日2025-12-31，证据中未提供云舟科技FY2025全年收入、净利润和净利率数据；仅有的2025年上半年营业收入720百万元、净利润72百万元明确声明不代表2025财年全年结果，因此FY2025全年三项指标均不可知。",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "云舟科技2025年上半年营业收入为720百万元",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "H1 2025",
+      "unit": "百万元",
+      "known_at": "2025-08-25",
+      "evidence_ids": [
+        "E1"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.revenue.H12025"
+    },
+    {
+      "id": "C2",
+      "text": "云舟科技2025年上半年归属于股东的净利润为72百万元",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "H1 2025",
+      "unit": "百万元",
+      "known_at": "2025-08-25",
+      "evidence_ids": [
+        "E1"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.netprofit.H12025"
+    },
+    {
+      "id": "C3",
+      "text": "上述2025年上半年数据仅覆盖截至2025年6月30日止六个月，不代表2025财年全年结果",
+      "claim_type": "FACT",
+      "entity": "云舟科技",
+      "period": "FY2025",
+      "unit": "",
+      "known_at": "2025-08-25",
+      "evidence_ids": [
+        "E2"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "云舟科技.disclosure.FY2025"
+    },
+    {
+      "id": "C4",
+      "text": "截至2025-12-31，云舟科技FY2025全年营业收入未知（证据未提供）",
+      "claim_type": "UNKNOWN",
+      "entity": "云舟科技",
+      "period": "FY2025",
+      "unit": "百万元",
+      "known_at": "2025-08-25",
+      "evidence_ids": [
+        "E2"
+      ],
+      "calculation_id": "",
+      "confidence": 0.0,
+      "semantic_key": "云舟科技.revenue.FY2025"
+    },
+    {
+      "id": "C5",
+      "text": "截至2025-12-31，云舟科技FY2025全年归属于股东的净利润未知（证据未提供）",
+      "claim_type": "UNKNOWN",
+      "entity": "云舟科技",
+      "period": "FY2025",
+      "unit": "百万元",
+      "known_at": "2025-08-25",
+      "evidence_ids": [
+        "E2"
+      ],
+      "calculation_id": "",
+      "confidence": 0.0,
+      "semantic_key": "云舟科技.netprofit.FY2025"
+    },
+    {
+      "id": "C6",
+      "text": "截至2025-12-31，云舟科技FY2025全年净利率未知（证据未提供）",
+      "claim_type": "UNKNOWN",
+      "entity": "云舟科技",
+      "period": "FY2025",
+      "unit": "%",
+      "known_at": "2025-08-25",
+      "evidence_ids": [
+        "E2"
+      ],
+      "calculation_id": "",
+      "confidence": 0.0,
+      "semantic_key": "云舟科技.netmargin.FY2025"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "chunk_id": "cloud_2025_h1:p1:c1",
+      "document_id": "cloud_2025_h1",
+      "quote": "云舟科技 2025 年上半年营业收入为 720 百万元，归属于股东的净利润为 72 百万元。",
+      "page": 1,
+      "published_at": "2025-08-25",
+      "source_url": ""
+    },
+    {
+      "id": "E2",
+      "chunk_id": "cloud_2025_h1:p1:c2",
+      "document_id": "cloud_2025_h1",
+      "quote": "上述数据仅覆盖截至 2025 年 6 月 30 日止六个月，不代表 2025 财年全年结果。",
+      "page": 1,
+      "published_at": "2025-08-25",
+      "source_url": ""
+    }
+  ],
+  "calculations": [],
+  "caveats": [
+    "证据中最新发布日期为2025-08-25的半年度报告，无任何FY2025全年业绩披露；H1数据明确声明不代表全年结果，故拒绝猜测全年收入、净利润及净利率。"
+  ],
+  "excluded_documents": [
+    {
+      "document_id": "cloud_2025_annual",
+      "title": "云舟科技 2025 年年度报告（合成；截止日后的诱饵）",
+      "published_at": "2026-03-20",
+      "reason": "published after cutoff 2025-12-31"
+    }
+  ],
+  "provenance": {
+    "schema_warnings": [],
+    "prompt_version": "chronofin-answer-v1.1",
+    "temporal_filter": true,
+    "eligible_document_ids": [
+      "cloud_2024",
+      "cloud_2025_h1"
+    ],
+    "retrieved_chunk_ids": [
+      "cloud_2025_h1:p1:c1",
+      "cloud_2024:p1:c2",
+      "cloud_2025_h1:p1:c2",
+      "cloud_2024:p1:c1",
+      "cloud_2024:p2:c4",
+      "cloud_2024:p1:c3",
+      "cloud_2024:p2:c5",
+      "cloud_2025_h1:p2:c3",
+      "cloud_2025_h1:p2:c4",
+      "cloud_2024:p2:c6"
+    ],
+    "retrieval_scores": [
+      {
+        "chunk_id": "cloud_2025_h1:p1:c1",
+        "score": 17.232555,
+        "lexical_score": 15.357555,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p1:c2",
+        "score": 14.365753,
+        "lexical_score": 12.490753,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p1:c2",
+        "score": 13.629111,
+        "lexical_score": 11.754111,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p1:c1",
+        "score": 10.795332,
+        "lexical_score": 8.920332,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p2:c4",
+        "score": 7.493617,
+        "lexical_score": 5.618617,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p1:c3",
+        "score": 7.47477,
+        "lexical_score": 5.59977,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p2:c5",
+        "score": 6.277622,
+        "lexical_score": 4.402622,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p2:c3",
+        "score": 6.176074,
+        "lexical_score": 4.301074,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2025_h1:p2:c4",
+        "score": 2.7199,
+        "lexical_score": 0.8449,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "cloud_2024:p2:c6",
+        "score": 2.63516,
+        "lexical_score": 0.76016,
+        "metadata_score": 1.5
+      }
+    ],
+    "llm": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "4a6db2046bcf54ae81a5bc7dcb3c6c55cfe8f1e46d72ab553dfc1e8bd2e2fcfa",
+      "latency_seconds": 59.54,
+      "usage": {
+        "prompt_tokens": 1930,
+        "completion_tokens": 4762,
+        "total_tokens": 6692,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3829
+        }
+      },
+      "request_id_sha256": "c84443eacc76b738cdfd807635b298f428d4dbfb513d700f1f5f6ed3cc14f81c",
+      "attempts": 1,
+      "reasoning_effort": "high"
+    },
+    "model_called": true
+  }
+}

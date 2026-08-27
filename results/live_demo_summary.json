@@ -1,0 +1,72 @@
+{
+  "fy2024_analysis": {
+    "answerability": "answerable",
+    "summary": "截至2025-12-31，云舟科技FY2024营业收入1,200百万元，归属于股东净利润144百万元，净利率12%（派生计算）。主要驱动：云订阅客户数量增加及平均客单价提升；风险：前五大客户贡献48%收入致客户集中度较高可能收入波动。",
+    "score": 100.0,
+    "hard_gates": [],
+    "excluded_documents": [
+      {
+        "document_id": "cloud_2025_annual",
+        "title": "云舟科技 2025 年年度报告（合成；截止日后的诱饵）",
+        "published_at": "2026-03-20",
+        "reason": "published after cutoff 2025-12-31"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1936,
+      "completion_tokens": 4236,
+      "total_tokens": 6172,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3208
+      }
+    }
+  },
+  "fy2025_before_disclosure": {
+    "answerability": "unanswerable",
+    "summary": "在截止日2025-12-31，证据中未提供云舟科技FY2025全年收入、净利润和净利率数据；仅有的2025年上半年营业收入720百万元、净利润72百万元明确声明不代表2025财年全年结果，因此FY2025全年三项指标均不可知。",
+    "score": 55.0,
+    "hard_gates": [
+      "substantive entity, fiscal-period, or unit mismatch"
+    ],
+    "excluded_documents": [
+      {
+        "document_id": "cloud_2025_annual",
+        "title": "云舟科技 2025 年年度报告（合成；截止日后的诱饵）",
+        "published_at": "2026-03-20",
+        "reason": "published after cutoff 2025-12-31"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1930,
+      "completion_tokens": 4762,
+      "total_tokens": 6692,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3829
+      }
+    }
+  },
+  "fy2025_after_disclosure": {
+    "answerability": "answerable",
+    "summary": "截至2026-03-21，云舟科技FY2025全年营业收入为1,680百万元，归属于股东的净利润为252百万元，净利率（派生）为15%。",
+    "score": 100.0,
+    "hard_gates": [],
+    "excluded_documents": [],
+    "usage": {
+      "prompt_tokens": 2243,
+      "completion_tokens": 3335,
+      "total_tokens": 5578,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2626
+      }
+    }
+  }
+}

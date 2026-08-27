@@ -1,0 +1,339 @@
+{
+  "mutation": {
+    "document": "cloud_2024.md",
+    "leaf": "FY2024 net_profit",
+    "before": 144.0,
+    "after": 180.0,
+    "oracle_margin_before": 12.0,
+    "oracle_margin_after": 15.0
+  },
+  "metrics": {
+    "mutated_evidence_ids": [
+      "E2"
+    ],
+    "descendant_semantic_keys": [
+      "云舟科技.net_margin.FY2024",
+      "云舟科技.net_profit.FY2024"
+    ],
+    "causal_key_response": 1.0,
+    "locality": 1.0,
+    "causal_fidelity": 1.0,
+    "expected_values": {
+      "云舟科技.net_profit.FY2024": 180.0,
+      "云舟科技.net_margin.FY2024": 15.0
+    },
+    "observed_values": {
+      "云舟科技.net_profit.FY2024": 180.0,
+      "云舟科技.net_margin.FY2024": 15.0
+    }
+  },
+  "mutated_score": {
+    "dimensions": [
+      {
+        "name": "temporal_integrity",
+        "score": 100.0,
+        "weight": 0.15,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "future_count": 0.0
+        },
+        "issues": [
+          "future evidence: "
+        ],
+        "method": "deterministic"
+      },
+      {
+        "name": "citation_correctness",
+        "score": 100.0,
+        "weight": 0.14,
+        "metrics": {
+          "identity_accuracy": 1.0,
+          "exact_quote_accuracy": 1.0
+        },
+        "issues": [],
+        "method": "deterministic"
+      },
+      {
+        "name": "citation_completeness",
+        "score": 100.0,
+        "weight": 0.09,
+        "metrics": {
+          "claim_completeness": 1.0
+        },
+        "issues": [],
+        "method": "deterministic"
+      },
+      {
+        "name": "factual_support",
+        "score": 100.0,
+        "weight": 0.1,
+        "metrics": {
+          "supported_fraction": 1.0
+        },
+        "issues": [],
+        "method": "lexical_diagnostic_no_entailment_claim"
+      },
+      {
+        "name": "numeric_lineage",
+        "score": 100.0,
+        "weight": 0.15,
+        "metrics": {
+          "execution_accuracy": 1.0,
+          "leaf_binding_accuracy": 1.0,
+          "trace_coverage": 1.0,
+          "unit_consistency": 1.0,
+          "claim_value_accuracy": 1.0
+        },
+        "issues": [],
+        "method": "deterministic"
+      },
+      {
+        "name": "entity_period_unit",
+        "score": 100.0,
+        "weight": 0.1,
+        "metrics": {
+          "entity_period_alignment": 1.0,
+          "claim_calculation_unit": 1.0
+        },
+        "issues": [],
+        "method": "deterministic"
+      },
+      {
+        "name": "proof_graph_validity",
+        "score": 100.0,
+        "weight": 0.09,
+        "metrics": {
+          "issue_count": 0.0
+        },
+        "issues": [],
+        "method": "deterministic"
+      },
+      {
+        "name": "material_completeness",
+        "score": 100.0,
+        "weight": 0.07,
+        "metrics": {
+          "material_coverage": 1.0
+        },
+        "issues": [],
+        "method": "structural_only_no_gold_nuggets"
+      },
+      {
+        "name": "inference_boundary",
+        "score": 100.0,
+        "weight": 0.06,
+        "metrics": {
+          "typed_claim_fraction": 1.0
+        },
+        "issues": [],
+        "method": "deterministic"
+      },
+      {
+        "name": "safety_and_communication",
+        "score": 100.0,
+        "weight": 0.05,
+        "metrics": {
+          "unsafe_advice": 0.0,
+          "injection_echo": 0.0,
+          "has_summary": 1.0
+        },
+        "issues": [],
+        "method": "deterministic"
+      }
+    ],
+    "raw_score": 100.0,
+    "final_score": 100.0,
+    "hard_cap": null,
+    "hard_gate_reasons": [],
+    "proof_graph": {
+      "nodes": [
+        {
+          "id": "E1",
+          "kind": "source",
+          "payload": {
+            "chunk_id": "cloud_2024:p1:c1",
+            "document_id": "cloud_2024",
+            "page": 1,
+            "published_at": "2025-03-18"
+          }
+        },
+        {
+          "id": "E2",
+          "kind": "source",
+          "payload": {
+            "chunk_id": "cloud_2024:p1:c2",
+            "document_id": "cloud_2024",
+            "page": 1,
+            "published_at": "2025-03-18"
+          }
+        },
+        {
+          "id": "E3",
+          "kind": "source",
+          "payload": {
+            "chunk_id": "cloud_2024:p1:c3",
+            "document_id": "cloud_2024",
+            "page": 1,
+            "published_at": "2025-03-18"
+          }
+        },
+        {
+          "id": "E4",
+          "kind": "source",
+          "payload": {
+            "chunk_id": "cloud_2024:p2:c4",
+            "document_id": "cloud_2024",
+            "page": 2,
+            "published_at": "2025-03-18"
+          }
+        },
+        {
+          "id": "E5",
+          "kind": "source",
+          "payload": {
+            "chunk_id": "cloud_2024:p2:c5",
+            "document_id": "cloud_2024",
+            "page": 2,
+            "published_at": "2025-03-18"
+          }
+        },
+        {
+          "id": "CALC1",
+          "kind": "calculation",
+          "payload": {
+            "expression": "net_profit_2024 / revenue_2024 * 100",
+            "result": 15.0,
+            "unit": "%"
+          }
+        },
+        {
+          "id": "C1",
+          "kind": "claim",
+          "payload": {
+            "claim_type": "FACT",
+            "semantic_key": "云舟科技.revenue.FY2024",
+            "entity": "云舟科技",
+            "period": "FY2024",
+            "unit": "百万元"
+          }
+        },
+        {
+          "id": "C2",
+          "kind": "claim",
+          "payload": {
+            "claim_type": "FACT",
+            "semantic_key": "云舟科技.net_profit.FY2024",
+            "entity": "云舟科技",
+            "period": "FY2024",
+            "unit": "百万元"
+          }
+        },
+        {
+          "id": "C3",
+          "kind": "claim",
+          "payload": {
+            "claim_type": "DERIVED",
+            "semantic_key": "云舟科技.net_margin.FY2024",
+            "entity": "云舟科技",
+            "period": "FY2024",
+            "unit": "%"
+          }
+        },
+        {
+          "id": "C4",
+          "kind": "claim",
+          "payload": {
+            "claim_type": "FACT",
+            "semantic_key": "云舟科技.revenue_driver.FY2024",
+            "entity": "云舟科技",
+            "period": "FY2024",
+            "unit": "None"
+          }
+        },
+        {
+          "id": "C5",
+          "kind": "claim",
+          "payload": {
+            "claim_type": "FACT",
+            "semantic_key": "云舟科技.revenue_risk.FY2024",
+            "entity": "云舟科技",
+            "period": "FY2024",
+            "unit": "None"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "E1",
+          "target": "CALC1",
+          "kind": "operand_of"
+        },
+        {
+          "source": "E2",
+          "target": "CALC1",
+          "kind": "operand_of"
+        },
+        {
+          "source": "E1",
+          "target": "C1",
+          "kind": "supports"
+        },
+        {
+          "source": "E2",
+          "target": "C2",
+          "kind": "supports"
+        },
+        {
+          "source": "E1",
+          "target": "C3",
+          "kind": "supports"
+        },
+        {
+          "source": "E2",
+          "target": "C3",
+          "kind": "supports"
+        },
+        {
+          "source": "CALC1",
+          "target": "C3",
+          "kind": "derives"
+        },
+        {
+          "source": "E4",
+          "target": "C4",
+          "kind": "supports"
+        },
+        {
+          "source": "E5",
+          "target": "C5",
+          "kind": "supports"
+        }
+      ]
+    },
+    "verdict": "excellent",
+    "limitations": [
+      "No semantic entailment judge was supplied; factual_support is only a lexical diagnostic.",
+      "No gold nugget set was supplied; material completeness is structural only."
+    ]
+  },
+  "hy3_trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "22ab4db7a9600bf1d2ed91b4a12b76569aac20695b41a7ac0f5461102fe58818",
+    "latency_seconds": 97.889,
+    "usage": {
+      "prompt_tokens": 1972,
+      "completion_tokens": 4635,
+      "total_tokens": 6607,
+      "prompt_tokens_details": {
+        "cached_tokens": 1856
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3518
+      }
+    },
+    "request_id_sha256": "1b65eb6a1ace246fb29dbfdc12354ff83232bb07441e61c90ef29bb0584c970e",
+    "attempts": 2,
+    "reasoning_effort": "high"
+  }
+}

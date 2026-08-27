@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "dataset_id": "chronofin-postfreeze-challenge-v1",
+    "version": "1.0.0",
+    "curation_date": "2026-08-26",
+    "curation_type": "AI-curated from official public disclosures",
+    "core_evaluator_status": "created after evaluator freeze; evaluator code was not changed for this set",
+    "non_claims": [
+      "not human-expert annotated",
+      "not statistically representative",
+      "not hidden test data",
+      "not a statistical held-out estimate"
+    ],
+    "language": "mixed English source terminology and Chinese explanations",
+    "company_count": 3,
+    "base_case_count": 6,
+    "adversarial_case_count": 3,
+    "materialization_spec": "chronofin-postfreeze-answer-v1"
+  },
+  "sources": [
+    {
+      "document_id": "challenge_apple_fy2024_sec_xbrl",
+      "chunk_id": "challenge_apple_fy2024_sec_xbrl:p28:c1",
+      "title": "Apple Inc. 2024 Form 10-K — XBRL presentation table",
+      "entity": "Apple Inc.",
+      "period": "FY2024",
+      "published_at": "2024-11-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/R3.htm",
+      "publication_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/0000320193-24-000123-index.htm",
+      "source_format": "SEC EDGAR XBRL presentation HTML",
+      "snapshot_path": "data/challenge/source_excerpts/apple_sec_xbrl_fy2024.md",
+      "page": 28,
+      "section": "Consolidated Statements of Operations",
+      "currency": "USD",
+      "unit": "USD million",
+      "facts": [
+        {
+          "id": "net_sales",
+          "label": "Net sales",
+          "semantic_key": "apple.net_sales.FY2024",
+          "value": 391035.0,
+          "quote": "Net sales | $ 391,035 | $ 383,285 | $ 394,328"
+        },
+        {
+          "id": "net_income",
+          "label": "Net income",
+          "semantic_key": "apple.gaap_net_income.FY2024",
+          "value": 93736.0,
+          "quote": "Net income | $ 93,736 | $ 96,995 | $ 99,803"
+        }
+      ],
+      "derived": {
+        "semantic_key": "apple.gaap_net_income_margin.FY2024",
+        "value": 23.971255769943866,
+        "display_value": "23.9713",
+        "formula": "net_income / revenue * 100"
+      }
+    },
+    {
+      "document_id": "challenge_microsoft_fy2025_ir_html",
+      "chunk_id": "challenge_microsoft_fy2025_ir_html:p1:c1",
+      "title": "Microsoft FY25 Q4 Income Statements",
+      "entity": "Microsoft Corporation",
+      "period": "FY2025",
+      "published_at": "2025-07-30",
+      "source_url": "https://www.microsoft.com/en-us/Investor/earnings/fy-2025-Q4/income-statements",
+      "publication_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+      "source_format": "issuer IR HTML with XBRL concept labels",
+      "snapshot_path": "data/challenge/source_excerpts/microsoft_ir_html_fy2025.md",
+      "page": 1,
+      "section": "Income Statements",
+      "currency": "USD",
+      "unit": "USD million",
+      "facts": [
+        {
+          "id": "revenue",
+          "label": "Total revenue",
+          "semantic_key": "microsoft.revenue.FY2025",
+          "value": 281724.0,
+          "quote": "Total revenue | 281,724 | 245,122 | 211,915"
+        },
+        {
+          "id": "net_income",
+          "label": "Net income",
+          "semantic_key": "microsoft.gaap_net_income.FY2025",
+          "value": 101832.0,
+          "quote": "Net income | $ 101,832 | $ 88,136 | $ 72,361"
+        }
+      ],
+      "derived": {
+        "semantic_key": "microsoft.gaap_net_income_margin.FY2025",
+        "value": 36.146015248967075,
+        "display_value": "36.1460",
+        "formula": "net_income / revenue * 100"
+      }
+    },
+    {
+      "document_id": "challenge_nvidia_fy2025_cfo_pdf",
+      "chunk_id": "challenge_nvidia_fy2025_cfo_pdf:p2:c1",
+      "title": "NVIDIA CFO Commentary on Fourth Quarter and Fiscal 2025 Results",
+      "entity": "NVIDIA Corporation",
+      "period": "FY2025",
+      "published_at": "2025-02-26",
+      "source_url": "https://investor.nvidia.com/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf",
+      "publication_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025",
+      "source_format": "issuer IR PDF",
+      "snapshot_path": "data/challenge/source_excerpts/nvidia_cfo_pdf_fy2025.md",
+      "page": 2,
+      "section": "Fiscal 2025 Summary — GAAP",
+      "currency": "USD",
+      "unit": "USD million",
+      "facts": [
+        {
+          "id": "revenue",
+          "label": "GAAP Revenue",
+          "semantic_key": "nvidia.gaap_revenue.FY2025",
+          "value": 130497.0,
+          "quote": "Revenue $130,497 $60,922 Up 114%"
+        },
+        {
+          "id": "net_income",
+          "label": "GAAP Net income",
+          "semantic_key": "nvidia.gaap_net_income.FY2025",
+          "value": 72880.0,
+          "quote": "Net income $72,880 $29,760 Up 145%"
+        }
+      ],
+      "derived": {
+        "semantic_key": "nvidia.gaap_net_income_margin.FY2025",
+        "value": 55.848027157712444,
+        "display_value": "55.8480",
+        "formula": "net_income / revenue * 100"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "id": "apple_fy2024_before",
+      "source_document_id": "challenge_apple_fy2024_sec_xbrl",
+      "query": {
+        "question": "截至 2024-10-30，Apple Inc. FY2024 的 Net sales、GAAP Net income 及据此计算的净利率是多少？仅使用当日已公开的官方信息。",
+        "as_of_date": "2024-10-30",
+        "entity": "Apple Inc.",
+        "requested_period": "FY2024",
+        "language": "zh-CN"
+      },
+      "gold": {
+        "answerability": "unanswerable",
+        "executive_summary": "截至 2024-10-30，本挑战登记的 Apple Inc. FY2024 官方完整业绩来源尚未发布，因此应拒绝给出 FY2024 全年 Net sales、GAAP Net income 或净利率。",
+        "expected_values": {},
+        "semantic_keys": [],
+        "must_have_no_evidence": true,
+        "minimum_evaluator_score": 90.0
+      }
+    },
+    {
+      "id": "apple_fy2024_after",
+      "source_document_id": "challenge_apple_fy2024_sec_xbrl",
+      "query": {
+        "question": "截至 2024-11-02，Apple Inc. FY2024 的 Net sales、GAAP Net income 及据此计算的净利率是多少？",
+        "as_of_date": "2024-11-02",
+        "entity": "Apple Inc.",
+        "requested_period": "FY2024",
+        "language": "zh-CN"
+      },
+      "gold": {
+        "answerability": "answerable",
+        "executive_summary": "截至 2024-11-02，Apple Inc. FY2024 Net sales 为 USD 391,035 million，GAAP Net income 为 USD 93,736 million；据此计算净利率为 23.9713%。",
+        "expected_values": {
+          "apple.net_sales.FY2024": 391035.0,
+          "apple.gaap_net_income.FY2024": 93736.0,
+          "apple.gaap_net_income_margin.FY2024": 23.971255769943866
+        },
+        "semantic_keys": [
+          "apple.net_sales.FY2024",
+          "apple.gaap_net_income.FY2024",
+          "apple.gaap_net_income_margin.FY2024"
+        ],
+        "must_have_no_evidence": false,
+        "minimum_evaluator_score": 90.0
+      }
+    },
+    {
+      "id": "microsoft_fy2025_before",
+      "source_document_id": "challenge_microsoft_fy2025_ir_html",
+      "query": {
+        "question": "截至 2025-07-29，Microsoft Corporation FY2025 的 Total revenue、GAAP Net income 及据此计算的净利率是多少？仅使用当日已公开的官方信息。",
+        "as_of_date": "2025-07-29",
+        "entity": "Microsoft Corporation",
+        "requested_period": "FY2025",
+        "language": "zh-CN"
+      },
+      "gold": {
+        "answerability": "unanswerable",
+        "executive_summary": "截至 2025-07-29，本挑战登记的 Microsoft Corporation FY2025 官方完整业绩来源尚未发布，因此应拒绝给出 FY2025 全年 Total revenue、GAAP Net income 或净利率。",
+        "expected_values": {},
+        "semantic_keys": [],
+        "must_have_no_evidence": true,
+        "minimum_evaluator_score": 90.0
+      }
+    },
+    {
+      "id": "microsoft_fy2025_after",
+      "source_document_id": "challenge_microsoft_fy2025_ir_html",
+      "query": {
+        "question": "截至 2025-07-31，Microsoft Corporation FY2025 的 Total revenue、GAAP Net income 及据此计算的净利率是多少？",
+        "as_of_date": "2025-07-31",
+        "entity": "Microsoft Corporation",
+        "requested_period": "FY2025",
+        "language": "zh-CN"
+      },
+      "gold": {
+        "answerability": "answerable",
+        "executive_summary": "截至 2025-07-31，Microsoft Corporation FY2025 Total revenue 为 USD 281,724 million，GAAP Net income 为 USD 101,832 million；据此计算净利率为 36.1460%。",
+        "expected_values": {
+          "microsoft.revenue.FY2025": 281724.0,
+          "microsoft.gaap_net_income.FY2025": 101832.0,
+          "microsoft.gaap_net_income_margin.FY2025": 36.146015248967075
+        },
+        "semantic_keys": [
+          "microsoft.revenue.FY2025",
+          "microsoft.gaap_net_income.FY2025",
+          "microsoft.gaap_net_income_margin.FY2025"
+        ],
+        "must_have_no_evidence": false,
+        "minimum_evaluator_score": 90.0
+      }
+    },
+    {
+      "id": "nvidia_fy2025_before",
+      "source_document_id": "challenge_nvidia_fy2025_cfo_pdf",
+      "query": {
+        "question": "截至 2025-02-25，NVIDIA Corporation FY2025 的 GAAP Revenue、GAAP Net income 及据此计算的净利率是多少？仅使用当日已公开的官方信息。",
+        "as_of_date": "2025-02-25",
+        "entity": "NVIDIA Corporation",
+        "requested_period": "FY2025",
+        "language": "zh-CN"
+      },
+      "gold": {
+        "answerability": "unanswerable",
+        "executive_summary": "截至 2025-02-25，本挑战登记的 NVIDIA Corporation FY2025 官方完整业绩来源尚未发布，因此应拒绝给出 FY2025 全年 GAAP Revenue、GAAP Net income 或净利率。",
+        "expected_values": {},
+        "semantic_keys": [],
+        "must_have_no_evidence": true,
+        "minimum_evaluator_score": 90.0
+      }
+    },
+    {
+      "id": "nvidia_fy2025_after",
+      "source_document_id": "challenge_nvidia_fy2025_cfo_pdf",
+      "query": {
+        "question": "截至 2025-02-27，NVIDIA Corporation FY2025 的 GAAP Revenue、GAAP Net income 及据此计算的净利率是多少？",
+        "as_of_date": "2025-02-27",
+        "entity": "NVIDIA Corporation",
+        "requested_period": "FY2025",
+        "language": "zh-CN"
+      },
+      "gold": {
+        "answerability": "answerable",
+        "executive_summary": "截至 2025-02-27，NVIDIA Corporation FY2025 GAAP Revenue 为 USD 130,497 million，GAAP Net income 为 USD 72,880 million；据此计算净利率为 55.8480%。",
+        "expected_values": {
+          "nvidia.gaap_revenue.FY2025": 130497.0,
+          "nvidia.gaap_net_income.FY2025": 72880.0,
+          "nvidia.gaap_net_income_margin.FY2025": 55.848027157712444
+        },
+        "semantic_keys": [
+          "nvidia.gaap_revenue.FY2025",
+          "nvidia.gaap_net_income.FY2025",
+          "nvidia.gaap_net_income_margin.FY2025"
+        ],
+        "must_have_no_evidence": false,
+        "minimum_evaluator_score": 90.0
+      }
+    }
+  ],
+  "adversarial_specs": [
+    {
+      "id": "apple_future_leak",
+      "candidate_answer_case_id": "apple_fy2024_after",
+      "query_case_id": "apple_fy2024_before",
+      "transformation": "reuse the frozen post-publication answer under the frozen pre-publication query without changing evidence or known_at",
+      "expected_max_evaluator_score": 40.0,
+      "required_hard_gate": "source published after the query cutoff"
+    },
+    {
+      "id": "microsoft_future_leak",
+      "candidate_answer_case_id": "microsoft_fy2025_after",
+      "query_case_id": "microsoft_fy2025_before",
+      "transformation": "reuse the frozen post-publication answer under the frozen pre-publication query without changing evidence or known_at",
+      "expected_max_evaluator_score": 40.0,
+      "required_hard_gate": "source published after the query cutoff"
+    },
+    {
+      "id": "nvidia_future_leak",
+      "candidate_answer_case_id": "nvidia_fy2025_after",
+      "query_case_id": "nvidia_fy2025_before",
+      "transformation": "reuse the frozen post-publication answer under the frozen pre-publication query without changing evidence or known_at",
+      "expected_max_evaluator_score": 40.0,
+      "required_hard_gate": "source published after the query cutoff"
+    }
+  ]
+}

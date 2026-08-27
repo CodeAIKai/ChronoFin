@@ -1,0 +1,12 @@
+# Captured on 2026-08-26 UTC after the parent task confirmed the core evaluator frozen.
+# The final attested challenge run verifies every module below before scoring.
+003b4a4dc5a2abbb2a84a0d82484bd3c0b854997eb01f2987c223c3b841d4adb  src/chronofin/evaluator/__init__.py
+f503a21e4334e2ab12aba46543c0a042eebe3591b31d05e09a9b0b8769ea6950  src/chronofin/evaluator/ablation.py
+5fcb46022a666f0097ae92d9d7d745d143cf9ee7f8cc8a9e3243b6422703fb71  src/chronofin/evaluator/benchmark.py
+5d019b3f03b3d579420c3f96af9661b0e2c951323bb6bd180be984b082f31274  src/chronofin/evaluator/citation.py
+4efe2be25bf40c61342dc34179766bcbcaca5ea97f571a54fc7be44d589ec72a  src/chronofin/evaluator/core.py
+756a5105c10ba65445863063a2cf495b3400aa9b44c757e29eaae8c0a95fd1b8  src/chronofin/evaluator/mutations.py
+c21fd116697e2ab77bf4d6c30a6a62aae43823a72b8c9be99d7eaacfeee0c6e8  src/chronofin/evaluator/numeric.py
+47bdc509690f193e6b4f74d1edec7dfa243f208c45beecd17aea9677a98dbd86  src/chronofin/evaluator/proof_graph.py
+957860dae95034a227cce0f1bce82d54ad82027fb9059a82685238505b36e8f1  src/chronofin/evaluator/semantic.py
+d4f09b489ae9a676468b4ec723272956e6936494ced104e209208054968be43d  src/chronofin/evaluator/temporal.py

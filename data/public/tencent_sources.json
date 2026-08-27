@@ -1,0 +1,49 @@
+{
+  "dataset": "Tencent official annual/interim reports for point-in-time demo",
+  "landing_page": "https://www.tencent.com/investors/financial-reports/",
+  "license_note": "Reports remain copyrighted by Tencent. The downloader caches them locally; PDFs are not redistributed in this repository.",
+  "documents": [
+    {
+      "id": "tencent_2024_annual",
+      "title": "Tencent Holdings Limited Annual Report 2024",
+      "entity": "Tencent Holdings Limited",
+      "published_at": "2025-04-08",
+      "period": "FY2024",
+      "filename": "tencent_2024_annual.pdf",
+      "expected_sha256": "95b0652da8294527d150a56a9de293627b53e73b4a4c21202c153ea6eb4e9134",
+      "expected_bytes": 4754924,
+      "source_url": "https://static.www.tencent.com/uploads/2025/04/08/1132b72b565389d1b913aea60a648d73.pdf",
+      "source_type": "official_annual_report",
+      "currency": "CNY",
+      "unit": "RMB million"
+    },
+    {
+      "id": "tencent_2025_interim",
+      "title": "Tencent Holdings Limited Interim Report 2025",
+      "entity": "Tencent Holdings Limited",
+      "published_at": "2025-08-26",
+      "period": "H1 2025",
+      "filename": "tencent_2025_interim.pdf",
+      "expected_sha256": "c9e013790537e998e78d6c4850b74f3f8eb9831c9a9bc5c552333bbda19cc3ee",
+      "expected_bytes": 7267254,
+      "source_url": "https://static.www.tencent.com/uploads/2025/08/26/d1d2fb988f5e910e254b3abb41dadb0f.pdf",
+      "source_type": "official_interim_report",
+      "currency": "CNY",
+      "unit": "RMB million"
+    },
+    {
+      "id": "tencent_2025_annual",
+      "title": "Tencent Holdings Limited Annual Report 2025",
+      "entity": "Tencent Holdings Limited",
+      "published_at": "2026-04-09",
+      "period": "FY2025",
+      "filename": "tencent_2025_annual.pdf",
+      "expected_sha256": "2a7547168077c3d9994af673125e77612e8656bc0f17ad189371d7e4088f4e98",
+      "expected_bytes": 3999857,
+      "source_url": "https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf",
+      "source_type": "official_annual_report",
+      "currency": "CNY",
+      "unit": "RMB million"
+    }
+  ]
+}

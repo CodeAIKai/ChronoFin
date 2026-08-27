@@ -1,0 +1,76 @@
+{
+  "schema_version": "chronofin-current-deterministic-stability-v1",
+  "mode": "deterministic_evaluator_repeat_no_model_call",
+  "network_used": false,
+  "model_called": false,
+  "semantic_entailment_claimed": false,
+  "manifest_path": "data/cache/tencent/manifest.json",
+  "manifest_sha256": "c62d84539bc8529b5b7972fc5e772ffc089a13de6eaf4a1fa21f37a14e8c0ec4",
+  "cases": {
+    "before_publication": {
+      "answer_path": "results/public_tencent_before_publication_final.json",
+      "answer_sha256": "8f5fd8f93b8d1cf9507467feb8034b8344da90f8772eb66f9968380aa52398d4",
+      "expected_answerability": "unanswerable",
+      "runs": 5,
+      "final_scores": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "score_population_std": 0.0,
+      "scorecard_sha256s": [
+        "69137935349b1bf53b7eee8d44db1a93cc6eb721b28d4bc9bacc91092ed6dfb8",
+        "69137935349b1bf53b7eee8d44db1a93cc6eb721b28d4bc9bacc91092ed6dfb8",
+        "69137935349b1bf53b7eee8d44db1a93cc6eb721b28d4bc9bacc91092ed6dfb8",
+        "69137935349b1bf53b7eee8d44db1a93cc6eb721b28d4bc9bacc91092ed6dfb8",
+        "69137935349b1bf53b7eee8d44db1a93cc6eb721b28d4bc9bacc91092ed6dfb8"
+      ],
+      "exact_scorecard_agreement": true,
+      "all_hard_gate_reasons": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    "after_publication": {
+      "answer_path": "results/public_tencent_after_publication_final.json",
+      "answer_sha256": "6d86273e56585d4e92ae3c655946e9e7fa51aa4ec38bcbe26722fe4e8ced11cd",
+      "expected_answerability": "answerable",
+      "runs": 5,
+      "final_scores": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "score_population_std": 0.0,
+      "scorecard_sha256s": [
+        "3b3fb9f39480ed66416c61c0b6e56af8d0f0258958523305a41d4836c59fb1b1",
+        "3b3fb9f39480ed66416c61c0b6e56af8d0f0258958523305a41d4836c59fb1b1",
+        "3b3fb9f39480ed66416c61c0b6e56af8d0f0258958523305a41d4836c59fb1b1",
+        "3b3fb9f39480ed66416c61c0b6e56af8d0f0258958523305a41d4836c59fb1b1",
+        "3b3fb9f39480ed66416c61c0b6e56af8d0f0258958523305a41d4836c59fb1b1"
+      ],
+      "exact_scorecard_agreement": true,
+      "all_hard_gate_reasons": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    }
+  },
+  "all_exact_scorecard_agreement": true,
+  "all_scores_excellent": true,
+  "limitations": [
+    "Repeated deterministic evaluation is an implementation-stability check, not model semantic agreement.",
+    "The cached official PDFs are locally pinned but intentionally excluded from the public repository.",
+    "The separate retained Hy3 semantic-repeat artifact is historical and not bound to these current answer bytes."
+  ]
+}

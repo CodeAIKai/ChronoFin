@@ -1,0 +1,201 @@
+{
+  "schema_version": "chronofin-cleanroom-v2",
+  "source_tree_sha256": "798509067beb26847ccbb3340b7bccd10bf104c501d5d51bdc0e21fcaf50368b",
+  "reproduced_tree_sha256": "798509067beb26847ccbb3340b7bccd10bf104c501d5d51bdc0e21fcaf50368b",
+  "tree_fingerprint_matches": true,
+  "temporary_checkout_deleted_after_run": true,
+  "network_access": false,
+  "api_key_environment_removed": true,
+  "fresh_virtual_environment": true,
+  "inherits_host_build_tooling": true,
+  "cached_pdfs_in_checkout": [],
+  "commands": [
+    {
+      "label": "create_venv",
+      "command": [
+        "<HOST_PREFIX>/bin/python",
+        "-m",
+        "venv",
+        "--system-site-packages",
+        "<CLEANROOM>/venv"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "label": "install_local_package",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-deps",
+        "--no-build-isolation",
+        "-e",
+        "<CLEANROOM>/checkout"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "Obtaining file://<CLEANROOM>/checkout\n  Checking if build backend supports build_editable: started\n  Checking if build backend supports build_editable: finished with status 'done'\n  Preparing editable metadata (pyproject.toml): started\n  Preparing editable metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: chronofin\n  Building editable for chronofin (pyproject.toml): started\n  Building editable for chronofin (pyproject.toml): finished with status 'done'\n  Created wheel for chronofin: filename=chronofin-0.1.0-0.editable-py3-none-any.whl size=13548 sha256=862a4656fb135d791684e09c4cbbc263d6eae931c7ba8f13c79e8b9b1ec77d47\n  Stored in directory: <TEMP_PATH> built chronofin\nInstalling collected packages: chronofin\n  Attempting uninstall: chronofin\n    Found existing installation: chronofin 0.1.0\n    Not uninstalling chronofin at <HOST_SITE_PACKAGES>, outside environment <CLEANROOM>/venv\n    Can't uninstall 'chronofin'. No files were found to uninstall.\nSuccessfully installed chronofin-0.1.0\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "compileall",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src",
+        "scripts",
+        "tests",
+        "app.py"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "label": "unit_tests",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-t",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout_tail": "",
+      "stderr_tail": ".........................................................................................................................\n----------------------------------------------------------------------\nRan 121 tests in 5.842s\n\nOK\n"
+    },
+    {
+      "label": "reprocess_saved_causal",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "scripts/reprocess_saved_causal.py"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"metrics\": {\n    \"mutated_evidence_ids\": [\n      \"E2\"\n    ],\n    \"descendant_semantic_keys\": [\n      \"云舟科技.net_margin.FY2024\",\n      \"云舟科技.net_profit.FY2024\"\n    ],\n    \"causal_key_response\": 1.0,\n    \"locality\": 1.0,\n    \"causal_fidelity\": 1.0,\n    \"expected_values\": {\n      \"云舟科技.net_profit.FY2024\": 180.0,\n      \"云舟科技.net_margin.FY2024\": 15.0\n    },\n    \"observed_values\": {\n      \"云舟科技.net_profit.FY2024\": 180.0,\n      \"云舟科技.net_margin.FY2024\": 15.0\n    }\n  },\n  \"baseline_score\": 100.0,\n  \"mutated_score\": 100.0\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "offline_experiments",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "scripts/run_offline_experiments.py"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"quality_tiers\": {\n    \"good\": {\n      \"score\": 100.0,\n      \"verdict\": \"excellent\",\n      \"hard_cap\": null\n    },\n    \"medium\": {\n      \"score\": 55.0,\n      \"verdict\": \"fail\",\n      \"hard_cap\": 55.0\n    },\n    \"bad\": {\n      \"score\": 40.0,\n      \"verdict\": \"fail\",\n      \"hard_cap\": 40.0\n    }\n  },\n  \"PDA\": 1.0,\n  \"IVR\": 0.0,\n  \"causal_fidelity\": 1.0,\n  \"strict_future_leaks\": 0,\n  \"naive_future_leaks\": 3,\n  \"output\": \"<CLEANROOM>/checkout/results/offline_experiment.json\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "synthetic_benchmark",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "scripts/run_synthetic_benchmark.py"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"output\": \"<CLEANROOM>/checkout/results/synthetic_benchmark.json\",\n  \"base_tasks\": 72,\n  \"total_mutation_runs\": 2736,\n  \"PDA\": 1.0,\n  \"IVR\": 0.0,\n  \"severity_drop_spearman\": 0.423556,\n  \"bootstrap_95_ci\": {\n    \"paired_discrimination_accuracy\": [\n      1.0,\n      1.0\n    ],\n    \"invariance_violation_rate\": [\n      0.0,\n      0.0\n    ],\n    \"severity_drop_spearman\": [\n      0.423556,\n      0.423556\n    ]\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "evaluator_ablation",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "scripts/run_evaluator_ablation.py"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "ain; no statistical significance claim\"\n    },\n    {\n      \"from\": \"exact_citation_only\",\n      \"to\": \"point_in_time_exact_citation\",\n      \"paired_destructive_runs\": 2592,\n      \"newly_detected_runs\": 216,\n      \"lost_detected_runs\": 0,\n      \"detection_rate_gain\": 0.083333,\n      \"mutation_types_with_new_detections\": [\n        \"future_leak\",\n        \"known_at_mismatch\",\n        \"missing_known_at\"\n      ],\n      \"mutation_types_with_lost_detections\": [],\n      \"interpretation\": \"descriptive paired component gain; no statistical significance claim\"\n    },\n    {\n      \"from\": \"point_in_time_exact_citation\",\n      \"to\": \"full_chronofin\",\n      \"paired_destructive_runs\": 2592,\n      \"newly_detected_runs\": 2232,\n      \"lost_detected_runs\": 0,\n      \"detection_rate_gain\": 0.861111,\n      \"mutation_types_with_new_detections\": [\n        \"affirmative_unknown_claim\",\n        \"available_source_future_refusal\",\n        \"blanket_refusal\",\n        \"calculation_error\",\n        \"caveat_investment_advice\",\n        \"caveat_prompt_injection\",\n        \"chinese_numeral_error\",\n        \"claim_polarity_reversal\",\n        \"claim_text_numeric_error\",\n        \"claim_text_wrong_entity\",\n        \"claim_text_wrong_period\",\n        \"cross_clause_negative_refusal\",\n        \"empty_answer\",\n        \"extraneous_claim_number\",\n        \"false_caveat_assertion\",\n        \"imperative_investment_advice\",\n        \"incorrect_refusal\",\n        \"irrelevant_future_refusal\",\n        \"missing_citation\",\n        \"prompt_injection\",\n        \"summary_numeric_error\",\n        \"summary_unsupported_claim\",\n        \"unrelated_negative_refusal\",\n        \"wrong_entity\",\n        \"wrong_fact_unit\",\n        \"wrong_operand_unit\",\n        \"wrong_period\",\n        \"wrong_query_entity\",\n        \"wrong_query_metric\",\n        \"wrong_query_period\",\n        \"wrong_unit\"\n      ],\n      \"mutation_types_with_lost_detections\": [],\n      \"interpretation\": \"descriptive paired component gain; no statistical significance claim\"\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "postfreeze_regression",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "scripts/run_postfreeze_challenge.py"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"all_passed\": true,\n  \"base_passed\": 6,\n  \"base_total\": 6,\n  \"adversarial_passed\": 3,\n  \"adversarial_total\": 3,\n  \"mean_valid_gold_score\": 100.0,\n  \"mean_future_leak_score\": 20.0\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "sanitize_public_artifacts",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "scripts/sanitize_public_artifacts.py"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"files_changed\": 0,\n  \"raw_request_ids_removed\": 0,\n  \"replacement\": \"sha256\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "cli_inspect",
+      "command": [
+        "<CLEANROOM>/venv/bin/chronofin",
+        "inspect",
+        "--manifest",
+        "data/demo/manifest.json",
+        "--question",
+        "云舟科技 FY2025 全年净利润是多少？",
+        "--as-of",
+        "2025-12-31",
+        "--entity",
+        "云舟科技",
+        "--period",
+        "FY2025",
+        "--top-k",
+        "20"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "iod\": \"FY2024\",\n      \"published_at\": \"2025-03-18\",\n      \"currency\": \"CNY\",\n      \"unit\": \"百万元\",\n      \"text\": \"管理层表示，云订阅客户数量增加以及平均客单价提升，是 2024 财年收入增长的主要驱动因素。\",\n      \"score\": 4.412435151027953\n    },\n    {\n      \"chunk_id\": \"cloud_2025_h1:p2:c4\",\n      \"document_id\": \"cloud_2025_h1\",\n      \"page\": 2,\n      \"section\": \"半年度风险提示\",\n      \"entity\": \"云舟科技\",\n      \"period\": \"H1 2025\",\n      \"published_at\": \"2025-08-25\",\n      \"currency\": \"CNY\",\n      \"unit\": \"百万元\",\n      \"text\": \"本半年度报告于 2025 年 8 月 25 日对外发布。\",\n      \"score\": 2.719899868715816\n    },\n    {\n      \"chunk_id\": \"cloud_2024:p2:c6\",\n      \"document_id\": \"cloud_2024\",\n      \"page\": 2,\n      \"section\": \"经营回顾与风险\",\n      \"entity\": \"云舟科技\",\n      \"period\": \"FY2024\",\n      \"published_at\": \"2025-03-18\",\n      \"currency\": \"CNY\",\n      \"unit\": \"百万元\",\n      \"text\": \"审计委员会确认本报告于 2025 年 3 月 18 日对外发布。\",\n      \"score\": 2.6351597095680983\n    },\n    {\n      \"chunk_id\": \"cloud_2025_h1:p2:c3\",\n      \"document_id\": \"cloud_2025_h1\",\n      \"page\": 2,\n      \"section\": \"半年度风险提示\",\n      \"entity\": \"云舟科技\",\n      \"period\": \"H1 2025\",\n      \"published_at\": \"2025-08-25\",\n      \"currency\": \"CNY\",\n      \"unit\": \"百万元\",\n      \"text\": \"前五大客户贡献了 2025 年上半年收入的 51%，客户集中度风险仍然存在。\",\n      \"score\": 2.5415134809970024\n    },\n    {\n      \"chunk_id\": \"cloud_2024:p1:c3\",\n      \"document_id\": \"cloud_2024\",\n      \"page\": 1,\n      \"section\": \"云舟科技 2024 年年度报告（教学用合成材料）\",\n      \"entity\": \"云舟科技\",\n      \"period\": \"FY2024\",\n      \"published_at\": \"2025-03-18\",\n      \"currency\": \"CNY\",\n      \"unit\": \"百万元\",\n      \"text\": \"本报告中的金额除特别说明外均以人民币百万元列示，财年截止日为 2024 年 12 月 31 日。\",\n      \"score\": 1.9230115721935053\n    },\n    {\n      \"chunk_id\": \"cloud_2024:p2:c5\",\n      \"document_id\": \"cloud_2024\",\n      \"page\": 2,\n      \"section\": \"经营回顾与风险\",\n      \"entity\": \"云舟科技\",\n      \"period\": \"FY2024\",\n      \"published_at\": \"2025-03-18\",\n      \"currency\": \"CNY\",\n      \"unit\": \"百万元\",\n      \"text\": \"前五大客户贡献了 2024 财年收入的 48%，客户集中度较高可能导致收入波动风险。\",\n      \"score\": 1.9084379198821362\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "git_init",
+      "command": [
+        "git",
+        "init",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "label": "git_stage_submission",
+      "command": [
+        "git",
+        "add",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "label": "submission_verifier",
+      "command": [
+        "<CLEANROOM>/venv/bin/python",
+        "scripts/verify_submission.py",
+        "--compact",
+        "--cleanroom-prerequisites"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "pter, and v2 repair chain pass independent SHA-256 verification.\", \"details\": {}, \"expected\": {\"embedded_manifests_match\": true, \"verified_ledgers\": 6}, \"id\": \"postfreeze_hash_chain\", \"observed\": {\"embedded_manifests_match\": true, \"verified_files\": 28, \"verified_ledgers\": 6}, \"status\": \"pass\"}, {\"category\": \"artifacts\", \"description\": \"A non-empty 16:9 demo GIF exists and its encoded duration is below two minutes.\", \"details\": {}, \"expected\": {\"duration_seconds\": \"0 < d <= 120\", \"frames\": \">= 2\", \"min_dimensions\": [960, 540]}, \"id\": \"demo_gif\", \"observed\": {\"bytes\": 354523, \"duration_seconds\": 56.0, \"frames_with_delay\": 8, \"height\": 720, \"width\": 1280}, \"status\": \"pass\"}, {\"category\": \"security\", \"description\": \"Working tree contains no token resembling a live sk-* API key.\", \"details\": {\"findings\": [], \"read_errors\": {}}, \"expected\": {\"read_errors\": 0, \"suspected_keys\": 0}, \"id\": \"suspected_sk_secrets\", \"observed\": {\"files_scanned\": 159, \"read_errors\": 0, \"suspected_keys\": 0}, \"status\": \"pass\"}, {\"category\": \"privacy\", \"description\": \"Checked-in result JSON contains no raw provider request ID; SHA-256 digests are allowed.\", \"details\": {\"findings\": []}, \"expected\": {\"raw_request_ids\": 0}, \"id\": \"raw_provider_request_ids\", \"observed\": {\"raw_request_ids\": 0}, \"status\": \"pass\"}, {\"category\": \"git\", \"description\": \"PDF files under data/cache are not tracked by Git.\", \"details\": {\"tracked\": []}, \"expected\": {\"tracked_cached_pdfs\": 0}, \"id\": \"cached_pdfs_git_tracking\", \"observed\": {\"tracked_cached_pdfs\": 0}, \"status\": \"pass\"}], \"network_access\": false, \"policy\": {\"cleanroom_self_check_included\": false, \"not_checkable_causes_failure\": false, \"not_checkable_is_not_pass\": true, \"readme_required\": true}, \"read_only\": true, \"root\": \"<CLEANROOM>/checkout\", \"schema_version\": \"chronofin-submission-verifier-v1\", \"scope\": \"all_submission_checks_except_cleanroom_self_check\", \"status\": \"pass\", \"summary\": {\"fail\": 0, \"not_checkable\": 0, \"pass\": 21, \"total\": 21}}\n",
+      "stderr_tail": "",
+      "verification_scope": "all_submission_checks_except_cleanroom_self_check"
+    }
+  ],
+  "all_passed": true,
+  "limitations": [
+    "This proves reproducibility on the current host Python/toolchain, not on an independent third-party machine.",
+    "The fresh venv inherits host site packages because this offline host's ensurepip image omits setuptools; pip remains no-index and installs no dependencies.",
+    "The run removes API/proxy variables and expects no network calls, but it does not enforce operating-system-level network isolation.",
+    "The temporary Git index validates ignore/tracking rules but is not a public repository or release tag.",
+    "No Hy3 network call is made; live traces are checked-in sanitized experiment artifacts.",
+    "A prerequisite-mode verifier checks every submission gate except the cleanroom report that it is still constructing; a separate normal verifier must validate the final proof, avoiding circular self-attestation."
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "query": {
+    "question": "As of 2025-12-31, what were Tencent Holdings Limited FY2025 full-year revenues, profit attributable to equity holders, and the derived profit margin? Do not annualise interim figures.",
+    "as_of_date": "2025-12-31",
+    "entity": "Tencent Holdings Limited",
+    "requested_period": "FY2025",
+    "language": "zh-CN"
+  },
+  "answerability": "unanswerable",
+  "executive_summary": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.revenue.FY2025：截至 2025-12-31，在已注册证据中不可确定；Tencent Holdings Limited FY2025 TencentHoldingsLimited.profit_attributable.FY2025：截至 2025-12-31，在已注册证据中不可确定；Tencent Holdings Limited FY2025 TencentHoldingsLimited.net_margin.FY2025：截至 2025-12-31，在已注册证据中不可确定。",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.revenue.FY2025：截至 2025-12-31，在已注册证据中不可确定。",
+      "claim_type": "UNKNOWN",
+      "entity": "Tencent Holdings Limited",
+      "period": "FY2025",
+      "unit": "RMB million",
+      "known_at": "2025-08-26",
+      "value": null,
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "calculation_id": "",
+      "confidence": 0.0,
+      "semantic_key": "TencentHoldingsLimited.revenue.FY2025"
+    },
+    {
+      "id": "C2",
+      "text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.profit_attributable.FY2025：截至 2025-12-31，在已注册证据中不可确定。",
+      "claim_type": "UNKNOWN",
+      "entity": "Tencent Holdings Limited",
+      "period": "FY2025",
+      "unit": "RMB million",
+      "known_at": "2025-08-26",
+      "value": null,
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "calculation_id": "",
+      "confidence": 0.0,
+      "semantic_key": "TencentHoldingsLimited.profit_attributable.FY2025"
+    },
+    {
+      "id": "C3",
+      "text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.net_margin.FY2025：截至 2025-12-31，在已注册证据中不可确定。",
+      "claim_type": "UNKNOWN",
+      "entity": "Tencent Holdings Limited",
+      "period": "FY2025",
+      "unit": "%",
+      "known_at": "2025-08-26",
+      "value": null,
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "calculation_id": "",
+      "confidence": 0.0,
+      "semantic_key": "TencentHoldingsLimited.net_margin.FY2025"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "chunk_id": "tencent_2025_interim:p15:c155",
+      "document_id": "tencent_2025_interim",
+      "quote": "Profit attributable to equity holders of the Company . Profit attributable to equity holders of the Company increased by 16%\n     quarter-on-quarter to RMB55.6 billion for the second quarter of 2025. Non-IFRS profit attributable to equity holders of the\n     Company increased by 3% quarter-on-quarter to RMB63.1 billion for the second quarter of 2025.",
+      "page": 15,
+      "published_at": "2025-08-26",
+      "source_url": "https://static.www.tencent.com/uploads/2025/08/26/d1d2fb988f5e910e254b3abb41dadb0f.pdf"
+    },
+    {
+      "id": "E2",
+      "chunk_id": "tencent_2025_interim:p54:c611",
+      "document_id": "tencent_2025_interim",
+      "quote": "Profit attributable to equity holders of the Company (RMB’Million)                                55,628           47,630          103,449           89,519",
+      "page": 54,
+      "published_at": "2025-08-26",
+      "source_url": "https://static.www.tencent.com/uploads/2025/08/26/d1d2fb988f5e910e254b3abb41dadb0f.pdf"
+    }
+  ],
+  "calculations": [],
+  "caveats": [
+    "可见结论仅来自已绑定证据与确定性计算；不构成投资建议。"
+  ],
+  "excluded_documents": [
+    {
+      "document_id": "tencent_2025_annual",
+      "title": "Tencent Holdings Limited Annual Report 2025",
+      "published_at": "2026-04-09",
+      "reason": "published after cutoff 2025-12-31"
+    }
+  ],
+  "provenance": {
+    "schema_warnings": [],
+    "calculation_corrections": [],
+    "citation_normalizations": [],
+    "prompt_version": "chronofin-answer-v1.3",
+    "temporal_filter": true,
+    "eligible_document_ids": [
+      "tencent_2024_annual",
+      "tencent_2025_interim"
+    ],
+    "retrieved_chunk_ids": [
+      "tencent_2025_interim:p15:c155",
+      "tencent_2024_annual:p11:c123",
+      "tencent_2025_interim:p12:c121",
+      "tencent_2024_annual:p18:c202",
+      "tencent_2024_annual:p15:c168",
+      "tencent_2024_annual:p199:c2250",
+      "tencent_2025_interim:p54:c611",
+      "tencent_2025_interim:p13:c138",
+      "tencent_2024_annual:p13:c150",
+      "tencent_2025_interim:p13:c139"
+    ],
+    "evidence_slot_hits": {},
+    "uncovered_evidence_slots": [
+      "revenue",
+      "profit_attributable",
+      "full_year"
+    ],
+    "retrieval_scores": [
+      {
+        "chunk_id": "tencent_2025_interim:p15:c155",
+        "score": 27.431599,
+        "lexical_score": 25.556599,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2024_annual:p11:c123",
+        "score": 26.955441,
+        "lexical_score": 25.080441,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2025_interim:p12:c121",
+        "score": 26.177842,
+        "lexical_score": 24.302842,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2024_annual:p18:c202",
+        "score": 25.582663,
+        "lexical_score": 23.707663,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2024_annual:p15:c168",
+        "score": 25.428669,
+        "lexical_score": 23.553669,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2024_annual:p199:c2250",
+        "score": 24.666183,
+        "lexical_score": 22.791183,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2025_interim:p54:c611",
+        "score": 23.772366,
+        "lexical_score": 21.897366,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2025_interim:p13:c138",
+        "score": 23.637961,
+        "lexical_score": 21.762961,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2024_annual:p13:c150",
+        "score": 23.247715,
+        "lexical_score": 21.372715,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2025_interim:p13:c139",
+        "score": 23.247715,
+        "lexical_score": 21.372715,
+        "metadata_score": 1.5
+      }
+    ],
+    "llm": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "181c920242c982ef6b2186148defeafa24bc4e94deb1928255b00f036f5ec1b9",
+      "latency_seconds": 56.709,
+      "usage": {
+        "prompt_tokens": 2360,
+        "completion_tokens": 4993,
+        "total_tokens": 7353,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4333
+        }
+      },
+      "request_id_sha256": "92dd237cb097c75e5e999f1e6f036ffb69d0b46d8320e8e98fd149f9e2a4b29e",
+      "attempts": 1,
+      "reasoning_effort": "high"
+    },
+    "model_called": true,
+    "claim_text_corrections": [
+      {
+        "claim_id": "C1",
+        "calculation_id": "",
+        "original_text": "Tencent Holdings Limited FY2025 full-year revenues are unknown as of 2025-12-31",
+        "corrected_text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.revenue.FY2025：截至 2025-12-31，在已注册证据中不可确定。",
+        "projection_kind": "epistemic_unknown_projection"
+      },
+      {
+        "claim_id": "C2",
+        "calculation_id": "",
+        "original_text": "Tencent Holdings Limited FY2025 full-year profit attributable to equity holders is unknown as of 2025-12-31",
+        "corrected_text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.profit_attributable.FY2025：截至 2025-12-31，在已注册证据中不可确定。",
+        "projection_kind": "epistemic_unknown_projection"
+      },
+      {
+        "claim_id": "C3",
+        "calculation_id": "",
+        "original_text": "Tencent Holdings Limited FY2025 derived profit margin is unknown as of 2025-12-31 due to missing full-year revenue and profit",
+        "corrected_text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.net_margin.FY2025：截至 2025-12-31，在已注册证据中不可确定。",
+        "projection_kind": "epistemic_unknown_projection"
+      }
+    ],
+    "executive_summary_mode": "deterministic_claim_projection_v1",
+    "model_executive_summary_sha256": "55f5237c179b55217627003170277ed040789fb72586e29abc23aa15a1c770c5",
+    "caveat_mode": "deterministic_policy_projection_v1",
+    "model_caveats_sha256": "df47b9191d94a6c4b209e86e0f84d8a81b3f582df472fca48e53b934dfe69253",
+    "reprocessed_from": "results/public_tencent_before_publication.json"
+  }
+}

@@ -1,0 +1,5 @@
+# Seals the retained current-v2 0/6 first run, the 6/6 repaired regression,
+# and the machine-readable limitation/remediation manifest.
+bcc6ec66642ed254da5fd1e558bc2ece0ee6faae4d2b0c3737a5405e9d0ffd8f  results/postfreeze_challenge_v1_current_regression.json
+d65c0e86c98108e2a9de44b7ed32d6d477848bb8e7dfe67355c8a47f6ca01312  results/postfreeze_challenge_v1_current_regression_after_slot_fix.json
+84bf14a40e603d2617af153454b143765c0ddee57c2279cd1994db2ff4a67efa  data/challenge/CURRENT_V2_ADAPTER_FIX.json

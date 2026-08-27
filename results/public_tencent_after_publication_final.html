@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChronoFin 时证</title><style>
+:root{--ink:#12212f;--muted:#607080;--paper:#f5f7f4;--card:#fff;--cyan:#0b7d83;--gold:#bd7b16;--red:#b42a36;--line:#dbe3df}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+header{background:linear-gradient(120deg,#102f38,#0b6168);color:white;padding:34px max(5vw,24px)}h1{margin:0 0 5px;font-size:30px}header p{margin:0;opacity:.84}
+main{max-width:1240px;margin:0 auto;padding:24px}.hero{display:grid;grid-template-columns:2fr 1fr;gap:18px}.card,article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 4px 18px #102f380d;margin-bottom:16px}
+.score{font-size:45px;font-weight:750;color:var(--cyan)}.verdict{text-transform:uppercase;letter-spacing:.12em;color:var(--gold)}h2{margin:28px 0 12px;font-size:20px}table{width:100%;border-collapse:collapse;background:white}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eaf1ee;font-size:13px}
+.tag{font-size:11px;border:1px solid;padding:3px 6px;border-radius:99px}.derived{color:#7a4d00}.unknown{color:var(--red)}.muted{color:var(--muted)}blockquote{border-left:3px solid var(--cyan);margin:12px 0;padding:7px 12px;background:#f5faf9}.e-head{color:var(--muted)}.mono,.formula,.audit-log{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px}.formula{background:#102f38;color:white;padding:10px;border-radius:7px}.audit-log{white-space:pre-wrap;overflow-wrap:anywhere}
+.timeline li::marker{color:var(--red)}@media(max-width:800px){.hero{grid-template-columns:1fr}.table-wrap{overflow:auto}}
+</style></head><body><header><h1>ChronoFin 时证</h1><p>每个结论都回答：当时知道吗？证据在哪？证据改变时结论会跟着变吗？</p></header><main>
+<section class="hero"><div class="card"><div class="muted">问题 · 截止 2026-04-10</div><h2>As of 2026-04-10, what were Tencent Holdings Limited FY2025 full-year revenues, profit attributable to equity holders, and the derived profit margin? Distinguish IFRS from non-IFRS figures.</h2><p>Year ended 31 December
+                                                            2021          2022              2023              2024              2025
+                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million
+Revenues                                                  560,118       554,552           609,015           660,257           751,766
+Non-IFRS profit attributable to
+  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626；CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME
+                                                                               Year ended 31 December
+                                                            2021          2022              2023              2024              2025
+                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million
+Revenues                                                  560,118       554,552           609,015           660,257           751,766
+Non-IFRS profit attributable to
+  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626；Profit attributable to equity holders of the Company . Profit attributable to equity holders of the Company increased by 16%
+year-on-year to RMB224.8 billion for the year ended 31 December 2025. Non-IFRS profit attributable to equity holders of the
+Company increased by 17% year-on-year to RMB259.6 billion.；Tencent Holdings Limited FY2025 CALC2: IFRS_profit_million / revenue * 100 = 29.902921919853%；Tencent Holdings Limited FY2025 CALC3: nonIFRS_profit / revenue * 100 = 34.535480455354%。</p><span class="tag">answerable</span></div>
+<div class="card"><div class="muted">审计总分</div><div class="score">100.0</div><div class="verdict">excellent</div></div></section>
+<h2>原子结论账本</h2><div class="table-wrap"><table><thead><tr><th>ID</th><th>类型</th><th>命题</th><th>实体</th><th>期间</th><th>单位</th><th>证据</th><th>置信</th></tr></thead><tbody><tr><td>C1</td><td><span class='tag fact'>FACT</span></td><td>                                                                               Year ended 31 December
+                                                            2021          2022              2023              2024              2025
+                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million
+Revenues                                                  560,118       554,552           609,015           660,257           751,766
+Non-IFRS profit attributable to
+  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626</td><td>Tencent Holdings Limited</td><td>FY2025</td><td>RMB million</td><td>E1</td><td>1.00</td></tr><tr><td>C2</td><td><span class='tag fact'>FACT</span></td><td>CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME
+                                                                               Year ended 31 December
+                                                            2021          2022              2023              2024              2025
+                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million
+Revenues                                                  560,118       554,552           609,015           660,257           751,766
+Non-IFRS profit attributable to
+  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626</td><td>Tencent Holdings Limited</td><td>FY2025</td><td>RMB million</td><td>E2</td><td>1.00</td></tr><tr><td>C3</td><td><span class='tag fact'>FACT</span></td><td>Profit attributable to equity holders of the Company . Profit attributable to equity holders of the Company increased by 16%
+year-on-year to RMB224.8 billion for the year ended 31 December 2025. Non-IFRS profit attributable to equity holders of the
+Company increased by 17% year-on-year to RMB259.6 billion.</td><td>Tencent Holdings Limited</td><td>FY2025</td><td>RMB billion</td><td>E3</td><td>1.00</td></tr><tr><td>C4</td><td><span class='tag derived'>DERIVED</span></td><td>Tencent Holdings Limited FY2025 CALC2: IFRS_profit_million / revenue * 100 = 29.902921919853%。</td><td>Tencent Holdings Limited</td><td>FY2025</td><td>%</td><td>E1, E3</td><td>1.00</td></tr><tr><td>C5</td><td><span class='tag derived'>DERIVED</span></td><td>Tencent Holdings Limited FY2025 CALC3: nonIFRS_profit / revenue * 100 = 34.535480455354%。</td><td>Tencent Holdings Limited</td><td>FY2025</td><td>%</td><td>E1, E2</td><td>1.00</td></tr></tbody></table></div>
+<h2>计算血缘</h2><article><div class='e-head'><b>CALC1</b> · RMB million</div><div class='formula'>IFRS_profit_billion * 1000 = 224800.0</div><ul><li>IFRS_profit_billion=224.8 RMB billion ← E3</li></ul></article><article><div class='e-head'><b>CALC2</b> · %</div><div class='formula'>IFRS_profit_million / revenue * 100 = 29.90292191985272</div><ul><li>IFRS_profit_million=224800.0 RMB million ← calc:CALC1</li><li>revenue=751766.0 RMB million ← E1</li></ul></article><article><div class='e-head'><b>CALC3</b> · %</div><div class='formula'>nonIFRS_profit / revenue * 100 = 34.53548045535446</div><ul><li>nonIFRS_profit=259626.0 RMB million ← E2</li><li>revenue=751766.0 RMB million ← E1</li></ul></article><h2>证据卡片</h2><article><div class='e-head'><b>E1</b> · tencent_2025_annual · p.4 · 公布 2026-04-09 · <a href='https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf' target='_blank' rel='noopener noreferrer'>官方来源</a></div><blockquote>                                                                               Year ended 31 December
+                                                            2021          2022              2023              2024              2025
+                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million
+Revenues                                                  560,118       554,552           609,015           660,257           751,766
+Non-IFRS profit attributable to
+  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626</blockquote><div class='mono'>tencent_2025_annual:p4:c33</div></article><article><div class='e-head'><b>E2</b> · tencent_2025_annual · p.4 · 公布 2026-04-09 · <a href='https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf' target='_blank' rel='noopener noreferrer'>官方来源</a></div><blockquote>CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME
+                                                                               Year ended 31 December
+                                                            2021          2022              2023              2024              2025
+                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million
+Revenues                                                  560,118       554,552           609,015           660,257           751,766
+Non-IFRS profit attributable to
+  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626</blockquote><div class='mono'>tencent_2025_annual:p4:c33</div></article><article><div class='e-head'><b>E3</b> · tencent_2025_annual · p.11 · 公布 2026-04-09 · <a href='https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf' target='_blank' rel='noopener noreferrer'>官方来源</a></div><blockquote>Profit attributable to equity holders of the Company . Profit attributable to equity holders of the Company increased by 16%
+year-on-year to RMB224.8 billion for the year ended 31 December 2025. Non-IFRS profit attributable to equity holders of the
+Company increased by 17% year-on-year to RMB259.6 billion.</blockquote><div class='mono'>tencent_2025_annual:p11:c127</div></article>
+<h2>时间隔离日志</h2><div class="card"><ul class="timeline"><li>无</li></ul></div>
+<h2>确定性修正日志</h2><div class='card'><pre class='audit-log'>{
+  &quot;claim_text_corrections&quot;: [
+    {
+      &quot;claim_id&quot;: &quot;C1&quot;,
+      &quot;calculation_id&quot;: &quot;&quot;,
+      &quot;original_text&quot;: &quot;Tencent Holdings Limited FY2025 full-year revenues were RMB751,766 million (IFRS basis).&quot;,
+      &quot;corrected_text&quot;: &quot;                                                                               Year ended 31 December\n                                                            2021          2022              2023              2024              2025\n                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million\nRevenues                                                  560,118       554,552           609,015           660,257           751,766\nNon-IFRS profit attributable to\n  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626&quot;,
+      &quot;projection_kind&quot;: &quot;exact_evidence_projection&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;C2&quot;,
+      &quot;calculation_id&quot;: &quot;&quot;,
+      &quot;original_text&quot;: &quot;Tencent Holdings Limited FY2025 non-IFRS profit attributable to equity holders was RMB259,626 million.&quot;,
+      &quot;corrected_text&quot;: &quot;CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n                                                                               Year ended 31 December\n                                                            2021          2022              2023              2024              2025\n                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million\nRevenues                                                  560,118       554,552           609,015           660,257           751,766\nNon-IFRS profit attributable to\n  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626&quot;,
+      &quot;projection_kind&quot;: &quot;exact_evidence_projection&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;C3&quot;,
+      &quot;calculation_id&quot;: &quot;&quot;,
+      &quot;original_text&quot;: &quot;Tencent Holdings Limited FY2025 IFRS profit attributable to equity holders was RMB224.8 billion.&quot;,
+      &quot;corrected_text&quot;: &quot;Profit attributable to equity holders of the Company . Profit attributable to equity holders of the Company increased by 16%\nyear-on-year to RMB224.8 billion for the year ended 31 December 2025. Non-IFRS profit attributable to equity holders of the\nCompany increased by 17% year-on-year to RMB259.6 billion.&quot;,
+      &quot;projection_kind&quot;: &quot;exact_evidence_projection&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;C4&quot;,
+      &quot;calculation_id&quot;: &quot;CALC2&quot;,
+      &quot;original_text&quot;: &quot;Tencent Holdings Limited FY2025 derived IFRS profit margin equals (RMB224.8 billion converted to RMB224,800 million) divided by revenue RMB751,766 million = 29.9073%.&quot;,
+      &quot;corrected_text&quot;: &quot;Tencent Holdings Limited FY2025 derived IFRS profit margin equals (RMB224.8 billion converted to RMB224,800 million) divided by revenue RMB751,766 million = 29.9029%.&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;C4&quot;,
+      &quot;calculation_id&quot;: &quot;CALC2&quot;,
+      &quot;original_text&quot;: &quot;Tencent Holdings Limited FY2025 derived IFRS profit margin equals (RMB224.8 billion converted to RMB224,800 million) divided by revenue RMB751,766 million = 29.9029%.&quot;,
+      &quot;corrected_text&quot;: &quot;Tencent Holdings Limited FY2025 CALC2: IFRS_profit_million / revenue * 100 = 29.902921919853%。&quot;,
+      &quot;projection_kind&quot;: &quot;executed_calculation_projection&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;C5&quot;,
+      &quot;calculation_id&quot;: &quot;CALC3&quot;,
+      &quot;original_text&quot;: &quot;Tencent Holdings Limited FY2025 derived non-IFRS profit margin equals RMB259,626 million divided by revenue RMB751,766 million = 34.5584%.&quot;,
+      &quot;corrected_text&quot;: &quot;Tencent Holdings Limited FY2025 derived non-IFRS profit margin equals RMB259,626 million divided by revenue RMB751,766 million = 34.5355%.&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;C5&quot;,
+      &quot;calculation_id&quot;: &quot;CALC3&quot;,
+      &quot;original_text&quot;: &quot;Tencent Holdings Limited FY2025 derived non-IFRS profit margin equals RMB259,626 million divided by revenue RMB751,766 million = 34.5355%.&quot;,
+      &quot;corrected_text&quot;: &quot;Tencent Holdings Limited FY2025 CALC3: nonIFRS_profit / revenue * 100 = 34.535480455354%。&quot;,
+      &quot;projection_kind&quot;: &quot;executed_calculation_projection&quot;
+    }
+  ],
+  &quot;citation_normalizations&quot;: [
+    {
+      &quot;evidence_id&quot;: &quot;E2&quot;,
+      &quot;original_quote&quot;: &quot;                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million\nRevenues                                                  560,118       554,552           609,015           660,257           751,766\nNon-IFRS profit attributable to\n  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626&quot;,
+      &quot;expanded_quote&quot;: &quot;CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n                                                                               Year ended 31 December\n                                                            2021          2022              2023              2024              2025\n                                                       RMB’Million   RMB’Million       RMB’Million       RMB’Million       RMB’Million\nRevenues                                                  560,118       554,552           609,015           660,257           751,766\nNon-IFRS profit attributable to\n  equity holders of the Company                           123,788       115,649           157,688           222,703           259,626&quot;
+    }
+  ]
+}</pre></div>
+<h2>十维质量审计</h2><div class="table-wrap"><table><thead><tr><th>维度</th><th>分数</th><th>权重</th><th>问题</th></tr></thead><tbody><tr><td>temporal_integrity</td><td>100.0</td><td>15%</td><td></td></tr><tr><td>citation_correctness</td><td>100.0</td><td>14%</td><td></td></tr><tr><td>citation_completeness</td><td>100.0</td><td>9%</td><td></td></tr><tr><td>factual_support</td><td>100.0</td><td>10%</td><td></td></tr><tr><td>numeric_lineage</td><td>100.0</td><td>15%</td><td></td></tr><tr><td>entity_period_unit</td><td>100.0</td><td>10%</td><td></td></tr><tr><td>proof_graph_validity</td><td>100.0</td><td>9%</td><td></td></tr><tr><td>material_completeness</td><td>100.0</td><td>7%</td><td></td></tr><tr><td>inference_boundary</td><td>100.0</td><td>6%</td><td></td></tr><tr><td>safety_and_communication</td><td>100.0</td><td>5%</td><td></td></tr></tbody></table></div><h2>硬门禁</h2><div class="card"><ul><li>未触发硬门禁</li></ul></div>
+</main></body></html>
