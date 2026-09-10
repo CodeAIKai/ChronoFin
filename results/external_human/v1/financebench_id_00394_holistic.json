@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00394",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "984b6079b0942ef11686d7618e62bd52fa16fa58d7a8bf7e82b47c38277d4d6b",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "dde779e31cfe1dc434176d9cb5b4dce11cb190407f4391d71c6e959efb2334e9",
+  "started_utc": "2026-09-09T17:32:38.455338+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence table shows Q2 2022 segment net incomes: CCB $3100M, CIB $3725M, CB $994M, AWM $1004M, Corporate -$174M. CIB is highest, contradicting candidate's claim that evidence lacks segment net income data."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "155ec00d169b2815b8a44ef045233a5cd39a4e58a2e3bb187618bebea5e28329",
+    "latency_seconds": 2.451,
+    "usage": {
+      "prompt_tokens": 2799,
+      "completion_tokens": 84,
+      "total_tokens": 2883,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8b5fee982cde081ddc99f29304b5a6c09a90088a7d79365e10018a0a84214bd5"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

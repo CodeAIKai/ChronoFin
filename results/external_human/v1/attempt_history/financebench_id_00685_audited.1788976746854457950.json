@@ -1,0 +1,14 @@
+{
+  "id": "financebench_id_00685",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "a0c3b0bb5cf49df13b12b7ec3c00810033beee9679dc67155682e172a0a405f0",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9e331cfc8908e07343661a077e758645595bfd81f0e8e3be21599fa29d24ebf2",
+  "started_utc": "2026-09-09T17:33:10.580783+00:00",
+  "status": "error",
+  "error": "Hy3 request failed after 2 attempts: Hy3 HTTP 429: {\"error\":{\"message\":\"The request rate exceeds the current model RPM limit 60. Please reduce the request frequency or contact Tencent Cloud support to request a higher limit.\",\"message_zh\":\"请求速率超过当前模型 RPM 阈值 60，请降低访问频率或联系腾讯云售后申请更高限额。\",\"code\":\"429001\",\"type\":\"gateway_error\",\"request_id\":\"[request_sha256:1b6262b9eea82303]\"}}\n"
+}

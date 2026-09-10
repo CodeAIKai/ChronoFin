@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00005",
+  "company": "Corning",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "08af333c3c480de7a3963d4aab36e7d239246a09a1f8f575f03f9276f404f01e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "aba5daeadfbfdf2bc435e17c73eeb106d122e88d1f8a83e489aa00652e80c4b3",
+  "started_utc": "2026-09-09T17:32:18.063388+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate ignored the question about Corning's FY2022 working capital and instead described an executive pension plan, providing no answer on working capital positivity or relevance.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate discussed Corning Executive Supplemental Pension Plan, not Corning working capital."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2022 working capital period addressed."
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No monetary unit for working capital provided."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Failed to answer yes/no on positive working capital or state irrelevance."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence on balance sheet not used; candidate text unrelated to question."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "958d2621296660402aaaacb48de6f387efd064152674dd7630004992d68b02c4",
+    "latency_seconds": 4.415,
+    "usage": {
+      "prompt_tokens": 2190,
+      "completion_tokens": 208,
+      "total_tokens": 2398,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c9cb0a5b18ac1ff3924c1a40f92b161de6d4fab6cbf3a96626cfb405f8ba8a93"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

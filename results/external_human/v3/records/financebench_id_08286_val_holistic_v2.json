@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_08286",
+  "uid": "financebench_id_08286_val",
+  "split": "new_response_validation",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "920c0b73bdc4e82b214c09a26140d335ccd64cd3c0bbd0e4a3060722249dc771",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "3a98e8e21cd4c6a30d8222b0c76ec3d2026c3238efe834664c56e4e2da058e38",
+  "started_utc": "2026-09-10T01:34:02.475440+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states FY2019 net income attributable to shareholders as $11,588 million, matching reference and income statement evidence (Net income $11,588 for 2019)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bb0cea9b230f8c4b4fb7f2a6b5710f90556f71cd07dc84a1846a47ebca4a10ef",
+    "latency_seconds": 5.262,
+    "usage": {
+      "prompt_tokens": 1401,
+      "completion_tokens": 56,
+      "total_tokens": 1457,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "34a50d55d056e73fdf46ce40a556bafd69dcd583d0f3ce3e893d33865e876757"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

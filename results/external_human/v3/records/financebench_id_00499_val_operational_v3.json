@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00499",
+  "uid": "financebench_id_00499_val",
+  "split": "new_response_validation",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "6fa78ff2fa9283d904d754ed38e88cae4ff43b3434abe3c02cd78caeb0c40180",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "43e03ff55318ef846c8194a67580dcee15fa5cdd88baaa2b2a42e9ee2ba39409",
+  "started_utc": "2026-09-09T18:06:10.723049+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Here are the key points about 3M's legal proceedings related to PFAS",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Question asks if 3M is capital-intensive based on FY2022 data; reference says no with CAPEX/Revenue 5.1%, Fixed assets/Total assets 20%. Candidate ignores question and dumps unrelated PFAS litigation summary, no capital-intensity answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "47edb84eda43f2a9e1981f99c81b6335a16efc7e2e3bd3274924f85ce66474c0",
+    "latency_seconds": 6.286,
+    "usage": {
+      "prompt_tokens": 3740,
+      "completion_tokens": 118,
+      "total_tokens": 3858,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6384eaa312a2e73654606b209a11f05c90f5fa8397ce84310099d16ec31fa0c3"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

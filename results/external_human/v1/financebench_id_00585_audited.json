@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00585",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "706289c365363ba3bf165919f27253c9ba85cdd4aec4713f7706519d8bc1c610",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "3cd1fc140f9f24bce7f71a034af201b2f1311035568c5d6b65b0d3682c532ef2",
+  "started_utc": "2026-09-09T17:32:59.126959+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly states FY2022 effective tax rate ~0.62% (positive) vs FY2021 -14.76% (negative), matching reference and evidence calculations from loss before tax and income tax figures.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Boeing, as requested."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 and FY2021 both addressed."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Rates given as percentages, consistent with reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "FY2022 ~0.62% vs FY2021 -14.76%, agrees with reference; candidate notes positive vs negative shift."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows loss before tax (5,022)/(5,033) and tax (31 exp)/(743 ben); computed rates match."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7236c90ac2078ba000f3caafe89edb55f6fba94975140fb7df804ea522caada2",
+    "latency_seconds": 3.211,
+    "usage": {
+      "prompt_tokens": 1767,
+      "completion_tokens": 241,
+      "total_tokens": 2008,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d1995e22915a2ec57a393a70f328f27739406d62fc6219a479f44baca7f44910"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

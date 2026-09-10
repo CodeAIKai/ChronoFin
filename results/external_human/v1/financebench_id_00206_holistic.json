@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00206",
+  "company": "JPMorgan",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "5e3d562d75b532af1d032ee72ab918c3a7fcac26104e5d5f260fda939a499db3",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "805c09033ce2a80f118c9b7c9f2d9cd526b2c969558cc47dd5559340f06d77f1",
+  "started_utc": "2026-09-09T17:32:22.520883+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate correctly states gross margin is not a relevant metric for JPM as a financial services firm and explains why, agreeing with reference and evidence showing JPM is a financial services firm."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fae46a73f880d03939e9044e7c91c761c64f49a8936ee84a9d1778ece12d5147",
+    "latency_seconds": 2.078,
+    "usage": {
+      "prompt_tokens": 2028,
+      "completion_tokens": 57,
+      "total_tokens": 2085,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f6fafb69ecc700964ff3679b4ec982a65cac708975edada7f2b4c972ce936b72"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

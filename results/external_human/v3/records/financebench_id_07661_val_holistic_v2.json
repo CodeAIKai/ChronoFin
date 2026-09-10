@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_07661",
+  "uid": "financebench_id_07661_val",
+  "split": "new_response_validation",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "57f7eca8045522b33354623c9e031666df4f9785f00bc61902f0a7d440182056",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "81ba048e5036c597b8bbb8fe2395cabb2a762e47a9ca6f5aa61100e51d5220f7",
+  "started_utc": "2026-09-10T01:33:46.203375+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states FY2020 operating cash flow was $381.6M (from $381,603K in evidence), matching reference 382 with reasonable rounding; substantive answer provided."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "73f29cc668cabdc0da70dc4dcba23fc2c10c5c993633bd870b611cf7ac9f0e0f",
+    "latency_seconds": 8.827,
+    "usage": {
+      "prompt_tokens": 2904,
+      "completion_tokens": 57,
+      "total_tokens": 2961,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "76182faede24b82fcec8347ea9a4f17f8d33e99490960aaefecedabb2c79a569"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

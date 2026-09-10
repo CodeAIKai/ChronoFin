@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04417",
+  "uid": "financebench_id_04417_dev",
+  "split": "development",
+  "company": "Best Buy",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "f3927e78a16985f92db5f5281d63cb0252e4ee491a15e2c589c9d4f45a849fb9",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d6c4d24fa0454bc670341afb111dc924d6b372111183180720bd3a9d37edc8a3",
+  "started_utc": "2026-09-10T01:31:59.136476+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "the year-end FY2019 total amount of inventories for Best Buy is $11,395 million USD",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Balance sheet shows Merchandise inventories (FY2019/Feb 2 2019) of $5,409 million; candidate stated $11,395 million, which is wrong amount."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7d5d1cbd626b422646188b766aede9e49a6dfdbb9fca2475b74f56417e53f75c",
+    "latency_seconds": 8.818,
+    "usage": {
+      "prompt_tokens": 1747,
+      "completion_tokens": 109,
+      "total_tokens": 1856,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6b0e21399775c1dcd5e7c9b0bd3d4579fc920e940ae208fe92f343bc381664b0"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

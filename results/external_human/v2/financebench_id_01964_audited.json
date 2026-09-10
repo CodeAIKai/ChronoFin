@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01964",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c5d14620b70e71dda5f980a56ad86a33783bc38eaaace2d3559bb49aa0001853",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "2352b022fcc41d192fffc6fe590efeded2e3424ceb8bd8c4a5dffeabdbdf2742",
+  "started_utc": "2026-09-09T17:50:26.910896+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence shows Customer deposits of $110,239M is largest liability in 2022; candidate claims Membership Rewards liability $12,789M which is not in evidence and is far smaller than Customer deposits.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate identifies American Express as entity implicitly via context"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate uses 2022 as required"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate uses millions USD consistent with evidence"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says Membership Rewards liability is largest at $12,789M; evidence shows Customer deposits $110,239M is largest and no Membership Rewards line exists"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence does not list Membership Rewards liability and Customer deposits is larger than all listed liabilities"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3e468986af322c2f4e31e451ce662b7fd87b67fca0414ea7aeb2830d5821b955",
+    "latency_seconds": 9.272,
+    "usage": {
+      "prompt_tokens": 2164,
+      "completion_tokens": 245,
+      "total_tokens": 2409,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "dc6971f5d25833fdad4089999c73d264ddef3cb497be1517515520b2933869bf"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

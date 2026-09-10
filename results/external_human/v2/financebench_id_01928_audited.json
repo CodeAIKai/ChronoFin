@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01928",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "0390b60d7d071c1962d7a6dd946a1fc7fb0154f8d242154b78c9e725e2f63503",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "d78e4187d656a347d0532b9443c974e323813bfa819956937908c55eaaa0e1ae",
+  "started_utc": "2026-09-09T17:50:04.846916+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states Amcor Adjusted Non-GAAP EBITDA for FY2023 (twelve months ended June 30, 2023) was $2,018 million, matching reference and evidence table 'Adjusted EBITDA' column for 2023 showing 2,018.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Amcor/AMCOR as requested"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2023 interpreted as twelve months ended June 30 2023 per evidence"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer in $ million matching reference mn and evidence $ million"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Adjusted Non-GAAP EBITDA = $2,018 million agrees with reference and evidence"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table shows Adjusted EBITDA 2,018 for 2023 period"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1d3166bf28c7b91d97835f141de3e498cb84597b80259ef63bc1015425d029ad",
+    "latency_seconds": 11.124,
+    "usage": {
+      "prompt_tokens": 2797,
+      "completion_tokens": 262,
+      "total_tokens": 3059,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "727968b77943d324ff85725cb9bba9b0b4d9545d03d64b4cc4282dfd3924a69a"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

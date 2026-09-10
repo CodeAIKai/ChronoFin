@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01275",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "824e9697cd932917c607594f01db9c5779ec049d781fc8fd9a515574a61a3d04",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "0acbf2e39d354cd24e79d01fad6845db210eac85ea05f71adb56763c6eac8dd5",
+  "started_utc": "2026-09-09T17:48:15.604202+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it lacks FY2023 cash flow data and cannot determine the answer, withholding the requested conclusion despite evidence containing FY2023 (Jan 28, 2023) cash flow figures.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Best Buy identified as subject"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2023 (Jan 28, 2023) is requested period"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Cash flow amount unit not answered"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer provided; claims data missing and cannot determine"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence includes FY2023 cash flows: operating +1824M, investing -962M, financing -1806M; operating most"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fa0090b93706eb84d1cd7854512485b8a95bae33d5903b563f6d691e31b09e06",
+    "latency_seconds": 9.334,
+    "usage": {
+      "prompt_tokens": 3147,
+      "completion_tokens": 234,
+      "total_tokens": 3381,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cc7621b29e1e9de19d130f0f4e03cd0e2508624c92fb1b2326d500d8d7b85768"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

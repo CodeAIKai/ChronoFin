@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01198",
+  "uid": "financebench_id_01198_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6f395f28fb08171db560987fe355e7a51be8b970f5c8d3a205adf13d232dbba0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "73bc3e068a3cf654f7fde2504142af6cb1460711e05e4857759b41291203b54d",
+  "started_utc": "2026-09-09T18:09:50.920991+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "The revenue change for AMD in FY22 was driven by several factors:",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate cites EPYC server processor sales (Data Center), semi-custom product sales (Gaming), and Xilinx embedded product inclusion (Embedded) as drivers, matching reference and 10-K evidence: higher EPYC sales, higher semi-custom sales, Xilinx embedded inclusion drove 2022 revenue increase."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1fad98abfca8755a7875c65a272552ba468b046d197a1d04b6e4b5aac85b9fe7",
+    "latency_seconds": 8.1,
+    "usage": {
+      "prompt_tokens": 1870,
+      "completion_tokens": 126,
+      "total_tokens": 1996,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d27dafd84395a21c1cceab3a71ed9ca37d5719ffb5bd73d85dbf18a88a6b9814"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

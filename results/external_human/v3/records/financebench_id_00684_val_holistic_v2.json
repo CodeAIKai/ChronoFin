@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00684",
+  "uid": "financebench_id_00684_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "628bf7d849f78265a45206d1af41ab44b34ac97a2f229959cd1abcd14fef7163",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "a00212b814aa9cb3e70ff514801a966a225c5fbf1dff354092d71360feb5609e",
+  "started_utc": "2026-09-09T18:07:23.320879+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states no specific AMCOR data is available and withholds the requested conclusion, saying it cannot be determined despite evidence showing gross margin declined from 19.4% (2820/14544) to 18.5% (2725/14694), about -0.8%."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8e19428969933d9cda9f4de1baf53fd49f33c725adb97ccba1098767cfece031",
+    "latency_seconds": 3.728,
+    "usage": {
+      "prompt_tokens": 1158,
+      "completion_tokens": 83,
+      "total_tokens": 1241,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1534d6e517ccdf384d94b42787ee3527323ea272d74c803ffce6b6eb5a39bff3"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

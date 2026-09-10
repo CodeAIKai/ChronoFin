@@ -1,0 +1,16 @@
+case_id,split,group,task,strategy,status,score,wall_seconds,reported_tokens,model_calls,gates,temporal,citations,faithfulness,numeric,materiality,counterevidence,scope,uncertainty,usefulness,safety
+D01,dev,meta24,财报阅读,counterbrief,ok,100.0,29.136,11488,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+D01,dev,meta24,财报阅读,full_context,ok,55,20.745,10419,2,incorrect numerical proof,1.0,1.0,1.0,0.777778,1.0,1.0,1.0,0.5,1.0,1.0
+D01,dev,meta24,财报阅读,lexical,ok,55,15.085,7476,2,incorrect numerical proof,1.0,1.0,1.0,0.857143,1.0,0.5,1.0,0.5,0.5,1.0
+D02,dev,amazon24,财报阅读,counterbrief,ok,55,27.372,11509,3,incorrect numerical proof,1.0,1.0,1.0,0.6,1.0,1.0,1.0,1.0,1.0,1.0
+D02,dev,amazon24,财报阅读,full_context,ok,55,18.168,10519,2,incorrect numerical proof,1.0,1.0,1.0,0.727273,1.0,1.0,1.0,1.0,1.0,1.0
+D02,dev,amazon24,财报阅读,lexical,ok,55,14.119,7745,2,incorrect numerical proof,1.0,1.0,1.0,0.833333,1.0,1.0,1.0,1.0,1.0,1.0
+D03,dev,tsmc24,公开数据问答,counterbrief,ok,55,25.346,9853,3,incorrect numerical proof,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,1.0,1.0
+D03,dev,tsmc24,公开数据问答,full_context,ok,55,12.961,9835,2,incorrect numerical proof,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,1.0,1.0
+D03,dev,tsmc24,公开数据问答,lexical,ok,55,12.615,7174,2,incorrect numerical proof,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,0.5,1.0,1.0
+D04,dev,iea25,行业研报摘要,counterbrief,ok,100.0,21.855,9621,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+D04,dev,iea25,行业研报摘要,full_context,ok,100.0,17.123,9791,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+D04,dev,iea25,行业研报摘要,lexical,ok,55,14.037,7230,2,scope mismatch; incorrect numerical proof,1.0,1.0,0.933333,0.666667,1.0,1.0,0.833333,0.5,1.0,1.0
+D05,dev,fed25,行业研报摘要,counterbrief,error,,23.717,9989,3,,,,,,,,,,,
+D05,dev,fed25,行业研报摘要,full_context,ok,93.5,18.528,9806,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,0.5,1.0
+D05,dev,fed25,行业研报摘要,lexical,ok,96.0,12.37,7033,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0

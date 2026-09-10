@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00288",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "998a1746640ed831b9408b555c084eb063dd566f077b1655d7eb10f4086ced30",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "a2f78804c481d59730260b63a760921ba08a44ce9bc491f643c0d442d6b96243",
+  "started_utc": "2026-09-09T17:32:32.199768+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate confirms a drop in Cash & Cash equivalents from FY2023 ($1,874M) to Q2 FY2024 ($1,093M) per evidence, agreeing with reference's yes-decline answer; % not required and magnitude consistent.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Cash & Cash equivalents, correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2023 (Jan 28 2023) vs Q2 FY2024 (Jul 29 2023) matched"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Values in $ millions per evidence, candidate uses $ million"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Candidate says drop occurred; reference says yes decline ~42%; evidence shows 1874 to 1093 decrease"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table shows 1874 at Jan 28 2023 and 1093 at Jul 29 2023, supporting drop"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9cb864f2bb7ab6c47f8170dc44b3ee6c8d864afe044d79375e290a1f22d2368f",
+    "latency_seconds": 4.197,
+    "usage": {
+      "prompt_tokens": 3550,
+      "completion_tokens": 261,
+      "total_tokens": 3811,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f1ca6847384b9860d21df87098c7159cb39f93d578612b1fd3fe61eeed4f7857"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "source_id": "meta24",
+    "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf",
+    "status": "ok",
+    "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+    "bytes": 177759,
+    "retrieved_utc": "2026-09-09T15:41:51.331055+00:00"
+  },
+  {
+    "source_id": "amazon24",
+    "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2024/q4/AMZN-Q4-2024-Earnings-Release.pdf",
+    "status": "ok",
+    "sha256": "0435f36d49cc40373c1ec7d6a8aa77abf83f90f7774b477d69f28b3859e7fe72",
+    "bytes": 358812,
+    "retrieved_utc": "2026-09-09T15:41:39.286501+00:00"
+  },
+  {
+    "source_id": "tsmc24",
+    "url": "https://pr.tsmc.com/english/news/3201",
+    "status": "ok",
+    "sha256": "76879d644cbd54944a4a479fdab1d00ec8388ee929cd0cd30bb20752c46e6011",
+    "bytes": 181605,
+    "retrieved_utc": "2026-09-09T15:41:40.115402+00:00"
+  },
+  {
+    "source_id": "iea25",
+    "url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+    "status": "ok",
+    "sha256": "f04fbd23f594f50f0c1563aeae9223ab814b949ea73c398cbb063384f34c4394",
+    "bytes": 257576,
+    "retrieved_utc": "2026-09-09T15:41:54.933270+00:00"
+  },
+  {
+    "source_id": "fed25",
+    "url": "https://www.federalreserve.gov/publications/April-2025-financial-stability-report-Overview.htm",
+    "status": "ok",
+    "sha256": "1faf3800b68f79dc11684a2ac4456fd240d515cf344a7be0da71626aeef3aa8a",
+    "bytes": 86956,
+    "retrieved_utc": "2026-09-09T15:41:42.862023+00:00"
+  }
+]

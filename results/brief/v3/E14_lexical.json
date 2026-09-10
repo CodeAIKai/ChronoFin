@@ -1,0 +1,395 @@
+{
+  "case_id": "E14",
+  "split": "evaluation",
+  "group": "fed25",
+  "task": "公开数据问答",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:59:15.202946+00:00",
+  "protocol_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "status": "ok",
+  "finished_utc": "2026-09-09T17:26:34.023622+00:00",
+  "wall_seconds": 14.286,
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "lexical",
+    "query": {
+      "question": "截至 2025-04-11，根据当前这份美联储网页说明当时已经公开的稳定性结论。",
+      "as_of": "2025-04-11"
+    },
+    "evidence": [
+      {
+        "id": "M04",
+        "source_id": "meta24",
+        "locator": "p2 CFO outlook",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Meta anticipated FY2025 capital expenditures of USD 60–65 billion; guidance, not realized spending.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M05",
+        "source_id": "meta24",
+        "locator": "p2 depreciation footnote",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Longer server lives were expected to reduce FY2025 depreciation by USD 2.9 billion; an accounting-estimate change.",
+        "value": 2.9,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M09",
+        "source_id": "meta24",
+        "locator": "p2 revenue outlook",
+        "role": "caution",
+        "status": "absence",
+        "text": "Meta provided no FY2025 full-year revenue guidance in this release.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A02",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 operating income: USD 68593 million.",
+        "value": 68593,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A03",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual sales",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 net sales: USD 107556 million.",
+        "value": 107556,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A04",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 operating income: USD 39834 million.",
+        "value": 39834,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      }
+    ],
+    "excluded_ids": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07"
+    ],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "所提供的资料卡片均来自 Meta、TSMC、Amazon 的个别公司报告或展望，未包含任何美联储（Federal Reserve）网页或其关于金融系统稳定性的公开说明。问题要求依据截至 2025-04-11 的美联储网页稳定性结论，但证据中无对应来源 ID 或相关内容，故无法回答该问题。",
+      "claims": [],
+      "calculations": [],
+      "limitations": [
+        "无美联储网页说明或稳定性结论资料",
+        "无法判断美联储截至 2025-04-11 的公开系统性稳定评估"
+      ],
+      "follow_up": [
+        {
+          "action": "检索并核对美联储官网截至 2025-04-11 发布的金融稳定报告或说明页",
+          "reason": "只有获取美联储来源卡片才能回答该稳定性结论问题",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "所提供的资料卡片均来自 Meta、TSMC、Amazon 的个别公司报告或展望（披露日介于 2025-01-16 至 2025-02-06），未包含任何美联储（Federal Reserve）网页或其关于金融系统稳定性的公开说明。问题要求依据截至 2025-04-11 的美联储网页稳定性结论，但证据中无对应来源 ID 或相关内容，故无法回答该问题。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "资料中无任何美联储来源 ID 或网页稳定性说明内容",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M04",
+            "M05",
+            "M09",
+            "T06",
+            "A01",
+            "A02",
+            "A03",
+            "A04"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无美联储网页说明或稳定性结论资料",
+        "无法判断美联储截至 2025-04-11 的公开系统性稳定评估"
+      ],
+      "follow_up": [
+        {
+          "action": "检索并核对美联储官网截至 2025-04-11 发布的金融稳定报告或说明页",
+          "reason": "只有获取美联储来源卡片才能回答该稳定性结论问题",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "a50785fa4b83c0e5685252cd9eaeb1631d042ff90914dc01d028a4cb47b2ab6f",
+        "latency_seconds": 3.591,
+        "usage": {
+          "prompt_tokens": 1238,
+          "completion_tokens": 182,
+          "total_tokens": 1420,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "cc7c253026bb0a85f420c4006311f8af17c75cbd53372b3ac71dfd5751a90378"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "19b47ee2c9580eef02ba8b84d9f5817e6d50cc4f3b8d04047b7c78541ad68594",
+        "latency_seconds": 3.248,
+        "usage": {
+          "prompt_tokens": 1462,
+          "completion_tokens": 279,
+          "total_tokens": 1741,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "ccd343f45a8bb0b2ffabeee93f027a01c2a6279abe56e500c57d1a4f6d67584b"
+      }
+    ],
+    "input_sha256": "3f42a63f945b18f54024e9bffeb837e8fd9b780d145f204ba3bd56b636873a03",
+    "schema_failure": "claims length 1..30",
+    "schema_repaired": {
+      "answerability": "unanswerable",
+      "summary": "所提供的资料卡片均来自 Meta、TSMC、Amazon 的个别公司报告或展望（披露日介于 2025-01-16 至 2025-02-06），未包含任何美联储（Federal Reserve）网页或其关于金融系统稳定性的公开说明。问题要求依据截至 2025-04-11 的美联储网页稳定性结论，但证据中无对应来源 ID 或相关内容，故无法回答该问题。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "资料中无任何美联储来源 ID 或网页稳定性说明内容",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M04",
+            "M05",
+            "M09",
+            "T06",
+            "A01",
+            "A02",
+            "A03",
+            "A04"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无美联储网页说明或稳定性结论资料",
+        "无法判断美联储截至 2025-04-11 的公开系统性稳定评估"
+      ],
+      "follow_up": [
+        {
+          "action": "检索并核对美联储官网截至 2025-04-11 发布的金融稳定报告或说明页",
+          "reason": "只有获取美联储来源卡片才能回答该稳定性结论问题",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer_sha256": "2ec9a2c6e5aa320a2298d7729c7bc896b73672a310f5a00c35e64a3fc3360bee"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文明确说明资料均来自个别公司报告，无美联储来源或稳定性说明，与证据 ID 均为非美联储公司资料一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "无美联储网页说明或稳定性结论资料"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "问题要求美联储网页稳定性结论，但候选证据无美联储来源，正确判定不可答并说明限制"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "81abe148e92bcf96a465035af05ea4684b8b7dbfb579a7bf0ef06418473b01b0",
+      "latency_seconds": 4.122,
+      "usage": {
+        "prompt_tokens": 3753,
+        "completion_tokens": 153,
+        "total_tokens": 3906,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "468e1e172c7ad220af82c83382cb09ded3410f989f5b63ce3c3949b95812330c"
+    },
+    "input_sha256": "e857cc420eab087f09fe27a5c54dbee6c0de47f3262524297c5794ed26dff0b3",
+    "answer_sha256": "2ec9a2c6e5aa320a2298d7729c7bc896b73672a310f5a00c35e64a3fc3360bee",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "2ec9a2c6e5aa320a2298d7729c7bc896b73672a310f5a00c35e64a3fc3360bee",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "resume_wall_seconds": 10.967,
+  "timing_scope": "Cumulative active processing across attempts; excludes downtime between attempts. Not fresh-run latency.",
+  "resumed_utc": "2026-09-09T17:26:34.023642+00:00",
+  "resume_history_file": "results/brief/v3/resume_history/v3/E14_lexical.before_resume_1788974783056153995.json"
+}

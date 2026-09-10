@@ -1,0 +1,385 @@
+{
+  "status": "ok",
+  "mode": "live_pdf",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+      "as_of": "2025-01-28"
+    },
+    "evidence": [],
+    "excluded_ids": [
+      "P6CCE34AA1B1",
+      "P6CCE34AA2B1",
+      "P6CCE34AA3B1",
+      "P6CCE34AA4B1",
+      "P6CCE34AA4B2",
+      "P6CCE34AA5B1",
+      "P6CCE34AA6B1",
+      "P6CCE34AA7B1",
+      "P6CCE34AA7B2",
+      "P6CCE34AA8B1",
+      "P6CCE34AA9B1",
+      "P6CCE34AA10B1"
+    ],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "本次查询要求概括 Meta FY2024 盈利质量，包括业务驱动、利润与现金流、反面证据和后续核查，但所提供的资料为空（evidence 为空列表），在 as_of 2025-01-28 边界下无任何官方报告整理卡片可供依据，因此无法回答该问题，亦不能编造任何数字或结论。",
+      "claims": [],
+      "calculations": [],
+      "limitations": [
+        "无 Meta FY2024 相关事实/转述卡片，不能判断盈利质量、业务驱动、利润与现金流或反面证据",
+        "未披露项无法从缺失推断为业务不存在"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 10-K 或官方财报整理卡片（含营收、净利润、经营现金流、资本开支、分业务驱动与风险披露）",
+          "reason": "补齐证据后方可回答盈利质量概括并识别反证",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "本次查询要求概括 Meta FY2024 盈利质量，包括业务驱动、利润与现金流、反面证据和后续核查，但所提供的资料为空（evidence 为空列表）。在 as_of 2025-01-28 边界下无任何官方报告整理卡片可供依据，因此无法回答该问题，亦不能编造任何数字或结论。缺失披露不代表业务不存在，仅说明当前无证据支持判断。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "所提供的资料中无任何 Meta FY2024 相关事实或转述卡片，无法概括其盈利质量",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无 Meta FY2024 相关事实/转述卡片，不能判断盈利质量、业务驱动、利润与现金流或反面证据",
+        "未披露项无法从缺失推断为业务不存在"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 10-K 或官方财报整理卡片（含营收、净利润、经营现金流、资本开支、分业务驱动与风险披露）",
+          "reason": "补齐证据后方可回答盈利质量概括并识别反证",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "dd5335a32b8386e122d6742851499ba5fea2860ba61af5ef173de68537e59cfe",
+        "latency_seconds": 3.565,
+        "usage": {
+          "prompt_tokens": 612,
+          "completion_tokens": 208,
+          "total_tokens": 820,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "a72c1b8e99e33a8ea77f3139e0cdc785d4c660db91512c54d7b0ffd646ab88f2"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "bd45f569926c3a42246f4865c38b0619c3cab8d92bb4c218fbee88894c81a1f6",
+        "latency_seconds": 3.04,
+        "usage": {
+          "prompt_tokens": 862,
+          "completion_tokens": 277,
+          "total_tokens": 1139,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "4ec4cf5334b8116ec405ddb489e4b68b82c80fdd71bef38e81f1fdf8c95f8bec"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "03f4c28b165e56a5059dbf07086c2b211171cf8a7fba3ca21dcc160855fb76de",
+        "latency_seconds": 3.547,
+        "usage": {
+          "prompt_tokens": 955,
+          "completion_tokens": 277,
+          "total_tokens": 1232,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "ff4621119ad0ccf52b34cacdbead84a9fffe388ab7bf6dc23b83fd352297c97d"
+      }
+    ],
+    "input_sha256": "b5cd328370fd3fca92f01e27c6f810e23d160e039a7e01110b64cb1df21853c8",
+    "schema_failure": "claims length 1..30",
+    "schema_repaired": {
+      "answerability": "unanswerable",
+      "summary": "本次查询要求概括 Meta FY2024 盈利质量，包括业务驱动、利润与现金流、反面证据和后续核查，但所提供的资料为空（evidence 为空列表）。在 as_of 2025-01-28 边界下无任何官方报告整理卡片可供依据，因此无法回答该问题，亦不能编造任何数字或结论。缺失披露不代表业务不存在，仅说明当前无证据支持判断。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "所提供的资料中无任何 Meta FY2024 相关事实或转述卡片，无法概括其盈利质量",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无 Meta FY2024 相关事实/转述卡片，不能判断盈利质量、业务驱动、利润与现金流或反面证据",
+        "未披露项无法从缺失推断为业务不存在"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 10-K 或官方财报整理卡片（含营收、净利润、经营现金流、资本开支、分业务驱动与风险披露）",
+          "reason": "补齐证据后方可回答盈利质量概括并识别反证",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "calculator_results": [],
+    "revision_raw": {
+      "answerability": "unanswerable",
+      "summary": "本次查询要求概括 Meta FY2024 盈利质量，包括业务驱动、利润与现金流、反面证据和后续核查，但所提供的资料为空（evidence 为空列表）。在 as_of 2025-01-28 边界下无任何官方报告整理卡片可供依据，因此无法回答该问题，亦不能编造任何数字或结论。缺失披露不代表业务不存在，仅说明当前无证据支持判断。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "所提供的资料中无任何 Meta FY2024 相关事实或转述卡片，无法概括其盈利质量",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无 Meta FY2024 相关事实/转述卡片，不能判断盈利质量、业务驱动、利润与现金流或反面证据",
+        "未披露项无法从缺失推断为业务不存在"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 10-K 或官方财报整理卡片（含营收、净利润、经营现金流、资本开支、分业务驱动与风险披露）",
+          "reason": "补齐证据后方可回答盈利质量概括并识别反证",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer_sha256": "92dce2d5523fa2312cde0ff9c425db2b5d75422e924f8e92fae0d28f557868d8",
+    "pipeline": "native_pdf",
+    "extraction_traces": [],
+    "source_document": {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 12,
+      "selected_ids": [],
+      "selected_pages": [],
+      "selection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "extraction_raw": null,
+    "extraction_audit": {
+      "facts_proposed": 0,
+      "facts_accepted": 0,
+      "rejected": [],
+      "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "quote_verification": "whitespace-normalized exact contiguous source match",
+      "limitation": "Quote existence and raw numeric equality do not independently prove the correct fiscal column or semantic interpretation."
+    }
+  },
+  "sources": [
+    {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    }
+  ],
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文明确说明资料为空无法概括，与无来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "无 Meta FY2024 相关事实/转述卡片，不能判断盈利质量、业务驱动、利润与现金流或反面证据"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "资料为空且截止日未公开，候选正确判不可答并说明限制与后续核查"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "9c82575b4a3099fc4b55d8f2c56c6415b66fae58c0302ac65d185a55477a3b06",
+      "latency_seconds": 2.178,
+      "usage": {
+        "prompt_tokens": 1052,
+        "completion_tokens": 155,
+        "total_tokens": 1207,
+        "prompt_tokens_details": {
+          "cached_tokens": 576
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "01fbaac7879c63861826d4ab9ad88b93a9f9bb508559998f450e77a25c763c2b"
+    },
+    "input_sha256": "55c9ac870c84d1da691bc5286086bf31411c93521ab7852774ab29dca345ac48",
+    "answer_sha256": "92dce2d5523fa2312cde0ff9c425db2b5d75422e924f8e92fae0d28f557868d8",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "92dce2d5523fa2312cde0ff9c425db2b5d75422e924f8e92fae0d28f557868d8",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "replay_material": {
+    "audit_cards": [],
+    "reference_case": {
+      "id": "D01",
+      "split": "dev",
+      "source_group": "meta24",
+      "task": "财报阅读",
+      "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+      "as_of": "2025-01-28",
+      "difficulty": "hard",
+      "required": [],
+      "counter": [],
+      "limitations": [
+        "给定原件尚未在截止日前公开，不能根据其内容作答。"
+      ],
+      "expected_answerability": "unanswerable"
+    }
+  },
+  "raw_source_audit_sha256": "29c6245b8d3bcf3a611bb4064b77552167d5ad6c64b8c272db23abb9533ef5fa",
+  "id": "meta24_before",
+  "protocol_sha256": "dcb36f2fc867a6477f8e346033f8e72f472f8e00e8835b20595854ddc945855d",
+  "finished_utc": "2026-09-09T17:56:32.265217+00:00",
+  "wall_seconds": 13.169
+}

@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00080",
+  "company": "Paypal",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "64e75fb20a236628f9d330a3c2108d6c35a4f4875ae6e1db6be1eadb519599f4",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "356b71554774f3e6b09ccb804cabb48e6a0001883f74dfd1a9440226dbc5575c",
+  "started_utc": "2026-09-09T17:42:08.320870+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds the requested conclusion, stating it is not possible to definitively answer without additional calculations and only explains how to obtain working capital, despite evidence providing data to compute it."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "54a88f38631f11e087d59fa2a8eb6f3c10c609cf0830ff7ac44e04e7c3cda93e",
+    "latency_seconds": 7.647,
+    "usage": {
+      "prompt_tokens": 1816,
+      "completion_tokens": 57,
+      "total_tokens": 1873,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0b2c44cbadab72fef37c8e185aa322bbb4781d05e936b5bd8469388ec92543dc"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

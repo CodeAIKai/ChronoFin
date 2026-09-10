@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00723",
+  "uid": "financebench_id_00723_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "a80159c0702da94e382ce3a66b1b1ed4e1fc1be52a7871f3da96e97224f2ed1a",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "ca6e3782e984cd6c06dfb41befe3307cdbdc644475a28b8fc83b0cac5f01bb05",
+  "started_utc": "2026-09-09T18:07:50.066975+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate discusses debt/borrowings and ignores the question about operating margin or why it is not useful, providing no substantive answer to the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b4892daaacf721a55fedcd8e6f044d0c6de1752ad804bd648e797d7a591b4aa3",
+    "latency_seconds": 6.58,
+    "usage": {
+      "prompt_tokens": 2284,
+      "completion_tokens": 52,
+      "total_tokens": 2336,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "22a7fd8a68c90d68a4091c76fc3d5cd7683ea2e087320ace2b01aa383c304268"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

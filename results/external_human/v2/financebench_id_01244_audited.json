@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01244",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cab4e714a277e81436ebe4e40770fd5a494ce0b2a6a33a357fbed92f3f5f4450",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "0b7249913a9521f6ddfe9a607f4c9fe7d393f0f4e9eaab3e0a5bcbbf77c48e23",
+  "started_utc": "2026-09-09T17:48:04.949124+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers yes with supporting evidence that quarterly dividend was $0.55 in 2022, covering Q2 FY2022.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "CVS Health common shareholders identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Q2 FY2022 covered by 2022 quarterly dividend statement"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Dividend per share context, yes/no question answered"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Yes, paid dividends in Q2 FY2022 per evidence"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows $0.55 quarterly dividend in 2022"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "874e6d9ce9b230fd4ebf4b23e4676ae89ca396796cc52ec7ab09281d4248f0dd",
+    "latency_seconds": 10.276,
+    "usage": {
+      "prompt_tokens": 1588,
+      "completion_tokens": 211,
+      "total_tokens": 1799,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "84152190ed7a2fdf5ac91e89c2d4ae922bd7c1e76a05ee61d7a32909e1863639"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

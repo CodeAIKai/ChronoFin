@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_07661",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "022c094b228aa7c57280368b6511731376c22e19bc19da7f8320f00ea1d71168",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "8a46425d0b2669c128e99e877f6f1533ecbd2fe621d8bab02ac5c8e1fa8fc4ce",
+  "started_utc": "2026-09-09T18:03:34.524238+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it lacks the specific FY2020 Block/Square operating cash flow data and does not provide a substantive answer, despite evidence containing the figure (381,603 thousand = $381.6M, reference $382.00M)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c6599cfd3780a37f7668375306ffd56ecfdc8d006af992e957ec5b3e0c1e52e4",
+    "latency_seconds": 6.945,
+    "usage": {
+      "prompt_tokens": 2827,
+      "completion_tokens": 70,
+      "total_tokens": 2897,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "15b6ba92857f6a9ccca87a6e2e7d1ddcbedb1eeb141aaf86f24f345ae25fd7de"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

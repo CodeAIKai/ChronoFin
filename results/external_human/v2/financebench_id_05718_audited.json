@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_05718",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "16318a0497a5c9346152158c2830474ca98551743f36b5a3ff150374927a5c54",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "d13515f329add67ad10dc5bd42a453446ec744255c2879d53ad8fc15f20f0b17",
+  "started_utc": "2026-09-09T17:54:05.273887+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computed $0.389 billion from $389 million dividends paid per cash flows, but reference answer is 0.4 USD billions; candidate's exact extraction is correct per evidence yet reference expects 0.4 (rounded), so substantive answer disagrees with reference.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "American Water Works Company, Inc. identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2020 (year ended Dec 31, 2020) used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Converted to USD billions as requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave 0.389, reference is 0.4; material numeric mismatch vs reference"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows Dividends paid (389) in millions for 2020, supporting 0.389 billion"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "da24acc065f934e9a8bfc4d5c3f19c4b0ecf1f40f0f8bac4ec43639c6593b05b",
+    "latency_seconds": 9.155,
+    "usage": {
+      "prompt_tokens": 2731,
+      "completion_tokens": 254,
+      "total_tokens": 2985,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1bd45abb41ed8671cb1e132afa3c21f74f32bc6433bdbfe7169f85a35d5acf4d"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

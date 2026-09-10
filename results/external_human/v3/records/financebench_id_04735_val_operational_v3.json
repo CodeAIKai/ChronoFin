@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04735",
+  "uid": "financebench_id_04735_val",
+  "split": "new_response_validation",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "96c0cf732f06dc4320a87d0d9da8d0fc39cdad32970c7addac29c62df7dbcdfc",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "cc285f07004b3577cee93e9189f30db36acf563af1b13d307cec6d4a7d107f8a",
+  "started_utc": "2026-09-10T01:32:39.798162+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide the FY2015 operating cash flow ratio for Adobe as the necessary information to calculate the total current liabilities for the fiscal year 2015 is not provided within the context given.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer, claiming total current liabilities missing, though evidence balance sheet shows Total current liabilities 2,213,556 (thousands) and cash flow shows operating cash 1,469,502 (thousands), ratio = 1,469,502/2,213,556 = 0.66 matching reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4ce2d51c42d1bc77a575e877117fdf97994e90b7cd921789fb9c2a8cf9ace0c2",
+    "latency_seconds": 9.842,
+    "usage": {
+      "prompt_tokens": 4964,
+      "completion_tokens": 157,
+      "total_tokens": 5121,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8ca3ff00a087be05eb68fcd37a5969b0e3ad18ed1441650c6c935395011c40d8"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

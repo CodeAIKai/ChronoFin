@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00382",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b57d4ee9fafe1d8fd008e4717d33365bfb2864ee3a51fa6a44d3462c785a4ade",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "a78f174384dd626627b6300e6328b84646ed85daab12a7c492ef532e8fb0e204",
+  "started_utc": "2026-09-09T17:32:36.398751+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.97,
+    "reason": "Candidate identifies Las Vegas Strip Resorts as highest EBITDAR contributor for MGM FY2022; evidence shows Las Vegas Strip Resorts Adjusted Property EBITDAR $3,142,308k (highest) vs Regional $1,294,630k and MGM China negative. Reference says Las Vegas resorts ~90%, consistent with Las Vegas Strip Resorts being top region.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate names MGM region Las Vegas Strip Resorts, matches reference 'Las Vegas resorts' scope."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 (twelve months ended Dec 31 2022) used by candidate and evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "EBITDAR in thousands USD; candidate uses $ billions consistent with evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Highest contributor correctly identified as Las Vegas Strip Resorts with $3.14B vs others."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table directly supports Las Vegas Strip Resorts highest positive Adjusted Property EBITDAR."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "669a020ec0e60e6d124d3807b6abfec3282cbea76811de2924f4578391c8e156",
+    "latency_seconds": 3.842,
+    "usage": {
+      "prompt_tokens": 1901,
+      "completion_tokens": 288,
+      "total_tokens": 2189,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d499a3abd2ad6eacb22df5c9be2002c9921528c28f38752102de06eae062e9e7"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.97,
+  "reference_conflict": false
+}

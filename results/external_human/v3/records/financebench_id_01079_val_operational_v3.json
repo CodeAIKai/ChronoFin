@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01079",
+  "uid": "financebench_id_01079_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "8317ccbe51260737b635b1b3fdbbfd97ce3e049e0df85bc87cf92b123ea6e88c",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "535ffd4b982037c91931755ec2cee2ea25399d7e4359daa7f96e59ec63962408",
+  "started_utc": "2026-09-09T18:09:25.224907+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "Here are the key points regarding the 1.125% Senior Notes due 2027 issued by Amcor UK Finance plc",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Question asks for major acquisitions in FY2023/22/21; candidate instead describes 1.125% Senior Notes due 2027, an unrelated debt instrument, with no acquisition content. Evidence shows FY2023 acquisitions (Czech Rep, Shanghai, NZ) matching reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6d448a899ebd0e5e398d9fd729d8352a052788f9f020204551fc0634324bd463",
+    "latency_seconds": 8.094,
+    "usage": {
+      "prompt_tokens": 2428,
+      "completion_tokens": 133,
+      "total_tokens": 2561,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0e0a596fa4ff97f377085b42364987035bd425233bc385717d684763c8929485"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

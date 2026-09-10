@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00757",
+  "uid": "financebench_id_00757_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "575368c228ed50c3e2896ad5d62e327a3a39ba4cd934394be12077bfe380c338",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "f08f6a8182869630891a77e09999b49a5179af98489a741996e22efed0702aa1",
+  "started_utc": "2026-09-09T18:08:09.506991+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate substantively answers 'yes' and states one customer accounted for 16% of consolidated net revenue in FY22, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "999c5bd02aac22ca898acaa585e802e73fde7be1261181f25de3814f310460eb",
+    "latency_seconds": 6.816,
+    "usage": {
+      "prompt_tokens": 1316,
+      "completion_tokens": 50,
+      "total_tokens": 1366,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "faa034ecd244b662c54c7419b4ae255f77bc0eb37a5270a85efaf99002278cbf"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01319",
+  "uid": "financebench_id_01319_val",
+  "split": "new_response_validation",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "5079353b0e6fb8ee5b08b50c3e7c7ba9a7bcaaeda700b757c51ee830a0a80789",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "c7b496ee52ed1ba6c683d8e5d7c8ecdb077447a22a897b022ec58c2b32db7d20",
+  "started_utc": "2026-09-09T18:10:36.520884+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot provide the specific quantity and only explains how to obtain it, withholding the answer despite evidence showing no restructuring line item (answer 0)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bafc2efe3323e85960df4db029e185e1ac3a34dac1306452211f7bff2d570bd4",
+    "latency_seconds": 9.572,
+    "usage": {
+      "prompt_tokens": 2077,
+      "completion_tokens": 53,
+      "total_tokens": 2130,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d3db46bd454253a88a0e60922e34da69f41809a662688f3a23652e97cc0c1c1a"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

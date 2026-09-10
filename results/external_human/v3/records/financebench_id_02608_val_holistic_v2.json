@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_02608",
+  "uid": "financebench_id_02608_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "2b1054e940ff9de1dd04de57da0a997d409ac995878366f8cd25d0d6a62d025c",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "a3be4138115703158b007c070eaa992aa99a7ea34212bd83377d40e4f7d432c7",
+  "started_utc": "2026-09-10T01:29:26.706295+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states evidence lacks data to calculate and withholds the answer, only explaining method, despite evidence containing net earnings and revenue for FY2015-2017."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "df777d8b4a788b56ce44a53c489aee937c15e52bdc465d0ee56360d1728fa8f1",
+    "latency_seconds": 10.009,
+    "usage": {
+      "prompt_tokens": 1893,
+      "completion_tokens": 54,
+      "total_tokens": 1947,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c5db34d695254953c96d9b6b969629b31e69d6e1dd5edb93ffa6db3f051177fe"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

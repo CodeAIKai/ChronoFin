@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01091",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "8c1d4711bbf3ba9502c35ce833ac8823e5e689b0b4bef7af7266c5d459331c39",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "2736bbcdb18475c6db8a907d7df0781164efe1012941e52f526aeab12bbd532b",
+  "started_utc": "2026-09-09T17:47:32.538647+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate ignores the question about FY2022 legal battles and instead describes Boeing's Executive Supplemental Savings Plan, providing no answer to whether materially important ongoing legal battles were reported.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate discusses Boeing savings plan, not Boeing legal battles"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No mention of FY2022 legal matters"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Not applicable as no answer given"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No yes/no answer to question provided"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence about savings plan absent; candidate text unrelated to evidence on legal actions"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1295ba54e5c8ed8e9c388749654d3b2cd26fbb38f0a228b9dbb194fc86fb686b",
+    "latency_seconds": 8.813,
+    "usage": {
+      "prompt_tokens": 1776,
+      "completion_tokens": 210,
+      "total_tokens": 1986,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8d177e8d3605172e6dfb58a88651c569852c08a00a08d8c3346071cf70049c59"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

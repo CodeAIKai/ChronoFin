@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_08135",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "8891a6097fbc8afd2eacd6dd5d8310d681a3cdef731a952f5e09d22f8f7e0d46",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "410e50ebd11c9a0e22bc43ca8c84aecfa30bf4280161b25f32f488ce244a59c9",
+  "started_utc": "2026-09-09T18:03:45.543200+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate used Total net sales from evidence (135,987 to 177,866) and computed 30.8% YoY change, matching reference and requested unit/rounding."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "282acc85671c6c6f810d1273c14bf5550bc5d7cb8d43e3d2118697be9ffeb2db",
+    "latency_seconds": 6.743,
+    "usage": {
+      "prompt_tokens": 1495,
+      "completion_tokens": 58,
+      "total_tokens": 1553,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "44cb1fe124e4cbae5c183a56061ae9b7d2ff98eb5db57bba7ec2863191cee5c6"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

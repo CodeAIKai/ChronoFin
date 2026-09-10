@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02608",
+  "uid": "financebench_id_02608_dev",
+  "split": "development",
+  "company": "Best Buy",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "13eecd8187aa00d7beabe0d3c9432400dd6376cd21e327f1f0119c3b9c821f06",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "484a2b5ccb57aeba7c04d68fc6378467e6cce90ada16275d4628bfd71c61da91",
+  "started_utc": "2026-09-10T01:29:23.432956+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "s of the end of the period covered by this report. Based on this evaluation, our Chief Executive Officer and Chief Financial Officer concluded that, as of the end of the period covered by this report, our disclosure controls and procedures were effective.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided unrelated disclosure controls text instead of computing 3-year avg net profit margin from income statement; no answer to question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c67a9c59507c56024e09a4bb10b91335a029fcd494671f932cac835bc20dfaf2",
+    "latency_seconds": 12.187,
+    "usage": {
+      "prompt_tokens": 1950,
+      "completion_tokens": 122,
+      "total_tokens": 2072,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f6375a8117b8687999eabd3dd5a3a7142880ff92bf94bf40f1cc16b230b60013"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

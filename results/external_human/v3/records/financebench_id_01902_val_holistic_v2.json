@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01902",
+  "uid": "financebench_id_01902_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "7549197af5a99560169731cfd02eabef8d7530a649b5725310e20762b8da35c1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "7ae5ff172a0c5ac73d60bb0c91492bb138d020bec3931c26599bd12224eff3ef",
+  "started_utc": "2026-09-10T01:27:33.968931+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Question asks which category performed best by top line (revenue growth/performance). Reference and evidence show Entertainment had 9.0% comparable sales growth (best performance), while candidate wrongly says Computing and Mobile Phones (which declined 6.4%) was best by revenue share, misinterpreting 'top line' as revenue mix not growth."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d273b72ca919e9d74b39cb06a395c0769c1bbb20785f3dce5761a52a33456659",
+    "latency_seconds": 10.421,
+    "usage": {
+      "prompt_tokens": 1818,
+      "completion_tokens": 92,
+      "total_tokens": 1910,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3599aab69edbc9da613098e6f6e2f96ebb2ebfc5642705931fa3a11287514568"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

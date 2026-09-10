@@ -1,0 +1,508 @@
+{
+  "case_id": "E08",
+  "split": "evaluation",
+  "group": "tsmc24",
+  "task": "公开数据问答",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:58:50.691072+00:00",
+  "protocol_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "status": "ok",
+  "finished_utc": "2026-09-09T17:27:29.239601+00:00",
+  "wall_seconds": 15.982,
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "lexical",
+    "query": {
+      "question": "TSMC Q4 的 TWD 与 USD 收入同比增速相差多少？解释百分比和百分点的区别。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "T01",
+        "source_id": "tsmc24",
+        "locator": "opening results paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 revenue: TWD 868.46 billion.",
+        "value": 868.46,
+        "unit": "TWD billion",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T02",
+        "source_id": "tsmc24",
+        "locator": "year-over-year paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 38.8% measured in TWD.",
+        "value": 38.8,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T03",
+        "source_id": "tsmc24",
+        "locator": "USD results paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 37.0% measured in USD.",
+        "value": 37.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T04",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 gross margin: 59.0%.",
+        "value": 59.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T05",
+        "source_id": "tsmc24",
+        "locator": "technology mix paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Nodes of 7nm or smaller contributed 74% of Q4 wafer revenue.",
+        "value": 74,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T07",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "TSMC Q4 2024 net profit margin: 43.1%.",
+        "value": 43.1,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "M10",
+        "source_id": "meta24",
+        "locator": "p1 expense footnote",
+        "role": "caution",
+        "status": "observed",
+        "text": "Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses.",
+        "value": 1.55,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "根据TSMC 2025-01-16披露资料，Q4 2024收入以TWD计同比增长38.8%（T02），以USD计同比增长37.0%（T03）。两者增速相差1.8个百分点，即TWD增速比USD增速高1.8个百分点。百分比是相对比率，如38.8%表示较上年同期增长38.8%；百分点是百分比之差的单位，用于比较两比率差距，此处差为38.8%-37.0%=1.8个百分点，不可表述为1.8%增速差。资料未提供Q4 2023基数，仅能依据披露增速计算差值。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "TSMC Q4 2024收入以TWD计同比增长38.8%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T02"
+          ],
+          "numbers": [
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "TSMC Q4 2024收入以USD计同比增长37.0%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "TWD与USD收入同比增速相差1.8个百分点，TWD增速更高",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            },
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "百分比为相对增长比率，百分点为两百分比之差的单位，二者不可混淆",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "T02 - T03",
+          "value": 1.8,
+          "unit": "percentage points",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未提供Q4 2023的TWD及USD收入基数，无法验证增速绝对值",
+        "未提供汇率变动具体数值，不能推断币种转换对差值的影响幅度"
+      ],
+      "follow_up": [
+        {
+          "action": "核查TSMC Q4 2023的TWD与USD收入原始数据",
+          "reason": "可验证38.8%与37.0%增速的计算基数并分析汇率贡献",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "根据TSMC 2025-01-16披露资料，Q4 2024收入以TWD计同比增长38.8%（T02），以USD计同比增长37.0%（T03）。两者增速相差1.8个百分点，即TWD增速比USD增速高1.8个百分点。百分比是相对比率，如38.8%表示较上年同期增长38.8%；百分点是百分比之差的单位，用于比较两比率差距，此处差为38.8%-37.0%=1.8个百分点，不可表述为1.8%增速差。资料未提供Q4 2023基数，仅能依据披露增速计算差值。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "TSMC Q4 2024收入以TWD计同比增长38.8%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T02"
+          ],
+          "numbers": [
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "TSMC Q4 2024收入以USD计同比增长37.0%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "TWD与USD收入同比增速相差1.8个百分点，TWD增速更高",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            },
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "百分比为相对增长比率，百分点为两百分比之差的单位，二者不可混淆",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "T02 - T03",
+          "value": 1.8,
+          "unit": "percentage points",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未提供Q4 2023的TWD及USD收入基数，无法验证增速绝对值",
+        "未提供汇率变动具体数值，不能推断币种转换对差值的影响幅度"
+      ],
+      "follow_up": [
+        {
+          "action": "核查TSMC Q4 2023的TWD与USD收入原始数据",
+          "reason": "可验证38.8%与37.0%增速的计算基数并分析汇率贡献",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "1d28fc935d8a02afecf74d159558e6d724d07b700cd117a2e0791af8e56f8942",
+        "latency_seconds": 10.514,
+        "usage": {
+          "prompt_tokens": 1244,
+          "completion_tokens": 615,
+          "total_tokens": 1859,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "6024826bb7982dfb366bfa43af57e65b3f09907cbe95d8818ecf4dddb195834c"
+      }
+    ],
+    "input_sha256": "0be3cfd001d1307ca762623663e309609e1531115b38b3b2d7f2bb7a84812e01",
+    "answer_sha256": "0c94835199d27f29284496415f6f9a4b937d57725b0426c9e461ed9e3e3e7b8a"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文引用T02称TWD同比增38.8%，与来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文引用T03称USD同比增37.0%，与来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选计算38.8%-37.0%=1.8个百分点且TWD更高，与来源及计算一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选解释百分比与百分点区别，属事实说明且未与来源矛盾",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "T02",
+          "present": true,
+          "quote": "以TWD计同比增长38.8%（T02）"
+        },
+        {
+          "id": "T03",
+          "present": true,
+          "quote": "以USD计同比增长37.0%（T03）"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "资料未提供Q4 2023的TWD及USD收入基数，无法验证增速绝对值"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确回答TSMC Q4 TWD与USD收入同比增速差1.8个百分点并解释百分比与百分点区别，覆盖required且限制说明清楚"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "bcf0ff4057fcc391c297cfbf86861caeb445d85821b71562908197bf74b1c0bc",
+      "latency_seconds": 5.202,
+      "usage": {
+        "prompt_tokens": 4713,
+        "completion_tokens": 395,
+        "total_tokens": 5108,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "09383d6872ed6dbe29b2d86ab8ab99eee9b1ff17ebfaf6e77ba9e60ef55030ff"
+    },
+    "input_sha256": "fe06da1ca705d3e33562ab4f17a380bff258c7b8dc887599010ba3b6882c6c31",
+    "answer_sha256": "0c94835199d27f29284496415f6f9a4b937d57725b0426c9e461ed9e3e3e7b8a",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "0c94835199d27f29284496415f6f9a4b937d57725b0426c9e461ed9e3e3e7b8a",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "resume_wall_seconds": 15.724,
+  "timing_scope": "Cumulative active processing across attempts; excludes downtime between attempts. Not fresh-run latency.",
+  "resumed_utc": "2026-09-09T17:27:29.239629+00:00",
+  "resume_history_file": "results/brief/v3/resume_history/v3/E08_lexical.before_resume_1788974833514611292.json"
+}

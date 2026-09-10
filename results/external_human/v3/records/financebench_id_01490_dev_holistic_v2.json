@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01490",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "de5fbb3d7a53b7bd524c880c5e3c936fdab0d56923835a19fd8f0441722c5631",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "6fb721452cbc5bdcd001e01a8d34c9ac5f936728e2c4488ef4f1853b1242f7be",
+  "started_utc": "2026-09-09T17:49:25.950455+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states gain is approximately $20 billion, matching reference and evidence which cites ~$20B gain from Consumer Health separation as of Aug 30, 2023 filing."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6cb9874872e7630d956818e50e0ed00e5451647c4285e8eb8e8c47d65557acbe",
+    "latency_seconds": 6.075,
+    "usage": {
+      "prompt_tokens": 1541,
+      "completion_tokens": 56,
+      "total_tokens": 1597,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "36dbce22ac614434e17f241817d56b58734a4e29673eb80318a6d7d032e314c0"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01490_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01490_holistic.json",
+  "parent_sha256": "82f0d64ea373c1c4f782e7262cfda7c6967bf420edcc727c37beebcc1eba4226"
+}

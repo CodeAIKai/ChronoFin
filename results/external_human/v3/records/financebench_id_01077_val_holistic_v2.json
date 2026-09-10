@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01077",
+  "uid": "financebench_id_01077_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "5a2b664bebee8eddca8304ebbc50d1df8f4928cf7ae51a3a7223c987d27f8928",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "cc38b286e7d5bf65540cf0a8943ec8cdef335d9811ce8059ef34ea3fff449a1d",
+  "started_utc": "2026-09-09T18:09:19.501834+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states info not provided and withholds answer, claiming need for external data, despite evidence containing the acquisitions. This is refusal per rules."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1a37145fa6d34e4daa427652eaec36afac437790114c52d7d8dc60c07fcab896",
+    "latency_seconds": 5.721,
+    "usage": {
+      "prompt_tokens": 1916,
+      "completion_tokens": 50,
+      "total_tokens": 1966,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f3218e1b951e8fef2e1e30c6713f69e99abc4d5cfc00d49a109060bf87dce3d5"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

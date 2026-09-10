@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03471",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "16b05bbb0cd5fb57d12a639cb898b5a8ad314a776c4a9947d95d0f9944c7655f",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "f7cf9f6ca3f7ecbdac6747a6e2a27d97a1f516fa759a4755d05df0786d8556a3",
+  "started_utc": "2026-09-09T17:34:29.755666+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot answer due to missing General Mills data, but evidence supplies FY2020 balance sheet with current assets and liabilities; candidate gives no substantive ratio.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references General Mills as requested entity."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate mentions FY2020 as required period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No numeric unit produced; refusal only."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No working capital ratio computed; claims data absent though evidence contains it."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows Total current assets 5,121.3 and Total current liabilities 7,491.5 (millions), ratio = 0.68, contradicting candidate's claim of no data."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6f8700aa08a26d57e1d0d4bf01f96c2ea10cdb5c2364ea7c2f1d5fdfcbf09983",
+    "latency_seconds": 4.714,
+    "usage": {
+      "prompt_tokens": 2201,
+      "completion_tokens": 229,
+      "total_tokens": 2430,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5ec71f6922890e76a77197306b4af30a8312b4b24b58a2ea3ac37d02cdf6f5c2"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

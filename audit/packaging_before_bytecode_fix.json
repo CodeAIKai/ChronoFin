@@ -1,0 +1,7 @@
+{
+  "pass": false,
+  "failure": "Copied verifier generated 13 Python bytecode cache files before archiving.",
+  "payload_hashes_match": true,
+  "secret_findings": 0,
+  "fix": "Disable bytecode writes in packaging verification and assert no generated/private files remain. Rebuild archive."
+}

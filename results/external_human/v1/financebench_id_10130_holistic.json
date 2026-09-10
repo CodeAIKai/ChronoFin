@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_10130",
+  "company": "Corning",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c088e290dde814dc4a21de3d11d4b1fd3e9b97be5f4005f0efc9aa7fa06b428e",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "677c28560255d699a3808ee00370ccc0ee6e8e71c9c833b53fbb60e4746eff67",
+  "started_utc": "2026-09-09T18:04:02.273106+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computed DPO as 50 days using correct inputs from evidence, but reference is 63.86. The candidate's arithmetic is wrong: 365*1381/7890 = 63.86, not 50. Substantive answer disagrees with reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8c2602337401121c9a8d8c5bc7fabf27336c7093e9bca01222e943958a0831f3",
+    "latency_seconds": 6.614,
+    "usage": {
+      "prompt_tokens": 3469,
+      "completion_tokens": 78,
+      "total_tokens": 3547,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "600de4472aa37fd0209225a057dcb797640931169912f78b40fc0ae4451d602c"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

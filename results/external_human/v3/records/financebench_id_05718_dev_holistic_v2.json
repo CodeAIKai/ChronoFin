@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_05718",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "16318a0497a5c9346152158c2830474ca98551743f36b5a3ff150374927a5c54",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "d13515f329add67ad10dc5bd42a453446ec744255c2879d53ad8fc15f20f0b17",
+  "started_utc": "2026-09-09T17:54:03.877079+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed $0.389 billion from $389 million dividends paid, but reference answer is 0.4 (USD billions), indicating rounding to one decimal or different basis; candidate's substantive answer of 0.389 does not agree with reference 0.4."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5f6d76893e1629397dfd28926e00566656aed7383888f9a4a4253081ae54914e",
+    "latency_seconds": 6.645,
+    "usage": {
+      "prompt_tokens": 2497,
+      "completion_tokens": 76,
+      "total_tokens": 2573,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "86eb6b09fc9cabd2f4a1149a16b30c3497abde102aaa0ff844668d9815bbbdc1"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_05718_dev",
+  "reused_from": "results/external_human/v2/financebench_id_05718_holistic.json",
+  "parent_sha256": "57a3ef5a959a4811f73bfee498edffa43ef82faab6a5f3ac1b69c73424ee973c"
+}

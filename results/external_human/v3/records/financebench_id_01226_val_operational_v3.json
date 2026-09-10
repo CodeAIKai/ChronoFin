@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01226",
+  "uid": "financebench_id_01226_val",
+  "split": "new_response_validation",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "00b2d3120f61f2cf65d99000fdb66dd6b2bdc84eeb65718c6dabda5c97ac5d8f",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "0605881aabb244b78940ca865033e02de700d426a833dfd3afe864c52e310bd0",
+  "started_utc": "2026-09-09T18:09:57.222723+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide specific information about what drove operating margin change for 3M in FY2022",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot provide the requested FY2022 3M operating margin drivers and asks user to supply excerpts, declining to answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "46e0b584e281c4fe1a167594eea4cecef1d4cbd1538cd6453f47ec6928a0a29b",
+    "latency_seconds": 7.643,
+    "usage": {
+      "prompt_tokens": 1675,
+      "completion_tokens": 99,
+      "total_tokens": 1774,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b2ec80856adff7882c60f30d30056086f7ab5a410cf9f84fb1b1710e2dbe90cd"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

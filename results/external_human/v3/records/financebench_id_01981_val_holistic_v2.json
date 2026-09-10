@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01981",
+  "uid": "financebench_id_01981_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "f1d375e2934330bd1418ab5f2695bd123afec2c19a3ae58fa9b3fc5829e1c909",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "96cdd646a1c89bcba1238ecc3f3d7e91c5d3756c0e89b061722a84e0875bf122",
+  "started_utc": "2026-09-10T01:28:38.701277+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate provides substantive answer 'Yes' with supporting evidence that card member retention remained high in 2022, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "578af5ac58ea7f23b3e2fe829fc6493602abc14dbf8e99247061eaa8bd71177a",
+    "latency_seconds": 9.548,
+    "usage": {
+      "prompt_tokens": 1702,
+      "completion_tokens": 47,
+      "total_tokens": 1749,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d5c72276fbe5792bd499a03c6f696b1a6391a94fee9e41660250838b02f6a230"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

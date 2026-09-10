@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00283",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "63a4ddd7e52d66b9c0414f9cebf8987401079df34c7fc4fb0ab324d225d2ec12",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "b69f1c05c322d55917354c50ffda995ae63992f621a885ff72af99ce3f374214",
+  "started_utc": "2026-09-09T17:32:30.217533+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides general Q2 2023 Pfizer earnings summary and never answers the requested future Upjohn spin-off cost in USD million.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not address Upjohn spin-off separation costs entity."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Question asks future expected payment; candidate discusses Q2 2023 results only."
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No USD million figure for Upjohn spin-off provided."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer to requested metric (~77.78 USD million remaining)."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence states $700M total, 90% incurred, so ~$70M future; candidate ignores it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "44564ce02b87fe922fe645740c9f20769b72b2bc7692524feb74e658aba8326c",
+    "latency_seconds": 4.253,
+    "usage": {
+      "prompt_tokens": 1975,
+      "completion_tokens": 219,
+      "total_tokens": 2194,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f43d45994c0e5dfa8dcecd1c5e3e98b6e2acbc474737ab07929b42acf805edeb"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

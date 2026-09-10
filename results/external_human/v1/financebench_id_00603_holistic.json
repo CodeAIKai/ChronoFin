@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00603",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "a7fe6a3a54865003dac67b41517b4809c3ced794a003f0ece733588183d8fc66",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "b9fb3f9a84e3dd89f25ce2ac0493766ddde796533d4992e5b99121f0547fa4ce",
+  "started_utc": "2026-09-09T17:33:02.339077+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate's three drivers (47 new stores, new brand launches/expansions, inventory cost increases) match evidence and reference's primary driver of 47 new stores, with FY2023 interpreted as period ended Jan 28 2023 per reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "53c75bcc141a9ebfa176d8b1016899a377d18316efc9d5a5c4f626cf45f8a7c8",
+    "latency_seconds": 2.159,
+    "usage": {
+      "prompt_tokens": 1268,
+      "completion_tokens": 71,
+      "total_tokens": 1339,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9ba25860c80028f8f21a6769287023e12523e236bda73e1a299aaad84d6d54b0"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

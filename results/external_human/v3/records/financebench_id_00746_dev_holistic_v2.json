@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00746",
+  "company": "Ulta Beauty",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "09419340f582f1c3e46653613be646505485e4fa2dcb889ab9b17f7f701a751f",
+  "started_utc": "2026-09-09T17:45:57.209409+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate output '[END OF FILING]' provides no answer to the question and withholds the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c16d5f0af2046bfa1b25ffc82e85db20795ad62420034e87f35ef9f9c32ffe3d",
+    "latency_seconds": 7.692,
+    "usage": {
+      "prompt_tokens": 1461,
+      "completion_tokens": 44,
+      "total_tokens": 1505,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5cf8e27dfbfb406a193a8d82839c49ab5f986646e822ff2bdd50f4c6d1065990"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00746_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00746_holistic.json",
+  "parent_sha256": "f7c59d3f909ee94e9627e2d683ca3b88d847f6306d35c4fd2c9a7be44ffc848b"
+}

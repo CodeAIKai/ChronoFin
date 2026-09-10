@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00839",
+  "uid": "financebench_id_00839_val",
+  "split": "new_response_validation",
+  "company": "Foot Locker",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "70e253f8e916a501f2c71e0dfca4d2abb5a913c1181bed4d567c37547f90201f",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "2a45456543975651015b87b1ad3575c579980f4402f83bba9cee284ee84915f6",
+  "started_utc": "2026-09-09T18:08:34.720995+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers yes, noting new CEO Mary Dillon was CEO of Ulta Beauty, a similar retail company, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bfbacaed605d58ffc8afd0fe9977bad23238bdf05aae6ea9f1f9659bd17e618f",
+    "latency_seconds": 5.58,
+    "usage": {
+      "prompt_tokens": 1947,
+      "completion_tokens": 50,
+      "total_tokens": 1997,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "588f8f5e9aec7b1224f6eb22fbe154075ffbdf4d304de9660b5b528415a131c0"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

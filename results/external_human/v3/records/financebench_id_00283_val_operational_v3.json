@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00283",
+  "uid": "financebench_id_00283_val",
+  "split": "new_response_validation",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "bc59288c509556c35da504a469fef2fa28a1ac2e604f008c83066d13910ed3a8",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "413083dcc6757f274bc13c37ece303b619a2d194b64112ce72ff552c5180d0c8",
+  "started_utc": "2026-09-09T18:05:16.381248+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, Pfizer expects to pay an additional $105 million in the future to complete the spin-off of Upjohn.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Evidence states ~90% of $700M incurred through Q2 2023, so future cost is ~10% = $70M, not candidate's $105M based on 85%. Reference 77.78 is close to $70M scale; candidate's 85% basis contradicts evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5894400e06ffa2731bdaf34c3a29f751253efb6570d5439372a1df5ac4af7fdd",
+    "latency_seconds": 6.464,
+    "usage": {
+      "prompt_tokens": 1738,
+      "completion_tokens": 133,
+      "total_tokens": 1871,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8a6cf0e2f5f00a419827759230059157a320e276c82a502295740b27c17037f2"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

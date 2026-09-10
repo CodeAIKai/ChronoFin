@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01009",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "dad901c194b4b193bc9269f2de56c01507de94b0a1954ccb0d2aeb01e1badc31",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "43a4b285e2ea3aaf9c0b6c1274656ed3382794e81217b502496f1f8a2cf99d5a",
+  "started_utc": "2026-09-09T18:00:33.656907+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate provided FY2022 financial results and operations summary but never listed the geographies PepsiCo primarily operates in, failing to answer the requested entity/metric (geographies).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is PepsiCo, correctly implied."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period FY2022 referenced in candidate's discussion."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is geography list; not addressed."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave financial metrics, not the requested geographies list."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence lists segments/geographies but candidate does not use or state them."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3df19bdd39fc77eb08067670b86fcdc725f73fbb7223b22cc567cc9ad9a1bd7e",
+    "latency_seconds": 6.421,
+    "usage": {
+      "prompt_tokens": 3403,
+      "completion_tokens": 207,
+      "total_tokens": 3610,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0eaec7089ed1507ccc3d405182d46d8a23db87c3d55710a52efeeab9fe987c92"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

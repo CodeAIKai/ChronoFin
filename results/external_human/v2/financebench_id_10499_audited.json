@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_10499",
+  "company": "Kraft Heinz",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "7ce7facc8dc80e5da5896c5c48633738fde6aec252ca4de4d40b603267fae144",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "cd094455f25f078fe949933cca20f7c90471ff0f2c7b27817445d0e01b6c2ee8",
+  "started_utc": "2026-09-09T17:55:46.218664+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate discusses Kraft Heinz leases and does not provide inventory turnover ratio or any substantive answer to the requested metric.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity Kraft Heinz mentioned but not in relevant answer"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2019 referenced in lease discussion, not in answer to question"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No ratio unit provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No inventory turnover ratio provided; answer withholds requested conclusion"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No use of COGS or inventory evidence to compute ratio"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3ad63aa30533114530662763ee6b7efd33442d7042169f2bf6c671adeb1849d8",
+    "latency_seconds": 8.549,
+    "usage": {
+      "prompt_tokens": 3267,
+      "completion_tokens": 204,
+      "total_tokens": 3471,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "24abdc580f9e61c13ef3f1b69da1e2a8222930e77aac65f34e05f6d0cd0c93f9"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

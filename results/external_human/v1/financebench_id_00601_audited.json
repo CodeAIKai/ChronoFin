@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00601",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4aceffecb5fa45f2c5b7949e517adae1d9792b768c2dd93ca351b76fab538ce6",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "c62da4021fe60e0765090f8199d9a15bbdf5a0f9f86807bceb2525515bdff819",
+  "started_utc": "2026-09-09T17:33:01.553003+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate attributes SG&A % reduction to lower marketing expenses and leverage of incentive compensation from higher sales, matching reference and evidence (FY2023 = fiscal 2022 per reference). Minor wording difference ('leverage of marketing expenses' vs 'lower marketing expenses') is supported by evidence context; offsets also noted.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Ulta Beauty SG&A expense ratio, correctly addressed."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2023 interpreted as fiscal 2022 (12mo ended Jan 28 2023) per reference; evidence full year fiscal 2022 used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Metric is percent of net sales; no unit conversion needed."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core driver: lower marketing expenses and leverage of incentive comp due to higher sales; matches reference/evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence explicitly states decrease due to lower marketing expenses and leverage of incentive compensation."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "de58cc114a92a303e93c625e55f1fa6de11c8378f6d242cb309c1db67eff7d1c",
+    "latency_seconds": 3.159,
+    "usage": {
+      "prompt_tokens": 2102,
+      "completion_tokens": 270,
+      "total_tokens": 2372,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0ad48b2c093bab168781bd5a63695dffbbe1e3c752baa9e91536e0d451bde673"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00995",
+  "uid": "financebench_id_00995_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "efaea73a6de0c2f1cc235610b8eb8cac02d945b00ee98e2342812f9b3c7630e9",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "3cdd8fb6d29f44b13ff29187980133a2cafc0850e066fb7be60e0e68254fef53",
+  "started_utc": "2026-09-09T18:09:05.486623+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "As of FY22, AMD (Advanced Micro Devices, Inc.) sells the following major products and services:",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate lists all product categories from reference (data center CPUs/GPUs/DPUs/FPGAs/Adaptive SoC, PC CPUs/APUs/chipsets, discrete GPUs, semi-custom SoC/dev services, embedded products) plus IP licensing noted as occasional in evidence, matching reference scope."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a9d61bd93d1af910c0f92b2893c870017d16ada0932422bd66fc82a32bd38ccf",
+    "latency_seconds": 6.753,
+    "usage": {
+      "prompt_tokens": 1745,
+      "completion_tokens": 130,
+      "total_tokens": 1875,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2cb6ce0d94d23bf6967a0d39835ccfd1a44f54d83704309b40458b4d3f14ce75"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

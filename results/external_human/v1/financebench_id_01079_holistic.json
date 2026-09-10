@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01079",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f109d5e9261693574d63ed3e933ef49c9f81e85fe92abcd1a567bad473294dee",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "c8e934d5dc0293e78d05e45521a4b9a48b9edf4a06ef820ecc7a097d55159b35",
+  "started_utc": "2026-09-09T17:33:37.651088+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence (AMCOR 2023 10K) lists three FY2023 acquisitions: Czech Republic flexibles plant, Shanghai medical device packaging site, and NZ protein packaging machine maker. Candidate claims no acquisition info is present, contradicting evidence and reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f8284e6efc9641044420b18546e4c1e7b7fdf63195f1476a939fc454d26a5222",
+    "latency_seconds": 2.141,
+    "usage": {
+      "prompt_tokens": 1880,
+      "completion_tokens": 73,
+      "total_tokens": 1953,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3574d49009ee32e95d5fa7c651dd1241ebc6cb10038e8aef39ca961306380302"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

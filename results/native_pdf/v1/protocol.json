@@ -1,0 +1,155 @@
+{
+  "sha256": "dcb36f2fc867a6477f8e346033f8e72f472f8e00e8835b20595854ddc945855d",
+  "files": {
+    "src/chronofin/pdf_research.py": "a6282fd4a511cf29e4afabed0fd44a3c1692191892e7fecb1dad41524b5e628b",
+    "src/chronofin/runtime.py": "699fc8e91b326739fb8da961eaf498b76048a3a3ba9e81b4f5241046f56e76f9",
+    "src/chronofin/grounded.py": "c47ffe513a0f78f54952bc78f3204e0a5ebe0cf8d5854e135ac78dfeed04cd79",
+    "src/chronofin/brief.py": "d574e3759bd15f2f89358a45b9e4f5f7ec2e4f4ffeb8f5e762adfa6371b14079",
+    "scripts/run_native_pdf_trials.py": "71dc6be8619eef283cea6b7a33391cc0b9d57eee8e4cb069305df27e11c78f50"
+  },
+  "jobs": [
+    {
+      "id": "meta24_after",
+      "source": {
+        "id": "meta24",
+        "entity": "Meta",
+        "title": "Meta Q4 and FY2024 earnings release",
+        "published_at": "2025-01-29",
+        "period": "FY2024",
+        "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf",
+        "format": "pdf",
+        "license": "Facts and author paraphrases; original report copyright Meta"
+      },
+      "case": {
+        "id": "D01",
+        "split": "dev",
+        "source_group": "meta24",
+        "task": "财报阅读",
+        "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+        "as_of": "2025-06-01",
+        "difficulty": "hard",
+        "required": [
+          "M01: Meta FY2024 revenue: USD 164501 million.",
+          "M02: Meta FY2024 net income: USD 62360 million.",
+          "M06: FY2024 ad impressions grew 11%; average ad price rose 10%.",
+          "M07: Meta FY2024 free cash flow: USD 52103 million."
+        ],
+        "counter": [
+          "M03: Reality Labs FY2024 operating loss: USD 17729 million.",
+          "M10: Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses."
+        ],
+        "limitations": [
+          "一次性因素不能代表持续经营改善"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "amazon24_after",
+      "source": {
+        "id": "amazon24",
+        "entity": "Amazon",
+        "title": "Amazon Q4 and FY2024 earnings release",
+        "published_at": "2025-02-06",
+        "period": "FY2024",
+        "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2024/q4/AMZN-Q4-2024-Earnings-Release.pdf",
+        "format": "pdf",
+        "license": "Facts and author paraphrases; original report copyright Amazon"
+      },
+      "case": {
+        "id": "D02",
+        "split": "dev",
+        "source_group": "amazon24",
+        "task": "财报阅读",
+        "question": "用 Amazon FY2024 财报解释 AWS 对集团利润的重要性，并评估利润改善是否同步转化为现金。",
+        "as_of": "2025-06-01",
+        "difficulty": "hard",
+        "required": [
+          "A01: Amazon FY2024 net sales: USD 637959 million.",
+          "A02: Amazon FY2024 operating income: USD 68593 million.",
+          "A03: AWS FY2024 net sales: USD 107556 million.",
+          "A04: AWS FY2024 operating income: USD 39834 million."
+        ],
+        "counter": [
+          "A05: Amazon FY2024 free cash flow: USD 38219 million.",
+          "A08: AWS operating margin: Q3 2024 38.1%; Q4 2024 36.9%."
+        ],
+        "limitations": [
+          "不能把 AWS 的收入占比称为行业市场份额"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "meta24_before",
+      "source": {
+        "id": "meta24",
+        "entity": "Meta",
+        "title": "Meta Q4 and FY2024 earnings release",
+        "published_at": "2025-01-29",
+        "period": "FY2024",
+        "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf",
+        "format": "pdf",
+        "license": "Facts and author paraphrases; original report copyright Meta"
+      },
+      "case": {
+        "id": "D01",
+        "split": "dev",
+        "source_group": "meta24",
+        "task": "财报阅读",
+        "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+        "as_of": "2025-01-28",
+        "difficulty": "hard",
+        "required": [],
+        "counter": [],
+        "limitations": [
+          "给定原件尚未在截止日前公开，不能根据其内容作答。"
+        ],
+        "expected_answerability": "unanswerable"
+      }
+    }
+  ],
+  "source_pins": [
+    {
+      "source_id": "meta24",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf",
+      "status": "ok",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "bytes": 177759,
+      "retrieved_utc": "2026-09-09T15:41:51.331055+00:00"
+    },
+    {
+      "source_id": "amazon24",
+      "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2024/q4/AMZN-Q4-2024-Earnings-Release.pdf",
+      "status": "ok",
+      "sha256": "0435f36d49cc40373c1ec7d6a8aa77abf83f90f7774b477d69f28b3859e7fe72",
+      "bytes": 358812,
+      "retrieved_utc": "2026-09-09T15:41:39.286501+00:00"
+    },
+    {
+      "source_id": "tsmc24",
+      "url": "https://pr.tsmc.com/english/news/3201",
+      "status": "ok",
+      "sha256": "76879d644cbd54944a4a479fdab1d00ec8388ee929cd0cd30bb20752c46e6011",
+      "bytes": 181605,
+      "retrieved_utc": "2026-09-09T15:41:40.115402+00:00"
+    },
+    {
+      "source_id": "iea25",
+      "url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+      "status": "ok",
+      "sha256": "f04fbd23f594f50f0c1563aeae9223ab814b949ea73c398cbb063384f34c4394",
+      "bytes": 257576,
+      "retrieved_utc": "2026-09-09T15:41:54.933270+00:00"
+    },
+    {
+      "source_id": "fed25",
+      "url": "https://www.federalreserve.gov/publications/April-2025-financial-stability-report-Overview.htm",
+      "status": "ok",
+      "sha256": "1faf3800b68f79dc11684a2ac4456fd240d515cf344a7be0da71626aeef3aa8a",
+      "bytes": 86956,
+      "retrieved_utc": "2026-09-09T15:41:42.862023+00:00"
+    }
+  ],
+  "scope": "Three native-PDF end-to-end cases from two already-known official reports; not unseen-company generalization."
+}

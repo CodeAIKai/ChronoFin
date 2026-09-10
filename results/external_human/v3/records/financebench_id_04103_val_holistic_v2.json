@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04103",
+  "uid": "financebench_id_04103_val",
+  "split": "new_response_validation",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "3c9547c796ce706903635ec2d9ab3072a78d93ef980be756ccf4b4a16a888739",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "6c9d959842c2866a5ea1b918ca4e6248b6a5ccd333896c57fb0a8ce9aba903b1",
+  "started_utc": "2026-09-10T01:31:23.192138+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate provides unrelated bond redemption text and does not compute or state the FY2019 CCC for General Mills, withholding the requested answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "289e02bd296abbe24a3b659813221cf262161acc5fb472a72dc8784a0659a7d5",
+    "latency_seconds": 7.551,
+    "usage": {
+      "prompt_tokens": 6291,
+      "completion_tokens": 48,
+      "total_tokens": 6339,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6043c514daa6f208a5d3f6b082933e261a9b78aa1ac85b64719fbcfceea1da22"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

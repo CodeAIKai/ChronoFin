@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_07661",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "022c094b228aa7c57280368b6511731376c22e19bc19da7f8320f00ea1d71168",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "8a46425d0b2669c128e99e877f6f1533ecbd2fe621d8bab02ac5c8e1fa8fc4ce",
+  "started_utc": "2026-09-09T18:03:36.180901+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence shows Square (now Block) FY2020 net cash provided by operating activities of $381,603 thousand = $381.603 million, approx $382 million. Candidate refused claiming no data, but data is present.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Evidence is Square Inc, formerly Block, correct entity"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2020 (year ended Dec 31 2020) present in evidence"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Evidence in thousands; 381,603k = 381.603m, matches requested USD millions"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave no answer and claimed absence of data; correct answer ~$382m per evidence"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate unsupported refusal; evidence directly contains the figure"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cdba0086416565a5b1bf4d49521a606b25bdcff0d163e1204a0f6a6a1b14aa9f",
+    "latency_seconds": 9.36,
+    "usage": {
+      "prompt_tokens": 3012,
+      "completion_tokens": 235,
+      "total_tokens": 3247,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2724b0543e695cc606b074dd106b1e9cc67e076bacc3ebeaa6ccba1bae0e9bb3"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

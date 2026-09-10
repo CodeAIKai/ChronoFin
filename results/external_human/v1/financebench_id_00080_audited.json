@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00080",
+  "company": "Paypal",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "64e75fb20a236628f9d330a3c2108d6c35a4f4875ae6e1db6be1eadb519599f4",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "356b71554774f3e6b09ccb804cabb48e6a0001883f74dfd1a9440226dbc5575c",
+  "started_utc": "2026-09-09T17:32:21.177523+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate claims it is not possible to answer without additional calculation and does not state positive working capital, but evidence balance sheet shows current assets $57,517M minus current liabilities $45,101M = $12,416M (~$12.4B) positive, and reference states $1.6Bn positive. Candidate's refusal/substantive non-answer contradicts evidence and reference.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate addresses PayPal Holdings, Inc. as requested."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY2022 / Dec 31, 2022."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate discusses working capital in $ millions context from filing; no wrong unit asserted."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says cannot definitively answer; evidence shows current assets 57517M - current liab 45101M = 12416M positive WC, so answer should be yes positive."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claims no direct statement/calculation, but evidence provides balance sheet data sufficient to compute positive working capital; reference also states positive."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "019639996141f72abc1a6124ecbf1007d1e2eb35e304de303a92055d54f5071f",
+    "latency_seconds": 4.356,
+    "usage": {
+      "prompt_tokens": 1932,
+      "completion_tokens": 300,
+      "total_tokens": 2232,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f48ba5c50763cafc4ee5852cfbaa05f0e628474bb88eadd0254b649d3d2f359a"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

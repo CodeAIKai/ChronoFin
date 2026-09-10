@@ -1,0 +1,45 @@
+{
+  "retrieved_utc": "2026-09-09T15:54:54.738967+00:00",
+  "repositories": [
+    {
+      "repo": "AI4Finance-Foundation/FinRobot",
+      "url": "https://github.com/AI4Finance-Foundation/FinRobot",
+      "commit": "368f6bb76f4adfd9af4125d7f88cc7eaf7f96957",
+      "license": "Apache-2.0",
+      "readme_url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/368f6bb76f4adfd9af4125d7f88cc7eaf7f96957/README.md",
+      "readme_sha256": "3ec616d1063a191109d2f8e9eb91b5a2d95e48e3201a8af63ec711cea5d94b75",
+      "readme_bytes": 21424,
+      "status": "read"
+    },
+    {
+      "repo": "amazon-science/RAGChecker",
+      "url": "https://github.com/amazon-science/RAGChecker",
+      "commit": "6091f08c00e676e87a970f2aeb4a23a484746348",
+      "license": "Apache-2.0",
+      "readme_url": "https://raw.githubusercontent.com/amazon-science/RAGChecker/6091f08c00e676e87a970f2aeb4a23a484746348/README.md",
+      "readme_sha256": "405ed94cb649be390ccab4d2a3c923d8f0930e536ea239d7ca19eafe5faad11e",
+      "readme_bytes": 6954,
+      "status": "read"
+    },
+    {
+      "repo": "patronus-ai/financebench",
+      "url": "https://github.com/patronus-ai/financebench",
+      "commit": "cc39aeb4afdf33909ee1412188bf89035950c2eb",
+      "license": null,
+      "readme_url": "https://raw.githubusercontent.com/patronus-ai/financebench/cc39aeb4afdf33909ee1412188bf89035950c2eb/README.md",
+      "readme_sha256": "ab1b914821c5f6329836d0f2c503dbaaa6504721bd0b1d0f70f43fbb23987cec",
+      "readme_bytes": 5094,
+      "status": "read"
+    },
+    {
+      "repo": "czyssrs/FinQA",
+      "url": "https://github.com/czyssrs/FinQA",
+      "commit": "0f16e2867befa6840783e58be38c9efb9229d742",
+      "license": "MIT",
+      "readme_url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/README.md",
+      "readme_sha256": "eb86779cfed6f0a253913761d8e4fabe032a29d9fcf2944e56c23bf007064605",
+      "readme_bytes": 6518,
+      "status": "read"
+    }
+  ]
+}

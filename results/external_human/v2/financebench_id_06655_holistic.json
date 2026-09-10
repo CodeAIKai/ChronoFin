@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_06655",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "f4eeb96a7e31ffc9186e4de0de5dffc0643a0c8cfb7a042cce743ec896f877c9",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "66c7ba599e8a97d6939383b9371067205f6ec320eaacdc0c241cbb5c6604fab2",
+  "started_utc": "2026-09-09T17:54:25.624057+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides general 10-K summary and does not compute or state Amazon's FY2017 DPO or use the required line items; it withholds the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0d886d24e7b4761505291ede53f2dcce41515c0cb28ad0f03d024e1102397c8b",
+    "latency_seconds": 9.616,
+    "usage": {
+      "prompt_tokens": 2974,
+      "completion_tokens": 56,
+      "total_tokens": 3030,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2bd8b4bf72ae506e19673a038d1ca6ea65f10850ce6d5b4c77b6731614cc7aaa"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

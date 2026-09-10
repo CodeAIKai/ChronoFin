@@ -1,0 +1,404 @@
+{
+  "id": "meta24_before_v2_control",
+  "case_id": "meta24_before",
+  "base_version": "v2",
+  "kind": "v2_control",
+  "protocol_sha256": "7ce1ad78a9be46f184570a9d2da926c3617e2cca06bbe51cf5db82ac1359148f",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "截至 2025-01-28，根据提供原件总结 Meta FY2024 经营表现。",
+      "as_of": "2025-01-28"
+    },
+    "evidence": [],
+    "excluded_ids": [
+      "P6CCE34AA1B1",
+      "P6CCE34AA2B1",
+      "P6CCE34AA3B1",
+      "P6CCE34AA4B1",
+      "P6CCE34AA4B2",
+      "P6CCE34AA5B1",
+      "P6CCE34AA6B1",
+      "P6CCE34AA7B1",
+      "P6CCE34AA7B2",
+      "P6CCE34AA8B1",
+      "P6CCE34AA9B1",
+      "P6CCE34AA10B1"
+    ],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "由于当前资料库为空，未提供任何关于 Meta FY2024 的官方报告、事实卡片或转述内容，无法依据给定资料总结其经营表现。根据任务约束，无资料时应具体拒答，且不使用参数知识或编造数据。",
+      "claims": [],
+      "calculations": [],
+      "limitations": [
+        "无任何 Meta FY2024 相关披露数据、财务卡片或行业背景资料",
+        "无法判断收入、利润、用户规模或资本开支等任何维度表现"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 10-K 或年报官方报告，整理为英文事实/转述卡片",
+          "reason": "补充资料后方可回答经营表现问题，否则持续不可答",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "由于当前资料库为空，未提供任何关于 Meta FY2024 的官方报告、事实卡片或转述内容，无法依据给定资料总结其经营表现。根据任务约束，无资料时应具体拒答，且不使用参数知识或编造数据。原稿已正确识别资料缺失，未混淆期间口径或将指引当事实，无需补充反面证据或计算。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "资料库中无任何 Meta FY2024 相关英文事实或转述卡片，无法支撑经营表现总结",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无任何 Meta FY2024 相关披露数据、财务卡片或行业背景资料",
+        "无法判断收入、利润、用户规模或资本开支等任何维度表现"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 10-K 或年报官方报告，整理为英文事实/转述卡片",
+          "reason": "补充资料后方可回答经营表现问题，否则持续不可答",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "8c5e159c2a801f6d8f571765bef46a83efad5280542108e727733ef440da09b5",
+        "latency_seconds": 8.737,
+        "usage": {
+          "prompt_tokens": 607,
+          "completion_tokens": 175,
+          "total_tokens": 782,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "08d6831f70a7167c876d148fe05d00c25d896fbb61528d6614bd5734f51ec759"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "604c2c1aa25dcb24d860c68a6281b8db804a19ab1804b133c545e043f1608ff9",
+        "latency_seconds": 8.509,
+        "usage": {
+          "prompt_tokens": 824,
+          "completion_tokens": 230,
+          "total_tokens": 1054,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "8bebe93980582952ed6c871c0a473793de5134ace675a3496475694f16525669"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "4545c68d5f401b470782f194af9a478a7b5cfb1f6f009d10cad781e1a397f05f",
+        "latency_seconds": 7.455,
+        "usage": {
+          "prompt_tokens": 903,
+          "completion_tokens": 254,
+          "total_tokens": 1157,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "e834979d8971670b7379a5715a52ec0ea96bddedc8d969ad8e2b71c0ce2c6bd2"
+      }
+    ],
+    "input_sha256": "66afaed4a3465b626e8381384d449de892c0c58a2151aabd2282aa28cb3cc961",
+    "schema_failure": "claims length 1..30",
+    "schema_repaired": {
+      "answerability": "unanswerable",
+      "summary": "由于当前资料库为空，未提供任何关于 Meta FY2024 的官方报告、事实卡片或转述内容，无法依据给定资料总结其经营表现。根据任务约束，无资料时应具体拒答，且不使用参数知识或编造数据。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "资料库中无任何 Meta FY2024 相关英文事实或转述卡片，无法支撑经营表现总结",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无任何 Meta FY2024 相关披露数据、财务卡片或行业背景资料",
+        "无法判断收入、利润、用户规模或资本开支等任何维度表现"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 10-K 或年报官方报告，整理为英文事实/转述卡片",
+          "reason": "补充资料后方可回答经营表现问题，否则持续不可答",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "calculator_results": [],
+    "revision_raw": {
+      "answerability": "unanswerable",
+      "summary": "由于当前资料库为空，未提供任何关于 Meta FY2024 的官方报告、事实卡片或转述内容，无法依据给定资料总结其经营表现。根据任务约束，无资料时应具体拒答，且不使用参数知识或编造数据。原稿已正确识别资料缺失，未混淆期间口径或将指引当事实，无需补充反面证据或计算。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "资料库中无任何 Meta FY2024 相关英文事实或转述卡片，无法支撑经营表现总结",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无任何 Meta FY2024 相关披露数据、财务卡片或行业背景资料",
+        "无法判断收入、利润、用户规模或资本开支等任何维度表现"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 10-K 或年报官方报告，整理为英文事实/转述卡片",
+          "reason": "补充资料后方可回答经营表现问题，否则持续不可答",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer_sha256": "39322cc9faf82af66e4d3d943ab9cf6b3e7a142084b5e204d627dee4923b2523",
+    "source_document": {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 12,
+      "selected_ids": [],
+      "selected_pages": [],
+      "selection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "pipeline": "native_pdf_v2",
+    "extraction_raw": null,
+    "extraction_traces": [],
+    "extraction_audit": {
+      "facts_proposed": 0,
+      "facts_accepted": 0,
+      "rejected": [],
+      "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "quote_verification": "whitespace-normalized exact contiguous source match",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "parent_record_sha256": "7222910f3c973c3aaecbad5aa3cf24530827f214c404b66d14a842f81ff755f7",
+  "base_score": 100.0,
+  "raw_source_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "replay_material": {
+    "audit_cards": [],
+    "reference_case": {
+      "id": "meta24_before",
+      "question": "截至 2025-01-28，根据提供原件总结 Meta FY2024 经营表现。",
+      "as_of": "2025-01-28",
+      "required": [],
+      "counter": [],
+      "point_definitions": {},
+      "limitations": [
+        "给定原件尚未公开，不能利用未来披露内容。"
+      ],
+      "expected_answerability": "unanswerable"
+    }
+  },
+  "semantic": {
+    "version": "native-source-audit-5.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选明确说明资料库为空无相关卡片故无法支撑总结，与无来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "SUMMARY"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：给定原件未公开且资料库为空，候选正确拒答不可答"
+    },
+    "span_binding": [
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "SUMMARY",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选明确说明资料库为空无相关卡片故无法支撑总结，与无来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "SUMMARY",
+          "quote": "由于当前资料库为空，未提供任何关于 Meta FY2024 的官方报告、事实卡片或转述内容，无法依据给定资料总结其经营表现。根据任务约束，无资料时应具体拒答，且不使用参数知识或编造数据。原稿已正确识别资料缺失，未混淆期间口径或将指引当事实，无需补充反面证据或计算。"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：给定原件未公开且资料库为空，候选正确拒答不可答"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "6dcd2fbf7b0059ce7171bb261dc61b3c812191bb3b7fbfa1b58cebf67b713b68",
+      "latency_seconds": 2.312,
+      "usage": {
+        "prompt_tokens": 1432,
+        "completion_tokens": 139,
+        "total_tokens": 1571,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "329867bed82e37e6461f11b41eed8dc685307fc675435b8b4de50a735138fee1"
+    },
+    "input_sha256": "cacb1cb5f5490d4508f2f01b667d564300720fcd86879457ce69799eb9394c8f",
+    "answer_sha256": "39322cc9faf82af66e4d3d943ab9cf6b3e7a142084b5e204d627dee4923b2523",
+    "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "39322cc9faf82af66e4d3d943ab9cf6b3e7a142084b5e204d627dee4923b2523",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok"
+}

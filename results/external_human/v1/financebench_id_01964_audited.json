@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01964",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c5d14620b70e71dda5f980a56ad86a33783bc38eaaace2d3559bb49aa0001853",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2352b022fcc41d192fffc6fe590efeded2e3424ceb8bd8c4a5dffeabdbdf2742",
+  "started_utc": "2026-09-09T18:02:04.238960+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence shows Customer deposits of $110,239 million was the largest liability in 2022; candidate claimed Membership Rewards liability ($12,789M) which does not appear in evidence and is far smaller.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate named Membership Rewards liability, not American Express as entity context issue but wrong liability line item"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate addressed 2022 as requested"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate used millions USD consistent with evidence"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Largest liability per evidence is Customer deposits ($110,239M), not Membership Rewards liability"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence contains no Membership Rewards liability; Customer deposits is largest liability listed"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "83f7cc124e076d5b55196538118420cfe1a865646f1ec59e06d8c5ba6b224d94",
+    "latency_seconds": 8.659,
+    "usage": {
+      "prompt_tokens": 2046,
+      "completion_tokens": 225,
+      "total_tokens": 2271,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "47825fe076c2e541edf963f9eb4c3393744addc199952ab0304fedd68b79056f"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

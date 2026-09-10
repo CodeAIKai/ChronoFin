@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04784",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "52660e29054d6d9badb63fd05a3aeeabe2499c29ffda30c54d5f1ffb1ef589ba",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "e64dc150e2b69a3d7c9eaaa7c26f44d9762292d39244290467ea5bcbc9792ca9",
+  "started_utc": "2026-09-09T18:02:42.087255+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computed FY2019 and FY2018 unadjusted operating income margins from evidence (21,957/514,405≈4.27%, 20,437/500,343≈4.09%) and change 0.18% rounded to 0.2%, matching reference and evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Walmart, as required."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Used FY2018 and FY2019 (fiscal years ended Jan 31, 2018 and 2019 per evidence)."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer in percents, rounded to one decimal (0.2%)."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Change 0.2% matches reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Operating income and total revenues from evidence income statement support calculation."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a18c09a8c6085f2c617c9245e018cc43a42631888a6228a3b799fc83c6d6e24e",
+    "latency_seconds": 9.19,
+    "usage": {
+      "prompt_tokens": 2158,
+      "completion_tokens": 246,
+      "total_tokens": 2404,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ce87a511465a3222dfe453d8e061938e5ff494a510cda01ee7c35b086314bc10"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

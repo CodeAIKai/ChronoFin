@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00839",
+  "company": "Foot Locker",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "ceea20d2e5adc9cc176bb11dc118d32800e5db0d85bb8d03e51b5674bf810bf2",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "0d20b3171a1833876b3097f7748041f9858537518da9431be9ab19c7841a5454",
+  "started_utc": "2026-09-09T17:46:32.457693+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states no information is available about new CEO's prior CEO experience and declines to answer, despite evidence showing Mary Dillon was former CEO of Ulta Beauty.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Foot Locker's new CEO (Mary Dillon per evidence)."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Question concerns prior experience before appointment in 2022."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Qualitative yes/no question, no numeric unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate withholds answer claiming lack of info; evidence shows yes she was CEO of Ulta Beauty."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate ignores evidence explicitly stating former CEO of Ulta Beauty, Inc."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d3e2e15e5f447282bfc48939d25ca6ff5bf1c277b330f4c20e4d3afdf8112dc6",
+    "latency_seconds": 9.866,
+    "usage": {
+      "prompt_tokens": 2123,
+      "completion_tokens": 233,
+      "total_tokens": 2356,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "14cef7cac9d2740e3d433829e20b84286d7f84e5d4ea8bd63c66f7bbd91b4c65"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

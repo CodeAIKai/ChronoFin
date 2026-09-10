@@ -1,0 +1,844 @@
+{
+  "case_id": "E11",
+  "split": "evaluation",
+  "method": "counterbrief_first_pass",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "parent_record_sha256": "2ed671a38d4be2c62524bb99333ad40da8a5d56b9832702472b45cd419d5b4c4",
+  "started_utc": "2026-09-09T17:42:12.609884+00:00",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief_first_pass",
+    "query": {
+      "question": "综合 Meta AI 资本支出展望与 IEA 用电研究，写一段基础设施机会和约束简报。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I01",
+        "source_id": "iea25",
+        "locator": "current consumption section",
+        "role": "context",
+        "status": "estimate",
+        "text": "IEA estimated 2024 data-centre electricity use at 415 TWh, about 1.5% globally.",
+        "value": 415,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I02",
+        "source_id": "iea25",
+        "locator": "2030 outlook section",
+        "role": "support",
+        "status": "forecast",
+        "text": "IEA projected data-centre electricity demand of around 945 TWh in 2030.",
+        "value": 945,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I03",
+        "source_id": "iea25",
+        "locator": "grid integration section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Without action, grid constraints could delay around 20% of planned data-centre projects.",
+        "value": 20,
+        "unit": "%",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I04",
+        "source_id": "iea25",
+        "locator": "uncertainty section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "IEA scenario range for 2035 data-centre demand: 700–1700 TWh; adoption, efficiency and bottlenecks matter.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I05",
+        "source_id": "iea25",
+        "locator": "global demand growth section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Data centres represent roughly one-tenth of projected global electricity-demand growth through 2030.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "M01",
+        "source_id": "meta24",
+        "locator": "p1 annual revenue row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 revenue: USD 164501 million.",
+        "value": 164501,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M02",
+        "source_id": "meta24",
+        "locator": "p1 annual net income row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 net income: USD 62360 million.",
+        "value": 62360,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M03",
+        "source_id": "meta24",
+        "locator": "p9 segment operating results",
+        "role": "caution",
+        "status": "observed",
+        "text": "Reality Labs FY2024 operating loss: USD 17729 million.",
+        "value": -17729,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M04",
+        "source_id": "meta24",
+        "locator": "p2 CFO outlook",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Meta anticipated FY2025 capital expenditures of USD 60–65 billion; guidance, not realized spending.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M05",
+        "source_id": "meta24",
+        "locator": "p2 depreciation footnote",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Longer server lives were expected to reduce FY2025 depreciation by USD 2.9 billion; an accounting-estimate change.",
+        "value": 2.9,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M06",
+        "source_id": "meta24",
+        "locator": "p1 annual ad metrics",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 ad impressions grew 11%; average ad price rose 10%.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M07",
+        "source_id": "meta24",
+        "locator": "p10 annual free cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 free cash flow: USD 52103 million.",
+        "value": 52103,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M08",
+        "source_id": "meta24",
+        "locator": "p4 non-GAAP definition",
+        "role": "caution",
+        "status": "definition",
+        "text": "Meta free cash flow deducts property purchases and finance-lease principal; non-GAAP comparability is limited.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M09",
+        "source_id": "meta24",
+        "locator": "p2 revenue outlook",
+        "role": "caution",
+        "status": "absence",
+        "text": "Meta provided no FY2025 full-year revenue guidance in this release.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M10",
+        "source_id": "meta24",
+        "locator": "p1 expense footnote",
+        "role": "caution",
+        "status": "observed",
+        "text": "Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses.",
+        "value": 1.55,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "partial",
+      "summary": "截至2025-06-01，资料仅含Meta FY2024财报与IEA 2025-04用电研究，无Meta AI专项资本支出展望原文，仅有FY2025总 capex 指引60–65bn美元（M04）。IEA估计2024数据中心用电415TWh（I01），2030年约945TWh（I02），显示基础设施用电规模扩张机会；但电网约束或延迟20%项目（I03），且2035需求情景700–1700TWh差异大（I04）。Meta FY2024自由现金流52103mn美元（M07）支撑其 capex 能力，但Reality Labs亏17729mn（M03）、无FY25收入指引（M09）构成约束。AI提效电网为潜在机会（I06）。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA估计2024年全球数据中心用电415TWh，约占全球1.5%，构成基础设施用电基数。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA预测2030年数据中心用电约945TWh，较2024年明显增长，体现基础设施机会。",
+          "kind": "forecast",
+          "role": "driver",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "IEA称若无行动，电网约束或延迟约20%计划数据中心项目，是核心约束。",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I03"
+          ],
+          "numbers": [
+            {
+              "source_id": "I03",
+              "value": 20,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Meta预计FY2025资本支出600–650亿美元，为AI相关基础设施投入的粗略上限参考（非专项）。",
+          "kind": "forecast",
+          "role": "driver",
+          "evidence_ids": [
+            "M04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "Meta FY2024自由现金流52103百万美元，显示其覆盖 capex 指引的现金能力。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M07"
+          ],
+          "numbers": [
+            {
+              "source_id": "M07",
+              "value": 52103,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Meta Reality Labs FY2024经营亏损17729百万美元，对集团资源形成约束。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M03"
+          ],
+          "numbers": [
+            {
+              "source_id": "M03",
+              "value": -17729,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "IEA指出AI可改善电网管理与工业效率，但部署存障碍，为潜在效率机会。",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "I06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C8",
+          "text": "Meta未提供FY2025全年收入指引，使AI投入回报节奏不可核。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M09"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "I02/I01*100",
+          "value": 227.711,
+          "unit": "%",
+          "evidence_ids": [
+            "I01",
+            "I02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "M07/(M04_lower_in_million)*100",
+          "value": 86.838,
+          "unit": "%",
+          "evidence_ids": [
+            "M07",
+            "M04"
+          ]
+        }
+      ],
+      "limitations": [
+        "Meta AI专项资本支出未披露，M04为总capex指引；IEA 2035情景700–1700TWh（I04）显示需求不确定性；数据中心占全球用电增长约1/10（I05）但无绝对增量数；M04单位bn与M07单位mn需换算（1bn=1000mn）后计算K2下限。"
+      ],
+      "follow_up": [
+        {
+          "action": "提取Meta财报中AI/数据中心专项capex或管理层讨论口径",
+          "reason": "可区分AI基础设施机会与总capex，改变C4的粗略推断",
+          "evidence_ids": [
+            "M04"
+          ]
+        },
+        {
+          "action": "核查IEA对单企业（如Meta）用电占比或采购协议",
+          "reason": "可把行业机会映射到公司约束，改变C2-C3适用性",
+          "evidence_ids": [
+            "I02",
+            "I03"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "partial",
+      "summary": "截至2025-06-01，资料仅含Meta FY2024财报与IEA 2025-04用电研究，无Meta AI专项资本支出展望原文，仅有FY2025总 capex 指引60–65bn美元（M04）。IEA估计2024数据中心用电415TWh（I01），2030年约945TWh（I02），显示基础设施用电规模扩张机会；但电网约束或延迟20%项目（I03），且2035需求情景700–1700TWh差异大（I04）。Meta FY2024自由现金流52103mn美元（M07）支撑其 capex 能力，但Reality Labs亏17729mn（M03）、无FY25收入指引（M09）构成约束。AI提效电网为潜在机会（I06）。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA估计2024年全球数据中心用电415TWh，约占全球1.5%，构成基础设施用电基数。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA预测2030年数据中心用电约945TWh，较2024年明显增长，体现基础设施机会。",
+          "kind": "forecast",
+          "role": "driver",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "IEA称若无行动，电网约束或延迟约20%计划数据中心项目，是核心约束。",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I03"
+          ],
+          "numbers": [
+            {
+              "source_id": "I03",
+              "value": 20,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Meta预计FY2025资本支出600–650亿美元，为AI相关基础设施投入的粗略上限参考（非专项）。",
+          "kind": "forecast",
+          "role": "driver",
+          "evidence_ids": [
+            "M04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "Meta FY2024自由现金流52103百万美元，显示其覆盖 capex 指引的现金能力。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M07"
+          ],
+          "numbers": [
+            {
+              "source_id": "M07",
+              "value": 52103,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Meta Reality Labs FY2024经营亏损17729百万美元，对集团资源形成约束。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M03"
+          ],
+          "numbers": [
+            {
+              "source_id": "M03",
+              "value": -17729,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "IEA指出AI可改善电网管理与工业效率，但部署存障碍，为潜在效率机会。",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "I06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C8",
+          "text": "Meta未提供FY2025全年收入指引，使AI投入回报节奏不可核。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M09"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "I02/I01*100",
+          "value": 227.711,
+          "unit": "%",
+          "evidence_ids": [
+            "I01",
+            "I02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "M07/(M04_lower_in_million)*100",
+          "value": 86.838,
+          "unit": "%",
+          "evidence_ids": [
+            "M07",
+            "M04"
+          ]
+        }
+      ],
+      "limitations": [
+        "Meta AI专项资本支出未披露，M04为总capex指引；IEA 2035情景700–1700TWh（I04）显示需求不确定性；数据中心占全球用电增长约1/10（I05）但无绝对增量数；M04单位bn与M07单位mn需换算（1bn=1000mn）后计算K2下限。"
+      ],
+      "follow_up": [
+        {
+          "action": "提取Meta财报中AI/数据中心专项capex或管理层讨论口径",
+          "reason": "可区分AI基础设施机会与总capex，改变C4的粗略推断",
+          "evidence_ids": [
+            "M04"
+          ]
+        },
+        {
+          "action": "核查IEA对单企业（如Meta）用电占比或采购协议",
+          "reason": "可把行业机会映射到公司约束，改变C2-C3适用性",
+          "evidence_ids": [
+            "I02",
+            "I03"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "9ad2aebe81b8483b7f0fd2d9a5d4c07ce02074a7f930ec4066d4bee29b5951bb",
+        "latency_seconds": 10.258,
+        "usage": {
+          "prompt_tokens": 2084,
+          "completion_tokens": 1054,
+          "total_tokens": 3138,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "040794cda6451daa4ce728adab4a36f56239d19992d9230c8ce7db4c27dc2dbd"
+      }
+    ],
+    "input_sha256": "574fe8d171ea4fbbd76df1388fb6d673c3ed02db1a7600421efcb9b83973621f",
+    "answer_sha256": "5f9e52d2a0df3090fc1e9f34eccee9838b34f4dbe3978ae5f6145aeacbef6041"
+  },
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文引IEA估计2024用电415TWh约占1.5%，与I01一致，为事实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称IEA预测2030约945TWh较2024增长，与I02预测一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称电网约束延迟20%项目，与I03预测一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称Meta预计FY2025 capex 600-650亿美元非专项，与M04指引forecast一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选称FY2024 FCF 52103百万美元，与M07观测值一致且local_witness等价",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选称Reality Labs亏17729百万美元，与M03经营亏损一致且witness等价",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选称AI改善电网但部署障碍，与I06支持预测一致，作推断合理",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C8",
+          "verdict": "supported",
+          "reason": "候选称Meta无FY2025收入指引，与M09 absence一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M04",
+          "present": true,
+          "quote": "Meta预计FY2025资本支出600–650亿美元"
+        },
+        {
+          "id": "I02",
+          "present": true,
+          "quote": "IEA预测2030年数据中心用电约945TWh"
+        },
+        {
+          "id": "I03",
+          "present": true,
+          "quote": "电网约束或延迟约20%计划数据中心项目"
+        },
+        {
+          "id": "I04",
+          "present": true,
+          "quote": "2035需求情景700–1700TWh差异大"
+        },
+        {
+          "id": "M05",
+          "present": false
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "Meta AI专项资本支出未披露，M04为总capex指引；IEA 2035情景700–1700TWh（I04）显示需求不确定性"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": false,
+      "reason": "候选未直接写一段简报而给摘要与声明partial，但覆盖required/counter且限制讲清，无矛盾；最重要问题是未产出所要求简报正文"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "9e678be32a364daddefeae6ab4b855f009e10fa18eb28bb76815f6dfbf6e7ede",
+      "latency_seconds": 8.457,
+      "usage": {
+        "prompt_tokens": 5542,
+        "completion_tokens": 726,
+        "total_tokens": 6268,
+        "prompt_tokens_details": {
+          "cached_tokens": 576
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "1f80f7eca62363501f14c314818df0e053dad33be71a4908b7a214b92fd829de"
+    },
+    "input_sha256": "60f2690f1abe321cecfce7499605a96264565443dcd42f501fb3e6eb405da028",
+    "answer_sha256": "5f9e52d2a0df3090fc1e9f34eccee9838b34f4dbe3978ae5f6145aeacbef6041",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "5f9e52d2a0df3090fc1e9f34eccee9838b34f4dbe3978ae5f6145aeacbef6041",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.857143,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 0.666667,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 91.786,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "incorrect numerical proof",
+        "cap": 55
+      }
+    ],
+    "issues": [
+      "calculation: K2"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "proof_feedback": {
+    "money": [
+      {
+        "claim_id": "C5",
+        "source_id": "M07",
+        "source_value": 52103,
+        "source_unit": "USD million",
+        "text_value": "52103",
+        "text_unit": "百万美元",
+        "numerically_equivalent": true,
+        "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+      },
+      {
+        "claim_id": "C6",
+        "source_id": "M03",
+        "source_value": -17729,
+        "source_unit": "USD million",
+        "text_value": "17729",
+        "text_unit": "百万美元",
+        "numerically_equivalent": true,
+        "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+      }
+    ],
+    "calculations": [
+      {
+        "id": "K1",
+        "executed_value": 227.71084337349396,
+        "claimed_value": 227.711,
+        "unit": "%"
+      },
+      {
+        "id": "K2",
+        "error": "UnsafeExpression"
+      }
+    ],
+    "citation_identity": [
+      {
+        "claim_id": "C1",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C2",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C3",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C4",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C5",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C6",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C7",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C8",
+        "unknown_ids": []
+      }
+    ]
+  },
+  "status": "ok",
+  "new_work_wall_seconds": 8.464
+}

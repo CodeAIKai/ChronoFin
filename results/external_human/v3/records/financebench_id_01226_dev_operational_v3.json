@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01226",
+  "uid": "financebench_id_01226_dev",
+  "split": "development",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c5111956e72eab9675ceaa4b5546097c88b09deddfe4a786e5d149c4418ba595",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "e5b99fd7f20ba7e4505d62d42648402f852a2bf60b36f8a4bc380166b8aec83d",
+  "started_utc": "2026-09-09T18:09:52.522098+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the operating margin decline was driven largely by higher litigation costs, raw material/logistics inflation, and divestiture impacts",
+    "content_correct": true,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Candidate states operating margin decreased 1.7% (19.1% vs 20.8%) and cites litigation (Combat Arms, PFAS), raw material/logistics costs, divestiture impacts as drivers, matching reference's one-off charges (litigation, PFAS exit, Russia exit, divestiture restructuring) and evidence 10-K special item costs."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3a2362b55c287d044f7bf024283730ef31ff5ddeb8adc17f64edcb96986247b6",
+    "latency_seconds": 8.499,
+    "usage": {
+      "prompt_tokens": 1705,
+      "completion_tokens": 147,
+      "total_tokens": 1852,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d8db66ccf92f5c99a9237fa85e231483fe9cf9511bb7ffae41ee49a70bdb8df5"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

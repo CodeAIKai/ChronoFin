@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01079",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f109d5e9261693574d63ed3e933ef49c9f81e85fe92abcd1a567bad473294dee",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "c8e934d5dc0293e78d05e45521a4b9a48b9edf4a06ef820ecc7a097d55159b35",
+  "started_utc": "2026-09-09T17:33:38.961788+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence explicitly lists three FY2023 Amcor acquisitions (Czech Republic flexibles, Shanghai medical device site, NZ protein packaging machines); candidate falsely claims no info for FY2023 and ignores evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Amcor, correctly identified by candidate but wrongly claimed no data."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Candidate says no acquisitions info for FY2023/22/21; evidence shows FY2023 acquisitions exist."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question asks for acquisitions (qualitative), no numeric unit required."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate answer of 'no information' contradicts evidence of three FY2023 acquisitions."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supports acquisitions in FY2023; candidate unsupported denial."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a9061feb06fdd96a236114c328dcdab5d54a89e734fbdb028d3ee9c0a1a007a6",
+    "latency_seconds": 4.015,
+    "usage": {
+      "prompt_tokens": 2065,
+      "completion_tokens": 235,
+      "total_tokens": 2300,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9c48612cea06a85491f524553e57e80c5624fcbf21085023f0c583ac653b6da0"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-10T02:37:25.843427+00:00",
+  "checks": [
+    {
+      "check": "real_pdf_upload_to_hy3_to_source_audit",
+      "pass": true,
+      "source": "tencent25q2",
+      "facts": 17
+    },
+    {
+      "check": "native_pdf_quote_navigation",
+      "pass": true
+    },
+    {
+      "check": "no_gold_live_audit_reports_unknown_dimensions",
+      "pass": true
+    },
+    {
+      "check": "live_record_download_matches_response",
+      "pass": true
+    },
+    {
+      "check": "real_custom_question_hy3_call",
+      "pass": true
+    }
+  ],
+  "browser_page_errors": [],
+  "pass": true,
+  "mocked_model": false
+}

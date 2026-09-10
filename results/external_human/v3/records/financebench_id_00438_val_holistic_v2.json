@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00438",
+  "uid": "financebench_id_00438_val",
+  "split": "new_response_validation",
+  "company": "Adobe",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "19ca444dcd374b590a882edaf48d622d0599a80e4d412ae4cdc80aeb08aff3c1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "30d006c3585eb1d1b3c19ef44cb14b49d2505dc6a5dde9162be021542d25cf6c",
+  "started_utc": "2026-09-09T18:05:46.981791+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate says operating margin declined to 35% from 37% (rounded), but reference and evidence show 34.6% in FY2022 vs 36.8% in FY2021 (approx 35% vs 37% rounded). However, candidate concludes margin profile 'appears stable' and does not clearly answer 'No, not improving' as reference requires; also implies stable not declining. Substantive answer disagrees with reference conclusion of declining/non-improving."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "329b2811b591d24992c139106786cd1971b8c4074b4b07af695ac17bc4bdb022",
+    "latency_seconds": 6.15,
+    "usage": {
+      "prompt_tokens": 1705,
+      "completion_tokens": 122,
+      "total_tokens": 1827,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a5686232e6c52eb4ae1f59f2dd7e8fe601bb1c5bf9ecd25a5f4faa272b13a869"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

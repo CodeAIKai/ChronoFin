@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01328",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "81b7e235d2f53bbb4944b0ffe2b6068579e03fe52958bc21659c8fe03e06f5a3",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "4f6f7ebba22c793b65d4a390fb2af4e145841a91f5ad479c79744a74187a66b9",
+  "started_utc": "2026-09-09T17:33:56.263434+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate does not provide the substantive answer ($411 million) and instead disclaims access and suggests where to look, with only conditional statement of 0 if not outlined. No actual answer given.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references PepsiCo FY2022 restructuring costs context"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate mentions FY2022"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate references dollars/millions implicitly via context"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gives no substantive numeric answer; only conditional 0 if not outlined, but evidence shows $411M outlined"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate does not use or cite evidence; refuses to answer from data"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1155fe4db8ba0a95e6593be386b376ca4113e5841a32831f75c9d91a2f5fca9b",
+    "latency_seconds": 2.501,
+    "usage": {
+      "prompt_tokens": 1743,
+      "completion_tokens": 214,
+      "total_tokens": 1957,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b97d36bacb02932d286eb0eddee4120d108975ff37a69b4b2618b26876e6030c"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

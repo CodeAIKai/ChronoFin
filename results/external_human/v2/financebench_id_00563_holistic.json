@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00563",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2d42ebd6ad3216d88abb0f05f79b0287a52b6f27773dbe55fa9a7e62ef35a580",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "d56d5748695d556a596f412f74386c2bf73967ba0af0f4c921c4a78722e100fc",
+  "started_utc": "2026-09-09T17:44:08.443998+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate says 'This is the end of the filing.' and provides no substantive answer to the question about which segment's sales increased most proportionally excluding Embedded."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1836497cf24deb2e7c456ac32500819ce8d3c2d54744df63057a0825ee1c10c0",
+    "latency_seconds": 7.296,
+    "usage": {
+      "prompt_tokens": 1194,
+      "completion_tokens": 52,
+      "total_tokens": 1246,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f1aef26bbea6b5eaa942c45e1ca1e6b625f62217df01439f938736a7658272e7"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

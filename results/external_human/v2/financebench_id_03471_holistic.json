@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_03471",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "16b05bbb0cd5fb57d12a639cb898b5a8ad314a776c4a9947d95d0f9944c7655f",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "4a494c0fcc8a15133f09ab97af89b4c02ecd1e2b342e5946742f591a869ca2f7",
+  "started_utc": "2026-09-09T17:51:42.085247+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot calculate the ratio because General Mills data is not provided, withholding the answer despite evidence containing the balance sheet figures (5121.3/7491.5 = 0.68)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ff12252a7d4a79da9f52b05196c7cf7a1ca7499aeac234aa174b58e19f7e2670",
+    "latency_seconds": 6.523,
+    "usage": {
+      "prompt_tokens": 2085,
+      "completion_tokens": 63,
+      "total_tokens": 2148,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "916f9c47d36b49a672bdea9d32d5971a55eda80c1192cdbed4f1bd27fe0a8717"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

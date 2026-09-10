@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00585",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "706289c365363ba3bf165919f27253c9ba85cdd4aec4713f7706519d8bc1c610",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "3cd1fc140f9f24bce7f71a034af201b2f1311035568c5d6b65b0d3682c532ef2",
+  "started_utc": "2026-09-09T17:32:58.773213+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.97,
+    "reason": "Candidate's computed FY2022 rate 0.617% (~0.62% rounded) and FY2021 rate -14.76% match reference and evidence; comparison correctly notes positive vs negative shift."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "aca80fb40b61154bda99538d092b9f8c59a9455a4897bcaffb21d9780155134c",
+    "latency_seconds": 2.343,
+    "usage": {
+      "prompt_tokens": 1582,
+      "completion_tokens": 63,
+      "total_tokens": 1645,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2f6cc3d2aa6b9a472158973c3e6ed13fe10f68f08bfe970af22463f04e0c2668"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.97,
+  "reference_conflict": false
+}

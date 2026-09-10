@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00464",
+  "uid": "financebench_id_00464_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ef296a70d65f10967764690947123755a46794219ebee72ec474f8e3b6d47bf7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "ba810f862fca7ab90acded4d77fdf6568ac40ba0751a75ae25b9b781c3c29db1",
+  "started_utc": "2026-09-09T18:05:57.050077+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers 'Yes' with reasoning supported by evidence showing airline industry cyclicality affecting Boeing."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6a8e07071e72cd9baffa369450aaf0b79568cff23f24b98ad5d75ffac7eae610",
+    "latency_seconds": 4.395,
+    "usage": {
+      "prompt_tokens": 1179,
+      "completion_tokens": 41,
+      "total_tokens": 1220,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4a5c848547d0b51e6d9d7f81bf55a280e5abdd886aadfada4fea5f1ff076f958"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

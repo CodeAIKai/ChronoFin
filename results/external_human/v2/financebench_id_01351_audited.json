@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01351",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2ce9a3d3a672e015be6d5095722692a44dfde121839fc0a66793eb5ef0435645",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "d113ea7abb4aa854ef1e3530dd244aa6c7fb05971d7fd7e9ae219861006744a9",
+  "started_utc": "2026-09-09T17:48:48.286582+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate discusses short-term borrowings and debt, never addresses effective tax rate change between FY2021 and FY2022, withholding the requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity American Express mentioned but irrelevant topic provided"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2021 and FY2022 referenced in candidate's debt data, not for tax rate"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question unit is percentage point change; not addressed"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No answer on effective tax rate change (24.6% to 21.6%, -3.0pp) provided"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows effective tax rate 21.6% (2022) vs 24.6% (2021); candidate ignores it"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2a18aa3eeb8234d705faa6d188a62a0c1465b3c9fdad8e86a9b712d80a66b23b",
+    "latency_seconds": 9.962,
+    "usage": {
+      "prompt_tokens": 2871,
+      "completion_tokens": 247,
+      "total_tokens": 3118,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c9b465c75645b514d7d61c53b7e7ae43393c536176d1ea206ea9dcb860777d12"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

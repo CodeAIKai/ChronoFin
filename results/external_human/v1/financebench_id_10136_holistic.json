@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_10136",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "a28f4cc20380037d00767cde8646e94bde2d69902d6b04d6d1134c5951536ee6",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "8ba67ecd668170b599fe4974f4905e052b4f493021318ec34a32eb1dc6b24e77",
+  "started_utc": "2026-09-09T18:04:07.788046+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides subsidiary list instead of computing FY2022 retention ratio; no substantive answer to the question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "098b4446276340256f4f14bb6a1b94cf706732c7dbcb26de5fe0c7c9201a7b92",
+    "latency_seconds": 6.275,
+    "usage": {
+      "prompt_tokens": 3895,
+      "completion_tokens": 42,
+      "total_tokens": 3937,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ba0cfbe87d33785f1758f130cfcaf0a651515d49b3216aebee8b1fa7760f0a8e"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

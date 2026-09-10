@@ -1,0 +1,11 @@
+{
+  "scope": "Final native v5 trials and final live browser checks",
+  "model": "hy3",
+  "base_url": "https://tokenhub.tencentmaas.com/v1",
+  "reasoning_effort": "no_think",
+  "temperature": 0,
+  "max_tokens": 6500,
+  "shared_rpm": 40,
+  "credentials_saved": false,
+  "earlier_runs": "Earlier stages may use different max_tokens; original traces and protocol snapshots remain authoritative where captured."
+}

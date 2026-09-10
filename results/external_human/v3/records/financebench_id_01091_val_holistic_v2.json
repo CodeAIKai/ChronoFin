@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01091",
+  "uid": "financebench_id_01091_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "79989ed15016bbffeb8dfb25c29326143a89b40f29323ed610b0558ef65bef65",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "c211f06749b0a01e2e3accf6f9720076cd3ff1838b30e183869bb222ca3d2288",
+  "started_utc": "2026-09-09T18:09:30.012392+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence from Boeing 2022 10-K states multiple legal actions filed from 2018/2019 crashes were pending in FY2022 (cannot estimate loss), contradicting candidate's claim of no reported materially important ongoing legal battles from FY2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "62c3705844f8667b9961d025fb0e44fb8d00c5d3b3057956a02cac85ef7e9c1e",
+    "latency_seconds": 5.894,
+    "usage": {
+      "prompt_tokens": 1395,
+      "completion_tokens": 74,
+      "total_tokens": 1469,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "fd2bf69108fa2e95d71f3c12750a6bde34cd834fade314217e148052f608cad0"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

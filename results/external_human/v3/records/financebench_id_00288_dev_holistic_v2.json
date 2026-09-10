@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00288",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "998a1746640ed831b9408b555c084eb063dd566f077b1655d7eb10f4086ced30",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "a2f78804c481d59730260b63a760921ba08a44ce9bc491f643c0d442d6b96243",
+  "started_utc": "2026-09-09T17:42:43.076344+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers yes with figures from evidence (FY2023 $1,874M to Q2 FY2024 $1,093M, drop of $781M), agreeing with reference's decline conclusion using supplied data."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "28b0f200c0d628eddb5f359679d06b0db6e7e0c1103217f970f70df31dcfc5c6",
+    "latency_seconds": 5.65,
+    "usage": {
+      "prompt_tokens": 3434,
+      "completion_tokens": 67,
+      "total_tokens": 3501,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "64f256ec36abd5e42ca75d1f28e4d905fc8f94833468b2b69290755220a88509"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00288_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00288_holistic.json",
+  "parent_sha256": "47330d1fcc3da2bb327f1fc64382ac7d15ff1007217b85f6de8420ada35a5120"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01488",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "838beed9ec833e9d831ea9dc2683a4789c63d198308fa8658d7cd276060b4349",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "275ca17e4f85472888fb549dd471aace370e716d0e7d98f459ec8adde5ebb4cb",
+  "started_utc": "2026-09-09T18:00:57.234063+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence states JnJ's Consumer Health business (Kenvue formerly) will be presented as discontinued operations from Aug 30, 2023; candidate refused claiming no info, contradicting evidence and reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c0b23de7671053e43f3aa86944d9b4079f95bc01bf86dc215318359334450c9e",
+    "latency_seconds": 5.876,
+    "usage": {
+      "prompt_tokens": 1393,
+      "completion_tokens": 64,
+      "total_tokens": 1457,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c53ef8d47201bf220d9ac5ae48ad7dfc2685cc7ff711aa7c3d6958edf136f858"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

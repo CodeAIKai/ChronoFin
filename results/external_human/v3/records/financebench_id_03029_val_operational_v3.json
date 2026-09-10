@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03029",
+  "uid": "financebench_id_03029_val",
+  "split": "new_response_validation",
+  "company": "3M",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "c50020ceeafbff4ac27917831eecc6be369f10a5704b8d48a0fbb2a664930bb4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "75639953e771eb19a29df7e845091218c8ab280da169932e04034e5ee42936aa",
+  "started_utc": "2026-09-10T01:29:54.352574+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but the information provided does not include the capital expenditure amount for 3M in the fiscal year 2018.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states 2018 capex figure is not mentioned and asks for missing data, though evidence cash flow statement shows Purchases of PP&E 2018 = (1,577) million, matching reference 1577."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "68b7286f1c1a64a85dcae3378d18826c567de8c18db0610b535f2b0d983cfdee",
+    "latency_seconds": 9.081,
+    "usage": {
+      "prompt_tokens": 3130,
+      "completion_tokens": 124,
+      "total_tokens": 3254,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "88c70a40a3cad1709932518c8bad1d3f6798ad8553442478b597ddf14c7495b5"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

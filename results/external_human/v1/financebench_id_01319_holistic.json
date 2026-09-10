@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01319",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "11c0ec500abc6f431fa95108bf9a9cda49c0cacfb9b5d3d99d8d543a1f46a649",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "79291a05be6bcfde62784d811c469454f0ae96372240bb63042a409c9f9a7ff5",
+  "started_utc": "2026-09-09T17:33:54.046020+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly states no explicit restructuring costs line item in FY2022 income statement and gives 0, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4fe8c8fb93ff7ddfd8e417284826fd6f3b235a38b7fd0f9ebc2a5039587814b6",
+    "latency_seconds": 1.525,
+    "usage": {
+      "prompt_tokens": 1942,
+      "completion_tokens": 46,
+      "total_tokens": 1988,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "68b83a17ac33399c7447a26826b9ddabb082acc476f45441011fa44753938e32"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

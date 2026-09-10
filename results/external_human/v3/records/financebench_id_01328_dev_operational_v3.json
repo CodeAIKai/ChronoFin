@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01328",
+  "uid": "financebench_id_01328_dev",
+  "split": "development",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "81b7e235d2f53bbb4944b0ffe2b6068579e03fe52958bc21659c8fe03e06f5a3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "4f6f7ebba22c793b65d4a390fb2af4e145841a91f5ad479c79744a74187a66b9",
+  "started_utc": "2026-09-09T18:10:40.721709+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I do not have access to external databases or the ability to view or retrieve real-time data, including financial filings or specific details from PepsiCo's income statements for FY2022",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and asks user to access documents instead of providing the requested quantity."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7651079b245f2c35710a4fc445d637eaaf9cc7733211dbe96912e8abcb3fe9ef",
+    "latency_seconds": 10.131,
+    "usage": {
+      "prompt_tokens": 1762,
+      "completion_tokens": 107,
+      "total_tokens": 1869,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "54609bb84af7775db060d3ece64d2d1176fb3888b0dc6aea152ad88b30bd59e7"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

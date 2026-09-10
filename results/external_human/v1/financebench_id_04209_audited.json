@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04209",
+  "company": "Costco",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0c0682f8672fecff084aa9f6502637f3007ec93b5cf28885ba4b2fd76ce73753",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "018e6c884d35b172a92f7ee9848cbbf0354f779a2178a145181cd1153226c42c",
+  "started_utc": "2026-09-09T17:34:47.673235+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.99,
+    "reason": "Candidate claims FY2021 balance sheet data is absent and refuses to answer, but evidence explicitly shows Costco total assets of $59,268 million at August 29, 2021 (end of FY2021).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Costco Wholesale Corporation, consistent with question."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Evidence balance sheet date August 29, 2021 is FY2021 end."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Evidence amounts in millions USD; question requests USD millions."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave no answer and falsely said data missing; correct answer is 59268."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence directly supports 59268 total assets; candidate ignored it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "71c8e2c7eec5770ee9476dd71be91adb01ae6299ef6a52a486b8dda511684996",
+    "latency_seconds": 4.712,
+    "usage": {
+      "prompt_tokens": 1814,
+      "completion_tokens": 233,
+      "total_tokens": 2047,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "eacbf1f118273053a4100c718752a900371f1dbb378576e414f0c745690bd20a"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

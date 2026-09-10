@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_03856",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9b4d63d5f4df87ab5e07a6bd2b2de4d20f3a75550ecd335161c83604066afcda",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "922ef793523e5d173b3d93e82c8d51047583c32f51917e28f72529ce5d9dffc9",
+  "started_utc": "2026-09-09T17:52:19.835686+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate provides only an exhibit list from a filing, with no operating cash flow ratio or any substantive answer to the question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ba660c98cf7fae9ee402dd59af24474a9b683d442a75b75fc0191a0cb8381fa8",
+    "latency_seconds": 7.055,
+    "usage": {
+      "prompt_tokens": 5955,
+      "completion_tokens": 46,
+      "total_tokens": 6001,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6dec86a54859b5b7d74cb2386a86092b050cbd62eb93bac05393f97011d40ef8"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

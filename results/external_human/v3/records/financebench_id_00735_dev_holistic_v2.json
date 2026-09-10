@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00735",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "6dc4b742fb6ef6ac1c15a8eac7cb09c51dd6c9ad0b113e6ea44d3613eed83d82",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "f6ddd838a9f750cd15a6e6cf75236a7508e911b915633be170478532b312a066",
+  "started_utc": "2026-09-09T17:45:52.972909+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate states it cannot provide information on PepsiCo's legal battles for FY2021/FY2022 from context and withholds a substantive answer, despite evidence showing management believes no material adverse effect from legal proceedings."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9664442c32d151cf348b949f7d8537ea44d7deed17da52579cba62f0867a93de",
+    "latency_seconds": 6.874,
+    "usage": {
+      "prompt_tokens": 1285,
+      "completion_tokens": 65,
+      "total_tokens": 1350,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "62d7ed83279884651f951217a4fd99ba97eda4a9299fa6b9c596e59ac4d49df3"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00735_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00735_holistic.json",
+  "parent_sha256": "c026f6360e9b9117bdd03583de1dee7263f3a8ffe699d8be109753f2657ef606"
+}

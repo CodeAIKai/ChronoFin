@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00606",
+  "uid": "financebench_id_00606_val",
+  "split": "new_response_validation",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "fa9523ff72bb2d61d00d6d5fe528b0e959ccfe38d5c1a38556205d16287604a4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "133ffdef8b99430605d2403f16345cfce19799e2dd03dc32d9730b63ed2fbcff",
+  "started_utc": "2026-09-09T18:07:04.621058+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "This indicates that Ulta Beauty's wages expense as a percent of net sales increased in FY2023.",
+    "content_correct": true,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Candidate states wages expense as percent of net sales increased in FY2023, matching reference. Evidence shows full-year fiscal 2022 SG&A had 'deleverage of store payroll and benefits due to wage investments', supporting wage portion increase relative to net sales."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1133277d7f89516961afcba606fd6df142974eff9b66076eada1cbdff553524d",
+    "latency_seconds": 6.546,
+    "usage": {
+      "prompt_tokens": 1911,
+      "completion_tokens": 120,
+      "total_tokens": 2031,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8880965f6ec5fbb8d55a723ae292f08f62ddf65871d25c10ca6a448fc406af29"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

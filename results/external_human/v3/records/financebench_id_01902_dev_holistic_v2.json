@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01902",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "8c9604d2b4f561e1237f19e79483d84752b236986a789aeacd20ab25a7731456",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "82689a31a869a29d774f6683c90ab9e90bd05eaed13d89e4e28a7b205ab70e31",
+  "started_utc": "2026-09-09T17:49:47.021941+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate states the answer cannot be determined and withholds the requested conclusion, despite evidence showing Entertainment had 9.0% growth (best by top line) in Domestic Q2 FY2024."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3342c712d76f6a0b523c4c48c624d3982fa2ce7e6b0ae17a88d92c52f26e11a3",
+    "latency_seconds": 7.098,
+    "usage": {
+      "prompt_tokens": 1841,
+      "completion_tokens": 61,
+      "total_tokens": 1902,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cde5ce7b9a4ae62a586ce1ae8242fe7182d7dca277f20159d3724bd8af4ba99a"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01902_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01902_holistic.json",
+  "parent_sha256": "2f19dc33d4bb46442580be0b50d3681f250d5de2f8f17f8b25846dcaf3cf3ffc"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01865",
+  "uid": "financebench_id_01865_val",
+  "split": "new_response_validation",
+  "company": "3M",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "4d058747012bd729c505bb3c60eff632709ff79a2d33e025cd9444fc3887475d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "6e23920286145ce2121ebc581872cd9497337a98ba32acd7d2e6d19c0e4db904",
+  "started_utc": "2026-09-10T01:27:24.502008+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence shows only Consumer had negative organic sales (-0.9%), meaning it alone dragged growth excluding M&A. Candidate names other segments with positive organic sales, contradicting evidence and reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ddb3e4d8de1c7172e47ae1959368e23249bfef1207979f0905600f7c4b44762d",
+    "latency_seconds": 10.661,
+    "usage": {
+      "prompt_tokens": 1658,
+      "completion_tokens": 59,
+      "total_tokens": 1717,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ee1a4c12c087ed85bc7170967278d932df49722916dd87ffd9a3ed84fd99683c"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00757",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "df1fed1c6085d36225160d2d718097f01c0d0ff3f70b5c1624899620eaed6067",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "1b69ee83d0c7cf677263199b78603288c946f66474c4458715a1d5aaf0333ee5",
+  "started_utc": "2026-09-09T17:46:04.902846+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it does not know and claims evidence was not provided, withholding the requested conclusion despite evidence showing AMD reported 16% customer concentration in FY22.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity AMD identified in question."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period FY22 (year ended Dec 31 2022) identified."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question asks yes/no on customer concentration; no numeric unit required."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refused to answer instead of confirming yes with 16% concentration per evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence explicitly states one customer accounted for 16% of consolidated net revenue in FY22, contradicting candidate's claim of missing evidence."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bbfe8a451481efd46d677e69612ca308854da808fa1a09dbfefa5872e545293d",
+    "latency_seconds": 9.69,
+    "usage": {
+      "prompt_tokens": 1344,
+      "completion_tokens": 239,
+      "total_tokens": 1583,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4af047961894278894435b0053cc4d231ed93d89f898c75e1bf8e0c477e2ae0b"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_06247",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "dfcb9233d597317dae8b69d0d3fd9af8c2c85f603fd680ca8b5bd2d981644f76",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "c9172a1f660d50bda103c26503eb685fbe8a0f6dc783166f518e3f2a9298e59f",
+  "started_utc": "2026-09-09T17:54:14.430554+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states data is missing and does not provide the requested DPO value, despite evidence containing needed figures."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dc46e31b018e55b5cfeeed7e0f47095a951434e44d5db1fb1e0c8a19ff3af56c",
+    "latency_seconds": 6.591,
+    "usage": {
+      "prompt_tokens": 3180,
+      "completion_tokens": 43,
+      "total_tokens": 3223,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5f53094bea67503b2b47528437edd760ffd7d153b6734cbb13500dda634f7679"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_06247_dev",
+  "reused_from": "results/external_human/v2/financebench_id_06247_holistic.json",
+  "parent_sha256": "6ba225a4c89155379d262664aa37276ab1257d28526ab6d9bac3192644909039"
+}

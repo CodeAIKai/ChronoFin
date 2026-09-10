@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00540",
+  "uid": "financebench_id_00540_val",
+  "split": "new_response_validation",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "dd2936ccb341d74b106b863f963dc4289eb189cc065e0e2b76883b3569f85371",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "7bd9a190f20c4d2d0d3a1fe91b1e7099258a4cc84403fe91879654f6968d3418",
+  "started_utc": "2026-09-09T18:06:22.829772+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed inventory turnover as ~12.13 times using total cost of sales ($10,069M) over average inventory ($829.5M), but reference states AES turned inventory 9.5 times in FY2022. Candidate's substantive answer (12.13) disagrees with reference and evidence-based expected answer; caveat on conventional inventory meaning does not override wrong metric."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5bff9b8d8c2859f731a28f92587d34159d22f608a583d1d068138f44cd5f57e0",
+    "latency_seconds": 6.637,
+    "usage": {
+      "prompt_tokens": 3198,
+      "completion_tokens": 98,
+      "total_tokens": 3296,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "60bedb07592e9d71bd400d597258c2e63adf4d3be746755874417aaf5f7b961a"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

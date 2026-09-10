@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00215",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "43cce23c0df3d545f6c2e25136fffcdee54e316d42c40f0484937b36cdd3d0a2",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "bae9cc1339ffade351dc01b94c29eb179da47e928a801e52fbafa317e685187d",
+  "started_utc": "2026-09-09T17:42:21.823305+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers 'Yes, Verizon is capital intensive based on FY2022 data' with supporting evidence from FY2022 10-K (capex $23.1B, net PPE $107.434B, etc.), agreeing with reference conclusion.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate addresses Verizon as requested."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate uses FY2022 data (year ended Dec 31, 2022)."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Uses dollars in billions/millions consistent with evidence; no mismatched unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answers yes, capital intensive, matching reference qualitative conclusion."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Cites FY2022 capex $23.1B, net PPE $107.434B from evidence; revenue $136.835B implied via context supports capital intensity."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "79cc7942d793249497c44cfeedb793f02d08e643761c69c8f8c9ecd842df8957",
+    "latency_seconds": 9.39,
+    "usage": {
+      "prompt_tokens": 3672,
+      "completion_tokens": 270,
+      "total_tokens": 3942,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "07af4d217dd78e5cc20b9974f2d9d34344fa1ae514929bab79b64cc97830130a"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

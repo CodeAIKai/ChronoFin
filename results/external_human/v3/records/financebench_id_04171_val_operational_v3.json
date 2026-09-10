@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04171",
+  "uid": "financebench_id_04171_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9c4db8f1a44266afa5a236e8f98e0edabac8403b77f1b3370fcb5efdc2837152",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "bca90cf048c715d32ac87e3c599730c1c0d867e2c7d91a4bd88b33df71dd2a86",
+  "started_utc": "2026-09-10T01:31:30.745002+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide the requested information as it appears to be from a filing that is not included in the text provided.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and asks for missing filing text instead of providing the accounts payable amount; evidence actually contains the balance sheet with Accounts payable $302,578 thousand = 302.578 USD millions for FY2018."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dfcba775739b688e6ecbd18b3e8fd610dee77cbb86d52b45e1bd3e98e04ae589",
+    "latency_seconds": 8.993,
+    "usage": {
+      "prompt_tokens": 2389,
+      "completion_tokens": 119,
+      "total_tokens": 2508,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3ed16482389d853a7227dc3d59e250047cc6a123182c138b61c30deb5a5301bc"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00521",
+  "company": "Ulta Beauty",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "52ab88a6c2bc24bf2b3dbb58a530d5c9a901f6c31585cdcf662ae6fd2bd12fe6",
+  "started_utc": "2026-09-09T17:43:54.190960+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate output '[END OF FILING]' provides no answer about acquisitions and does not address the question.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "No entity discussion provided"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No fiscal period addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No unit or content given"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer on acquisitions"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No supporting text supplied"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "07b4b6958f687ea642c51ee0fce9ab5d29570f1cc0f123acd5834ba308c43636",
+    "latency_seconds": 8.73,
+    "usage": {
+      "prompt_tokens": 1854,
+      "completion_tokens": 174,
+      "total_tokens": 2028,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "870a5b6988e972021fd23a987369a2b6a41eece6264caf5b596d27956b1cff95"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

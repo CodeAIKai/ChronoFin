@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01028",
+  "uid": "financebench_id_01028_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "437a8c80d27e89554a8e8e24367af94e12d68bbe6e936688f880c2af341c01d1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "878de70eea037477193bc3555f92fa166ce4ae9d033b2a1a013103ff2f9e5566",
+  "started_utc": "2026-09-09T18:09:15.349154+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate lists US, EMEA, APAC, LACC as primary geographies, matching reference and evidence footnotes; extra detail on Other Unallocated does not withhold answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1fd96bea0586cbabd08bddf5bc0b8eb50c780d62385d6e4c566628bbc5af2c7d",
+    "latency_seconds": 5.447,
+    "usage": {
+      "prompt_tokens": 1286,
+      "completion_tokens": 58,
+      "total_tokens": 1344,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0ac9aaaaa5328a764b1a36cb80fb5c64f2996fa294d2e288821fac61275bd743"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

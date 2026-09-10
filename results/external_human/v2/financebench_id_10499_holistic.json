@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_10499",
+  "company": "Kraft Heinz",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "7ce7facc8dc80e5da5896c5c48633738fde6aec252ca4de4d40b603267fae144",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "cd094455f25f078fe949933cca20f7c90471ff0f2c7b27817445d0e01b6c2ee8",
+  "started_utc": "2026-09-09T17:55:44.243825+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate discusses lease details unrelated to inventory turnover and does not provide or compute the requested FY2019 inventory turnover ratio."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e8b8f08c7960083e7d3ff252d489d5eff5d7839e4ce888f93a21900d2a6cc945",
+    "latency_seconds": 6.765,
+    "usage": {
+      "prompt_tokens": 3033,
+      "completion_tokens": 45,
+      "total_tokens": 3078,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "131fd3f12deffdbdb01b1bb9605e6b2e61d1f8eb8d821878cb5c07a2df9e6aa1"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

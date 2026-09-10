@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_06272",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "160777a667b19da0a6f653e891769c74455e9c85c82ecaf40e4a5160cd026b67",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "0e00b2773f1287c719dbcb00a6c5a78ac5c2673bfb1becd48ecf86b4d41fd74e",
+  "started_utc": "2026-09-09T17:54:21.023121+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate declines to provide the requested FY2022 dividend payout ratio and only explains how to calculate it, without giving the substantive answer despite evidence being available.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references Coca-Cola as entity but does not answer."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 mentioned in explanation but no answer given."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No numeric answer provided; unit not applied."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive dividend payout ratio answer provided; withholds conclusion."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate does not use supplied evidence to answer; only explains method."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0e2e9e4c9574e7ecedd9bbf8bf3cdfe9eee041bbd24f676cdb560c654088b367",
+    "latency_seconds": 9.529,
+    "usage": {
+      "prompt_tokens": 3585,
+      "completion_tokens": 219,
+      "total_tokens": 3804,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6ef82aa8026a154423c10d6a5a76d01a0072d5fadde3c527b97d5f67734a86da"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

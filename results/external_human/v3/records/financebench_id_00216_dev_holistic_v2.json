@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00216",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "d8cc105e7cd58564cae29bd1f241f306dcd00386ff4b1cc0ff9f0c1b1b60c221",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "8224336c16127f68ef10a5c4aa518408b5d3d1039362a68f2f71ffc2fb66a269",
+  "started_utc": "2026-09-09T17:42:25.507827+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate states quick ratio for FY2022 not available in evidence and withholds the requested conclusion, saying it is not possible to assess liquidity via quick ratio; does not provide the substantive answer despite evidence allowing calculation (QR≈0.54)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b4bc5e0e8327863ad201396dd93881347b707320d1bd2ece565c4743fa6e8830",
+    "latency_seconds": 6.902,
+    "usage": {
+      "prompt_tokens": 2005,
+      "completion_tokens": 70,
+      "total_tokens": 2075,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a4c2ed8e1cdbd03793483981984d71ddf4f92241f13e19205ed6e95ec73b1757"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00216_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00216_holistic.json",
+  "parent_sha256": "ff014e22448c857faf54b55ac5ba0ca389e9a47518530d98f48b85774e8fba26"
+}

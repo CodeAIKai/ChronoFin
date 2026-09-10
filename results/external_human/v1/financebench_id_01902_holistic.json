@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01902",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "8c9604d2b4f561e1237f19e79483d84752b236986a789aeacd20ab25a7731456",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "82689a31a869a29d774f6683c90ab9e90bd05eaed13d89e4e28a7b205ab70e31",
+  "started_utc": "2026-09-09T18:01:23.641021+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence from Best Buy Q2 FY2024 10-Q page 17 lists Domestic revenue categories and shows Entertainment had 9.0% comparable sales growth (best top-line performance), contradicting candidate's claim that category breakdown is unavailable. Reference agrees Entertainment was best."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3acef78c4e5aab31044f4ef09a0c6464ad308587fe70ba45033ca0bb377e683d",
+    "latency_seconds": 7.192,
+    "usage": {
+      "prompt_tokens": 1772,
+      "completion_tokens": 76,
+      "total_tokens": 1848,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3f5eca6381577b96427d1408b56a63846ffeecc73066ea08e62126be87980da4"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

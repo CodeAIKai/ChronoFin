@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00746",
+  "uid": "financebench_id_00746_val",
+  "split": "new_response_validation",
+  "company": "Ulta Beauty",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "8828fa58e22a788a4353b751ff4942c8d45b91791cf88117bf3b3ced43237288",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "7c5e964d8fc273ae2fd9d12012e7708dcf921a98978a63d95db7f8e3870aad11",
+  "started_utc": "2026-09-09T18:08:05.856961+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "2.000% Notes due 2027\n- 3.050% Notes due 2029\n- 3.600% Notes due 2042",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Reference says none; evidence 10-K shows only common stock registered under 12(b) on NASDAQ, no debt securities listed. Candidate falsely lists notes on NYSE."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "42aa8e2b74097c720a5c80b43f7fc2a928d0ff58b4d60d7997c47b8bf49aa40e",
+    "latency_seconds": 8.026,
+    "usage": {
+      "prompt_tokens": 1671,
+      "completion_tokens": 117,
+      "total_tokens": 1788,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6f2edd5a9b2475f81167c9e39f93fe3c79cf3e270d402f5a78c24891e7321a91"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

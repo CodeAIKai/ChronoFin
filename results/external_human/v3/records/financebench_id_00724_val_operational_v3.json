@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00724",
+  "uid": "financebench_id_00724_val",
+  "split": "new_response_validation",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "8220688e281e6a469b370a39af53f12bf14ddce29f90db379ee61deec38c30b4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "04f1cb032699f174fd2382f5c3ec63d08d5c799ab304fd1b59adfde9cc7bcc95",
+  "started_utc": "2026-09-09T18:07:56.648202+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the region with the biggest drop in Q2 2023 year over year revenues on a percentage basis is the \"Developed Rest of World\" region",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Evidence table shows Q2 2023 vs Q2 2022 % change: Developed Rest of World (74)% drop is largest among regions; candidate matches reference 'Developed Rest of World' and cites correct figures."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4825b148e78046bec438fb9f173f3b451fd72d179ec9aab94b175d1a3f1e4f1b",
+    "latency_seconds": 6.927,
+    "usage": {
+      "prompt_tokens": 2230,
+      "completion_tokens": 123,
+      "total_tokens": 2353,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "49f33ded9d1b3d4f1c22d12cc58f227e899bf8700772017a38b4c8563006a2f3"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

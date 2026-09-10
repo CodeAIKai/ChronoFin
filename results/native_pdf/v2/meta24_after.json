@@ -1,0 +1,1704 @@
+{
+  "status": "ok",
+  "mode": "live_pdf",
+  "stage": "complete",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "F9",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024 Reality Labs营业亏损17,729百万美元，较上年亏损扩大，为盈利反面证据",
+        "quote": "Reality Labs                                                         (4,967)       (4,646)      (17,729)      (16,120)",
+        "source_chunk_id": "P6CCE34AA9B1",
+        "page": 9,
+        "locator": "PDF p9, chars 0–1925",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "(17,729)",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024经营活动净现金91,328百万美元，支撑盈利质量",
+        "quote": "Net cash provided by operating activities                     27,988       19,404       91,328       71,113",
+        "source_chunk_id": "P6CCE34AA7B1",
+        "page": 7,
+        "locator": "PDF p7, chars 0–4159",
+        "value": 91328,
+        "unit": "USD million",
+        "raw_number": "91,328",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024 Family of Apps广告展示量同比增长11%，为业务驱动之一",
+        "quote": "Ad impressions – Ad impressions delivered across our Family of Apps increased by 6% and 11% year-over-year for the fourth quarter and full year 2024, respectively.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024 Family of Apps收入162,355百万美元，是绝对业务驱动主体",
+        "quote": "Family of Apps                                                  47,302       39,040      162,355      133,006",
+        "source_chunk_id": "P6CCE34AA9B1",
+        "page": 9,
+        "locator": "PDF p9, chars 0–1925",
+        "value": 162355,
+        "unit": "USD million",
+        "raw_number": "162,355",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "CFO展望2025全年费用114-119十亿美元，可作后续核查基准",
+        "quote": "We expect full year 2025 total expenses to be in the range of $114-119 billion.",
+        "source_chunk_id": "P6CCE34AA2B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–2327",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$114-119 billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "forecast",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024自由现金流52.10十亿美元",
+        "quote": "Free cash flow was $13.15 billion and $52.10 billion for the fourth quarter and full year 2024, respectively.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$52.10 billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "非GAAP指标（含自由现金流）作为分析工具有重大局限，需谨慎",
+        "quote": "Investors are cautioned that there are material limitations associated with the use of non-GAAP financial measures as an analytical tool.",
+        "source_chunk_id": "P6CCE34AA4B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–4117",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "definition",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024营业利润69,380百万美元，同比增长48%",
+        "quote": "Income from operations     $    23,365    $    16,384          43 % $    69,380    $    46,751          48 %",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": 69380,
+        "unit": "USD million",
+        "raw_number": "69,380",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024营业利润率42%，较上年35%提升",
+        "quote": "Operating margin                  48 %         41 %                     42 %         35 %",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": 42,
+        "unit": "%",
+        "raw_number": "42 %",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024平均每条广告价格同比增长10%，为收入驱动因素",
+        "quote": "Average price per ad – Average price per ad increased by 14% and 10% year-over-year for the fourth quarter and full year 2024, respectively.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "截至2024-12-31现金及有价证券77.81十亿美元",
+        "quote": "Cash, cash equivalents, and marketable securities were $77.81 billion as of December 31, 2024.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$77.81 billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024净利润62,360百万美元，同比增长59%",
+        "quote": "Net income               $    20,838    $    14,017          49 % $    62,360    $    39,098          59 %",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": 62360,
+        "unit": "USD million",
+        "raw_number": "62,360",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F1",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "FY2024总收入164,501百万美元，同比增长22%",
+        "quote": "Revenue                 $    48,385    $    40,111          21 % $  164,501    $  134,902          22 %",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": 164501,
+        "unit": "USD million",
+        "raw_number": "164,501",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "4Q24成本费用因某些法律诉讼应计损失减少而受15.5亿美元有利影响（FY口径未单列）",
+        "quote": "The fourth quarter costs and expenses included a favorable impact of $1.55 billion due to a decrease in the accrued losses for certain legal proceedings.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$1.55 billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "Meta FY2024盈利质量整体稳健：总收入164,501百万美元，Family of Apps收入162,355百万美元为主驱动，广告展示量增11%、单价增10%带动增长；营业利润69,380百万美元、净利62,360百万美元，经营净现金91,328百万美元、自由现金流52.10十亿美元支撑质量。反面证据为Reality Labs亏损17,729百万美元且扩大。需注意4Q24有15.5亿美元法律诉讼有利影响未单列FY，非GAAP指标有局限。后续应核查2025费用114-119十亿美元展望兑现。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "FY2024总收入164,501百万美元，同比增长22%，为盈利规模基础",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F1",
+              "value": 164501,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Family of Apps收入162,355百万美元是绝对业务驱动主体，广告展示量同比增11%、平均单价增10%为收入驱动因素",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F5",
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 162355,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "FY2024营业利润69,380百万美元、营业利润率42%，净利润62,360百万美元，盈利质量提升",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 69380,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 42,
+              "unit": "%"
+            },
+            {
+              "source_id": "F4",
+              "value": 62360,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "FY2024经营活动净现金91,328百万美元、自由现金流52.10十亿美元，现金及有价证券77.81十亿美元，现金流支撑盈利质量",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F14",
+            "F7",
+            "F15"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 91328,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Reality Labs FY2024营业亏损17,729百万美元且较上年扩大，为盈利反面证据",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F9"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "4Q24成本费用含15.5亿美元法律诉讼有利影响，FY口径未单列，可能扰动全年费用可比性",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F8"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "非GAAP指标（含自由现金流）作为分析工具有重大局限，需谨慎使用",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F13"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C8",
+          "text": "公司展望2025全年费用114-119十亿美元，可作后续核查基准",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "F12"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "F10/F1*100",
+          "value": 98.695,
+          "unit": "%",
+          "evidence_ids": [
+            "F1",
+            "F10"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "F4/F1*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "F1",
+            "F4"
+          ]
+        }
+      ],
+      "limitations": [
+        "FY2024法律诉讼有利影响仅披露4Q24的15.5亿美元，未单列对全年成本费用的具体影响",
+        "Reality Labs亏损扩大幅度仅定性，无具体上年对比数值卡片",
+        "自由现金流为非GAAP指标，其计算口径受公司声明局限约束"
+      ],
+      "follow_up": [
+        {
+          "action": "跟踪Meta 2025各季费用率是否落入114-119十亿美元指引区间",
+          "reason": "若费用显著超区间将削弱FY2025盈利质量，改变对Reality Labs拖累可控的判断",
+          "evidence_ids": [
+            "F12"
+          ]
+        },
+        {
+          "action": "核查FY2024全年法律诉讼净影响及非GAAP与GAAP利润差异",
+          "reason": "明确一次性项目对营业利润的可比性扰动，避免高估核心盈利质量",
+          "evidence_ids": [
+            "F8",
+            "F13"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "Meta FY2024盈利质量整体稳健：总收入164,501百万美元（同比+22%），Family of Apps收入162,355百万美元（占98.695%）为主驱动，广告展示量+11%、单价+10%带动增长。营业利润69,380百万美元、营业利润率42%，净利润62,360百万美元（净利率37.909%），经营净现金91,328百万美元、自由现金流52.10十亿美元支撑质量。反面证据为Reality Labs亏损17,729百万美元且扩大，4Q24有15.5亿美元法律诉讼有利影响未单列FY，非GAAP指标有局限。2025费用114–119十亿美元为展望非事实，需后续核查。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "FY2024总收入164,501百万美元，同比增长22%，为盈利规模基础",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F1",
+              "value": 164501,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Family of Apps收入162,355百万美元是绝对业务驱动主体（占98.695%），广告展示量同比增11%、平均单价增10%为收入驱动因素",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F5",
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 162355,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "FY2024营业利润69,380百万美元、营业利润率42%，净利润62,360百万美元（净利率37.909%），盈利质量提升",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 69380,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 42,
+              "unit": "%"
+            },
+            {
+              "source_id": "F4",
+              "value": 62360,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "FY2024经营活动净现金91,328百万美元、自由现金流52.10十亿美元，现金及有价证券77.81十亿美元，现金流支撑盈利质量",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F14",
+            "F7",
+            "F15"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 91328,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Reality Labs FY2024营业亏损17,729百万美元且较上年扩大，为盈利反面证据",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F9"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "4Q24成本费用含15.5亿美元法律诉讼有利影响，FY口径未单列，可能扰动全年费用可比性",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F8"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "非GAAP指标（含自由现金流）作为分析工具有重大局限，需谨慎使用",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F13"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C8",
+          "text": "公司展望2025全年费用114-119十亿美元，为预测性指引而非事实，可作后续核查基准",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "F12"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "F10/F1*100",
+          "value": 98.695,
+          "unit": "%",
+          "evidence_ids": [
+            "F1",
+            "F10"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "F4/F1*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "F1",
+            "F4"
+          ]
+        }
+      ],
+      "limitations": [
+        "FY2024法律诉讼有利影响仅披露4Q24的15.5亿美元，未单列对全年成本费用的具体影响",
+        "Reality Labs亏损扩大幅度仅定性，无具体上年对比数值卡片",
+        "自由现金流为非GAAP指标，其计算口径受公司声明局限约束",
+        "2025费用114-119十亿美元为管理层展望，非已发生事实"
+      ],
+      "follow_up": [
+        {
+          "action": "跟踪Meta 2025各季费用率是否落入114-119十亿美元指引区间",
+          "reason": "若费用显著超区间将削弱FY2025盈利质量，改变对Reality Labs拖累可控的判断",
+          "evidence_ids": [
+            "F12"
+          ]
+        },
+        {
+          "action": "核查FY2024全年法律诉讼净影响及非GAAP与GAAP利润差异",
+          "reason": "明确一次性项目对营业利润的可比性扰动，避免高估核心盈利质量",
+          "evidence_ids": [
+            "F8",
+            "F13"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "169064006430cd64fc83d2043ca88f8efb4dd5b428c8617250da17baf1eba8fb",
+        "latency_seconds": 15.532,
+        "usage": {
+          "prompt_tokens": 3001,
+          "completion_tokens": 1061,
+          "total_tokens": 4062,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "9c9722d43b4471e52fc455ae97997b4944d35f73d5e110673a0e3d7ffe198969"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "a24eb37f17f2389edfd7b14efffdcf9b0959932af0cbd5540e9e17aea2596e24",
+        "latency_seconds": 16.002,
+        "usage": {
+          "prompt_tokens": 4216,
+          "completion_tokens": 1117,
+          "total_tokens": 5333,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "af710b8f0ae546482107b12a751baa816d59308ce9c6d4446cde2b269fc35e2f"
+      }
+    ],
+    "input_sha256": "402540ac120d0b5c6243bf158a28295120c6e2a3e9adf9e2c7d7aaceedbda7b3",
+    "calculator_results": [
+      {
+        "id": "K1",
+        "expression": "F10/F1*100",
+        "executed_value": 98.69544865988657,
+        "unit": "%",
+        "status": "executed"
+      },
+      {
+        "id": "K2",
+        "expression": "F4/F1*100",
+        "executed_value": 37.90858414234564,
+        "unit": "%",
+        "status": "executed"
+      }
+    ],
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "Meta FY2024盈利质量整体稳健：总收入164,501百万美元（同比+22%），Family of Apps收入162,355百万美元（占98.695%）为主驱动，广告展示量+11%、单价+10%带动增长。营业利润69,380百万美元、营业利润率42%，净利润62,360百万美元（净利率37.909%），经营净现金91,328百万美元、自由现金流52.10十亿美元支撑质量。反面证据为Reality Labs亏损17,729百万美元且扩大，4Q24有15.5亿美元法律诉讼有利影响未单列FY，非GAAP指标有局限。2025费用114–119十亿美元为展望非事实，需后续核查。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "FY2024总收入164,501百万美元，同比增长22%，为盈利规模基础",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F1",
+              "value": 164501,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Family of Apps收入162,355百万美元是绝对业务驱动主体（占98.695%），广告展示量同比增11%、平均单价增10%为收入驱动因素",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F5",
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 162355,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "FY2024营业利润69,380百万美元、营业利润率42%，净利润62,360百万美元（净利率37.909%），盈利质量提升",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 69380,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 42,
+              "unit": "%"
+            },
+            {
+              "source_id": "F4",
+              "value": 62360,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "FY2024经营活动净现金91,328百万美元、自由现金流52.10十亿美元，现金及有价证券77.81十亿美元，现金流支撑盈利质量",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F14",
+            "F7",
+            "F15"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 91328,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Reality Labs FY2024营业亏损17,729百万美元且较上年扩大，为盈利反面证据",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F9"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "4Q24成本费用含15.5亿美元法律诉讼有利影响，FY口径未单列，可能扰动全年费用可比性",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F8"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "非GAAP指标（含自由现金流）作为分析工具有重大局限，需谨慎使用",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F13"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C8",
+          "text": "公司展望2025全年费用114-119十亿美元，为预测性指引而非事实，可作后续核查基准",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "F12"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "F10/F1*100",
+          "value": 98.695,
+          "unit": "%",
+          "evidence_ids": [
+            "F1",
+            "F10"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "F4/F1*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "F1",
+            "F4"
+          ]
+        }
+      ],
+      "limitations": [
+        "FY2024法律诉讼有利影响仅披露4Q24的15.5亿美元，未单列对全年成本费用的具体影响",
+        "Reality Labs亏损扩大幅度仅定性，无具体上年对比数值卡片",
+        "自由现金流为非GAAP指标，其计算口径受公司声明局限约束",
+        "2025费用114-119十亿美元为管理层展望，非已发生事实"
+      ],
+      "follow_up": [
+        {
+          "action": "跟踪Meta 2025各季费用率是否落入114-119十亿美元指引区间",
+          "reason": "若费用显著超区间将削弱FY2025盈利质量，改变对Reality Labs拖累可控的判断",
+          "evidence_ids": [
+            "F12"
+          ]
+        },
+        {
+          "action": "核查FY2024全年法律诉讼净影响及非GAAP与GAAP利润差异",
+          "reason": "明确一次性项目对营业利润的可比性扰动，避免高估核心盈利质量",
+          "evidence_ids": [
+            "F8",
+            "F13"
+          ]
+        }
+      ]
+    },
+    "answer_sha256": "629e42a1e76dcea0d306f5ea5155b9740cd1a2e21b8cdf35afe64eb32dc097cd",
+    "source_document": {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 12,
+      "selected_ids": [
+        "P6CCE34AA1B1",
+        "P6CCE34AA2B1",
+        "P6CCE34AA3B1",
+        "P6CCE34AA4B1",
+        "P6CCE34AA4B2",
+        "P6CCE34AA5B1",
+        "P6CCE34AA6B1",
+        "P6CCE34AA7B1",
+        "P6CCE34AA7B2",
+        "P6CCE34AA8B1",
+        "P6CCE34AA9B1",
+        "P6CCE34AA10B1"
+      ],
+      "selected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "selection_sha256": "81446c1c95a536a12031163227f56816aeaf04055c2069241a37f9bb123c6790"
+    },
+    "pipeline": "native_pdf_v2",
+    "extraction_raw": {
+      "facts": [
+        {
+          "chunk_id": "P6CCE34AA1B1",
+          "quote": "Revenue                 $    48,385    $    40,111          21 % $  164,501    $  134,902          22 %",
+          "text": "FY2024总收入164,501百万美元，同比增长22%",
+          "value": 164501,
+          "raw_number": "164,501",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA1B1",
+          "quote": "Income from operations     $    23,365    $    16,384          43 % $    69,380    $    46,751          48 %",
+          "text": "FY2024营业利润69,380百万美元，同比增长48%",
+          "value": 69380,
+          "raw_number": "69,380",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA1B1",
+          "quote": "Operating margin                  48 %         41 %                     42 %         35 %",
+          "text": "FY2024营业利润率42%，较上年35%提升",
+          "value": 42,
+          "raw_number": "42 %",
+          "unit": "%",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA1B1",
+          "quote": "Net income               $    20,838    $    14,017          49 % $    62,360    $    39,098          59 %",
+          "text": "FY2024净利润62,360百万美元，同比增长59%",
+          "value": 62360,
+          "raw_number": "62,360",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA1B1",
+          "quote": "Ad impressions – Ad impressions delivered across our Family of Apps increased by 6% and 11% year-over-year for the fourth quarter and full year 2024, respectively.",
+          "text": "FY2024 Family of Apps广告展示量同比增长11%，为业务驱动之一",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA1B1",
+          "quote": "Average price per ad – Average price per ad increased by 14% and 10% year-over-year for the fourth quarter and full year 2024, respectively.",
+          "text": "FY2024平均每条广告价格同比增长10%，为收入驱动因素",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA1B1",
+          "quote": "Free cash flow was $13.15 billion and $52.10 billion for the fourth quarter and full year 2024, respectively.",
+          "text": "FY2024自由现金流52.10十亿美元",
+          "value": null,
+          "raw_number": "$52.10 billion",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA1B1",
+          "quote": "The fourth quarter costs and expenses included a favorable impact of $1.55 billion due to a decrease in the accrued losses for certain legal proceedings.",
+          "text": "4Q24成本费用因某些法律诉讼应计损失减少而受15.5亿美元有利影响（FY口径未单列）",
+          "value": null,
+          "raw_number": "$1.55 billion",
+          "unit": "USD billion",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA9B1",
+          "quote": "Reality Labs                                                         (4,967)       (4,646)      (17,729)      (16,120)",
+          "text": "FY2024 Reality Labs营业亏损17,729百万美元，较上年亏损扩大，为盈利反面证据",
+          "value": null,
+          "raw_number": "(17,729)",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA9B1",
+          "quote": "Family of Apps                                                  47,302       39,040      162,355      133,006",
+          "text": "FY2024 Family of Apps收入162,355百万美元，是绝对业务驱动主体",
+          "value": 162355,
+          "raw_number": "162,355",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA2B1",
+          "quote": "We continue to monitor an active regulatory landscape, including legal and regulatory headwinds in the EU and the U.S. that could significantly impact our business and our financial results.",
+          "text": "后续需核查欧盟及美国法律监管逆风对业务与财务结果的潜在显著影响",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA2B1",
+          "quote": "We expect full year 2025 total expenses to be in the range of $114-119 billion.",
+          "text": "CFO展望2025全年费用114-119十亿美元，可作后续核查基准",
+          "value": null,
+          "raw_number": "$114-119 billion",
+          "unit": "USD billion",
+          "role": "caution",
+          "status": "forecast"
+        },
+        {
+          "chunk_id": "P6CCE34AA4B1",
+          "quote": "Investors are cautioned that there are material limitations associated with the use of non-GAAP financial measures as an analytical tool.",
+          "text": "非GAAP指标（含自由现金流）作为分析工具有重大局限，需谨慎",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "caution",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P6CCE34AA7B1",
+          "quote": "Net cash provided by operating activities                     27,988       19,404       91,328       71,113",
+          "text": "FY2024经营活动净现金91,328百万美元，支撑盈利质量",
+          "value": 91328,
+          "raw_number": "91,328",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P6CCE34AA1B1",
+          "quote": "Cash, cash equivalents, and marketable securities were $77.81 billion as of December 31, 2024.",
+          "text": "截至2024-12-31现金及有价证券77.81十亿美元",
+          "value": null,
+          "raw_number": "$77.81 billion",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        }
+      ]
+    },
+    "extraction_traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "1076869fb15cec8992d7d30aad4468768587385af0351edada13a19861840e7a",
+        "latency_seconds": 18.668,
+        "usage": {
+          "prompt_tokens": 7715,
+          "completion_tokens": 1504,
+          "total_tokens": 9219,
+          "prompt_tokens_details": {
+            "cached_tokens": 7616
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "1de8f75daa047016d75147b3c7be88849488c1bc76c13fbda94208b19606c08a"
+      }
+    ],
+    "extraction_audit": {
+      "facts_proposed": 15,
+      "facts_accepted": 14,
+      "rejected": [
+        {
+          "index": 11,
+          "reason": "引用不在原文连续片段中"
+        }
+      ],
+      "raw_response_sha256": "dea89c41f05877d156bba0b577f9426c8d795a2c5a79cacf56876f9dcc196a9f",
+      "quote_verification": "whitespace-normalized exact contiguous source match",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "judge_attempts": [
+    {
+      "version": "native-source-audit-2.0",
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选正文'FY2024总收入164,501百万美元，同比增长22%'与F1一致，为FY2024事实",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选正文列FoA收入162,355百万美元、广告展示+11%、单价+10%，与F10/F5/F6一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选列营业利润69,380、利润率42%、净利62,360及净利率37.909%由F2/F3/F4及K2计算支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选列经营净现金91,328百万、FCF52.10十亿、现金证券77.81十亿，与F14/F7/F15一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选'Reality Labs FY2024营业亏损17,729百万美元且较上年扩大'与F9的(17,729)及2023(16,120)一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选'4Q24成本费用含15.5亿美元法律诉讼有利影响，FY口径未单列'与F8一致，为事实",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C7",
+            "verdict": "supported",
+            "reason": "候选'非GAAP指标作为分析工具有重大局限'与F13原文一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C8",
+            "verdict": "supported",
+            "reason": "候选'展望2025全年费用114-119十亿美元为预测性指引而非事实'与F12及P6CCE34AA2B1展望一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "quote": "FY2024总收入164,501百万美元，同比增长22%"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "quote": "净利润62,360百万美元（净利率37.909%）"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "quote": "广告展示量同比增11%、平均单价增10%为收入驱动因素"
+          },
+          {
+            "id": "R4",
+            "present": true,
+            "quote": "自由现金流52.10十亿美元"
+          },
+          {
+            "id": "R5",
+            "present": true,
+            "quote": "Reality Labs FY2024营业亏损17,729百万美元且较上年扩大"
+          },
+          {
+            "id": "R6",
+            "present": true,
+            "quote": "4Q24成本费用含15.5亿美元法律诉讼有利影响"
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "quote": "FY2024法律诉讼有利影响仅披露4Q24的15.5亿美元，未单列对全年成本费用的具体影响"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "候选完整覆盖Meta FY2024盈利质量的业务驱动、利润现金流、反面证据及后续核查，所有required/counter点均受支持"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "64a82a847a97e9091b99b93e1f01cd7683006db94ff858c9b8d3a84dc3ffd9c8",
+        "latency_seconds": 11.853,
+        "usage": {
+          "prompt_tokens": 12187,
+          "completion_tokens": 842,
+          "total_tokens": 13029,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "5898482a0fb3f707bba05af598edac4e17246eddc546c6e7c654b764d4067f25"
+      },
+      "input_sha256": "94e98da5c27d4c40edf69f078375ad2dd34a4539701ae4a2f6e6081724968b29",
+      "answer_sha256": "629e42a1e76dcea0d306f5ea5155b9740cd1a2e21b8cdf35afe64eb32dc097cd",
+      "judge_prompt_sha256": "c8e195a43fb8628f7bbb1124f1bf04e1eb99010e362087ddfb94eb6bf7366102"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    }
+  ],
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "629e42a1e76dcea0d306f5ea5155b9740cd1a2e21b8cdf35afe64eb32dc097cd",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "semantic": {
+    "version": "native-source-audit-2.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文'FY2024总收入164,501百万美元，同比增长22%'与F1一致，为FY2024事实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文列FoA收入162,355百万美元、广告展示+11%、单价+10%，与F10/F5/F6一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选列营业利润69,380、利润率42%、净利62,360及净利率37.909%由F2/F3/F4及K2计算支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选列经营净现金91,328百万、FCF52.10十亿、现金证券77.81十亿，与F14/F7/F15一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选'Reality Labs FY2024营业亏损17,729百万美元且较上年扩大'与F9的(17,729)及2023(16,120)一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选'4Q24成本费用含15.5亿美元法律诉讼有利影响，FY口径未单列'与F8一致，为事实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选'非GAAP指标作为分析工具有重大局限'与F13原文一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C8",
+          "verdict": "supported",
+          "reason": "候选'展望2025全年费用114-119十亿美元为预测性指引而非事实'与F12及P6CCE34AA2B1展望一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "quote": "FY2024总收入164,501百万美元，同比增长22%"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "quote": "净利润62,360百万美元（净利率37.909%）"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "quote": "广告展示量同比增11%、平均单价增10%为收入驱动因素"
+        },
+        {
+          "id": "R4",
+          "present": true,
+          "quote": "自由现金流52.10十亿美元"
+        },
+        {
+          "id": "R5",
+          "present": true,
+          "quote": "Reality Labs FY2024营业亏损17,729百万美元且较上年扩大"
+        },
+        {
+          "id": "R6",
+          "present": true,
+          "quote": "4Q24成本费用含15.5亿美元法律诉讼有利影响"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "FY2024法律诉讼有利影响仅披露4Q24的15.5亿美元，未单列对全年成本费用的具体影响"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选完整覆盖Meta FY2024盈利质量的业务驱动、利润现金流、反面证据及后续核查，所有required/counter点均受支持"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "64a82a847a97e9091b99b93e1f01cd7683006db94ff858c9b8d3a84dc3ffd9c8",
+      "latency_seconds": 11.853,
+      "usage": {
+        "prompt_tokens": 12187,
+        "completion_tokens": 842,
+        "total_tokens": 13029,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "5898482a0fb3f707bba05af598edac4e17246eddc546c6e7c654b764d4067f25"
+    },
+    "input_sha256": "94e98da5c27d4c40edf69f078375ad2dd34a4539701ae4a2f6e6081724968b29",
+    "answer_sha256": "629e42a1e76dcea0d306f5ea5155b9740cd1a2e21b8cdf35afe64eb32dc097cd",
+    "judge_prompt_sha256": "c8e195a43fb8628f7bbb1124f1bf04e1eb99010e362087ddfb94eb6bf7366102"
+  },
+  "raw_source_audit_sha256": "ee39203b19726fa49a0d027b50c56076c8c7bdb8b430a71eb84e60b4138a259b",
+  "replay_material": {
+    "audit_cards": [
+      {
+        "id": "F1",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Revenue                 $    48,385    $    40,111          21 % $  164,501    $  134,902          22 %",
+        "quote": "Revenue                 $    48,385    $    40,111          21 % $  164,501    $  134,902          22 %",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": 164501,
+        "unit": "USD million",
+        "raw_number": "164,501",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Income from operations     $    23,365    $    16,384          43 % $    69,380    $    46,751          48 %",
+        "quote": "Income from operations     $    23,365    $    16,384          43 % $    69,380    $    46,751          48 %",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": 69380,
+        "unit": "USD million",
+        "raw_number": "69,380",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Operating margin                  48 %         41 %                     42 %         35 %",
+        "quote": "Operating margin                  48 %         41 %                     42 %         35 %",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": 42,
+        "unit": "%",
+        "raw_number": "42 %",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Net income               $    20,838    $    14,017          49 % $    62,360    $    39,098          59 %",
+        "quote": "Net income               $    20,838    $    14,017          49 % $    62,360    $    39,098          59 %",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": 62360,
+        "unit": "USD million",
+        "raw_number": "62,360",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Ad impressions – Ad impressions delivered across our Family of Apps increased by 6% and 11% year-over-year for the fourth quarter and full year 2024, respectively.",
+        "quote": "Ad impressions – Ad impressions delivered across our Family of Apps increased by 6% and 11% year-over-year for the fourth quarter and full year 2024, respectively.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Average price per ad – Average price per ad increased by 14% and 10% year-over-year for the fourth quarter and full year 2024, respectively.",
+        "quote": "Average price per ad – Average price per ad increased by 14% and 10% year-over-year for the fourth quarter and full year 2024, respectively.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Free cash flow was $13.15 billion and $52.10 billion for the fourth quarter and full year 2024, respectively.",
+        "quote": "Free cash flow was $13.15 billion and $52.10 billion for the fourth quarter and full year 2024, respectively.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$52.10 billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "The fourth quarter costs and expenses included a favorable impact of $1.55 billion due to a decrease in the accrued losses for certain legal proceedings.",
+        "quote": "The fourth quarter costs and expenses included a favorable impact of $1.55 billion due to a decrease in the accrued losses for certain legal proceedings.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$1.55 billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Reality Labs                                                         (4,967)       (4,646)      (17,729)      (16,120)",
+        "quote": "Reality Labs                                                         (4,967)       (4,646)      (17,729)      (16,120)",
+        "source_chunk_id": "P6CCE34AA9B1",
+        "page": 9,
+        "locator": "PDF p9, chars 0–1925",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "(17,729)",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Family of Apps                                                  47,302       39,040      162,355      133,006",
+        "quote": "Family of Apps                                                  47,302       39,040      162,355      133,006",
+        "source_chunk_id": "P6CCE34AA9B1",
+        "page": 9,
+        "locator": "PDF p9, chars 0–1925",
+        "value": 162355,
+        "unit": "USD million",
+        "raw_number": "162,355",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "We expect full year 2025 total expenses to be in the range of $114-119 billion.",
+        "quote": "We expect full year 2025 total expenses to be in the range of $114-119 billion.",
+        "source_chunk_id": "P6CCE34AA2B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–2327",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$114-119 billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Investors are cautioned that there are material limitations associated with the use of non-GAAP financial measures as an analytical tool.",
+        "quote": "Investors are cautioned that there are material limitations associated with the use of non-GAAP financial measures as an analytical tool.",
+        "source_chunk_id": "P6CCE34AA4B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–4117",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Net cash provided by operating activities                     27,988       19,404       91,328       71,113",
+        "quote": "Net cash provided by operating activities                     27,988       19,404       91,328       71,113",
+        "source_chunk_id": "P6CCE34AA7B1",
+        "page": 7,
+        "locator": "PDF p7, chars 0–4159",
+        "value": 91328,
+        "unit": "USD million",
+        "raw_number": "91,328",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_6cce34aa0fb3",
+        "text": "Cash, cash equivalents, and marketable securities were $77.81 billion as of December 31, 2024.",
+        "quote": "Cash, cash equivalents, and marketable securities were $77.81 billion as of December 31, 2024.",
+        "source_chunk_id": "P6CCE34AA1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3854",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$77.81 billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      }
+    ],
+    "reference_case": {
+      "id": "meta24_after",
+      "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+      "as_of": "2025-06-01",
+      "required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "counter": [
+        "R5",
+        "R6"
+      ],
+      "point_definitions": {
+        "R1": "Meta FY2024 revenue: USD 164501 million.",
+        "R2": "Meta FY2024 net income: USD 62360 million.",
+        "R3": "FY2024 ad impressions grew 11%; average ad price rose 10%.",
+        "R4": "Meta FY2024 free cash flow: USD 52103 million.",
+        "R5": "Reality Labs FY2024 operating loss: USD 17729 million.",
+        "R6": "Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses."
+      },
+      "limitations": [
+        "一次性因素不能代表持续经营改善"
+      ],
+      "expected_answerability": "answerable"
+    }
+  },
+  "id": "meta24_after",
+  "split": "known_source",
+  "protocol_sha256": "c0dab10a9664978c849e76383567ba2fc7279545148f96aeeecab5462e527814",
+  "finished_utc": "2026-09-09T18:08:32.727271+00:00",
+  "wall_seconds": 62.578
+}

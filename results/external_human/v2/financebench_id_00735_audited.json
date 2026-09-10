@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00735",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "6dc4b742fb6ef6ac1c15a8eac7cb09c51dd6c9ad0b113e6ea44d3613eed83d82",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "f6ddd838a9f750cd15a6e6cf75236a7508e911b915633be170478532b312a066",
+  "started_utc": "2026-09-09T17:45:53.832074+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot provide information on PepsiCo's legal battles for FY2021/FY2022 from context and withholds a substantive answer, despite evidence showing management believes no material adverse effect from legal proceedings.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate addresses PepsiCo as requested."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY2021 and FY2022 as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Qualitative legal battle materiality, no unit needed."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Withholds answer, says cannot determine from context."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence (10-K Item 3) states no material adverse effect, contradicting candidate's claim of no info."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ff451def81c9d6703dc9ab8e99b5278b7903430a6d821390e9d3cedfcc70f619",
+    "latency_seconds": 9.244,
+    "usage": {
+      "prompt_tokens": 1519,
+      "completion_tokens": 238,
+      "total_tokens": 1757,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "255a2da3615e29567b07d2ed689a42f81f39da6aae97ed58e7a7e43fafcebbda"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

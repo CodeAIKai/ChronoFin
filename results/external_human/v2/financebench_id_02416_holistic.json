@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_02416",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c6b73c6c7081d43f35e1435e67b16db2c88a2f6f8f779cc0bf9201e29f1f4b2e",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "0ff32632120544caca239040207959f5af7f1beb227d2cc8dc7b524be53d6d58",
+  "started_utc": "2026-09-09T17:50:53.319835+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate lists Trillium, Array, and Therachon as the three main acquired companies, matching the reference and evidence from the 10-K."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "44fcd6bfb33478e6d89f1d73aa87c573d1205015928dda9aacd78c34d34511e8",
+    "latency_seconds": 6.701,
+    "usage": {
+      "prompt_tokens": 4173,
+      "completion_tokens": 51,
+      "total_tokens": 4224,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "864cb5630473bc544aa1d7e510f25a3bf7e892742660d245b15632685fe3399b"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

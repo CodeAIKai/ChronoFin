@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_01107",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "7c3371fa8360bfa8bc26c36e2994969da7a59dcac2b9c09a803a096fa3b23b7e",
+  "reference_text_differs": true,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "792c566cb5e0544d4a5ebad0266757c554bd437793e1e3c9e02a1ba1b222bf09",
+  "started_utc": "2026-09-09T17:47:36.069933+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers 'Yes' and lists materially important ongoing legal battles (usual and customary pricing, PBM litigation, controlled substances/opioid litigation with $4.3B and $625M figures) consistent with reference and evidence for 2020-2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1554d09abbd3cae3875099e27f4bdfd8c32c414152eb9ff11b0beeb8a0f193b2",
+    "latency_seconds": 7.124,
+    "usage": {
+      "prompt_tokens": 4466,
+      "completion_tokens": 77,
+      "total_tokens": 4543,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0cfdec074c9b1fda6aebbde8133d6a93cf6765f0af87bb7a8f9be1722a23cdb4"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

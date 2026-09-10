@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_05718",
+  "uid": "financebench_id_05718_val",
+  "split": "new_response_validation",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0de75675267461f3ec4fb9bc95eca18a337a99b6105a19e4adeea067d8c6212f",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d40add9ed12deb7a108cfb722f558ea6776cb52cf0ae24a1447832c860f77b6f",
+  "started_utc": "2026-09-10T01:33:04.844966+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot compute the total cash dividends paid out in USD billions for FY2020.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Evidence shows 'Dividends paid (389)' in millions for 2020, i.e. $0.389B, directly answering the question; candidate refused claiming amount not provided, which is incorrect refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ce8873978d7c340704c46483d369d9f9f78485c866765667ae604eeabd56000f",
+    "latency_seconds": 8.284,
+    "usage": {
+      "prompt_tokens": 2601,
+      "completion_tokens": 111,
+      "total_tokens": 2712,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2e99919bbeb92fe1d74b28b41e11e2893d3da11f815f0c3948427971ac575d05"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

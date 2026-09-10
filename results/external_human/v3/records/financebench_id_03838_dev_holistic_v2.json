@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_03838",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "a14dabdedcc2e069706b730e8315b42dd8b83f34e9c18a12b89b2083edb40820",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "87a6631b3f8bf2d33f741f3c4843d88862e3d16e55946b7fa5f13594d54cf56f",
+  "started_utc": "2026-09-09T17:52:09.246661+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computed growth as (9497578-4713500)/4713500*100 = 101.5%, matching reference 1.015 (101.5%) using evidence total net revenue figures, rounded to one decimal place as requested."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c5cfc90dd8610516ca5023ea104008cc0a0a94f51ee69829a0f2d1eb14ac8b6a",
+    "latency_seconds": 6.832,
+    "usage": {
+      "prompt_tokens": 1969,
+      "completion_tokens": 71,
+      "total_tokens": 2040,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d23bfca7ae32f0128be9808ffcbdc83da60498cdd2c2f2848a5e4b635a96746e"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_03838_dev",
+  "reused_from": "results/external_human/v2/financebench_id_03838_holistic.json",
+  "parent_sha256": "6988ca05b729de4b1a8528161386eb1e5d00a6566d6964045413072089290a07"
+}

@@ -1,0 +1,109 @@
+{
+  "captured_utc": "2026-09-10T02:42:33.948734+00:00",
+  "capture_elapsed_seconds": 31.688,
+  "presentation_duration_ms": 91000,
+  "frames": [
+    {
+      "file": "assets/demo_frames/01.png",
+      "action": "个人活動作品：选择真实Hy3响应回放或实时PDF分析",
+      "display_ms": 5000,
+      "capture_elapsed_seconds": 9.662,
+      "sha256": "60ec3d4a23b6cd9681852b221c65fa7a5ef83881d622827bf9ab046daaf287d3"
+    },
+    {
+      "file": "assets/demo_frames/02.png",
+      "action": "腾讯中文9页原生PDF：AI投入、经营改善与现金约束",
+      "display_ms": 8000,
+      "capture_elapsed_seconds": 10.877,
+      "sha256": "714fd02f76c04cd7a852ef23f443db9e3c38d5db0c85ded4cc3ed52313125678"
+    },
+    {
+      "file": "assets/demo_frames/03.png",
+      "action": "点击引用：登记原件身份、原文连续片段与页码",
+      "display_ms": 8000,
+      "capture_elapsed_seconds": 12.275,
+      "sha256": "f8b7dde4351756792bba1bda208fd6ef929ba443c9fede15738f3034238171fd"
+    },
+    {
+      "file": "assets/demo_frames/04.png",
+      "action": "十维诊断及可核查证据，声明非专家评分",
+      "display_ms": 6000,
+      "capture_elapsed_seconds": 13.167,
+      "sha256": "79dc77d7a8b0c4333984b7a9fbf341380559e8c1836cc2b131155fd77d53880c"
+    },
+    {
+      "file": "assets/demo_frames/05.png",
+      "action": "主动展示高分失效案例：同一数值重复用于跨期增长，提示复核",
+      "display_ms": 7000,
+      "capture_elapsed_seconds": 14.168,
+      "sha256": "e11ff5d0bd1a596ec004b613dc7d8b91a6fa7d09cbad3511d63481986ffe554d"
+    },
+    {
+      "file": "assets/demo_frames/06.png",
+      "action": "披露日前案例：不使用尚未公开的财报作答",
+      "display_ms": 7000,
+      "capture_elapsed_seconds": 14.965,
+      "sha256": "9164447a0a865c096a147cbe9f6d28b1a150c09d01c76ae03308e1a02ce61c6d"
+    },
+    {
+      "file": "assets/demo_frames/07.png",
+      "action": "行业研究：IEA能源与AI，支持依据与反证",
+      "display_ms": 7000,
+      "capture_elapsed_seconds": 15.866,
+      "sha256": "e254157b9ad36d9d2e67bdece4a88b68c6563f6f1dfa9769088cbd813c3340f2"
+    },
+    {
+      "file": "assets/demo_frames/08.png",
+      "action": "行业资料账本：来源、可知时间及核对转述",
+      "display_ms": 6000,
+      "capture_elapsed_seconds": 16.386,
+      "sha256": "5bfcd2408d8b5d397eaa4ac0bbf9c6cc0f7a7d82c063c5fb9c1e603ced4431a5"
+    },
+    {
+      "file": "assets/demo_frames/09.png",
+      "action": "评委也会出错：相同答案55至100，保留分歧和换算依据",
+      "display_ms": 8000,
+      "capture_elapsed_seconds": 17.367,
+      "sha256": "5e6bfd003c223de0ce6daa7d966b3702f05919007e17b0b254188de49057bcbd"
+    },
+    {
+      "file": "assets/demo_frames/10.png",
+      "action": "最终实验完成状态：主应用60/60、主评估30/30、待补0",
+      "display_ms": 5000,
+      "capture_elapsed_seconds": 18.362,
+      "sha256": "6e9f6fff0a4fe9b3019e3da5fecb6cff6251905a33e2bd304e55c763902f16f1"
+    },
+    {
+      "file": "assets/demo_frames/11.png",
+      "action": "公平比较：通用二次修订与反证修订，共同裁判与tokens",
+      "display_ms": 7000,
+      "capture_elapsed_seconds": 18.976,
+      "sha256": "29b22cc14c9406717353b0fab018fce2b1adea855228c0ec5b8415971d308a1b"
+    },
+    {
+      "file": "assets/demo_frames/12.png",
+      "action": "公开人工标签一致率78%到90%，注明共享问题限制",
+      "display_ms": 7000,
+      "capture_elapsed_seconds": 19.564,
+      "sha256": "29b22cc14c9406717353b0fab018fce2b1adea855228c0ec5b8415971d308a1b"
+    },
+    {
+      "file": "assets/demo_frames/13.png",
+      "action": "原生PDF完整12题，低分同样展示",
+      "display_ms": 6000,
+      "capture_elapsed_seconds": 20.062,
+      "sha256": "29b22cc14c9406717353b0fab018fce2b1adea855228c0ec5b8415971d308a1b"
+    },
+    {
+      "file": "assets/demo_frames/14.png",
+      "action": "下载原始回答、引用、模型判断与调用记录，便于独立复查",
+      "display_ms": 4000,
+      "capture_elapsed_seconds": 21.469,
+      "sha256": "94d4a6fe3f53ff33847f7040a1a251b20abc843bbc7eab358bdfa2374fd79ef8"
+    }
+  ],
+  "browser_page_errors": [],
+  "api_calls_during_recording": 0,
+  "gif_sha256": "324810a90860f3618342db69e591e73c3b30fe0b50af378c7bde892e911bdb2a",
+  "note": "Actual Chromium actions on final native-v5 and brief-v3 saved real Hy3 responses. Frame reading durations are edited, not live API latency. Live PDF/custom model calls are independently proven in audit/ui_live_verification.json."
+}

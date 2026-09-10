@@ -1,0 +1,454 @@
+{
+  "case_id": "E10",
+  "split": "evaluation",
+  "group": "iea25",
+  "task": "行业研报摘要",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:58:58.158494+00:00",
+  "protocol_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "lexical",
+    "query": {
+      "question": "评审观点“数据中心 2030 年已经消耗 945 TWh，因此电力需求一定实现”。给出证据化纠正。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "I02",
+        "source_id": "iea25",
+        "locator": "2030 outlook section",
+        "role": "support",
+        "status": "forecast",
+        "text": "IEA projected data-centre electricity demand of around 945 TWh in 2030.",
+        "value": 945,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I01",
+        "source_id": "iea25",
+        "locator": "current consumption section",
+        "role": "context",
+        "status": "estimate",
+        "text": "IEA estimated 2024 data-centre electricity use at 415 TWh, about 1.5% globally.",
+        "value": 415,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I04",
+        "source_id": "iea25",
+        "locator": "uncertainty section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "IEA scenario range for 2035 data-centre demand: 700–1700 TWh; adoption, efficiency and bottlenecks matter.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I05",
+        "source_id": "iea25",
+        "locator": "global demand growth section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Data centres represent roughly one-tenth of projected global electricity-demand growth through 2030.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I03",
+        "source_id": "iea25",
+        "locator": "grid integration section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Without action, grid constraints could delay around 20% of planned data-centre projects.",
+        "value": 20,
+        "unit": "%",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A02",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 operating income: USD 68593 million.",
+        "value": 68593,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "评审观点将 IEA 对 2030 年数据中心用电的预测值 945 TWh（I02）误读为已发生事实，且由“消耗量达 945 TWh”直接推出“电力需求一定实现”缺乏依据。IEA 明确该数为预测（I02），且 2035 年情景区间宽达 700–1700 TWh（I04），电网约束或致 20% 规划项目延迟（I03）。因此 2030 年需求非既定结果，而是受效率、采纳与瓶颈影响的预测情景，原观点在时间与确定性上均不成立。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA 对 2030 年数据中心用电 945 TWh 的表述为预测值，非已发生消耗",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA 估计 2024 年数据中心用电为 415 TWh，说明 2030 年数值尚未发生",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "IEA 2035 年数据中心需求情景区间为 700–1700 TWh，表明中长期需求具高度不确定性",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "I04"
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未给出 2030 年实际电力需求实现概率或确定性的量化结论",
+        "Amazon 销售与运营数据（A01、A02）与数据中心电力需求论证无关，未用于纠正"
+      ],
+      "follow_up": [
+        {
+          "action": "核查 IEA 原报告中 2030 年 945 TWh 所属情景假设及实现条件",
+          "reason": "可明确该预测的依赖变量，进一步反驳“一定实现”的断言",
+          "evidence_ids": [
+            "I02",
+            "I04"
+          ]
+        },
+        {
+          "action": "追踪 IEA 后续年度对 2030 年预测的修正",
+          "reason": "可判断预测值是否下调或上调，验证需求确定性",
+          "evidence_ids": [
+            "I02"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "评审观点将 IEA 对 2030 年数据中心用电的预测值 945 TWh（I02）误读为已发生事实，且由“消耗量达 945 TWh”直接推出“电力需求一定实现”缺乏依据。IEA 明确该数为预测（I02），且 2035 年情景区间宽达 700–1700 TWh（I04），电网约束或致 20% 规划项目延迟（I03）。因此 2030 年需求非既定结果，而是受效率、采纳与瓶颈影响的预测情景，原观点在时间与确定性上均不成立。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA 对 2030 年数据中心用电 945 TWh 的表述为预测值，非已发生消耗",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA 估计 2024 年数据中心用电为 415 TWh，说明 2030 年数值尚未发生",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "IEA 2035 年数据中心需求情景区间为 700–1700 TWh，表明中长期需求具高度不确定性",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "I04"
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未给出 2030 年实际电力需求实现概率或确定性的量化结论",
+        "Amazon 销售与运营数据（A01、A02）与数据中心电力需求论证无关，未用于纠正"
+      ],
+      "follow_up": [
+        {
+          "action": "核查 IEA 原报告中 2030 年 945 TWh 所属情景假设及实现条件",
+          "reason": "可明确该预测的依赖变量，进一步反驳“一定实现”的断言",
+          "evidence_ids": [
+            "I02",
+            "I04"
+          ]
+        },
+        {
+          "action": "追踪 IEA 后续年度对 2030 年预测的修正",
+          "reason": "可判断预测值是否下调或上调，验证需求确定性",
+          "evidence_ids": [
+            "I02"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "7b859fc8a2296a21bc26250043626720d076bf7e81e9446ef293ddef0b511663",
+        "latency_seconds": 5.747,
+        "usage": {
+          "prompt_tokens": 1272,
+          "completion_tokens": 539,
+          "total_tokens": 1811,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "daed9a8fff55ca15ad5a18f5e6c7688d31774cfc16390b046618ef4afbb81e71"
+      }
+    ],
+    "input_sha256": "adbe7154409183071fc1c16aa74fa41d115b7f3d1541d691ddd9e5ff38d54cd5",
+    "answer_sha256": "e4507c71c32552c96dac90f7ab6ee66b3afb0b37013d5a6e7d5f91e10a74b2c7"
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T17:28:17.111212+00:00",
+  "wall_seconds": 11.334,
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文明确 IEA 对 2030 年 945 TWh 为预测值非已发生，与 I02 预测状态一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文称 IEA 估计 2024 年 415 TWh 说明 2030 尚未发生，引用 I01 估计值正确",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选正文引 I04 称 2035 情景区间 700–1700 TWh 表明不确定性，与来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "I01",
+          "present": true,
+          "quote": "IEA 估计 2024 年数据中心用电为 415 TWh"
+        },
+        {
+          "id": "I02",
+          "present": true,
+          "quote": "IEA 对 2030 年数据中心用电 945 TWh 的表述为预测值"
+        },
+        {
+          "id": "I03",
+          "present": true,
+          "quote": "电网约束或致 20% 规划项目延迟（I03）"
+        },
+        {
+          "id": "I04",
+          "present": true,
+          "quote": "2035 年情景区间宽达 700–1700 TWh（I04）"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "资料未给出 2030 年实际电力需求实现概率或确定性的量化结论"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题为纠正将 2030 预测误作已实现且断言必然实现，候选已用证据化指出预测属性与不确定性"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "6c257b5f9ad232cf3ecda51b1b790f732640938c7b4646e2a7d6f655f209daed",
+      "latency_seconds": 5.32,
+      "usage": {
+        "prompt_tokens": 4643,
+        "completion_tokens": 448,
+        "total_tokens": 5091,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "b9f700fb8a9e8755b7e233994ccf29c18ecb1dc9e5a3537e69b260a63018254c"
+    },
+    "input_sha256": "25880441ad99fdc2d4262c54ac19804dfc099c5ad174a192b0a36f9317d1ffea",
+    "answer_sha256": "e4507c71c32552c96dac90f7ab6ee66b3afb0b37013d5a6e7d5f91e10a74b2c7",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "e4507c71c32552c96dac90f7ab6ee66b3afb0b37013d5a6e7d5f91e10a74b2c7",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "resume_wall_seconds": 5.325,
+  "timing_scope": "Cumulative active processing across attempts; excludes downtime between attempts. Not fresh-run latency.",
+  "resumed_utc": "2026-09-09T17:28:17.111231+00:00",
+  "resume_history_file": "results/brief/v3/resume_history/v3/E10_lexical.before_resume_1788974891786129005.json"
+}

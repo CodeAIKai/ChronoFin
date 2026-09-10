@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04254",
+  "uid": "financebench_id_04254_dev",
+  "split": "development",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "568a474defec66b2bcd6d3acad37277187278d01668228c5ead578af22e62b7d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "91c1ac9277f55705db7bcf7d8dd4d45bf26774de54980b34a826a3e58d8cf90c",
+  "started_utc": "2026-09-10T01:31:39.740791+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide the requested information as it would require access to the full financial statements and notes",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer, stating the needed financial statements are not provided and asks user to refer to Form 10-K, rather than computing EBITDA from available evidence (operating income 1,196 + D&A 636 = 1,832)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b1d57a36eb97d0443f1b6dca038275818c1d02fb47b49bb5300cf4cdc5da950a",
+    "latency_seconds": 7.738,
+    "usage": {
+      "prompt_tokens": 3751,
+      "completion_tokens": 123,
+      "total_tokens": 3874,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9544e209fbd10c02ec92d458c25254fd32ffc8b2eb862802dab4c268b04cf5f0"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

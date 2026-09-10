@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04854",
+  "uid": "financebench_id_04854_val",
+  "split": "new_response_validation",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "f98972ebb82ea7119a1e18cba90bfb042356206c7da5d3b2c35ee2c5afa96efe",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "0f5ac8222fe2204fe7ab1d0ee5c275861347e75a72a6cb9b8000405683c0cc51",
+  "started_utc": "2026-09-10T01:32:53.088969+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computed FCF as 3676.2 - (-460.8) = 4137.0, but correct formula is operating cash flow minus capex = 3676.2 - 460.8 = 3215 (matching reference). Candidate wrongly treated capex as negative to subtract."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "11f073d96e1231a30a3e9f218b04e7d62b07280232197981ffffd7558d194dfb",
+    "latency_seconds": 7.633,
+    "usage": {
+      "prompt_tokens": 3307,
+      "completion_tokens": 85,
+      "total_tokens": 3392,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "69cbbb91ed80821321b3934a7c34108504e780d420f32248a20674a379a1f42d"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00563",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2d42ebd6ad3216d88abb0f05f79b0287a52b6f27773dbe55fa9a7e62ef35a580",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "d56d5748695d556a596f412f74386c2bf73967ba0af0f4c921c4a78722e100fc",
+  "started_utc": "2026-09-09T17:44:10.450904+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate says 'This is the end of the filing.' and provides no substantive answer to which segment's sales proportionally increased most excluding Embedded.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "No segment identified by candidate"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "FY21 to FY22 not addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "Proportional increase not computed or stated"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No answer provided, only closing statement"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No evidence used to support any answer"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3c72597c52d43bc49f329fed66b0ed036e7d752994c4d57aa33d836b6ee244d8",
+    "latency_seconds": 9.351,
+    "usage": {
+      "prompt_tokens": 1428,
+      "completion_tokens": 191,
+      "total_tokens": 1619,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f68f0c96675e969761ef53c1205ab550575452960a556adff749d3ab9bca3e9c"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00859",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c94ca4d4e825c166647ef17b623e2b8ad7a890f0b80be93e136d5ebc46ca0eea",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "f6e6f339c9f688001656f152268bec711aed38895ccfc5f0b1bae289c7691879",
+  "started_utc": "2026-09-09T17:46:36.396631+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate correctly identifies cross currency swaps as having the highest notional value ($32,502 million) among listed derivatives for FY2021, matching reference and evidence table."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4c600ce278d4dcba562fadf7be4c81cf5f02195e7725df3cc7263910722e6288",
+    "latency_seconds": 6.455,
+    "usage": {
+      "prompt_tokens": 1439,
+      "completion_tokens": 54,
+      "total_tokens": 1493,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "704ddc9183e86f2d784a8f96f97be88eee1cb880fda6912375e69b863071712b"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00859_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00859_holistic.json",
+  "parent_sha256": "759c882309a1b1549c1c4a16c14cecdb0bc33dd7953cb6eb51e5d449602a54ce"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_04458",
+  "company": "Netflix",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a278628b4561b1965fc4dfc649a6621c0ff1d40f5a48eb22e715542c356578cb",
+  "reference_text_differs": true,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "689c27dcd396170dc9b2312ace92bd9df9348641fec271a5dda34935ae6b523d",
+  "started_utc": "2026-09-09T17:53:14.642443+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states the filing does not contain the requested data and only explains how to calculate the metric, withholding the substantive answer despite evidence providing figures to compute it."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e3e873b3b7a6ac8dfe3285da4ef840ea5290b0890362bc5fa50bf08b40286965",
+    "latency_seconds": 6.603,
+    "usage": {
+      "prompt_tokens": 3735,
+      "completion_tokens": 53,
+      "total_tokens": 3788,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f907a2dcc249f2f35ede757d83fa08ddee9716d6915cb7cf55bfb05ffb163484"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "TC01_wrong_amount",
+  "case_id": "TC01",
+  "base_version": "v4",
+  "kind": "wrong_amount",
+  "protocol_sha256": "728d14cae75d1ade15dd159d4cb475786f2ef4fb754ed4bfcc6aeb3960ee27cc",
+  "status": "error",
+  "error": ""
+}

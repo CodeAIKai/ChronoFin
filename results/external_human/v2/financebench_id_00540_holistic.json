@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00540",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "1689813b3f99fed7e3b0d9fd51ae2e6fd300beecc126884e675085bfaa8d387f",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "6c46f2ef666d416db27e8808e51421fca9d99eb4f06aacf4d9b0db1e5eafccf9",
+  "started_utc": "2026-09-09T17:43:59.167676+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate states the data is insufficient and does not calculate or provide the inventory turnover ratio, instead explaining how to compute it and saying it cannot be determined from provided text, withholding the requested answer despite evidence allowing calculation (COGS 10,069; avg inventory (1,055+604)/2=829.5; ratio ~9.5)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d9fc2f624dd6ded0ca9c2c1f4a655b86b5f00ceae45c8b184572cf022d71a327",
+    "latency_seconds": 5.727,
+    "usage": {
+      "prompt_tokens": 3109,
+      "completion_tokens": 92,
+      "total_tokens": 3201,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cbf54a6c8736e9f2436f5b5dda5655b0d74714d88ea3aa029a01734a3d21388d"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

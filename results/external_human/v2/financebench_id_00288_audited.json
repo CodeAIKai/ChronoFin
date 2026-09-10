@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00288",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "998a1746640ed831b9408b555c084eb063dd566f077b1655d7eb10f4086ced30",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "a2f78804c481d59730260b63a760921ba08a44ce9bc491f643c0d442d6b96243",
+  "started_utc": "2026-09-09T17:42:43.324529+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate confirms a drop in Cash & Cash equivalents from FY2023 ($1,874M) to Q2 FY2024 ($1,093M) per evidence, agreeing with reference's yes-decline conclusion.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Cash & Cash equivalents, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Compared FY2023 (Jan 28, 2023) to Q2 FY2024 (Jul 29, 2023) as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Uses $ millions consistent with evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "States drop occurred with values $1,874M to $1,093M, matching evidence and reference yes."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table shows 1,874 at Jan 28 2023 and 1,093 at Jul 29 2023."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fcb8139fa0a2393b4a841c8cf4071cbee83fcc2efd3fa3db3e0bc8c293516a89",
+    "latency_seconds": 10.006,
+    "usage": {
+      "prompt_tokens": 3668,
+      "completion_tokens": 270,
+      "total_tokens": 3938,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9cdbfe64a95fcb7b4f57ded7c589ddb31e8fbe8aa438aa4a6925ed91c2924141"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

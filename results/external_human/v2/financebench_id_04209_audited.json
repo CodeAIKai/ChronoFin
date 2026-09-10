@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04209",
+  "company": "Costco",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0c0682f8672fecff084aa9f6502637f3007ec93b5cf28885ba4b2fd76ce73753",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "845822c3a74ec16eae5eab2779009e53aeee19a0a2414d3d694b797ca7d1f0f5",
+  "started_utc": "2026-09-09T17:52:48.599111+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states evidence lacks FY2021 balance sheet and declines to answer, though evidence actually contains Costco FY2021 total assets of 59,268 million USD.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Requested entity is Costco (Costco Wholesale Corporation)."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Requested period is FY2021 (Aug 29, 2021 per balance sheet)."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Requested unit is USD millions; evidence amounts in millions."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate withholds answer claiming no FY2021 data; evidence shows 59,268."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate ignores supplied balance sheet evidence with TOTAL ASSETS 59,268."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b189e9e364768778f8ef8b958f6988508dfa2d40926e165b49d570a11feb0790",
+    "latency_seconds": 9.015,
+    "usage": {
+      "prompt_tokens": 1930,
+      "completion_tokens": 241,
+      "total_tokens": 2171,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "22a26ec4c3a922349796513075e50c5a806ea2fd222a9b694550e930dca3c1cd"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

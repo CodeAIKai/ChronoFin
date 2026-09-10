@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01488",
+  "uid": "financebench_id_01488_dev",
+  "split": "development",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "838beed9ec833e9d831ea9dc2683a4789c63d198308fa8658d7cd276060b4349",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "275ca17e4f85472888fb549dd471aace370e716d0e7d98f459ec8adde5ebb4cb",
+  "started_utc": "2026-09-10T01:26:51.232447+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I don't know the answer to your question as the provided context does not contain information",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it does not know and claims context lacks info, though evidence shows Consumer Health as discontinued from Aug 30 2023; this is an explicit refusal to answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "61ee25d75ee1bd8e8f8675e5c417f15fba7b43ed3527fdb46536e35d508277ab",
+    "latency_seconds": 11.199,
+    "usage": {
+      "prompt_tokens": 1597,
+      "completion_tokens": 105,
+      "total_tokens": 1702,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8fcf61f44554c3ff617ba1fc85725ecda300da8f7235bcfbe356af7c406da916"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

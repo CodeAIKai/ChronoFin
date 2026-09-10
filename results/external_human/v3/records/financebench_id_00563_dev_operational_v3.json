@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00563",
+  "uid": "financebench_id_00563_dev",
+  "split": "development",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2d42ebd6ad3216d88abb0f05f79b0287a52b6f27773dbe55fa9a7e62ef35a580",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d56d5748695d556a596f412f74386c2bf73967ba0af0f4c921c4a78722e100fc",
+  "started_utc": "2026-09-09T18:06:30.500849+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "This is the end of the filing.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate returned an unrelated statement 'This is the end of the filing.' instead of answering which AMD segment excluding Embedded had the largest proportional sales increase from FY21 to FY22; evidence shows Data Center +64%, Client -10%, Gaming +21%, so reference answer is Data Center."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6ac55320f4f7a8a2e6fdf78b73e93452e88279e4f5ad263d01102306e673b784",
+    "latency_seconds": 5.757,
+    "usage": {
+      "prompt_tokens": 1329,
+      "completion_tokens": 115,
+      "total_tokens": 1444,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "47f41e3f03c6892d296ea27dc0897d4bfe3080f2ae74a84e137f6016a8ebb924"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

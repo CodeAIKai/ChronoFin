@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00080",
+  "uid": "financebench_id_00080_val",
+  "split": "new_response_validation",
+  "company": "Paypal",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4c141f8666dd280c6c7e6c1d87bddd8c22dabc60a3895eb6917f2eecbf9031d7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "76608160ff7de1ddfff1a266e539ebff7675aa665e97f3475cf948ded244e738",
+  "started_utc": "2026-09-09T18:04:54.182199+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "PayPal has positive working capital.",
+    "content_correct": true,
+    "confidence": 0.9,
+    "reference_conflict": true,
+    "reason": "Candidate says positive working capital of $2,278M for Dec 31 2022 (57,517-45,101 current assets minus liabilities). Reference says $1.6Bn positive. Both agree positive; magnitude differs (2.278B vs 1.6B), hence reference_conflict on amount but conclusion matches."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4e3d84c2653170efd4757e233ef1f38a2c5e38761507b99450e0b7fad4be0416",
+    "latency_seconds": 6.618,
+    "usage": {
+      "prompt_tokens": 1869,
+      "completion_tokens": 123,
+      "total_tokens": 1992,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e65441e93cc8de2ca294844a7173397aef24fe8c97a50dc4ead760ff3ac809bd"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": true
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_02119",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4de7a7b0ec975c8b40cfdcc1d547c7c3d9d65ee25bb0e4c8ba72cc2daac84d96",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "f519ecb7af6592e6d544748d5dc8d6ef84bd2f7a58d398505e6a0654ef35c0a0",
+  "started_utc": "2026-09-09T17:50:48.595283+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate declines to answer the hypothetical question, stating it is based on a scenario that did not occur and does not provide the requested per-share liquidation value.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate identifies JPM (JPMorgan Chase) correctly."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references end of 2021 Q1 as in question."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No unit provided due to refusal."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer given; withholds conclusion."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Does not use evidence of $66.56 TBVPS to answer."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cdc95c282fac8ad986557d9a4fad5886482c2aea058c5f80c8564343f1c82629",
+    "latency_seconds": 9.656,
+    "usage": {
+      "prompt_tokens": 1360,
+      "completion_tokens": 219,
+      "total_tokens": 1579,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b33394d41d8288985ea747b9a462e305ea1c235946e9accb289923b910d3a135"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

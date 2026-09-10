@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01865",
+  "company": "3M",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a794ddac09dac00a3f6f4b3f0c9b5de537d2fd4f5971152163cfc874530f6090",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d73fac4fdba07b06d47434f270717f3b3ebf07b8ccf96afe6f2aaff21a9940da",
+  "started_utc": "2026-09-09T18:01:19.636270+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence shows Consumer segment had -0.9% organic sales (excluding M&A via acquisitions/divestitures), so it dragged growth; candidate refused claiming info absent, contradicting evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Question asks 3M segment; evidence lists 3M segments."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "2022 per question and evidence table."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Organic sales % change is unit; evidence provides %."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says cannot determine; evidence shows Consumer organic -0.9% dragged."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence explicitly provides organic sales by segment, contradicting refusal."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c3b1c93ee24aa0380a469d6a61eb9f3cd38fe34ae8aadcb297e3f185e2dd7704",
+    "latency_seconds": 9.219,
+    "usage": {
+      "prompt_tokens": 1810,
+      "completion_tokens": 216,
+      "total_tokens": 2026,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "661a2a5bd87603feccf6320f095b3c03dd85028f47c4670bd447e98a9f8a34d5"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

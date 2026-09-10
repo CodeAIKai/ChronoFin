@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_06272",
+  "uid": "financebench_id_06272_val",
+  "split": "new_response_validation",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4ebeba15c9f74d808069309159b26ef7769e944813a2b5a68cd8e3efc1c028d7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "1559a771e466da70ce2e099651636d9b803a0206ffca8f862f2dcafc5a726d40",
+  "started_utc": "2026-09-10T01:33:22.047521+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds the requested ratio, claims lack of access to statements, and only explains method / asks for inputs; does not provide the substantive answer despite evidence being available."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5e2b033732f7f194d635f08f00ea5dd5e38197a7c5093c8d3339bf4b9764f2c6",
+    "latency_seconds": 7.519,
+    "usage": {
+      "prompt_tokens": 3284,
+      "completion_tokens": 56,
+      "total_tokens": 3340,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bf7ec37e8eb732599550c92de5a34e844ea0d261fe0672b6a9d7f9e7a5262e26"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

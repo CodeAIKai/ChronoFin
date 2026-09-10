@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00222",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "be276834767d6067111cb04b472895454b17e688327d794b66fa859f53f18f80",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "220980b49e3c483314a5563e69737ed894a8c25e98fe02b1e6f3aca804dd63a8",
+  "started_utc": "2026-09-09T17:32:28.886164+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly states AMD has reasonably healthy liquidity with FY22 quick ratio ~1.57 using cash, ST investments, AR over current liabilities, matching reference and evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is AMD, as requested."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Uses FY22 (Dec 31, 2022) balance sheet data."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Ratio is dimensionless; figures in millions consistent with evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answers yes, healthy, quick ratio 1.57; reference says yes with 1.57."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows cash 4835, ST inv 1020, AR 4126, curr liab 6369 => 9981/6369=1.567≈1.57."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d0f56b9349d4dad93b09d74f9c91b0c697dd2c9b8e0aad8190eb527026542f80",
+    "latency_seconds": 3.868,
+    "usage": {
+      "prompt_tokens": 2035,
+      "completion_tokens": 244,
+      "total_tokens": 2279,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "062f61dfa147851e5c8d487c255468eed21eeeaedb4915f2d345a27f1941d7ab"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,13 @@
+id,status,split,score,error,wall_seconds
+meta24_after,ok,known_source,100.0,,77.365
+amazon24_after,ok,known_source,91.0,,75.027
+meta24_before,error,known_source,,claims length 1..30,13.176
+NV01,error,new_source,,"Positive quote must be a verbatim candidate span, not source text; invalid IDs: ['R4', 0]",89.624
+NV02,ok,new_source,100.0,,61.255
+NV03,ok,new_source,92.56,,62.39
+AP01,ok,new_source,100.0,,79.697
+AP02,error,new_source,,"Positive quote must be a verbatim candidate span, not source text; invalid IDs: [0]",59.096
+AP03,ok,new_source,55,,39.926
+TC01,ok,new_source,60,,55.308
+TC02,error,new_source,,claims length 1..30,4.006
+TC03,ok,new_source,60,,34.281

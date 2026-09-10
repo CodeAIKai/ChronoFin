@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04458",
+  "company": "Netflix",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a278628b4561b1965fc4dfc649a6621c0ff1d40f5a48eb22e715542c356578cb",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "689c27dcd396170dc9b2312ace92bd9df9348641fec271a5dda34935ae6b523d",
+  "started_utc": "2026-09-09T17:53:16.139523+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states the filing does not contain the requested data and only explains how to calculate the metric, withholding the substantive answer despite evidence providing operating income (305,826) and D&A (62,283) to compute EBITDA % = (305,826+62,283)/6,779,511 ≈ 0.0543.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references Netflix, Inc. correctly."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate acknowledges FY2015 (year ended Dec 31, 2015)."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate describes EBITDA % margin as percentage, matching question."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No numeric answer provided; claims data unavailable and only explains method."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence contains operating income and D&A allowing computation, contradicting candidate's unavailability claim."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "704f818bcec57a671fab77a1741393d1d0bb9b631ea17e206304c2adcb9d1a28",
+    "latency_seconds": 10.975,
+    "usage": {
+      "prompt_tokens": 3969,
+      "completion_tokens": 268,
+      "total_tokens": 4237,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "fa6318b0b9461e3dab98470b0655fc274a6a7c2bc039982df1ffbef3c6610337"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

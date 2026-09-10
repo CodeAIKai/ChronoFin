@@ -1,0 +1,612 @@
+{
+  "case_id": "D04",
+  "split": "dev",
+  "group": "iea25",
+  "task": "行业研报摘要",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:45:23.991492+00:00",
+  "protocol_sha256": "c8eadc99a15c3bc0ac28586bff1dcace39cb229a3ff928cbdd680165d3e63ab2",
+  "record": {
+    "version": "counterbrief-1.0",
+    "strategy": "lexical",
+    "query": {
+      "question": "向电力设备研究员摘要 IEA 的 AI 用电展望：机会、规模、制约因素和可跟踪指标。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I01",
+        "source_id": "iea25",
+        "locator": "current consumption section",
+        "role": "context",
+        "status": "estimate",
+        "text": "IEA estimated 2024 data-centre electricity use at 415 TWh, about 1.5% globally.",
+        "value": 415,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I02",
+        "source_id": "iea25",
+        "locator": "2030 outlook section",
+        "role": "support",
+        "status": "forecast",
+        "text": "IEA projected data-centre electricity demand of around 945 TWh in 2030.",
+        "value": 945,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I03",
+        "source_id": "iea25",
+        "locator": "grid integration section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Without action, grid constraints could delay around 20% of planned data-centre projects.",
+        "value": 20,
+        "unit": "%",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I04",
+        "source_id": "iea25",
+        "locator": "uncertainty section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "IEA scenario range for 2035 data-centre demand: 700–1700 TWh; adoption, efficiency and bottlenecks matter.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I05",
+        "source_id": "iea25",
+        "locator": "global demand growth section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Data centres represent roughly one-tenth of projected global electricity-demand growth through 2030.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "IEA 2025年4月估计2024年全球数据中心用电415 TWh（约全球1.5%），预测2030年达945 TWh，占同期全球电力需求增量约十分之一（I01,I02,I05）。机会端，AI应用有望改善电网管理与工业效率，但部署障碍仍存（I06）。制约方面，电网约束或延迟20%规划项目，2035年需求情景区间700–1700 TWh，取决于采用率、效率与瓶颈（I03,I04）。研究员应跟踪电网约束、AI采用与效率指标以验证展望。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA估计2024年数据中心用电量415 TWh，约占全球电力1.5%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA预测2030年数据中心电力需求约945 TWh",
+          "kind": "forecast",
+          "role": "driver",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AI应用可改善电网管理与工业效率，但部署障碍存在",
+          "kind": "forecast",
+          "role": "driver",
+          "evidence_ids": [
+            "I06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "若无行动，电网约束可能延迟约20%规划数据中心项目",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I03"
+          ],
+          "numbers": [
+            {
+              "source_id": "I03",
+              "value": 20,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "IEA给出2035年数据中心需求情景区间700–1700 TWh，采用率、效率与瓶颈是关键变量",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "数据中心占2030前全球电力需求增长约十分之一",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "基于制约与情景因素，可跟踪指标包括电网约束延迟比例、AI采用率、效率提升与瓶颈事件",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "I03",
+            "I04"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "I02/I01*100",
+          "value": 227.711,
+          "unit": "%",
+          "evidence_ids": [
+            "I01",
+            "I02"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未给出1.5%与十分之一的绝对基准值，无法交叉验证",
+        "2035情景区间700–1700 TWh无结构化数值卡片",
+        "非IEA卡片（TSMC24、Amazon24）未纳入本摘要，可能遗漏关联影响",
+        "AI部署障碍与电网约束的具体量化阈值缺失"
+      ],
+      "follow_up": [
+        {
+          "action": "核查IEA原文中电网约束延迟20%的规划项目基准与定义",
+          "reason": "明确风险量化边界，支持电力设备产能判断",
+          "evidence_ids": [
+            "I03"
+          ]
+        },
+        {
+          "action": "获取全球电力需求增长绝对值以验证十分之一占比",
+          "reason": "确认数据中心贡献规模，调整设备需求模型",
+          "evidence_ids": [
+            "I05"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "IEA 2025年4月估计2024年全球数据中心用电415 TWh（约全球1.5%），预测2030年达945 TWh，占同期全球电力需求增量约十分之一（I01,I02,I05）。机会端，AI应用有望改善电网管理与工业效率，但部署障碍仍存（I06）。制约方面，电网约束或延迟20%规划项目，2035年需求情景区间700–1700 TWh，取决于采用率、效率与瓶颈（I03,I04）。研究员应跟踪电网约束、AI采用与效率指标以验证展望。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA估计2024年数据中心用电量415 TWh，约占全球电力1.5%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA预测2030年数据中心电力需求约945 TWh",
+          "kind": "forecast",
+          "role": "driver",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AI应用可改善电网管理与工业效率，但部署障碍存在",
+          "kind": "forecast",
+          "role": "driver",
+          "evidence_ids": [
+            "I06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "若无行动，电网约束可能延迟约20%规划数据中心项目",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I03"
+          ],
+          "numbers": [
+            {
+              "source_id": "I03",
+              "value": 20,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "IEA给出2035年数据中心需求情景区间700–1700 TWh，采用率、效率与瓶颈是关键变量",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "数据中心占2030前全球电力需求增长约十分之一",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "基于制约与情景因素，可跟踪指标包括电网约束延迟比例、AI采用率、效率提升与瓶颈事件",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "I03",
+            "I04"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "I02/I01*100",
+          "value": 227.711,
+          "unit": "%",
+          "evidence_ids": [
+            "I01",
+            "I02"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未给出1.5%与十分之一的绝对基准值，无法交叉验证",
+        "2035情景区间700–1700 TWh无结构化数值卡片",
+        "非IEA卡片（TSMC24、Amazon24）未纳入本摘要，可能遗漏关联影响",
+        "AI部署障碍与电网约束的具体量化阈值缺失"
+      ],
+      "follow_up": [
+        {
+          "action": "核查IEA原文中电网约束延迟20%的规划项目基准与定义",
+          "reason": "明确风险量化边界，支持电力设备产能判断",
+          "evidence_ids": [
+            "I03"
+          ]
+        },
+        {
+          "action": "获取全球电力需求增长绝对值以验证十分之一占比",
+          "reason": "确认数据中心贡献规模，调整设备需求模型",
+          "evidence_ids": [
+            "I05"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "fa4cf1b0358e30e45b4ab710803bf0fc4f89d4ff3a8e186d9385c69ac0356413",
+        "latency_seconds": 49.47,
+        "usage": {
+          "prompt_tokens": 1205,
+          "completion_tokens": 4536,
+          "total_tokens": 5741,
+          "prompt_tokens_details": {
+            "cached_tokens": 320
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3739
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "low",
+        "request_id_sha256": "c6aa31244d1c5cabdd9b48d37728cc03dd4022049e7b161ad8080412a0f7c02d"
+      }
+    ],
+    "input_sha256": "15533cd62b0a62ee248c6cb51b7efa1a7e77f79525b9709bd294282955ac5adb",
+    "answer_sha256": "54f947fe2209fe8eab04537f59834a04dbb7827415d6ab65be9b50f92db198f1"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "语义支持I01估计值，但I01为estimate候选标fact",
+          "kind_valid": false,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "匹配I02预测2030 945TWh",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "匹配I06 AI效率与障碍",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "匹配I03电网约束延迟20%",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "匹配I04 2035情景区间",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "匹配I05十分之一占比预测",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "基于I03/I04合理推断跟踪指标",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "I01",
+          "present": true,
+          "quote": "IEA 2025年4月估计2024年全球数据中心用电415 TWh（约全球1.5%）"
+        },
+        {
+          "id": "I02",
+          "present": true,
+          "quote": "预测2030年达945 TWh"
+        },
+        {
+          "id": "I06",
+          "present": true,
+          "quote": "AI应用有望改善电网管理与工业效率，但部署障碍仍存"
+        },
+        {
+          "id": "I03",
+          "present": true,
+          "quote": "电网约束或延迟20%规划项目"
+        },
+        {
+          "id": "I04",
+          "present": true,
+          "quote": "2035年需求情景区间700–1700 TWh，取决于采用率、效率与瓶颈"
+        },
+        {
+          "id": "I05",
+          "present": true,
+          "quote": "占同期全球电力需求增量约十分之一"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确摘要IEA展望并区分预测与事实，但未将'预测不能表述为已实现事实'作为限制讲清楚，且limitations字段未覆盖该期待限制。"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "a8a9f14239925766e55143715cdd40cfa1392cad2db1cd1cf2be7eee9a8b1c16",
+      "latency_seconds": 47.064,
+      "usage": {
+        "prompt_tokens": 4679,
+        "completion_tokens": 4558,
+        "total_tokens": 9237,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3941
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "request_id_sha256": "f948043824c650150a95e842a999593ada1dc74f7e4c96217edd2a826928f730"
+    },
+    "input_sha256": "7af8b70890371cf100eb197682b20e1ef6fb95183de433e6ae2756159f5086ab",
+    "answer_sha256": "54f947fe2209fe8eab04537f59834a04dbb7827415d6ab65be9b50f92db198f1",
+    "judge_prompt_sha256": "f95bd1a0306ed7510142ba1c2e0b25b058b287d2730f75a768d0da8b65ee7d14"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.0",
+    "answer_sha256": "54f947fe2209fe8eab04537f59834a04dbb7827415d6ab65be9b50f92db198f1",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.428571,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 95.429,
+    "score": 95.429,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T15:47:00.533923+00:00",
+  "wall_seconds": 96.542
+}

@@ -1,0 +1,160 @@
+{
+  "id": "U06_entity",
+  "base": 6,
+  "mutation": "entity",
+  "expected_supported": false,
+  "method": "legacy",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "contradicted",
+          "reason": "来源S1为虚构甲公司FY2024营业利润17729 USD million，候选正文称虚构乙公司同期间177.29亿美元，主体混淆且将已实现预测写为事实",
+          "kind_valid": false,
+          "scope_valid": false,
+          "numbers_consistent": false
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "limitations": [],
+      "summary_supported": false,
+      "follow_up_useful": false,
+      "direct_answer": true,
+      "reason": "候选将来源中虚构甲公司营业利润误作虚构乙公司并改币种单位，主体与口径均错，摘要断言不受支持"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "c218fd31164d375b44ef49d023c7da423c6566b982e92285631ac705ec1d8e86",
+      "latency_seconds": 10.729,
+      "usage": {
+        "prompt_tokens": 766,
+        "completion_tokens": 161,
+        "total_tokens": 927,
+        "prompt_tokens_details": {
+          "cached_tokens": 448
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "7d31e0b6839125d2771a69ae692bf1158009b04fc6bcbd5c105702d8f6863c3d"
+    },
+    "input_sha256": "f07bb31ee0e48b1ebdbd1c5b5a68b649f655559caa73087f05300e1ea488265b",
+    "answer_sha256": "2b109646b922c8d02318ed0b046746046b3e576b276225a94a6db213df112158",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "2b109646b922c8d02318ed0b046746046b3e576b276225a94a6db213df112158",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 35.795,
+    "score": 35,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      },
+      {
+        "reason": "unsupported summary",
+        "cap": 65
+      },
+      {
+        "reason": "scope mismatch",
+        "cap": 60
+      },
+      {
+        "reason": "missing all required information",
+        "cap": 35
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": false,
+  "decision_correct": true
+}

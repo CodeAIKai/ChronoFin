@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00206",
+  "uid": "financebench_id_00206_dev",
+  "split": "development",
+  "company": "JPMorgan",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "5e3d562d75b532af1d032ee72ab918c3a7fcac26104e5d5f260fda939a499db3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "805c09033ce2a80f118c9b7c9f2d9cd526b2c969558cc47dd5559340f06d77f1",
+  "started_utc": "2026-09-09T18:04:55.787665+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "gross margins would not be the most relevant metric for a financial services company like JPMorgan Chase & Co.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states gross margin is not relevant for JPM as a financial services firm and explains why (banks use net interest margin, ROA, ROE etc.), matching reference that gross margin is not relevant for financial institution JPM."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "53813d204e66fae996e5cf8800a619cd8f72eac9b54715d22160fdddef3534a1",
+    "latency_seconds": 6.082,
+    "usage": {
+      "prompt_tokens": 2232,
+      "completion_tokens": 116,
+      "total_tokens": 2348,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0acc13af3ddea2b9c3d8642ee49a59279c0adb9e34055245ab99b7d87c20b265"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_08286",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "3e6d85eece5889beb03f2dcfedd314e2b64553ba932c56f5842cdf030f59aa80",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "eec03d20078b5198ee6424c7956a23058871a67d6c750e924c85591c307b6080",
+  "started_utc": "2026-09-09T17:55:07.618641+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states net income was $11.6 billion in 2019, which equals 11,600 million USD, matching evidence net income of $11,588 million (FY2019) and reference 11588 with reasonable rounding. Entity, period, metric, unit all align.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Amazon.com Inc, consistent with question and evidence"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2019 (year ended Dec 31, 2019)"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate uses $11.6 billion = 11,600 million USD, question asks USD millions, evidence in millions; conversion correct"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Net income $11.6B ~ 11,588M per evidence and reference 11588"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Income statement evidence shows Net income 2019 = $11,588M; candidate's summary agrees"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5b562dcea274d45c8d47603eac90c8d580dd2b5f6e1b020cf250dfd360e7b870",
+    "latency_seconds": 11.531,
+    "usage": {
+      "prompt_tokens": 1965,
+      "completion_tokens": 276,
+      "total_tokens": 2241,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ebbfd259f99d8638a2e288f495160a75ea780e959f96b5d1237c129dbe4dbcf8"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

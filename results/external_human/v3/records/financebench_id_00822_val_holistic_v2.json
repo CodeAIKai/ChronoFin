@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00822",
+  "uid": "financebench_id_00822_val",
+  "split": "new_response_validation",
+  "company": "Foot Locker",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "89513e458519b8a8e025f390359d71cf6db0cd5063c2f9f84fdc21af077d9582",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "ad63b1a7efbaf473ffcf2909cb8c047a1e672743b200285d613457487b64208b",
+  "started_utc": "2026-09-09T18:08:30.513156+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate says no nominee had substantially more votes against, but evidence shows Richard A. Johnson had 16,105,005 votes against vs others' max 6,074,467, a major outlier. Reference confirms yes, Richard A. Johnson."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2e41e5c25f2e30c6c1296d5c469e22e998182dd7759b668df7f8473eae165013",
+    "latency_seconds": 5.008,
+    "usage": {
+      "prompt_tokens": 1998,
+      "completion_tokens": 72,
+      "total_tokens": 2070,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "695b6df865cfda15597de6208b854b58abdcddf177932274771423b1f00f08a4"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

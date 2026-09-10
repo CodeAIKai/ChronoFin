@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00591",
+  "company": "Adobe",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4db3b699625bfd47eb0b5dc4a193c594ed53e367c2ae160f2e69ddd9294f9b60",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "ef5aaa37db212ac23ca66458ddd674db7bd7b4e03474541a930baaf7144fa5a1",
+  "started_utc": "2026-09-09T17:44:26.881737+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it cannot determine the answer without provided data and withholds any substantive conclusion despite evidence being supplied.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references Adobe as required entity."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY2022 as required period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate discusses FCF conversion conceptually; no specific unit asserted."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate provides no answer (yes/no) on improving FCF conversion; withholds conclusion."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claims no evidence provided, but evidence with cash flow data was supplied."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "aab916af4ffd960fa917d525e61b25ced591e690263b043b59ff16785b30bc84",
+    "latency_seconds": 9.012,
+    "usage": {
+      "prompt_tokens": 2383,
+      "completion_tokens": 213,
+      "total_tokens": 2596,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "15f2e7a5e2bfae938c238cb350fb65e8079af44a354ca8fc6dd224ef63d8f523"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

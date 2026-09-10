@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_02419",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b1ee947dc5abd20aceb79f732b6ce08c7e9c6fc9c7a02601f9a5ca53f5b66f38",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "a8ee6ba05c2ff2acb12b5d021de814cdd6394e2233634c088cef52488727f5c7",
+  "started_utc": "2026-09-09T17:34:19.932788+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.9,
+    "reason": "Candidate answers yes to spinning off large segment as of Q2 2023; evidence shows Upjohn separation costs incurred through Q2 2023 and reference says spinning off Upjohn. Candidate's example (rare disease portfolio) is July 2023 agreement not Q2, but core affirmative answer matches reference and evidence of Upjohn separation.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Pfizer, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period Q2 2023 referenced via separation costs incurred through Q2 2023."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No numeric unit required for yes/no question."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Affirmative answer agrees with reference (spinning off Upjohn) and evidence of Upjohn separation."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence supports Upjohn separation; candidate added unrelated divestiture but did not contradict."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4aa052005c75a406155d8d0379ebe1cb8ce60dc30a8f222862fd5309b3479e1b",
+    "latency_seconds": 4.064,
+    "usage": {
+      "prompt_tokens": 1756,
+      "completion_tokens": 256,
+      "total_tokens": 2012,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "17eae7124ec965fff141eeef6a0ec8a0d2dabe6bccecc71496a80acdf72ba070"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

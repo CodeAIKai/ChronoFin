@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00460",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "aeea948243f8a36578937863422f3c265c19dfe324f903a4fc4f96c5711f3859",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "789d4f369ae0970634d0d97a75585dd04371ff29773364d2d18a0fc156b3cf27",
+  "started_utc": "2026-09-09T17:43:20.326979+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate says Best Buy stores declined from 930 to 907, but evidence shows Best Buy stores were 930 at end Q2 FY2023 and 907 at end Q2 FY2024 (correct), yet reference states total Best Buy stores declined from 982 to 969 (total segment). Candidate's numbers are Best Buy branded only, but reference uses total stores; however candidate's substantive claim of decrease is right in direction but mismatches reference's 982->969. More critically, evidence total stores: 982 FY2023 to 969 FY2024, a 1.32% decline, matching reference. Candidate answered with Best Buy line only (930->907) not total, and reference explicitly says 982 to 969. Thus answer not agreeing with reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dcc0765fee4f1cbcf516b2a7df3b5fdf1b3992e35b8ac35d7d8282c8bf02350d",
+    "latency_seconds": 8.164,
+    "usage": {
+      "prompt_tokens": 2620,
+      "completion_tokens": 180,
+      "total_tokens": 2800,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "527e246f06b3e24f3ac233bf10ddeeab4f765b11a1716d166d945f7bf105c103"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00460_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00460_holistic.json",
+  "parent_sha256": "4ab90e2bb79da45a9b3e55ed09aad3e6b867b3ed68a3d071ff29f92dc60e62a7"
+}

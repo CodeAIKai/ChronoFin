@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04458",
+  "uid": "financebench_id_04458_val",
+  "split": "new_response_validation",
+  "company": "Netflix",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "7d2e4d52c948978c2ef4bbb24b3dd4b2ea00c18a36dadaeb601f1db2ea9a4165",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "e9c248bd90a5006b7b0d98197d451bda1343910f3dcb43428d79219f4714bb2d",
+  "started_utc": "2026-09-10T01:32:09.705749+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but you haven't provided the specific financial data for Netflix's FY2015",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it lacks provided FY2015 figures and asks user to supply them instead of computing from given evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "88b125d329531304f3bc6b08389be4df5c0c409aa86dc1aa3b768c015cd6dcfc",
+    "latency_seconds": 7.511,
+    "usage": {
+      "prompt_tokens": 3953,
+      "completion_tokens": 94,
+      "total_tokens": 4047,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5d31be626e59a186eefd5da4f834980512517efc168a6b5dd0eae525f99479aa"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

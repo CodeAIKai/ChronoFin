@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_07507",
+  "uid": "financebench_id_07507_val",
+  "split": "new_response_validation",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4a6307da26673cb97a8724e615c0b6c7818e1c9fa6305e645089c1c03776bfa9",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "d899a27f22a6f039b0282c0fd9ff2fa07f258253681a9110d268ab887891f7ca",
+  "started_utc": "2026-09-10T01:33:39.673410+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computed (1493602-903095)/903095*100 = 65.37% rounded to 65.4%, matching evidence operating income figures and reference 0.654 (65.4%). Substantive answer provided with method."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bce90cec6f9c7d189824da19e2aefd82a803720acf26a7a4c5d79900ee0d1aab",
+    "latency_seconds": 7.335,
+    "usage": {
+      "prompt_tokens": 1875,
+      "completion_tokens": 72,
+      "total_tokens": 1947,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b0689b7b77b9457deb508eb1ef00734290ad42b8480593ae5b23717dda02ab70"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

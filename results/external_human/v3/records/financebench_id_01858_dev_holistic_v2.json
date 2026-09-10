@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01858",
+  "company": "3M",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "0f076d7e9e5654b58ef08f233338e43cb69c07092a61e6930722f02ecc80142b",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "5ebba2b781199b7343301af4372311c0e133a47753cd581a05643eb826ac4267",
+  "started_utc": "2026-09-09T17:49:36.464913+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate answers yes with substantive evidence of consecutive annual dividend increases including 65th year per evidence, matching reference's stable/increasing trend."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2e5e8f6c69c4e304432194eb09278d63a483979aa2ff32b6b47dcb0e7c8e25a0",
+    "latency_seconds": 6.81,
+    "usage": {
+      "prompt_tokens": 1613,
+      "completion_tokens": 48,
+      "total_tokens": 1661,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e4568051eddc188ad4fc1169878a3401bc3d518de625d246ce657d3dc3e62f1e"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01858_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01858_holistic.json",
+  "parent_sha256": "2db049aff7f5883ab53a95d70bfb8575a8c9898bc8b2ec8a8f746da9cfcbf721"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04417",
+  "company": "Best Buy",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "f3927e78a16985f92db5f5281d63cb0252e4ee491a15e2c589c9d4f45a849fb9",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "d6c4d24fa0454bc670341afb111dc924d6b372111183180720bd3a9d37edc8a3",
+  "started_utc": "2026-09-09T17:53:10.489604+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.99,
+    "reason": "Candidate states FY2019 (Feb 2, 2019) inventories as $11,395 million, but balance sheet shows Merchandise inventories of $5,409 million. $11,395 is Total assets, not inventories.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Best Buy Co., Inc. identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2019 = February 2, 2019 column used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer given in USD millions as requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Inventories should be 5,409 not 11,395 (which is total assets)"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence balance sheet shows Merchandise inventories 5,409; candidate number unsupported for inventories"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "53542c0b37ab4002f9b1f6be774906fa5abe2e75ac9a61c7a85d6f913c4ff451",
+    "latency_seconds": 9.907,
+    "usage": {
+      "prompt_tokens": 1846,
+      "completion_tokens": 244,
+      "total_tokens": 2090,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "11a3ac5e50b49c6bc55b1d9c16f7020c4f22fbcbded91e3e563fc66979027ce8"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

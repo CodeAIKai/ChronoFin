@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00757",
+  "uid": "financebench_id_00757_dev",
+  "split": "development",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "df1fed1c6085d36225160d2d718097f01c0d0ff3f70b5c1624899620eaed6067",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "1b69ee83d0c7cf677263199b78603288c946f66474c4458715a1d5aaf0333ee5",
+  "started_utc": "2026-09-09T18:08:07.623059+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I don't know the answer to whether AMD reported customer concentration in FY22, as the evidence needed to answer this question has not been provided.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and claims evidence not provided, despite evidence showing AMD 2022 10K states one customer accounted for 16% of consolidated net revenue for year ended Dec 31 2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "70883ea5d3b9e5a0c3cca97df26980d86e2c671188c08beff1691147a19eb269",
+    "latency_seconds": 7.849,
+    "usage": {
+      "prompt_tokens": 1245,
+      "completion_tokens": 123,
+      "total_tokens": 1368,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a6fb3ae2a60f10844912b15ec9c1ff4a38300c8e33a1e5da982633e27b2d5931"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

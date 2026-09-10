@@ -1,0 +1,945 @@
+{
+  "case_id": "D03",
+  "split": "dev",
+  "group": "tsmc24",
+  "task": "公开数据问答",
+  "strategy": "full_context",
+  "started_utc": "2026-09-09T15:54:37.446006+00:00",
+  "protocol_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "full_context",
+    "query": {
+      "question": "TSMC Q4 2024 收入增长有多强？解释不同币种增速，并给出谨慎的短期展望。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "T01",
+        "source_id": "tsmc24",
+        "locator": "opening results paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 revenue: TWD 868.46 billion.",
+        "value": 868.46,
+        "unit": "TWD billion",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T02",
+        "source_id": "tsmc24",
+        "locator": "year-over-year paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 38.8% measured in TWD.",
+        "value": 38.8,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T03",
+        "source_id": "tsmc24",
+        "locator": "USD results paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 37.0% measured in USD.",
+        "value": 37.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T04",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 gross margin: 59.0%.",
+        "value": 59.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T07",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "TSMC Q4 2024 net profit margin: 43.1%.",
+        "value": 43.1,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T05",
+        "source_id": "tsmc24",
+        "locator": "technology mix paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Nodes of 7nm or smaller contributed 74% of Q4 wafer revenue.",
+        "value": 74,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "A08",
+        "source_id": "amazon24",
+        "locator": "p11 AWS quarterly margins",
+        "role": "caution",
+        "status": "observed",
+        "text": "AWS operating margin: Q3 2024 38.1%; Q4 2024 36.9%.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "M10",
+        "source_id": "meta24",
+        "locator": "p1 expense footnote",
+        "role": "caution",
+        "status": "observed",
+        "text": "Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses.",
+        "value": 1.55,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A02",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 operating income: USD 68593 million.",
+        "value": 68593,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A03",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual sales",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 net sales: USD 107556 million.",
+        "value": 107556,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A04",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 operating income: USD 39834 million.",
+        "value": 39834,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A05",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "caution",
+        "status": "observed",
+        "text": "Amazon FY2024 free cash flow: USD 38219 million.",
+        "value": 38219,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A06",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 operating cash flow reached about USD 115.9 billion, a 36% increase.",
+        "value": 115.9,
+        "unit": "USD billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "I01",
+        "source_id": "iea25",
+        "locator": "current consumption section",
+        "role": "context",
+        "status": "estimate",
+        "text": "IEA estimated 2024 data-centre electricity use at 415 TWh, about 1.5% globally.",
+        "value": 415,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "M01",
+        "source_id": "meta24",
+        "locator": "p1 annual revenue row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 revenue: USD 164501 million.",
+        "value": 164501,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M02",
+        "source_id": "meta24",
+        "locator": "p1 annual net income row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 net income: USD 62360 million.",
+        "value": 62360,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M03",
+        "source_id": "meta24",
+        "locator": "p9 segment operating results",
+        "role": "caution",
+        "status": "observed",
+        "text": "Reality Labs FY2024 operating loss: USD 17729 million.",
+        "value": -17729,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M06",
+        "source_id": "meta24",
+        "locator": "p1 annual ad metrics",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 ad impressions grew 11%; average ad price rose 10%.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M07",
+        "source_id": "meta24",
+        "locator": "p10 annual free cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 free cash flow: USD 52103 million.",
+        "value": 52103,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "A07",
+        "source_id": "amazon24",
+        "locator": "p10 FCF definition footnotes",
+        "role": "caution",
+        "status": "definition",
+        "text": "Amazon headline free cash flow deducts net property purchases; separate variants also deduct lease principal.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A09",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "context",
+        "status": "observed",
+        "text": "Amazon FY2023 free cash flow: USD 36813 million.",
+        "value": 36813,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "F01",
+        "source_id": "fed25",
+        "locator": "overview opening",
+        "role": "context",
+        "status": "observed",
+        "text": "The assessment uses market conditions and data through April 11, 2025.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F02",
+        "source_id": "fed25",
+        "locator": "asset valuations",
+        "role": "caution",
+        "status": "observed",
+        "text": "Equity valuations remained high versus expected earnings; liquidity deteriorated, with generally orderly functioning.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F03",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "caution",
+        "status": "observed",
+        "text": "Hedge-fund leverage indicators were near decade highs and concentrated in larger funds.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F04",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "support",
+        "status": "observed",
+        "text": "Banks remained broadly resilient, with most reporting capital well above regulatory requirements.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F05",
+        "source_id": "fed25",
+        "locator": "household and business debt",
+        "role": "support",
+        "status": "observed",
+        "text": "Business and household debt vulnerabilities were moderate; debt relative to GDP had declined.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F06",
+        "source_id": "fed25",
+        "locator": "funding risks",
+        "role": "support",
+        "status": "observed",
+        "text": "Funding vulnerabilities had declined to moderate levels; runnable liabilities remained a persistent risk.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F07",
+        "source_id": "fed25",
+        "locator": "household credit",
+        "role": "caution",
+        "status": "observed",
+        "text": "Credit-card and auto delinquencies exceeded pre-pandemic levels, especially among non-prime borrowers.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "I02",
+        "source_id": "iea25",
+        "locator": "2030 outlook section",
+        "role": "support",
+        "status": "forecast",
+        "text": "IEA projected data-centre electricity demand of around 945 TWh in 2030.",
+        "value": 945,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I03",
+        "source_id": "iea25",
+        "locator": "grid integration section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Without action, grid constraints could delay around 20% of planned data-centre projects.",
+        "value": 20,
+        "unit": "%",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I04",
+        "source_id": "iea25",
+        "locator": "uncertainty section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "IEA scenario range for 2035 data-centre demand: 700–1700 TWh; adoption, efficiency and bottlenecks matter.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I05",
+        "source_id": "iea25",
+        "locator": "global demand growth section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Data centres represent roughly one-tenth of projected global electricity-demand growth through 2030.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "M04",
+        "source_id": "meta24",
+        "locator": "p2 CFO outlook",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Meta anticipated FY2025 capital expenditures of USD 60–65 billion; guidance, not realized spending.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M05",
+        "source_id": "meta24",
+        "locator": "p2 depreciation footnote",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Longer server lives were expected to reduce FY2025 depreciation by USD 2.9 billion; an accounting-estimate change.",
+        "value": 2.9,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M08",
+        "source_id": "meta24",
+        "locator": "p4 non-GAAP definition",
+        "role": "caution",
+        "status": "definition",
+        "text": "Meta free cash flow deducts property purchases and finance-lease principal; non-GAAP comparability is limited.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M09",
+        "source_id": "meta24",
+        "locator": "p2 revenue outlook",
+        "role": "caution",
+        "status": "absence",
+        "text": "Meta provided no FY2025 full-year revenue guidance in this release.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "TSMC 2024年第四季度营收达新台币8684.6亿元，按新台币计同比增长38.8%，按美元计增长37.0%，显示强劲增长。毛利率59.0%、净利率43.1%，7nm及以下节点占晶圆营收74%，结构优势明显。管理层预计2025年一季度受智能手机季节性影响，但部分被AI需求增长抵消。短期展望应谨慎，因季节性拖累与宏观不确定性并存，但AI需求提供缓冲。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "TSMC 2024年第四季度营收为新台币868.46 billion。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01"
+          ],
+          "numbers": [
+            {
+              "source_id": "T01",
+              "value": 868.46,
+              "unit": "TWD billion"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "TSMC 2024年第四季度营收按新台币计同比增长38.8%。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T02"
+          ],
+          "numbers": [
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "TSMC 2024年第四季度营收按美元计同比增长37.0%。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "TSMC 2024年第四季度毛利率59.0%，净利率43.1%。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T04",
+            "T07"
+          ],
+          "numbers": [
+            {
+              "source_id": "T04",
+              "value": 59.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "T07",
+              "value": 43.1,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "TSMC 2024年第四季度7nm及以下节点占晶圆营收74%。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T05"
+          ],
+          "numbers": [
+            {
+              "source_id": "T05",
+              "value": 74,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "管理层预计2025年一季度智能手机季节性将拖累业绩，但部分被AI需求增长抵消。",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "T06"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未提供TSMC Q4 2024营收的同比基数金额，无法计算绝对增量。",
+        "未提供TSMC 2025年一季度实际或指引营收，短期展望仅基于管理层定性预期。"
+      ],
+      "follow_up": [
+        {
+          "action": "核查TSMC 2025年一季度实际营收及指引",
+          "reason": "可验证智能手机季节性与AI需求抵消的实际程度，修正短期展望",
+          "evidence_ids": [
+            "T06"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "TSMC 2024年第四季度营收达新台币8684.6亿元，按新台币计同比增长38.8%，按美元计增长37.0%，显示强劲增长。毛利率59.0%、净利率43.1%，7nm及以下节点占晶圆营收74%，结构优势明显。管理层预计2025年一季度受智能手机季节性影响，但部分被AI需求增长抵消。短期展望应谨慎，因季节性拖累与宏观不确定性并存，但AI需求提供缓冲。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "TSMC 2024年第四季度营收为新台币868.46 billion。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01"
+          ],
+          "numbers": [
+            {
+              "source_id": "T01",
+              "value": 868.46,
+              "unit": "TWD billion"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "TSMC 2024年第四季度营收按新台币计同比增长38.8%。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T02"
+          ],
+          "numbers": [
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "TSMC 2024年第四季度营收按美元计同比增长37.0%。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "TSMC 2024年第四季度毛利率59.0%，净利率43.1%。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T04",
+            "T07"
+          ],
+          "numbers": [
+            {
+              "source_id": "T04",
+              "value": 59.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "T07",
+              "value": 43.1,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "TSMC 2024年第四季度7nm及以下节点占晶圆营收74%。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T05"
+          ],
+          "numbers": [
+            {
+              "source_id": "T05",
+              "value": 74,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "管理层预计2025年一季度智能手机季节性将拖累业绩，但部分被AI需求增长抵消。",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "T06"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未提供TSMC Q4 2024营收的同比基数金额，无法计算绝对增量。",
+        "未提供TSMC 2025年一季度实际或指引营收，短期展望仅基于管理层定性预期。"
+      ],
+      "follow_up": [
+        {
+          "action": "核查TSMC 2025年一季度实际营收及指引",
+          "reason": "可验证智能手机季节性与AI需求抵消的实际程度，修正短期展望",
+          "evidence_ids": [
+            "T06"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "113b06ab4f86bfb6092c0e18ce1c7e3b8b05bf44d90c1469a24480328b3b798f",
+        "latency_seconds": 5.814,
+        "usage": {
+          "prompt_tokens": 4068,
+          "completion_tokens": 682,
+          "total_tokens": 4750,
+          "prompt_tokens_details": {
+            "cached_tokens": 64
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "8723fe3c9cedcb3bedc34c6efe31b105b3c5d4f25b59c4817da238f1536df894"
+      }
+    ],
+    "input_sha256": "d2cf2127b7e65a803506e073f1204ee54ce6f4d52175e0c91e736cec7a5f51c9",
+    "answer_sha256": "146de6dd1c0fc8947ac22d7c5b8e0dbab7e780076e2823c312854a2c3349a2d7"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文称新台币868.46 billion，与T01一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称TWD增38.8%，与T02一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称USD增37.0%，与T03一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称毛利率59.0%净利率43.1%，与T04/T07一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选称7nm及以下占74%，与T05一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选称Q1 2025季节性拖累部分被AI抵消，与T06预测一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "T01",
+          "present": true,
+          "quote": "TSMC 2024年第四季度营收达新台币8684.6亿元"
+        },
+        {
+          "id": "T02",
+          "present": true,
+          "quote": "按新台币计同比增长38.8%"
+        },
+        {
+          "id": "T03",
+          "present": true,
+          "quote": "按美元计增长37.0%"
+        },
+        {
+          "id": "T05",
+          "present": true,
+          "quote": "7nm及以下节点占晶圆营收74%"
+        },
+        {
+          "id": "T06",
+          "present": true,
+          "quote": "管理层预计2025年一季度受智能手机季节性影响，但部分被AI需求增长抵消"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选准确回答TSMC Q4 2024收入双币种增速并给谨慎展望，但未明确说明单季结果非全年，限制声明缺失该点"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "48822b8661ef1b589a806e8d7489ad606f04c31520c54c520c4e2f1863a1bba7",
+      "latency_seconds": 8.555,
+      "usage": {
+        "prompt_tokens": 4784,
+        "completion_tokens": 560,
+        "total_tokens": 5344,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "876418d01f3323bd04829993e176e869a52c72a20710a91080d3298f583ddef3"
+    },
+    "input_sha256": "e32d115963c6fbbfb578a05403802b2f77da14a233ca125ffa52089461463ee6",
+    "answer_sha256": "146de6dd1c0fc8947ac22d7c5b8e0dbab7e780076e2823c312854a2c3349a2d7",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "146de6dd1c0fc8947ac22d7c5b8e0dbab7e780076e2823c312854a2c3349a2d7",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 96.0,
+    "score": 96.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T15:54:51.823390+00:00",
+  "wall_seconds": 14.377
+}

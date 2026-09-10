@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_04660",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "693d27e05ce5de300ff7697c0b64506b8c4957c53119403cafcae75352a9a07b",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "c5828e09810a7620f8bae9b8ae518740f36fb543268ca8c14208fe23272c2687",
+  "started_utc": "2026-09-09T17:53:26.738460+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states it cannot calculate the ratio due to missing figures and withholds the answer, despite evidence containing the needed data (total current assets 1,001,425; total current liabilities 577,464; ratio ≈ 1.73)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3a5507f144e29d44c76383661a48d65a8f28f100f6696608d900dc2755df5a49",
+    "latency_seconds": 5.725,
+    "usage": {
+      "prompt_tokens": 1982,
+      "completion_tokens": 71,
+      "total_tokens": 2053,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2486d56dc616e0b1aaf1dcf159cec462199048253506ecf23a1d09a9c52cb344"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

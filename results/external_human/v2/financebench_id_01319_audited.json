@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01319",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "11c0ec500abc6f431fa95108bf9a9cda49c0cacfb9b5d3d99d8d543a1f46a649",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "19f584050fc98ccb61cd15549c331f2843a72b778a3774df99b718a00c1197da",
+  "started_utc": "2026-09-09T17:48:32.498194+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states no explicit restructuring costs line item in FY2022 income statement and gives 0, matching reference and evidence which lists no such line.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "AES Corporation identified correctly"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 (year ended Dec 31, 2022) used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Quantity requested as 0 (no unit needed)"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answer 0 matches reference and evidence absence of line item"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence income statement shows no restructuring costs line, supporting 0"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dc781cccf47a90af7502a0c0908d51ae26f11ac0102d7c0b1614f4b5996837a6",
+    "latency_seconds": 9.029,
+    "usage": {
+      "prompt_tokens": 2245,
+      "completion_tokens": 210,
+      "total_tokens": 2455,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b10cb59deeefef6dfc7f26d0df7153fac304565de84ecf303ce777a3ebe114ea"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04481",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0b13fd27ba6249ff2515f28513b9a22a25cb0754bb081bab57b2a94a369324e3",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ba714761b23e8b371e74aaf4b6eafcb04adf29caa7b2b08509dfebf31ac92399",
+  "started_utc": "2026-09-09T17:34:57.417159+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot access filings and does not compute or provide the requested FY2022 unadjusted EBITDA % margin, only giving general guidance to find data externally."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9b79a10086ff856e73fe1e75657248935397b284ecc8b923884f8146cd62e131",
+    "latency_seconds": 1.674,
+    "usage": {
+      "prompt_tokens": 2819,
+      "completion_tokens": 57,
+      "total_tokens": 2876,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9b08aa7b17d834024faf5b0281f819ac20132d1affa15f9e0451603a74b4ddcf"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

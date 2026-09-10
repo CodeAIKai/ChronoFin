@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03031",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "e8c43bb44652858334e005d1f6e7ca31e85c7e252262bcea6563ce85c17c73cc",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "e76da7c9aab8895d4f1b07ef20f5542fa8d763b515edf9419f570255a39e2026",
+  "started_utc": "2026-09-09T17:34:26.209128+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot answer without provided balance sheet figures, but evidence contains the FY2021 balance sheet with total current assets (19,815) and total current liabilities (13,997), yielding 5,818. Candidate gives no substantive answer.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Lockheed Martin, correctly identified in candidate's framing."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2021 / Dec 31 2021 referenced by candidate as needed period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate would use USD millions per question, evidence in millions."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive numeric answer provided; candidate refused due to perceived missing data."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supplied balance sheet totals; candidate did not use it, claimed absence."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2e6edf2244c51a0292131e02b163745504d62acbadf80935375e7c3e5ed9b3eb",
+    "latency_seconds": 3.545,
+    "usage": {
+      "prompt_tokens": 1590,
+      "completion_tokens": 238,
+      "total_tokens": 1828,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "44f13ad0331537a74c5771bce20b4fdd93c369103dfa85f55dec760a65f50358"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

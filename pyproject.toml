@@ -3,8 +3,8 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chronofin"
-version = "0.1.0"
+name = "chronofin-rhinobird-personal"
+version = "0.2.0"
 description = "ChronoFin: point-in-time, causally auditable financial research powered by Hy3"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -16,6 +16,7 @@ dependencies = []
 pdf = ["pymupdf>=1.24"]
 demo = ["streamlit>=1.40", "Pillow>=10"]
 dev = ["pytest>=8", "pytest-cov>=5"]
+artifacts = ["playwright>=1.50", "Pillow>=10", "matplotlib>=3.8"]
 
 [project.scripts]
 chronofin = "chronofin.cli:main"

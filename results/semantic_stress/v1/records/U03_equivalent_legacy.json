@@ -1,0 +1,143 @@
+{
+  "id": "U03_equivalent",
+  "base": 3,
+  "mutation": "equivalent",
+  "expected_supported": true,
+  "method": "legacy",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选将S1的0.125 USD billion转为12500万美元，数值等价且主体期间口径一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": true,
+          "quote": "虚构甲公司 FY2024 全年已经实现营业利润 12500.000 万美元。"
+        }
+      ],
+      "limitations": [],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确依据S1陈述了虚构甲公司FY2024营业利润"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "066e4dcea82943c0be8be0b4b03d5cdb6d8bb7e9c3a6b6706fbabac198afe0e2",
+      "latency_seconds": 11.586,
+      "usage": {
+        "prompt_tokens": 767,
+        "completion_tokens": 152,
+        "total_tokens": 919,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "573f5de62ec7262b8c932beb2f4531ea4e3605c5e076bd27904ca097ce426032"
+    },
+    "input_sha256": "4cedbb72651996b99ca437119b4558200e1eb9203f02e0dd2cf49a96f59688a6",
+    "answer_sha256": "d7f6b979a4085b1e269084a4c3e7d3d0cb735a5931c14ed78d41dd91d0182869",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "d7f6b979a4085b1e269084a4c3e7d3d0cb735a5931c14ed78d41dd91d0182869",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": true,
+  "decision_correct": true
+}

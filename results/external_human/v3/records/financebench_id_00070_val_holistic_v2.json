@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00070",
+  "uid": "financebench_id_00070_val",
+  "split": "new_response_validation",
+  "company": "American Water Works",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "74e3882a21bedb4ff50c0c7d101e745bf1c2f769953ab1e5f56fe5fb1f477fea",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "4c37be5e1117fc39449788a5d24397b4a7039d44e530c18b343b8e144cd4d922",
+  "started_utc": "2026-09-09T18:04:49.120615+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate states American Water Works has negative working capital (~-$1,561Mn) and says metric not useful, contradicting reference's positive $124Mn and evidence showing current assets $1,250Mn < current liabilities $2,811Mn. Substantive answer provided but wrong sign/value vs reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "27c40ab43c2458486e8a85a9a9627cb750f363b92ff3abf9f17405883fa10ae0",
+    "latency_seconds": 5.061,
+    "usage": {
+      "prompt_tokens": 2262,
+      "completion_tokens": 84,
+      "total_tokens": 2346,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ddda5f78b88b409d2c4dcb6f5ba6bdde085da3876081e515cd7df9dfba279cd0"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

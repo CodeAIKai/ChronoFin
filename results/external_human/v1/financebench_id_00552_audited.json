@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00552",
+  "company": "Microsoft",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "7713cc3f46f96f63ce809e6a644fa5cc33e8cec90dfa76c3b8be4e697226749a",
+  "started_utc": "2026-09-09T17:32:55.261504+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate '[END OF FILING]' provides no substantive answer to the question about Microsoft debt change.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "No entity addressed; candidate is empty filler."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No fiscal period addressed."
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No unit or metric addressed."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No answer given to yes/no debt increase question."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No supporting content; mere filing terminator."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d4748ff3c155127816dbeb424b374d5386e7d5844af4a98e9fd2f7d2417484ee",
+    "latency_seconds": 2.575,
+    "usage": {
+      "prompt_tokens": 2403,
+      "completion_tokens": 176,
+      "total_tokens": 2579,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "86399cb47fa3f34d7fbfe1996d932bb7ced7cd058d8e047a29c8d979c7350224"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

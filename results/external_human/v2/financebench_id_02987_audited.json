@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_02987",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e41014be9d6f138e0282f21d87298588e3999903f3c7b4073c34cd95fc9df007",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "043b5ad49cdabd8f44c01fc910da2330bdc92791d101e8284ed7c448efa8aee4",
+  "started_utc": "2026-09-09T17:51:16.561150+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate pasted 10-K cover and business overview text with no calculation or answer for the fixed asset turnover ratio; it withholds the requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity Activision Blizzard identified in pasted text"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2019 context present in pasted filing header"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No answer given; unit not addressed"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No numeric ratio or substantive answer provided"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No use of evidence PP&E (253, 282) or revenue (6489) to compute 6489/((253+282)/2)=24.26"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8b42f845dd65ea089c9b0e9c19b7787bcc6f2c0ca573de453c0b2bd6171e02ba",
+    "latency_seconds": 10.192,
+    "usage": {
+      "prompt_tokens": 5312,
+      "completion_tokens": 229,
+      "total_tokens": 5541,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "33c84caf93347271169930d7328293089f6cd92b2a46c7f691625d344da172b4"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

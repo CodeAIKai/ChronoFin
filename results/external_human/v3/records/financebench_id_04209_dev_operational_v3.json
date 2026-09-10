@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04209",
+  "uid": "financebench_id_04209_dev",
+  "split": "development",
+  "company": "Costco",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0c0682f8672fecff084aa9f6502637f3007ec93b5cf28885ba4b2fd76ce73753",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "845822c3a74ec16eae5eab2779009e53aeee19a0a2414d3d694b797ca7d1f0f5",
+  "started_utc": "2026-09-10T01:31:32.315905+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but the information provided does not include the balance sheet data for the end of FY2021 for Costco",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it lacks FY2021 balance sheet data and asks for it, declining to answer despite evidence showing TOTAL ASSETS $59,268 million at Aug 29, 2021."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "74c0e3de9340db6379893ced54675f64feafa3d98ee9764ffb641ed8fcc8fb2e",
+    "latency_seconds": 9.137,
+    "usage": {
+      "prompt_tokens": 1831,
+      "completion_tokens": 118,
+      "total_tokens": 1949,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1e6a713e558c9301d9fb521b7df8660f0bff31212b74f2ddf184958fbea932de"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

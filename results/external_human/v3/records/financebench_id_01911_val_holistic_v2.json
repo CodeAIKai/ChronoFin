@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01911",
+  "uid": "financebench_id_01911_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "d5843fe7e2775b67c5df9240a8b3444c186b1a0a6dd6d78982c07abf30fe0ac3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "b9a2fd9d29f6099f8dac993e9f27e5e73ed82858b0577c66bb542e4fc56bd4f2",
+  "started_utc": "2026-09-10T01:27:38.487173+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed ratio using Adjusted EBITDAR ($3,497,254k) not Adjusted EBIT as question specified, and reference states coverage is zero due to negative adjusted EBIT; evidence shows Adjusted EBITDAR not EBIT and interest expense $594,954k, but metric mismatch and wrong conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "799b1e0b5f302254b950f72318d3dc198dfb8a488628b92baec224a1ecdde83b",
+    "latency_seconds": 12.177,
+    "usage": {
+      "prompt_tokens": 2559,
+      "completion_tokens": 87,
+      "total_tokens": 2646,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "48131f47f48c4ed6028f0994ffa5ede4524f38643f98a95731b929cc976d479a"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

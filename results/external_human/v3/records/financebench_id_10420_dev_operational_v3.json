@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_10420",
+  "uid": "financebench_id_10420_dev",
+  "split": "development",
+  "company": "AES Corporation",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "ce2a1ec87f7bbf58fa1fcd2cfb8d17b97c1d6cefeda53aa577ca4953785b2366",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "20582f0a1f1fc20ea3c89d6e7074358563117357c206dd90d220f88d5aaf5a96",
+  "started_utc": "2026-09-10T01:34:28.226817+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Rounded to two decimal places, the ROA for AES's FY2022 is -1.53%.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate computed ROA as -546/35663 = -1.53%, but reference states -0.02 (i.e. -2%). Evidence supports net income -$546M and avg assets $35,663M, so candidate math is internally consistent yet conflicts with supplied reference value of -0.02; per instructions reference_conflict true and answer marked incorrect vs reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cf33d2cdd46d857ee0edb66820a6627319bc8761c51ac642c8b56fddc0193847",
+    "latency_seconds": 7.731,
+    "usage": {
+      "prompt_tokens": 4949,
+      "completion_tokens": 149,
+      "total_tokens": 5098,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9f8cabe8a4d855a6df1db02af93eb2e943a85232f6a89f50e916513f7a307fd0"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

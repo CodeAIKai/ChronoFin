@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01902",
+  "uid": "financebench_id_01902_dev",
+  "split": "development",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "8c9604d2b4f561e1237f19e79483d84752b236986a789aeacd20ab25a7731456",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "82689a31a869a29d774f6683c90ab9e90bd05eaed13d89e4e28a7b205ab70e31",
+  "started_utc": "2026-09-10T01:27:27.828137+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "cannot be determined from the text of the filing alone",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states the requested Best Buy product category performance cannot be determined and asks for additional breakdown, despite evidence showing Entertainment had 9.0% growth in Q2 FY2024 Domestic."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "836befdc926de5540ad98ee3b5943c7f95333c7f952b40d6e260b3b915e4f634",
+    "latency_seconds": 10.657,
+    "usage": {
+      "prompt_tokens": 1976,
+      "completion_tokens": 100,
+      "total_tokens": 2076,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "29212df32cef9606e3fdb0bfc8102cd58faf0a803426fdb51ca42513047c1c48"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

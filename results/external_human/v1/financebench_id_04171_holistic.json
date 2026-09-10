@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04171",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "3614d5cca06e7c9631495b0f7f6f51cba23c40a162a3bff3d6a66b00c13c7945",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "3249e4b742a6a85ae179bdcd3c62706b909199afcb2954e1e71453e6f478d4f2",
+  "started_utc": "2026-09-09T17:34:46.901363+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Balance sheet shows Accounts payable $302,578 thousand = $302.578M for FY2018, rounds to $303.00M as reference; candidate gave $302,578,000 (= $302.578M) with correct period and metric."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "332f04989c574d72e58d547df027b972b4c8f1d32795b82b655207f6bea84e25",
+    "latency_seconds": 3.651,
+    "usage": {
+      "prompt_tokens": 2239,
+      "completion_tokens": 73,
+      "total_tokens": 2312,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8ec3dc06c28e5a9e8f640a91e0bb3b26edaebccd67b69586b460fe8fe01635b1"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

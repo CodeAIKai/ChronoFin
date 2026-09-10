@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_03882",
+  "uid": "financebench_id_03882_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "25156d87f70009b034248dd52c19d6143e7ca7be655254b9e3f331d3355ce7de",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "f54f2fee682b4b9bf80ab1a95c8794c4d12cf8df0a179b45f6a1c37c390257d6",
+  "started_utc": "2026-09-10T01:31:10.043396+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides securities description unrelated to net AR and does not state FY2020 net trade receivables (1615.9, ~1616) from balance sheet; withholds requested answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "68306361e7e7c6fd51e915a61a6bd0b381654a0471b12f69bd445ad577b9a1a1",
+    "latency_seconds": 10.076,
+    "usage": {
+      "prompt_tokens": 2438,
+      "completion_tokens": 61,
+      "total_tokens": 2499,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5c6da661fc9838da7da0754a2cdc577b9fce8aab6f4a406c0e3f31012343190b"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

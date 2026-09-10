@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_02024",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9512586fdab4431500c28909c8953d4ae38a730ff15c6c98bf748415a8ea98e2",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "208a1641956a9b628c813bc0888b406a0d45ecb64a08404c9665b98127f985bb",
+  "started_utc": "2026-09-09T18:02:14.697721+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states Verizon expected to pay $862 million for health care and life insurance benefits to retirees in 2024, matching evidence table (2024 Health Care and Life = $862 million) and reference's health care/life figure. Question asks 'how much for its retirees' and candidate specifies the health care and life insurance portion with support; reference lists both pension and health care, but candidate's substantive answer is accurate for the stated subset and not contradictory.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Verizon retirees, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Fiscal period is FY 2021 outlook for 2024, correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is millions of dollars, candidate says $862 million consistent with evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer $862 million for health care and life insurance benefits in 2024 matches evidence and reference subset."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table 'Estimated Future Benefit Payments' shows 2024 Health Care and Life $862 million."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2d45e4af8950878f76e033026314c42d788b7d849632ae9fefb189bd59eb52e3",
+    "latency_seconds": 11.706,
+    "usage": {
+      "prompt_tokens": 2707,
+      "completion_tokens": 295,
+      "total_tokens": 3002,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3546683029747c0fb7d8328a26e5c83c8d7a7645a5fce92c8dc7f258b99710d6"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

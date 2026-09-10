@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01077",
+  "uid": "financebench_id_01077_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "5a2b664bebee8eddca8304ebbc50d1df8f4928cf7ae51a3a7223c987d27f8928",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "cc38b286e7d5bf65540cf0a8943ec8cdef335d9811ce8059ef34ea3fff449a1d",
+  "started_utc": "2026-09-09T18:09:20.821387+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but the information provided does not include details about major acquisitions by Best Buy in FY2023, FY2022, and FY2021.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot answer and asks for missing information, despite evidence containing FY2022 acquisitions of Current Health and Yardbird."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7d8bcde7a025310e7c9b518bb8cc97ff5f53b4fce346b019789aaa1f0853d479",
+    "latency_seconds": 6.401,
+    "usage": {
+      "prompt_tokens": 2051,
+      "completion_tokens": 109,
+      "total_tokens": 2160,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8eabf4324a7fa894ea7ef0eebf684bae5498b0178c444ecd197da728414b399c"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

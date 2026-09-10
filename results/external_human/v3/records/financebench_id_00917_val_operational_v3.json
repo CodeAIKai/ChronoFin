@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00917",
+  "uid": "financebench_id_00917_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "20713d5204f551b2760c304d3ae85fd97136e7a4c9a12aa3c101e600f8e0d020",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "0e2c2435a47db1d443193cda60f389aa54f85755bd6759d8c8e9ec216a3e81df",
+  "started_utc": "2026-09-09T18:08:51.047816+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "This document is the Annual Report on Form 10-K for the fiscal year ended December 31, 2022",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate only summarizes the 10-K document and does not answer what drove AMD operating margin change in FY22 or state that metric is not useful; evidence shows decrease in operating income (margin driver) was primarily amortization of intangible assets from Xilinx acquisition."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1c59f499ae9becfabfa9a3055f5342b18f6dcd7a87934cc69ce9904ff7c5654a",
+    "latency_seconds": 6.4,
+    "usage": {
+      "prompt_tokens": 1803,
+      "completion_tokens": 124,
+      "total_tokens": 1927,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d32a60e4fd469d0d41683cb50668f797890e08459c7f7e6d7f6f4e3a0932ced7"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

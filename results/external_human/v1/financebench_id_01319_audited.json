@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01319",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "11c0ec500abc6f431fa95108bf9a9cda49c0cacfb9b5d3d99d8d543a1f46a649",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "79291a05be6bcfde62784d811c469454f0ae96372240bb63042a409c9f9a7ff5",
+  "started_utc": "2026-09-09T17:33:55.540213+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly states no explicit restructuring costs line item in FY2022 income statement and gives 0, matching reference and evidence which shows no such line.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "AES Corporation identified correctly"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 (year ended Dec 31, 2022) referenced"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Quantity requested as 0 (no unit needed)"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answer is 0, matching reference"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence income statement has no restructuring costs line item"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "760e4514c9a1e3dd04c0e43bd354750825f20c92b777fc8b2e65770db9b4dd8c",
+    "latency_seconds": 3.003,
+    "usage": {
+      "prompt_tokens": 2127,
+      "completion_tokens": 191,
+      "total_tokens": 2318,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b1b871bb75d5c77adebdc3ab271410eec0d9b76f70c4c0a6aa4db7cac3e11a5f"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

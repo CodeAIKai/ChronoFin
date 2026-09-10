@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04080",
+  "uid": "financebench_id_04080_val",
+  "split": "new_response_validation",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b3f3b214bd8f35c16a17a7988d631fbdef654d84e1a4ef0ae15b9d473f68d0c4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "eb414eb961bdbb92b81cc69d0ed37d36647066cd81b4e38e758da7793ce3e3ed",
+  "started_utc": "2026-09-10T01:31:18.727154+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate provides substantive answer 3.46 using FY2021 COGS $24,576M and avg inventory ($6,854M+$7,367M)/2=$7,110M, matching evidence and reference rounded to two decimals."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "68d3a50bb20e40ccc6f0ae07e1b5504cf89d0983f3a6b98419234898855e2aaa",
+    "latency_seconds": 5.685,
+    "usage": {
+      "prompt_tokens": 2550,
+      "completion_tokens": 70,
+      "total_tokens": 2620,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a909e48ec630d8e28b62af6951fb17e797eb74f0250d5d2b6791d03f8ca96795"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

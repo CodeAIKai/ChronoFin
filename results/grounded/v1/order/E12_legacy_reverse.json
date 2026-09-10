@@ -1,0 +1,196 @@
+{
+  "case_id": "E12",
+  "method": "legacy",
+  "order": "reverse",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "answer_sha256": "9f1777283d7de9f4b6d3b90190e459fd1baaf59bd78dee0622863d9de1ebadb4",
+  "status": "ok",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选称2030年约945 TWh单点，与I02预测值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称2035年700–1700 TWh情景范围，与I04预测范围一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选推断区间差异来自采用率、能效与瓶颈，I04提及adoption,efficiency,bottlenecks",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称2024年415 TWh约全球1.5%，与I01估计一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选称至2030年约占全球用电增量一成，与I05预测一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选称电网约束或延迟20%项目，与I03预测一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "I02",
+          "present": true,
+          "quote": "IEA对2030年数据中心用电给出约945 TWh的单点展望值"
+        },
+        {
+          "id": "I04",
+          "present": true,
+          "quote": "IEA对2035年数据中心用电给出700–1700 TWh的情景范围而非单点"
+        },
+        {
+          "id": "I03",
+          "present": true,
+          "quote": "电网约束可能使约20%规划数据中心项目延迟"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "I04仅给范围无上下界卡片数值，K2因表达式不安全未执行，2035区间跨度2.429倍依据文字700和1700估算；AI部署障碍具体规模未披露"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选直接回答为何不单点并比较2030与2035，且未混淆年度区间"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "61d250b6e883a1932a0ab4fceaff0b9d984568a22020c0811df8568c4a280c01",
+      "latency_seconds": 6.069,
+      "usage": {
+        "prompt_tokens": 4825,
+        "completion_tokens": 564,
+        "total_tokens": 5389,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "a1d100fc92610fcbf16069e1b8f7326a422b235aedb582daf4db78a9ed82842c"
+    },
+    "input_sha256": "a9106b3439364fdafd779e71aad133435ccd19ed0a1b8c81ff2cffd15a70b442",
+    "answer_sha256": "9f1777283d7de9f4b6d3b90190e459fd1baaf59bd78dee0622863d9de1ebadb4",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "9f1777283d7de9f4b6d3b90190e459fd1baaf59bd78dee0622863d9de1ebadb4",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  }
+}

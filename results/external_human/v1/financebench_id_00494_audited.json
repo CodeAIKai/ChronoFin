@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00494",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "0646263c3b181bc5edd72515ea2b92720a28657d4667ff9334f17ba2311ede69",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ea848674af632a60b36fef9e0c8fb8c4ded6762c92d7fdb6f7e892be7bcb926d",
+  "started_utc": "2026-09-09T17:32:48.591208+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate returns unrelated deferred compensation plan text and does not answer the question about Boeing FY2023 production rate changes.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not address Boeing commercial aircraft production programs"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No mention of FY2023 production forecasts"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No production rate units discussed"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Substantive answer absent; text is about DCP/401(k) plan rules"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence on 787/777X/737 rate increases not referenced at all"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "964591be5e2505c6f80a2b7220156a7ead66fc8bbb0df32ba89d50cee3fbb48d",
+    "latency_seconds": 3.382,
+    "usage": {
+      "prompt_tokens": 3424,
+      "completion_tokens": 193,
+      "total_tokens": 3617,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "211162fa1e4cfed94200b68a525abc0afc83bcfde78a5637ee848fc6cc70f67f"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

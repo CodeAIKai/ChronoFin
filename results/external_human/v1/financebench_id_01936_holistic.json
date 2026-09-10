@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01936",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cfa4b9dfed26385d87209cd138f35b897c01617308e470de0f6ae1ae9f58f26c",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "cbb363933b3799f115719d8c7d10f399f33200b41365b622df5eaa75f7133d03",
+  "started_utc": "2026-09-09T18:01:56.954027+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.9,
+    "reason": "Reference states 87% of restructuring liability is employee liabilities; candidate gives breakdown (81 of 93 = ~87%) but misattributes nature primarily to Russia-Ukraine conflict and Bemis integration, while evidence shows Q2 FY2023 (Dec 31, 2022) activities primarily Russia-Ukraine and Bemis was substantially completed end FY2022, not 'continued integration'. Also question asks nature & purpose as of Q2 FY2023 close; candidate's narrative mixes explanation but overstates Bemis as continued. Substantive answer partially agrees but materially mischaracterizes purpose/nature."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6117f940ae49350e4645fd9e6124a391701ccf9991d7c828476defb8fc47835e",
+    "latency_seconds": 7.283,
+    "usage": {
+      "prompt_tokens": 1203,
+      "completion_tokens": 145,
+      "total_tokens": 1348,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "58b88855d701c01fc7c75266dcc9fb672007e8e357b46b45357f777519e64b26"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

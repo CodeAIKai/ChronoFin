@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_10130",
+  "company": "Corning",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c088e290dde814dc4a21de3d11d4b1fd3e9b97be5f4005f0efc9aa7fa06b428e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "677c28560255d699a3808ee00370ccc0ee6e8e71c9c833b53fbb60e4746eff67",
+  "started_utc": "2026-09-09T18:04:03.368391+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computed DPO as 50 days using correct inputs from evidence, but reference answer is 63.86. Candidate's math is wrong: 365*1381/7890 = 63.86, not 50. Reference matches evidence-based calculation.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Corning, correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2020 with FY2019 comparison used correctly"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Days (DPO) unit used, consistent with question"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says 50 days; correct per formula and evidence is 63.86 days"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "AP, COGS, inventory values cited match evidence; only arithmetic wrong"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d6ac23504ff6b9b1bbbb92cf753346885ed92f51d586aa2fce50ad6fe788d46a",
+    "latency_seconds": 10.789,
+    "usage": {
+      "prompt_tokens": 3654,
+      "completion_tokens": 229,
+      "total_tokens": 3883,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "01d0070ea01d17bde78130312c75de7cc605b10d9e4e8316e7f37be1aa094758"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

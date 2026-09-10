@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01491",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "44869399f99ee2abffd4e734a4f7c9fe179bbe00ac839351d7d96b3fe3d2c82a",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "29bbff87ad71b5cad4ab99351ca2da544a1137565f433b51bc83525e6598d10d",
+  "started_utc": "2026-09-09T17:49:32.026946+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers $13.2 billion cash proceeds from Kenvue separation as of Aug 30 2023, matching reference and evidence (secured $13.2B from Kenvue debt offering and IPO). Caveat about equity stake does not withhold answer.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "JnJ / Johnson & Johnson and Kenvue separation identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "As of August 30, 2023 per evidence release date"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Amount in billion US dollars as requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer $13.2 billion cash proceeds matches reference and evidence"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence states $13.2B cash proceeds from Kenvue debt offering and IPO"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f6214d2301ddb0d8ea92c53fbd08c5138f5d53ee066d647871bc0a28eb0b66f0",
+    "latency_seconds": 9.679,
+    "usage": {
+      "prompt_tokens": 1783,
+      "completion_tokens": 250,
+      "total_tokens": 2033,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "efe760450dc142b006635471f6f0d14ec998c88b71c5ae209a9c277b00a46ade"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

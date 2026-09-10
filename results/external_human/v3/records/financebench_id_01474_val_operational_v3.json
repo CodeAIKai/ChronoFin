@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01474",
+  "uid": "financebench_id_01474_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "2108523a29eb5a279ba79ec7f0efb8feabd2d0a333227599f56911172e57a0c5",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "a9d9696640d0e606c7121801cdbd7d5dbaba3a59d6a538fff582ca3aeb0b5908",
+  "started_utc": "2026-09-09T18:11:07.354274+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "PepsiCo raised its full year 2023 guidance primarily due to",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate attributes guidance raise to strong Q1 2023 performance and resilient geographies/categories, matching reference 'strong start to FY2023' and evidence quoting CEO on strong start and resilient categories/geographies leading to raised guidance."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fe50d073c12eb694dae07f9458898872c00223411944b8add1a7de1c86bd3eee",
+    "latency_seconds": 9.407,
+    "usage": {
+      "prompt_tokens": 1307,
+      "completion_tokens": 109,
+      "total_tokens": 1416,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "37139336803b7c977f824d086e4c75637513ce61ca685b75ec03fd867bf395d1"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01930",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "58bb93f401d6cee3b9a4ff3f0b1b002701fa01b421ca1a929e772b0bbdff6fc9",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "6516384b755e923d847300eee07c9e10ee22012da46db344f43f9bb43e721d2f",
+  "started_utc": "2026-09-09T17:50:10.482901+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate provides substantive answer of 0% real change (flat), matching reference and evidence showing comparable constant currency growth total is 0% after excluding FX, passthrough, and items affecting comparability."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5e4926d4d5e32f19d6b4c7eadd79cefef27d730c99db03d180977ae84247931a",
+    "latency_seconds": 5.556,
+    "usage": {
+      "prompt_tokens": 1325,
+      "completion_tokens": 62,
+      "total_tokens": 1387,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1be4818cbc887ee524d38ae938818b9c69e8cdc9ce80e62011d6a9e680a32d0d"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01930_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01930_holistic.json",
+  "parent_sha256": "2b2aa9dce8aa22cd633319c43bfe85aeaa9494c07a174b694e9b5fa88f7469f1"
+}

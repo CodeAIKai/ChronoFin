@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04854",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "972110aee862980b727953b3321e9f602c1e06738aafbfa1f969a02423df4dfe",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "23b6d1fda68762e21c35ef1a9879d6cb775a39dde605375a283fc91f378e1bfa",
+  "started_utc": "2026-09-09T18:02:45.531377+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate does not compute or state FCF; it declines to answer and redirects to external sources, giving no substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1400a6c78341fe6b22b06230bb3477eedb81a0f258fba5000777d60f33e2b31b",
+    "latency_seconds": 6.568,
+    "usage": {
+      "prompt_tokens": 3188,
+      "completion_tokens": 46,
+      "total_tokens": 3234,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5c53ce55f4aa9762660947404d9dbbdf76b582186eff4f27e1dfebf431b10206"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

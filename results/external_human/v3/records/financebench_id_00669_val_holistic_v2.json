@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00669",
+  "uid": "financebench_id_00669_val",
+  "split": "new_response_validation",
+  "company": "Johnson & Johnson",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "ae3063cac14af66a717a3b677cbdae8a27eeca107476b8823b265205b0e5a93b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "d90977fb592f23ff51b9388103ac7a6de6d4d26288158cfdc4fbb0178b21e961",
+  "started_utc": "2026-09-09T18:07:12.715326+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate claims FY2022 data is absent and withholds the requested drivers, despite evidence containing the FY2022 gross margin drivers. It does not provide the substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1ee6f3eda76f495c0a25c9e3c3e6cf7af9659d0ca5501e3572b8eb6448aa5775",
+    "latency_seconds": 6.488,
+    "usage": {
+      "prompt_tokens": 1088,
+      "completion_tokens": 56,
+      "total_tokens": 1144,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "259eff5521de5fde1976a4cd6002912c32b04329514cd4b229e73ff93ce6a6b3"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01028",
+  "uid": "financebench_id_01028_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "437a8c80d27e89554a8e8e24367af94e12d68bbe6e936688f880c2af341c01d1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "878de70eea037477193bc3555f92fa166ce4ae9d033b2a1a013103ff2f9e5566",
+  "started_utc": "2026-09-09T18:09:16.709647+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "American Express primarily operates in the following geographic regions as of 2022:\n\n1. United States (US)\n2. Europe, the Middle East, and Africa (EMEA)\n3. Asia Pacific, Australia, and New Zealand (APAC)\n4. Latin America, Canada, and the Caribbean (LACC)",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate lists US, EMEA, APAC, LACC for 2022, matching reference and evidence footnote (a) definitions; Other Unallocated correctly excluded as non-primary region."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "754260c8546f6ed3b323a7614e437e374dbdc15b2704d8b4c88c466a435e312d",
+    "latency_seconds": 6.127,
+    "usage": {
+      "prompt_tokens": 1421,
+      "completion_tokens": 154,
+      "total_tokens": 1575,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b07cc698a54a0b28cc4965ae76e147490857479ab5857fcf43bf30d4dffb23e6"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

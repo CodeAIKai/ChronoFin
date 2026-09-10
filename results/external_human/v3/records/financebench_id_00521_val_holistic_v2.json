@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00521",
+  "uid": "financebench_id_00521_val",
+  "split": "new_response_validation",
+  "company": "Ulta Beauty",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "077191b65483b55d3b27cbebd4149870bea48e54c609b70d9e92d4242c509ee0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "3728325adfa333b4d812ffbc4176704ef3116b2196ebea2e4068be05222f01c1",
+  "started_utc": "2026-09-09T18:06:19.443682+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers that Ulta Beauty made no major acquisitions in FY2023 and FY2022, matching reference and evidence showing blank 'Acquisitions, net of cash acquired' for those years."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0bf4663c75eaa0c07b86a8ec34142536f12959b25db34b491d15890ac94593f1",
+    "latency_seconds": 4.22,
+    "usage": {
+      "prompt_tokens": 1809,
+      "completion_tokens": 62,
+      "total_tokens": 1871,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "891e9d5ec05364c199f0512d075e6cf5ef86b69f91f68eae2d1a8891470123f1"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

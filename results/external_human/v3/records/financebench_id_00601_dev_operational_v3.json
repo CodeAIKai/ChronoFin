@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00601",
+  "uid": "financebench_id_00601_dev",
+  "split": "development",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4aceffecb5fa45f2c5b7949e517adae1d9792b768c2dd93ca351b76fab538ce6",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "c62da4021fe60e0765090f8199d9a15bbdf5a0f9f86807bceb2525515bdff819",
+  "started_utc": "2026-09-09T18:06:48.044190+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "The reduction in Selling, General and Administrative (SG&A) expenses as a percentage of net sales in FY2023 was primarily driven by the leverage of marketing expenses and incentive compensation due to higher sales.",
+    "content_correct": true,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Candidate states reduction driven by lower marketing expenses and leverage of incentive compensation due to higher sales, matching reference and evidence (Fiscal 2022 full year: 'lower marketing expenses and leverage of incentive compensation due to higher sales'). Reference notes FY2023 = company fiscal 2022, consistent with evidence doc."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a579bc936bb37ef58df26546ef5dc61087f90a8a40b142bacd2f71fdd0afdfbe",
+    "latency_seconds": 6.438,
+    "usage": {
+      "prompt_tokens": 2121,
+      "completion_tokens": 149,
+      "total_tokens": 2270,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a5585d62897e6af7dc2e5b06860bd1e60edd3ff3f2777dc25092f99d314fb237"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

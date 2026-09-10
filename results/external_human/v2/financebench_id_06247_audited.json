@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_06247",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "dfcb9233d597317dae8b69d0d3fd9af8c2c85f603fd680ca8b5bd2d981644f76",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "c9172a1f660d50bda103c26503eb685fbe8a0f6dc783166f518e3f2a9298e59f",
+  "started_utc": "2026-09-09T17:54:15.552010+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states the provided text is cut off and lacks necessary data, declining to compute DPO despite evidence containing all required figures (AP 2018: 46092, 2017: 41433; COGS 2018: 373396; Inventory 2018: 43783, 2017: 43046).",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Walmart, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 and FY2017 referenced in candidate's method description."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "DPO in days, candidate acknowledges unit implicitly."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer provided; claims data missing."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence actually supplies AP, COGS, inventory; candidate wrongly says unavailable."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "32fd5ed7a9cdb39004e96c016e0581611736ca459f1483d64b92a65aca76e860",
+    "latency_seconds": 10.07,
+    "usage": {
+      "prompt_tokens": 3414,
+      "completion_tokens": 256,
+      "total_tokens": 3670,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b2b7f25795900e1cb6693997fdcc9d3585b05c700cc2f50f03d6c992f8bcc550"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

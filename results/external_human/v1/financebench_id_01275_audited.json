@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01275",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "824e9697cd932917c607594f01db9c5779ec049d781fc8fd9a515574a61a3d04",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "0acbf2e39d354cd24e79d01fad6845db210eac85ea05f71adb56763c6eac8dd5",
+  "started_utc": "2026-09-09T17:33:51.833576+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate refused claiming no FY2023 data, but evidence shows FY2023 (Jan 28, 2023) cash flows: operating +1824M, investing -962M, financing -1806M; operating brought in most, matching reference. Candidate's refusal is factually wrong given evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Best Buy, correctly identified in question and evidence."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2023 per evidence is fiscal year ended Jan 28, 2023; candidate claims no data but data exists."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Reference uses $1.8bn; evidence in $ millions (1824M = 1.824bn), consistent."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave refusal/no answer; correct answer is operating activities brought most cash."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence directly provides FY2023 cash flow totals, contradicting candidate's claim of missing data."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4de1d16c72b07afc1650b42223ce9c26e98b76ed2305436eaa800402f5852dec",
+    "latency_seconds": 3.705,
+    "usage": {
+      "prompt_tokens": 3029,
+      "completion_tokens": 275,
+      "total_tokens": 3304,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d97716a6da88388d986ce79c748a022ec0e972e01c90c2818b8d474144652603"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

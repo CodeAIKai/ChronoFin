@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03856",
+  "uid": "financebench_id_03856_val",
+  "split": "new_response_validation",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "f35f7dae38f1bb6d0865ecd509b642b1375c1824fa6d45889433cf505385bfd7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "ebbce418e0282982c9187bcdf38bd640bdce3bf0331685d43febbd641e3056a8",
+  "started_utc": "2026-09-10T01:31:07.221055+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Rounded to two decimal places, the FY2017 operating cash flow ratio for Adobe is 0.83.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate used CFO $2,912,853k and total current liabilities $3,527,457k from evidence, computed 2,912,853/3,527,457=0.8257 rounded to 0.83 matching reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3ba78ee3c60a94f4544fa71bfe6ea046acb64f2f51ceeb0b3988b4b25a523deb",
+    "latency_seconds": 8.749,
+    "usage": {
+      "prompt_tokens": 4213,
+      "completion_tokens": 122,
+      "total_tokens": 4335,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4ef9c31b5d540c9d0bdbcdfe71c481bc9cb51999c4a03bc2efc959a648314c8d"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

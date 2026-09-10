@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04854",
+  "uid": "financebench_id_04854_dev",
+  "split": "development",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "972110aee862980b727953b3321e9f602c1e06738aafbfa1f969a02423df4dfe",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "bb0081dc312350228853641ac1c93201b0a222aeba8088a1e3df420b27d31d10",
+  "started_utc": "2026-09-10T01:32:49.643614+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide the current or most recent filings for General Mills or any other company.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and asks user to consult external sources instead of computing FCF from provided evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a1a8785bfd665dc2256842a21d4d5d4286ba622a3b1d74b228f6848d38f3cf8a",
+    "latency_seconds": 8.607,
+    "usage": {
+      "prompt_tokens": 3390,
+      "completion_tokens": 90,
+      "total_tokens": 3480,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e3d05aeb6d4c72868de14a2d74cbc486d2c334b98cd7edfa951e9dd3064c7a35"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

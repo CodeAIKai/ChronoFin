@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_03718",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "f9d8ad68929f070c74d5abb881facdc9a072381da0debe6260edc7b13de30a78",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "32564dd96fecdb53bf09f4b38a63f6948e1044f3d4f9c0c22ed1446d45fe8b55",
+  "started_utc": "2026-09-09T17:52:03.797853+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate states CAGR is 0.5% using FY2020 $65.4B and FY2022 $66.0B, but evidence shows total net sales of $65,398M (65.398B) in 2020 and $65,984M (65.984B) in 2022. CAGR = (65984/65398)^(1/2)-1 ≈ 0.00446 = 0.4% rounded, and reference is 0.004 (0.4%). Candidate's figures and result (0.5%) are wrong."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c790b7ba665f380703b64d80ac5963f293ce3d99e03ee5dc4cdf58bb509f90b9",
+    "latency_seconds": 7.529,
+    "usage": {
+      "prompt_tokens": 1796,
+      "completion_tokens": 144,
+      "total_tokens": 1940,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e53c2530281225589ff1da213ba02ab20e1b1a82ace482096af2b55d9bde226d"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_03718_dev",
+  "reused_from": "results/external_human/v2/financebench_id_03718_holistic.json",
+  "parent_sha256": "85d42aba5408718e83df60aee845616edce05de0b36a017e650da9a2ed3acb6b"
+}

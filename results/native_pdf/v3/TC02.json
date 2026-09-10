@@ -1,0 +1,123 @@
+{
+  "status": "error",
+  "mode": "live_pdf",
+  "stage": "generate",
+  "record": {
+    "source_document": {
+      "id": "pdf_7ad084b68b67",
+      "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+      "pages": 9,
+      "bytes": 649814,
+      "metadata_identity": "pinned_official",
+      "title": "腾讯二零二五年第二季度业绩",
+      "entity": "腾讯",
+      "published_at": "2025-08-13",
+      "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 9,
+      "selected_ids": [],
+      "selected_pages": [],
+      "selection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "pipeline": "native_pdf_v3",
+    "extraction_raw": null,
+    "extraction_traces": [],
+    "extraction_audit": {
+      "facts_proposed": 0,
+      "facts_accepted": 0,
+      "rejected": [],
+      "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "quote_verification": "whitespace-normalized exact contiguous source match",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    },
+    "version": "native-generation-3.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "有人用腾讯 2025Q2 新闻稿证明 2025年6月30日已经公开三角洲行动7月DAU突破2000万。核查披露时点。",
+      "as_of": "2025-06-30"
+    },
+    "evidence": [],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "本次查询所提供的资料为空，且截至 as_of 2025-06-30 未附任何证据卡片。因此无法核查所谓腾讯2025Q2新闻稿是否披露、以及三角洲行动在2025年7月的DAU数据。由于资料不可信且不可编造，不能确认2025年6月30日已公开7月DAU突破2000万的说法。需补取官方新闻稿与披露日期方可判断。",
+      "claims": [],
+      "calculations": [],
+      "limitations": [
+        "无资料，无法判断腾讯2025Q2新闻稿存在性与内容",
+        "无法确认三角洲行动2025年7月DAU及披露时点",
+        "as_of 2025-06-30 边界内无任何数值或事实卡片"
+      ],
+      "follow_up": [
+        {
+          "action": "获取腾讯2025年第二季度官方新闻稿原文及发布日期",
+          "reason": "确认是否在2025-06-30前公开7月DAU数据，以验证用户断言",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "本次查询所提供的资料为空，且截至 as_of 2025-06-30 未附任何证据卡片。因此无法核查所谓腾讯2025Q2新闻稿是否披露、以及三角洲行动在2025年7月的DAU数据。由于资料不可信且不可编造，不能确认2025年6月30日已公开7月DAU突破2000万的说法。需补取官方新闻稿与披露日期方可判断。",
+      "claims": [],
+      "calculations": [],
+      "limitations": [
+        "无资料，无法判断腾讯2025Q2新闻稿存在性与内容",
+        "无法确认三角洲行动2025年7月DAU及披露时点",
+        "as_of 2025-06-30 边界内无任何数值或事实卡片"
+      ],
+      "follow_up": [
+        {
+          "action": "获取腾讯2025年第二季度官方新闻稿原文及发布日期",
+          "reason": "确认是否在2025-06-30前公开7月DAU数据，以验证用户断言",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "b9eae4ee4dd357475db08d16201b248f7b01d7942a5258ebc85d3f10419d6381",
+        "latency_seconds": 3.481,
+        "usage": {
+          "prompt_tokens": 773,
+          "completion_tokens": 227,
+          "total_tokens": 1000,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "548186494c44269734eb4f47c4a1d2e891fd51efb961b4ba35c53f7357335dc8"
+      }
+    ],
+    "input_sha256": "75b36157d6f1e8c1b83a131c9a42304338e42a5680764db62f7ec626c1b290a9",
+    "numeric_registry": {}
+  },
+  "judge_attempts": [],
+  "sources": [
+    {
+      "id": "pdf_7ad084b68b67",
+      "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+      "pages": 9,
+      "bytes": 649814,
+      "metadata_identity": "pinned_official",
+      "title": "腾讯二零二五年第二季度业绩",
+      "entity": "腾讯",
+      "published_at": "2025-08-13",
+      "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+    }
+  ],
+  "error": "claims length 1..30",
+  "id": "TC02",
+  "split": "new_source",
+  "protocol_sha256": "40e7a87c0823f7251bd51522f3e0b1d5de83af7a2c018228b346dbdf72dd326b",
+  "finished_utc": "2026-09-10T01:37:02.830314+00:00",
+  "wall_seconds": 4.006
+}

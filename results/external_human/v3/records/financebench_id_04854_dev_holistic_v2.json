@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_04854",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "972110aee862980b727953b3321e9f602c1e06738aafbfa1f969a02423df4dfe",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "bb0081dc312350228853641ac1c93201b0a222aeba8088a1e3df420b27d31d10",
+  "started_utc": "2026-09-09T17:53:52.820922+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds the requested FY2020 FCF figure and only explains how to obtain it from external sources, providing no substantive answer despite evidence showing operating cash 3676.2 and capex 460.8 yielding FCF 3215.4."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "664013821316c43d82ad9a4bd0ea883c9aa57d79c6d88fe3d38bdf5d8211a144",
+    "latency_seconds": 6.559,
+    "usage": {
+      "prompt_tokens": 3255,
+      "completion_tokens": 74,
+      "total_tokens": 3329,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b6f0efd0deb3994fcadb4564c1380ac152da2a6074930a0db5db91b0d8659adb"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_04854_dev",
+  "reused_from": "results/external_human/v2/financebench_id_04854_holistic.json",
+  "parent_sha256": "c57ddd769001a009cd85e85822e98e0fb189b29318d09d0b02a7e8e51a171668"
+}

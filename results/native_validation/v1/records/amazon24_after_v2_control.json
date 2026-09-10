@@ -1,0 +1,1767 @@
+{
+  "id": "amazon24_after_v2_control",
+  "case_id": "amazon24_after",
+  "base_version": "v2",
+  "kind": "v2_control",
+  "protocol_sha256": "728d14cae75d1ade15dd159d4cb475786f2ef4fb754ed4bfcc6aeb3960ee27cc",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "用 Amazon FY2024 财报解释 AWS 对集团利润的重要性，并评估利润改善是否同步转化为现金。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "F1",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "FY2024 AWS分部营业利润39.8 billion，远高于2023年的24.6 billion，是集团利润重要来源",
+        "quote": "AWS segment operating income was $39.8 billion, compared with operating income of $24.6 billion in 2023.",
+        "source_chunk_id": "P0435F36D1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3051",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$39.8 billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "集团FY2024净利润59.2 billion，AWS利润是重要驱动",
+        "quote": "Net income increased to $59.2 billion in 2024, or $5.53 per diluted share, compared with $30.4 billion",
+        "source_chunk_id": "P0435F36D1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3051",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$59.2 billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "AWS Q4 2024营业利润10,632 million，同比增48%，利润改善明显",
+        "quote": "Operating income                                                    $  6,976   $  7,167   $  9,421   $  9,334   $ 10,447   $ 10,632         48 %",
+        "source_chunk_id": "P0435F36D11B1",
+        "page": 11,
+        "locator": "PDF p11, chars 0–4109",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$ 10,632",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "AWS FY2024营业利润39,834 million，为国际+北美之外最大利润贡献",
+        "quote": "Operating income                                  $    7,167    $   10,632    $   24,631    $   39,834",
+        "source_chunk_id": "P0435F36D8B1",
+        "page": 8,
+        "locator": "PDF p8, chars 0–3240",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$   39,834",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "集团FY2024总营业利润68.6 billion，AWS占其中39.8 billion，比重显著",
+        "quote": "Operating income increased to $68.6 billion in 2024, compared with $36.9 billion in 2023.",
+        "source_chunk_id": "P0435F36D1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3051",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$68.6 billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "AWS TTM营业利润率2024年达37.0%，远高于集团整体水平",
+        "quote": "Operating margin -- TTM % of AWS net sales                                      25.8 %     27.1 %     30.6 %     33.4 %     35.3 %     37.0 %",
+        "source_chunk_id": "P0435F36D11B2",
+        "page": 11,
+        "locator": "PDF p11, chars 3759–4728",
+        "value": null,
+        "unit": "%",
+        "raw_number": "37.0 %",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "FY2024购置不动产和设备现金流出82,999 million，是投资活动主要去向",
+        "quote": "Purchases of property and equipment                                                                      (14,588)       (27,834)       (52,729)       (82,999)",
+        "source_chunk_id": "P0435F36D5B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–4102",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "(82,999)",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "TTM资本支出净额增至77,658 million（同比61%），拖累自由现金流转化",
+        "quote": "Purchases of property and equipment, net of proceeds from sales and incentives -- TTM            $   50,220   $   48,133   $   48,998   $   54,979   $   64,959   $   77,658         61 %",
+        "source_chunk_id": "P0435F36D10B1",
+        "page": 10,
+        "locator": "PDF p10, chars 0–4184",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$   77,658",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "AWS净销售占集团比重从2023年16%升至2024年17%",
+        "quote": "AWS                                               14           15           16           17",
+        "source_chunk_id": "P0435F36D8B1",
+        "page": 8,
+        "locator": "PDF p8, chars 0–3240",
+        "value": null,
+        "unit": "%",
+        "raw_number": "17",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "按补充表TTM自由现金流2024为38,219 million，同比仅增4%",
+        "quote": "Free cash flow -- TTM (3)                                      $   21,434   $   36,813   $   50,149   $   52,973   $   47,747   $   38,219          4 %",
+        "source_chunk_id": "P0435F36D10B1",
+        "page": 10,
+        "locator": "PDF p10, chars 0–4184",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$   38,219",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "AWS FY2024净销售107,556 million（约107.6 billion），同比增长19%",
+        "quote": "AWS\n    Net sales                                         $   24,204    $   28,786    $   90,757    $  107,556",
+        "source_chunk_id": "P0435F36D8B1",
+        "page": 8,
+        "locator": "PDF p8, chars 0–3240",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$  107,556",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "现金流量表显示TTM经营现金流115,877 million，与正文一致",
+        "quote": "Net cash provided by (used in) operating activities                                           42,465        45,636        84,946       115,877",
+        "source_chunk_id": "P0435F36D5B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–4102",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "115,877",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "Amazon FY2024财报显示AWS营业利润39,834百万美元，占集团总营业利润68.6十亿美元中的显著部分，且TTM营业利润率达37.0%，净销售占比升至17%，是集团净利润59.2十亿美元的核心驱动。但利润改善未同步转化为自由现金流：TTM自由现金流仅38,219百万美元同比增4%，而TTM资本支出净额增至77,658百万美元（同比61%），购置不动产设备现金流出82,999百万美元，重资产投入拖累现金转化效率。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024营业利润39,834百万美元，为国际和北美之外最大利润贡献",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F13",
+              "value": 39834,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "集团FY2024总营业利润68.6十亿美元，AWS占其中39.8十亿美元，比重显著",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 68.6,
+              "unit": "USD billion"
+            },
+            {
+              "source_id": "F1",
+              "value": 39.8,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AWS TTM营业利润率2024年达37.0%，远高于集团整体水平",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "AWS净销售占集团比重从2023年16%升至2024年17%，FY2024净销售107,556百万美元",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F4",
+            "F3"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 17,
+              "unit": "%"
+            },
+            {
+              "source_id": "F3",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "集团FY2024净利润59.2十亿美元，AWS利润是重要驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F14"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 59.2,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "TTM自由现金流2024为38,219百万美元，同比仅增4%，利润改善未同步转化为现金",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F8"
+          ],
+          "numbers": [
+            {
+              "source_id": "F8",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "TTM资本支出净额增至77,658百万美元（同比61%），购置不动产设备现金流出82,999百万美元，拖累自由现金流转化",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F9",
+            "F11"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 77658,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F11",
+              "value": 82999,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C8",
+          "text": "TTM经营现金流115,877百万美元，为自由现金流提供基础但被投资流出大幅抵消",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F10"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 115877,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "F13/(F2*1000)*100",
+          "value": 58.066,
+          "unit": "%",
+          "evidence_ids": [
+            "F13",
+            "F2"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "F8/F10*100",
+          "value": 32.985,
+          "unit": "%",
+          "evidence_ids": [
+            "F8",
+            "F10"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "F9/F10*100",
+          "value": 67.015,
+          "unit": "%",
+          "evidence_ids": [
+            "F9",
+            "F10"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未披露AWS分部独立自由现金流或资本支出，无法隔离AWS自身现金转化效率",
+        "未提供集团按分部经营现金流拆分，AWS现金贡献无法直接量化"
+      ],
+      "follow_up": [
+        {
+          "action": "核查FY2024 10-K中AWS分部现金流量及资本支出明细",
+          "reason": "可判断AWS利润改善是否在其分部内转化为现金，还是集团层面被其他业务投资抵消",
+          "evidence_ids": [
+            "F9",
+            "F13"
+          ]
+        },
+        {
+          "action": "跟踪25Q1资本支出指引及自由现金流同比变化",
+          "reason": "确认重资产投入趋势是否延续并进一步压制现金转化",
+          "evidence_ids": [
+            "F8",
+            "F11"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "Amazon FY2024财报显示AWS营业利润39,834百万美元，占集团总营业利润68.6十亿美元的58.066%，TTM营业利润率37.0%，净销售占比升至17%，是集团净利润59.2十亿美元的核心驱动。但利润改善未同步转化为集团现金：TTM经营现金流115,877百万美元中，自由现金流仅38,219百万美元（占32.985%），TTM资本支出净额77,658百万美元占经营现金流67.015%，购置不动产设备流出82,999百万美元，重资产投入拖累现金转化。资料未披露AWS独立现金流，无法隔离其自身转化效率。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024营业利润39,834百万美元，为国际和北美之外最大利润贡献",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F13",
+              "value": 39834,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "集团FY2024总营业利润68.6十亿美元，AWS占其中39.8十亿美元，比重显著",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 68.6,
+              "unit": "USD billion"
+            },
+            {
+              "source_id": "F1",
+              "value": 39.8,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AWS TTM营业利润率2024年达37.0%，远高于集团整体水平",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "AWS净销售占集团比重从2023年16%升至2024年17%，FY2024净销售107,556百万美元",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F4",
+            "F3"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 17,
+              "unit": "%"
+            },
+            {
+              "source_id": "F3",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "集团FY2024净利润59.2十亿美元，AWS利润是重要驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F14"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 59.2,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "TTM自由现金流2024为38,219百万美元，同比仅增4%，利润改善未同步转化为现金",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F8"
+          ],
+          "numbers": [
+            {
+              "source_id": "F8",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "TTM资本支出净额增至77,658百万美元（同比61%），购置不动产设备现金流出82,999百万美元，拖累自由现金流转化",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F9",
+            "F11"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 77658,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F11",
+              "value": 82999,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C8",
+          "text": "TTM经营现金流115,877百万美元，为自由现金流提供基础但被投资流出大幅抵消",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F10"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 115877,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "F13/(F2*1000)*100",
+          "value": 58.066,
+          "unit": "%",
+          "evidence_ids": [
+            "F13",
+            "F2"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "F8/F10*100",
+          "value": 32.985,
+          "unit": "%",
+          "evidence_ids": [
+            "F8",
+            "F10"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "F9/F10*100",
+          "value": 67.015,
+          "unit": "%",
+          "evidence_ids": [
+            "F9",
+            "F10"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未披露AWS分部独立自由现金流或资本支出，无法隔离AWS自身现金转化效率",
+        "未提供集团按分部经营现金流拆分，AWS现金贡献无法直接量化"
+      ],
+      "follow_up": [
+        {
+          "action": "核查FY2024 10-K中AWS分部现金流量及资本支出明细",
+          "reason": "可判断AWS利润改善是否在其分部内转化为现金，还是集团层面被其他业务投资抵消",
+          "evidence_ids": [
+            "F9",
+            "F13"
+          ]
+        },
+        {
+          "action": "跟踪25Q1资本支出指引及自由现金流同比变化",
+          "reason": "确认重资产投入趋势是否延续并进一步压制现金转化",
+          "evidence_ids": [
+            "F8",
+            "F11"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "42be32facfece701e1629866ef98014700696ab09250d20cefdcb35071bbe92a",
+        "latency_seconds": 13.37,
+        "usage": {
+          "prompt_tokens": 2768,
+          "completion_tokens": 1155,
+          "total_tokens": 3923,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "bf0d3bd71a545cd4c34634519837f81abdaf102c75b0c223d1409ba6b490efda"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "54831c17fc04b3b2f4a6676f8c48eee1c7b5867e1eca452190e5bf997aa87aca",
+        "latency_seconds": 14.655,
+        "usage": {
+          "prompt_tokens": 4052,
+          "completion_tokens": 1177,
+          "total_tokens": 5229,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "f9b1df7eb0a4b68d56c962cf340f7bb46caa428f7a36befcaa4aec26466f9800"
+      }
+    ],
+    "input_sha256": "350b1dc09d4f611677600db17060562a906a0140d22e621a5297244c9bdcc37a",
+    "calculator_results": [
+      {
+        "id": "K1",
+        "status": "invalid",
+        "reason": "UnsafeExpression"
+      },
+      {
+        "id": "K2",
+        "status": "invalid",
+        "reason": "UnsafeExpression"
+      },
+      {
+        "id": "K3",
+        "status": "invalid",
+        "reason": "UnsafeExpression"
+      }
+    ],
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "Amazon FY2024财报显示AWS营业利润39,834百万美元，占集团总营业利润68.6十亿美元的58.066%，TTM营业利润率37.0%，净销售占比升至17%，是集团净利润59.2十亿美元的核心驱动。但利润改善未同步转化为集团现金：TTM经营现金流115,877百万美元中，自由现金流仅38,219百万美元（占32.985%），TTM资本支出净额77,658百万美元占经营现金流67.015%，购置不动产设备流出82,999百万美元，重资产投入拖累现金转化。资料未披露AWS独立现金流，无法隔离其自身转化效率。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024营业利润39,834百万美元，为国际和北美之外最大利润贡献",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F13",
+              "value": 39834,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "集团FY2024总营业利润68.6十亿美元，AWS占其中39.8十亿美元，比重显著",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 68.6,
+              "unit": "USD billion"
+            },
+            {
+              "source_id": "F1",
+              "value": 39.8,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AWS TTM营业利润率2024年达37.0%，远高于集团整体水平",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "AWS净销售占集团比重从2023年16%升至2024年17%，FY2024净销售107,556百万美元",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F4",
+            "F3"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 17,
+              "unit": "%"
+            },
+            {
+              "source_id": "F3",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "集团FY2024净利润59.2十亿美元，AWS利润是重要驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F14"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 59.2,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "TTM自由现金流2024为38,219百万美元，同比仅增4%，利润改善未同步转化为现金",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F8"
+          ],
+          "numbers": [
+            {
+              "source_id": "F8",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "TTM资本支出净额增至77,658百万美元（同比61%），购置不动产设备现金流出82,999百万美元，拖累自由现金流转化",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F9",
+            "F11"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 77658,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F11",
+              "value": 82999,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C8",
+          "text": "TTM经营现金流115,877百万美元，为自由现金流提供基础但被投资流出大幅抵消",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F10"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 115877,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "F13/(F2*1000)*100",
+          "value": 58.066,
+          "unit": "%",
+          "evidence_ids": [
+            "F13",
+            "F2"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "F8/F10*100",
+          "value": 32.985,
+          "unit": "%",
+          "evidence_ids": [
+            "F8",
+            "F10"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "F9/F10*100",
+          "value": 67.015,
+          "unit": "%",
+          "evidence_ids": [
+            "F9",
+            "F10"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未披露AWS分部独立自由现金流或资本支出，无法隔离AWS自身现金转化效率",
+        "未提供集团按分部经营现金流拆分，AWS现金贡献无法直接量化"
+      ],
+      "follow_up": [
+        {
+          "action": "核查FY2024 10-K中AWS分部现金流量及资本支出明细",
+          "reason": "可判断AWS利润改善是否在其分部内转化为现金，还是集团层面被其他业务投资抵消",
+          "evidence_ids": [
+            "F9",
+            "F13"
+          ]
+        },
+        {
+          "action": "跟踪25Q1资本支出指引及自由现金流同比变化",
+          "reason": "确认重资产投入趋势是否延续并进一步压制现金转化",
+          "evidence_ids": [
+            "F8",
+            "F11"
+          ]
+        }
+      ]
+    },
+    "answer_sha256": "0ec6619108b84d12387ad96961f3ab971624334e91a091aee876845dcebd2937",
+    "source_document": {
+      "id": "pdf_0435f36d49cc",
+      "sha256": "0435f36d49cc40373c1ec7d6a8aa77abf83f90f7774b477d69f28b3859e7fe72",
+      "pages": 13,
+      "bytes": 358812,
+      "metadata_identity": "pinned_official",
+      "title": "Amazon Q4 and FY2024 earnings release",
+      "entity": "Amazon",
+      "published_at": "2025-02-06",
+      "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2024/q4/AMZN-Q4-2024-Earnings-Release.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 19,
+      "selected_ids": [
+        "P0435F36D1B1",
+        "P0435F36D2B1",
+        "P0435F36D3B1",
+        "P0435F36D5B1",
+        "P0435F36D6B1",
+        "P0435F36D7B1",
+        "P0435F36D8B1",
+        "P0435F36D10B1",
+        "P0435F36D10B2",
+        "P0435F36D11B1",
+        "P0435F36D11B2",
+        "P0435F36D13B1"
+      ],
+      "selected_pages": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13
+      ],
+      "selection_sha256": "9eaa1563c742fc1714e514ac5a3709eff48f81e1a90a1360c0e4bfd7f8a10e44"
+    },
+    "pipeline": "native_pdf_v2",
+    "extraction_raw": {
+      "facts": [
+        {
+          "chunk_id": "P0435F36D1B1",
+          "quote": "AWS segment operating income was $39.8 billion, compared with operating income of $24.6 billion in 2023.",
+          "text": "FY2024 AWS分部营业利润39.8 billion，远高于2023年的24.6 billion，是集团利润重要来源",
+          "value": null,
+          "raw_number": "$39.8 billion",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D1B1",
+          "quote": "Operating income increased to $68.6 billion in 2024, compared with $36.9 billion in 2023.",
+          "text": "集团FY2024总营业利润68.6 billion，AWS占其中39.8 billion，比重显著",
+          "value": null,
+          "raw_number": "$68.6 billion",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D8B1",
+          "quote": "AWS\n    Net sales                                         $   24,204    $   28,786    $   90,757    $  107,556",
+          "text": "AWS FY2024净销售107,556 million（约107.6 billion），同比增长19%",
+          "value": null,
+          "raw_number": "$  107,556",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D8B1",
+          "quote": "AWS                                               14           15           16           17",
+          "text": "AWS净销售占集团比重从2023年16%升至2024年17%",
+          "value": null,
+          "raw_number": "17",
+          "unit": "%",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D11B2",
+          "quote": "Operating margin -- TTM % of AWS net sales                                      25.8 %     27.1 %     30.6 %     33.4 %     35.3 %     37.0 %",
+          "text": "AWS TTM营业利润率2024年达37.0%，远高于集团整体水平",
+          "value": null,
+          "raw_number": "37.0 %",
+          "unit": "%",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D1B1",
+          "quote": "Operating cash flow increased 36% to $115.9 billion for the trailing twelve months, compared with $84.9 billion",
+          "text": "TTM经营现金流增至115.9 billion，同比增36%，利润改善伴随现金流入增加",
+          "value": null,
+          "raw_number": "$115.9 billion",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D1B1",
+          "quote": "Free cash flow increased to $38.2 billion for the trailing twelve months, compared with $36.8 billion",
+          "text": "TTM自由现金流仅从36.8 billion微增至38.2 billion，增幅远小于经营现金流与利润",
+          "value": null,
+          "raw_number": "$38.2 billion",
+          "unit": "USD billion",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D10B1",
+          "quote": "Free cash flow -- TTM (3)                                      $   21,434   $   36,813   $   50,149   $   52,973   $   47,747   $   38,219          4 %",
+          "text": "按补充表TTM自由现金流2024为38,219 million，同比仅增4%",
+          "value": null,
+          "raw_number": "$   38,219",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D10B1",
+          "quote": "Purchases of property and equipment, net of proceeds from sales and incentives -- TTM            $   50,220   $   48,133   $   48,998   $   54,979   $   64,959   $   77,658         61 %",
+          "text": "TTM资本支出净额增至77,658 million（同比61%），拖累自由现金流转化",
+          "value": null,
+          "raw_number": "$   77,658",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D5B1",
+          "quote": "Net cash provided by (used in) operating activities                                           42,465        45,636        84,946       115,877",
+          "text": "现金流量表显示TTM经营现金流115,877 million，与正文一致",
+          "value": null,
+          "raw_number": "115,877",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D5B1",
+          "quote": "Purchases of property and equipment                                                                      (14,588)       (27,834)       (52,729)       (82,999)",
+          "text": "FY2024购置不动产和设备现金流出82,999 million，是投资活动主要去向",
+          "value": null,
+          "raw_number": "(82,999)",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D11B1",
+          "quote": "Operating income                                                    $  6,976   $  7,167   $  9,421   $  9,334   $ 10,447   $ 10,632         48 %",
+          "text": "AWS Q4 2024营业利润10,632 million，同比增48%，利润改善明显",
+          "value": null,
+          "raw_number": "$ 10,632",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D8B1",
+          "quote": "Operating income                                  $    7,167    $   10,632    $   24,631    $   39,834",
+          "text": "AWS FY2024营业利润39,834 million，为国际+北美之外最大利润贡献",
+          "value": null,
+          "raw_number": "$   39,834",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P0435F36D1B1",
+          "quote": "Net income increased to $59.2 billion in 2024, or $5.53 per diluted share, compared with $30.4 billion",
+          "text": "集团FY2024净利润59.2 billion，AWS利润是重要驱动",
+          "value": null,
+          "raw_number": "$59.2 billion",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        }
+      ]
+    },
+    "extraction_traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "e1c1b44ed8f520b50a0fe882872b2c56e9ba1641a947f4075c82de20ded33609",
+        "latency_seconds": 19.014,
+        "usage": {
+          "prompt_tokens": 10032,
+          "completion_tokens": 1535,
+          "total_tokens": 11567,
+          "prompt_tokens_details": {
+            "cached_tokens": 9920
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "b37ab5eec668480fca3e06977de76ccc016238a7e321d703b324c45b7d7daca6"
+      }
+    ],
+    "extraction_audit": {
+      "facts_proposed": 14,
+      "facts_accepted": 12,
+      "rejected": [
+        {
+          "index": 6,
+          "reason": "引用不在原文连续片段中"
+        },
+        {
+          "index": 7,
+          "reason": "引用不在原文连续片段中"
+        }
+      ],
+      "raw_response_sha256": "dcb1a6deb4de75ef175c8a124158dd4b2a624f6be0e27de2a3d8b63fa08e95a4",
+      "quote_verification": "whitespace-normalized exact contiguous source match",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "parent_record_sha256": "4ef1e791ecb02886605777b80cc13ef190e7dde7dcce311dda67972fbd1c5c07",
+  "base_score": 35,
+  "raw_source_sha256": "e3daf504dba3da75204fc3d22c2975dcc513ed6d20039cb52d2eebcee9715187",
+  "replay_material": {
+    "audit_cards": [
+      {
+        "id": "F1",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "AWS segment operating income was $39.8 billion, compared with operating income of $24.6 billion in 2023.",
+        "quote": "AWS segment operating income was $39.8 billion, compared with operating income of $24.6 billion in 2023.",
+        "source_chunk_id": "P0435F36D1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3051",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$39.8 billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "Operating income increased to $68.6 billion in 2024, compared with $36.9 billion in 2023.",
+        "quote": "Operating income increased to $68.6 billion in 2024, compared with $36.9 billion in 2023.",
+        "source_chunk_id": "P0435F36D1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3051",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$68.6 billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "AWS\n    Net sales                                         $   24,204    $   28,786    $   90,757    $  107,556",
+        "quote": "AWS\n    Net sales                                         $   24,204    $   28,786    $   90,757    $  107,556",
+        "source_chunk_id": "P0435F36D8B1",
+        "page": 8,
+        "locator": "PDF p8, chars 0–3240",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$  107,556",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "AWS                                               14           15           16           17",
+        "quote": "AWS                                               14           15           16           17",
+        "source_chunk_id": "P0435F36D8B1",
+        "page": 8,
+        "locator": "PDF p8, chars 0–3240",
+        "value": null,
+        "unit": "%",
+        "raw_number": "17",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "Operating margin -- TTM % of AWS net sales                                      25.8 %     27.1 %     30.6 %     33.4 %     35.3 %     37.0 %",
+        "quote": "Operating margin -- TTM % of AWS net sales                                      25.8 %     27.1 %     30.6 %     33.4 %     35.3 %     37.0 %",
+        "source_chunk_id": "P0435F36D11B2",
+        "page": 11,
+        "locator": "PDF p11, chars 3759–4728",
+        "value": null,
+        "unit": "%",
+        "raw_number": "37.0 %",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "Free cash flow -- TTM (3)                                      $   21,434   $   36,813   $   50,149   $   52,973   $   47,747   $   38,219          4 %",
+        "quote": "Free cash flow -- TTM (3)                                      $   21,434   $   36,813   $   50,149   $   52,973   $   47,747   $   38,219          4 %",
+        "source_chunk_id": "P0435F36D10B1",
+        "page": 10,
+        "locator": "PDF p10, chars 0–4184",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$   38,219",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "Purchases of property and equipment, net of proceeds from sales and incentives -- TTM            $   50,220   $   48,133   $   48,998   $   54,979   $   64,959   $   77,658         61 %",
+        "quote": "Purchases of property and equipment, net of proceeds from sales and incentives -- TTM            $   50,220   $   48,133   $   48,998   $   54,979   $   64,959   $   77,658         61 %",
+        "source_chunk_id": "P0435F36D10B1",
+        "page": 10,
+        "locator": "PDF p10, chars 0–4184",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$   77,658",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "Net cash provided by (used in) operating activities                                           42,465        45,636        84,946       115,877",
+        "quote": "Net cash provided by (used in) operating activities                                           42,465        45,636        84,946       115,877",
+        "source_chunk_id": "P0435F36D5B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–4102",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "115,877",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "Purchases of property and equipment                                                                      (14,588)       (27,834)       (52,729)       (82,999)",
+        "quote": "Purchases of property and equipment                                                                      (14,588)       (27,834)       (52,729)       (82,999)",
+        "source_chunk_id": "P0435F36D5B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–4102",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "(82,999)",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "Operating income                                                    $  6,976   $  7,167   $  9,421   $  9,334   $ 10,447   $ 10,632         48 %",
+        "quote": "Operating income                                                    $  6,976   $  7,167   $  9,421   $  9,334   $ 10,447   $ 10,632         48 %",
+        "source_chunk_id": "P0435F36D11B1",
+        "page": 11,
+        "locator": "PDF p11, chars 0–4109",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$ 10,632",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "Operating income                                  $    7,167    $   10,632    $   24,631    $   39,834",
+        "quote": "Operating income                                  $    7,167    $   10,632    $   24,631    $   39,834",
+        "source_chunk_id": "P0435F36D8B1",
+        "page": 8,
+        "locator": "PDF p8, chars 0–3240",
+        "value": null,
+        "unit": "USD million",
+        "raw_number": "$   39,834",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_0435f36d49cc",
+        "text": "Net income increased to $59.2 billion in 2024, or $5.53 per diluted share, compared with $30.4 billion",
+        "quote": "Net income increased to $59.2 billion in 2024, or $5.53 per diluted share, compared with $30.4 billion",
+        "source_chunk_id": "P0435F36D1B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–3051",
+        "value": null,
+        "unit": "USD billion",
+        "raw_number": "$59.2 billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      }
+    ],
+    "reference_case": {
+      "id": "amazon24_after",
+      "question": "用 Amazon FY2024 财报解释 AWS 对集团利润的重要性，并评估利润改善是否同步转化为现金。",
+      "as_of": "2025-06-01",
+      "required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "counter": [
+        "R5",
+        "R6"
+      ],
+      "point_definitions": {
+        "R1": "Amazon FY2024 net sales: USD 637959 million.",
+        "R2": "Amazon FY2024 operating income: USD 68593 million.",
+        "R3": "AWS FY2024 net sales: USD 107556 million.",
+        "R4": "AWS FY2024 operating income: USD 39834 million.",
+        "R5": "Amazon FY2024 free cash flow: USD 38219 million.",
+        "R6": "AWS operating margin: Q3 2024 38.1%; Q4 2024 36.9%."
+      },
+      "limitations": [
+        "不能把 AWS 的收入占比称为行业市场份额"
+      ],
+      "expected_answerability": "answerable"
+    }
+  },
+  "semantic": {
+    "version": "native-source-audit-4.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "F13显示AWS FY2024营业利润39,834百万美元，且分部信息中AWS利润高于国际和北美之外表述需看上下文，但数值受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "F2总营业利润68.6十亿，F1 AWS 39.8十亿，数值与单位一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "F5 TTM AWS营业利润率37.0%，候选称2024年达37.0%受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "F4净销售占比17%，F3 AWS净销售107,556百万美元，均受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "F14集团净利润59.2十亿美元，候选称AWS是重要驱动为事实表述受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "F8 TTM自由现金流38,219百万美元，同比4%，候选称未同步转化现金为事实评估",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "F9资本支出净额77,658百万美元同比61%，F11购置82,999百万美元，数值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C8",
+          "verdict": "supported",
+          "reason": "F10经营现金流115,877百万美元，候选表述受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C4"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C2"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C4"
+        },
+        {
+          "id": "R4",
+          "present": true,
+          "candidate_span_id": "C1"
+        },
+        {
+          "id": "R5",
+          "present": true,
+          "candidate_span_id": "C6"
+        },
+        {
+          "id": "R6",
+          "present": false,
+          "candidate_span_id": null
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选完整用FY2024数据解释AWS利润重要性并评估现金转化，覆盖required点R1-R5，仅缺R6的AWS季度营业利润率具体值，限制与跟进具体有用"
+    },
+    "span_binding": [
+      {
+        "group": "coverage",
+        "id": "R1",
+        "candidate_span_id": "C4",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R2",
+        "candidate_span_id": "C2",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R3",
+        "candidate_span_id": "C4",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R4",
+        "candidate_span_id": "C1",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R5",
+        "candidate_span_id": "C6",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R6",
+        "candidate_span_id": null,
+        "bound": true
+      },
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "LIMIT0",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "F13显示AWS FY2024营业利润39,834百万美元，且分部信息中AWS利润高于国际和北美之外表述需看上下文，但数值受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "F2总营业利润68.6十亿，F1 AWS 39.8十亿，数值与单位一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "F5 TTM AWS营业利润率37.0%，候选称2024年达37.0%受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "F4净销售占比17%，F3 AWS净销售107,556百万美元，均受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "F14集团净利润59.2十亿美元，候选称AWS是重要驱动为事实表述受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "F8 TTM自由现金流38,219百万美元，同比4%，候选称未同步转化现金为事实评估",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "F9资本支出净额77,658百万美元同比61%，F11购置82,999百万美元，数值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C8",
+          "verdict": "supported",
+          "reason": "F10经营现金流115,877百万美元，候选表述受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C4",
+          "quote": "AWS净销售占集团比重从2023年16%升至2024年17%，FY2024净销售107,556百万美元"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C2",
+          "quote": "集团FY2024总营业利润68.6十亿美元，AWS占其中39.8十亿美元，比重显著"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C4",
+          "quote": "AWS净销售占集团比重从2023年16%升至2024年17%，FY2024净销售107,556百万美元"
+        },
+        {
+          "id": "R4",
+          "present": true,
+          "candidate_span_id": "C1",
+          "quote": "AWS FY2024营业利润39,834百万美元，为国际和北美之外最大利润贡献"
+        },
+        {
+          "id": "R5",
+          "present": true,
+          "candidate_span_id": "C6",
+          "quote": "TTM自由现金流2024为38,219百万美元，同比仅增4%，利润改善未同步转化为现金"
+        },
+        {
+          "id": "R6",
+          "present": false,
+          "candidate_span_id": null,
+          "quote": ""
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0",
+          "quote": "资料未披露AWS分部独立自由现金流或资本支出，无法隔离AWS自身现金转化效率"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选完整用FY2024数据解释AWS利润重要性并评估现金转化，覆盖required点R1-R5，仅缺R6的AWS季度营业利润率具体值，限制与跟进具体有用"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "2963bccd29c70ee3bc4edae07e9560939c0601c9373039ab83c8835fd19c11af",
+      "latency_seconds": 6.308,
+      "usage": {
+        "prompt_tokens": 14939,
+        "completion_tokens": 740,
+        "total_tokens": 15679,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "e946fee59b607281b4121a7c40f23969438c026f9c44d5ea80ea0481be785842"
+    },
+    "input_sha256": "fa064005f7178583209164bc679c0527e8a792cf145ab5b713a9a3ca2dc47d9a",
+    "answer_sha256": "0ec6619108b84d12387ad96961f3ab971624334e91a091aee876845dcebd2937",
+    "judge_prompt_sha256": "a599dba5e6c37a98c21402a8ebde860c6dc4345ce837bba1b8960cac36e9889b"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "0ec6619108b84d12387ad96961f3ab971624334e91a091aee876845dcebd2937",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 82.0,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "incorrect numerical proof",
+        "cap": 55
+      }
+    ],
+    "issues": [
+      "numeric binding: C1",
+      "numeric binding: C2",
+      "numeric binding: C2",
+      "numeric binding: C3",
+      "numeric binding: C4",
+      "numeric binding: C4",
+      "numeric binding: C5",
+      "numeric binding: C6",
+      "numeric binding: C7",
+      "numeric binding: C7",
+      "numeric binding: C8",
+      "calculation: K1",
+      "calculation: K2",
+      "calculation: K3"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok"
+}

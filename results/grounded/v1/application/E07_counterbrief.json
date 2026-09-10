@@ -1,0 +1,750 @@
+{
+  "case_id": "E07",
+  "split": "evaluation",
+  "method": "counterbrief",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "parent_record_sha256": "32c1acef80751582bcacebdc31a093fa7ca7a03a9d16bf9168fe354d059917ff",
+  "started_utc": "2026-09-09T17:41:16.073482+00:00",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "有人说 TSMC 2024 全年收入为 TWD 868.46 billion、净利率为 43.1%。核对并解释正确期间。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "T01",
+        "source_id": "tsmc24",
+        "locator": "opening results paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 revenue: TWD 868.46 billion.",
+        "value": 868.46,
+        "unit": "TWD billion",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T02",
+        "source_id": "tsmc24",
+        "locator": "year-over-year paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 38.8% measured in TWD.",
+        "value": 38.8,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T07",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "TSMC Q4 2024 net profit margin: 43.1%.",
+        "value": 43.1,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T03",
+        "source_id": "tsmc24",
+        "locator": "USD results paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 37.0% measured in USD.",
+        "value": 37.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T04",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 gross margin: 59.0%.",
+        "value": 59.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T05",
+        "source_id": "tsmc24",
+        "locator": "technology mix paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Nodes of 7nm or smaller contributed 74% of Q4 wafer revenue.",
+        "value": 74,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "根据TSMC 2025-01-16披露资料，用户所称TSMC 2024全年收入TWD 868.46 billion与净利率43.1%的期间有误。资料仅显示TSMC 2024年第四季度（Q4）营收为TWD 868.46 billion，Q4净利率为43.1%，并非全年数据。Q4营收以TWD计年增38.8%、以USD计年增37.0%，毛利率59.0%，7nm及以下节点占晶圆营收74%。资料未提供2024全年收入与净利率，不能据此推断全年。Q1 2025管理层预计智能手机季节性部分被AI需求抵消。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "TSMC 2024年第四季度营收为TWD 868.46 billion，而非2024全年收入",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01"
+          ],
+          "numbers": [
+            {
+              "source_id": "T01",
+              "value": 868.46,
+              "unit": "TWD billion"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "TSMC 2024年第四季度净利率为43.1%，并非全年净利率",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T07"
+          ],
+          "numbers": [
+            {
+              "source_id": "T07",
+              "value": 43.1,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "TSMC Q4 2024营收以TWD计年增38.8%，以USD计年增37.0%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            },
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "TSMC Q4 2024毛利率为59.0%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T04"
+          ],
+          "numbers": [
+            {
+              "source_id": "T04",
+              "value": 59.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "TSMC Q4 2024中7nm及以下节点占晶圆营收74%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T05"
+          ],
+          "numbers": [
+            {
+              "source_id": "T05",
+              "value": 74.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "资料未披露TSMC 2024全年收入与净利率，不能将Q4数据等同全年",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01",
+            "T07"
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未提供TSMC 2024全年收入、全年净利率及Q4净利润绝对额",
+        "Q1 2025仅为管理层预期，未含实际数据"
+      ],
+      "follow_up": [
+        {
+          "action": "提取TSMC 2024年度财报中的全年营收与净利率",
+          "reason": "可核对用户所称全年数字是否真实及纠正期间误用",
+          "evidence_ids": [
+            "T01",
+            "T07"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "根据TSMC于2025-01-16披露的资料，用户所称“TSMC 2024全年收入TWD 868.46 billion、净利率43.1%”的期间有误。资料仅显示TSMC 2024年第四季度（Q4）营收为TWD 868.46 billion，Q4净利率为43.1%，并非全年数据。Q4营收以TWD计年增38.8%、以USD计年增37.0%，毛利率59.0%，7nm及以下节点占晶圆营收74%。资料未提供2024全年收入与净利率，不能将Q4数据等同全年。Q1 2025管理层预计智能手机季节性部分被AI需求抵消，属预期而非事实。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "TSMC 2024年第四季度营收为TWD 868.46 billion，而非2024全年收入",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01"
+          ],
+          "numbers": [
+            {
+              "source_id": "T01",
+              "value": 868.46,
+              "unit": "TWD billion"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "TSMC 2024年第四季度净利率为43.1%，并非全年净利率",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T07"
+          ],
+          "numbers": [
+            {
+              "source_id": "T07",
+              "value": 43.1,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "TSMC Q4 2024营收以TWD计年增38.8%，以USD计年增37.0%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            },
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "TSMC Q4 2024毛利率为59.0%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T04"
+          ],
+          "numbers": [
+            {
+              "source_id": "T04",
+              "value": 59.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "TSMC Q4 2024中7nm及以下节点占晶圆营收74%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T05"
+          ],
+          "numbers": [
+            {
+              "source_id": "T05",
+              "value": 74.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "资料未披露TSMC 2024全年收入与净利率，不能将Q4数据等同全年",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01",
+            "T07"
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "管理层预计Q1 2025智能手机季节性部分被AI需求增长抵消，此为预测而非已发生事实",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "T06"
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未提供TSMC 2024全年收入、全年净利率及Q4净利润绝对额",
+        "Q1 2025仅为管理层预期，未含实际数据"
+      ],
+      "follow_up": [
+        {
+          "action": "提取TSMC 2024年度财报中的全年营收与净利率",
+          "reason": "可核对用户所称全年数字是否真实及纠正期间误用",
+          "evidence_ids": [
+            "T01",
+            "T07"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "a4e7c66fc14ffa3314492b56656edfafdf54dec50c25d2086924543a434a2ac2",
+        "latency_seconds": 6.321,
+        "usage": {
+          "prompt_tokens": 1244,
+          "completion_tokens": 729,
+          "total_tokens": 1973,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "697b2f8eabf72a74152954d80cc31d8e72c5712ac4d5a406a835ab14610785b1"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "c33a60b0317942f22b38de46430b57aef3817030b2e5373a5c71b3d35f87fe0e",
+        "latency_seconds": 8.351,
+        "usage": {
+          "prompt_tokens": 2039,
+          "completion_tokens": 794,
+          "total_tokens": 2833,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "f983aa779c91ee0302e4088ff6f13e13e7fa1993a27bc48925f785030b237c93"
+      }
+    ],
+    "input_sha256": "dda582e10fc8941733df3eeeb0c4e42b1acac9b5952287bb31bf222ce7241303",
+    "calculator_results": [],
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "根据TSMC于2025-01-16披露的资料，用户所称“TSMC 2024全年收入TWD 868.46 billion、净利率43.1%”的期间有误。资料仅显示TSMC 2024年第四季度（Q4）营收为TWD 868.46 billion，Q4净利率为43.1%，并非全年数据。Q4营收以TWD计年增38.8%、以USD计年增37.0%，毛利率59.0%，7nm及以下节点占晶圆营收74%。资料未提供2024全年收入与净利率，不能将Q4数据等同全年。Q1 2025管理层预计智能手机季节性部分被AI需求抵消，属预期而非事实。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "TSMC 2024年第四季度营收为TWD 868.46 billion，而非2024全年收入",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01"
+          ],
+          "numbers": [
+            {
+              "source_id": "T01",
+              "value": 868.46,
+              "unit": "TWD billion"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "TSMC 2024年第四季度净利率为43.1%，并非全年净利率",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T07"
+          ],
+          "numbers": [
+            {
+              "source_id": "T07",
+              "value": 43.1,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "TSMC Q4 2024营收以TWD计年增38.8%，以USD计年增37.0%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T02",
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            },
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "TSMC Q4 2024毛利率为59.0%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T04"
+          ],
+          "numbers": [
+            {
+              "source_id": "T04",
+              "value": 59.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "TSMC Q4 2024中7nm及以下节点占晶圆营收74%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "T05"
+          ],
+          "numbers": [
+            {
+              "source_id": "T05",
+              "value": 74.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "资料未披露TSMC 2024全年收入与净利率，不能将Q4数据等同全年",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01",
+            "T07"
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "管理层预计Q1 2025智能手机季节性部分被AI需求增长抵消，此为预测而非已发生事实",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "T06"
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未提供TSMC 2024全年收入、全年净利率及Q4净利润绝对额",
+        "Q1 2025仅为管理层预期，未含实际数据"
+      ],
+      "follow_up": [
+        {
+          "action": "提取TSMC 2024年度财报中的全年营收与净利率",
+          "reason": "可核对用户所称全年数字是否真实及纠正期间误用",
+          "evidence_ids": [
+            "T01",
+            "T07"
+          ]
+        }
+      ]
+    },
+    "answer_sha256": "2dd0bf585a204f04e8b981dd373fc2fe2f1665b5ff8ddc0e12acd24f962040d7"
+  },
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选称Q4营收TWD 868.46 billion且非全年，与T01的Q4营收一致且来源无全年数据",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称Q4净利率43.1%非全年，与T07的Q4 net profit margin 43.1%一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称Q4营收TWD年增38.8%、USD年增37.0%，与T02、T03一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称Q4毛利率59.0%，与T04一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选称7nm及以下占晶圆营收74%，与T05一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选称资料未披露全年收入与净利率不能等同Q4，来源T01/T07仅Q4，无全年",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选称Q1 2025预期为预测，与T06 forecast状态一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "T01",
+          "present": true,
+          "quote": "TSMC 2024年第四季度营收为TWD 868.46 billion"
+        },
+        {
+          "id": "T07",
+          "present": true,
+          "quote": "TSMC 2024年第四季度净利率为43.1%"
+        },
+        {
+          "id": "T06",
+          "present": true,
+          "quote": "管理层预计Q1 2025智能手机季节性部分被AI需求增长抵消，此为预测而非已发生事实"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "资料未提供TSMC 2024全年收入、全年净利率及Q4净利润绝对额"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：用户将TSMC Q4 2024数据误称为2024全年，候选正确指出期间错误并引用Q4来源"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "2b634aa2bb2a1d129f071bd09af746fb9e1056f27ab2150767f2608d93f1a99a",
+      "latency_seconds": 6.745,
+      "usage": {
+        "prompt_tokens": 5123,
+        "completion_tokens": 632,
+        "total_tokens": 5755,
+        "prompt_tokens_details": {
+          "cached_tokens": 576
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "753bcf421e807352a904d86755f455af15970a47b70296da29975817955a4268"
+    },
+    "input_sha256": "650a43fec7b7018254888ac83d80a519e50c5bf5388961c92b44634c01429488",
+    "answer_sha256": "2dd0bf585a204f04e8b981dd373fc2fe2f1665b5ff8ddc0e12acd24f962040d7",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "2dd0bf585a204f04e8b981dd373fc2fe2f1665b5ff8ddc0e12acd24f962040d7",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "proof_feedback": {
+    "money": [],
+    "calculations": [],
+    "citation_identity": [
+      {
+        "claim_id": "C1",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C2",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C3",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C4",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C5",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C6",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C7",
+        "unknown_ids": []
+      }
+    ]
+  },
+  "status": "ok",
+  "new_work_wall_seconds": 6.75
+}

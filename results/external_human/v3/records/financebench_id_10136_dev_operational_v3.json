@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_10136",
+  "uid": "financebench_id_10136_dev",
+  "split": "development",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "a28f4cc20380037d00767cde8646e94bde2d69902d6b04d6d1134c5951536ee6",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "9cf39fd94f2eff22969236e63e92f862cfebe907a0ab44b11dd48910f440bbc0",
+  "started_utc": "2026-09-10T01:34:15.802788+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "Here is a summary of the key information in the exhibit:",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided unrelated subsidiary summary instead of computing FY2022 retention ratio. Evidence shows net earnings attributable to General Mills 2,707.3M and dividends paid 1,244.5M; retention = 1 - 1244.5/2707.3 = 0.54, matching reference, but candidate did not answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1ec9252bb43926b5932042c30c15fa3d51c50f6d6067678bd721ef0201b9e27e",
+    "latency_seconds": 8.096,
+    "usage": {
+      "prompt_tokens": 4099,
+      "completion_tokens": 131,
+      "total_tokens": 4230,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "17fce22ffd30f129a0ce274364bf8a8c916666a0334d4f8885964c0caf9e8810"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_09724",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "796657168d4190b00c6f880811edcfb577e2c8032344c5d9c853b5c46b40f5ae",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d420f2276bd7d05fb234ad9d4acebeb7aa3c77f0063e5f561bc6691fbd2fc302",
+  "started_utc": "2026-09-09T18:03:57.971363+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate discusses pension/postretirement obligations, not Coca-Cola's FY2021 COGS % margin; provides no substantive answer to the requested metric.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate addresses Coca-Cola but on pension topics, not the income statement COGS margin entity context requested."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Mentions end of 2021 but not FY2021 COGS margin calculation period in required context."
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No % margin provided; uses $ billions for pension, wrong unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No COGS % margin answer; entirely off-topic response."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows COGS 15,357 and revenue 38,655 (COGS% = 39.7%), but candidate ignores it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b8948759534cf6ba7c28a272dfefef4ef260aad81a9ae4ebafa872b480838087",
+    "latency_seconds": 9.815,
+    "usage": {
+      "prompt_tokens": 1830,
+      "completion_tokens": 243,
+      "total_tokens": 2073,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c4d33ebf24458f940957910ae28bec652c305dfed8c7a4d8aad953eb281558b3"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

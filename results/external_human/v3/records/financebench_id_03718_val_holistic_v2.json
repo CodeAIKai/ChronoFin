@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_03718",
+  "uid": "financebench_id_03718_val",
+  "split": "new_response_validation",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ea22871da8034956faa8036c67fdbc83d31403eed93c14454936c0492860be1d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "2e29ae14f922f0a675d376003ee486d2f360e2f75415d4c29cbc3be211df5b9e",
+  "started_utc": "2026-09-10T01:30:49.120780+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed CAGR as 0.4% using (65984/65398)^(1/2)-1, but reference is 0.004 (0.4% as decimal) which matches; however question asks units of percents and round to one decimal: 0.4% is correct in percent units. Wait reference 0.004 means 0.4% so candidate answer 0.4% agrees. But candidate says '0.447% approximately' then rounds to 0.4%, which is consistent. Actually correct. Re-evaluate: reference 0.004 = 0.4%. Candidate gives 0.4%. Evidence supports 65984 and 65398. CAGR = (65984/65398)^0.5-1 = 0.00447 = 0.447% -> 0.4% rounded. Correct."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "16c74c4c74ec95219c8e483d975d194962c3568481406e60826ab018cb79cd1c",
+    "latency_seconds": 8.635,
+    "usage": {
+      "prompt_tokens": 2007,
+      "completion_tokens": 204,
+      "total_tokens": 2211,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1a2a4d8eb1b57acb24bebfe4ca07652fb763e6209240e34169f06d54d7d970e2"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

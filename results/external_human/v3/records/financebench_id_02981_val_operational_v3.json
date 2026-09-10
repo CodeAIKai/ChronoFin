@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02981",
+  "uid": "financebench_id_02981_val",
+  "split": "new_response_validation",
+  "company": "Corning",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "cff4cfa6b78fde71e00ffdac62601147c9bbc49b983f219eb3daa81a293b57bf",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "b69168ed8ecd187329dbf796eaa9051b7e6049e48926ae4485e5731dacd9de0d",
+  "started_utc": "2026-09-10T01:29:36.716888+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Rounded to one decimal place, the 3-year average unadjusted operating income percentage margin for Corning for FY2019 - FY2021 is 10.6%.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate computed margins from evidence income statement (2019:1306/11503=11.35%, 2020:509/11303=4.50%, 2021:2112/14082=15.00%), average=10.62% rounded 10.6%, matching reference 0.103 (10.3%) within rounding; reference 0.103 vs 0.106 minor diff likely rounding basis, not conflict."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "624b9c76ec7c100a7a39b1f1c9b91b99ff3c61785016e70c14e426d271fcc2cf",
+    "latency_seconds": 12.384,
+    "usage": {
+      "prompt_tokens": 2363,
+      "completion_tokens": 176,
+      "total_tokens": 2539,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "13d6ad4bb67a2241ee244a86831453ecda3d1673476cf39f5327f2a74dd66d9e"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

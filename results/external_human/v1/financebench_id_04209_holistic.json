@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04209",
+  "company": "Costco",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0c0682f8672fecff084aa9f6502637f3007ec93b5cf28885ba4b2fd76ce73753",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "018e6c884d35b172a92f7ee9848cbbf0354f779a2178a145181cd1153226c42c",
+  "started_utc": "2026-09-09T17:34:47.409893+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it lacks FY2021 balance sheet data and cannot answer, but evidence clearly provides Costco FY2021 total assets of $59,268M. This is a refusal with no substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6571e2824c4be6e3ec8f302720248450db4f9fb0e8aade62f9f1a8a4c1708d9f",
+    "latency_seconds": 3.087,
+    "usage": {
+      "prompt_tokens": 1629,
+      "completion_tokens": 63,
+      "total_tokens": 1692,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "eb0194b5b80e1ecc1d20a1dcabd9957cd869061167769529c23734af5da2e54d"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

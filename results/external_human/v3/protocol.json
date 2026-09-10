@@ -1,0 +1,2120 @@
+{
+  "sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "files": {
+    "scripts/run_external_human_v3.py": "f9a6dbe595594bb5f4d8d77d538e8c7dd986573e3d9400d4610219d415cb2f1e",
+    "scripts/run_external_human_audit_v2.py": "3f3b1a50b3682058fe68960c689360ad844d537eee6340508e6cd6a1ab0a28e0",
+    "src/chronofin/runtime.py": "699fc8e91b326739fb8da961eaf498b76048a3a3ba9e81b4f5241046f56e76f9",
+    "src/chronofin/llm.py": "d5f62ea8187cbdb82e3ae9099167435a50f923be7b0b39a80f95e181734b623f",
+    "src/chronofin/config.py": "d7e92b329f20668c95abb17f063d63e75caea6358081133537ba5733f9b145fc"
+  },
+  "prompt_sha256": {
+    "holistic_v2": "f75f6b53c51b1a3ea43d74816d703afec7d0092f6c74669607bc019a34b61735",
+    "operational_v3": "409c0d204aff02931269d75415bfbca6cc7a68df3e1a9c342a97608a22c84e64"
+  },
+  "selection": [
+    {
+      "id": "financebench_id_00005",
+      "uid": "financebench_id_00005_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "08af333c3c480de7a3963d4aab36e7d239246a09a1f8f575f03f9276f404f01e"
+    },
+    {
+      "id": "financebench_id_00005",
+      "uid": "financebench_id_00005_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "5514f10b4a4c285d9d40c4f78a6edf1f8a999a2bf6e88552f958cdecfb1c8845"
+    },
+    {
+      "id": "financebench_id_00070",
+      "uid": "financebench_id_00070_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "5c80a3cfc9067b4ca00fe8489047d9ad18f0d07f8254489fa3f0d1bdd182e3ec"
+    },
+    {
+      "id": "financebench_id_00070",
+      "uid": "financebench_id_00070_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "74e3882a21bedb4ff50c0c7d101e745bf1c2f769953ab1e5f56fe5fb1f477fea"
+    },
+    {
+      "id": "financebench_id_00080",
+      "uid": "financebench_id_00080_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "64e75fb20a236628f9d330a3c2108d6c35a4f4875ae6e1db6be1eadb519599f4"
+    },
+    {
+      "id": "financebench_id_00080",
+      "uid": "financebench_id_00080_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "4c141f8666dd280c6c7e6c1d87bddd8c22dabc60a3895eb6917f2eecbf9031d7"
+    },
+    {
+      "id": "financebench_id_00206",
+      "uid": "financebench_id_00206_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "5e3d562d75b532af1d032ee72ab918c3a7fcac26104e5d5f260fda939a499db3"
+    },
+    {
+      "id": "financebench_id_00206",
+      "uid": "financebench_id_00206_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "d84fa20c1948fb4577b017c4582ff7b787f717e8cf6ca7edad9b9ec83ce9beab"
+    },
+    {
+      "id": "financebench_id_00215",
+      "uid": "financebench_id_00215_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "43cce23c0df3d545f6c2e25136fffcdee54e316d42c40f0484937b36cdd3d0a2"
+    },
+    {
+      "id": "financebench_id_00215",
+      "uid": "financebench_id_00215_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "78910d9dd0782241d152f560ac517dbe3d89a802bb646b2707eeddc1fae80886"
+    },
+    {
+      "id": "financebench_id_00216",
+      "uid": "financebench_id_00216_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "d8cc105e7cd58564cae29bd1f241f306dcd00386ff4b1cc0ff9f0c1b1b60c221"
+    },
+    {
+      "id": "financebench_id_00216",
+      "uid": "financebench_id_00216_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "b8350c245dc9e3c3eba10ae92ed2e5eef2a388d36136300daf6f430f6df492b3"
+    },
+    {
+      "id": "financebench_id_00222",
+      "uid": "financebench_id_00222_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "be276834767d6067111cb04b472895454b17e688327d794b66fa859f53f18f80"
+    },
+    {
+      "id": "financebench_id_00222",
+      "uid": "financebench_id_00222_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "a83d2d940f0b019b5b091106386c9f08889a63d8eb62a8ab10dfe42bddc88b0b"
+    },
+    {
+      "id": "financebench_id_00283",
+      "uid": "financebench_id_00283_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "63a4ddd7e52d66b9c0414f9cebf8987401079df34c7fc4fb0ab324d225d2ec12"
+    },
+    {
+      "id": "financebench_id_00283",
+      "uid": "financebench_id_00283_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "bc59288c509556c35da504a469fef2fa28a1ac2e604f008c83066d13910ed3a8"
+    },
+    {
+      "id": "financebench_id_00288",
+      "uid": "financebench_id_00288_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "998a1746640ed831b9408b555c084eb063dd566f077b1655d7eb10f4086ced30"
+    },
+    {
+      "id": "financebench_id_00288",
+      "uid": "financebench_id_00288_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "3b6e780a3e005c893ee3e2bf0c371a6d4162383f329d7184f990b15a46b08a53"
+    },
+    {
+      "id": "financebench_id_00299",
+      "uid": "financebench_id_00299_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "4c1caf9a3d7927ca4ab4d17d691e94db372b6e26083704b6683845036ce77b01"
+    },
+    {
+      "id": "financebench_id_00299",
+      "uid": "financebench_id_00299_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "6bd2d5f22f5e7c383ab3abd9c09caa2a3698776683887a0e18a7c818a3a8278b"
+    },
+    {
+      "id": "financebench_id_00302",
+      "uid": "financebench_id_00302_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "ac3d04d48db39f70eccf70baaa65a810d37566f034d52f789c80b441b93c817e"
+    },
+    {
+      "id": "financebench_id_00302",
+      "uid": "financebench_id_00302_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "53cb3d583c9faa9b88fed48da388085984968bb76b62e3299bf1024c76618bf4"
+    },
+    {
+      "id": "financebench_id_00382",
+      "uid": "financebench_id_00382_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "b57d4ee9fafe1d8fd008e4717d33365bfb2864ee3a51fa6a44d3462c785a4ade"
+    },
+    {
+      "id": "financebench_id_00382",
+      "uid": "financebench_id_00382_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "38d87db5262ebcdf21bc624550b2aef69ce0ae7879844e2264e0395339756cf8"
+    },
+    {
+      "id": "financebench_id_00394",
+      "uid": "financebench_id_00394_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "984b6079b0942ef11686d7618e62bd52fa16fa58d7a8bf7e82b47c38277d4d6b"
+    },
+    {
+      "id": "financebench_id_00394",
+      "uid": "financebench_id_00394_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "e46b590488d476c1dfb51fca56b7ecc74864dce012ece65579da514318c2ffc5"
+    },
+    {
+      "id": "financebench_id_00407",
+      "uid": "financebench_id_00407_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "9a1153d8b359fa319e89b4f3d77cdda865b92e45ca52924431fee5dec35b7a38"
+    },
+    {
+      "id": "financebench_id_00407",
+      "uid": "financebench_id_00407_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "c105a3101c9304d9e23d7a1b86bc8fee95c6eb51a0e4c97ecc8b8ee6febdfcb0"
+    },
+    {
+      "id": "financebench_id_00438",
+      "uid": "financebench_id_00438_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "5bc1db2a60e8ed0c65df55b59d2c029c6c87027bff496a4945360e49a28fc89c"
+    },
+    {
+      "id": "financebench_id_00438",
+      "uid": "financebench_id_00438_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "19ca444dcd374b590a882edaf48d622d0599a80e4d412ae4cdc80aeb08aff3c1"
+    },
+    {
+      "id": "financebench_id_00460",
+      "uid": "financebench_id_00460_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "aeea948243f8a36578937863422f3c265c19dfe324f903a4fc4f96c5711f3859"
+    },
+    {
+      "id": "financebench_id_00460",
+      "uid": "financebench_id_00460_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "2b5a6da552ffb1c4ac7996308517a37541970e02c2337bb29c1eee889b9386ab"
+    },
+    {
+      "id": "financebench_id_00464",
+      "uid": "financebench_id_00464_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "3922dd16561b663de55d42727b47a63096cf2a71f0a4255039b16081901d253e"
+    },
+    {
+      "id": "financebench_id_00464",
+      "uid": "financebench_id_00464_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "ef296a70d65f10967764690947123755a46794219ebee72ec474f8e3b6d47bf7"
+    },
+    {
+      "id": "financebench_id_00476",
+      "uid": "financebench_id_00476_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "c963467d3e55fc121c5607e8fb6a51dc569a2d6c5dd237e6c7cc88caa666783e"
+    },
+    {
+      "id": "financebench_id_00476",
+      "uid": "financebench_id_00476_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "c431ac7df58e8fe770f21e4652ce158903f75bdf49dde5c654bc13172921ebb0"
+    },
+    {
+      "id": "financebench_id_00494",
+      "uid": "financebench_id_00494_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "0646263c3b181bc5edd72515ea2b92720a28657d4667ff9334f17ba2311ede69"
+    },
+    {
+      "id": "financebench_id_00494",
+      "uid": "financebench_id_00494_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "db4de9352862079d30a2a7b87e6c67dc2d5846cdb5772bc93e3db77bcbd3a97e"
+    },
+    {
+      "id": "financebench_id_00499",
+      "uid": "financebench_id_00499_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "e25b399f98d3c5b8f1f6298d91b85fcaedabd152de7365187b6abb0036c0bdd9"
+    },
+    {
+      "id": "financebench_id_00499",
+      "uid": "financebench_id_00499_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "6fa78ff2fa9283d904d754ed38e88cae4ff43b3434abe3c02cd78caeb0c40180"
+    },
+    {
+      "id": "financebench_id_00517",
+      "uid": "financebench_id_00517_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "06d2c3128adc4f43bd92b13f565e21694a4bb8ceff392fdcd69d0f6834f85bad"
+    },
+    {
+      "id": "financebench_id_00517",
+      "uid": "financebench_id_00517_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "afb98cf01fb0731d53faa1a9f11f25105f7a39a35c041d4e9ed19b9c34951cd4"
+    },
+    {
+      "id": "financebench_id_00521",
+      "uid": "financebench_id_00521_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54"
+    },
+    {
+      "id": "financebench_id_00521",
+      "uid": "financebench_id_00521_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "077191b65483b55d3b27cbebd4149870bea48e54c609b70d9e92d4242c509ee0"
+    },
+    {
+      "id": "financebench_id_00540",
+      "uid": "financebench_id_00540_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "1689813b3f99fed7e3b0d9fd51ae2e6fd300beecc126884e675085bfaa8d387f"
+    },
+    {
+      "id": "financebench_id_00540",
+      "uid": "financebench_id_00540_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "dd2936ccb341d74b106b863f963dc4289eb189cc065e0e2b76883b3569f85371"
+    },
+    {
+      "id": "financebench_id_00552",
+      "uid": "financebench_id_00552_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54"
+    },
+    {
+      "id": "financebench_id_00552",
+      "uid": "financebench_id_00552_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "6d93fb6187fc6f0ff18a5bffb4392e8760314daa073017141b8138c01f949c2c"
+    },
+    {
+      "id": "financebench_id_00563",
+      "uid": "financebench_id_00563_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "2d42ebd6ad3216d88abb0f05f79b0287a52b6f27773dbe55fa9a7e62ef35a580"
+    },
+    {
+      "id": "financebench_id_00563",
+      "uid": "financebench_id_00563_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "b811b89a4949d689270d4a1f04189caf60ec3870b54388a4fe655c05b021afec"
+    },
+    {
+      "id": "financebench_id_00566",
+      "uid": "financebench_id_00566_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "63acb38897c954211fab38688b19bf3fa18a887cfac6bfe4abfbfa40bb5e85f3"
+    },
+    {
+      "id": "financebench_id_00566",
+      "uid": "financebench_id_00566_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "47d7bc36a0c03c79266d60e4126f6d215d8a03c35fd738d433bb284416b32a4d"
+    },
+    {
+      "id": "financebench_id_00585",
+      "uid": "financebench_id_00585_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "706289c365363ba3bf165919f27253c9ba85cdd4aec4713f7706519d8bc1c610"
+    },
+    {
+      "id": "financebench_id_00585",
+      "uid": "financebench_id_00585_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "2492fc7fca57f701ce7c1931a2fa9a416b180d6675339e968aae4b3cde1e7ed3"
+    },
+    {
+      "id": "financebench_id_00591",
+      "uid": "financebench_id_00591_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "4db3b699625bfd47eb0b5dc4a193c594ed53e367c2ae160f2e69ddd9294f9b60"
+    },
+    {
+      "id": "financebench_id_00591",
+      "uid": "financebench_id_00591_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "6e3ca12abfedebaef6e22186869fc035c0799a605430f3367a449857b9ef43d3"
+    },
+    {
+      "id": "financebench_id_00601",
+      "uid": "financebench_id_00601_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "4aceffecb5fa45f2c5b7949e517adae1d9792b768c2dd93ca351b76fab538ce6"
+    },
+    {
+      "id": "financebench_id_00601",
+      "uid": "financebench_id_00601_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "3c68f29a1d4520c3f5f6dd1e7f7f9e91eb8228ed4ffc7b37ff2971b1f989f551"
+    },
+    {
+      "id": "financebench_id_00603",
+      "uid": "financebench_id_00603_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "a7fe6a3a54865003dac67b41517b4809c3ced794a003f0ece733588183d8fc66"
+    },
+    {
+      "id": "financebench_id_00603",
+      "uid": "financebench_id_00603_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "7074f511777b42b9176b2089130b44cb77ecdb487d94be0a1c234730531d09cc"
+    },
+    {
+      "id": "financebench_id_00605",
+      "uid": "financebench_id_00605_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "0af0347d9a3a94d7e9490555d37b4df28bb29423f7324f560cffe3224fce85b6"
+    },
+    {
+      "id": "financebench_id_00605",
+      "uid": "financebench_id_00605_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "6d63ca4f3ad653d5e7b266be832afdca2857c7ba24eb260c136e8bc58d0f4b10"
+    },
+    {
+      "id": "financebench_id_00606",
+      "uid": "financebench_id_00606_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "436e091b4702e44bc598e708a2f4a2ebe39dc7c46f24fe974ec18e0b8109c502"
+    },
+    {
+      "id": "financebench_id_00606",
+      "uid": "financebench_id_00606_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "fa9523ff72bb2d61d00d6d5fe528b0e959ccfe38d5c1a38556205d16287604a4"
+    },
+    {
+      "id": "financebench_id_00651",
+      "uid": "financebench_id_00651_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "602f5c146b75a40e08afd8d486c1a1d227c24b2cb7905e00989204e87b67d4d9"
+    },
+    {
+      "id": "financebench_id_00651",
+      "uid": "financebench_id_00651_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "862ed710bd86636bdf6b238483f8312a8d10c7fb37b7ed4e01d836f89a5ced6a"
+    },
+    {
+      "id": "financebench_id_00669",
+      "uid": "financebench_id_00669_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "b99f69ea555a266919e382e01d9ce225a1f9e220802c568df2476fa3c7ee1ea2"
+    },
+    {
+      "id": "financebench_id_00669",
+      "uid": "financebench_id_00669_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "ae3063cac14af66a717a3b677cbdae8a27eeca107476b8823b265205b0e5a93b"
+    },
+    {
+      "id": "financebench_id_00678",
+      "uid": "financebench_id_00678_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "1051de6161bb15d27de792bd20bed02746380ea6075d32d13a3cafe78cca5218"
+    },
+    {
+      "id": "financebench_id_00678",
+      "uid": "financebench_id_00678_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "7ba718721c8ea26d0fd3d6ddb5ac8d57754212104af5e5527c66af211fc12181"
+    },
+    {
+      "id": "financebench_id_00684",
+      "uid": "financebench_id_00684_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "878a6fa7d936484bfb7751d9f59e05a0dee1915a159f543059874d1ff5e2233d"
+    },
+    {
+      "id": "financebench_id_00684",
+      "uid": "financebench_id_00684_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "628bf7d849f78265a45206d1af41ab44b34ac97a2f229959cd1abcd14fef7163"
+    },
+    {
+      "id": "financebench_id_00685",
+      "uid": "financebench_id_00685_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "a0c3b0bb5cf49df13b12b7ec3c00810033beee9679dc67155682e172a0a405f0"
+    },
+    {
+      "id": "financebench_id_00685",
+      "uid": "financebench_id_00685_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "bd06ee103488c963ef50ffc88bc5ef29252a4cf6803d01b0b87534131db8fe8d"
+    },
+    {
+      "id": "financebench_id_00702",
+      "uid": "financebench_id_00702_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "264828c5c7d1bf6ad3f4d6648e761d33d97897944e6e1770e428a17b6aa9465b"
+    },
+    {
+      "id": "financebench_id_00702",
+      "uid": "financebench_id_00702_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "d05b765423b9bf889466a4e1c61565b0c8d56b06f0af17ac5664d4325c87320a"
+    },
+    {
+      "id": "financebench_id_00705",
+      "uid": "financebench_id_00705_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "6b7fbe1d2930dd93b7630bb1fa36a5c25efec8bef1813877ef06595fa48173a5"
+    },
+    {
+      "id": "financebench_id_00705",
+      "uid": "financebench_id_00705_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "f2e46ad5714a4316d6eca99c89a7364b7723f548b79a628681726edb8b1c663f"
+    },
+    {
+      "id": "financebench_id_00711",
+      "uid": "financebench_id_00711_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "0f8f3e2d12b79790b385f7a1e77bd975f4bd8192d4256c1dea8a3118f12f8c42"
+    },
+    {
+      "id": "financebench_id_00711",
+      "uid": "financebench_id_00711_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "fe934bfc3b411983c18823f0567fefe31848098462302fd0bdb6e8cd9d693441"
+    },
+    {
+      "id": "financebench_id_00720",
+      "uid": "financebench_id_00720_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "36c7be23558c700c1447ce1939e6f34aec43492628f3703eb6a35e4fcc142bce"
+    },
+    {
+      "id": "financebench_id_00720",
+      "uid": "financebench_id_00720_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "678c992c3b6daf3fe65a7e7bb317cde3ca5c42477a5f68e439aed0a54321b742"
+    },
+    {
+      "id": "financebench_id_00723",
+      "uid": "financebench_id_00723_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "acc416c68ce21171529d38f9f00d1ada0e6a2c1f12f7997604527878e31c8389"
+    },
+    {
+      "id": "financebench_id_00723",
+      "uid": "financebench_id_00723_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "a80159c0702da94e382ce3a66b1b1ed4e1fc1be52a7871f3da96e97224f2ed1a"
+    },
+    {
+      "id": "financebench_id_00724",
+      "uid": "financebench_id_00724_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "f8835ad8b841dda2e2f6210e8af669268cc6077bb94fac6df1ea8b59a4aae8f0"
+    },
+    {
+      "id": "financebench_id_00724",
+      "uid": "financebench_id_00724_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "8220688e281e6a469b370a39af53f12bf14ddce29f90db379ee61deec38c30b4"
+    },
+    {
+      "id": "financebench_id_00735",
+      "uid": "financebench_id_00735_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "6dc4b742fb6ef6ac1c15a8eac7cb09c51dd6c9ad0b113e6ea44d3613eed83d82"
+    },
+    {
+      "id": "financebench_id_00735",
+      "uid": "financebench_id_00735_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "c69205f59a241258663180bdbd5fec9ee4f5793f9c66f2d85623908737747032"
+    },
+    {
+      "id": "financebench_id_00746",
+      "uid": "financebench_id_00746_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54"
+    },
+    {
+      "id": "financebench_id_00746",
+      "uid": "financebench_id_00746_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "8828fa58e22a788a4353b751ff4942c8d45b91791cf88117bf3b3ced43237288"
+    },
+    {
+      "id": "financebench_id_00757",
+      "uid": "financebench_id_00757_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "df1fed1c6085d36225160d2d718097f01c0d0ff3f70b5c1624899620eaed6067"
+    },
+    {
+      "id": "financebench_id_00757",
+      "uid": "financebench_id_00757_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "575368c228ed50c3e2896ad5d62e327a3a39ba4cd934394be12077bfe380c338"
+    },
+    {
+      "id": "financebench_id_00790",
+      "uid": "financebench_id_00790_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "55594efd8efa26c02a42cedc8ed180c4cb8532c4d8949c7bf01637fd5a91a2e4"
+    },
+    {
+      "id": "financebench_id_00790",
+      "uid": "financebench_id_00790_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "de6998108e76643a88cdc701f58043112eb8dabcb24a955f9a0ccb210b944ec1"
+    },
+    {
+      "id": "financebench_id_00799",
+      "uid": "financebench_id_00799_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "656f3c008a4e6b8fa59130d05c2f576ffb122c0f3fc77135a5ca83ac7962d421"
+    },
+    {
+      "id": "financebench_id_00799",
+      "uid": "financebench_id_00799_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "5fc1ec66fbfba3c86a53fcd949fd5f75ac56e54da239b82eb3781e030418fdc0"
+    },
+    {
+      "id": "financebench_id_00807",
+      "uid": "financebench_id_00807_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "eb1ecd981eb8cc7bfed771778efc85ce1a923a2fb58e865dd4995b908d08ff43"
+    },
+    {
+      "id": "financebench_id_00807",
+      "uid": "financebench_id_00807_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "211e7c81229c2dcbc28c4dbf0ce36f037fcd833d420511f5a0d738ae42a51266"
+    },
+    {
+      "id": "financebench_id_00822",
+      "uid": "financebench_id_00822_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "d22ed1ac70050fb2fb1e2a638769b91d67fe7407c53ddb3bd4308be70158260d"
+    },
+    {
+      "id": "financebench_id_00822",
+      "uid": "financebench_id_00822_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "89513e458519b8a8e025f390359d71cf6db0cd5063c2f9f84fdc21af077d9582"
+    },
+    {
+      "id": "financebench_id_00839",
+      "uid": "financebench_id_00839_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "ceea20d2e5adc9cc176bb11dc118d32800e5db0d85bb8d03e51b5674bf810bf2"
+    },
+    {
+      "id": "financebench_id_00839",
+      "uid": "financebench_id_00839_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "70e253f8e916a501f2c71e0dfca4d2abb5a913c1181bed4d567c37547f90201f"
+    },
+    {
+      "id": "financebench_id_00859",
+      "uid": "financebench_id_00859_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "c94ca4d4e825c166647ef17b623e2b8ad7a890f0b80be93e136d5ebc46ca0eea"
+    },
+    {
+      "id": "financebench_id_00859",
+      "uid": "financebench_id_00859_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "9788d0e00d28bf6a854d56c475b571a65599b7f7681a6c142b702f1227ed70b5"
+    },
+    {
+      "id": "financebench_id_00882",
+      "uid": "financebench_id_00882_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "ce7e888cd60f3db547c6ef7e6c25ce2a3764f4fab044a7e10441b8379881811e"
+    },
+    {
+      "id": "financebench_id_00882",
+      "uid": "financebench_id_00882_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "6c5f8246119e218c31e301ff2b5debe19a41cc069c47ff35dda8cbdf96771e22"
+    },
+    {
+      "id": "financebench_id_00917",
+      "uid": "financebench_id_00917_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "25e71b61d13164f0e90a5632aa3ebab5c86b4cf93262479ad7c8bfcbced9a13a"
+    },
+    {
+      "id": "financebench_id_00917",
+      "uid": "financebench_id_00917_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "20713d5204f551b2760c304d3ae85fd97136e7a4c9a12aa3c101e600f8e0d020"
+    },
+    {
+      "id": "financebench_id_00941",
+      "uid": "financebench_id_00941_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "57d62c2c6bac7ecab53a045919f6f45a4799c0f21e238764483e39ecb2093f7e"
+    },
+    {
+      "id": "financebench_id_00941",
+      "uid": "financebench_id_00941_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "d3adfa1acaa4dbc7a8d61f1b38c3572834bf43acaf0d509421bc9713e4da02d6"
+    },
+    {
+      "id": "financebench_id_00956",
+      "uid": "financebench_id_00956_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "771ba39fcde2b6fd7f282d0458c0ed03816dda56fd77dc38d01288c8404a4460"
+    },
+    {
+      "id": "financebench_id_00956",
+      "uid": "financebench_id_00956_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "6e50f15205c679b27fcd9b1eeed6d6e07498b0bc1f22f643cc7542a908c48bf7"
+    },
+    {
+      "id": "financebench_id_00995",
+      "uid": "financebench_id_00995_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "cd50e9048aa7020b598e633f80506b84a738a5d49cb78f7ac7f499d1b1926569"
+    },
+    {
+      "id": "financebench_id_00995",
+      "uid": "financebench_id_00995_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "efaea73a6de0c2f1cc235610b8eb8cac02d945b00ee98e2342812f9b3c7630e9"
+    },
+    {
+      "id": "financebench_id_01009",
+      "uid": "financebench_id_01009_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "dad901c194b4b193bc9269f2de56c01507de94b0a1954ccb0d2aeb01e1badc31"
+    },
+    {
+      "id": "financebench_id_01009",
+      "uid": "financebench_id_01009_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "b26e45ffd083ef9044091c1e22357b319a3cb5fc39acbee430163dbd8ed8cc90"
+    },
+    {
+      "id": "financebench_id_01028",
+      "uid": "financebench_id_01028_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "65a85de45945e88978eecab9d082d84c923092682ea80772720452e1ca60fdaf"
+    },
+    {
+      "id": "financebench_id_01028",
+      "uid": "financebench_id_01028_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "437a8c80d27e89554a8e8e24367af94e12d68bbe6e936688f880c2af341c01d1"
+    },
+    {
+      "id": "financebench_id_01077",
+      "uid": "financebench_id_01077_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "477d71c06ca3a155a9ecab0e4be1d2db3d8df7e9512845fa80071a38b277e8dd"
+    },
+    {
+      "id": "financebench_id_01077",
+      "uid": "financebench_id_01077_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "5a2b664bebee8eddca8304ebbc50d1df8f4928cf7ae51a3a7223c987d27f8928"
+    },
+    {
+      "id": "financebench_id_01079",
+      "uid": "financebench_id_01079_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "f109d5e9261693574d63ed3e933ef49c9f81e85fe92abcd1a567bad473294dee"
+    },
+    {
+      "id": "financebench_id_01079",
+      "uid": "financebench_id_01079_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "8317ccbe51260737b635b1b3fdbbfd97ce3e049e0df85bc87cf92b123ea6e88c"
+    },
+    {
+      "id": "financebench_id_01091",
+      "uid": "financebench_id_01091_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "8c1d4711bbf3ba9502c35ce833ac8823e5e689b0b4bef7af7266c5d459331c39"
+    },
+    {
+      "id": "financebench_id_01091",
+      "uid": "financebench_id_01091_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "79989ed15016bbffeb8dfb25c29326143a89b40f29323ed610b0558ef65bef65"
+    },
+    {
+      "id": "financebench_id_01107",
+      "uid": "financebench_id_01107_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "7c3371fa8360bfa8bc26c36e2994969da7a59dcac2b9c09a803a096fa3b23b7e"
+    },
+    {
+      "id": "financebench_id_01107",
+      "uid": "financebench_id_01107_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "aa7c7525d8f9813b43410652b1b401869524b59811b979f23ca613a1195fb646"
+    },
+    {
+      "id": "financebench_id_01148",
+      "uid": "financebench_id_01148_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "969bfa712618e318e0aa2dd01a9a51cf788f0f3da2104a6980c2b60fc372adcf"
+    },
+    {
+      "id": "financebench_id_01148",
+      "uid": "financebench_id_01148_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "da2a59cd2b02c331bc0fdcfa947488a574934e12e4ad172b77b72daf5663fe74"
+    },
+    {
+      "id": "financebench_id_01163",
+      "uid": "financebench_id_01163_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "f9e8070d34ff4f9e3cda92b48a59a0addfbd80a15cfe4d4761d7c10dd9eb1a4e"
+    },
+    {
+      "id": "financebench_id_01163",
+      "uid": "financebench_id_01163_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "ecb6c1e821520bbb18cfa971629b2968862ddad54f6d2c8f38d8759c72359e8b"
+    },
+    {
+      "id": "financebench_id_01198",
+      "uid": "financebench_id_01198_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "2d42ebd6ad3216d88abb0f05f79b0287a52b6f27773dbe55fa9a7e62ef35a580"
+    },
+    {
+      "id": "financebench_id_01198",
+      "uid": "financebench_id_01198_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "6f395f28fb08171db560987fe355e7a51be8b970f5c8d3a205adf13d232dbba0"
+    },
+    {
+      "id": "financebench_id_01226",
+      "uid": "financebench_id_01226_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "c5111956e72eab9675ceaa4b5546097c88b09deddfe4a786e5d149c4418ba595"
+    },
+    {
+      "id": "financebench_id_01226",
+      "uid": "financebench_id_01226_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "00b2d3120f61f2cf65d99000fdb66dd6b2bdc84eeb65718c6dabda5c97ac5d8f"
+    },
+    {
+      "id": "financebench_id_01244",
+      "uid": "financebench_id_01244_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "cab4e714a277e81436ebe4e40770fd5a494ce0b2a6a33a357fbed92f3f5f4450"
+    },
+    {
+      "id": "financebench_id_01244",
+      "uid": "financebench_id_01244_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "84cafea1eef31fdaacec37179c3edb5cfaba505c44e886fe225e20e1a9b1a2ae"
+    },
+    {
+      "id": "financebench_id_01254",
+      "uid": "financebench_id_01254_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "20c7d62194f23f52a867b5af533de89f25029860a9a940d2234730824ec633df"
+    },
+    {
+      "id": "financebench_id_01254",
+      "uid": "financebench_id_01254_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "6ca93459dd562c44f6a49cac8b0be26203fb7649ae42fae6c59b3295af0c11fe"
+    },
+    {
+      "id": "financebench_id_01275",
+      "uid": "financebench_id_01275_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "824e9697cd932917c607594f01db9c5779ec049d781fc8fd9a515574a61a3d04"
+    },
+    {
+      "id": "financebench_id_01275",
+      "uid": "financebench_id_01275_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "0ce6659b8eb8d4baec5d4973a7f42245f345361a7b66e67c098eedc9fe551f49"
+    },
+    {
+      "id": "financebench_id_01279",
+      "uid": "financebench_id_01279_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "a03cb1cc98561e086a9e728999f9cae741e3d7f109a5a3fbd498f1429fc754f1"
+    },
+    {
+      "id": "financebench_id_01279",
+      "uid": "financebench_id_01279_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "5c670fcb3622cc9696ea070d6f374a740aa10c80a5652f89eb444e9e9d370ee7"
+    },
+    {
+      "id": "financebench_id_01290",
+      "uid": "financebench_id_01290_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "835d0da6f56e9073339070285a889c3a526279beb46a78d85f33790df3e00786"
+    },
+    {
+      "id": "financebench_id_01290",
+      "uid": "financebench_id_01290_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "767259d564303688a8d426a4d2e222a31dca5800bb2e0788adf64e99b831d11d"
+    },
+    {
+      "id": "financebench_id_01319",
+      "uid": "financebench_id_01319_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "11c0ec500abc6f431fa95108bf9a9cda49c0cacfb9b5d3d99d8d543a1f46a649"
+    },
+    {
+      "id": "financebench_id_01319",
+      "uid": "financebench_id_01319_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "5079353b0e6fb8ee5b08b50c3e7c7ba9a7bcaaeda700b757c51ee830a0a80789"
+    },
+    {
+      "id": "financebench_id_01328",
+      "uid": "financebench_id_01328_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "81b7e235d2f53bbb4944b0ffe2b6068579e03fe52958bc21659c8fe03e06f5a3"
+    },
+    {
+      "id": "financebench_id_01328",
+      "uid": "financebench_id_01328_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "2639baa363862a930fcbc1ba2a187cffe536ff09b0266bceb797380a7e957de4"
+    },
+    {
+      "id": "financebench_id_01346",
+      "uid": "financebench_id_01346_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "be8c0fa9c4a2567aa294d408b809c7eebbfc835e373a595077095de4221e4fc1"
+    },
+    {
+      "id": "financebench_id_01346",
+      "uid": "financebench_id_01346_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "7b826b227cdcfcef194b3b9fc0f0390e1f53a45ef1baf40be8aff660539c606b"
+    },
+    {
+      "id": "financebench_id_01351",
+      "uid": "financebench_id_01351_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "2ce9a3d3a672e015be6d5095722692a44dfde121839fc0a66793eb5ef0435645"
+    },
+    {
+      "id": "financebench_id_01351",
+      "uid": "financebench_id_01351_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "23089c3e466d0063b9463a72da5f44ea54ce9fbbca5df0888ac313587acf5bb1"
+    },
+    {
+      "id": "financebench_id_01474",
+      "uid": "financebench_id_01474_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "734777394b593885326377c2a8471d6393f451c389e8658b27e3884ff08c1bdf"
+    },
+    {
+      "id": "financebench_id_01474",
+      "uid": "financebench_id_01474_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "2108523a29eb5a279ba79ec7f0efb8feabd2d0a333227599f56911172e57a0c5"
+    },
+    {
+      "id": "financebench_id_01476",
+      "uid": "financebench_id_01476_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "7e19acbd5ac43a4dd15f677c5a5f05b2243b2fe91dacb2d535ed92e415992ede"
+    },
+    {
+      "id": "financebench_id_01476",
+      "uid": "financebench_id_01476_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "3d2ddca2223787b904394359549c57193f4326393185178c2c5019a4cbff17ec"
+    },
+    {
+      "id": "financebench_id_01482",
+      "uid": "financebench_id_01482_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "e3a819a006bb7a9f0d94665c7f07415b0ecc600dcc65dbede39dad7e4b225a9e"
+    },
+    {
+      "id": "financebench_id_01482",
+      "uid": "financebench_id_01482_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "e06539cceb6e4254f8a6b0fee123f58676fd261dd021a1f2bc7bc10eac67e12b"
+    },
+    {
+      "id": "financebench_id_01484",
+      "uid": "financebench_id_01484_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "8a1b3a2b73412364afb44fda37e200f43413c928fcd503842ecaf4c92320149e"
+    },
+    {
+      "id": "financebench_id_01484",
+      "uid": "financebench_id_01484_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "f555a91bce2483e4bd2bdc359927317c81d954a5724cf4d1ea8167359584ad5d"
+    },
+    {
+      "id": "financebench_id_01487",
+      "uid": "financebench_id_01487_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "8ff749d1284291edaa200a3172271185f903d6a260a7ee31d5018725e6b09e88"
+    },
+    {
+      "id": "financebench_id_01487",
+      "uid": "financebench_id_01487_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "42ea08df3dac6892502c378c9ff2900f5e786d9226b04a1f36b6d028ca7447b2"
+    },
+    {
+      "id": "financebench_id_01488",
+      "uid": "financebench_id_01488_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "838beed9ec833e9d831ea9dc2683a4789c63d198308fa8658d7cd276060b4349"
+    },
+    {
+      "id": "financebench_id_01488",
+      "uid": "financebench_id_01488_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "62f7926ea367ee7008603759dce3eb35722b0b9239ff2619d6f5b947bbd80f8f"
+    },
+    {
+      "id": "financebench_id_01490",
+      "uid": "financebench_id_01490_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "de5fbb3d7a53b7bd524c880c5e3c936fdab0d56923835a19fd8f0441722c5631"
+    },
+    {
+      "id": "financebench_id_01490",
+      "uid": "financebench_id_01490_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "19b69b35657beb0833b891aa0e4f97cdc26e992950eedc70cb435ef883b0ccbc"
+    },
+    {
+      "id": "financebench_id_01491",
+      "uid": "financebench_id_01491_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "44869399f99ee2abffd4e734a4f7c9fe179bbe00ac839351d7d96b3fe3d2c82a"
+    },
+    {
+      "id": "financebench_id_01491",
+      "uid": "financebench_id_01491_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "4b10602c275df3b7ed117c8a8c7b516ebdb100e948cadac70a784b4747df01fa"
+    },
+    {
+      "id": "financebench_id_01858",
+      "uid": "financebench_id_01858_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "0f076d7e9e5654b58ef08f233338e43cb69c07092a61e6930722f02ecc80142b"
+    },
+    {
+      "id": "financebench_id_01858",
+      "uid": "financebench_id_01858_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "dbf7a99809044fed7382c70a222cc5435de6656b074a4ea4bf7d764749de4c4a"
+    },
+    {
+      "id": "financebench_id_01865",
+      "uid": "financebench_id_01865_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "a794ddac09dac00a3f6f4b3f0c9b5de537d2fd4f5971152163cfc874530f6090"
+    },
+    {
+      "id": "financebench_id_01865",
+      "uid": "financebench_id_01865_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "4d058747012bd729c505bb3c60eff632709ff79a2d33e025cd9444fc3887475d"
+    },
+    {
+      "id": "financebench_id_01902",
+      "uid": "financebench_id_01902_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "8c9604d2b4f561e1237f19e79483d84752b236986a789aeacd20ab25a7731456"
+    },
+    {
+      "id": "financebench_id_01902",
+      "uid": "financebench_id_01902_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "7549197af5a99560169731cfd02eabef8d7530a649b5725310e20762b8da35c1"
+    },
+    {
+      "id": "financebench_id_01911",
+      "uid": "financebench_id_01911_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "40c711f344ddb6805be16a290ba46bd38dfdafe9649fff60960492254e5b117e"
+    },
+    {
+      "id": "financebench_id_01911",
+      "uid": "financebench_id_01911_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "d5843fe7e2775b67c5df9240a8b3444c186b1a0a6dd6d78982c07abf30fe0ac3"
+    },
+    {
+      "id": "financebench_id_01912",
+      "uid": "financebench_id_01912_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "14cf2c8dfbf831438b7833c2f4ded9f461668593a47c0a837d7f3a624478953a"
+    },
+    {
+      "id": "financebench_id_01912",
+      "uid": "financebench_id_01912_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "0297fc011030fd1cb54048fef55f34b92f88c1b5c343e19d37e87446c5e6a260"
+    },
+    {
+      "id": "financebench_id_01928",
+      "uid": "financebench_id_01928_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "0390b60d7d071c1962d7a6dd946a1fc7fb0154f8d242154b78c9e725e2f63503"
+    },
+    {
+      "id": "financebench_id_01928",
+      "uid": "financebench_id_01928_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "3b7055be82b76ee13acda8b78b51935348d0c600b4434d21e73a0ba59fceeb7b"
+    },
+    {
+      "id": "financebench_id_01930",
+      "uid": "financebench_id_01930_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "58bb93f401d6cee3b9a4ff3f0b1b002701fa01b421ca1a929e772b0bbdff6fc9"
+    },
+    {
+      "id": "financebench_id_01930",
+      "uid": "financebench_id_01930_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "b7ec23af715482b9894e0ea311b22b167acd80d0f45067c7b1ade98150e53827"
+    },
+    {
+      "id": "financebench_id_01935",
+      "uid": "financebench_id_01935_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "1ae7fadbd422ef72b7953d7ee285c877700f0377e5591a6e774a79d1c28708f8"
+    },
+    {
+      "id": "financebench_id_01935",
+      "uid": "financebench_id_01935_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "f5c1a20a6c4a9649f6d7e0bbe79d5d0803896063bbf47c3a58b820760373971b"
+    },
+    {
+      "id": "financebench_id_01936",
+      "uid": "financebench_id_01936_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "cfa4b9dfed26385d87209cd138f35b897c01617308e470de0f6ae1ae9f58f26c"
+    },
+    {
+      "id": "financebench_id_01936",
+      "uid": "financebench_id_01936_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "21b2f924e0ade3d9a26119687f8a9e245649c102d4af938c0c185e7dd61cfcaa"
+    },
+    {
+      "id": "financebench_id_01964",
+      "uid": "financebench_id_01964_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "c5d14620b70e71dda5f980a56ad86a33783bc38eaaace2d3559bb49aa0001853"
+    },
+    {
+      "id": "financebench_id_01964",
+      "uid": "financebench_id_01964_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "70cfb7a0712b14affd68d3443906334c1ca9eb28de40406bd99f18b0e5e1b34b"
+    },
+    {
+      "id": "financebench_id_01981",
+      "uid": "financebench_id_01981_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "dabb43d1ffcdb7f47fbc76751fe30dee5c514115853a08f197de9ea15808e543"
+    },
+    {
+      "id": "financebench_id_01981",
+      "uid": "financebench_id_01981_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "f1d375e2934330bd1418ab5f2695bd123afec2c19a3ae58fa9b3fc5829e1c909"
+    },
+    {
+      "id": "financebench_id_02024",
+      "uid": "financebench_id_02024_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "9512586fdab4431500c28909c8953d4ae38a730ff15c6c98bf748415a8ea98e2"
+    },
+    {
+      "id": "financebench_id_02024",
+      "uid": "financebench_id_02024_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "8018efc445ab1b629a0189c9ba3ba08e6bb580846ac1e76967ed2c9b19ed6051"
+    },
+    {
+      "id": "financebench_id_02049",
+      "uid": "financebench_id_02049_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "d8c7f9a34e581031c60b1491f92cf15bb0eda2594ef046d965dbb0f48773a346"
+    },
+    {
+      "id": "financebench_id_02049",
+      "uid": "financebench_id_02049_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "794fd31ef81800fd2efd6a23a4acbd19c325a4ec753845a04ddda63a497c9394"
+    },
+    {
+      "id": "financebench_id_02119",
+      "uid": "financebench_id_02119_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "4de7a7b0ec975c8b40cfdcc1d547c7c3d9d65ee25bb0e4c8ba72cc2daac84d96"
+    },
+    {
+      "id": "financebench_id_02119",
+      "uid": "financebench_id_02119_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "9a6776616c21ccbd86cfc662c63140c5d83786a8b79896263fdd58ae06ff9cb3"
+    },
+    {
+      "id": "financebench_id_02416",
+      "uid": "financebench_id_02416_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "c6b73c6c7081d43f35e1435e67b16db2c88a2f6f8f779cc0bf9201e29f1f4b2e"
+    },
+    {
+      "id": "financebench_id_02416",
+      "uid": "financebench_id_02416_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "59f6565b053dc61ceb45434bfbbc4d4446f16a2e498d3dc4661471941539d670"
+    },
+    {
+      "id": "financebench_id_02419",
+      "uid": "financebench_id_02419_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "b1ee947dc5abd20aceb79f732b6ce08c7e9c6fc9c7a02601f9a5ca53f5b66f38"
+    },
+    {
+      "id": "financebench_id_02419",
+      "uid": "financebench_id_02419_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "bcdec9b73a3d2a99a431881946f6e080f652ebc810f4e4786d51206dd7c8f2b1"
+    },
+    {
+      "id": "financebench_id_02608",
+      "uid": "financebench_id_02608_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "13eecd8187aa00d7beabe0d3c9432400dd6376cd21e327f1f0119c3b9c821f06"
+    },
+    {
+      "id": "financebench_id_02608",
+      "uid": "financebench_id_02608_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "2b1054e940ff9de1dd04de57da0a997d409ac995878366f8cd25d0d6a62d025c"
+    },
+    {
+      "id": "financebench_id_02981",
+      "uid": "financebench_id_02981_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "233b7fed3126bce1eb20a1a99db92926b912a8c07c392a8864853a6666ab554e"
+    },
+    {
+      "id": "financebench_id_02981",
+      "uid": "financebench_id_02981_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "cff4cfa6b78fde71e00ffdac62601147c9bbc49b983f219eb3daa81a293b57bf"
+    },
+    {
+      "id": "financebench_id_02987",
+      "uid": "financebench_id_02987_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "e41014be9d6f138e0282f21d87298588e3999903f3c7b4073c34cd95fc9df007"
+    },
+    {
+      "id": "financebench_id_02987",
+      "uid": "financebench_id_02987_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "b8e5d4e212a84a3d5917cc4373b6aec11ed0743737ca3254ddf880203973c45a"
+    },
+    {
+      "id": "financebench_id_03029",
+      "uid": "financebench_id_03029_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "e799f511f9175354f86d7ad557e40fde590ebb6df6d6446147ab33b2d7f4a0ac"
+    },
+    {
+      "id": "financebench_id_03029",
+      "uid": "financebench_id_03029_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "c50020ceeafbff4ac27917831eecc6be369f10a5704b8d48a0fbb2a664930bb4"
+    },
+    {
+      "id": "financebench_id_03031",
+      "uid": "financebench_id_03031_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "e8c43bb44652858334e005d1f6e7ca31e85c7e252262bcea6563ce85c17c73cc"
+    },
+    {
+      "id": "financebench_id_03031",
+      "uid": "financebench_id_03031_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "bab43055f1db5f9a2c3cda86dea291f924de41f7a1c9586c582cf46cb91cb14e"
+    },
+    {
+      "id": "financebench_id_03069",
+      "uid": "financebench_id_03069_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "7b2eae5d540d7cf2d447ad6fc97b77ac14d4dd285804eba026e831fbf9dbf943"
+    },
+    {
+      "id": "financebench_id_03069",
+      "uid": "financebench_id_03069_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "f539494f098ee4919a86bf9122d19e59d9485c8d09ceac89a43f484aa3ee3e50"
+    },
+    {
+      "id": "financebench_id_03282",
+      "uid": "financebench_id_03282_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "ebb50fa19a5811cfb7f221a96ea1f5e12cb4953fb50bc539bf1943cfac0bd78d"
+    },
+    {
+      "id": "financebench_id_03282",
+      "uid": "financebench_id_03282_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "e9ded9326cc7249ddece26a3d73d9cf1fd923c53c501700035d7bd6f7f3c6bc3"
+    },
+    {
+      "id": "financebench_id_03471",
+      "uid": "financebench_id_03471_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "16b05bbb0cd5fb57d12a639cb898b5a8ad314a776c4a9947d95d0f9944c7655f"
+    },
+    {
+      "id": "financebench_id_03471",
+      "uid": "financebench_id_03471_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "2c61a67d440f3182bb42a3f1f4a80af423840763c6971ac479fe24f0ed12fc6e"
+    },
+    {
+      "id": "financebench_id_03473",
+      "uid": "financebench_id_03473_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "6e986afce56e9bc760e76f3c2313d66dec260c1afdcad89805ca8a0445522ba0"
+    },
+    {
+      "id": "financebench_id_03473",
+      "uid": "financebench_id_03473_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "39b9e66e0b614ec9f0b9961f69bc9ebcb037c3945175f75c26bf20c3f6e35edb"
+    },
+    {
+      "id": "financebench_id_03531",
+      "uid": "financebench_id_03531_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "006ad51a64eaadbac1df160b0b87d6058009a729ef854bd855816c7b0c2f39b9"
+    },
+    {
+      "id": "financebench_id_03531",
+      "uid": "financebench_id_03531_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "ac8083909771eb3630f45b913f02a201d42263c9a3f28b4add0e2f8603c89ff7"
+    },
+    {
+      "id": "financebench_id_03620",
+      "uid": "financebench_id_03620_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "4d7c3f2d30621d6c8785e37170e1ca07f4cc5928c862cf8c81eaa29e297f0b31"
+    },
+    {
+      "id": "financebench_id_03620",
+      "uid": "financebench_id_03620_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "0d77dfd1bec2b3884cd0aca42bd9cab88f2074d1c1b1d0a08fb55398359efd0d"
+    },
+    {
+      "id": "financebench_id_03718",
+      "uid": "financebench_id_03718_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "f9d8ad68929f070c74d5abb881facdc9a072381da0debe6260edc7b13de30a78"
+    },
+    {
+      "id": "financebench_id_03718",
+      "uid": "financebench_id_03718_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "ea22871da8034956faa8036c67fdbc83d31403eed93c14454936c0492860be1d"
+    },
+    {
+      "id": "financebench_id_03838",
+      "uid": "financebench_id_03838_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "a14dabdedcc2e069706b730e8315b42dd8b83f34e9c18a12b89b2083edb40820"
+    },
+    {
+      "id": "financebench_id_03838",
+      "uid": "financebench_id_03838_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "f4b8c1d683c9b5ecbc51a22e6b47106f15954a4d6f9a28647601f98f75c8f1cb"
+    },
+    {
+      "id": "financebench_id_03849",
+      "uid": "financebench_id_03849_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "fc21dfa8f0f804586c3f657b5133e4da85a9814c063c3938088957a82d4a3db0"
+    },
+    {
+      "id": "financebench_id_03849",
+      "uid": "financebench_id_03849_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "0e8d418e585342c43dcba436d517b1970dfa43f2e175b2d8fd704a6fb72f9753"
+    },
+    {
+      "id": "financebench_id_03856",
+      "uid": "financebench_id_03856_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "9b4d63d5f4df87ab5e07a6bd2b2de4d20f3a75550ecd335161c83604066afcda"
+    },
+    {
+      "id": "financebench_id_03856",
+      "uid": "financebench_id_03856_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "f35f7dae38f1bb6d0865ecd509b642b1375c1824fa6d45889433cf505385bfd7"
+    },
+    {
+      "id": "financebench_id_03882",
+      "uid": "financebench_id_03882_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "879cc6aa6fc003f36fab071183b1fd3fa7346b91cc6e16b760705f1e2b1ef8a7"
+    },
+    {
+      "id": "financebench_id_03882",
+      "uid": "financebench_id_03882_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "25156d87f70009b034248dd52c19d6143e7ca7be655254b9e3f331d3355ce7de"
+    },
+    {
+      "id": "financebench_id_04080",
+      "uid": "financebench_id_04080_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "d97694222e4c1a4f390c74a34b2cd52543567dbc48694289b1b021704038180f"
+    },
+    {
+      "id": "financebench_id_04080",
+      "uid": "financebench_id_04080_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "b3f3b214bd8f35c16a17a7988d631fbdef654d84e1a4ef0ae15b9d473f68d0c4"
+    },
+    {
+      "id": "financebench_id_04103",
+      "uid": "financebench_id_04103_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "e106ef835bc32f7b4a55483ac91c850bf1ac2037cb8d66c01d18b1d3831bbf31"
+    },
+    {
+      "id": "financebench_id_04103",
+      "uid": "financebench_id_04103_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "3c9547c796ce706903635ec2d9ab3072a78d93ef980be756ccf4b4a16a888739"
+    },
+    {
+      "id": "financebench_id_04171",
+      "uid": "financebench_id_04171_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "3614d5cca06e7c9631495b0f7f6f51cba23c40a162a3bff3d6a66b00c13c7945"
+    },
+    {
+      "id": "financebench_id_04171",
+      "uid": "financebench_id_04171_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "9c4db8f1a44266afa5a236e8f98e0edabac8403b77f1b3370fcb5efdc2837152"
+    },
+    {
+      "id": "financebench_id_04209",
+      "uid": "financebench_id_04209_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "0c0682f8672fecff084aa9f6502637f3007ec93b5cf28885ba4b2fd76ce73753"
+    },
+    {
+      "id": "financebench_id_04209",
+      "uid": "financebench_id_04209_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "d5ff08f4c9fbcd0c5f00099b157547cef4e7e539565e4341234aa72a1a1c52ff"
+    },
+    {
+      "id": "financebench_id_04254",
+      "uid": "financebench_id_04254_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "568a474defec66b2bcd6d3acad37277187278d01668228c5ead578af22e62b7d"
+    },
+    {
+      "id": "financebench_id_04254",
+      "uid": "financebench_id_04254_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "c052881493cca6bc04a7ee32fffb171ce8a5d1f8141e2acec8890d8179d90357"
+    },
+    {
+      "id": "financebench_id_04302",
+      "uid": "financebench_id_04302_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "df33d6ba568a6a5cc56b4882b4d361d73ddfe5bbad712abc28083066818ff358"
+    },
+    {
+      "id": "financebench_id_04302",
+      "uid": "financebench_id_04302_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54"
+    },
+    {
+      "id": "financebench_id_04412",
+      "uid": "financebench_id_04412_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "88e8b90249365384ecb8a546f0f55a33925910c9079dcaba0dc21ee532c6b7a6"
+    },
+    {
+      "id": "financebench_id_04412",
+      "uid": "financebench_id_04412_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "0a57b5d6f8e4e18d88d54aac9240dc58c24febe5a958365b6469e19bffedf8af"
+    },
+    {
+      "id": "financebench_id_04417",
+      "uid": "financebench_id_04417_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "f3927e78a16985f92db5f5281d63cb0252e4ee491a15e2c589c9d4f45a849fb9"
+    },
+    {
+      "id": "financebench_id_04417",
+      "uid": "financebench_id_04417_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "c771aa6da8eb6dff67aac2281e7b658fc3cfa7027aeb94e2c56d7b0b9f8f6088"
+    },
+    {
+      "id": "financebench_id_04458",
+      "uid": "financebench_id_04458_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "a278628b4561b1965fc4dfc649a6621c0ff1d40f5a48eb22e715542c356578cb"
+    },
+    {
+      "id": "financebench_id_04458",
+      "uid": "financebench_id_04458_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "7d2e4d52c948978c2ef4bbb24b3dd4b2ea00c18a36dadaeb601f1db2ea9a4165"
+    },
+    {
+      "id": "financebench_id_04481",
+      "uid": "financebench_id_04481_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "0b13fd27ba6249ff2515f28513b9a22a25cb0754bb081bab57b2a94a369324e3"
+    },
+    {
+      "id": "financebench_id_04481",
+      "uid": "financebench_id_04481_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "25cf6d32470acb5e615c4213305a6b5533c0dbb76af23b53a17e9a03dcb240f1"
+    },
+    {
+      "id": "financebench_id_04660",
+      "uid": "financebench_id_04660_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "693d27e05ce5de300ff7697c0b64506b8c4957c53119403cafcae75352a9a07b"
+    },
+    {
+      "id": "financebench_id_04660",
+      "uid": "financebench_id_04660_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "a1a3a106569f10d521dde43b6c1f49183b144a64306d4bc5d32bb2de2e6f8fb5"
+    },
+    {
+      "id": "financebench_id_04672",
+      "uid": "financebench_id_04672_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "f789b7d36e810563507556eb0abf9958e60da5d1ea77343414891acebf0ae2c0"
+    },
+    {
+      "id": "financebench_id_04672",
+      "uid": "financebench_id_04672_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "612c9e030839725680b2bb441d5d8e941e206d37e0b2f7de74a9712fad848716"
+    },
+    {
+      "id": "financebench_id_04700",
+      "uid": "financebench_id_04700_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "1fbcf7fb3db56932be579b804599046280ef1c0bc80cc0f910c30582da1fd7f8"
+    },
+    {
+      "id": "financebench_id_04700",
+      "uid": "financebench_id_04700_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "e8eeb0f9f7fc597311655ab83467e80dcbcf9dcb822e4fcc0ccbaac3f9535dca"
+    },
+    {
+      "id": "financebench_id_04735",
+      "uid": "financebench_id_04735_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "d8ac00941788c3a11cf78ecfc6e234c20ef979bb1bdeab61b63d30e11812efbd"
+    },
+    {
+      "id": "financebench_id_04735",
+      "uid": "financebench_id_04735_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "96c0cf732f06dc4320a87d0d9da8d0fc39cdad32970c7addac29c62df7dbcdfc"
+    },
+    {
+      "id": "financebench_id_04784",
+      "uid": "financebench_id_04784_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "52660e29054d6d9badb63fd05a3aeeabe2499c29ffda30c54d5f1ffb1ef589ba"
+    },
+    {
+      "id": "financebench_id_04784",
+      "uid": "financebench_id_04784_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "a592da62340f69f4e29c3083d49b1fe2cdbbda33a95afd6d81972c8ba993535a"
+    },
+    {
+      "id": "financebench_id_04854",
+      "uid": "financebench_id_04854_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "972110aee862980b727953b3321e9f602c1e06738aafbfa1f969a02423df4dfe"
+    },
+    {
+      "id": "financebench_id_04854",
+      "uid": "financebench_id_04854_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "f98972ebb82ea7119a1e18cba90bfb042356206c7da5d3b2c35ee2c5afa96efe"
+    },
+    {
+      "id": "financebench_id_04980",
+      "uid": "financebench_id_04980_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "80bca5a04a365994173dd0ff4db5d13ccd6616d091ec8d16502f8be8f6264559"
+    },
+    {
+      "id": "financebench_id_04980",
+      "uid": "financebench_id_04980_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "edda634a5e9d4b4edb0916812fcd84ed9539f34bd48451d0b5af9e987840af88"
+    },
+    {
+      "id": "financebench_id_05718",
+      "uid": "financebench_id_05718_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "16318a0497a5c9346152158c2830474ca98551743f36b5a3ff150374927a5c54"
+    },
+    {
+      "id": "financebench_id_05718",
+      "uid": "financebench_id_05718_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "0de75675267461f3ec4fb9bc95eca18a337a99b6105a19e4adeea067d8c6212f"
+    },
+    {
+      "id": "financebench_id_05915",
+      "uid": "financebench_id_05915_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "f5c6232d1ac89ba003171b54f20b35d57d7c6d4d1a24506ef4c3380b53e4e4b4"
+    },
+    {
+      "id": "financebench_id_05915",
+      "uid": "financebench_id_05915_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "b11ffbc765d11441e171dc610056347364486db7428f587eab1838eae2a13afb"
+    },
+    {
+      "id": "financebench_id_06247",
+      "uid": "financebench_id_06247_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "dfcb9233d597317dae8b69d0d3fd9af8c2c85f603fd680ca8b5bd2d981644f76"
+    },
+    {
+      "id": "financebench_id_06247",
+      "uid": "financebench_id_06247_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "a10fe6671bd2b4e02f8a3b673ee61222b95d53987c7bb8de869c16f2850b318c"
+    },
+    {
+      "id": "financebench_id_06272",
+      "uid": "financebench_id_06272_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "160777a667b19da0a6f653e891769c74455e9c85c82ecaf40e4a5160cd026b67"
+    },
+    {
+      "id": "financebench_id_06272",
+      "uid": "financebench_id_06272_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "4ebeba15c9f74d808069309159b26ef7769e944813a2b5a68cd8e3efc1c028d7"
+    },
+    {
+      "id": "financebench_id_06655",
+      "uid": "financebench_id_06655_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "f4eeb96a7e31ffc9186e4de0de5dffc0643a0c8cfb7a042cce743ec896f877c9"
+    },
+    {
+      "id": "financebench_id_06655",
+      "uid": "financebench_id_06655_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "119d04bcfcba98c9fcb274f587eb4383440714fb886d4676a478cd7f65cbdc39"
+    },
+    {
+      "id": "financebench_id_06741",
+      "uid": "financebench_id_06741_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "72079381078ded72808475008358db1f9ae163afd2825bef0838966f2fdd3aa0"
+    },
+    {
+      "id": "financebench_id_06741",
+      "uid": "financebench_id_06741_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "3eb1657f5d5f5c3efd136dab9b1f3d9055f2512842de03b3bc665c596d26cec2"
+    },
+    {
+      "id": "financebench_id_07507",
+      "uid": "financebench_id_07507_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "be1418293956f29a82f2b623771f324a2cc4292276c57fd3b9cf9c6cc635e536"
+    },
+    {
+      "id": "financebench_id_07507",
+      "uid": "financebench_id_07507_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "4a6307da26673cb97a8724e615c0b6c7818e1c9fa6305e645089c1c03776bfa9"
+    },
+    {
+      "id": "financebench_id_07661",
+      "uid": "financebench_id_07661_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "022c094b228aa7c57280368b6511731376c22e19bc19da7f8320f00ea1d71168"
+    },
+    {
+      "id": "financebench_id_07661",
+      "uid": "financebench_id_07661_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "57f7eca8045522b33354623c9e031666df4f9785f00bc61902f0a7d440182056"
+    },
+    {
+      "id": "financebench_id_07966",
+      "uid": "financebench_id_07966_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "6c173e76a5b95f15bc69002dad5cd525cf1d5d77b18d05a959027ad79de8090d"
+    },
+    {
+      "id": "financebench_id_07966",
+      "uid": "financebench_id_07966_val",
+      "split": "new_response_validation",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "31b21746793baca48d6d32e781a035436bee320f3675d0a312bb4a1705d06d8a"
+    },
+    {
+      "id": "financebench_id_08135",
+      "uid": "financebench_id_08135_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "8891a6097fbc8afd2eacd6dd5d8310d681a3cdef731a952f5e09d22f8f7e0d46"
+    },
+    {
+      "id": "financebench_id_08135",
+      "uid": "financebench_id_08135_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "54cb3c305ce6dd068ca0a887e3b11176371519a2777c5a143bf943506d89c006"
+    },
+    {
+      "id": "financebench_id_08286",
+      "uid": "financebench_id_08286_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "3e6d85eece5889beb03f2dcfedd314e2b64553ba932c56f5842cdf030f59aa80"
+    },
+    {
+      "id": "financebench_id_08286",
+      "uid": "financebench_id_08286_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "920c0b73bdc4e82b214c09a26140d335ccd64cd3c0bbd0e4a3060722249dc771"
+    },
+    {
+      "id": "financebench_id_09724",
+      "uid": "financebench_id_09724_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "796657168d4190b00c6f880811edcfb577e2c8032344c5d9c853b5c46b40f5ae"
+    },
+    {
+      "id": "financebench_id_09724",
+      "uid": "financebench_id_09724_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "099f638a55d0b1b17dba3217b300b478a32e8662a250f8ad3815f16cc5568aa4"
+    },
+    {
+      "id": "financebench_id_10130",
+      "uid": "financebench_id_10130_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "c088e290dde814dc4a21de3d11d4b1fd3e9b97be5f4005f0efc9aa7fa06b428e"
+    },
+    {
+      "id": "financebench_id_10130",
+      "uid": "financebench_id_10130_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "7e9dbba87d65b1266da40b83262376086f96f89f4dce82de48faa6e9e24c4e60"
+    },
+    {
+      "id": "financebench_id_10136",
+      "uid": "financebench_id_10136_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "a28f4cc20380037d00767cde8646e94bde2d69902d6b04d6d1134c5951536ee6"
+    },
+    {
+      "id": "financebench_id_10136",
+      "uid": "financebench_id_10136_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "d871dea5c8f4b46234945c3673ac95a4e4dbda674cbaf2f25f8bef410d84a4a5"
+    },
+    {
+      "id": "financebench_id_10285",
+      "uid": "financebench_id_10285_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_inContext.jsonl",
+      "candidate_sha256": "a9738259dbfc75f5a8893a94d7925995311220ade411afc4cd0a280e54752b2e"
+    },
+    {
+      "id": "financebench_id_10285",
+      "uid": "financebench_id_10285_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "637da5d0efe57be87ce9de2df2713630ca1cc474dab0b9c3c9a7f072caebc022"
+    },
+    {
+      "id": "financebench_id_10420",
+      "uid": "financebench_id_10420_dev",
+      "split": "development",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "ce2a1ec87f7bbf58fa1fcd2cfb8d17b97c1d6cefeda53aa577ca4953785b2366"
+    },
+    {
+      "id": "financebench_id_10420",
+      "uid": "financebench_id_10420_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+      "candidate_sha256": "52555f5b6da2b361ee4ac353ea2cbe800dd1067691f1f771c6d6440eff7fe4be"
+    },
+    {
+      "id": "financebench_id_10499",
+      "uid": "financebench_id_10499_dev",
+      "split": "development",
+      "source_file": "claude-2_inContext.jsonl",
+      "candidate_sha256": "7ce7facc8dc80e5da5896c5c48633738fde6aec252ca4de4d40b603267fae144"
+    },
+    {
+      "id": "financebench_id_10499",
+      "uid": "financebench_id_10499_val",
+      "split": "new_response_validation",
+      "source_file": "gpt-4-1106-preview_oracle.jsonl",
+      "candidate_sha256": "ce6eab31e696aae7c4cf9e32584900eb3d4dafbd857d677f1deb0bb3d3b2a9b7"
+    }
+  ],
+  "change_rationale": "V2 confused unrelated content with explicit refusal. Five development disagreements inspected: 00005,00283,00464,00494,00476.",
+  "human_labels": "Published FinanceBench authors; never included in judge input. Dataset CC-BY-NC-4.0, raw data downloaded separately.",
+  "validation_boundary": "New responses, same questions/companies; selected after seeing earlier aggregate results. No new responses inspected before protocol freeze.",
+  "primary_metric": "3-class accuracy; company-cluster bootstrap 2000, seed 20260910; no score threshold for stopping."
+}

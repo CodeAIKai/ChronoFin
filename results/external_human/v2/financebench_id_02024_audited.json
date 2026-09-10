@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_02024",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9512586fdab4431500c28909c8953d4ae38a730ff15c6c98bf748415a8ea98e2",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "208a1641956a9b628c813bc0888b406a0d45ecb64a08404c9665b98127f985bb",
+  "started_utc": "2026-09-09T17:50:37.494481+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states Verizon expected to pay $862 million for health care and life insurance benefits to retirees in 2024, matching evidence table (2024 Health Care and Life: $862 million) and reference's health care/life figure. Question asks 'how much for its retirees' and candidate specifies the retiree health/life portion with correct amount.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Verizon retirees (health care and life insurance benefits)"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2021 outlook for 2024"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "dollars in millions, $862 million"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "$862 million for health care and life insurance benefits to retirees in 2024 per evidence table"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence page 93 Estimated Future Benefit Payments shows 2024 Health Care and Life $862 million"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bf5f79b72060d1945fa8fa278d493d000d9cd3a2a3682568b9dc1b68139f6397",
+    "latency_seconds": 9.517,
+    "usage": {
+      "prompt_tokens": 2825,
+      "completion_tokens": 269,
+      "total_tokens": 3094,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "86251f2b17a2681fa19a16918f3fab442fd552fdfe1dcbdabfa8651399fd56b2"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

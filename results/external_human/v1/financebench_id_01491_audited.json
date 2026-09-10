@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01491",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "44869399f99ee2abffd4e734a4f7c9fe179bbe00ac839351d7d96b3fe3d2c82a",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "29bbff87ad71b5cad4ab99351ca2da544a1137565f433b51bc83525e6598d10d",
+  "started_utc": "2026-09-09T18:01:08.741020+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states $13.2 billion cash proceeds from Kenvue separation, matching reference and evidence (secured $13.2B from Kenvue debt offering and IPO, dated Aug 30 2023).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "JnJ/J&J and Kenvue separation correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "As of Aug 30, 2023 per evidence date"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Amount in billions USD as requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer $13.2 billion matches reference"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence explicitly states $13.2B cash proceeds from Kenvue offering/IPO"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9b256e474cbe3fc8b6ae4fc42af8d670a2dd43ff650680d8d0d2638a3315860c",
+    "latency_seconds": 9.755,
+    "usage": {
+      "prompt_tokens": 1665,
+      "completion_tokens": 218,
+      "total_tokens": 1883,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3cd4a1d8ac740e22cb9dd2dab692ed6d3c6a857ad558a1d98af29f124029fb4c"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

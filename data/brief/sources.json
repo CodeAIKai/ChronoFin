@@ -1,0 +1,53 @@
+[
+  {
+    "id": "meta24",
+    "entity": "Meta",
+    "title": "Meta Q4 and FY2024 earnings release",
+    "published_at": "2025-01-29",
+    "period": "FY2024",
+    "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf",
+    "format": "pdf",
+    "license": "Facts and author paraphrases; original report copyright Meta"
+  },
+  {
+    "id": "amazon24",
+    "entity": "Amazon",
+    "title": "Amazon Q4 and FY2024 earnings release",
+    "published_at": "2025-02-06",
+    "period": "FY2024",
+    "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2024/q4/AMZN-Q4-2024-Earnings-Release.pdf",
+    "format": "pdf",
+    "license": "Facts and author paraphrases; original report copyright Amazon"
+  },
+  {
+    "id": "tsmc24",
+    "entity": "TSMC",
+    "title": "TSMC fourth-quarter results",
+    "published_at": "2025-01-16",
+    "period": "Q4 2024",
+    "url": "https://pr.tsmc.com/english/news/3201",
+    "format": "html",
+    "license": "Facts and author paraphrases; original report copyright TSMC"
+  },
+  {
+    "id": "iea25",
+    "entity": "IEA / data centres",
+    "title": "Energy and AI — executive summary",
+    "published_at": "2025-04-10",
+    "period": "2024–2035 scenarios",
+    "url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+    "format": "html",
+    "license": "IEA (2025), Energy and AI, CC BY 4.0; author paraphrases, modified"
+  },
+  {
+    "id": "fed25",
+    "entity": "Federal Reserve / US financial system",
+    "title": "April 2025 Financial Stability Report — overview",
+    "published_at": "2025-05-07",
+    "period": "data as of 2025-04-11",
+    "url": "https://www.federalreserve.gov/publications/April-2025-financial-stability-report-Overview.htm",
+    "format": "html",
+    "license": "US Federal Reserve public report; author paraphrases",
+    "temporal_note": "Conservative availability: current HTML last-update date; NOT claiming April 11 publication."
+  }
+]

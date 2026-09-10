@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00494",
+  "uid": "financebench_id_00494_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "db4de9352862079d30a2a7b87e6c67dc2d5846cdb5772bc93e3db77bcbd3a97e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "5fd9dd1988f029cddd10adb3490818758b1e846fe18f2bba304cf536de177140",
+  "started_utc": "2026-09-09T18:06:04.693048+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers that Boeing forecasts increases for 737, 777X (resume/paused->2023), and 787 (to 5/mo) in FY2023, consistent with reference and evidence. No refusal; details beyond reference are supported."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "028c6455b93e186cad3d924ede9386e82c944847a435d004d54c17d7c4236c51",
+    "latency_seconds": 6.029,
+    "usage": {
+      "prompt_tokens": 1637,
+      "completion_tokens": 75,
+      "total_tokens": 1712,
+      "prompt_tokens_details": {
+        "cached_tokens": 192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "64025182e647f386b80a17858cfbde4059dc91b635ea3a44f72ed3591ea41c4c"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

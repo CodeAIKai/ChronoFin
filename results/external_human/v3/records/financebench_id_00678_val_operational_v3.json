@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00678",
+  "uid": "financebench_id_00678_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "7ba718721c8ea26d0fd3d6ddb5ac8d57754212104af5e5527c66af211fc12181",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "f18f895742f72c9b085e54b7a4b5a567f1a2bca05bb944b33591fa2a106263c5",
+  "started_utc": "2026-09-09T18:07:19.204578+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Boeing does have an improving gross margin profile as of FY2022 compared to the previous two years.",
+    "content_correct": true,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Candidate computes FY2022 gross margin ~5.30% (gross profit $3,530M) and FY2021 ~4.89% ($3,049M), matching evidence (GP $3,502M, $3,017M) and reference direction (improving, 5.3% vs 4.8%). Minor GP variance from rounding; conclusion agrees."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dee23bd93f31cc636a9af1f498cbf526d5b5140ea271cdb374b39031fd267c14",
+    "latency_seconds": 5.6,
+    "usage": {
+      "prompt_tokens": 1844,
+      "completion_tokens": 149,
+      "total_tokens": 1993,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e702930f96c8ded4177c92e9f4fa0ab9a7c9362198332e514f1790d5178dcbbd"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

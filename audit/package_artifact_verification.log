@@ -1,0 +1,102 @@
+{
+  "integrity_pass": true,
+  "all_online_completed": true,
+  "readiness": "ready_for_user_repository_and_activity_submission",
+  "checks": [
+    {
+      "name": "required_files",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dataset_unique_and_sourced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "frozen_protocol_v1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "frozen_protocol_v2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "frozen_protocol_v3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "complete_attempt_matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_successful_scores_recomputed",
+      "pass": true,
+      "detail": "90 records; "
+    },
+    {
+      "name": "all_models_hy3",
+      "pass": true,
+      "detail": "['hy3']"
+    },
+    {
+      "name": "incomplete_work_disclosed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "real_browser_flows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "real_live_hy3_flows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "extended_protocols_and_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "full_tests_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "actual_demo_under_120_seconds",
+      "pass": true,
+      "detail": "91000 ms, 12 frames, 12 unique frames"
+    },
+    {
+      "name": "no_key_shaped_values",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no_real_environment_file",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "protocol_snapshots": [
+    {
+      "version": "v1",
+      "missing_frozen_files": []
+    },
+    {
+      "version": "v2",
+      "missing_frozen_files": []
+    },
+    {
+      "version": "v3",
+      "missing_frozen_files": []
+    }
+  ],
+  "errors": []
+}

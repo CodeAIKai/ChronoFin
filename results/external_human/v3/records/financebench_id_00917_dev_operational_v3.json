@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00917",
+  "uid": "financebench_id_00917_dev",
+  "split": "development",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "25e71b61d13164f0e90a5632aa3ebab5c86b4cf93262479ad7c8bfcbced9a13a",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "4563bd1859ba10d1831e1bbd21bb58e57e4d72d47c684b8f0ecaf5e9215ea138",
+  "started_utc": "2026-09-09T18:08:48.058034+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "Without this information, I cannot provide a specific answer to your question.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot answer due to missing FY22 info, but evidence (AMD_2022_10K p.42) actually contains FY22 operating income decrease driven by Xilinx amortization, contradicting candidate's claim of no info."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0e16d4efd190d4d709abf75c2aefcd76608d6c6866e8fcd4ffbfd6804f546436",
+    "latency_seconds": 6.109,
+    "usage": {
+      "prompt_tokens": 1817,
+      "completion_tokens": 116,
+      "total_tokens": 1933,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "06cbe660cc6aaac4fc27372ba57fde6275e8993d40a584be86ae321fb236a52d"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

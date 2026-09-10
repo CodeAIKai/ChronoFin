@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_01346",
+  "company": "Corning",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "be8c0fa9c4a2567aa294d408b809c7eebbfc835e373a595077095de4221e4fc1",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "2db44c5801c998a107a63cb3bcc1569c414475ed5c16b94f96a95dcb5c1458c4",
+  "started_utc": "2026-09-09T17:48:41.528399+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate withholds the requested answer and only explains how to obtain it, stating it cannot provide the information."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a3d48808d6cc1db32b9b560d1a1ad5b781d953143f4b48f50bf890cb2a362059",
+    "latency_seconds": 6.757,
+    "usage": {
+      "prompt_tokens": 1973,
+      "completion_tokens": 43,
+      "total_tokens": 2016,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "925cdfd336ae29b9710f8174fd8f88b7903968acd3f1df71bc3fee3eac1ffbbd"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

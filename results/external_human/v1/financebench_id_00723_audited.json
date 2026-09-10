@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00723",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "acc416c68ce21171529d38f9f00d1ada0e6a2c1f12f7997604527878e31c8389",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "782d020d40fa890490709f7512ba6c494f912be2ce8f9ec2f6df3517a5bd4e2f",
+  "started_utc": "2026-09-09T18:00:03.805212+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Reference states operating margin is not a useful metric for AMEX; candidate computes and asserts it is useful, contradicting reference and ignoring the conditional instruction.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate addresses American Express (AMEX) as requested."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate uses 2020-2022 data, covering as-of 2022 context."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate uses percentage margins, consistent with margin metric."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Reference says performance not measured via operating margin; candidate says it is useful and analyzes trend, opposite of reference."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence provides income data but reference explicitly says metric not useful; candidate's claim of usefulness unsupported by reference."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "03474b62d93a6426ea23e758e49cfd7e10d52d01d55bb615f8fe6ba5beee6207",
+    "latency_seconds": 9.639,
+    "usage": {
+      "prompt_tokens": 2437,
+      "completion_tokens": 229,
+      "total_tokens": 2666,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "178abb04858df3b585de00e7725491ab8bd669981dfb0f8e49a6f5382258165d"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

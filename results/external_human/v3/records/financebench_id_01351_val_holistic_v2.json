@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01351",
+  "uid": "financebench_id_01351_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "23089c3e466d0063b9463a72da5f44ea54ce9fbbca5df0888ac313587acf5bb1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "ce787e3b4b3a644cdf8100a564caf016629c1510aca88c56f016cec768871078",
+  "started_utc": "2026-09-09T18:10:57.168288+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states effective tax rate dropped from 24.6% in FY2021 to 21.6% in FY2022, a 3 percentage point change, matching reference and evidence table."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "15686eb1d4f39c34faa1a051151382c8cb5ffefa843ee6644f2f2a3707a498cf",
+    "latency_seconds": 10.185,
+    "usage": {
+      "prompt_tokens": 2345,
+      "completion_tokens": 61,
+      "total_tokens": 2406,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e60222441fbea79e176905c5e95fc0d2a0fa4382d66c147da685cc0b357e2f9c"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

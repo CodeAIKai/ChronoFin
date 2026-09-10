@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00685",
+  "uid": "financebench_id_00685_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "bd06ee103488c963ef50ffc88bc5ef29252a4cf6803d01b0b87534131db8fe8d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "6d50e360474c0ed19dc3fd1d1651dd324c0a595aac61d348b792520d99baaff0",
+  "started_utc": "2026-09-09T18:07:26.455103+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers that margins are consistent (fluctuations <2%) and notes metric is relevant, matching reference's conclusion and evidence calculations (1.08% drop FY22-FY23)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a0cc2b7258f650d3d65e8b76764bdefe7f2054493710bd8815149b3126bebf14",
+    "latency_seconds": 5.016,
+    "usage": {
+      "prompt_tokens": 1998,
+      "completion_tokens": 61,
+      "total_tokens": 2059,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8d0320559a9a4fb0cdfcb810bb34297b798684bb0768e06096df3b56d26073f4"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

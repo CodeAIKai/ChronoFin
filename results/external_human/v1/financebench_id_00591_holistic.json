@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00591",
+  "company": "Adobe",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4db3b699625bfd47eb0b5dc4a193c594ed53e367c2ae160f2e69ddd9294f9b60",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ef5aaa37db212ac23ca66458ddd674db7bd7b4e03474541a930baaf7144fa5a1",
+  "started_utc": "2026-09-09T17:32:59.728856+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot answer without provided data and does not give a substantive answer, despite evidence being supplied."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2bd77ae29f64fd04176e1efb845285829db8c865ad7ca0318ea1cd07dd19feab",
+    "latency_seconds": 1.755,
+    "usage": {
+      "prompt_tokens": 2080,
+      "completion_tokens": 43,
+      "total_tokens": 2123,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "7393cc6da9187e9f66f37168faee1977b6d9989456e56f485fb061b07cd0dabc"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

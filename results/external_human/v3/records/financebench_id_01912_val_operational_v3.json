@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01912",
+  "uid": "financebench_id_01912_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0297fc011030fd1cb54048fef55f34b92f88c1b5c343e19d37e87446c5e6a260",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "01f1ed1eb0f37863418a66adff00f4dac2f4a10e7a97fc4cd2f89f22639407b2",
+  "started_utc": "2026-09-10T01:27:50.666663+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but I don't have the data for MGM's financial performance for the fiscal year 2022.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states lack of FY2022 data and declines to answer, asking for data instead."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "488669e7ffbd44173d3d719f48633b250c81317f319776ed1209db055976cba3",
+    "latency_seconds": 9.8,
+    "usage": {
+      "prompt_tokens": 3093,
+      "completion_tokens": 95,
+      "total_tokens": 3188,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "20042bef9277ef62f7a83bf01e83c00eda4835b5c9a6672a52cce97489798da8"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

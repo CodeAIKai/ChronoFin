@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00070",
+  "company": "American Water Works",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "5c80a3cfc9067b4ca00fe8489047d9ad18f0d07f8254489fa3f0d1bdd182e3ec",
+  "reference_text_differs": true,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "f584d28e5646cca6ae238bba3755117cb4f23282e5871927981530cfe49353c8",
+  "started_utc": "2026-09-09T17:42:03.155724+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computes working capital as -$1,561Mn from evidence (current assets $1,250Mn - current liabilities $2,811Mn) and concludes negative, contradicting reference which states positive $124Mn. Evidence supports candidate's math, so answer is substantively wrong vs reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0c88294509e0c5a370580d88c0d2cf9acd748b64eb873579bb810bd052659d24",
+    "latency_seconds": 7.424,
+    "usage": {
+      "prompt_tokens": 2186,
+      "completion_tokens": 81,
+      "total_tokens": 2267,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "dfa91f77f2568f9a6f0313825ab653dc66122706f517498bf432b138e5de6b2d"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

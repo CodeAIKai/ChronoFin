@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01346",
+  "company": "Corning",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "be8c0fa9c4a2567aa294d408b809c7eebbfc835e373a595077095de4221e4fc1",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2db44c5801c998a107a63cb3bcc1569c414475ed5c16b94f96a95dcb5c1458c4",
+  "started_utc": "2026-09-09T17:33:57.366143+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it cannot access external documents and does not provide the effective tax rate change, only explaining how to find it.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references Corning as requested entity."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate mentions FY2021 and FY2022 as requested period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate discusses effective tax rate (percentage) as requested unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer given; refuses to provide change (20% to 23% per evidence)."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No supported numeric claim; evidence shows 20% FY2021, 23% FY2022."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "35d56bee3e3e94fc305e1bf4b4dc838a9e7ed769ea90d99c5827af7a06e67ea4",
+    "latency_seconds": 3.675,
+    "usage": {
+      "prompt_tokens": 2089,
+      "completion_tokens": 214,
+      "total_tokens": 2303,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b66e926f620c683c009b23ae5b045c5cfc3b473a4e008f4b52d2855a416b0286"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

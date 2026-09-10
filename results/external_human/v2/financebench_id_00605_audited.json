@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00605",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0af0347d9a3a94d7e9490555d37b4df28bb29423f7324f560cffe3224fce85b6",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "db3d66da382c98fa89329f708dc7d4c749f5619e5dd3e5dd16c857fb2199168e",
+  "started_utc": "2026-09-09T17:44:44.009791+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states the context does not contain the needed info and declines to provide the percentage, despite evidence showing Q4 FY2022 (called FY2023 by question/reference) repurchases of $328.1M vs $900.0M total = 36.5% ~ 36%.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity Ulta Beauty identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Question period FY2023 (per reference = fiscal 2022 ended Jan 28 2023) recognized by candidate as needed."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Requested unit is percent."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate withholds answer, says cannot determine from context."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence provides Q4 cost $328.1M and fiscal year cost $900.0M, enabling 36% answer; candidate ignored it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "04bc81a18df4e5413fa3767ae7a5be1359418353ee095bf15d17ab9c0b6c5aec",
+    "latency_seconds": 9.555,
+    "usage": {
+      "prompt_tokens": 1449,
+      "completion_tokens": 272,
+      "total_tokens": 1721,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2050e3368ab712dd343e94f278c13333b56e98a6cadc0c977d25301925f9cbe8"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

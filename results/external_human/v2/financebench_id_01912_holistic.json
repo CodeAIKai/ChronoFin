@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_01912",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "14cf2c8dfbf831438b7833c2f4ded9f461668593a47c0a837d7f3a624478953a",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "72c134514f8e7eee920361fceb8a16bfe5b289fdde395e7e96694af71cf1a235",
+  "started_utc": "2026-09-09T17:49:57.574619+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly identifies MGM China as the worst topline performer in FY2022, supported by evidence of 44% revenue decline vs increases in other regions."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "17df4be7b7752df2fbe136aa0e69241b954c4db628d8bfcb15093894198654ee",
+    "latency_seconds": 7.271,
+    "usage": {
+      "prompt_tokens": 3001,
+      "completion_tokens": 53,
+      "total_tokens": 3054,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0e9606c822349363e880f3056ddfb2797ab5fc69f399e7c48947de5d2cc9c7e8"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

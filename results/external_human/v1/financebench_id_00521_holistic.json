@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00521",
+  "company": "Ulta Beauty",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "52ab88a6c2bc24bf2b3dbb58a530d5c9a901f6c31585cdcf662ae6fd2bd12fe6",
+  "started_utc": "2026-09-09T17:32:52.445608+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate '[END OF FILING]' provides no substantive answer about acquisitions."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "61a5a7c15522d85320f7e5de45164f510583b73342fdf520fa01e6701918dc67",
+    "latency_seconds": 1.506,
+    "usage": {
+      "prompt_tokens": 1551,
+      "completion_tokens": 37,
+      "total_tokens": 1588,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e379cbe599aef602f19fc14666c72769a68946aeaae3f5afbe437dffc04c0d38"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

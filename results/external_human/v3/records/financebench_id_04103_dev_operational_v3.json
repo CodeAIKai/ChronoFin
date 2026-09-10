@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04103",
+  "uid": "financebench_id_04103_dev",
+  "split": "development",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e106ef835bc32f7b4a55483ac91c850bf1ac2037cb8d66c01d18b1d3831bbf31",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "5d5d7032ea7638460a99fb79c717f9373f2e9d4e5b43351e74298a7af5b9981f",
+  "started_utc": "2026-09-10T01:31:22.371415+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "three major banks in the euro-zone, selected and identified by us, for loans in euros to leading European banks",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provides unrelated bond prospectus text about EURIBOR and redemption, not the FY2019 CCC for General Mills; no calculation or answer present."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b71af05549d23114021fb5e4182ec152c4c75764b79c80752d88ee2a6dfad072",
+    "latency_seconds": 6.901,
+    "usage": {
+      "prompt_tokens": 6341,
+      "completion_tokens": 103,
+      "total_tokens": 6444,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "936f1a46881beba1a52a015488f9b7d0d46e4174d734e7fc32eef74703506fc9"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01482",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "e3a819a006bb7a9f0d94665c7f07415b0ecc600dcc65dbede39dad7e4b225a9e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "5f918b633685efcfe9a003c45b2d657a0a1126732aab0df2c49a8f61f3acc292",
+  "started_utc": "2026-09-09T17:34:02.998170+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states proposal was defeated with vote counts matching evidence; agrees with reference outcome.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "PepsiCo and the congruency report on net-zero emissions policies proposal identified correctly"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "AGM on May 3, 2023 referenced and evidence from 2023 8-K supports"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Vote counts in shares, no unit conversion needed"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Outcome 'defeated' matches reference and evidence; numbers consistent"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence item (8) shows defeated with For/Against/Abstain/Broker Non-Votes matching candidate"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "067eb6688bd1eaea31e0c5312c27831d6eee649f8276652988e8e9bd4e514e2c",
+    "latency_seconds": 3.503,
+    "usage": {
+      "prompt_tokens": 970,
+      "completion_tokens": 215,
+      "total_tokens": 1185,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b9d26a07c9e9c9e0139e0829268237ee57273c9aed9e92eec121f4ab8bf6e779"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

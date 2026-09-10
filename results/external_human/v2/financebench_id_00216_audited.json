@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00216",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "d8cc105e7cd58564cae29bd1f241f306dcd00386ff4b1cc0ff9f0c1b1b60c221",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "8224336c16127f68ef10a5c4aa518408b5d3d1039362a68f2f71ffc2fb66a269",
+  "started_utc": "2026-09-09T17:42:27.627123+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states no direct info on Verizon quick ratio FY2022 and says it is not possible to assess liquidity via quick ratio, withholding the requested conclusion despite evidence allowing calculation (cash 2605 + AR net 24506 = 27111; current liab 50171; QR≈0.54).",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Identifies Verizon as entity."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "References FY2022 as requested period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Discusses ratio as dimensionless."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Withholds answer; claims quick ratio cannot be assessed due to missing AR, but evidence includes AR net."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence provides cash and AR net to compute quick ratio ≈0.54, contradicting candidate's claim of insufficient data."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cee1b4861265e61cfe26bebd4570c77b8385f0d85c9508565167dbdcd87855e8",
+    "latency_seconds": 10.4,
+    "usage": {
+      "prompt_tokens": 2239,
+      "completion_tokens": 261,
+      "total_tokens": 2500,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1d552e99c561bef17893e69679bcf4c6c66ca0296774466194840f3ca9024508"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

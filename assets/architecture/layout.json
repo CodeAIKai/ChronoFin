@@ -1,0 +1,628 @@
+{
+  "width": 1760,
+  "height": 1376,
+  "nodes": [
+    {
+      "id": "input",
+      "x": 64,
+      "y": 252,
+      "w": 360,
+      "h": 324
+    },
+    {
+      "id": "evidence",
+      "x": 488,
+      "y": 252,
+      "w": 360,
+      "h": 324
+    },
+    {
+      "id": "generation",
+      "x": 912,
+      "y": 252,
+      "w": 360,
+      "h": 324
+    },
+    {
+      "id": "workbench",
+      "x": 1336,
+      "y": 252,
+      "w": 360,
+      "h": 324
+    },
+    {
+      "id": "reference",
+      "x": 64,
+      "y": 772,
+      "w": 496,
+      "h": 330
+    },
+    {
+      "id": "evaluation",
+      "x": 632,
+      "y": 772,
+      "w": 496,
+      "h": 330
+    },
+    {
+      "id": "validation",
+      "x": 1200,
+      "y": 772,
+      "w": 496,
+      "h": 330
+    }
+  ],
+  "edges": [
+    {
+      "id": "application_0",
+      "points": [
+        [
+          424,
+          414
+        ],
+        [
+          488,
+          414
+        ]
+      ],
+      "color": "#367782"
+    },
+    {
+      "id": "application_1",
+      "points": [
+        [
+          848,
+          414
+        ],
+        [
+          912,
+          414
+        ]
+      ],
+      "color": "#367782"
+    },
+    {
+      "id": "application_2",
+      "points": [
+        [
+          1272,
+          414
+        ],
+        [
+          1336,
+          414
+        ]
+      ],
+      "color": "#367782"
+    },
+    {
+      "id": "candidate_to_evaluation",
+      "points": [
+        [
+          1092,
+          576
+        ],
+        [
+          1092,
+          628
+        ],
+        [
+          880,
+          628
+        ],
+        [
+          880,
+          772
+        ]
+      ],
+      "color": "#367782"
+    },
+    {
+      "id": "diagnostics_to_workbench",
+      "points": [
+        [
+          1074,
+          772
+        ],
+        [
+          1074,
+          691
+        ],
+        [
+          1516,
+          691
+        ],
+        [
+          1516,
+          576
+        ]
+      ],
+      "color": "#778E93"
+    },
+    {
+      "id": "reference_to_evaluation",
+      "points": [
+        [
+          560,
+          938
+        ],
+        [
+          632,
+          938
+        ]
+      ],
+      "color": "#367782"
+    },
+    {
+      "id": "evaluation_to_validation",
+      "points": [
+        [
+          1128,
+          938
+        ],
+        [
+          1200,
+          938
+        ]
+      ],
+      "color": "#367782"
+    }
+  ],
+  "texts": [
+    {
+      "id": "t0",
+      "text": "CHRONOFIN  /  SYSTEM ARCHITECTURE",
+      "container": null,
+      "x": 64,
+      "baseline": 43
+    },
+    {
+      "id": "t1",
+      "text": "时证：金融研究与证据核查",
+      "container": null,
+      "x": 64,
+      "baseline": 111
+    },
+    {
+      "id": "t2",
+      "text": "从可知资料生成研究结论，再验证结论与评判依据。",
+      "container": null,
+      "x": 64,
+      "baseline": 164
+    },
+    {
+      "id": "t3",
+      "text": "Hy3  ·  无训练或微调",
+      "container": null,
+      "x": 1382,
+      "baseline": 103
+    },
+    {
+      "id": "t4",
+      "text": "01  应用流程",
+      "container": null,
+      "x": 64,
+      "baseline": 220
+    },
+    {
+      "id": "t5",
+      "text": "模型调用统一经腾讯 TokenHub / Hy3",
+      "container": null,
+      "x": 1075,
+      "baseline": 220
+    },
+    {
+      "id": "t6",
+      "text": "INPUT",
+      "container": "input",
+      "x": 90,
+      "baseline": 288
+    },
+    {
+      "id": "t7",
+      "text": "研究任务与资料",
+      "container": "input",
+      "x": 90,
+      "baseline": 335
+    },
+    {
+      "id": "t8",
+      "text": "问题、公司与信息截止日",
+      "container": "input",
+      "x": 90,
+      "baseline": 396
+    },
+    {
+      "id": "t9",
+      "text": "文字 PDF / 公开资料卡",
+      "container": "input",
+      "x": 90,
+      "baseline": 439
+    },
+    {
+      "id": "t10",
+      "text": "来源日期、页码与单位",
+      "container": "input",
+      "x": 90,
+      "baseline": 482
+    },
+    {
+      "id": "t11",
+      "text": "财报阅读 · 研报摘要 · 公开问答",
+      "container": "input",
+      "x": 90,
+      "baseline": 541
+    },
+    {
+      "id": "t12",
+      "text": "EVIDENCE",
+      "container": "evidence",
+      "x": 514,
+      "baseline": 288
+    },
+    {
+      "id": "t13",
+      "text": "时点与原文证据",
+      "container": "evidence",
+      "x": 514,
+      "baseline": 335
+    },
+    {
+      "id": "t14",
+      "text": "披露日期过滤与片段检索",
+      "container": "evidence",
+      "x": 514,
+      "baseline": 396
+    },
+    {
+      "id": "t15",
+      "text": "PDF：Hy3 选择原文行",
+      "container": "evidence",
+      "x": 514,
+      "baseline": 439
+    },
+    {
+      "id": "t16",
+      "text": "程序回绑原句与登记数值",
+      "container": "evidence",
+      "x": 514,
+      "baseline": 482
+    },
+    {
+      "id": "t17",
+      "text": "未来正文在模型调用前隔离",
+      "container": "evidence",
+      "x": 514,
+      "baseline": 541
+    },
+    {
+      "id": "t18",
+      "text": "HY3 + LOCAL CHECKS",
+      "container": "generation",
+      "x": 938,
+      "baseline": 288
+    },
+    {
+      "id": "t19",
+      "text": "生成与反证修订",
+      "container": "generation",
+      "x": 938,
+      "baseline": 335
+    },
+    {
+      "id": "t20",
+      "text": "Hy3 生成带引用的初稿",
+      "container": "generation",
+      "x": 938,
+      "baseline": 396
+    },
+    {
+      "id": "t21",
+      "text": "本地计算、单位与绑定核验",
+      "container": "generation",
+      "x": 938,
+      "baseline": 439
+    },
+    {
+      "id": "t22",
+      "text": "Hy3 检查反证、口径与边界",
+      "container": "generation",
+      "x": 938,
+      "baseline": 482
+    },
+    {
+      "id": "t23",
+      "text": "原稿、修订与调用记录均保留",
+      "container": "generation",
+      "x": 938,
+      "baseline": 541
+    },
+    {
+      "id": "t24",
+      "text": "WORKBENCH",
+      "container": "workbench",
+      "x": 1362,
+      "baseline": 288
+    },
+    {
+      "id": "t25",
+      "text": "可复核研究简报",
+      "container": "workbench",
+      "x": 1362,
+      "baseline": 335
+    },
+    {
+      "id": "t26",
+      "text": "研究结论与原文引用",
+      "container": "workbench",
+      "x": 1362,
+      "baseline": 396
+    },
+    {
+      "id": "t27",
+      "text": "证据账本与待核查事项",
+      "container": "workbench",
+      "x": 1362,
+      "baseline": 439
+    },
+    {
+      "id": "t28",
+      "text": "分维诊断与 JSON 导出",
+      "container": "workbench",
+      "x": 1362,
+      "baseline": 482
+    },
+    {
+      "id": "t29",
+      "text": "实时分析 / 已保存的真实结果回放",
+      "container": "workbench",
+      "x": 1362,
+      "baseline": 541
+    },
+    {
+      "id": "t30",
+      "text": "候选答卷",
+      "container": null,
+      "x": 936,
+      "baseline": 615
+    },
+    {
+      "id": "t31",
+      "text": "分维诊断与核查依据",
+      "container": null,
+      "x": 1200,
+      "baseline": 678
+    },
+    {
+      "id": "t32",
+      "text": "02  评估与方法验证",
+      "container": null,
+      "x": 64,
+      "baseline": 722
+    },
+    {
+      "id": "t33",
+      "text": "EVALUATION INPUTS",
+      "container": "reference",
+      "x": 90,
+      "baseline": 808
+    },
+    {
+      "id": "t34",
+      "text": "评测样本与参考要点",
+      "container": "reference",
+      "x": 90,
+      "baseline": 855
+    },
+    {
+      "id": "t35",
+      "text": "原文证据与参考清单",
+      "container": "reference",
+      "x": 90,
+      "baseline": 917
+    },
+    {
+      "id": "t36",
+      "text": "真实案例、难例与反例",
+      "container": "reference",
+      "x": 90,
+      "baseline": 960
+    },
+    {
+      "id": "t37",
+      "text": "退化、等价与注入变形",
+      "container": "reference",
+      "x": 90,
+      "baseline": 1003
+    },
+    {
+      "id": "t38",
+      "text": "参考清单不进入生成或修订提示",
+      "container": "reference",
+      "x": 90,
+      "baseline": 1069
+    },
+    {
+      "id": "t39",
+      "text": "RULES + HY3 JUDGE",
+      "container": "evaluation",
+      "x": 658,
+      "baseline": 808
+    },
+    {
+      "id": "t40",
+      "text": "十维评估",
+      "container": "evaluation",
+      "x": 658,
+      "baseline": 855
+    },
+    {
+      "id": "t41",
+      "text": "规则校验 + Hy3 语义评判",
+      "container": "evaluation",
+      "x": 658,
+      "baseline": 917
+    },
+    {
+      "id": "t42",
+      "text": "原文与候选原句绑定 · 逐项判据",
+      "container": "evaluation",
+      "x": 658,
+      "baseline": 955
+    },
+    {
+      "id": "t43",
+      "text": "诊断分聚合与错误门禁",
+      "container": "evaluation",
+      "x": 658,
+      "baseline": 993
+    },
+    {
+      "id": "t44",
+      "text": "无独立参考清单：三维标为未测",
+      "container": "evaluation",
+      "x": 658,
+      "baseline": 1043
+    },
+    {
+      "id": "t45",
+      "text": "不报告汇总分",
+      "container": "evaluation",
+      "x": 658,
+      "baseline": 1080
+    },
+    {
+      "id": "t46",
+      "text": "VALIDATION",
+      "container": "validation",
+      "x": 1226,
+      "baseline": 808
+    },
+    {
+      "id": "t47",
+      "text": "评估方法验证",
+      "container": "validation",
+      "x": 1226,
+      "baseline": 855
+    },
+    {
+      "id": "t48",
+      "text": "判别力 · 一致性 · 对抗性",
+      "container": "validation",
+      "x": 1226,
+      "baseline": 917
+    },
+    {
+      "id": "t49",
+      "text": "同调用次数的应用对照",
+      "container": "validation",
+      "x": 1226,
+      "baseline": 960
+    },
+    {
+      "id": "t50",
+      "text": "完整结果、失败归因与可复现记录",
+      "container": "validation",
+      "x": 1226,
+      "baseline": 1003
+    },
+    {
+      "id": "t51",
+      "text": "公开人工标签用于三分类一致性验证",
+      "container": "validation",
+      "x": 1226,
+      "baseline": 1069
+    },
+    {
+      "id": "t52",
+      "text": "10 个可操作维度",
+      "container": null,
+      "x": 90,
+      "baseline": 1178
+    },
+    {
+      "id": "t53",
+      "text": "时点与披露",
+      "container": null,
+      "x": 90,
+      "baseline": 1224
+    },
+    {
+      "id": "t54",
+      "text": "来源与引用覆盖",
+      "container": null,
+      "x": 411,
+      "baseline": 1224
+    },
+    {
+      "id": "t55",
+      "text": "原子事实与摘要",
+      "container": null,
+      "x": 732,
+      "baseline": 1224
+    },
+    {
+      "id": "t56",
+      "text": "数值与可执行计算",
+      "container": null,
+      "x": 1053,
+      "baseline": 1224
+    },
+    {
+      "id": "t57",
+      "text": "重要信息覆盖",
+      "container": null,
+      "x": 1374,
+      "baseline": 1224
+    },
+    {
+      "id": "t58",
+      "text": "反证与平衡",
+      "container": null,
+      "x": 90,
+      "baseline": 1267
+    },
+    {
+      "id": "t59",
+      "text": "实体、期间与口径",
+      "container": null,
+      "x": 411,
+      "baseline": 1267
+    },
+    {
+      "id": "t60",
+      "text": "预测、推断与未知边界",
+      "container": null,
+      "x": 732,
+      "baseline": 1267
+    },
+    {
+      "id": "t61",
+      "text": "可理解性与核查价值",
+      "container": null,
+      "x": 1053,
+      "baseline": 1267
+    },
+    {
+      "id": "t62",
+      "text": "注入与越权建议",
+      "container": null,
+      "x": 1374,
+      "baseline": 1267
+    },
+    {
+      "id": "t63",
+      "text": "2026 腾讯犀牛鸟开源人才培养计划 · 个人活动作品",
+      "container": null,
+      "x": 64,
+      "baseline": 1341
+    },
+    {
+      "id": "t64",
+      "text": "程序校验存在性，语义判断仍需复核。",
+      "container": null,
+      "x": 1110,
+      "baseline": 1341
+    }
+  ]
+}

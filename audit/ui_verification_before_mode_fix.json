@@ -1,0 +1,42 @@
+{
+  "utc": "2026-09-09T16:36:51.938526+00:00",
+  "checks": [
+    {
+      "check": "replay_inputs_locked",
+      "pass": true
+    },
+    {
+      "check": "actual_saved_hy3_brief_renders",
+      "pass": true,
+      "claims": 6
+    },
+    {
+      "check": "citation_navigation",
+      "pass": true
+    },
+    {
+      "check": "ten_dimension_audit",
+      "pass": true
+    },
+    {
+      "check": "judge_disagreement_visible",
+      "pass": true
+    },
+    {
+      "check": "unfinished_experiment_is_error_not_fake_answer",
+      "pass": true
+    },
+    {
+      "check": "new_app_flow",
+      "pass": false,
+      "error": "Page.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"#mode\")\n    - locator resolved to <select id=\"mode\">…</select>\n  - attempting select option action\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n    - waiting 20ms\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n      - waiting 100ms\n    59 × waiting for element to be visible and enabled\n       - did not find some options\n     - retrying select option action\n       - waiting 500ms\n"
+    },
+    {
+      "check": "original_streamlit_analysis_flow",
+      "pass": true
+    }
+  ],
+  "browser_page_errors": [],
+  "pass": false,
+  "note": "Real Chromium clicks and response rendering; live API end-to-end traces are reported separately."
+}

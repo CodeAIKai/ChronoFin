@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04672",
+  "company": "3M",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f789b7d36e810563507556eb0abf9958e60da5d1ea77343414891acebf0ae2c0",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "267aa92f631cac87347e2f17c3fe6efd542f95623ca495bdacd20ef2137781ec",
+  "started_utc": "2026-09-09T17:53:32.465285+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states evidence lacks specific PP&E detail and declines to answer, despite balance sheet showing net PP&E of $8,738 million (8.738 USD billions) for FY2018.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M, correctly identified in candidate context"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 / Dec 31 2018 referenced by candidate"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate discusses USD billions conversion need"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer provided; candidate withholds conclusion saying data insufficient"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence actually contains Property plant and equipment net 8,738 million for 2018, contradicting candidate's claim of missing data"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c0e06082d1f79a02e62638fd520ba7006945a0f4b3158b3f3d0c6578ac8d8915",
+    "latency_seconds": 9.856,
+    "usage": {
+      "prompt_tokens": 2759,
+      "completion_tokens": 237,
+      "total_tokens": 2996,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "060ace317802375284467a9ac8bbaf54580c4fa524e77ab251b1013b803ef5ed"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

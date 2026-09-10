@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00757",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "df1fed1c6085d36225160d2d718097f01c0d0ff3f70b5c1624899620eaed6067",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "1b69ee83d0c7cf677263199b78603288c946f66474c4458715a1d5aaf0333ee5",
+  "started_utc": "2026-09-09T17:46:03.077885+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it does not know and claims evidence was not provided, withholding the answer despite evidence showing AMD reported 16% customer concentration in FY22."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7bc7775cd9b26ba238a770d9a9a5917a3c6e7a61b8ca70f0d54d55d821d9a14b",
+    "latency_seconds": 7.282,
+    "usage": {
+      "prompt_tokens": 1110,
+      "completion_tokens": 52,
+      "total_tokens": 1162,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "614a276a4ff2a3160da12192709d06c3e4892607fd481df8c3e45f11810ee898"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00757_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00757_holistic.json",
+  "parent_sha256": "f1af5fd0a17a0a2880627dff0f6506dca43b80f2dbfa0b5230f9db3883f6d6e7"
+}

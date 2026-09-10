@@ -1,0 +1,418 @@
+[
+  {
+    "id": "D01",
+    "split": "dev",
+    "source_group": "meta24",
+    "task": "财报阅读",
+    "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "M01",
+      "M02",
+      "M06",
+      "M07"
+    ],
+    "counter": [
+      "M03",
+      "M10"
+    ],
+    "limitations": [
+      "一次性因素不能代表持续经营改善"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "D02",
+    "split": "dev",
+    "source_group": "amazon24",
+    "task": "财报阅读",
+    "question": "用 Amazon FY2024 财报解释 AWS 对集团利润的重要性，并评估利润改善是否同步转化为现金。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "A01",
+      "A02",
+      "A03",
+      "A04"
+    ],
+    "counter": [
+      "A05",
+      "A08"
+    ],
+    "limitations": [
+      "不能把 AWS 的收入占比称为行业市场份额"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "D03",
+    "split": "dev",
+    "source_group": "tsmc24",
+    "task": "公开数据问答",
+    "question": "TSMC Q4 2024 收入增长有多强？解释不同币种增速，并给出谨慎的短期展望。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "T01",
+      "T02",
+      "T03",
+      "T05"
+    ],
+    "counter": [
+      "T06"
+    ],
+    "limitations": [
+      "单季结果不可冒充全年"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "D04",
+    "split": "dev",
+    "source_group": "iea25",
+    "task": "行业研报摘要",
+    "question": "向电力设备研究员摘要 IEA 的 AI 用电展望：机会、规模、制约因素和可跟踪指标。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "I01",
+      "I02",
+      "I06"
+    ],
+    "counter": [
+      "I03",
+      "I04",
+      "I05"
+    ],
+    "limitations": [
+      "预测不能表述为已实现事实"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "D05",
+    "split": "dev",
+    "source_group": "fed25",
+    "task": "行业研报摘要",
+    "question": "将美联储稳定性报告整理成信用研究晨会简报，分别说明风险与缓冲。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "F01",
+      "F02",
+      "F03"
+    ],
+    "counter": [
+      "F04",
+      "F05",
+      "F06",
+      "F07"
+    ],
+    "limitations": [
+      "风险描述不是危机发生概率"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E01",
+    "split": "evaluation",
+    "source_group": "meta24",
+    "task": "财报阅读",
+    "question": "据 Meta 披露写 FY2025 投入与盈利展望：能否确认全年收入及资本回报率？",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "M04",
+      "M05",
+      "M09"
+    ],
+    "counter": [
+      "M03"
+    ],
+    "limitations": [
+      "全年收入实际值和 AI 投资回报率均未由材料提供"
+    ],
+    "expected_answerability": "partial"
+  },
+  {
+    "id": "E02",
+    "split": "evaluation",
+    "source_group": "meta24",
+    "task": "公开数据问答",
+    "question": "截至 2025-01-28，根据提供的披露总结 Meta FY2024 全年经营表现。",
+    "as_of": "2025-01-28",
+    "difficulty": "hard",
+    "required": [],
+    "counter": [],
+    "limitations": [
+      "给定材料在截止日后发布，不能利用后来的财报"
+    ],
+    "expected_answerability": "unanswerable"
+  },
+  {
+    "id": "E03",
+    "split": "evaluation",
+    "source_group": "meta24",
+    "task": "财报阅读",
+    "question": "Meta 利润改善是否全由运营效率带来？写一段有反证的研究结论。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "M02",
+      "M06"
+    ],
+    "counter": [
+      "M10",
+      "M05",
+      "M03"
+    ],
+    "limitations": [
+      "区分 FY2024 一次性法律费用影响与 FY2025 折旧估计"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E04",
+    "split": "evaluation",
+    "source_group": "cross",
+    "task": "财报阅读",
+    "question": "比较 Meta 与 Amazon FY2024 自由现金流，能否直接据数值大小断言现金创造效率更高？",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "M07",
+      "A05"
+    ],
+    "counter": [
+      "M08",
+      "A07"
+    ],
+    "limitations": [
+      "口径和业务规模不同；不可直接做效率排名"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E05",
+    "split": "evaluation",
+    "source_group": "amazon24",
+    "task": "公开数据问答",
+    "question": "给出 AWS FY2024 营业利润率及对 Amazon 集团营业利润的占比，解释它们说明什么、不说明什么。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "A02",
+      "A03",
+      "A04"
+    ],
+    "counter": [
+      "A08"
+    ],
+    "limitations": [
+      "缺少行业总额，不能推断市场份额"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E06",
+    "split": "evaluation",
+    "source_group": "amazon24",
+    "task": "财报阅读",
+    "question": "Amazon 经营现金流增长能否证明其 AI 投资已经获得高回报？写有依据的简报。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "A06",
+      "A04"
+    ],
+    "counter": [
+      "A05",
+      "A07"
+    ],
+    "limitations": [
+      "未提供 AI 单独成本与收益，不能计算 AI 投资回报率"
+    ],
+    "expected_answerability": "partial"
+  },
+  {
+    "id": "E07",
+    "split": "evaluation",
+    "source_group": "tsmc24",
+    "task": "公开数据问答",
+    "question": "有人说 TSMC 2024 全年收入为 TWD 868.46 billion、净利率为 43.1%。核对并解释正确期间。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "T01",
+      "T07"
+    ],
+    "counter": [
+      "T06"
+    ],
+    "limitations": [
+      "这两个数据属于 Q4，不能改称全年"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E08",
+    "split": "evaluation",
+    "source_group": "tsmc24",
+    "task": "公开数据问答",
+    "question": "TSMC Q4 的 TWD 与 USD 收入同比增速相差多少？解释百分比和百分点的区别。",
+    "as_of": "2025-06-01",
+    "difficulty": "standard",
+    "required": [
+      "T02",
+      "T03"
+    ],
+    "counter": [],
+    "limitations": [
+      "差值是 1.8 个百分点；不同币种口径不是矛盾"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E09",
+    "split": "evaluation",
+    "source_group": "tsmc24",
+    "task": "财报阅读",
+    "question": "依据 TSMC 的先进制程占比和管理层展望，分析 AI 景气能否完全消除手机季节性。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "T05",
+      "T06"
+    ],
+    "counter": [
+      "T06"
+    ],
+    "limitations": [
+      "无法量化两类需求净影响，不应保证消除季节性"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E10",
+    "split": "evaluation",
+    "source_group": "iea25",
+    "task": "行业研报摘要",
+    "question": "评审观点“数据中心 2030 年已经消耗 945 TWh，因此电力需求一定实现”。给出证据化纠正。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "I01",
+      "I02"
+    ],
+    "counter": [
+      "I03",
+      "I04"
+    ],
+    "limitations": [
+      "2030 数据是预测，存在情景与瓶颈风险"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E11",
+    "split": "evaluation",
+    "source_group": "cross",
+    "task": "行业研报摘要",
+    "question": "综合 Meta AI 资本支出展望与 IEA 用电研究，写一段基础设施机会和约束简报。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "M04",
+      "I02"
+    ],
+    "counter": [
+      "I03",
+      "I04",
+      "M05"
+    ],
+    "limitations": [
+      "公司指引与行业情景不是同一口径；不能推导确定投资收益"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E12",
+    "split": "evaluation",
+    "source_group": "iea25",
+    "task": "公开数据问答",
+    "question": "IEA 数据中心用电预测为什么不应只给单点值？比较 2030 展望与 2035 情景范围。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "I02",
+      "I04"
+    ],
+    "counter": [
+      "I03"
+    ],
+    "limitations": [
+      "不得把不同预测年度混为同一区间"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E13",
+    "split": "evaluation",
+    "source_group": "fed25",
+    "task": "行业研报摘要",
+    "question": "有人把高对冲基金杠杆解读为银行系统已经失稳。依据报告写一段平衡核查。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "F03",
+      "F04"
+    ],
+    "counter": [
+      "F05",
+      "F06"
+    ],
+    "limitations": [
+      "对冲基金与银行是不同主体，风险不是已发生危机"
+    ],
+    "expected_answerability": "answerable"
+  },
+  {
+    "id": "E14",
+    "split": "evaluation",
+    "source_group": "fed25",
+    "task": "公开数据问答",
+    "question": "截至 2025-04-11，根据当前这份美联储网页说明当时已经公开的稳定性结论。",
+    "as_of": "2025-04-11",
+    "difficulty": "hard",
+    "required": [],
+    "counter": [],
+    "limitations": [
+      "数据截止日不是网页公开日；此清单采用 2025-05-07 保守可知日期"
+    ],
+    "expected_answerability": "unanswerable"
+  },
+  {
+    "id": "E15",
+    "split": "evaluation",
+    "source_group": "fed25",
+    "task": "行业研报摘要",
+    "question": "概括报告最值得信用研究员跟踪的两类风险和两类缓冲，并说明它不能支持哪些确定性结论。",
+    "as_of": "2025-06-01",
+    "difficulty": "hard",
+    "required": [
+      "F02",
+      "F03",
+      "F07"
+    ],
+    "counter": [
+      "F04",
+      "F05",
+      "F06"
+    ],
+    "limitations": [
+      "没有提供危机概率，也不构成个性化交易建议"
+    ],
+    "expected_answerability": "answerable"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01911",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "40c711f344ddb6805be16a290ba46bd38dfdafe9649fff60960492254e5b117e",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "857aa77b043661420f4f3d6587d43a62c32ea3e5e5967567e75cab31a4660122",
+  "started_utc": "2026-09-09T17:49:52.838864+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate withholds the answer claiming Adjusted EBIT for FY2022 is missing and cannot calculate, despite evidence showing Adjusted EBITDAR and interest expense; it does not provide the requested ratio or conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b1591c615df11e69b9d39b4798040622cff52830ed0dd29648f36a2711d55af3",
+    "latency_seconds": 6.719,
+    "usage": {
+      "prompt_tokens": 2484,
+      "completion_tokens": 64,
+      "total_tokens": 2548,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ec499602a6fdc79720e4d29f4fa528f01eea01b06c55b9b3a38416e93a6cb5c6"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01911_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01911_holistic.json",
+  "parent_sha256": "38d9e478d3456c01abb8683ace177ee524a56e55435376c0a51c6f463ae7a8c6"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00723",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "acc416c68ce21171529d38f9f00d1ada0e6a2c1f12f7997604527878e31c8389",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "782d020d40fa890490709f7512ba6c494f912be2ce8f9ec2f6df3517a5bd4e2f",
+  "started_utc": "2026-09-09T18:00:02.411205+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Reference states performance is not measured through operating margin, implying it is not a useful metric for AMEX. Candidate instead calculates operating margin and asserts it is useful, contradicting the reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1cd6323e5a77660b9196826bc9e815237f89e699d780ceb9381a42cec54092b6",
+    "latency_seconds": 6.404,
+    "usage": {
+      "prompt_tokens": 2252,
+      "completion_tokens": 59,
+      "total_tokens": 2311,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "64c932f0aafda4ec81e7074ba3616455455e7fe75e5396ebc7238dd51a5cb24d"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

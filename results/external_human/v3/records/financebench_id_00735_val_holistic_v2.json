@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00735",
+  "uid": "financebench_id_00735_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c69205f59a241258663180bdbd5fec9ee4f5793f9c66f2d85623908737747032",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "09306184fec0cc4c0c5d76bee103c1ad5d111b7aed87c70942fdb16cf11e9992",
+  "started_utc": "2026-09-09T18:08:00.715254+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers 'No' with evidence that management believes legal matters will not have material adverse effect, matching reference that Pepsico is not involved in material legal battles."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3b746894bf6d7013a61a2a80ad31ec4a54667d2359d6b3be4df6123cbcc17cca",
+    "latency_seconds": 5.141,
+    "usage": {
+      "prompt_tokens": 1251,
+      "completion_tokens": 56,
+      "total_tokens": 1307,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b03638369c7f029520bae7b8c931138eb203e47a7927d0254928a898c3d0da09"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

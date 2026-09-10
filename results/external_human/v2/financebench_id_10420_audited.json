@@ -1,0 +1,74 @@
+{
+  "id": "financebench_id_10420",
+  "company": "AES Corporation",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "ce2a1ec87f7bbf58fa1fcd2cfb8d17b97c1d6cefeda53aa577ca4953785b2366",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "20582f0a1f1fc20ea3c89d6e7074358563117357c206dd90d220f88d5aaf5a96",
+  "started_utc": "2026-09-09T17:55:40.539547+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed ROA as -1.53% (-0.0153) but reference is -0.02 (-2%). Evidence supports net income -546 and avg assets 35663, giving -0.0153; reference value -0.02 is inconsistent with evidence. Candidate's substantive answer does not match reference.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is AES Corporation, correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 net income and FY2021/FY2022 average assets used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "ROA expressed as decimal and percent, consistent with question"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate answer -1.53% does not match reference -0.02; evidence computes to -1.53% so reference appears wrong"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Used net income -546 and avg assets 35663 from evidence correctly"
+      }
+    ],
+    "reference_conflict": true,
+    "reference_conflict_reason": "Reference ROA -0.02 (-2%) conflicts with evidence-based calculation -546/35663 = -0.0153 (-1.53%)"
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "29d4ca0f86fc006c49db46bc77649fd52112487c5c1c9e5d6c8ec9bc5592bd6d",
+    "latency_seconds": 12.09,
+    "usage": {
+      "prompt_tokens": 5048,
+      "completion_tokens": 312,
+      "total_tokens": 5360,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8fbf2fdb8ae351eb2bb94e1b47a5a6b17d822e4096b8374c1c918d807b80568f"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

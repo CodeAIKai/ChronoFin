@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00603",
+  "uid": "financebench_id_00603_val",
+  "split": "new_response_validation",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "7074f511777b42b9176b2089130b44cb77ecdb487d94be0a1c234730531d09cc",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "128710c808da767f092d5dede05d559c8942b60c872bac1a00dfc84e47a70582",
+  "started_utc": "2026-09-09T18:06:55.471404+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "Without this information, I cannot determine what drove the increase in their merchandise inventories balance.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot determine the answer due to missing information and asks for evidence instead of answering."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bdfd79cad1cd6a1c9e2a6bb8005ad1375cc2fb80cbc2724e29a9ac1adbbb33eb",
+    "latency_seconds": 5.994,
+    "usage": {
+      "prompt_tokens": 1393,
+      "completion_tokens": 88,
+      "total_tokens": 1481,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "094aa88c8a65c252597cd7059efafdfad4a3d09b8022adbb454bdd08c5979649"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

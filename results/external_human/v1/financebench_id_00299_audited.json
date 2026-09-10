@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00299",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4c1caf9a3d7927ca4ab4d17d691e94db372b6e26083704b6683845036ce77b01",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "29375774264be0dc318136cc2e46a9b9d76eea61aef4130fca86cf6237d58456",
+  "started_utc": "2026-09-09T17:32:32.957371+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate correctly identifies Corporate as lowest net revenue segment in 2021 Q1 with -$473 million, matching reference and evidence showing Corporate net revenue $(473) million vs positive others.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate identifies JPM business segment Corporate, matching question and reference."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate uses 2021 Q1 (first quarter 2021), matching question and evidence (Three months ended March 31, 2021)."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate uses millions of dollars, matching evidence (in millions) and reference (million)."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Candidate states Corporate lowest with $(473) million negative, matching reference -$473 million and evidence $ (473)."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table shows Corporate net revenue $(473) and all other segments positive, supporting claim."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "367265d121fe88820c3a281d7d989d4a88ca988e33679009a3bd3bd103ef45ec",
+    "latency_seconds": 5.496,
+    "usage": {
+      "prompt_tokens": 2148,
+      "completion_tokens": 254,
+      "total_tokens": 2402,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2574dfc70bda84b3f44bdc07df224a9e7eb0d76296e079d8827e81c5009e4c7f"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

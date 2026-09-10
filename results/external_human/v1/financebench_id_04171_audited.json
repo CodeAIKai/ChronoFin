@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04171",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "3614d5cca06e7c9631495b0f7f6f51cba23c40a162a3bff3d6a66b00c13c7945",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "3249e4b742a6a85ae179bdcd3c62706b909199afcb2954e1e71453e6f478d4f2",
+  "started_utc": "2026-09-09T17:34:46.907939+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states accounts payable FY2018 = $302,578,000, which equals $302.578M; reference $303.00M is reasonable rounding. Evidence balance sheet shows Accounts payable $302,578 in thousands = $302,578,000, matching candidate.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is MGM Resorts, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 / Dec 31 2018 used, matches question and evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate gives $302,578,000; question asks USD millions, value ~302.6M, consistent."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer $302,578,000 ≈ $303M reference, rounding acceptable."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Balance sheet evidence directly lists Accounts payable $302,578 thousands for 2018."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "039d1ac901f8d09fac4f4d34e05a374fad130ae9e7a2e1115ca9e25bb315e9e5",
+    "latency_seconds": 6.225,
+    "usage": {
+      "prompt_tokens": 2424,
+      "completion_tokens": 256,
+      "total_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "96ec62d9d6fe80959e41aa750347e64630fab201d25174d68655851b593129d5"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,70 @@
+{
+  "id": "financebench_id_00807",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "eb1ecd981eb8cc7bfed771778efc85ce1a923a2fb58e865dd4995b908d08ff43",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "41ed74dd9b7f88c081dc8b305eccaedf22b9eb8aa20b08b629382e246ae8867c",
+  "started_utc": "2026-09-09T18:00:19.922695+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computes quick ratio as 0.85 using cash+securities+AR / current liabilities from Jun 30 2023 balance sheet, but reference states 3M quick ratio was 0.96 by Jun'23 close. Evidence supports the components used (cash 4258, securities 56, AR 4947, current liab 10936 => 9261/10936=0.847≈0.85), so candidate's number is evidence-supported yet contradicts reference's 0.96. Both agree profile is below 1x/not perfectly healthy, but core numeric answer (0.85 vs 0.96) materially differs from reference.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period is Q2 FY2023 / Jun 30 2023, correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Quick ratio is unitless; candidate and reference both use ratio scale."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says quick ratio ≈0.85; reference says 0.96. Core numeric answer differs materially."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Candidate's 0.85 is supported by evidence balance sheet figures; reference 0.96 not explained by evidence given."
+      }
+    ],
+    "reference_conflict": true,
+    "reference_conflict_reason": "Reference states 3M quick ratio 0.96 at Jun'23 close, but evidence balance sheet (cash 4258 + securities 56 + AR 4947) / current liab 10936 = 0.85, and candidate's 0.85 matches evidence not reference. Source and reference inconsistent on quick ratio value."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a697ca22257f682ecd139b3c292317539d7e5dd67794ec766ea2cbfb03bcc4cd",
+    "latency_seconds": 9.984,
+    "usage": {
+      "prompt_tokens": 2152,
+      "completion_tokens": 423,
+      "total_tokens": 2575,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d17ea7c901b21f5c4e04f3b41ebeb0aca80033e82d6c02db1c45b4d71551e85e"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

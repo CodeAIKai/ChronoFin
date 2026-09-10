@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00822",
+  "company": "Foot Locker",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "d22ed1ac70050fb2fb1e2a638769b91d67fe7407c53ddb3bd4308be70158260d",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "96c310bc0acfdbd0917d8b5471954450f3926ed229f839c419c67d62374cdfca",
+  "started_utc": "2026-09-09T17:46:25.449655+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds answer citing lack of evidence, despite evidence being supplied showing Richard A. Johnson had 16.1M votes against vs others' <6.1M. This is refusal per rules."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "07ba693ec2aaa63f56b3e39c8ff1d6d8bf5e74b14e3294d03a92aa2cdae21237",
+    "latency_seconds": 7.007,
+    "usage": {
+      "prompt_tokens": 2003,
+      "completion_tokens": 63,
+      "total_tokens": 2066,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "74f971b6e8975e08c40610f70971b78a699f82bbe9128ab8217ea8a116acb0b8"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00822_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00822_holistic.json",
+  "parent_sha256": "104081450bd5136c037d4224936c5c5d85f032396c01dcce54b30b1221baa5b4"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_04254",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "568a474defec66b2bcd6d3acad37277187278d01668228c5ead578af22e62b7d",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "91c1ac9277f55705db7bcf7d8dd4d45bf26774de54980b34a826a3e58d8cf90c",
+  "started_utc": "2026-09-09T17:52:53.203440+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot provide the requested information and only explains how to obtain it, without giving the substantive answer (operating income 1,196 + depreciation 636 = 1,832)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ee7d116daa268c5878531dc63002be3dc9a5f0ca23b59fe5f19084bfd746f7e2",
+    "latency_seconds": 6.25,
+    "usage": {
+      "prompt_tokens": 3616,
+      "completion_tokens": 61,
+      "total_tokens": 3677,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "264ebc2e39630cb27f448f2163a53dee38e02d8fdf1b15189cf0391b8ba4b838"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_04254_dev",
+  "reused_from": "results/external_human/v2/financebench_id_04254_holistic.json",
+  "parent_sha256": "3983464b926939836668a96f72a766104236b53350fbf0e77e6cea366e16b337"
+}

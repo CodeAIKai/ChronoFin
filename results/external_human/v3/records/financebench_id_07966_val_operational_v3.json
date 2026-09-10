@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_07966",
+  "uid": "financebench_id_07966_val",
+  "split": "new_response_validation",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "31b21746793baca48d6d32e781a035436bee320f3675d0a312bb4a1705d06d8a",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d75367b3e6d4f5b4789f6ad310b8ad15237f6be41278fd1db3a7d97bd81f7f98",
+  "started_utc": "2026-09-10T01:33:55.031088+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, the FY2017 - FY2019 3 year average of capex as a % of revenue for Activision Blizzard is 1.9%, rounded to one decimal place.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Evidence cash flows show capex 155/131/116 million for 2017/2018/2019; income statements show revenue 7017/7500/6489 million. Ratios 2.21%/1.75%/1.79% average 1.9%, matching candidate and rounded to one decimal as requested."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d445bc1b4176163d941777fa7af2c888be41fa5beed9d305410ae743cfa8705c",
+    "latency_seconds": 6.094,
+    "usage": {
+      "prompt_tokens": 3891,
+      "completion_tokens": 156,
+      "total_tokens": 4047,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c239a469d8cc59e6e75cc2d60f04c058a4a5c35c5921e8a055a09ae5a1d1c00a"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00606",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "436e091b4702e44bc598e708a2f4a2ebe39dc7c46f24fe974ec18e0b8109c502",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "a1a3f8c11dff24673f6f7aef9a8cb073a4b7407fe74a0b917d47bd83ad24bc99",
+  "started_utc": "2026-09-09T17:59:08.742993+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Reference states wages expense as % of net sales increased in FY2023 (defined as 12 months ended Jan 28, 2023 = fiscal 2022). Candidate claims it decreased in FY2023 vs FY2022 using SG&A aggregate, but evidence shows fiscal 2022 SG&A % decreased while store payroll/benefits (wages) deleveraged; reference explicitly says wages % increased. Candidate's direction contradicts reference and mislabels fiscal period.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Ulta Beauty wages expense as % of net sales"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Candidate uses FY2023 as fiscal 2023 vs FY2022, but reference defines FY2023 as fiscal 2022 (ended Jan 28, 2023)"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Metric is percent of net sales, consistent"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says decreased; reference says increased"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows SG&A % decreased but wages/payroll deleveraged; candidate infers wages % decreased without direct wages support and contradicts reference"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "47f11ab73d36c1ee15e94f00c1d2bd16c8331d8ddb96d1fb3ff98ea3a8e595b5",
+    "latency_seconds": 10.229,
+    "usage": {
+      "prompt_tokens": 1937,
+      "completion_tokens": 302,
+      "total_tokens": 2239,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2af1b2dcec0765cc4d6ae424bda3b3697fc9d0d70a0df3e0cbca18b3193d2c51"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

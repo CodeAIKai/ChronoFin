@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_09724",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "796657168d4190b00c6f880811edcfb577e2c8032344c5d9c853b5c46b40f5ae",
+  "reference_text_differs": true,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "dd1da044e78c0046264cbd6c5c78fb7dc958288bd79dc5174cc366738e64f16f",
+  "started_utc": "2026-09-09T17:55:11.520838+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate discusses pension/postretirement benefits, not COGS % margin; does not answer the question or use income statement line items as requested."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cd58c3d11e1866b0311822dbd011906a3496989f6a53dc4584bb7afaa431239a",
+    "latency_seconds": 9.662,
+    "usage": {
+      "prompt_tokens": 1713,
+      "completion_tokens": 50,
+      "total_tokens": 1763,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6dedb95081e38acc3e09471e520d7974a4c66222ed56ab3696229936a46ff663"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

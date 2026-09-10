@@ -1,0 +1,94 @@
+{
+  "model_calls": 0,
+  "cases": {
+    "D01": {
+      "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+      "n_judgments": 4,
+      "observed_score_interval": [
+        55,
+        100.0
+      ],
+      "range": 45.0,
+      "status": "review_required",
+      "numeric_witnesses": [
+        {
+          "claim_id": "C3",
+          "source_id": "M07",
+          "source_value": 52103,
+          "source_unit": "USD million",
+          "text_value": "52103",
+          "text_unit": "百万美元",
+          "numerically_equivalent": true,
+          "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+        },
+        {
+          "claim_id": "C4",
+          "source_id": "M03",
+          "source_value": -17729,
+          "source_unit": "USD million",
+          "text_value": "17729",
+          "text_unit": "百万美元",
+          "numerically_equivalent": true,
+          "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+        },
+        {
+          "claim_id": "C5",
+          "source_id": "M10",
+          "source_value": 1.55,
+          "source_unit": "USD billion",
+          "text_value": "15.5",
+          "text_unit": "亿美元",
+          "numerically_equivalent": true,
+          "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+        }
+      ],
+      "arithmetic_judge_conflicts": [
+        {
+          "claim_id": "C5",
+          "judgment": "repeat_3",
+          "reason": "候选写Q4因15.5亿美元法律拨备转回受益，但M10原文为15.5亿美元reduction in accrued legal losses（拨备减少/转回收益），候选将1.55亿误写为15.5亿（十倍错误）",
+          "witness": {
+            "claim_id": "C5",
+            "source_id": "M10",
+            "source_value": 1.55,
+            "source_unit": "USD billion",
+            "text_value": "15.5",
+            "text_unit": "亿美元",
+            "numerically_equivalent": true,
+            "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+          }
+        }
+      ],
+      "human_validated": false,
+      "interpretation": "Observed interval, not a confidence interval. Historical scores are preserved."
+    },
+    "D04": {
+      "answer_sha256": "2eb558cc02d122477d6244ceb11a85ec3ccd32cde2ddffbfb16c000935f1146e",
+      "n_judgments": 4,
+      "observed_score_interval": [
+        100.0,
+        100.0
+      ],
+      "range": 0.0,
+      "status": "sampled_stable",
+      "numeric_witnesses": [],
+      "arithmetic_judge_conflicts": [],
+      "human_validated": false,
+      "interpretation": "Observed interval, not a confidence interval. Historical scores are preserved."
+    },
+    "D05": {
+      "answer_sha256": "67f892f960dd294dd8d8e8731013a76eea69a26b35264b07b2f0e3af9ddc99c9",
+      "n_judgments": 4,
+      "observed_score_interval": [
+        96.0,
+        96.0
+      ],
+      "range": 0.0,
+      "status": "sampled_stable",
+      "numeric_witnesses": [],
+      "arithmetic_judge_conflicts": [],
+      "human_validated": false,
+      "interpretation": "Observed interval, not a confidence interval. Historical scores are preserved."
+    }
+  }
+}

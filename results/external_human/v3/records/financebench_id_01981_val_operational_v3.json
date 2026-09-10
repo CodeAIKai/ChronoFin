@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01981",
+  "uid": "financebench_id_01981_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "f1d375e2934330bd1418ab5f2695bd123afec2c19a3ae58fa9b3fc5829e1c909",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "96cdd646a1c89bcba1238ecc3f3d7e91c5d3756c0e89b061722a84e0875bf122",
+  "started_utc": "2026-09-10T01:28:41.125180+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "American Express was able to retain card members during 2022",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states Amex retained card members in 2022, matching reference 'Yes' and evidence 'Card Member retention remained high' for 2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1c7c6ec3d4e5ce73ccb1ee72f483c59a615a592557fe622ab35d57b3bba9b574",
+    "latency_seconds": 10.461,
+    "usage": {
+      "prompt_tokens": 1837,
+      "completion_tokens": 91,
+      "total_tokens": 1928,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5d016ccec0515d1d1f61af46517520d1ee98adb05a88ebf8cefb12f1a1a61812"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

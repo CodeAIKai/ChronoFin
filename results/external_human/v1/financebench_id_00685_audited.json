@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00685",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "a0c3b0bb5cf49df13b12b7ec3c00810033beee9679dc67155682e172a0a405f0",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9e331cfc8908e07343661a077e758645595bfd81f0e8e3be21599fa29d24ebf2",
+  "started_utc": "2026-09-09T17:59:36.184877+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate concludes Best Buy gross margins consistent within ~2% yearly, matching reference and evidence (FY21 22.4%, FY22 22.5%, FY23 21.4% from revenue/gross profit; max YoY change 1.1pp).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Best Buy identified correctly"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Covers FY2021-FY2023 consistent with evidence and reference"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Gross margin expressed in % as requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "States margins consistent, fluctuations <=~2% each year; matches reference yes and evidence computed margins 22.4/22.5/21.4"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence income statement supports computed margins and narrow band"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1988bd9362b145c8d032b2b15a78ee7e9c7b48e37b01815db17d2ff57739aa2e",
+    "latency_seconds": 9.763,
+    "usage": {
+      "prompt_tokens": 1983,
+      "completion_tokens": 237,
+      "total_tokens": 2220,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "30c2ef0061adc42e2e5a4ea174bf2423f6317156cfc6cd604f34e318c4f15298"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

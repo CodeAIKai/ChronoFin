@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02049",
+  "uid": "financebench_id_02049_dev",
+  "split": "development",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "d8c7f9a34e581031c60b1491f92cf15bb0eda2594ef046d965dbb0f48773a346",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "257dc56cfd66db779f0dd0c467df55b7901a48899d806e9255b91354158c29e1",
+  "started_utc": "2026-09-10T01:28:51.589459+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the risk that JPM faced in the second fiscal quarter of 2023, as measured by Value at Risk (VaR), did decrease compared to the same period in the prior year.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states VaR decreased Q2 2023 vs Q2 2022, matching reference 'Yes. It decreased.' and evidence: avg Total VaR $47M (Jun 30 2023) vs $54M (Jun 30 2022), a $7M decrease per year-over-year text."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a6c63806a76aa9fb0e0aef39ac1605c1170bf53b7f70d6496714425ad8bd8e48",
+    "latency_seconds": 12.577,
+    "usage": {
+      "prompt_tokens": 2090,
+      "completion_tokens": 151,
+      "total_tokens": 2241,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1a70ffb2998ad6e55f1166c3fe44a23d294f3d612c8fd9363f23fabec9597a1e"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

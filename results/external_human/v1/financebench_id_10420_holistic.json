@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_10420",
+  "company": "AES Corporation",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "ce2a1ec87f7bbf58fa1fcd2cfb8d17b97c1d6cefeda53aa577ca4953785b2366",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "87e35410109faa45c2d360d3ed4e4399033be44b50a631c3496ccc847bf49572",
+  "started_utc": "2026-09-09T17:35:17.747144+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed ROA as -1.53% (-0.0153), but reference is -0.02. Using evidence (net income -546, avg assets 35663), ROA = -0.0153 ≈ -0.02 when rounded to two decimal places as a decimal, not percent. Candidate's -0.02 decimal equivalent is -2%, mismatching reference unit/value."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a11241967d3d370406eba35236d0f99d24acb903abfc53cc8a77b81804da82a3",
+    "latency_seconds": 3.609,
+    "usage": {
+      "prompt_tokens": 4745,
+      "completion_tokens": 105,
+      "total_tokens": 4850,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "413c329faf4e97bfde409a48689c6bdb869aa8f53d5db9ce089082a6dbb27fbe"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

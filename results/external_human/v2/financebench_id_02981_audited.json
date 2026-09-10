@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_02981",
+  "company": "Corning",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "233b7fed3126bce1eb20a1a99db92926b912a8c07c392a8864853a6666ab554e",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "9884d344f1b757e98bc656242d103fedfe3415235733cb1c9a855939f48bee3c",
+  "started_utc": "2026-09-09T17:51:10.495090+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate used unadjusted operating margins of 14.9%, 16.8%, 17.3% (avg 16.3%), but evidence income statement shows operating income of 2112, 509, 1306 on sales 14082, 11303, 11503 => margins 15.0%, 4.5%, 11.4% (avg ~10.3%), matching reference 0.103. Candidate's numbers are unsupported by evidence.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Corning, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period FY2019-FY2021 correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer given in percents as requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate avg 16.3% vs correct ~10.3% from evidence/reference."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate's yearly margins 14.9/16.8/17.3% not present in income statement evidence."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a6c2c3254427adad2bf3cb259914d0d364aeb171f28ccd13fe6ddeb3ae536542",
+    "latency_seconds": 10.038,
+    "usage": {
+      "prompt_tokens": 2323,
+      "completion_tokens": 299,
+      "total_tokens": 2622,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a3a7d3a96ae8af694303d4873f352e035c2b7053c55f35299824764f989f4736"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00917",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "25e71b61d13164f0e90a5632aa3ebab5c86b4cf93262479ad7c8bfcbced9a13a",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "4563bd1859ba10d1831e1bbd21bb58e57e4d72d47c684b8f0ecaf5e9215ea138",
+  "started_utc": "2026-09-09T17:46:46.914541+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states context lacks FY22 AMD operating margin info and withholds answer, despite evidence providing the driver (Xilinx amortization). This is refusal per rules."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9204af255c8dbf354f0055695c76dd8621062c6744efdd136251687874ba8579",
+    "latency_seconds": 6.993,
+    "usage": {
+      "prompt_tokens": 1682,
+      "completion_tokens": 55,
+      "total_tokens": 1737,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "eaff1861e3aca794f5ca2eea9d2103cce81b4557ba4c3c76ed567d00328105d0"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00917_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00917_holistic.json",
+  "parent_sha256": "4a8f7e16f7a885d57ed3833ba005e3cad03d5ecca616897bbb67fe2ebac3ebe7"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00995",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cd50e9048aa7020b598e633f80506b84a738a5d49cb78f7ac7f499d1b1926569",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "ab738631c645fde5e2660fb1b443193348218308e9e5195a7db5d63af9e0e262",
+  "started_utc": "2026-09-09T17:47:03.372596+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate lists vague/marketing categories and examples (e.g., healthcare, aerospace, automotive, gaming consoles) not matching the reference's specific product classes (data center CPUs/GPUs/DPUs/FPGAs/Adaptive SoC; PC CPUs/APUs/chipsets; discrete GPUs/semi-custom SoC; embedded CPUs/GPUs/APUs/FPGAs/Adaptive SoC). Evidence supports reference, not candidate's framing."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "21c9074b0246870fac6dac76ce75aff4ab67d16e36e374a3d1d83bc769c8f2a3",
+    "latency_seconds": 7.674,
+    "usage": {
+      "prompt_tokens": 1575,
+      "completion_tokens": 115,
+      "total_tokens": 1690,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "37cfc3037bf93bc94b8fbd20f1b531d1ae210286e999f10d3c99e56896d2954f"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00995_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00995_holistic.json",
+  "parent_sha256": "fb6a3838ed6cbebb818d348bb7e7c0ed041b0a7692192a6dba74386cc32e8557"
+}

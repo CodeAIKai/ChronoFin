@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01328",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "81b7e235d2f53bbb4944b0ffe2b6068579e03fe52958bc21659c8fe03e06f5a3",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "4f6f7ebba22c793b65d4a390fb2af4e145841a91f5ad479c79744a74187a66b9",
+  "started_utc": "2026-09-09T17:33:55.571511+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate does not provide the $411 million figure and instead states inability to access data, giving only conditional instructions rather than a substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bbd1989c4fdb9b454fb2213637685259d64e1e5b3a5a802b8a8409f077f1ee98",
+    "latency_seconds": 1.793,
+    "usage": {
+      "prompt_tokens": 1558,
+      "completion_tokens": 49,
+      "total_tokens": 1607,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6a4f8f70dbd08e9cdcf3a39eaf6e865761e07d847621e35e1fee08e2a7208fcb"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

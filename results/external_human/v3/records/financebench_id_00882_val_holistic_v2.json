@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00882",
+  "uid": "financebench_id_00882_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6c5f8246119e218c31e301ff2b5debe19a41cc069c47ff35dda8cbdf96771e22",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "6a31ac4e2218aa1cdf70196e39143dba688e2913d4cb9ae603bc8101b8bb2d09",
+  "started_utc": "2026-09-09T18:08:45.154320+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate provides substantive total of $8,400,000,000 from two $4.2B agreements effective May 26, 2023, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b89a96749a328af7ce5a47d5481ad9059e0056bfb10d24b72b01e8f9d5f9eb7c",
+    "latency_seconds": 5.892,
+    "usage": {
+      "prompt_tokens": 2751,
+      "completion_tokens": 56,
+      "total_tokens": 2807,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f714437fce90db2d625dda8665aff907dc008d4e1da17ad7a3c0820c55dea9c2"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

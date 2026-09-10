@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01487",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "8ff749d1284291edaa200a3172271185f903d6a260a7ee31d5018725e6b09e88",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "eebc2659533b449dcacc89d5fda6e88d08bf0e34d1ea26f6a591b4254861b7b9",
+  "started_utc": "2026-09-09T17:49:14.492930+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate provides substantive answer 'yes' with 20.0% in Q2 FY2022 and 20.1% in Q2 FY2023, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "299a4115c1ceb8b9ac140e3abe4204602e62cd80bd76ed1df5524c94d91a4fdd",
+    "latency_seconds": 6.845,
+    "usage": {
+      "prompt_tokens": 1727,
+      "completion_tokens": 58,
+      "total_tokens": 1785,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "dfbd954c24bad729219113fb2be93c2a2f9fc23f889f856a042d7797c3a1386f"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01487_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01487_holistic.json",
+  "parent_sha256": "ae7662947ab37397e9fa1fbc71c69d8c3a8a3cab5906107bf172d825cd4d757c"
+}

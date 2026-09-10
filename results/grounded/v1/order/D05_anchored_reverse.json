@@ -1,0 +1,225 @@
+{
+  "case_id": "D05",
+  "method": "anchored",
+  "order": "reverse",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "answer_sha256": "67f892f960dd294dd8d8e8731013a76eea69a26b35264b07b2f0e3af9ddc99c9",
+  "status": "ok",
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文'美联储2025年5月7日发布的金融稳定性报告（数据截至2025年4月11日）'与F01'through April 11, 2025'及发布日一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选'股票估值相对预期盈利仍高，流动性恶化但整体运转有序'对应F02'Equity valuations remained high versus expected earnings; liquidity deteriorated, with generally orderly functioning'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选'对冲基金杠杆指标接近十年高位且集中于较大基金'对应F03'Hedge-fund leverage indicators were near decade highs and concentrated in larger funds'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选'银行体系广泛韧性，多数资本远高于监管要求'对应F04'Banks remained broadly resilient, with most reporting capital well above regulatory requirements'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选'企业和家庭债务脆弱性温和，债务占GDP比重已下降'对应F05'Business and household debt vulnerabilities were moderate; debt relative to GDP had declined'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选'融资脆弱性降至温和水平，但可挤兑负债仍是持续风险'对应F06'Funding vulnerabilities had declined to moderate levels; runnable liabilities remained a persistent risk'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选'信用卡和汽车贷款拖欠率超疫情前水平，非优质借款人尤为明显'对应F07'Credit-card and auto delinquencies exceeded pre-pandemic levels, especially among non-prime borrowers'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "F01",
+          "present": true,
+          "quote": "数据截至2025年4月11日"
+        },
+        {
+          "id": "F02",
+          "present": true,
+          "quote": "股票估值相对预期盈利仍高，流动性恶化但整体运转有序"
+        },
+        {
+          "id": "F03",
+          "present": true,
+          "quote": "对冲基金杠杆指标接近十年高位且集中于较大基金"
+        },
+        {
+          "id": "F04",
+          "present": true,
+          "quote": "银行体系广泛韧性，多数资本远高于监管要求"
+        },
+        {
+          "id": "F05",
+          "present": true,
+          "quote": "企业和家庭债务脆弱性温和，债务占GDP比重已下降"
+        },
+        {
+          "id": "F06",
+          "present": true,
+          "quote": "融资脆弱性降至温和水平，但可挤兑负债仍是持续风险"
+        },
+        {
+          "id": "F07",
+          "present": true,
+          "quote": "信用卡和汽车贷款拖欠率超疫情前水平，非优质借款人尤为明显"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选完整整理美联储报告风险与缓冲，覆盖required与counter全部ID且未混用口径，但limitations未说明'风险描述不是危机发生概率'这一期待限制"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "b5ddd20a3077d9c1b0887a620df1d77bc2f90ccd7af4495661df309a0d2d88ad",
+      "latency_seconds": 8.602,
+      "usage": {
+        "prompt_tokens": 4948,
+        "completion_tokens": 829,
+        "total_tokens": 5777,
+        "prompt_tokens_details": {
+          "cached_tokens": 576
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "1d7233bf975c132b6a06086587159a568448ace84d93ac85758dd324e9c75be8"
+    },
+    "input_sha256": "b358141813e5150c40ba4f9e62669042ff5525570933d775e6aca8a5fe22a480",
+    "answer_sha256": "67f892f960dd294dd8d8e8731013a76eea69a26b35264b07b2f0e3af9ddc99c9",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "67f892f960dd294dd8d8e8731013a76eea69a26b35264b07b2f0e3af9ddc99c9",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 96.0,
+    "score": 96.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  }
+}

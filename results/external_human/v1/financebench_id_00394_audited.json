@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00394",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "984b6079b0942ef11686d7618e62bd52fa16fa58d7a8bf7e82b47c38277d4d6b",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "dde779e31cfe1dc434176d9cb5b4dce11cb190407f4391d71c6e959efb2334e9",
+  "started_utc": "2026-09-09T17:32:38.621555+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence explicitly lists Q2 2022 segment net income: CIB $3725M is highest; candidate falsely claims evidence lacks segment breakdown.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is JPM business segments in Q2 2022."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period is 2022 Q2 (three months ended June 30, 2022)."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is millions USD net income per evidence table."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says evidence lacks segment net income; evidence shows CIB $3725M highest."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate's refusal is unsupported; evidence contains required segment data."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f31172761e8a6175747f909e0249111a9dd718492a584cd127dca492606ae758",
+    "latency_seconds": 3.303,
+    "usage": {
+      "prompt_tokens": 2984,
+      "completion_tokens": 218,
+      "total_tokens": 3202,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "32699ed8ef6b9b36612bb78227e85ca750c5321d12f92bab136185a0183070b2"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

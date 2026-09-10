@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04660",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "693d27e05ce5de300ff7697c0b64506b8c4957c53119403cafcae75352a9a07b",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "c5828e09810a7620f8bae9b8ae518740f36fb543268ca8c14208fe23272c2687",
+  "started_utc": "2026-09-09T17:53:27.115096+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it cannot calculate the ratio due to missing figures and withholds the answer, even though evidence provides current assets (1,001,425) and current liabilities (577,464) yielding 1.73.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references Block (Square) FY2016 as requested."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate addresses FY2016 as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No numeric answer given; ratio unit not misstated."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refuses to provide the working capital ratio (1.73 from evidence)."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claims figures absent, but evidence balance sheet lists Total current assets 1,001,425 and Total current liabilities 577,464 for 2016."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e41372cfebfeb1464e06ad63f521827b3aa90643ce876eaf9474df8c47c9bcf3",
+    "latency_seconds": 10.468,
+    "usage": {
+      "prompt_tokens": 2216,
+      "completion_tokens": 253,
+      "total_tokens": 2469,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bdbb0f81cfb18b1f8ce62a6400cb7d8003e5d53b67d3540a0255ffdedee0c0f1"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

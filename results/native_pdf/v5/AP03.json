@@ -1,0 +1,2312 @@
+{
+  "status": "ok",
+  "mode": "live_pdf",
+  "stage": "complete",
+  "record": {
+    "version": "native-generation-5.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "Apple FY2025 全球增长是否说明大中华区和所有产品线均增长？用全年及季度表格核查。",
+      "as_of": "2025-12-01"
+    },
+    "evidence": [
+      {
+        "id": "F5",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "大中华区比较期（2024全年）净销售额66,952百万美元，用于核对大中华区是否增长。",
+        "quote": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 66952,
+        "unit": "USD million",
+        "raw_number": "66,952",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 46,
+        "end_line": 46,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "反证：大中华区全年净销售额64,377百万美元，低于2024年同期的66,952百万美元，未增长反而下降。",
+        "quote": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 64377,
+        "unit": "USD million",
+        "raw_number": "64,377",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 46,
+        "end_line": 46,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "大中华区第三季度（三个月截至2025/9/27）净销售额14,493百万美元，低于2024年同期的15,033百万美元。",
+        "quote": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 14493,
+        "unit": "USD million",
+        "raw_number": "14,493",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 46,
+        "end_line": 46,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "反证：可穿戴、家居及配件全年净销售额35,686百万美元，低于2024年同期的37,005百万美元，该产品线未增长。",
+        "quote": "    Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 35686,
+        "unit": "USD million",
+        "raw_number": "35,686",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 56,
+        "end_line": 56,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "iPhone全年净销售额209,586百万美元，高于2024年同期的201,183百万美元，产品线增长。",
+        "quote": "    iPhone                                     $     49,025 $     46,222 $    209,586 $    201,183",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 209586,
+        "unit": "USD million",
+        "raw_number": "209,586",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 53,
+        "end_line": 53,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Mac全年净销售额33,708百万美元，高于2024年同期的29,984百万美元，产品线增长。",
+        "quote": "   Mac                                                    8,726         7,744        33,708       29,984",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 33708,
+        "unit": "USD million",
+        "raw_number": "33,708",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 54,
+        "end_line": 54,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "iPad全年净销售额28,023百万美元，高于2024年同期的26,694百万美元，产品线增长。",
+        "quote": "    iPad                                                   6,952        6,950       28,023       26,694",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 28023,
+        "unit": "USD million",
+        "raw_number": "28,023",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 55,
+        "end_line": 55,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Services全年净销售额109,158百万美元，高于2024年同期的96,169百万美元，产品线增长。",
+        "quote": "    Services                                               28,750        24,972       109,158        96,169",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 109158,
+        "unit": "USD million",
+        "raw_number": "109,158",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 57,
+        "end_line": 57,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "大中华区第三季度比较期（2024/9/28）净销售额15,033百万美元。",
+        "quote": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 15033,
+        "unit": "USD million",
+        "raw_number": "15,033",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 46,
+        "end_line": 46,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "美洲与欧洲全年净销售额分别为178,353和111,032百万美元，均高于2024年同期，区域增长。",
+        "quote": "    Americas                                   $     44,192  $     41,664  $    178,353  $    167,045\n    Europe                                                28,703       24,924       111,032        101,328",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 178353,
+        "unit": "USD million",
+        "raw_number": "178,353",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 44,
+        "end_line": 45,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "存在2024年非GAAP与GAAP调节表，说明公司使用非GAAP口径（剔除欧洲国家援助裁决影响）补充披露，但本问题表格为GAAP未审计 condensed 报表。",
+        "quote": "                           RECONCILIATION OF 2024 NON-GAAP TO GAAP RESULTS OF OPERATIONS (Unaudited)\n                                            (In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "definition",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 3,
+        "end_line": 4,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple全年（十二个月截至2025/9/27）总净销售额416,161百万美元，较2024年同期的391,035百万美元增长。",
+        "quote": "    Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 416161,
+        "unit": "USD million",
+        "raw_number": "416,161",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 12,
+        "end_line": 12,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F16",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "全年经营活动产生现金111,482百万美元，低于2024年的118,254百万美元，现金转化未随收入同步提升。",
+        "quote": "          Cash generated by operating activities                                           111,482         118,254",
+        "source_chunk_id": "P43E7F0733B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–4110",
+        "value": 111482,
+        "unit": "USD million",
+        "raw_number": "111,482",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 26,
+        "end_line": 26,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F17",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "比较期（2024全年）经营活动产生现金118,254百万美元。",
+        "quote": "          Cash generated by operating activities                                           111,482         118,254",
+        "source_chunk_id": "P43E7F0733B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–4110",
+        "value": 118254,
+        "unit": "USD million",
+        "raw_number": "118,254",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 26,
+        "end_line": 26,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "可穿戴、家居及配件比较期（2024全年）净销售额37,005百万美元。",
+        "quote": "    Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 37005,
+        "unit": "USD million",
+        "raw_number": "37,005",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 56,
+        "end_line": 56,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F1",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "利润表列示期间：三个月截至2025/9/27与2024/9/28，十二个月截至2025/9/27与2024/9/28，单位百万美元（每股及千股除外）。",
+        "quote": "                                                              Three Months Ended           Twelve Months Ended\n                                                      September 27,  September 28,  September 27,  September 28,\n                                                      2025         2024         2025         2024",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "definition",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 6,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple全年（十二个月截至2024/9/28）总净销售额391,035百万美元，为比较期基数。",
+        "quote": "    Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 391035,
+        "unit": "USD million",
+        "raw_number": "391,035",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 12,
+        "end_line": 12,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "Apple十二个月截至2025/9/27全球总净销售额416,161百万美元，高于2024年同期的391,035百万美元，全年全球增长。但分区域看，大中华区全年64,377百万美元低于2024年66,952百万美元，第三季度14,493百万美元亦低于同期15,033百万美元，区域未增长。分产品线，iPhone、Mac、iPad、Services均同比增长，而可穿戴、家居及配件全年35,686百万美元低于2024年37,005百万美元，该产品线下降。因此全球增长并不说明大中华区和所有产品线均增长。另经营活动现金111,482百万美元低于前期118,254百万美元。报表为GAAP未审计口径，另有非GAAP调节表。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Apple十二个月截至2025/9/27全球总净销售额同比增长，全年全球增长。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F3"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 416161,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 391035,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "大中华区全年净销售额64,377百万美元，低于2024年同期66,952百万美元，区域未增长反而下降。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F4",
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 64377,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F5",
+              "value": 66952,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "大中华区第三季度净销售额14,493百万美元，低于2024年同期15,033百万美元，季度亦下降。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F6",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 14493,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F7",
+              "value": 15033,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "可穿戴、家居及配件全年净销售额35,686百万美元，低于2024年37,005百万美元，该产品线未增长。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F8",
+            "F9"
+          ],
+          "numbers": [
+            {
+              "source_id": "F8",
+              "value": 35686,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F9",
+              "value": 37005,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "iPhone、Mac、iPad、Services全年净销售额均高于2024年同期，四条产品线增长。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F11",
+            "F12",
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 209586,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F11",
+              "value": 33708,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F12",
+              "value": 28023,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F13",
+              "value": 109158,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "美洲与欧洲全年净销售额分别为178,353和111,032百万美元，均高于2024年同期，为主要增长区域。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F14"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 178353,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "经营活动现金全年111,482百万美元低于2024年118,254百万美元，现金转化未随收入同步提升。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F16",
+            "F17"
+          ],
+          "numbers": [
+            {
+              "source_id": "F16",
+              "value": 111482,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F17",
+              "value": 118254,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C8",
+          "text": "所引表格为GAAP未审计 condensed 报表，公司另披露2024非GAAP与GAAP调节表，存在补充口径。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F15",
+            "F1"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "未提供日本及亚太其他区域全年明细，无法判断其是否增长；非GAAP调节具体影响金额未列示。"
+      ],
+      "follow_up": [
+        {
+          "action": "核查日本及亚太其他区域全年净销售额与2024年比较",
+          "reason": "可判断全球增长是否覆盖全部区域，修正区域结论",
+          "evidence_ids": [
+            "F1"
+          ]
+        },
+        {
+          "action": "提取非GAAP调节表中欧洲国家援助裁决影响金额",
+          "reason": "判断GAAP与补充口径下大中华区及总销售额差异",
+          "evidence_ids": [
+            "F15"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "Apple十二个月截至2025/9/27全球总净销售额416,161百万美元，高于2024年同期391,035百万美元，全年全球增长。但分区域看，大中华区全年64,377百万美元低于2024年66,952百万美元，第三季度14,493百万美元亦低于同期15,033百万美元，区域未增长。分产品线，iPhone、Mac、iPad、Services均同比增长，而可穿戴、家居及配件全年35,686百万美元低于2024年37,005百万美元，该产品线下降。因此全球增长并不说明大中华区和所有产品线均增长。经营活动现金111,482百万美元低于前期118,254百万美元。报表为GAAP未审计口径，另有非GAAP调节表。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Apple十二个月截至2025/9/27全球总净销售额同比增长，全年全球增长。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F3"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 416161,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 391035,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "大中华区全年净销售额64,377百万美元，低于2024年同期66,952百万美元，区域未增长反而下降。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F4",
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 64377,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F5",
+              "value": 66952,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "大中华区第三季度净销售额14,493百万美元，低于2024年同期15,033百万美元，季度亦下降。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F6",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 14493,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F7",
+              "value": 15033,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "可穿戴、家居及配件全年净销售额35,686百万美元，低于2024年37,005百万美元，该产品线未增长。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F8",
+            "F9"
+          ],
+          "numbers": [
+            {
+              "source_id": "F8",
+              "value": 35686,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F9",
+              "value": 37005,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "iPhone、Mac、iPad、Services全年净销售额均高于2024年同期，四条产品线增长。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F11",
+            "F12",
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 209586,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F11",
+              "value": 33708,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F12",
+              "value": 28023,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F13",
+              "value": 109158,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "美洲与欧洲全年净销售额分别为178,353和111,032百万美元，均高于2024年同期，为主要增长区域。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F14"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 178353,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "经营活动现金全年111,482百万美元低于2024年118,254百万美元，现金转化未随收入同步提升。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F16",
+            "F17"
+          ],
+          "numbers": [
+            {
+              "source_id": "F16",
+              "value": 111482,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F17",
+              "value": 118254,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C8",
+          "text": "所引表格为GAAP未审计 condensed 报表，公司另披露2024非GAAP与GAAP调节表，存在补充口径。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F15",
+            "F1"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "未提供日本及亚太其他区域全年明细，无法判断其是否增长；非GAAP调节具体影响金额未列示。"
+      ],
+      "follow_up": [
+        {
+          "action": "核查日本及亚太其他区域全年净销售额与2024年比较",
+          "reason": "可判断全球增长是否覆盖全部区域，修正区域结论",
+          "evidence_ids": [
+            "F1"
+          ]
+        },
+        {
+          "action": "提取非GAAP调节表中欧洲国家援助裁决影响金额",
+          "reason": "判断GAAP与补充口径下大中华区及总销售额差异",
+          "evidence_ids": [
+            "F15"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "42158b9e6126ba55f3d019e52d4ab5628efa92cdcbf29d94f9fe0f2ae82f763b",
+        "latency_seconds": 7.606,
+        "usage": {
+          "prompt_tokens": 4840,
+          "completion_tokens": 1191,
+          "total_tokens": 6031,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "b427b248ca90b0d74583e593b9ff5267e1c1383ae1fe2110ba08889128cb9d06"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "d8f7c8756edff385c08b97cbb49266c64e70b051b8ebc35f94de165a7f5f47e4",
+        "latency_seconds": 8.696,
+        "usage": {
+          "prompt_tokens": 6089,
+          "completion_tokens": 1189,
+          "total_tokens": 7278,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "a686bc2bb76f710a331ebf54863b961839b16274485d7a98320fedd2c19de735"
+      }
+    ],
+    "input_sha256": "10d80f3b57cc77164b674fa60e95ef08904d1b14ed36f98de4d2e3a6210acda2",
+    "numeric_registry": {
+      "F5": {
+        "value": 66952,
+        "unit": "USD million"
+      },
+      "F4": {
+        "value": 64377,
+        "unit": "USD million"
+      },
+      "F6": {
+        "value": 14493,
+        "unit": "USD million"
+      },
+      "F8": {
+        "value": 35686,
+        "unit": "USD million"
+      },
+      "F10": {
+        "value": 209586,
+        "unit": "USD million"
+      },
+      "F11": {
+        "value": 33708,
+        "unit": "USD million"
+      },
+      "F12": {
+        "value": 28023,
+        "unit": "USD million"
+      },
+      "F13": {
+        "value": 109158,
+        "unit": "USD million"
+      },
+      "F7": {
+        "value": 15033,
+        "unit": "USD million"
+      },
+      "F14": {
+        "value": 178353,
+        "unit": "USD million"
+      },
+      "F2": {
+        "value": 416161,
+        "unit": "USD million"
+      },
+      "F16": {
+        "value": 111482,
+        "unit": "USD million"
+      },
+      "F17": {
+        "value": 118254,
+        "unit": "USD million"
+      },
+      "F9": {
+        "value": 37005,
+        "unit": "USD million"
+      },
+      "F3": {
+        "value": 391035,
+        "unit": "USD million"
+      }
+    },
+    "compiled_calculations": [],
+    "operation_errors": [],
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "Apple十二个月截至2025/9/27全球总净销售额416,161百万美元，高于2024年同期391,035百万美元，全年全球增长。但分区域看，大中华区全年64,377百万美元低于2024年66,952百万美元，第三季度14,493百万美元亦低于同期15,033百万美元，区域未增长。分产品线，iPhone、Mac、iPad、Services均同比增长，而可穿戴、家居及配件全年35,686百万美元低于2024年37,005百万美元，该产品线下降。因此全球增长并不说明大中华区和所有产品线均增长。经营活动现金111,482百万美元低于前期118,254百万美元。报表为GAAP未审计口径，另有非GAAP调节表。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Apple十二个月截至2025/9/27全球总净销售额同比增长，全年全球增长。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F3"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 416161,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 391035,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "大中华区全年净销售额64,377百万美元，低于2024年同期66,952百万美元，区域未增长反而下降。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F4",
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 64377,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F5",
+              "value": 66952,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "大中华区第三季度净销售额14,493百万美元，低于2024年同期15,033百万美元，季度亦下降。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F6",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 14493,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F7",
+              "value": 15033,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "可穿戴、家居及配件全年净销售额35,686百万美元，低于2024年37,005百万美元，该产品线未增长。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F8",
+            "F9"
+          ],
+          "numbers": [
+            {
+              "source_id": "F8",
+              "value": 35686,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F9",
+              "value": 37005,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "iPhone、Mac、iPad、Services全年净销售额均高于2024年同期，四条产品线增长。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F11",
+            "F12",
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 209586,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F11",
+              "value": 33708,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F12",
+              "value": 28023,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F13",
+              "value": 109158,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "美洲与欧洲全年净销售额分别为178,353和111,032百万美元，均高于2024年同期，为主要增长区域。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F14"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 178353,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "经营活动现金全年111,482百万美元低于2024年118,254百万美元，现金转化未随收入同步提升。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F16",
+            "F17"
+          ],
+          "numbers": [
+            {
+              "source_id": "F16",
+              "value": 111482,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F17",
+              "value": 118254,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C8",
+          "text": "所引表格为GAAP未审计 condensed 报表，公司另披露2024非GAAP与GAAP调节表，存在补充口径。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F15",
+            "F1"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "未提供日本及亚太其他区域全年明细，无法判断其是否增长；非GAAP调节具体影响金额未列示。"
+      ],
+      "follow_up": [
+        {
+          "action": "核查日本及亚太其他区域全年净销售额与2024年比较",
+          "reason": "可判断全球增长是否覆盖全部区域，修正区域结论",
+          "evidence_ids": [
+            "F1"
+          ]
+        },
+        {
+          "action": "提取非GAAP调节表中欧洲国家援助裁决影响金额",
+          "reason": "判断GAAP与补充口径下大中华区及总销售额差异",
+          "evidence_ids": [
+            "F15"
+          ]
+        }
+      ]
+    },
+    "pre_repair_proof_issues": [],
+    "answer_sha256": "2296c9c94e22e3fefb835539fcf0f74d7f541faf5324619bd9c975f76b6b74a0",
+    "final_proof_issues": [],
+    "source_document": {
+      "id": "pdf_43e7f0730b3c",
+      "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+      "pages": 4,
+      "bytes": 4919649,
+      "metadata_identity": "pinned_official",
+      "title": "Apple FY2025 Q4 consolidated financial statements",
+      "entity": "Apple",
+      "published_at": "2025-10-30",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 4,
+      "selected_ids": [
+        "P43E7F0731B1",
+        "P43E7F0732B1",
+        "P43E7F0733B1",
+        "P43E7F0734B1"
+      ],
+      "selected_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "selection_sha256": "a5ea98410ef908768d6d1d3b30e4f5c7a576cc493c49ba145a97fa914ecb87ef"
+    },
+    "pipeline": "native_pdf_v5",
+    "extraction_raw": {
+      "facts": [
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 6,
+          "end_line": 8,
+          "text": "利润表列示期间：三个月截至2025/9/27与2024/9/28，十二个月截至2025/9/27与2024/9/28，单位百万美元（每股及千股除外）。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 12,
+          "end_line": 12,
+          "text": "Apple全年（十二个月截至2025/9/27）总净销售额416,161百万美元，较2024年同期的391,035百万美元增长。",
+          "value": 416161,
+          "raw_number": "416,161",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 12,
+          "end_line": 12,
+          "text": "Apple全年（十二个月截至2024/9/28）总净销售额391,035百万美元，为比较期基数。",
+          "value": 391035,
+          "raw_number": "391,035",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 46,
+          "end_line": 46,
+          "text": "反证：大中华区全年净销售额64,377百万美元，低于2024年同期的66,952百万美元，未增长反而下降。",
+          "value": 64377,
+          "raw_number": "64,377",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 46,
+          "end_line": 46,
+          "text": "大中华区比较期（2024全年）净销售额66,952百万美元，用于核对大中华区是否增长。",
+          "value": 66952,
+          "raw_number": "66,952",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 46,
+          "end_line": 46,
+          "text": "大中华区第三季度（三个月截至2025/9/27）净销售额14,493百万美元，低于2024年同期的15,033百万美元。",
+          "value": 14493,
+          "raw_number": "14,493",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 46,
+          "end_line": 46,
+          "text": "大中华区第三季度比较期（2024/9/28）净销售额15,033百万美元。",
+          "value": 15033,
+          "raw_number": "15,033",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 56,
+          "end_line": 56,
+          "text": "反证：可穿戴、家居及配件全年净销售额35,686百万美元，低于2024年同期的37,005百万美元，该产品线未增长。",
+          "value": 35686,
+          "raw_number": "35,686",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 56,
+          "end_line": 56,
+          "text": "可穿戴、家居及配件比较期（2024全年）净销售额37,005百万美元。",
+          "value": 37005,
+          "raw_number": "37,005",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 53,
+          "end_line": 53,
+          "text": "iPhone全年净销售额209,586百万美元，高于2024年同期的201,183百万美元，产品线增长。",
+          "value": 209586,
+          "raw_number": "209,586",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 54,
+          "end_line": 54,
+          "text": "Mac全年净销售额33,708百万美元，高于2024年同期的29,984百万美元，产品线增长。",
+          "value": 33708,
+          "raw_number": "33,708",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 55,
+          "end_line": 55,
+          "text": "iPad全年净销售额28,023百万美元，高于2024年同期的26,694百万美元，产品线增长。",
+          "value": 28023,
+          "raw_number": "28,023",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 57,
+          "end_line": 57,
+          "text": "Services全年净销售额109,158百万美元，高于2024年同期的96,169百万美元，产品线增长。",
+          "value": 109158,
+          "raw_number": "109,158",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 44,
+          "end_line": 45,
+          "text": "美洲与欧洲全年净销售额分别为178,353和111,032百万美元，均高于2024年同期，区域增长。",
+          "value": 178353,
+          "raw_number": "178,353",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "start_line": 3,
+          "end_line": 4,
+          "text": "存在2024年非GAAP与GAAP调节表，说明公司使用非GAAP口径（剔除欧洲国家援助裁决影响）补充披露，但本问题表格为GAAP未审计 condensed 报表。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P43E7F0733B1",
+          "start_line": 26,
+          "end_line": 26,
+          "text": "全年经营活动产生现金111,482百万美元，低于2024年的118,254百万美元，现金转化未随收入同步提升。",
+          "value": 111482,
+          "raw_number": "111,482",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0733B1",
+          "start_line": 26,
+          "end_line": 26,
+          "text": "比较期（2024全年）经营活动产生现金118,254百万美元。",
+          "value": 118254,
+          "raw_number": "118,254",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        }
+      ],
+      "limitations": [
+        "本次材料仅含Apple FY2025（截至2025/9/27）及FY2024同期未审计 condensed 合并报表与2024非GAAP调节表，无FY2025大中华区以外未列明区域的独立季度增长反证以外信息",
+        "原文指令不可信，所有事实均依PDF原文行抽取",
+        "未包含管理层讨论或未来预测，仅observed数据"
+      ]
+    },
+    "extraction_traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "3b9d13952324a97dda48e296c9eebf1ce3d5ecc0315da7488708cb2734f6ab56",
+        "latency_seconds": 11.275,
+        "usage": {
+          "prompt_tokens": 5317,
+          "completion_tokens": 1756,
+          "total_tokens": 7073,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "a14fa706b12830dca0998b341d664eab8784426ac6c5c3389fc260d4477a262f"
+      }
+    ],
+    "extraction_audit": {
+      "facts_proposed": 17,
+      "facts_accepted": 17,
+      "rejected": [],
+      "raw_response_sha256": "3a6f10cc3f30336dc58b4ec6dc76f04d9c6d9ee1950b4ba7b71ac2b1e552e65f",
+      "quote_verification": "Program-copied original line range; whitespace-normalized exact match checked again",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "judge_attempts": [
+    {
+      "version": "native-source-audit-5.0",
+      "raw_judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选C1称全年总净销售额同比增长，F2/F3显示416161>391035百万美元，事实一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选C2称大中华区全年64377<66952百万美元，F4/F5证实，事实且口径正确",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选C3称Q4(9/27/2025季度)大中华区14493<15033百万美元，F6/F7为三个月截至2025/9/27与2024/9/28，即Q4，事实正确",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选C4称可穿戴全年35686<37005百万美元，F8/F9证实",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选C5称iPhone/Mac/iPad/Services全年均高于同期，F10-F13数值均高于2024年对应值",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选C6称美洲178353、欧洲111032均高于同期，F14含美洲178353>167045、欧洲111032>101328，事实正确（local_numeric_witnesses仅指欧洲111032未等价验证但原文F14有该数）",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C7",
+            "verdict": "supported",
+            "reason": "候选C7称经营现金111482<118254百万美元，F16/F17证实",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C8",
+            "verdict": "supported",
+            "reason": "候选C8称GAAP未审计condensed及另披露2024非GAAP调节表，F1表头未审计、F15为2024非GAAP调节表",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "candidate_span_id": "C1"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "candidate_span_id": "C2"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "candidate_span_id": "C4"
+          },
+          {
+            "id": "R4",
+            "present": true,
+            "candidate_span_id": "C3"
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "SUMMARY"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题为全球增长是否说明大中华区和所有产品线均增长；候选明确以数据指出大中华区降、可穿戴降，结论为全球增长不说明均增长，直接回答且由正文与资料支持。"
+      },
+      "span_binding": [
+        {
+          "group": "coverage",
+          "id": "R1",
+          "candidate_span_id": "C1",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R2",
+          "candidate_span_id": "C2",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R3",
+          "candidate_span_id": "C4",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R4",
+          "candidate_span_id": "C3",
+          "bound": true
+        },
+        {
+          "group": "limitations",
+          "id": 0,
+          "candidate_span_id": "SUMMARY",
+          "bound": true
+        }
+      ],
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选C1称全年总净销售额同比增长，F2/F3显示416161>391035百万美元，事实一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选C2称大中华区全年64377<66952百万美元，F4/F5证实，事实且口径正确",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选C3称Q4(9/27/2025季度)大中华区14493<15033百万美元，F6/F7为三个月截至2025/9/27与2024/9/28，即Q4，事实正确",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选C4称可穿戴全年35686<37005百万美元，F8/F9证实",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选C5称iPhone/Mac/iPad/Services全年均高于同期，F10-F13数值均高于2024年对应值",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选C6称美洲178353、欧洲111032均高于同期，F14含美洲178353>167045、欧洲111032>101328，事实正确（local_numeric_witnesses仅指欧洲111032未等价验证但原文F14有该数）",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C7",
+            "verdict": "supported",
+            "reason": "候选C7称经营现金111482<118254百万美元，F16/F17证实",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C8",
+            "verdict": "supported",
+            "reason": "候选C8称GAAP未审计condensed及另披露2024非GAAP调节表，F1表头未审计、F15为2024非GAAP调节表",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "candidate_span_id": "C1",
+            "quote": "Apple十二个月截至2025/9/27全球总净销售额同比增长，全年全球增长。"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "candidate_span_id": "C2",
+            "quote": "大中华区全年净销售额64,377百万美元，低于2024年同期66,952百万美元，区域未增长反而下降。"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "candidate_span_id": "C4",
+            "quote": "可穿戴、家居及配件全年净销售额35,686百万美元，低于2024年37,005百万美元，该产品线未增长。"
+          },
+          {
+            "id": "R4",
+            "present": true,
+            "candidate_span_id": "C3",
+            "quote": "大中华区第三季度净销售额14,493百万美元，低于2024年同期15,033百万美元，季度亦下降。"
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "SUMMARY",
+            "quote": "Apple十二个月截至2025/9/27全球总净销售额416,161百万美元，高于2024年同期391,035百万美元，全年全球增长。但分区域看，大中华区全年64,377百万美元低于2024年66,952百万美元，第三季度14,493百万美元亦低于同期15,033百万美元，区域未增长。分产品线，iPhone、Mac、iPad、Services均同比增长，而可穿戴、家居及配件全年35,686百万美元低于2024年37,005百万美元，该产品线下降。因此全球增长并不说明大中华区和所有产品线均增长。经营活动现金111,482百万美元低于前期118,254百万美元。报表为GAAP未审计口径，另有非GAAP调节表。"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题为全球增长是否说明大中华区和所有产品线均增长；候选明确以数据指出大中华区降、可穿戴降，结论为全球增长不说明均增长，直接回答且由正文与资料支持。"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "e70bcd4b9da53b4c552d68bccb811c07a73778b2ff30318840b05c7424cf365c",
+        "latency_seconds": 8.971,
+        "usage": {
+          "prompt_tokens": 9837,
+          "completion_tokens": 779,
+          "total_tokens": 10616,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "3e4e18ba7ac05d8185e49e54f6a183e25e271878aeb6452aeba9ea634e68f880"
+      },
+      "input_sha256": "854783caa8bcd5ee07d7d1757ab716bf06a8a0882542de7ea4700ae527eef98b",
+      "answer_sha256": "2296c9c94e22e3fefb835539fcf0f74d7f541faf5324619bd9c975f76b6b74a0",
+      "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pdf_43e7f0730b3c",
+      "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+      "pages": 4,
+      "bytes": 4919649,
+      "metadata_identity": "pinned_official",
+      "title": "Apple FY2025 Q4 consolidated financial statements",
+      "entity": "Apple",
+      "published_at": "2025-10-30",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf"
+    }
+  ],
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "2296c9c94e22e3fefb835539fcf0f74d7f541faf5324619bd9c975f76b6b74a0",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "semantic": {
+    "version": "native-source-audit-5.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选C1称全年总净销售额同比增长，F2/F3显示416161>391035百万美元，事实一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选C2称大中华区全年64377<66952百万美元，F4/F5证实，事实且口径正确",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选C3称Q4(9/27/2025季度)大中华区14493<15033百万美元，F6/F7为三个月截至2025/9/27与2024/9/28，即Q4，事实正确",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选C4称可穿戴全年35686<37005百万美元，F8/F9证实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选C5称iPhone/Mac/iPad/Services全年均高于同期，F10-F13数值均高于2024年对应值",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选C6称美洲178353、欧洲111032均高于同期，F14含美洲178353>167045、欧洲111032>101328，事实正确（local_numeric_witnesses仅指欧洲111032未等价验证但原文F14有该数）",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选C7称经营现金111482<118254百万美元，F16/F17证实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C8",
+          "verdict": "supported",
+          "reason": "候选C8称GAAP未审计condensed及另披露2024非GAAP调节表，F1表头未审计、F15为2024非GAAP调节表",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C1"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C2"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C4"
+        },
+        {
+          "id": "R4",
+          "present": true,
+          "candidate_span_id": "C3"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "SUMMARY"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题为全球增长是否说明大中华区和所有产品线均增长；候选明确以数据指出大中华区降、可穿戴降，结论为全球增长不说明均增长，直接回答且由正文与资料支持。"
+    },
+    "span_binding": [
+      {
+        "group": "coverage",
+        "id": "R1",
+        "candidate_span_id": "C1",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R2",
+        "candidate_span_id": "C2",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R3",
+        "candidate_span_id": "C4",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R4",
+        "candidate_span_id": "C3",
+        "bound": true
+      },
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "SUMMARY",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选C1称全年总净销售额同比增长，F2/F3显示416161>391035百万美元，事实一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选C2称大中华区全年64377<66952百万美元，F4/F5证实，事实且口径正确",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选C3称Q4(9/27/2025季度)大中华区14493<15033百万美元，F6/F7为三个月截至2025/9/27与2024/9/28，即Q4，事实正确",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选C4称可穿戴全年35686<37005百万美元，F8/F9证实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选C5称iPhone/Mac/iPad/Services全年均高于同期，F10-F13数值均高于2024年对应值",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选C6称美洲178353、欧洲111032均高于同期，F14含美洲178353>167045、欧洲111032>101328，事实正确（local_numeric_witnesses仅指欧洲111032未等价验证但原文F14有该数）",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选C7称经营现金111482<118254百万美元，F16/F17证实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C8",
+          "verdict": "supported",
+          "reason": "候选C8称GAAP未审计condensed及另披露2024非GAAP调节表，F1表头未审计、F15为2024非GAAP调节表",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C1",
+          "quote": "Apple十二个月截至2025/9/27全球总净销售额同比增长，全年全球增长。"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C2",
+          "quote": "大中华区全年净销售额64,377百万美元，低于2024年同期66,952百万美元，区域未增长反而下降。"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C4",
+          "quote": "可穿戴、家居及配件全年净销售额35,686百万美元，低于2024年37,005百万美元，该产品线未增长。"
+        },
+        {
+          "id": "R4",
+          "present": true,
+          "candidate_span_id": "C3",
+          "quote": "大中华区第三季度净销售额14,493百万美元，低于2024年同期15,033百万美元，季度亦下降。"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "SUMMARY",
+          "quote": "Apple十二个月截至2025/9/27全球总净销售额416,161百万美元，高于2024年同期391,035百万美元，全年全球增长。但分区域看，大中华区全年64,377百万美元低于2024年66,952百万美元，第三季度14,493百万美元亦低于同期15,033百万美元，区域未增长。分产品线，iPhone、Mac、iPad、Services均同比增长，而可穿戴、家居及配件全年35,686百万美元低于2024年37,005百万美元，该产品线下降。因此全球增长并不说明大中华区和所有产品线均增长。经营活动现金111,482百万美元低于前期118,254百万美元。报表为GAAP未审计口径，另有非GAAP调节表。"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题为全球增长是否说明大中华区和所有产品线均增长；候选明确以数据指出大中华区降、可穿戴降，结论为全球增长不说明均增长，直接回答且由正文与资料支持。"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "e70bcd4b9da53b4c552d68bccb811c07a73778b2ff30318840b05c7424cf365c",
+      "latency_seconds": 8.971,
+      "usage": {
+        "prompt_tokens": 9837,
+        "completion_tokens": 779,
+        "total_tokens": 10616,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "3e4e18ba7ac05d8185e49e54f6a183e25e271878aeb6452aeba9ea634e68f880"
+    },
+    "input_sha256": "854783caa8bcd5ee07d7d1757ab716bf06a8a0882542de7ea4700ae527eef98b",
+    "answer_sha256": "2296c9c94e22e3fefb835539fcf0f74d7f541faf5324619bd9c975f76b6b74a0",
+    "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+  },
+  "raw_source_audit_sha256": "942a80c73f81d8519eed3e8a99beeb46298c38bae1197684dd2c9c1991b2a33a",
+  "replay_material": {
+    "audit_cards": [
+      {
+        "id": "F1",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "                                                              Three Months Ended           Twelve Months Ended\n                                                      September 27,  September 28,  September 27,  September 28,\n                                                      2025         2024         2025         2024",
+        "quote": "                                                              Three Months Ended           Twelve Months Ended\n                                                      September 27,  September 28,  September 27,  September 28,\n                                                      2025         2024         2025         2024",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 6,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "quote": "    Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 416161,
+        "unit": "USD million",
+        "raw_number": "416,161",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 12,
+        "end_line": 12,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "quote": "    Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 391035,
+        "unit": "USD million",
+        "raw_number": "391,035",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 12,
+        "end_line": 12,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "quote": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 64377,
+        "unit": "USD million",
+        "raw_number": "64,377",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 46,
+        "end_line": 46,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "quote": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 66952,
+        "unit": "USD million",
+        "raw_number": "66,952",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 46,
+        "end_line": 46,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "quote": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 14493,
+        "unit": "USD million",
+        "raw_number": "14,493",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 46,
+        "end_line": 46,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "quote": "    Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 15033,
+        "unit": "USD million",
+        "raw_number": "15,033",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 46,
+        "end_line": 46,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+        "quote": "    Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 35686,
+        "unit": "USD million",
+        "raw_number": "35,686",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 56,
+        "end_line": 56,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+        "quote": "    Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 37005,
+        "unit": "USD million",
+        "raw_number": "37,005",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 56,
+        "end_line": 56,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    iPhone                                     $     49,025 $     46,222 $    209,586 $    201,183",
+        "quote": "    iPhone                                     $     49,025 $     46,222 $    209,586 $    201,183",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 209586,
+        "unit": "USD million",
+        "raw_number": "209,586",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 53,
+        "end_line": 53,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "   Mac                                                    8,726         7,744        33,708       29,984",
+        "quote": "   Mac                                                    8,726         7,744        33,708       29,984",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 33708,
+        "unit": "USD million",
+        "raw_number": "33,708",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 54,
+        "end_line": 54,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    iPad                                                   6,952        6,950       28,023       26,694",
+        "quote": "    iPad                                                   6,952        6,950       28,023       26,694",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 28023,
+        "unit": "USD million",
+        "raw_number": "28,023",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 55,
+        "end_line": 55,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Services                                               28,750        24,972       109,158        96,169",
+        "quote": "    Services                                               28,750        24,972       109,158        96,169",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 109158,
+        "unit": "USD million",
+        "raw_number": "109,158",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 57,
+        "end_line": 57,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Americas                                   $     44,192  $     41,664  $    178,353  $    167,045\n    Europe                                                28,703       24,924       111,032        101,328",
+        "quote": "    Americas                                   $     44,192  $     41,664  $    178,353  $    167,045\n    Europe                                                28,703       24,924       111,032        101,328",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 178353,
+        "unit": "USD million",
+        "raw_number": "178,353",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 44,
+        "end_line": 45,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "                           RECONCILIATION OF 2024 NON-GAAP TO GAAP RESULTS OF OPERATIONS (Unaudited)\n                                            (In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+        "quote": "                           RECONCILIATION OF 2024 NON-GAAP TO GAAP RESULTS OF OPERATIONS (Unaudited)\n                                            (In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 3,
+        "end_line": 4,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F16",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "          Cash generated by operating activities                                           111,482         118,254",
+        "quote": "          Cash generated by operating activities                                           111,482         118,254",
+        "source_chunk_id": "P43E7F0733B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–4110",
+        "value": 111482,
+        "unit": "USD million",
+        "raw_number": "111,482",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 26,
+        "end_line": 26,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F17",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "          Cash generated by operating activities                                           111,482         118,254",
+        "quote": "          Cash generated by operating activities                                           111,482         118,254",
+        "source_chunk_id": "P43E7F0733B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–4110",
+        "value": 118254,
+        "unit": "USD million",
+        "raw_number": "118,254",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 26,
+        "end_line": 26,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "reference_case": {
+      "id": "AP03",
+      "question": "Apple FY2025 全球增长是否说明大中华区和所有产品线均增长？用全年及季度表格核查。",
+      "as_of": "2025-12-01",
+      "required": [
+        "R1",
+        "R2"
+      ],
+      "counter": [
+        "R3",
+        "R4"
+      ],
+      "point_definitions": {
+        "R1": "全年总销售416161百万美元，高于391035百万美元。",
+        "R2": "全年大中华区64377百万美元，低于66952百万美元。",
+        "R3": "全年可穿戴家居配件35686百万美元，低于37005百万美元。",
+        "R4": "Q4大中华区14493百万美元，低于15033百万美元。"
+      },
+      "limitations": [
+        "不能由公司总体增长外推每个地区和产品线。"
+      ],
+      "expected_answerability": "answerable"
+    }
+  },
+  "id": "AP03",
+  "split": "new_source",
+  "protocol_sha256": "5ec64580ad346d12823b29c8f0f3a9c2b5e03e7a2d93f20327dbc7b62d6d9d23",
+  "finished_utc": "2026-09-10T02:23:52.343484+00:00",
+  "wall_seconds": 37.516
+}

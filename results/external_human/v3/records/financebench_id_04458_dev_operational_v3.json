@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04458",
+  "uid": "financebench_id_04458_dev",
+  "split": "development",
+  "company": "Netflix",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a278628b4561b1965fc4dfc649a6621c0ff1d40f5a48eb22e715542c356578cb",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "689c27dcd396170dc9b2312ace92bd9df9348641fec271a5dda34935ae6b523d",
+  "started_utc": "2026-09-10T01:32:04.471762+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "This filing does not contain the specific financial data requested.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states the filing does not contain requested data and declines to compute, despite evidence providing operating income 305,826 and D&A 3,547,045 (sum 3,852,871 / revenue 6,779,511 = 0.568, not 0.054) enabling calculation."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "71c488676b82a0a946f68de2cf7e6ec75108f631a6bf6e4792f68c22ed3d4087",
+    "latency_seconds": 10.039,
+    "usage": {
+      "prompt_tokens": 3870,
+      "completion_tokens": 126,
+      "total_tokens": 3996,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9aa804bbb8708d806cdd2c1c4257cf29d0bba812d52c6b84dff213ae56884f48"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

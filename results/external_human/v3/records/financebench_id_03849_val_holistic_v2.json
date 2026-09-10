@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_03849",
+  "uid": "financebench_id_03849_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "0e8d418e585342c43dcba436d517b1970dfa43f2e175b2d8fd704a6fb72f9753",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "345c485eb58ad99c99bc488893dba649886ade2749eaac8c36fdd08959cf99aa",
+  "started_utc": "2026-09-10T01:30:59.921028+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computed capex/revenue per year from evidence cash flows and operations statements, averaged to 7.8% matching reference 0.079 (7.9% rounded to 7.8% via year-level rounding). Substantive answer given in percents to one decimal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "de279c19a54ef77002b2e7cded8d9a3000213daa28fb4139d24c4907affdc396",
+    "latency_seconds": 7.29,
+    "usage": {
+      "prompt_tokens": 6108,
+      "completion_tokens": 79,
+      "total_tokens": 6187,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "83d664df363229a3d73df859b0e6fe6d12c2bd6765a144d479ebcf0ad3a9d680"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

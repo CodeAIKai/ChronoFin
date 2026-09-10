@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00678",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "1051de6161bb15d27de792bd20bed02746380ea6075d32d13a3cafe78cca5218",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "60d8d5e2596a8aa93c542c0bece947c2d8832d23d9b7fc5fa750ffac54057038",
+  "started_utc": "2026-09-09T17:59:25.218751+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate provides unrelated Boeing deferred compensation plan text and does not answer whether Boeing has an improving gross margin profile as of FY2022 or state that gross margin is not useful. No substantive answer given.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not address Boeing's gross margin profile; text is about Boeing 401(k)/deferred comp plan."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2022 gross margin discussion present."
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No metric or unit (gross margin %, $ millions) addressed."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No yes/no or explanation regarding improving gross margin or metric usefulness."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence (10-K ops statement) not referenced or used; candidate text unrelated."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bd10ee963ed42e3e87fa56754f2be01f32deb706bd9ac992e5a0f5496ec58b6b",
+    "latency_seconds": 9.377,
+    "usage": {
+      "prompt_tokens": 3178,
+      "completion_tokens": 231,
+      "total_tokens": 3409,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "34a6bb5a977d58390ff4672b17c64c2f1175a5db774c0895e52a0136adc42539"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

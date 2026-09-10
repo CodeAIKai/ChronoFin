@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00464",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "3922dd16561b663de55d42727b47a63096cf2a71f0a4255039b16081901d253e",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "236e71ee93c69ef1f9fbafc81618f4d6a49e8757770272333be60e06c39fb832",
+  "started_utc": "2026-09-09T17:43:28.492244+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate describes Boeing deferred compensation plan and does not address whether Boeing's business is subject to cyclicality; withholds the requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate mentions Boeing Company but in unrelated plan context"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "No fiscal period claimed for cyclicality question"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question is qualitative yes/no; no unit involved"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No answer given to cyclicality question"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence on airline cyclicality not referenced; candidate text off-topic"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "487e1d371b3105993c83220854fa0cdd9c1c7b16e0c9bd245692167e453916ca",
+    "latency_seconds": 7.598,
+    "usage": {
+      "prompt_tokens": 1871,
+      "completion_tokens": 203,
+      "total_tokens": 2074,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8e80311d8463d1e8c0e69eba65d6ea65abdbc55fa81f15150fcf698de614a21d"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

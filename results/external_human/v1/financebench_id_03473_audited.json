@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03473",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "6e986afce56e9bc760e76f3c2313d66dec260c1afdcad89805ca8a0445522ba0",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "6118792a68f1b80fa906bbbbaf22fe390bcc6175db60300618613c50da149fe0",
+  "started_utc": "2026-09-09T17:34:32.550780+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computed ROA using wrong net income ($14,293M vs evidence $1,248M attributable to Coca-Cola shareowners) and wrong total assets ($199,203M/$201,536M vs evidence $87,896M/$87,270M), yielding 7.13% instead of ~0.01. Also gave substantive answer despite opening refusal language.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate identifies Coca-Cola Company from evidence provided"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Uses FY2017 and average of FY2016-FY2017 as requested"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer expressed as decimal proportion 7.13% = 0.0713, unit consistent with requested two decimal places"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate answer 0.0713; correct per evidence is 1248/((87896+87270)/2)=0.0143 ≈ 0.01"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Numbers used ($14,293M net income, $199,203M/$201,536M assets) not present in evidence; evidence shows net income attributable $1,248M and total assets $87,896M/$87,270M"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1d332d2eb17a6905fbe049e607f8d0e54715f35d32404a94f9732160a3ddd751",
+    "latency_seconds": 3.543,
+    "usage": {
+      "prompt_tokens": 4076,
+      "completion_tokens": 325,
+      "total_tokens": 4401,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "965053b553f2e5c2452252018991340a393e81276620c0f761adcc36e7b316e3"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00302",
+  "uid": "financebench_id_00302_val",
+  "split": "new_response_validation",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "53cb3d583c9faa9b88fed48da388085984968bb76b62e3299bf1024c76618bf4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "794115a2d1ca76ce4da9486f5f1ceb201239465797f1aade31bcbc5b443ad419",
+  "started_utc": "2026-09-09T18:05:28.530222+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds answer and says data needed to determine, despite evidence showing PP&E grew from 13,745 to 14,882; it does not provide the requested yes/no conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a3253a15f6ed4c25ee84ce1e23cf1e26c19d8c5c81d04c3550d7e5169bcfeaf6",
+    "latency_seconds": 5.793,
+    "usage": {
+      "prompt_tokens": 1425,
+      "completion_tokens": 60,
+      "total_tokens": 1485,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3836744479722522d4a5accf72c2ffc1f01791c373b3f647b9222f53e9b0ae76"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

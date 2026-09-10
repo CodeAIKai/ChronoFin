@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04672",
+  "company": "3M",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f789b7d36e810563507556eb0abf9958e60da5d1ea77343414891acebf0ae2c0",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "b002fbd7824d1a608c2a89925f7da84c6f8df9cd3f63983813368d8d4dcc4f4a",
+  "started_utc": "2026-09-09T17:35:01.047834+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence balance sheet lists Property, plant and equipment net for 2018 as $8,738 million = $8.738B, ~$8.70B. Candidate refused claiming data absent, but PP&E net is explicitly present.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M, correctly identified in candidate context"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 / Dec 31 2018 is the period in question and evidence"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Requested USD billions; evidence in millions convertible to ~8.74B"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave no numeric answer and claimed info missing; correct answer ~$8.70B from evidence"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence directly shows PP&E net 8,738 million; candidate's refusal is unsupported"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f9db0be08360018c20d007a11d4b5c30ff6bf5ef210dab78e9121ed25d7900c8",
+    "latency_seconds": 5.478,
+    "usage": {
+      "prompt_tokens": 2641,
+      "completion_tokens": 244,
+      "total_tokens": 2885,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "18a187f9c42a9b27cc9f6dff1394970aa55380038fc4b125f2a0922ed0c365d5"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_08135",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "8891a6097fbc8afd2eacd6dd5d8310d681a3cdef731a952f5e09d22f8f7e0d46",
+  "reference_text_differs": true,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "ff4071c4ed0162a401e935b118d76fb41fca9ae85961bf4c1580fd1181259fd6",
+  "started_utc": "2026-09-09T17:54:58.605296+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate computed (177,866-135,987)/135,987*100 ≈ 30.8% using Total net sales from evidence, matching reference 0.308 (30.8%) and requested unit/rounding."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9ac38838e38eea2616404533ebd0798c2a97e62b50754f154762534c0069730f",
+    "latency_seconds": 9.012,
+    "usage": {
+      "prompt_tokens": 1563,
+      "completion_tokens": 68,
+      "total_tokens": 1631,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "10887ba7d3240f94c8251259d38659f819e7a9bb664ac683a7fc1ef67f13ca88"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

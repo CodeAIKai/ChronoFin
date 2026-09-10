@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_01091",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "8c1d4711bbf3ba9502c35ce833ac8823e5e689b0b4bef7af7266c5d459331c39",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "2736bbcdb18475c6db8a907d7df0781164efe1012941e52f526aeab12bbd532b",
+  "started_utc": "2026-09-09T17:47:31.412844+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate ignores the question about legal battles and instead describes the Boeing Supplemental Savings Plan, providing no substantive answer to whether Boeing reported materially important ongoing legal battles in FY2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "725d491c1727a9140d2841a6ea3e2f282d2390513bf30dd6f421951d6baa0ee8",
+    "latency_seconds": 6.035,
+    "usage": {
+      "prompt_tokens": 1542,
+      "completion_tokens": 57,
+      "total_tokens": 1599,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4b3d96cdd2e31341d0f789fe8898347d7a8cd1bbeb4d8a50a1c102260c92d74e"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

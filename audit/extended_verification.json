@@ -1,0 +1,2190 @@
+{
+  "pass": true,
+  "scores_recomputed": 291,
+  "external_metric_rows": 600,
+  "online_model_calls": 0,
+  "raw_external_source_checked_in_this_run": false,
+  "checks": [
+    {
+      "name": "protocol:results/grounded/v1/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/external_human/v1/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/external_human/v2/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/external_human/v3/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/native_pdf/v1/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/native_pdf/v2/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/native_pdf/v3/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/native_pdf/v4/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/native_pdf/v5/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/semantic_stress/v1/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/native_validation/v1/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "protocol:results/native_validation/v2/protocol.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D01_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D01_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D01_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D02_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D01_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D02_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D02_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D03_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D02_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D03_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D03_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D03_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D04_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D04_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D04_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D04_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D05_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D05_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D05_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:D05_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E01_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E01_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E01_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E01_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E02_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E02_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E02_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E02_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E03_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E03_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E03_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E03_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E04_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E04_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E04_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E04_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E05_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E05_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E05_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E05_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E06_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E06_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E06_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E06_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E07_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E07_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E07_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E07_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E08_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E08_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E08_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E08_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E09_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E09_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E09_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E09_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E10_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E10_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E10_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E10_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E11_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E11_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E11_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E11_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E12_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E12_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E12_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E13_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E12_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E13_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E13_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E13_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E14_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E14_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E14_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E14_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E15_full_context.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E15_counterbrief_first_pass.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E15_counterbrief.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "score:E15_full_context_revision.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D01_legacy_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D01_legacy_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D01_legacy_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D01_legacy_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D01_anchored_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D01_anchored_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D01_anchored_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D01_anchored_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D02_legacy_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D02_legacy_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D02_legacy_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D02_legacy_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D02_anchored_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D02_anchored_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D02_anchored_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D02_anchored_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D04_legacy_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D04_legacy_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D04_legacy_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D04_legacy_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D04_anchored_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D04_anchored_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D04_anchored_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D04_anchored_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D05_legacy_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D05_legacy_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D05_legacy_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D05_legacy_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D05_anchored_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D05_anchored_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D05_anchored_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:D05_anchored_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E11_legacy_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E11_legacy_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E11_legacy_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E11_legacy_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E11_anchored_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E11_anchored_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E11_anchored_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E11_anchored_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E12_legacy_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E12_legacy_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E12_legacy_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E12_legacy_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E12_anchored_original.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E12_anchored_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E12_anchored_shuffle.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order:E12_anchored_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v1/meta24_before.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/meta24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/amazon24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/meta24_before.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/NV01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/NV02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/NV03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/AP01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/AP02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/AP03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/TC01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/TC02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v2/TC03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v3/meta24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v3/amazon24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v3/NV02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v3/NV03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v3/AP01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v3/AP03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v3/TC01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v3/TC03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/meta24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/meta24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/amazon24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/amazon24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/meta24_before.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/meta24_before.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/NV01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/NV01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/NV02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/NV02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/NV03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/NV03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/AP01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/AP01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/AP02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/AP02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/AP03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/AP03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/TC01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/TC01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v4/TC03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v4/TC03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/meta24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/meta24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/meta24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/amazon24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/amazon24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/amazon24_after.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/meta24_before.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/meta24_before.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/meta24_before.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/NV01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/NV01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/NV01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/NV02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/NV02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/NV02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/NV03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/NV03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/NV03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/AP01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/AP01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/AP01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/AP02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/AP02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/AP02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/AP03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/AP03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/AP03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/TC01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/TC01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/TC01.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/TC02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/TC02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/TC02.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_pdf/v5/TC03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_pdf/v5/TC03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_pdf/v5/TC03.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/amazon24_after_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/amazon24_after_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/meta24_after_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/meta24_after_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/meta24_before_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/meta24_before_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/NV01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/NV01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/NV02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/NV02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/NV03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/NV03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/AP01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/AP01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/AP02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/AP02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/AP03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/AP03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/TC01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/TC01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/TC02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/TC02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/TC03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/TC03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/meta24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/meta24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/meta24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/meta24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/meta24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/meta24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/meta24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/meta24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/meta24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/meta24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/meta24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/meta24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/amazon24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/amazon24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/amazon24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/amazon24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/amazon24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/amazon24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/amazon24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/amazon24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/amazon24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/amazon24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/amazon24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/amazon24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/TC01_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/TC01_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/TC01_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/TC01_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/TC01_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/TC01_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/TC01_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/TC01_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v1/records/TC01_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v1/records/TC01_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/amazon24_after_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/amazon24_after_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/meta24_after_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/meta24_after_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/meta24_before_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/meta24_before_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/NV01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/NV01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/NV02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/NV02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/NV03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/NV03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/AP01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/AP01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/AP02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/AP02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/AP03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/AP03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/TC02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/TC02_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/TC01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/TC01_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/TC03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/TC03_v2_control.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/meta24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/meta24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/meta24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/meta24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/meta24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/meta24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/meta24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/meta24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/meta24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/meta24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/meta24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/meta24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/meta24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/meta24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/meta24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/amazon24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/amazon24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/amazon24_after_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/meta24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/meta24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/meta24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/amazon24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/amazon24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/amazon24_after_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/amazon24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/amazon24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/amazon24_after_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/amazon24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/amazon24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/amazon24_after_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/amazon24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/amazon24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/amazon24_after_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/amazon24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/amazon24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/amazon24_after_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/TC01_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/TC01_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/TC01_repeat.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/TC01_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/TC01_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/TC01_source_reverse.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/TC01_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/TC01_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/TC01_claim_reorder.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/TC01_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/TC01_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/TC01_fabricated_citation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/TC01_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/TC01_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/TC01_wrong_amount.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_score:results/native_validation/v2/records/TC01_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_span:results/native_validation/v2/records/TC01_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "compiled_operations:results/native_validation/v2/records/TC01_judge_injection.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_equivalent_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_equivalent_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_tenfold_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_tenfold_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_period_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_period_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_entity_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_entity_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_forecast_as_fact_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U01_forecast_as_fact_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_equivalent_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_equivalent_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_tenfold_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_tenfold_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_period_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_period_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_entity_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_entity_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_forecast_as_fact_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U02_forecast_as_fact_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_equivalent_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_equivalent_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_tenfold_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_tenfold_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_period_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_period_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_entity_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_entity_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_forecast_as_fact_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U03_forecast_as_fact_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_equivalent_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_equivalent_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_tenfold_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_tenfold_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_period_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_period_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_entity_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_entity_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_forecast_as_fact_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U04_forecast_as_fact_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_equivalent_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_equivalent_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_tenfold_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_tenfold_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_period_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_period_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_entity_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_entity_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_forecast_as_fact_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U05_forecast_as_fact_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_equivalent_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_equivalent_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_tenfold_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_tenfold_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_period_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_period_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_entity_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_entity_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_forecast_as_fact_legacy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stress_score:U06_forecast_as_fact_anchored.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external_complete_matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external_metrics:development/holistic_v2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external_metrics:development/operational_v3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external_metrics:new_response_validation/holistic_v2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external_metrics:new_response_validation/operational_v3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "actual_record_matrix:grounded/v1/application",
+      "pass": true,
+      "detail": "80/80"
+    },
+    {
+      "name": "actual_record_matrix:grounded/v1/order",
+      "pass": true,
+      "detail": "48/48"
+    },
+    {
+      "name": "actual_record_matrix:native_pdf/v5",
+      "pass": true,
+      "detail": "12/12"
+    },
+    {
+      "name": "actual_record_matrix:native_validation/v2/records",
+      "pass": true,
+      "detail": "30/30"
+    },
+    {
+      "name": "actual_record_matrix:semantic_stress/v1/records",
+      "pass": true,
+      "detail": "60/60"
+    },
+    {
+      "name": "actual_record_matrix:external_human/v3/records",
+      "pass": true,
+      "detail": "600/600"
+    },
+    {
+      "name": "final_completion:brief_application",
+      "pass": true,
+      "detail": "60/60"
+    },
+    {
+      "name": "final_completion:brief_meta",
+      "pass": true,
+      "detail": "30/30"
+    },
+    {
+      "name": "final_completion:equal_call_application",
+      "pass": true,
+      "detail": "80/80"
+    },
+    {
+      "name": "final_completion:order_judgments",
+      "pass": true,
+      "detail": "48/48"
+    },
+    {
+      "name": "final_completion:external_human_v3",
+      "pass": true,
+      "detail": "600/600"
+    },
+    {
+      "name": "final_completion:semantic_stress",
+      "pass": true,
+      "detail": "60/60"
+    },
+    {
+      "name": "final_completion:native_pdf_v5",
+      "pass": true,
+      "detail": "12/12"
+    },
+    {
+      "name": "final_completion:native_final_validation",
+      "pass": true,
+      "detail": "30/30"
+    },
+    {
+      "name": "published_label_verification_record_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_recorded_model_calls_use_official_hy3",
+      "pass": true,
+      "detail": "['hy3']"
+    }
+  ],
+  "errors": []
+}

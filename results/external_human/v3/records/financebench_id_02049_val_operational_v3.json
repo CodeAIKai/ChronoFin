@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02049",
+  "uid": "financebench_id_02049_val",
+  "split": "new_response_validation",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "794fd31ef81800fd2efd6a23a4acbd19c325a4ec753845a04ddda63a497c9394",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "b16f9051652a4eacd0ced985322aa96d71a472ea0fed98a2231ad912b03e0e35",
+  "started_utc": "2026-09-10T01:28:54.451991+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "Here are the key points on accounting and reporting developments at JPMorgan Chase",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided unrelated summary on FASB accounting standards adoption, not addressing VaR Q2 2023 vs prior year decrease. Evidence shows average total VaR decreased $7M YoY, supporting reference 'Yes. It decreased.' but candidate failed to answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b71a5c2c74a3af318f77d5e04ab2ca8f539371161874a20df202c6eee2237dd3",
+    "latency_seconds": 12.208,
+    "usage": {
+      "prompt_tokens": 2267,
+      "completion_tokens": 118,
+      "total_tokens": 2385,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4f1486c05eb7cd41164a4441c5cd342aaacc09e52a65d845139669b5ac6ce064"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

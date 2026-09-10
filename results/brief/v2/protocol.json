@@ -1,0 +1,14 @@
+{
+  "sha256": "9c9470eb4679aec8b97927f8beee4b2e4c5abed2aa9a13a14b745f0848544cf4",
+  "files": {
+    "src/chronofin/brief.py": "ec2a6501968c547b874b96020e5744714ced49cd9f294345b0940127f5cb9e82",
+    "scripts/run_brief_experiments.py": "12b28043ce86548f528e4cc3e24552b74ab890c3821dbec2f9682f1b04b8f0c4",
+    "data/brief/cards.json": "edb2099918f1f5b7b5ba7c70680d184b480b0bab55ee35dc1bad8bad4b5f9dbf",
+    "data/brief/cases.json": "0b235489524b9d229a30bef52889734328a0ba0ad1220af1e240fdd386a0c4f5",
+    "data/brief/sources.json": "7bfea2d6dca11a2be4ba3237683b8b65b7725be827166c8352a15c45fe0356c7",
+    "src/chronofin/llm.py": "d5f62ea8187cbdb82e3ae9099167435a50f923be7b0b39a80f95e181734b623f",
+    "src/chronofin/config.py": "d7e92b329f20668c95abb17f063d63e75caea6358081133537ba5733f9b145fc"
+  },
+  "frozen_utc": "2026-09-09T15:49:34.034964+00:00",
+  "scope": "Visible author-created split; not blind or independently annotated"
+}

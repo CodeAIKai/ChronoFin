@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_04171",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "3614d5cca06e7c9631495b0f7f6f51cba23c40a162a3bff3d6a66b00c13c7945",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "46e602b03cf0b26c4940cb5735c41bdd4e0fb05cc89a8d5a2670593db92464f5",
+  "started_utc": "2026-09-09T17:52:41.037529+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states accounts payable FY2018 is $302,578,000, which equals 302.578 USD millions; reference is 303 (rounded). Evidence balance sheet shows Accounts payable $302,578 in thousands, i.e. $302,578,000. Answer in USD millions is ~303, consistent."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1e8fa5f54c0c7834fb60af61fa6780c96e8ffda8cac3675df9e881439ffcc6cd",
+    "latency_seconds": 7.56,
+    "usage": {
+      "prompt_tokens": 2306,
+      "completion_tokens": 85,
+      "total_tokens": 2391,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "31f47855bd0967d0e6282e94a5918dfd67cee80206766cfc564f621fb28f3f9a"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_04171_dev",
+  "reused_from": "results/external_human/v2/financebench_id_04171_holistic.json",
+  "parent_sha256": "0123046142a4a8cb1f89b04cad7e8505ba6111fa5e245d29a9c91362c938bff4"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01254",
+  "company": "MGM Resorts",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "20c7d62194f23f52a867b5af533de89f25029860a9a940d2234730824ec633df",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "64122767c9adb4500b93074057cec0bd3edd3ca95fd77304d4b4b299de35391c",
+  "started_utc": "2026-09-09T17:48:10.242540+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers yes with supporting evidence of $0.01/share dividend in 2022; caveat about 2023 suspension does not withhold the FY2022 answer and aligns with evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8fba116adbf57f9d679b617079ab6c1d8994dc1ffb854b31231bf31849da02b5",
+    "latency_seconds": 5.36,
+    "usage": {
+      "prompt_tokens": 1190,
+      "completion_tokens": 61,
+      "total_tokens": 1251,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b9c118078914a90a79472315d86ced9f0be6055f4f059f852cad4538b11d7ff3"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01254_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01254_holistic.json",
+  "parent_sha256": "d948d0359b8b19654e841eaf8e9bb0ee53b03dea8a21045a1ddff6d88fd32b70"
+}

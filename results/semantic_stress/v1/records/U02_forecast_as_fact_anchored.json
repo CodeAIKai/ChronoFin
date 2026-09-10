@@ -1,0 +1,153 @@
+{
+  "id": "U02_forecast_as_fact",
+  "base": 2,
+  "mutation": "forecast_as_fact",
+  "expected_supported": false,
+  "method": "anchored",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "contradicted",
+          "reason": "候选正文称'已经实现营业利润29.0亿美元'，但S1明确'这是指引，没有实际结果'且status为forecast，预测被写成已实现事实，主体/期间同但kind无效。",
+          "kind_valid": false,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": true,
+          "quote": "虚构甲公司 FY2025 全年已经实现营业利润 29.0 亿美元。"
+        }
+      ],
+      "limitations": [],
+      "summary_supported": false,
+      "follow_up_useful": false,
+      "direct_answer": true,
+      "reason": "最重要问题：候选将S1中FY2025预测营业利润2.9 USD billion（等价29.0亿美元）误述为已实现事实，构成矛盾。"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "86fdfaae3c52e9b255b765f0906f0a6340acc79d5effc082cd2411a6977dbf18",
+      "latency_seconds": 4.464,
+      "usage": {
+        "prompt_tokens": 1079,
+        "completion_tokens": 195,
+        "total_tokens": 1274,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "cc87ee4e4e8b30ba98b682408d0fd05c1a14dac5b57454a54da21dafd63f33cd"
+    },
+    "input_sha256": "05dc9ba71ca011e4abcf9359b0f67e88f48f5f3551e884e1ffcbd12b12d0c6b1",
+    "answer_sha256": "abb227e013af1e7b9f8cf10fe0be953bde46c9d205e7dc9a4eed4bfe1c7f0e2d",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "abb227e013af1e7b9f8cf10fe0be953bde46c9d205e7dc9a4eed4bfe1c7f0e2d",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 72.159,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      },
+      {
+        "reason": "unsupported summary",
+        "cap": 65
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": false,
+  "decision_correct": true
+}

@@ -1,0 +1,1109 @@
+{
+  "case_id": "E15",
+  "split": "evaluation",
+  "method": "full_context_revision",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "parent_record_sha256": "9d1787fc7dd4bfc88973742fa73f3a8d017a403996546b778c93867a4f48f81d",
+  "started_utc": "2026-09-09T17:43:21.360171+00:00",
+  "record": {
+    "version": "grounded-audit-1.0",
+    "strategy": "full_context_revision",
+    "query": {
+      "question": "概括报告最值得信用研究员跟踪的两类风险和两类缓冲，并说明它不能支持哪些确定性结论。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "F01",
+        "source_id": "fed25",
+        "locator": "overview opening",
+        "role": "context",
+        "status": "observed",
+        "text": "The assessment uses market conditions and data through April 11, 2025.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F02",
+        "source_id": "fed25",
+        "locator": "asset valuations",
+        "role": "caution",
+        "status": "observed",
+        "text": "Equity valuations remained high versus expected earnings; liquidity deteriorated, with generally orderly functioning.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F03",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "caution",
+        "status": "observed",
+        "text": "Hedge-fund leverage indicators were near decade highs and concentrated in larger funds.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F04",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "support",
+        "status": "observed",
+        "text": "Banks remained broadly resilient, with most reporting capital well above regulatory requirements.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F05",
+        "source_id": "fed25",
+        "locator": "household and business debt",
+        "role": "support",
+        "status": "observed",
+        "text": "Business and household debt vulnerabilities were moderate; debt relative to GDP had declined.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F06",
+        "source_id": "fed25",
+        "locator": "funding risks",
+        "role": "support",
+        "status": "observed",
+        "text": "Funding vulnerabilities had declined to moderate levels; runnable liabilities remained a persistent risk.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F07",
+        "source_id": "fed25",
+        "locator": "household credit",
+        "role": "caution",
+        "status": "observed",
+        "text": "Credit-card and auto delinquencies exceeded pre-pandemic levels, especially among non-prime borrowers.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A02",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 operating income: USD 68593 million.",
+        "value": 68593,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A03",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual sales",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 net sales: USD 107556 million.",
+        "value": 107556,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A04",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 operating income: USD 39834 million.",
+        "value": 39834,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A05",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "caution",
+        "status": "observed",
+        "text": "Amazon FY2024 free cash flow: USD 38219 million.",
+        "value": 38219,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A06",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 operating cash flow reached about USD 115.9 billion, a 36% increase.",
+        "value": 115.9,
+        "unit": "USD billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A07",
+        "source_id": "amazon24",
+        "locator": "p10 FCF definition footnotes",
+        "role": "caution",
+        "status": "definition",
+        "text": "Amazon headline free cash flow deducts net property purchases; separate variants also deduct lease principal.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A08",
+        "source_id": "amazon24",
+        "locator": "p11 AWS quarterly margins",
+        "role": "caution",
+        "status": "observed",
+        "text": "AWS operating margin: Q3 2024 38.1%; Q4 2024 36.9%.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A09",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "context",
+        "status": "observed",
+        "text": "Amazon FY2023 free cash flow: USD 36813 million.",
+        "value": 36813,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "I01",
+        "source_id": "iea25",
+        "locator": "current consumption section",
+        "role": "context",
+        "status": "estimate",
+        "text": "IEA estimated 2024 data-centre electricity use at 415 TWh, about 1.5% globally.",
+        "value": 415,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I02",
+        "source_id": "iea25",
+        "locator": "2030 outlook section",
+        "role": "support",
+        "status": "forecast",
+        "text": "IEA projected data-centre electricity demand of around 945 TWh in 2030.",
+        "value": 945,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I03",
+        "source_id": "iea25",
+        "locator": "grid integration section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Without action, grid constraints could delay around 20% of planned data-centre projects.",
+        "value": 20,
+        "unit": "%",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I04",
+        "source_id": "iea25",
+        "locator": "uncertainty section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "IEA scenario range for 2035 data-centre demand: 700–1700 TWh; adoption, efficiency and bottlenecks matter.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I05",
+        "source_id": "iea25",
+        "locator": "global demand growth section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Data centres represent roughly one-tenth of projected global electricity-demand growth through 2030.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "M01",
+        "source_id": "meta24",
+        "locator": "p1 annual revenue row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 revenue: USD 164501 million.",
+        "value": 164501,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M02",
+        "source_id": "meta24",
+        "locator": "p1 annual net income row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 net income: USD 62360 million.",
+        "value": 62360,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M03",
+        "source_id": "meta24",
+        "locator": "p9 segment operating results",
+        "role": "caution",
+        "status": "observed",
+        "text": "Reality Labs FY2024 operating loss: USD 17729 million.",
+        "value": -17729,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M04",
+        "source_id": "meta24",
+        "locator": "p2 CFO outlook",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Meta anticipated FY2025 capital expenditures of USD 60–65 billion; guidance, not realized spending.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M05",
+        "source_id": "meta24",
+        "locator": "p2 depreciation footnote",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Longer server lives were expected to reduce FY2025 depreciation by USD 2.9 billion; an accounting-estimate change.",
+        "value": 2.9,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M06",
+        "source_id": "meta24",
+        "locator": "p1 annual ad metrics",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 ad impressions grew 11%; average ad price rose 10%.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M07",
+        "source_id": "meta24",
+        "locator": "p10 annual free cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 free cash flow: USD 52103 million.",
+        "value": 52103,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M08",
+        "source_id": "meta24",
+        "locator": "p4 non-GAAP definition",
+        "role": "caution",
+        "status": "definition",
+        "text": "Meta free cash flow deducts property purchases and finance-lease principal; non-GAAP comparability is limited.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M09",
+        "source_id": "meta24",
+        "locator": "p2 revenue outlook",
+        "role": "caution",
+        "status": "absence",
+        "text": "Meta provided no FY2025 full-year revenue guidance in this release.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M10",
+        "source_id": "meta24",
+        "locator": "p1 expense footnote",
+        "role": "caution",
+        "status": "observed",
+        "text": "Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses.",
+        "value": 1.55,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "T01",
+        "source_id": "tsmc24",
+        "locator": "opening results paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 revenue: TWD 868.46 billion.",
+        "value": 868.46,
+        "unit": "TWD billion",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T02",
+        "source_id": "tsmc24",
+        "locator": "year-over-year paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 38.8% measured in TWD.",
+        "value": 38.8,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T03",
+        "source_id": "tsmc24",
+        "locator": "USD results paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 37.0% measured in USD.",
+        "value": 37.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T04",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 gross margin: 59.0%.",
+        "value": 59.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T05",
+        "source_id": "tsmc24",
+        "locator": "technology mix paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Nodes of 7nm or smaller contributed 74% of Q4 wafer revenue.",
+        "value": 74,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T07",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "TSMC Q4 2024 net profit margin: 43.1%.",
+        "value": 43.1,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "信用研究员应跟踪两类风险：一是估值与流动性风险（F02，美股估值高、流动性恶化）和对冲基金杠杆近十年高位且集中（F03）；二是家庭信贷风险（F07，信用卡与车贷违约超疫情前）及可运行负债风险（F06）。两类缓冲为银行体系韧性（F04，资本充足）与家庭企业债务温和且占GDP比下降（F05）。资料不能支持确定性结论：Meta无2025全年营收指引（M09），IEA 2035需求区间宽（I04），均非已实现或确定值；网格约束仅为止损预测（I03）。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "美股估值偏高且流动性恶化，是信用研究员应跟踪的估值与流动性风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F02"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C2",
+          "text": "对冲基金杠杆指标接近十年高位且集中于大型基金，构成杠杆集中风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F03"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "信用卡与汽车贷款违约率超过疫情前水平（尤其非优质借款人），为家庭信贷风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F07"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "可运行负债仍是持续性风险，尽管融资脆弱性降至温和",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "银行资本普遍远高于监管要求，是信用缓冲",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "家庭与企业债务脆弱性温和且占GDP比重下降，是债务端缓冲",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "Meta未提供2025全年营收指引，资料不能支持其确定性收入结论",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M09"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C8",
+          "text": "IEA对2035年数据中心电力需求给出700–1700 TWh宽区间，不能支持确定值",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I04"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料不能支持Meta FY2025营收、TSMC Q1实际业绩、IEA网格约束实际影响比例等确定性结论；所有forecast类卡片均非已发生事实。"
+      ],
+      "follow_up": [
+        {
+          "action": "核查Meta后续季报是否披露2025全年营收指引",
+          "reason": "若有指引将改变C7中不确定性判断",
+          "evidence_ids": [
+            "M09"
+          ]
+        },
+        {
+          "action": "跟踪美联储后续金融稳定报告的对冲基金杠杆数据",
+          "reason": "可验证F03风险是否持续或缓解",
+          "evidence_ids": [
+            "F03"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "信用研究员应跟踪两类风险：一是估值与流动性风险（F02，美股估值高、流动性恶化）和对冲基金杠杆近十年高位且集中（F03）；二是家庭信贷风险（F07，信用卡与车贷违约超疫情前）及可运行负债持续性风险（F06）。两类缓冲为银行体系韧性（F04，资本充足）与家庭企业债务温和且占GDP比下降（F05）。资料不能支持确定性结论：Meta无2025全年营收指引（M09），IEA 2035需求区间宽（I04），网格约束仅为止损预测（I03），均非已实现确定值。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "美股估值偏高且流动性恶化，是信用研究员应跟踪的估值与流动性风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F02"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C2",
+          "text": "对冲基金杠杆指标接近十年高位且集中于大型基金，构成杠杆集中风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F03"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "信用卡与汽车贷款违约率超过疫情前水平（尤其非优质借款人），为家庭信贷风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F07"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "可运行负债仍是持续性风险，尽管融资脆弱性降至温和",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "银行资本普遍远高于监管要求，是信用缓冲",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "家庭与企业债务脆弱性温和且占GDP比重下降，是债务端缓冲",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "Meta未提供2025全年营收指引，资料不能支持其确定性收入结论",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M09"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C8",
+          "text": "IEA对2035年数据中心电力需求给出700–1700 TWh宽区间，不能支持确定值",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I04"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料不能支持Meta FY2025营收、TSMC Q1实际业绩、IEA网格约束实际影响比例等确定性结论；所有forecast类卡片（如I03、I04、M04）均非已发生事实，不可作为确定判断。"
+      ],
+      "follow_up": [
+        {
+          "action": "核查Meta后续季报是否披露2025全年营收指引",
+          "reason": "若有指引将改变C7中不确定性判断",
+          "evidence_ids": [
+            "M09"
+          ]
+        },
+        {
+          "action": "跟踪美联储后续金融稳定报告的对冲基金杠杆数据",
+          "reason": "可验证F03风险是否持续或缓解",
+          "evidence_ids": [
+            "F03"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "4565d14d191e59488406dffff4bd8de7267516e987d8b111e666f1ee48c8b830",
+        "latency_seconds": 12.78,
+        "usage": {
+          "prompt_tokens": 4065,
+          "completion_tokens": 711,
+          "total_tokens": 4776,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "08a62529d6eadc5494256508af5442d6a1323674b7c27196df31c3804513d337"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "f48bf25624e4b00ddc2426fb3b6f0fdaaa3b40b10f34208a7ab4e70624bf992d",
+        "latency_seconds": 6.573,
+        "usage": {
+          "prompt_tokens": 4809,
+          "completion_tokens": 727,
+          "total_tokens": 5536,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "688694c4316e684894b5b34aad7b29290902fd05a06ca32409478eee02ae5e0c"
+      }
+    ],
+    "input_sha256": "1e506669b4ffc56c801e50edfdfa209918ff78e4268e7b57b734f21bf9445001",
+    "answer_sha256": "1de8c9c4f5032c633fc4fc23a11be9f2f3916178e38ce7a85e63727dcbc1db15",
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "信用研究员应跟踪两类风险：一是估值与流动性风险（F02，美股估值高、流动性恶化）和对冲基金杠杆近十年高位且集中（F03）；二是家庭信贷风险（F07，信用卡与车贷违约超疫情前）及可运行负债持续性风险（F06）。两类缓冲为银行体系韧性（F04，资本充足）与家庭企业债务温和且占GDP比下降（F05）。资料不能支持确定性结论：Meta无2025全年营收指引（M09），IEA 2035需求区间宽（I04），网格约束仅为止损预测（I03），均非已实现确定值。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "美股估值偏高且流动性恶化，是信用研究员应跟踪的估值与流动性风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F02"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C2",
+          "text": "对冲基金杠杆指标接近十年高位且集中于大型基金，构成杠杆集中风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F03"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "信用卡与汽车贷款违约率超过疫情前水平（尤其非优质借款人），为家庭信贷风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F07"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "可运行负债仍是持续性风险，尽管融资脆弱性降至温和",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "银行资本普遍远高于监管要求，是信用缓冲",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "家庭与企业债务脆弱性温和且占GDP比重下降，是债务端缓冲",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "Meta未提供2025全年营收指引，资料不能支持其确定性收入结论",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M09"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C8",
+          "text": "IEA对2035年数据中心电力需求给出700–1700 TWh宽区间，不能支持确定值",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I04"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料不能支持Meta FY2025营收、TSMC Q1实际业绩、IEA网格约束实际影响比例等确定性结论；所有forecast类卡片（如I03、I04、M04）均非已发生事实，不可作为确定判断。"
+      ],
+      "follow_up": [
+        {
+          "action": "核查Meta后续季报是否披露2025全年营收指引",
+          "reason": "若有指引将改变C7中不确定性判断",
+          "evidence_ids": [
+            "M09"
+          ]
+        },
+        {
+          "action": "跟踪美联储后续金融稳定报告的对冲基金杠杆数据",
+          "reason": "可验证F03风险是否持续或缓解",
+          "evidence_ids": [
+            "F03"
+          ]
+        }
+      ]
+    }
+  },
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选C1称美股估值偏高且流动性恶化，F02原文'Equity valuations remained high versus expected earnings; liquidity deteriorated'支持该事实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选C2称对冲基金杠杆近十年高位且集中，F03原文'near decade highs and concentrated in larger funds'支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选C3称信用卡与车贷违约超疫情前，F07原文'delinquencies exceeded pre-pandemic levels, especially among non-prime borrowers'支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选C4称可运行负债持续风险且融资脆弱性降至温和，F06原文'Funding vulnerabilities had declined to moderate levels; runnable liabilities remained a persistent risk'支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选C5称银行资本远高于监管要求，F04原文'capital well above regulatory requirements'支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选C6称家庭企业债务温和且占GDP比下降，F05原文'vulnerabilities were moderate; debt relative to GDP had declined'支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选C7称Meta无2025全年营收指引，M09原文'provided no FY2025 full-year revenue guidance'支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C8",
+          "verdict": "supported",
+          "reason": "候选C8称IEA 2035需求区间700–1700 TWh，I04原文'scenario range for 2035 data-centre demand: 700–1700 TWh'支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "F02",
+          "present": true,
+          "quote": "美股估值高、流动性恶化"
+        },
+        {
+          "id": "F03",
+          "present": true,
+          "quote": "对冲基金杠杆近十年高位且集中"
+        },
+        {
+          "id": "F07",
+          "present": true,
+          "quote": "信用卡与车贷违约超疫情前"
+        },
+        {
+          "id": "F04",
+          "present": true,
+          "quote": "银行资本普遍远高于监管要求"
+        },
+        {
+          "id": "F05",
+          "present": true,
+          "quote": "家庭企业债务温和且占GDP比下降"
+        },
+        {
+          "id": "F06",
+          "present": true,
+          "quote": "可运行负债仍是持续性风险，尽管融资脆弱性降至温和"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选概括两类风险（估值流动性与杠杆集中、家庭信贷与可运行负债）和两类缓冲（银行韧性、债务温和），并说明不能支持确定性结论（M09、I04等），覆盖required与counter且无幻觉；但未明确写'不构成个性化交易建议'及'没有提供危机概率'的具体免责，限制覆盖false"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "9d7b98a0977f73bac1bbafc37a9d819fd34b17705e7acdeaa252c5a562f41990",
+      "latency_seconds": 5.856,
+      "usage": {
+        "prompt_tokens": 5060,
+        "completion_tokens": 843,
+        "total_tokens": 5903,
+        "prompt_tokens_details": {
+          "cached_tokens": 4224
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "b59e55455a482410c76663fc8c0d9372e72574c9ff7c6b817a085559143ea970"
+    },
+    "input_sha256": "50b43e98fddd6d3bd3f7f9e0879fb449549abbd6a1e2c66e26146539a935e367",
+    "answer_sha256": "1de8c9c4f5032c633fc4fc23a11be9f2f3916178e38ce7a85e63727dcbc1db15",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "1de8c9c4f5032c633fc4fc23a11be9f2f3916178e38ce7a85e63727dcbc1db15",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 96.0,
+    "score": 96.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "proof_feedback": {
+    "money": [],
+    "calculations": [],
+    "citation_identity": [
+      {
+        "claim_id": "C1",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C2",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C3",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C4",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C5",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C6",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C7",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C8",
+        "unknown_ids": []
+      }
+    ]
+  },
+  "status": "ok",
+  "new_work_wall_seconds": 12.438
+}

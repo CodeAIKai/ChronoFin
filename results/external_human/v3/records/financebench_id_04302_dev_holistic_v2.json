@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_04302",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "df33d6ba568a6a5cc56b4882b4d361d73ddfe5bbad712abc28083066818ff358",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "53b9e609bf48ab669f1c83c83db34027f84de34173db5823f4bd8c686cd8a566",
+  "started_utc": "2026-09-09T17:52:57.615149+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states data not provided and withholds answer, only explains method; evidence contains needed figures but refusal stands per rules."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "25133aeb8d9da66df54bd4c982ff7ed76693d6a6d0d0e8503ccbdf66ba45b0a2",
+    "latency_seconds": 7.092,
+    "usage": {
+      "prompt_tokens": 1435,
+      "completion_tokens": 46,
+      "total_tokens": 1481,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e070176c54b56c4d6afd04bbb0b969a3aabd20569f81e6543d481cdf9c5a1716"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_04302_dev",
+  "reused_from": "results/external_human/v2/financebench_id_04302_holistic.json",
+  "parent_sha256": "781d61be29fd95f5fb31a1e84417d711b3c2dfb85a216ae363204e1b2722d249"
+}

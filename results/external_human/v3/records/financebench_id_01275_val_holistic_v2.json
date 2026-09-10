@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01275",
+  "uid": "financebench_id_01275_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "0ce6659b8eb8d4baec5d4973a7f42245f345361a7b66e67c098eedc9fe551f49",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "ff41c5d34725782b8febc12faf8150ad6285c47cccae924790caa577c4f411b6",
+  "started_utc": "2026-09-09T18:10:14.825978+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Question asks which of operating, investing, financing brought in most cash in FY2023; reference and evidence show operating activities provided $1.8bn vs investing -$0.96bn and financing -$1.8bn, so operating is correct answer. Candidate misinterprets question as asking about business segments (Domestic vs International) and answers about segments, not the requested activity categories."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "eee4dc2ee83a8ca27558cd2f9967fcf2554e571b5f9a7bd0de0057c23d5cedee",
+    "latency_seconds": 9.459,
+    "usage": {
+      "prompt_tokens": 3131,
+      "completion_tokens": 101,
+      "total_tokens": 3232,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9e888c1f20055940167da5d087382aed3c3f5b6efa36bc4ef51327c57d8d68c7"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

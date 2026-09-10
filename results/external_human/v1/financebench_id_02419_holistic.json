@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_02419",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b1ee947dc5abd20aceb79f732b6ce08c7e9c6fc9c7a02601f9a5ca53f5b66f38",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "a8ee6ba05c2ff2acb12b5d021de814cdd6394e2233634c088cef52488727f5c7",
+  "started_utc": "2026-09-09T17:34:17.901665+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Reference says Pfizer is spinning off Upjohn as of Q2 2023. Evidence confirms Upjohn separation costs incurred through Q2 2023. Candidate instead describes a July 2023 agreement to divest early-stage rare disease gene therapy portfolio (expected close Q3 2023), not Upjohn, and omits the referenced Upjohn spinoff."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ce0c695407018c4241a7bd649063421e250dfc84c4e5c5be7d2c648fe5f28095",
+    "latency_seconds": 2.029,
+    "usage": {
+      "prompt_tokens": 1571,
+      "completion_tokens": 94,
+      "total_tokens": 1665,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a831e92a48511e9129fa0053d618d801a01983dec2c3e0840d8959d8f3839401"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

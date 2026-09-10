@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01930",
+  "uid": "financebench_id_01930_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b7ec23af715482b9894e0ea311b22b167acd80d0f45067c7b1ade98150e53827",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "a4360f8e021218d5de0096092f2c28df556ff7ad52e6bc5eea655653405bf458",
+  "started_utc": "2026-09-10T01:28:08.638685+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, the real change in sales, excluding the specified factors, is an increase of $7 million.",
+    "content_correct": false,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Reference states Real Growth was flat (0%) in FY2023 vs FY2022. Candidate claims +$7 million (0% but labels as increase of $7M) using unexplained figures ($150M, $776M, $426M, $207M) not in evidence; evidence shows Comparable Constant Currency Growth Total 1% (not flat) but no $7M real change. Candidate answer not supported and conflicts with reference flat claim."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "44f1208885365c54848728a6942596bff36b1d5a76c61df833fb03083aa723ea",
+    "latency_seconds": 10.454,
+    "usage": {
+      "prompt_tokens": 1427,
+      "completion_tokens": 162,
+      "total_tokens": 1589,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "57df69987d9103a4f1cb8373693af305baaf42fcd70754de020a5345dbb65c70"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

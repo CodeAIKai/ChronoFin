@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00807",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "eb1ecd981eb8cc7bfed771778efc85ce1a923a2fb58e865dd4995b908d08ff43",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "41ed74dd9b7f88c081dc8b305eccaedf22b9eb8aa20b08b629382e246ae8867c",
+  "started_utc": "2026-09-09T17:46:19.416848+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed quick ratio as ~0.85 using only cash, securities, receivables, but reference states 3M quick ratio was 0.96 by Jun'23; candidate also did not give clear 'No' conclusion as reference did and miscomputed metric. Evidence supports reference figures context; candidate's ratio is wrong vs reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dead8a08ffce9999b043d2d786bab01effe7a80189c996290a64e8a48bfe3657",
+    "latency_seconds": 7.495,
+    "usage": {
+      "prompt_tokens": 2036,
+      "completion_tokens": 91,
+      "total_tokens": 2127,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "94cb49dc6ae2d85d7c3e5046ed0b45850e82e57c41fb4ea7faab4da897e8b3fa"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00807_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00807_holistic.json",
+  "parent_sha256": "4068485b541f8a20474826fdf104dc774ba11c0ab385af6311d5c058c9981984"
+}

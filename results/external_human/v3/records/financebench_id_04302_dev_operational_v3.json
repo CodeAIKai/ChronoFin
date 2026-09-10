@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04302",
+  "uid": "financebench_id_04302_dev",
+  "split": "development",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "df33d6ba568a6a5cc56b4882b4d361d73ddfe5bbad712abc28083066818ff358",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "53b9e609bf48ab669f1c83c83db34027f84de34173db5823f4bd8c686cd8a566",
+  "started_utc": "2026-09-10T01:31:45.980115+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "the information provided does not include the specific figures for revenue or cost of goods sold (COGS) for fiscal years 2016 to 2018",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states data is missing and declines to calculate, though evidence table actually contains Revenues and Cost of sales for FY2016-2018."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "111f16bfb09d9deab60d283ddc94aaf0869737328afac40534a5b0829c5fad59",
+    "latency_seconds": 9.796,
+    "usage": {
+      "prompt_tokens": 1570,
+      "completion_tokens": 113,
+      "total_tokens": 1683,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d38d4cdac1d54e39176e83d1cc5682e3bb72923d6121b5f997ddc7f04ec1f541"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

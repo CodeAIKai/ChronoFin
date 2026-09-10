@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_01482",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "e3a819a006bb7a9f0d94665c7f07415b0ecc600dcc65dbede39dad7e4b225a9e",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "5f918b633685efcfe9a003c45b2d657a0a1126732aab0df2c49a8f61f3acc292",
+  "started_utc": "2026-09-09T17:49:04.756154+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states the proposal was defeated with vote tallies matching evidence and reference; substantive answer provided."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "062d5d0dc931944bde047b4d6c953d3b075f0485fa53be7d18c6e00a02cffa77",
+    "latency_seconds": 5.411,
+    "usage": {
+      "prompt_tokens": 854,
+      "completion_tokens": 40,
+      "total_tokens": 894,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "835e68719719c7cdd2a5fd03b2aa9464279b9d6585438701cb140cbe97ac688c"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

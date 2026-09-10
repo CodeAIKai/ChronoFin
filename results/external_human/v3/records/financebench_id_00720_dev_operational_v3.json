@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00720",
+  "uid": "financebench_id_00720_dev",
+  "split": "development",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "36c7be23558c700c1447ce1939e6f34aec43492628f3703eb6a35e4fcc142bce",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "69300092a1f833412f0576c43edbc5eb9b549bd67f9a68cbb9e32cafdae267c5",
+  "started_utc": "2026-09-09T18:07:43.837690+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but I do not have access to external documents or filings, including the annual report (Form 10-K) for American Express Company for the fiscal year ended December 31, 2022.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer FY2022 question citing lack of access to documents, and asks user to review filings rather than stating gross margin not useful per reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "661ea0634f48b47c69a3cc37dd33cebce1a5e1489b867fb20032c0837214994b",
+    "latency_seconds": 6.228,
+    "usage": {
+      "prompt_tokens": 2346,
+      "completion_tokens": 128,
+      "total_tokens": 2474,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9ff4ffb44769ffb544ad9217c1a8b40bfe848146a3d568ea00438562a84c4974"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

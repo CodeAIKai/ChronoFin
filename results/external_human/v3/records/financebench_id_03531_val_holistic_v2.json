@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_03531",
+  "uid": "financebench_id_03531_val",
+  "split": "new_response_validation",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ac8083909771eb3630f45b913f02a201d42263c9a3f28b4add0e2f8603c89ff7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "80ec6fa780672c52c421430d5a046ce798dbcdca5b901693a7e5c45669e0018d",
+  "started_utc": "2026-09-10T01:30:37.720821+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate provides substantive answer of $16,525 million total current assets for FY2019, matching reference and balance sheet evidence (Total current assets 16,525 for 2019)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0aa5973fcb259125ca1334bd88c7c9c229d6f5fe9da729b5490f57410fcf9d99",
+    "latency_seconds": 6.595,
+    "usage": {
+      "prompt_tokens": 1456,
+      "completion_tokens": 58,
+      "total_tokens": 1514,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "109968296b48945fc2141e1cf8d4b68d87a2064010ff3496ce32f2047e662504"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

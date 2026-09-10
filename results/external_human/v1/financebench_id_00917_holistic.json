@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00917",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "25e71b61d13164f0e90a5632aa3ebab5c86b4cf93262479ad7c8bfcbced9a13a",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "4563bd1859ba10d1831e1bbd21bb58e57e4d72d47c684b8f0ecaf5e9215ea138",
+  "started_utc": "2026-09-09T18:00:25.059699+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence (AMD 2022 10-K) states operating income decrease in FY22 was primarily driven by Xilinx acquisition intangible asset amortization; candidate refused claiming no FY22 info, contradicting supplied evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "501c52b360a14fde9da3a8618828e32751eae15e1f6ea84acbd08d6e6111af1c",
+    "latency_seconds": 8.595,
+    "usage": {
+      "prompt_tokens": 1613,
+      "completion_tokens": 65,
+      "total_tokens": 1678,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "02caf280f32511fe81274181c917ffea260e92d65d703976bb6195e486c5a260"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

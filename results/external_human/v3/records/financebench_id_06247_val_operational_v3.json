@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_06247",
+  "uid": "financebench_id_06247_val",
+  "split": "new_response_validation",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a10fe6671bd2b4e02f8a3b673ee61222b95d53987c7bb8de869c16f2850b318c",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "96dab56c6ae6c3e3a799435c100934d3f952a79d72b1b905580f1f8f80875ff4",
+  "started_utc": "2026-09-10T01:33:17.771068+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "Without this data, I cannot provide the FY2018 DPO for Walmart.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot provide the DPO and asks for missing figures instead of answering, despite evidence containing AP, COGS and inventory needed for the calculation."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "32a2bf83186a7f38340fc20cf2e502c44b5579387267f11964ac5cb867a5112d",
+    "latency_seconds": 6.835,
+    "usage": {
+      "prompt_tokens": 3349,
+      "completion_tokens": 99,
+      "total_tokens": 3448,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4510bd5ac4dbc5ca2f845edea86749f772316c86e797a726121c8dd0b17f45ca"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

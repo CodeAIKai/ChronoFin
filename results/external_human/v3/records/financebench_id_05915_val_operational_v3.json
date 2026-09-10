@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_05915",
+  "uid": "financebench_id_05915_val",
+  "split": "new_response_validation",
+  "company": "CVS Health",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "b11ffbc765d11441e171dc610056347364486db7428f587eab1838eae2a13afb",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "ffc3da9cc014937a08d669404f75512fbce9b729fe175757cd51f58844232b0c",
+  "started_utc": "2026-09-10T01:33:11.564872+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Rounding to two decimal places, the FY2018 fixed asset turnover ratio for CVS Health is 18.35.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate used PP&E values $10,183M (2017) and $11,048M (2018), but evidence balance sheet shows Property and equipment, net of $10,292M (2017) and $11,349M (2018). Correct avg = (10292+11349)/2=10820.5M; revenue 194,579M / 10820.5M = 17.98, matching reference. Candidate's numerals and result (18.35) are wrong vs evidence and reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "44dd3ba672d50c52d03de99ed46a2aa3186d939c23f3ae527b14b93a0291a327",
+    "latency_seconds": 9.15,
+    "usage": {
+      "prompt_tokens": 3795,
+      "completion_tokens": 183,
+      "total_tokens": 3978,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "71988a90846b4d866f831a91aefd3af5e763ed8303ea0ab2eee98c80f9c445f7"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

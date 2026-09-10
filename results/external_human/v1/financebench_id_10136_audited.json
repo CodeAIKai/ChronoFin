@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_10136",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "a28f4cc20380037d00767cde8646e94bde2d69902d6b04d6d1134c5951536ee6",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "8ba67ecd668170b599fe4974f4905e052b4f493021318ec34a32eb1dc6b24e77",
+  "started_utc": "2026-09-09T17:35:17.066107+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate provided subsidiary list instead of computing FY2022 retention ratio; no numeric answer given. Evidence shows net earnings attributable to General Mills 2,707.3M and total cash dividends paid 1,244.5M, retention = (2707.3-1244.5)/2707.3 = 0.54, matching reference, but candidate did not answer.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate did not address General Mills retention ratio computation"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2022 metric provided"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No ratio to two decimal places given"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer; only subsidiary info"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence not used to compute; candidate text unrelated"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "593a78d4dafc52aacb0eff88cfc7fda7c69e7934594372f93868619705e9adc7",
+    "latency_seconds": 4.748,
+    "usage": {
+      "prompt_tokens": 4080,
+      "completion_tokens": 233,
+      "total_tokens": 4313,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e3ac4b1f69e17b02618f7b76a95b302a82144037aaf18bc75beb5ae982ff0109"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,156 @@
+{
+  "commit": "cc39aeb4afdf33909ee1412188bf89035950c2eb",
+  "dataset_card_license": "CC-BY-NC-4.0",
+  "license_source": "https://huggingface.co/datasets/PatronusAI/financebench",
+  "redistribution": "Raw downloaded data stays in excluded data/cache; public outputs identify source rows and preserve model judgments, not copies of the dataset.",
+  "files": [
+    {
+      "path": "data/financebench_open_source.jsonl",
+      "url": "https://raw.githubusercontent.com/patronus-ai/financebench/cc39aeb4afdf33909ee1412188bf89035950c2eb/data/financebench_open_source.jsonl",
+      "sha256": "a5a2aa673e573e55675fc3c0f9aa38c1cf59d2abc91edb077534f71f10a71877",
+      "rows": 150,
+      "keys": [
+        "financebench_id",
+        "company",
+        "doc_name",
+        "question_type",
+        "question_reasoning",
+        "domain_question_num",
+        "question",
+        "answer",
+        "justification",
+        "dataset_subset_label",
+        "evidence"
+      ]
+    },
+    {
+      "path": "data/financebench_document_information.jsonl",
+      "url": "https://raw.githubusercontent.com/patronus-ai/financebench/cc39aeb4afdf33909ee1412188bf89035950c2eb/data/financebench_document_information.jsonl",
+      "sha256": "1c69127783879de8cdadb159d2181f39bc3123b8e0ebf74031c3969d69189575",
+      "rows": 361,
+      "keys": [
+        "doc_name",
+        "company",
+        "gics_sector",
+        "doc_type",
+        "doc_period",
+        "doc_link"
+      ]
+    },
+    {
+      "path": "results/gpt-4-1106-preview_oracle.jsonl",
+      "url": "https://raw.githubusercontent.com/patronus-ai/financebench/cc39aeb4afdf33909ee1412188bf89035950c2eb/results/gpt-4-1106-preview_oracle.jsonl",
+      "sha256": "b07efa7daa2adfe706515ea6c05e207ff59d790e0161fd3f9f9208489ec9b3b2",
+      "rows": 150,
+      "keys": [
+        "financebench_id",
+        "model_name",
+        "eval_mode",
+        "temp",
+        "question",
+        "gold_answer",
+        "model_answer",
+        "label"
+      ],
+      "label_distributions": {
+        "model_name": {
+          "gpt-4-1106-preview": 150
+        },
+        "eval_mode": {
+          "oracle": 150
+        },
+        "label": {
+          "Correct Answer": 128,
+          "Incorrect Answer": 22
+        }
+      }
+    },
+    {
+      "path": "results/gpt-4-1106-preview_inContext.jsonl",
+      "url": "https://raw.githubusercontent.com/patronus-ai/financebench/cc39aeb4afdf33909ee1412188bf89035950c2eb/results/gpt-4-1106-preview_inContext.jsonl",
+      "sha256": "28a35b93b9f92e0b095c38f63e778f7b5a510def8f37e2d49e4504711059e222",
+      "rows": 150,
+      "keys": [
+        "financebench_id",
+        "model_name",
+        "eval_mode",
+        "temp",
+        "question",
+        "gold_answer",
+        "model_answer",
+        "label"
+      ],
+      "label_distributions": {
+        "model_name": {
+          "gpt-4-1106-preview": 150
+        },
+        "eval_mode": {
+          "inContext": 150
+        },
+        "label": {
+          "Refusal": 59,
+          "Correct Answer": 37,
+          "Incorrect Answer": 54
+        }
+      }
+    },
+    {
+      "path": "results/gpt-4-1106-preview_sharedStore.jsonl",
+      "url": "https://raw.githubusercontent.com/patronus-ai/financebench/cc39aeb4afdf33909ee1412188bf89035950c2eb/results/gpt-4-1106-preview_sharedStore.jsonl",
+      "sha256": "c9eff87569a517fe5df8b23ea2ae0ad031dff21b1e944f3180abe0be11498f43",
+      "rows": 150,
+      "keys": [
+        "financebench_id",
+        "model_name",
+        "eval_mode",
+        "temp",
+        "question",
+        "gold_answer",
+        "model_answer",
+        "label"
+      ],
+      "label_distributions": {
+        "model_name": {
+          "gpt-4-1106-preview": 150
+        },
+        "eval_mode": {
+          "sharedStore": 150
+        },
+        "label": {
+          "Refusal": 101,
+          "Correct Answer": 29,
+          "Incorrect Answer": 20
+        }
+      }
+    },
+    {
+      "path": "results/claude-2_inContext.jsonl",
+      "url": "https://raw.githubusercontent.com/patronus-ai/financebench/cc39aeb4afdf33909ee1412188bf89035950c2eb/results/claude-2_inContext.jsonl",
+      "sha256": "e38452ddbc848aec2fc3ff116ef169ad2167bfaf0dc49ec0a1c19320dd6efc3a",
+      "rows": 150,
+      "keys": [
+        "financebench_id",
+        "model_name",
+        "eval_mode",
+        "temp",
+        "question",
+        "gold_answer",
+        "model_answer",
+        "label"
+      ],
+      "label_distributions": {
+        "model_name": {
+          "claude-2": 150
+        },
+        "eval_mode": {
+          "inContext": 150
+        },
+        "label": {
+          "Incorrect Answer": 91,
+          "Correct Answer": 56,
+          "Refusal": 3
+        }
+      }
+    }
+  ]
+}

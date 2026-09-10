@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01351",
+  "uid": "financebench_id_01351_dev",
+  "split": "development",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2ce9a3d3a672e015be6d5095722692a44dfde121839fc0a66793eb5ef0435645",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d113ea7abb4aa854ef1e3530dd244aa6c7fb05971d7fd7e9ae219861006744a9",
+  "started_utc": "2026-09-09T18:10:55.572026+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Here are the key points on American Express's short-term borrowings and debt:",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Question asks effective tax rate change FY2021 to FY2022; candidate discusses short-term borrowings/debt and never mentions effective tax rate, which per reference dropped from 24.6% to 21.6% (evidence table confirms 24.6% 2021, 21.6% 2022). Unrelated document dump = incorrect."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4c1306d41c705e9b664e76dad53a7c282848046e5caa7d4289f79607746171e1",
+    "latency_seconds": 10.713,
+    "usage": {
+      "prompt_tokens": 2772,
+      "completion_tokens": 138,
+      "total_tokens": 2910,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0863de06b728e4186a18ac1bfd1df5fde29766b68992952d724975acbd54eac2"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

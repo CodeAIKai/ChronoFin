@@ -1,0 +1,2443 @@
+{
+  "sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "files": {
+    "scripts/run_semantic_stress.py": "ad52ae301472f70793c37d39b39fc1bf5d61f3fdd55905349fd3d9e7efb43d78",
+    "src/chronofin/brief.py": "d574e3759bd15f2f89358a45b9e4f5f7ec2e4f4ffeb8f5e762adfa6371b14079",
+    "src/chronofin/grounded.py": "c47ffe513a0f78f54952bc78f3204e0a5ebe0cf8d5854e135ac78dfeed04cd79",
+    "src/chronofin/reliability.py": "709aad7bf5d26f7db0eae139fd2e8222836ea30f6c6c35e6c189fecedda92f9d",
+    "src/chronofin/runtime.py": "699fc8e91b326739fb8da961eaf498b76048a3a3ba9e81b4f5241046f56e76f9"
+  },
+  "jobs": [
+    {
+      "id": "U01_equivalent",
+      "base": 1,
+      "mutation": "equivalent",
+      "expected_supported": true,
+      "case": {
+        "id": "U01_equivalent",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 1.55,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 1.55 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 15.50 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 15.50 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 1.55,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 1.55,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 1.55 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "3877933ff328887b9d134ffe1baa27b05e8076b80854cfd57a3c63ac3b963aa5"
+      }
+    },
+    {
+      "id": "U01_tenfold",
+      "base": 1,
+      "mutation": "tenfold",
+      "expected_supported": false,
+      "case": {
+        "id": "U01_tenfold",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 1.55,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 1.55 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 155.00 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 155.00 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 1.55,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 1.55,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 1.55 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "89f1ffb7f4712757394b8b1d4b28aa1de95000c9ea0cf6ed30eef73bdabb9381"
+      }
+    },
+    {
+      "id": "U01_period",
+      "base": 1,
+      "mutation": "period",
+      "expected_supported": false,
+      "case": {
+        "id": "U01_period",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 1.55,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 1.55 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2023 全年已经实现营业利润 15.50 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2023 全年已经实现营业利润 15.50 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 1.55,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 1.55,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 1.55 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "a3194f46fad885a2038930e4db5e13a58829c8fdcdd0961c9b480c9431dd2ac8"
+      }
+    },
+    {
+      "id": "U01_entity",
+      "base": 1,
+      "mutation": "entity",
+      "expected_supported": false,
+      "case": {
+        "id": "U01_entity",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 1.55,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 1.55 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构乙公司 FY2024 全年已经实现营业利润 15.50 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构乙公司 FY2024 全年已经实现营业利润 15.50 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 1.55,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 1.55,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 1.55 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "51a23f0b8aa1e15a3bd64839ed0ae6c4d1f39dfeed1250874d6a1a3d47b10068"
+      }
+    },
+    {
+      "id": "U01_forecast_as_fact",
+      "base": 1,
+      "mutation": "forecast_as_fact",
+      "expected_supported": false,
+      "case": {
+        "id": "U01_forecast_as_fact",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 1.55,
+          "unit": "USD billion",
+          "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 1.55 USD billion；这是指引，没有实际结果。",
+          "status": "forecast",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2025 全年已经实现营业利润 15.50 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2025 全年已经实现营业利润 15.50 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 1.55,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 1.55,
+            "unit": "USD billion",
+            "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 1.55 USD billion；这是指引，没有实际结果。",
+            "status": "forecast",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "cb42b4ccdef23b7594a0a28844c681feae0c5b5f70031c75e310b4cbf1cce3a9"
+      }
+    },
+    {
+      "id": "U02_equivalent",
+      "base": 2,
+      "mutation": "equivalent",
+      "expected_supported": true,
+      "case": {
+        "id": "U02_equivalent",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 2.9,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 2.9 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 29.0 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 29.0 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 2.9,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 2.9,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 2.9 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "18ca603c3070748e7c259b1f8686aa44d274a893660a36ad782666e094f0d306"
+      }
+    },
+    {
+      "id": "U02_tenfold",
+      "base": 2,
+      "mutation": "tenfold",
+      "expected_supported": false,
+      "case": {
+        "id": "U02_tenfold",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 2.9,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 2.9 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 290.0 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 290.0 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 2.9,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 2.9,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 2.9 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "99125b59368d28004b0afb2354e91417e144e2efd01f2d2d8c9e745d3cac9705"
+      }
+    },
+    {
+      "id": "U02_period",
+      "base": 2,
+      "mutation": "period",
+      "expected_supported": false,
+      "case": {
+        "id": "U02_period",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 2.9,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 2.9 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2023 全年已经实现营业利润 29.0 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2023 全年已经实现营业利润 29.0 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 2.9,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 2.9,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 2.9 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "988c4d42705f6a8c7f74b7f95fe172d14ff60712e6c94a203d27c32b03319108"
+      }
+    },
+    {
+      "id": "U02_entity",
+      "base": 2,
+      "mutation": "entity",
+      "expected_supported": false,
+      "case": {
+        "id": "U02_entity",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 2.9,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 2.9 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构乙公司 FY2024 全年已经实现营业利润 29.0 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构乙公司 FY2024 全年已经实现营业利润 29.0 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 2.9,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 2.9,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 2.9 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "bcd3e6f91abc76e85f3f4665c1689687c0bd090e098f5cb108dbf1f5711c77ab"
+      }
+    },
+    {
+      "id": "U02_forecast_as_fact",
+      "base": 2,
+      "mutation": "forecast_as_fact",
+      "expected_supported": false,
+      "case": {
+        "id": "U02_forecast_as_fact",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 2.9,
+          "unit": "USD billion",
+          "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 2.9 USD billion；这是指引，没有实际结果。",
+          "status": "forecast",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2025 全年已经实现营业利润 29.0 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2025 全年已经实现营业利润 29.0 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 2.9,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 2.9,
+            "unit": "USD billion",
+            "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 2.9 USD billion；这是指引，没有实际结果。",
+            "status": "forecast",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "abb227e013af1e7b9f8cf10fe0be953bde46c9d205e7dc9a4eed4bfe1c7f0e2d"
+      }
+    },
+    {
+      "id": "U03_equivalent",
+      "base": 3,
+      "mutation": "equivalent",
+      "expected_supported": true,
+      "case": {
+        "id": "U03_equivalent",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 0.125,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 0.125 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 12500.000 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 12500.000 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 0.125,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 0.125,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 0.125 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "d7f6b979a4085b1e269084a4c3e7d3d0cb735a5931c14ed78d41dd91d0182869"
+      }
+    },
+    {
+      "id": "U03_tenfold",
+      "base": 3,
+      "mutation": "tenfold",
+      "expected_supported": false,
+      "case": {
+        "id": "U03_tenfold",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 0.125,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 0.125 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 125000.000 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 125000.000 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 0.125,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 0.125,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 0.125 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "16bfbe1782e3dc27ea3e7b095d0240d0a6bbbb2d5764a51a6d8c87a5a5dbbd31"
+      }
+    },
+    {
+      "id": "U03_period",
+      "base": 3,
+      "mutation": "period",
+      "expected_supported": false,
+      "case": {
+        "id": "U03_period",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 0.125,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 0.125 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2023 全年已经实现营业利润 12500.000 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2023 全年已经实现营业利润 12500.000 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 0.125,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 0.125,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 0.125 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "3998d6cdf13dbc3868657aae66dbe1a7dd5b9dcd8e094eb2b0d694b6d5a4cb9f"
+      }
+    },
+    {
+      "id": "U03_entity",
+      "base": 3,
+      "mutation": "entity",
+      "expected_supported": false,
+      "case": {
+        "id": "U03_entity",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 0.125,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 0.125 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构乙公司 FY2024 全年已经实现营业利润 12500.000 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构乙公司 FY2024 全年已经实现营业利润 12500.000 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 0.125,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 0.125,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 0.125 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "4c01dd071aa714fdfcd6f2dcfeba12e92bcc6f5716b7bdaf80b4203c6c1353ec"
+      }
+    },
+    {
+      "id": "U03_forecast_as_fact",
+      "base": 3,
+      "mutation": "forecast_as_fact",
+      "expected_supported": false,
+      "case": {
+        "id": "U03_forecast_as_fact",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 0.125,
+          "unit": "USD billion",
+          "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 0.125 USD billion；这是指引，没有实际结果。",
+          "status": "forecast",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2025 全年已经实现营业利润 12500.000 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2025 全年已经实现营业利润 12500.000 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 0.125,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 0.125,
+            "unit": "USD billion",
+            "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 0.125 USD billion；这是指引，没有实际结果。",
+            "status": "forecast",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "97fb7ced5a045a3ba97df5575396efcc4d8deba074801388a15d794affd38322"
+      }
+    },
+    {
+      "id": "U04_equivalent",
+      "base": 4,
+      "mutation": "equivalent",
+      "expected_supported": true,
+      "case": {
+        "id": "U04_equivalent",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 52103.0,
+          "unit": "USD million",
+          "text": "虚构甲公司 FY2024 全年营业利润为 52103 USD million。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 521.03 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 521.03 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 52103.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 52103.0,
+            "unit": "USD million",
+            "text": "虚构甲公司 FY2024 全年营业利润为 52103 USD million。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "fe68e63980ca8ca0089864ee1d33373dc91aca2b60a721508808e1675428ae40"
+      }
+    },
+    {
+      "id": "U04_tenfold",
+      "base": 4,
+      "mutation": "tenfold",
+      "expected_supported": false,
+      "case": {
+        "id": "U04_tenfold",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 52103.0,
+          "unit": "USD million",
+          "text": "虚构甲公司 FY2024 全年营业利润为 52103 USD million。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 5210.30 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 5210.30 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 52103.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 52103.0,
+            "unit": "USD million",
+            "text": "虚构甲公司 FY2024 全年营业利润为 52103 USD million。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "d9b8415134a4198d0b8224514c654599f966344eb5d3db423ac55e55e23f7509"
+      }
+    },
+    {
+      "id": "U04_period",
+      "base": 4,
+      "mutation": "period",
+      "expected_supported": false,
+      "case": {
+        "id": "U04_period",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 52103.0,
+          "unit": "USD million",
+          "text": "虚构甲公司 FY2024 全年营业利润为 52103 USD million。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2023 全年已经实现营业利润 521.03 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2023 全年已经实现营业利润 521.03 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 52103.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 52103.0,
+            "unit": "USD million",
+            "text": "虚构甲公司 FY2024 全年营业利润为 52103 USD million。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "12f3fa7d248e51faf041aa9ad2024a5dac5c2119bd8c45d25be669e4e805ce1e"
+      }
+    },
+    {
+      "id": "U04_entity",
+      "base": 4,
+      "mutation": "entity",
+      "expected_supported": false,
+      "case": {
+        "id": "U04_entity",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 52103.0,
+          "unit": "USD million",
+          "text": "虚构甲公司 FY2024 全年营业利润为 52103 USD million。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构乙公司 FY2024 全年已经实现营业利润 521.03 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构乙公司 FY2024 全年已经实现营业利润 521.03 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 52103.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 52103.0,
+            "unit": "USD million",
+            "text": "虚构甲公司 FY2024 全年营业利润为 52103 USD million。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "ded1db813925f68c319da1c0fd0aa6c76e088dda86f62759d3078cfdd3fb7b4a"
+      }
+    },
+    {
+      "id": "U04_forecast_as_fact",
+      "base": 4,
+      "mutation": "forecast_as_fact",
+      "expected_supported": false,
+      "case": {
+        "id": "U04_forecast_as_fact",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 52103.0,
+          "unit": "USD million",
+          "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 52103 USD million；这是指引，没有实际结果。",
+          "status": "forecast",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2025 全年已经实现营业利润 521.03 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2025 全年已经实现营业利润 521.03 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 52103.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 52103.0,
+            "unit": "USD million",
+            "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 52103 USD million；这是指引，没有实际结果。",
+            "status": "forecast",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "ad00820fa4474e4635d9b55a2a7e24676559a56889727cbffdd4aef830e694ca"
+      }
+    },
+    {
+      "id": "U05_equivalent",
+      "base": 5,
+      "mutation": "equivalent",
+      "expected_supported": true,
+      "case": {
+        "id": "U05_equivalent",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 43.2,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 43.2 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 4320000.0 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 4320000.0 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 43.2,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 43.2,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 43.2 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "75f3270d93fae628c3d20acd67ab7eff26380fd6150ff6ea41611043a16f5e88"
+      }
+    },
+    {
+      "id": "U05_tenfold",
+      "base": 5,
+      "mutation": "tenfold",
+      "expected_supported": false,
+      "case": {
+        "id": "U05_tenfold",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 43.2,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 43.2 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 43200000.0 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 43200000.0 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 43.2,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 43.2,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 43.2 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "365048ab1baac35c1677a6ebacdd1c99c0f1d95ff09fcc8c2d2b62cf2ab648c6"
+      }
+    },
+    {
+      "id": "U05_period",
+      "base": 5,
+      "mutation": "period",
+      "expected_supported": false,
+      "case": {
+        "id": "U05_period",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 43.2,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 43.2 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2023 全年已经实现营业利润 4320000.0 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2023 全年已经实现营业利润 4320000.0 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 43.2,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 43.2,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 43.2 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "de9a0f48f14d990873d2c16436da38119067b4e152f84e8848a90331cdbb14a0"
+      }
+    },
+    {
+      "id": "U05_entity",
+      "base": 5,
+      "mutation": "entity",
+      "expected_supported": false,
+      "case": {
+        "id": "U05_entity",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 43.2,
+          "unit": "USD billion",
+          "text": "虚构甲公司 FY2024 全年营业利润为 43.2 USD billion。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构乙公司 FY2024 全年已经实现营业利润 4320000.0 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构乙公司 FY2024 全年已经实现营业利润 4320000.0 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 43.2,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 43.2,
+            "unit": "USD billion",
+            "text": "虚构甲公司 FY2024 全年营业利润为 43.2 USD billion。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "3c83878e5d911cb2a91c12e763b12f70884869e1c2763064465df8c3f92bd036"
+      }
+    },
+    {
+      "id": "U05_forecast_as_fact",
+      "base": 5,
+      "mutation": "forecast_as_fact",
+      "expected_supported": false,
+      "case": {
+        "id": "U05_forecast_as_fact",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 43.2,
+          "unit": "USD billion",
+          "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 43.2 USD billion；这是指引，没有实际结果。",
+          "status": "forecast",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2025 全年已经实现营业利润 4320000.0 万美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2025 全年已经实现营业利润 4320000.0 万美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 43.2,
+                  "unit": "USD billion"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 43.2,
+            "unit": "USD billion",
+            "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 43.2 USD billion；这是指引，没有实际结果。",
+            "status": "forecast",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "4deb7e4f767e1060ee7da0a767d87fb77bdbb0f3593d4539505fdc0eb3b31185"
+      }
+    },
+    {
+      "id": "U06_equivalent",
+      "base": 6,
+      "mutation": "equivalent",
+      "expected_supported": true,
+      "case": {
+        "id": "U06_equivalent",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 17729.0,
+          "unit": "USD million",
+          "text": "虚构甲公司 FY2024 全年营业利润为 17729 USD million。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 177.29 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 177.29 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 17729.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 17729.0,
+            "unit": "USD million",
+            "text": "虚构甲公司 FY2024 全年营业利润为 17729 USD million。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "1e648bf62bce3e2ef908bb77edb59bba4e7888cbbfe83c687699c379abf4d1ff"
+      }
+    },
+    {
+      "id": "U06_tenfold",
+      "base": 6,
+      "mutation": "tenfold",
+      "expected_supported": false,
+      "case": {
+        "id": "U06_tenfold",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 17729.0,
+          "unit": "USD million",
+          "text": "虚构甲公司 FY2024 全年营业利润为 17729 USD million。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2024 全年已经实现营业利润 1772.90 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2024 全年已经实现营业利润 1772.90 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 17729.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 17729.0,
+            "unit": "USD million",
+            "text": "虚构甲公司 FY2024 全年营业利润为 17729 USD million。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "be5f6aaeed4c182f5020946233983da703758e67c0c2e99041a88035927fa170"
+      }
+    },
+    {
+      "id": "U06_period",
+      "base": 6,
+      "mutation": "period",
+      "expected_supported": false,
+      "case": {
+        "id": "U06_period",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 17729.0,
+          "unit": "USD million",
+          "text": "虚构甲公司 FY2024 全年营业利润为 17729 USD million。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2023 全年已经实现营业利润 177.29 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2023 全年已经实现营业利润 177.29 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 17729.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 17729.0,
+            "unit": "USD million",
+            "text": "虚构甲公司 FY2024 全年营业利润为 17729 USD million。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "7d9aa615096092d532f35abec8bae7e24f020ba7dcdef2236ebf906fadffb5bb"
+      }
+    },
+    {
+      "id": "U06_entity",
+      "base": 6,
+      "mutation": "entity",
+      "expected_supported": false,
+      "case": {
+        "id": "U06_entity",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 17729.0,
+          "unit": "USD million",
+          "text": "虚构甲公司 FY2024 全年营业利润为 17729 USD million。",
+          "status": "observed",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构乙公司 FY2024 全年已经实现营业利润 177.29 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构乙公司 FY2024 全年已经实现营业利润 177.29 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 17729.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 17729.0,
+            "unit": "USD million",
+            "text": "虚构甲公司 FY2024 全年营业利润为 17729 USD million。",
+            "status": "observed",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "2b109646b922c8d02318ed0b046746046b3e576b276225a94a6db213df112158"
+      }
+    },
+    {
+      "id": "U06_forecast_as_fact",
+      "base": 6,
+      "mutation": "forecast_as_fact",
+      "expected_supported": false,
+      "case": {
+        "id": "U06_forecast_as_fact",
+        "question": "根据给定材料陈述该公司的营业利润。",
+        "as_of": "2025-06-01",
+        "required": [
+          "S1"
+        ],
+        "counter": [],
+        "limitations": [],
+        "expected_answerability": "answerable"
+      },
+      "cards": [
+        {
+          "id": "S1",
+          "source_id": "SYNTHETIC",
+          "entity": "虚构甲公司",
+          "published_at": "2025-02-01",
+          "value": 17729.0,
+          "unit": "USD million",
+          "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 17729 USD million；这是指引，没有实际结果。",
+          "status": "forecast",
+          "role": "context"
+        }
+      ],
+      "record": {
+        "answer": {
+          "answerability": "answerable",
+          "summary": "虚构甲公司 FY2025 全年已经实现营业利润 177.29 亿美元。",
+          "claims": [
+            {
+              "id": "C1",
+              "text": "虚构甲公司 FY2025 全年已经实现营业利润 177.29 亿美元。",
+              "kind": "fact",
+              "role": "context",
+              "evidence_ids": [
+                "S1"
+              ],
+              "numbers": [
+                {
+                  "source_id": "S1",
+                  "value": 17729.0,
+                  "unit": "USD million"
+                }
+              ]
+            }
+          ],
+          "calculations": [],
+          "limitations": [],
+          "follow_up": [
+            {
+              "action": "查下一份年报同口径营业利润",
+              "reason": "检验利润变化的持续性",
+              "evidence_ids": [
+                "S1"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "S1",
+            "source_id": "SYNTHETIC",
+            "entity": "虚构甲公司",
+            "published_at": "2025-02-01",
+            "value": 17729.0,
+            "unit": "USD million",
+            "text": "管理层预计虚构甲公司 FY2025 全年营业利润为 17729 USD million；这是指引，没有实际结果。",
+            "status": "forecast",
+            "role": "context"
+          }
+        ],
+        "excluded_ids": [],
+        "traces": [],
+        "answer_sha256": "3b29a67751161ec6c7fe61450956364b141f55dd810ec8590bad563f034f5d3d"
+      }
+    }
+  ],
+  "primary_decision": "Supported only when claim verdict supported AND kind/scope/numbers checks true. Deterministic money equivalence does not override semantic failures."
+}

@@ -1,0 +1,143 @@
+{
+  "id": "U05_tenfold",
+  "base": 5,
+  "mutation": "tenfold",
+  "expected_supported": false,
+  "method": "legacy",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文称FY2024全年已实现营业利润43200000.0万美元，S1中43.2 USD billion=43200 million USD=43200000.0万美元，数值口径一致且来源支持已实现事实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": true,
+          "quote": "虚构甲公司 FY2024 全年已经实现营业利润 43200000.0 万美元。"
+        }
+      ],
+      "limitations": [],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选准确依据S1给出虚构甲公司FY2024营业利润且单位换算一致"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "6ac8cb943d9d2f23d668446baec6dc8ee35361f8aab504c93d824f1644b7840f",
+      "latency_seconds": 11.047,
+      "usage": {
+        "prompt_tokens": 769,
+        "completion_tokens": 180,
+        "total_tokens": 949,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "a9a42c3111aa25ae263a2217278d522ce877e720c6f6e41e3d9d823a224774c1"
+    },
+    "input_sha256": "6cd1ccd572a442e7e1ac5d5134c90ae0f74adb526bb9634ad57d11d1f9a0d8de",
+    "answer_sha256": "365048ab1baac35c1677a6ebacdd1c99c0f1d95ff09fcc8c2d2b62cf2ab648c6",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "365048ab1baac35c1677a6ebacdd1c99c0f1d95ff09fcc8c2d2b62cf2ab648c6",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": true,
+  "decision_correct": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04302",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "df33d6ba568a6a5cc56b4882b4d361d73ddfe5bbad712abc28083066818ff358",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "96104b96966f92cacb75098636df6ecdab11bc10599773ed1419292117d9783c",
+  "started_utc": "2026-09-09T17:34:52.385934+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot calculate because specific COGS and revenue figures are not provided, but evidence plainly includes those figures; candidate gives no substantive numeric answer and refuses.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Nike, correctly identified implicitly."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY2016-FY2018 as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate describes answer in percents as requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer given; claims data missing though evidence provides Revenues and Cost of sales for all three years."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate's claim of missing data contradicted by evidence table with exact revenues and COGS."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9d773ef456fa577e983ae91f833979c64f2d160085c7fb016207a086d407242c",
+    "latency_seconds": 3.192,
+    "usage": {
+      "prompt_tokens": 1552,
+      "completion_tokens": 219,
+      "total_tokens": 1771,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4c78e676702e2f1fe89dd413cf41e09a4edc6f099e7fe1424e30bcdbae9e0d3a"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03882",
+  "company": "Amcor",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "879cc6aa6fc003f36fab071183b1fd3fa7346b91cc6e16b760705f1e2b1ef8a7",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "5f76e71b15d3e8a946cfc350800fb9e7df10d33d0ca062634d290fdd543081d4",
+  "started_utc": "2026-09-09T17:34:43.020835+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate claims balance sheet details are not provided and refuses to answer, but evidence includes Amcor FY2020 consolidated balance sheet showing Trade receivables, net of $1,615.9m (≈$1616m). The requested data is available, so the refusal is unsupported and incorrect.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Amcor plc; candidate references Amcor."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period is FY2020 (June 30, 2020); candidate references fiscal year 2020."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is USD millions; candidate references millions implicitly and evidence is in millions."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gives no numeric answer and falsely states balance sheet absent; correct answer is $1616m per evidence Trade receivables, net 1,615.9."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence directly contains the balance sheet line item; candidate's claim of missing data is contradicted by evidence."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cd0d3b39a7dfaf555f98054ff549c6b6a1bb5e62a1d2bafc3984be4b249fac16",
+    "latency_seconds": 3.879,
+    "usage": {
+      "prompt_tokens": 2189,
+      "completion_tokens": 281,
+      "total_tokens": 2470,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8b0af69effcb55b92adfdcc0c2731ac6b82222e021c3fdb1c6907861a0b40cb2"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

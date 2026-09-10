@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_02419",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b1ee947dc5abd20aceb79f732b6ce08c7e9c6fc9c7a02601f9a5ca53f5b66f38",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "a8ee6ba05c2ff2acb12b5d021de814cdd6394e2233634c088cef52488727f5c7",
+  "started_utc": "2026-09-09T17:51:00.023022+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.7,
+    "reason": "Candidate substantively answers yes (spinning off a large business segment) as of Q2 2023, consistent with reference and evidence showing Upjohn separation costs incurred through Q2 2023. Candidate's cited example (rare disease gene therapy divestiture announced July 2023, closing Q3) is not a Q2'2023 in-progress segment spinoff per evidence, but core answer of yes matches.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Pfizer, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period Q2 2023 referenced; evidence shows Upjohn separation costs through Q2 2023."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Qualitative yes/no question, no unit required."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answers yes, Pfizer spinning off large segment (Upjohn per evidence/ref)."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate supports with July 2023 gene therapy divestiture (closing Q3), not the Q2'23 Upjohn spinoff; but answer itself is correct."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d732168c8abcae59110022997df3d43c9645daf704fa34f3049b2bf6c8a7b187",
+    "latency_seconds": 9.788,
+    "usage": {
+      "prompt_tokens": 1874,
+      "completion_tokens": 304,
+      "total_tokens": 2178,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3f547ddea71eaaa79202ebd11ef00ae9b7b92fea9877c59b0125a7a996db6cc9"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.7,
+  "reference_conflict": false
+}

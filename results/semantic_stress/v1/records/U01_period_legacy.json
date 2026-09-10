@@ -1,0 +1,160 @@
+{
+  "id": "U01_period",
+  "base": 1,
+  "mutation": "period",
+  "expected_supported": false,
+  "method": "legacy",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "contradicted",
+          "reason": "来源S1为FY2024营业利润1.55 USD billion，候选称FY2023已实现15.50亿美元，期间与数值单位均不符且预测写已实现",
+          "kind_valid": false,
+          "scope_valid": false,
+          "numbers_consistent": false
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "limitations": [],
+      "summary_supported": false,
+      "follow_up_useful": false,
+      "direct_answer": true,
+      "reason": "候选将S1的FY2024 1.55 USD billion误述为FY2023 15.50亿美元，主体虽同但期间、币种数值口径矛盾"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "6884fcd60edd74e6162e064419350110ecc69a0fe914e4c85a0b6d29a5049abe",
+      "latency_seconds": 7.137,
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 170,
+        "total_tokens": 935,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "15c15e0411b843d168b68df75e52475a85d3b90128f9f24375463f8beac06c2d"
+    },
+    "input_sha256": "d71e5bd1288dac750034d05a518a68eeb2eabb4cf1579f8db1b777fc571f4805",
+    "answer_sha256": "a3194f46fad885a2038930e4db5e13a58829c8fdcdd0961c9b480c9431dd2ac8",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "a3194f46fad885a2038930e4db5e13a58829c8fdcdd0961c9b480c9431dd2ac8",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 35.795,
+    "score": 35,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      },
+      {
+        "reason": "unsupported summary",
+        "cap": 65
+      },
+      {
+        "reason": "scope mismatch",
+        "cap": 60
+      },
+      {
+        "reason": "missing all required information",
+        "cap": 35
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": false,
+  "decision_correct": true
+}

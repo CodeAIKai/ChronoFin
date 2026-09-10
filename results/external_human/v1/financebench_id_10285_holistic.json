@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_10285",
+  "company": "Boeing",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "a9738259dbfc75f5a8893a94d7925995311220ade411afc4cd0a280e54752b2e",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "6cb928f1f0752e7fd118a45efac52ea1dea3cb979ea92ec95881717dffb4b904",
+  "started_utc": "2026-09-09T17:35:17.274824+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate pasted 10-K cover/boilerplate text and did not state the net PP&E value; evidence shows Property, plant and equipment, net = $12,645 million for FY2018, matching reference, but candidate gave no substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e3c51b0054a9d7313dc960261646a8dff5addb95c2296ab94584f9a0a0d0288a",
+    "latency_seconds": 3.108,
+    "usage": {
+      "prompt_tokens": 3713,
+      "completion_tokens": 74,
+      "total_tokens": 3787,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "73abc3fe2aa2b22f31ad3ee599b8d6457faa28f9f401d9ce51be75909fc923df"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

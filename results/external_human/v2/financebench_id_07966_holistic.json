@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_07966",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6c173e76a5b95f15bc69002dad5cd525cf1d5d77b18d05a959027ad79de8090d",
+  "reference_text_differs": true,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "3f9688d0591b7e2adfc51f35ba8245c224920a936901940c7f411087133e65db",
+  "started_utc": "2026-09-09T17:54:50.357861+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate computed capex/revenue per year from evidence (155/7017=2.21%, 131/7500=1.75%, 116/6489=1.79%), averaged to 1.92%, rounded to 1.9% as requested in percents. Reference 0.019 = 1.9%, matching. Evidence supports figures."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "215b9ab16ddeedd20eb0f5be7920ec2eb9faeee7ec147ec5ebe28cd295655fe9",
+    "latency_seconds": 9.654,
+    "usage": {
+      "prompt_tokens": 3830,
+      "completion_tokens": 98,
+      "total_tokens": 3928,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "927837571315ccdcdbc52e55a05b6a2ee196d81e48ab1fc800a3e1fea43b2415"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

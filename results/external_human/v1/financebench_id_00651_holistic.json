@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00651",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "602f5c146b75a40e08afd8d486c1a1d227c24b2cb7905e00989204e87b67d4d9",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ee64ffbedb5cdb11bfd374a3fe9f9ded00882969542dbf14dce1f958eb37490a",
+  "started_utc": "2026-09-09T17:59:11.592515+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly states J&J adjusted EPS growth is expected to decelerate (3.6% FY2022 to 3.5% FY2023), matching reference and evidence; answers 'not accelerate'."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2c39b02f0841570c03e270984ba51a8b5da521c19c28bdd802b9701d06a10d1b",
+    "latency_seconds": 8.284,
+    "usage": {
+      "prompt_tokens": 1401,
+      "completion_tokens": 65,
+      "total_tokens": 1466,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e70b4375492a5ac87bf3f6c57f2f96aa119dcc7849ae9b76d19b9e42f119da1e"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

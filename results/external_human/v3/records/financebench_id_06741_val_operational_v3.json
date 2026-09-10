@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_06741",
+  "uid": "financebench_id_06741_val",
+  "split": "new_response_validation",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "3eb1657f5d5f5c3efd136dab9b1f3d9055f2512842de03b3bc665c596d26cec2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "a6df3dfc477539ea225c8aede1d948f4dc0670347702ea83065cd8a0b1331676",
+  "started_utc": "2026-09-10T01:33:34.867348+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but I don't have the necessary information to calculate the 3-year average unadjusted EBITDA margin for Walmart for fiscal years 2018 to 2020.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it lacks necessary data (claims no FY2019/2020 and no D&A data, though evidence actually contains both) and declines to answer, asking for missing info instead."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a8ea40b99718e33f44dcec9edb3a80a0248beea8de774d8f661c5e4997ba45c3",
+    "latency_seconds": 8.328,
+    "usage": {
+      "prompt_tokens": 4040,
+      "completion_tokens": 128,
+      "total_tokens": 4168,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "49441d5d8effa852ab18a4188c3fb7cbb8be705549354562ced86d4b4acfd01d"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

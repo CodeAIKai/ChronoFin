@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_07507",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "be1418293956f29a82f2b623771f324a2cc4292276c57fd3b9cf9c6cc635e536",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ab495767a322393e36ed3c65cfabf014919d37a99aeffab0fd60b35dfa414b7d",
+  "started_utc": "2026-09-09T18:03:30.731825+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computes (1494-903)/903 = 65.2%, but evidence shows operating income 2016=1,493,602 and 2015=903,095 (in thousands). Exact YoY change = (1493602-903095)/903095 = 590507/903095 = 65.41% ≈ 65.4%, matching reference. Candidate's 65.2% is a calculation/rounding error.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Adobe unadjusted operating income identified correctly"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2015 to FY2016 used correctly"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer requested in percents, candidate gave percent"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says 65.2%, correct is 65.4% per evidence and reference"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence income figures support 65.4%, not candidate's 65.2%"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "daa90d0276092de78669c58eb222b398d28fc6cd524f412abdefdb1239408882",
+    "latency_seconds": 8.986,
+    "usage": {
+      "prompt_tokens": 1990,
+      "completion_tokens": 270,
+      "total_tokens": 2260,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "25a25d6f8530d8b7c20f6d68de3b1d7e693ca237beeaf846eb0f035e304632cc"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

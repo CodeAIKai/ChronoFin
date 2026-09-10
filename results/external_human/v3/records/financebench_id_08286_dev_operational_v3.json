@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_08286",
+  "uid": "financebench_id_08286_dev",
+  "split": "development",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "3e6d85eece5889beb03f2dcfedd314e2b64553ba932c56f5842cdf030f59aa80",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "eec03d20078b5198ee6424c7956a23058871a67d6c750e924c85591c307b6080",
+  "started_utc": "2026-09-10T01:34:01.128259+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Net income was $11.6 billion in 2019",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states net income $11.6 billion for 2019, equivalent to 11,600 million USD; evidence income statement shows Net income 2019 = $11,588 million (~$11.6B); reference 11588 matches. Question asks net income attributable to shareholders; statement shows net income (consolidated) and no separate noncontrolling interest indicated, so $11.6B aligns."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "807bc9991d0310d575c2a310d479ccfedac2c60bdc8e69e3824c81456a476f42",
+    "latency_seconds": 6.436,
+    "usage": {
+      "prompt_tokens": 1866,
+      "completion_tokens": 145,
+      "total_tokens": 2011,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0f0362450771cb94ccc564dc03b5a0f2d77a4105951f691e34192240e42b7850"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

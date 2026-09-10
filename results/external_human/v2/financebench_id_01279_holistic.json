@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_01279",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a03cb1cc98561e086a9e728999f9cae741e3d7f109a5a3fbd498f1429fc754f1",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "5815134b6eb96131b7f5635eae31af590926001da7df404cc35d456e464b96ea",
+  "started_utc": "2026-09-09T17:48:19.689349+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states it cannot answer due to missing AMD FY22 cash flow data, withholding the conclusion even though evidence supplies the figures (Operating: +3565, Investing: +1999, Financing: -3264)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ad2c27ff19edf0b266fb22a08d0805af729c27224d23e86147e001a4121d51c2",
+    "latency_seconds": 7.219,
+    "usage": {
+      "prompt_tokens": 2015,
+      "completion_tokens": 66,
+      "total_tokens": 2081,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "aeba8307f02e44e3423c7b47206659ede3ce7bf553cc9a2fc7328a1ae73e9cb7"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

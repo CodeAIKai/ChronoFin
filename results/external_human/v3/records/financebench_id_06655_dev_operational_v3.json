@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_06655",
+  "uid": "financebench_id_06655_dev",
+  "split": "development",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "f4eeb96a7e31ffc9186e4de0de5dffc0643a0c8cfb7a042cce743ec896f877c9",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "66c7ba599e8a97d6939383b9371067205f6ec320eaacdc0c241cbb5c6604fab2",
+  "started_utc": "2026-09-10T01:33:24.608634+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "Here is a summary of the key information in Amazon's 2017 10-K report:",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided a generic 10-K summary (financial highlights, business overview, risk factors) and never computed or stated DPO, nor used AP/COGS/inventory line items as required. Off-topic document dump, not a refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5b2b383e725c27fa3f6b951157ff58d3699bd738fbbf310a266657d162d80ec9",
+    "latency_seconds": 8.379,
+    "usage": {
+      "prompt_tokens": 3109,
+      "completion_tokens": 117,
+      "total_tokens": 3226,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "19bf40f084a1a5ea25271e838c0b5767c56273dc68f4199483a0dac75d120c2a"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

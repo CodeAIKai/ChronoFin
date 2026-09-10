@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00206",
+  "company": "JPMorgan",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "5e3d562d75b532af1d032ee72ab918c3a7fcac26104e5d5f260fda939a499db3",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "805c09033ce2a80f118c9b7c9f2d9cd526b2c969558cc47dd5559340f06d77f1",
+  "started_utc": "2026-09-09T17:42:15.969042+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate states gross margins are not relevant for financial services firm JPM and explains why, agreeing with reference; does not attempt to assess historical consistency since metric not relevant.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Identifies JPM as JPMorgan Chase, a financial services firm per evidence"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "No specific period required; question is about historical consistency generally"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No numeric unit; qualitative metric relevance addressed"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "States gross margin not relevant for JPM and explains why, matching reference"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence confirms JPM is financial holding company; candidate explanation consistent with reference"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fcee8325ee8b2f9f03fc06442ebcd81edb026f52bc853df7ede76de32326b30d",
+    "latency_seconds": 9.537,
+    "usage": {
+      "prompt_tokens": 2331,
+      "completion_tokens": 225,
+      "total_tokens": 2556,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "7876edbc48dfad6597151407abbbdf9e4db6984d2e565c846c67dd31f6eace94"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

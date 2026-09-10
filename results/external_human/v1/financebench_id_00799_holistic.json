@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00799",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "656f3c008a4e6b8fa59130d05c2f576ffb122c0f3fc77135a5ca83ac7962d421",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "5520ee046af9ed3a4345704b62bc4e0fcc706fd0569a166d00298c63f5ade028",
+  "started_utc": "2026-09-09T17:33:20.544941+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate ignored the quick ratio question and provided unrelated details about senior notes, failing to state improvement/decline or address relevance. Reference states quick ratio improved from 0.67 to 0.69."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e422c7fb283f16d210449618ded994836aa8e2ec5d8eea771d1ea9ef4ba30c97",
+    "latency_seconds": 1.858,
+    "usage": {
+      "prompt_tokens": 2080,
+      "completion_tokens": 63,
+      "total_tokens": 2143,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d2b8d7620128f5613e1a81a95e363c9ae195d85689e7869aa388fdc87fcd74e2"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

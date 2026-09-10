@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00080",
+  "company": "Paypal",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "64e75fb20a236628f9d330a3c2108d6c35a4f4875ae6e1db6be1eadb519599f4",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "356b71554774f3e6b09ccb804cabb48e6a0001883f74dfd1a9440226dbc5575c",
+  "started_utc": "2026-09-09T17:42:10.581495+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it is not possible to definitively answer whether PayPal has positive working capital for FY2022 from provided filing and only explains how to calculate, withholding the requested conclusion despite evidence showing current assets 57517m minus current liabilities 45101m = 12416m (~12.4B) positive.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity PayPal identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 (Dec 31 2022) referenced"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Working capital sign requested, no unit conflict"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Withholds answer, says cannot be determined, only explains calculation"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence provides balances to compute positive working capital but candidate claims not possible"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4651cbd67e1b26f97362f65ca4dcda7be1c35d3c4e439b8d94ff644df320d64c",
+    "latency_seconds": 11.24,
+    "usage": {
+      "prompt_tokens": 2050,
+      "completion_tokens": 241,
+      "total_tokens": 2291,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "872bcd6f469fc2e9718b9d060a293db0ab34a1aabe7a9c54fa2bfd102da3e42c"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

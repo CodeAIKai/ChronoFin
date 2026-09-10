@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00394",
+  "uid": "financebench_id_00394_val",
+  "split": "new_response_validation",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "e46b590488d476c1dfb51fca56b7ecc74864dce012ece65579da514318c2ffc5",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "5bb07041ee1ffd4c57fb1ffdbfd9f515b22e808bfd0dc0fe68df9aed216b39b9",
+  "started_utc": "2026-09-09T18:05:39.082990+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Among these segments, CIB had the highest net income in Q2 2022.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate first says CCB had highest net income ($3.1B) then contradicts itself saying CIB highest. Evidence shows CIB net income $3,725M (3.725B) > CCB $3,100M, so CIB is highest, matching reference. Candidate's initial claim and confused presentation are incorrect."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "04833e724e0318530821eac58d1d946e4ba24895a8d07a7098a84db96ddfde68",
+    "latency_seconds": 6.323,
+    "usage": {
+      "prompt_tokens": 3068,
+      "completion_tokens": 134,
+      "total_tokens": 3202,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6e22b3c7f2ae06b9306596f40d99229e233a1eaf2d0204e2d308b26146a9865e"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

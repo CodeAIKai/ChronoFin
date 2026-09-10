@@ -1,0 +1,299 @@
+{
+  "query": {
+    "question": "What were Tencent Holdings Limited FY2025 full-year revenues, profit attributable to equity holders, and the derived profit margin? Distinguish IFRS from non-IFRS and do not annualise interim figures.",
+    "as_of_date": "2026-04-10",
+    "entity": "Tencent Holdings Limited",
+    "requested_period": "FY2025",
+    "language": "zh-CN"
+  },
+  "answerability": "partial",
+  "executive_summary": "2025\n2024\n(RMB in millions)\nRevenues\n751,766\n660,257\nCost of revenues；2025\n2024\n(RMB in millions)\nRevenues\n751,766\n660,257\nCost of revenues；Tencent Holdings Limited FY2025 TencentHoldingsLimited.ifrs_profit.FY2025：截至 2026-04-10，在已注册证据中不可确定；Tencent Holdings Limited FY2025 CALC1: non_ifrs_profit_2025 / revenue_2025 * 100 = 34.5355%；Tencent Holdings Limited FY2025 TencentHoldingsLimited.ifrs_profit_margin.FY2025：截至 2026-04-10，在已注册证据中不可确定。",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "2025\n2024\n(RMB in millions)\nRevenues\n751,766\n660,257\nCost of revenues",
+      "claim_type": "FACT",
+      "entity": "Tencent Holdings Limited",
+      "period": "FY2025",
+      "unit": "RMB million",
+      "known_at": "2026-04-09",
+      "value": 751766.0,
+      "evidence_ids": [
+        "E1"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "TencentHoldingsLimited.revenue.FY2025"
+    },
+    {
+      "id": "C2",
+      "text": "2025\n2024\n(RMB in millions)\nRevenues\n751,766\n660,257\nCost of revenues",
+      "claim_type": "FACT",
+      "entity": "Tencent Holdings Limited",
+      "period": "FY2025",
+      "unit": "RMB million",
+      "known_at": "2026-04-09",
+      "value": 259626.0,
+      "evidence_ids": [
+        "E1"
+      ],
+      "calculation_id": "",
+      "confidence": 1.0,
+      "semantic_key": "TencentHoldingsLimited.non_ifrs_profit.FY2025"
+    },
+    {
+      "id": "C3",
+      "text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.ifrs_profit.FY2025：截至 2026-04-10，在已注册证据中不可确定。",
+      "claim_type": "UNKNOWN",
+      "entity": "Tencent Holdings Limited",
+      "period": "FY2025",
+      "unit": "RMB million",
+      "known_at": "2026-04-09",
+      "value": null,
+      "evidence_ids": [
+        "E1"
+      ],
+      "calculation_id": "",
+      "confidence": 0.0,
+      "semantic_key": "TencentHoldingsLimited.ifrs_profit.FY2025"
+    },
+    {
+      "id": "C4",
+      "text": "Tencent Holdings Limited FY2025 CALC1: non_ifrs_profit_2025 / revenue_2025 * 100 = 34.5355%。",
+      "claim_type": "DERIVED",
+      "entity": "Tencent Holdings Limited",
+      "period": "FY2025",
+      "unit": "%",
+      "known_at": "2026-04-09",
+      "value": 34.5355,
+      "evidence_ids": [
+        "E1"
+      ],
+      "calculation_id": "CALC1",
+      "confidence": 1.0,
+      "semantic_key": "TencentHoldingsLimited.non_ifrs_profit_margin.FY2025"
+    },
+    {
+      "id": "C5",
+      "text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.ifrs_profit_margin.FY2025：截至 2026-04-10，在已注册证据中不可确定。",
+      "claim_type": "UNKNOWN",
+      "entity": "Tencent Holdings Limited",
+      "period": "FY2025",
+      "unit": "%",
+      "known_at": "2026-04-09",
+      "value": null,
+      "evidence_ids": [
+        "E1"
+      ],
+      "calculation_id": "",
+      "confidence": 0.0,
+      "semantic_key": "TencentHoldingsLimited.ifrs_profit_margin.FY2025"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "chunk_id": "tencent_2025_annual:p8:c37",
+      "document_id": "tencent_2025_annual",
+      "quote": "2025\n2024\n(RMB in millions)\nRevenues\n751,766\n660,257\nCost of revenues",
+      "page": 8,
+      "published_at": "2026-04-09",
+      "source_url": "https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf"
+    }
+  ],
+  "calculations": [
+    {
+      "id": "CALC1",
+      "expression": "non_ifrs_profit_2025 / revenue_2025 * 100",
+      "result": 34.5355,
+      "unit": "%",
+      "operands": [
+        {
+          "name": "revenue_2025",
+          "value": 751766.0,
+          "unit": "RMB million",
+          "evidence_ids": [
+            "E1"
+          ],
+          "calculation_ids": []
+        },
+        {
+          "name": "non_ifrs_profit_2025",
+          "value": 259626.0,
+          "unit": "RMB million",
+          "evidence_ids": [
+            "E1"
+          ],
+          "calculation_ids": []
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "可见结论仅来自已绑定证据与确定性计算；不构成投资建议。"
+  ],
+  "excluded_documents": [],
+  "provenance": {
+    "schema_warnings": [],
+    "calculation_corrections": [],
+    "claim_text_corrections": [
+      {
+        "claim_id": "C1",
+        "calculation_id": "",
+        "original_text": "Tencent Holdings Limited FY2025 full-year revenues were RMB 751,766 million",
+        "corrected_text": "2025\n2024\n(RMB in millions)\nRevenues\n751,766\n660,257\nCost of revenues",
+        "projection_kind": "exact_evidence_projection"
+      },
+      {
+        "claim_id": "C2",
+        "calculation_id": "",
+        "original_text": "Tencent Holdings Limited FY2025 non-IFRS profit attributable to equity holders was RMB 259,626 million",
+        "corrected_text": "2025\n2024\n(RMB in millions)\nRevenues\n751,766\n660,257\nCost of revenues",
+        "projection_kind": "exact_evidence_projection"
+      },
+      {
+        "claim_id": "C3",
+        "calculation_id": "",
+        "original_text": "Tencent Holdings Limited FY2025 IFRS profit attributable to equity holders is not disclosed in provided evidence",
+        "corrected_text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.ifrs_profit.FY2025：截至 2026-04-10，在已注册证据中不可确定。",
+        "projection_kind": "epistemic_unknown_projection"
+      },
+      {
+        "claim_id": "C4",
+        "calculation_id": "CALC1",
+        "original_text": "Tencent Holdings Limited FY2025 non-IFRS profit margin derived as non-IFRS profit attributable divided by revenues equals 34.5355%",
+        "corrected_text": "Tencent Holdings Limited FY2025 CALC1: non_ifrs_profit_2025 / revenue_2025 * 100 = 34.5355%。",
+        "projection_kind": "executed_calculation_projection"
+      },
+      {
+        "claim_id": "C5",
+        "calculation_id": "",
+        "original_text": "Tencent Holdings Limited FY2025 IFRS profit margin is unknown due to missing IFRS profit attributable",
+        "corrected_text": "Tencent Holdings Limited FY2025 TencentHoldingsLimited.ifrs_profit_margin.FY2025：截至 2026-04-10，在已注册证据中不可确定。",
+        "projection_kind": "epistemic_unknown_projection"
+      }
+    ],
+    "citation_normalizations": [
+      {
+        "evidence_id": "E1",
+        "original_quote": "Revenues\n751,766\n660,257\nCost of revenues\n(329,173)\n(311,011)\nNon-IFRS profit attributable to equity holders of the Company\n259,626\n222,703",
+        "expanded_quote": "2025\n2024\n(RMB in millions)\nRevenues\n751,766\n660,257\nCost of revenues"
+      }
+    ],
+    "executive_summary_mode": "deterministic_claim_projection_v1",
+    "model_executive_summary_sha256": "08cd031db9d3f8ccbe817f210a68c836c1069f10ab7481c8b425ebb89d05ca1f",
+    "caveat_mode": "deterministic_policy_projection_v1",
+    "model_caveats_sha256": "ba545d85d6bda00b149c2a432ce0962de8e5da219d2be53aebc581ea790f72ec",
+    "prompt_version": "chronofin-answer-v1.3",
+    "temporal_filter": true,
+    "eligible_document_ids": [
+      "tencent_2024_annual",
+      "tencent_2025_annual",
+      "tencent_2025_interim"
+    ],
+    "retrieved_chunk_ids": [
+      "tencent_2025_annual:p8:c37",
+      "tencent_2025_interim:p17:c42",
+      "tencent_2025_interim:p17:c44",
+      "tencent_2025_annual:p20:c79",
+      "tencent_2025_annual:p20:c77",
+      "tencent_2025_interim:p13:c36",
+      "tencent_2025_interim:p9:c18",
+      "tencent_2024_annual:p20:c76",
+      "tencent_2025_interim:p5:c4",
+      "tencent_2025_annual:p16:c70"
+    ],
+    "evidence_slot_hits": {
+      "revenue": "tencent_2025_annual:p8:c37",
+      "profit_attributable": "tencent_2025_annual:p8:c37",
+      "non_ifrs": "tencent_2025_annual:p8:c37",
+      "full_year": "tencent_2025_annual:p8:c37"
+    },
+    "uncovered_evidence_slots": [
+      "profit_margin"
+    ],
+    "retrieval_scores": [
+      {
+        "chunk_id": "tencent_2025_annual:p8:c37",
+        "score": 28.48089,
+        "lexical_score": 25.04339,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "tencent_2025_interim:p17:c42",
+        "score": 33.292838,
+        "lexical_score": 31.417838,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2025_interim:p17:c44",
+        "score": 33.10095,
+        "lexical_score": 31.22595,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2025_annual:p20:c79",
+        "score": 31.249246,
+        "lexical_score": 27.811746,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "tencent_2025_annual:p20:c77",
+        "score": 30.667125,
+        "lexical_score": 27.229625,
+        "metadata_score": 2.75
+      },
+      {
+        "chunk_id": "tencent_2025_interim:p13:c36",
+        "score": 30.619913,
+        "lexical_score": 28.744913,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2025_interim:p9:c18",
+        "score": 30.453738,
+        "lexical_score": 28.578738,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2024_annual:p20:c76",
+        "score": 28.751344,
+        "lexical_score": 26.876344,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2025_interim:p5:c4",
+        "score": 28.506343,
+        "lexical_score": 26.631343,
+        "metadata_score": 1.5
+      },
+      {
+        "chunk_id": "tencent_2025_annual:p16:c70",
+        "score": 28.163151,
+        "lexical_score": 24.725651,
+        "metadata_score": 2.75
+      }
+    ],
+    "llm": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "f0a74505978d6d1e810bc5496dbfe251b1004d637c3e7d5e3a71951c6bc075c6",
+      "latency_seconds": 51.749,
+      "usage": {
+        "prompt_tokens": 4999,
+        "completion_tokens": 4979,
+        "total_tokens": 9978,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3880
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "high",
+      "request_id_sha256": "4fd5fd669aabd38099ace70ea195b961010eb84f92b0972818c1b6bf87e9d0d7"
+    },
+    "model_called": true
+  }
+}

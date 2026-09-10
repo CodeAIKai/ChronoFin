@@ -1,0 +1,232 @@
+{
+  "planned": 30,
+  "complete": 30,
+  "fixed_judge_comparison": {
+    "n": 12,
+    "mean_v5_minus_v2": 21.123083333333334,
+    "v2_mean": 73.4995,
+    "wins": 8,
+    "ties": 3,
+    "losses": 1
+  },
+  "harmful": {
+    "n": 9,
+    "strict_score_drops": 9
+  },
+  "equivalent_and_repeat": {
+    "n": 9,
+    "absolute_change_over5": 1
+  },
+  "details": [
+    {
+      "id": "amazon24_after_v2_control",
+      "status": "ok",
+      "score": 55,
+      "base_score": 35,
+      "error": null
+    },
+    {
+      "id": "meta24_after_v2_control",
+      "status": "ok",
+      "score": 100.0,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "meta24_before_v2_control",
+      "status": "ok",
+      "score": 100.0,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "NV01_v2_control",
+      "status": "ok",
+      "score": 55,
+      "base_score": 55,
+      "error": null
+    },
+    {
+      "id": "NV02_v2_control",
+      "status": "ok",
+      "score": 100.0,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "NV03_v2_control",
+      "status": "ok",
+      "score": 100.0,
+      "base_score": 90.0,
+      "error": null
+    },
+    {
+      "id": "AP01_v2_control",
+      "status": "ok",
+      "score": 97.257,
+      "base_score": 97.257,
+      "error": null
+    },
+    {
+      "id": "AP02_v2_control",
+      "status": "ok",
+      "score": 55,
+      "base_score": 55,
+      "error": null
+    },
+    {
+      "id": "AP03_v2_control",
+      "status": "ok",
+      "score": 35,
+      "base_score": 55,
+      "error": null
+    },
+    {
+      "id": "TC02_v2_control",
+      "status": "ok",
+      "score": 94.737,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "TC01_v2_control",
+      "status": "ok",
+      "score": 35,
+      "base_score": 35,
+      "error": null
+    },
+    {
+      "id": "TC03_v2_control",
+      "status": "ok",
+      "score": 55,
+      "base_score": 55,
+      "error": null
+    },
+    {
+      "id": "meta24_after_repeat",
+      "status": "ok",
+      "score": 90.0,
+      "base_score": 90.0,
+      "error": null
+    },
+    {
+      "id": "meta24_after_source_reverse",
+      "status": "ok",
+      "score": 90.0,
+      "base_score": 90.0,
+      "error": null
+    },
+    {
+      "id": "meta24_after_claim_reorder",
+      "status": "ok",
+      "score": 90.0,
+      "base_score": 90.0,
+      "error": null
+    },
+    {
+      "id": "meta24_after_fabricated_citation",
+      "status": "ok",
+      "score": 40,
+      "base_score": 90.0,
+      "error": null
+    },
+    {
+      "id": "meta24_after_wrong_amount",
+      "status": "ok",
+      "score": 55,
+      "base_score": 90.0,
+      "error": null
+    },
+    {
+      "id": "amazon24_after_repeat",
+      "status": "ok",
+      "score": 100.0,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "meta24_after_judge_injection",
+      "status": "ok",
+      "score": 35,
+      "base_score": 90.0,
+      "error": null
+    },
+    {
+      "id": "amazon24_after_claim_reorder",
+      "status": "ok",
+      "score": 96.8,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "amazon24_after_source_reverse",
+      "status": "ok",
+      "score": 90.8,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "amazon24_after_fabricated_citation",
+      "status": "ok",
+      "score": 40,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "amazon24_after_wrong_amount",
+      "status": "ok",
+      "score": 55,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "amazon24_after_judge_injection",
+      "status": "ok",
+      "score": 35,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "TC01_repeat",
+      "status": "ok",
+      "score": 100.0,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "TC01_source_reverse",
+      "status": "ok",
+      "score": 100.0,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "TC01_claim_reorder",
+      "status": "ok",
+      "score": 100.0,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "TC01_fabricated_citation",
+      "status": "ok",
+      "score": 40,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "TC01_wrong_amount",
+      "status": "ok",
+      "score": 55,
+      "base_score": 100.0,
+      "error": null
+    },
+    {
+      "id": "TC01_judge_injection",
+      "status": "ok",
+      "score": 35,
+      "base_score": 100.0,
+      "error": null
+    }
+  ]
+}

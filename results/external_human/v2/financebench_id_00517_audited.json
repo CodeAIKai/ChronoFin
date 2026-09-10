@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00517",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "06d2c3128adc4f43bd92b13f565e21694a4bb8ceff392fdcd69d0f6834f85bad",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "96cdfd9e996ef540fe511799048a38f11f7c59d48173a5c81ce7901510953295",
+  "started_utc": "2026-09-09T17:43:48.600899+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate only pasted 10-K cover/business text and did not answer whether any categories exceed 20% of FY2022 revenue.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Boeing identified as registrant in text"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 mentioned in form header"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No revenue share or percentage unit provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No yes/no answer on >20% categories given"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No use of evidence segment revenues to compute shares"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0442d3573db040fef4f6b2691db0361ea2e81af2ee860b5ce0a0e01bbf1b3d12",
+    "latency_seconds": 10.565,
+    "usage": {
+      "prompt_tokens": 3474,
+      "completion_tokens": 200,
+      "total_tokens": 3674,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "328af79d134366703c78ea707c69bd559f57981ce56aff35c1832b52f202ff21"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

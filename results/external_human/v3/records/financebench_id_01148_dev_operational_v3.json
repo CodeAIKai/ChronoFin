@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01148",
+  "uid": "financebench_id_01148_dev",
+  "split": "development",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "969bfa712618e318e0aa2dd01a9a51cf788f0f3da2104a6980c2b60fc372adcf",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "053dfef0994cc4717a63ff9148ba0dbcc38290ca3d7ea03a831acbf245165012",
+  "started_utc": "2026-09-09T18:09:38.125126+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Amcor PLC primarily operates in the packaging industry.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states Amcor operates in packaging industry, matching reference 'global leader in packaging production' and evidence 10K page 4 'global leader in developing and producing responsible packaging'."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "31321f4a6cce6044659dc415184edce7f0562a56e8082b6719e43e91a4d61390",
+    "latency_seconds": 5.693,
+    "usage": {
+      "prompt_tokens": 1223,
+      "completion_tokens": 94,
+      "total_tokens": 1317,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e068e49ca80aa92455f07e1fe40fd1a49798af5c0aaa63490b9f341c51ad9b09"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

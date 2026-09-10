@@ -1,0 +1,45 @@
+[
+  {
+    "id": "nvidia25",
+    "title": "NVIDIA Q4 and FY2025 CFO Commentary",
+    "entity": "NVIDIA",
+    "published_at": "2025-02-26",
+    "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf",
+    "official_landing": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2025/default.aspx",
+    "language": "en",
+    "sha256": "842a50961f0466d50584f8017200ab72c5a86c7438f0560cefb0506442149ce7",
+    "bytes": 82336,
+    "fetched_utc": "2026-09-09T17:59:51.140150+00:00",
+    "cache_path": "data/cache/native_expansion/nvidia25.pdf",
+    "license": "Original public financial disclosure; copyright retained by issuer, raw document excluded from distribution."
+  },
+  {
+    "id": "tencent25q2",
+    "title": "腾讯二零二五年第二季度业绩",
+    "entity": "腾讯",
+    "published_at": "2025-08-13",
+    "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf",
+    "official_landing": "https://www.tencent.com/zh-cn/investors/results/",
+    "language": "zh",
+    "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+    "bytes": 649814,
+    "fetched_utc": "2026-09-09T17:59:51.594874+00:00",
+    "cache_path": "data/cache/native_expansion/tencent25q2.pdf",
+    "license": "Original public financial disclosure; copyright retained by issuer, raw document excluded from distribution.",
+    "download_method": "Chromium normal navigation then authenticated browser-context fetch of same public document."
+  },
+  {
+    "id": "apple25",
+    "title": "Apple FY2025 Q4 consolidated financial statements",
+    "entity": "Apple",
+    "published_at": "2025-10-30",
+    "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+    "official_landing": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/",
+    "language": "en",
+    "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+    "bytes": 4919649,
+    "fetched_utc": "2026-09-09T17:59:53.920965+00:00",
+    "cache_path": "data/cache/native_expansion/apple25.pdf",
+    "license": "Original public financial disclosure; copyright retained by issuer, raw document excluded from distribution."
+  }
+]

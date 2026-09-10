@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00222",
+  "uid": "financebench_id_00222_dev",
+  "split": "development",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "be276834767d6067111cb04b472895454b17e688327d794b66fa859f53f18f80",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "220980b49e3c483314a5563e69737ed894a8c25e98fe02b1e6f3aca804dd63a8",
+  "started_utc": "2026-09-09T18:05:09.561078+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "AMD appears to have a reasonably healthy liquidity profile, as it has more liquid assets than immediate liabilities.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate computes quick ratio = (4835+1020+4126)/6369 ≈ 1.57 for FY22 and concludes healthy liquidity, matching reference's 1.57 and yes answer. Evidence balance sheet supports figures in millions."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5f99e0cab6e325c1c435ac53c96b5da7a664f3fba3bdaf84061d4670799c9e71",
+    "latency_seconds": 5.75,
+    "usage": {
+      "prompt_tokens": 2054,
+      "completion_tokens": 116,
+      "total_tokens": 2170,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3133204e78091ff564d64020eaa74c1f35a9d60a48f967870612b8ade1d7772c"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,468 @@
+{
+  "status": "ok",
+  "mode": "live_pdf",
+  "stage": "complete",
+  "record": {
+    "version": "native-generation-5.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "截至 2025-01-28，根据提供原件总结 Meta FY2024 经营表现。",
+      "as_of": "2025-01-28"
+    },
+    "evidence": [],
+    "excluded_ids": [
+      "P6CCE34AA1B1",
+      "P6CCE34AA2B1",
+      "P6CCE34AA3B1",
+      "P6CCE34AA4B1",
+      "P6CCE34AA4B2",
+      "P6CCE34AA5B1",
+      "P6CCE34AA6B1",
+      "P6CCE34AA7B1",
+      "P6CCE34AA7B2",
+      "P6CCE34AA8B1",
+      "P6CCE34AA9B1",
+      "P6CCE34AA10B1"
+    ],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "截至 2025-01-28，所提供资料为空，且来源文件 Meta Q4 and FY2024 earnings release 的披露日为 2025-01-29，因日期隔离规则被排除，无法用于回答截至 2025-01-28 的 Meta FY2024 经营表现总结。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "所提供的资料集中没有任何证据卡片，无法总结 Meta FY2024 经营表现",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未包含任何 Meta FY2024 相关事实卡片",
+        "来源文件披露日晚于 as_of 边界，按规定不可引用"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对披露日为 2025-01-28 或之前的 Meta FY2024 官方报告或转述卡片",
+          "reason": "仅在此日期边界内的资料可支持总结，否则结论无法成立",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "截至 2025-01-28，所提供资料集为空，无任何证据卡片可用于总结 Meta FY2024 经营表现。来源文件 Meta Q4 and FY2024 earnings release 的披露日为 2025-01-29，因晚于 as_of 日期边界被隔离排除，不可引用。故在现有合规资料下无法回答该问题，需待边界内文件补齐。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "所提供的资料集中没有任何证据卡片，无法总结 Meta FY2024 经营表现",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未包含任何 Meta FY2024 相关事实卡片",
+        "来源文件披露日晚于 as_of 边界，按规定不可引用"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对披露日为 2025-01-28 或之前的 Meta FY2024 官方报告或转述卡片",
+          "reason": "仅在此日期边界内的资料可支持总结，否则结论无法成立",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "c7e7f8c5a73dd9a9a401cd26e388071a236395a0b127286c5a271dbb0d9ea5ce",
+        "latency_seconds": 3.674,
+        "usage": {
+          "prompt_tokens": 946,
+          "completion_tokens": 236,
+          "total_tokens": 1182,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "662d285fbbea2734862451f3f7ad7aa3255a3a9b7506025ae723dc7ef4db0a36"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "00bb4b5136e4c7554dec0521f4f8fba01bf90b49b42c4e5219222501e1180e8a",
+        "latency_seconds": 2.665,
+        "usage": {
+          "prompt_tokens": 1240,
+          "completion_tokens": 253,
+          "total_tokens": 1493,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "f5aef770e744fd2808bcadde459fae949a2b7b9d91cb9b6477d886061069b71c"
+      }
+    ],
+    "input_sha256": "1de20b1a554197ebf87b5dcbf26bfa815083937822f63717989c1e0bee19e264",
+    "numeric_registry": {},
+    "compiled_calculations": [],
+    "operation_errors": [],
+    "revision_raw": {
+      "answerability": "unanswerable",
+      "summary": "截至 2025-01-28，所提供资料集为空，无任何证据卡片可用于总结 Meta FY2024 经营表现。来源文件 Meta Q4 and FY2024 earnings release 的披露日为 2025-01-29，因晚于 as_of 日期边界被隔离排除，不可引用。故在现有合规资料下无法回答该问题，需待边界内文件补齐。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "所提供的资料集中没有任何证据卡片，无法总结 Meta FY2024 经营表现",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未包含任何 Meta FY2024 相关事实卡片",
+        "来源文件披露日晚于 as_of 边界，按规定不可引用"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对披露日为 2025-01-28 或之前的 Meta FY2024 官方报告或转述卡片",
+          "reason": "仅在此日期边界内的资料可支持总结，否则结论无法成立",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "pre_repair_proof_issues": [],
+    "answer_sha256": "f74e764c3d401c8e380c97da4f20f073b7e5fb76aac53b68a79e1defd9fed3d1",
+    "final_proof_issues": [],
+    "source_document": {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 12,
+      "selected_ids": [],
+      "selected_pages": [],
+      "selection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "pipeline": "native_pdf_v5",
+    "extraction_raw": null,
+    "extraction_traces": [],
+    "extraction_audit": {
+      "facts_proposed": 0,
+      "facts_accepted": 0,
+      "rejected": [],
+      "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "quote_verification": "Program-copied original line range; whitespace-normalized exact match checked again",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "judge_attempts": [
+    {
+      "version": "native-source-audit-5.0",
+      "raw_judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选说明资料集无证据卡片无法总结，与空sources及unanswerable一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "LIMIT1"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题：原件未公开且资料为空，合理拒答不可利用未来披露"
+      },
+      "span_binding": [
+        {
+          "group": "limitations",
+          "id": 0,
+          "candidate_span_id": "LIMIT1",
+          "bound": true
+        }
+      ],
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选说明资料集无证据卡片无法总结，与空sources及unanswerable一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "LIMIT1",
+            "quote": "来源文件披露日晚于 as_of 边界，按规定不可引用"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题：原件未公开且资料为空，合理拒答不可利用未来披露"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "1ba59384913b305e6af2101557deac8f8ddd2b00254965be36a71c8960bbdaf1",
+        "latency_seconds": 2.127,
+        "usage": {
+          "prompt_tokens": 1430,
+          "completion_tokens": 138,
+          "total_tokens": 1568,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "ed0a859620fd59590a5ffb2141c6ea92a42009b01913e8fff9f97665da05b5a3"
+      },
+      "input_sha256": "8d2047a483f8992c5d4f7d8382f9ce916113804bad0f4cc7d2973e5b321bdf47",
+      "answer_sha256": "f74e764c3d401c8e380c97da4f20f073b7e5fb76aac53b68a79e1defd9fed3d1",
+      "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    }
+  ],
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "f74e764c3d401c8e380c97da4f20f073b7e5fb76aac53b68a79e1defd9fed3d1",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "semantic": {
+    "version": "native-source-audit-5.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选说明资料集无证据卡片无法总结，与空sources及unanswerable一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT1"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：原件未公开且资料为空，合理拒答不可利用未来披露"
+    },
+    "span_binding": [
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "LIMIT1",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选说明资料集无证据卡片无法总结，与空sources及unanswerable一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT1",
+          "quote": "来源文件披露日晚于 as_of 边界，按规定不可引用"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：原件未公开且资料为空，合理拒答不可利用未来披露"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "1ba59384913b305e6af2101557deac8f8ddd2b00254965be36a71c8960bbdaf1",
+      "latency_seconds": 2.127,
+      "usage": {
+        "prompt_tokens": 1430,
+        "completion_tokens": 138,
+        "total_tokens": 1568,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "ed0a859620fd59590a5ffb2141c6ea92a42009b01913e8fff9f97665da05b5a3"
+    },
+    "input_sha256": "8d2047a483f8992c5d4f7d8382f9ce916113804bad0f4cc7d2973e5b321bdf47",
+    "answer_sha256": "f74e764c3d401c8e380c97da4f20f073b7e5fb76aac53b68a79e1defd9fed3d1",
+    "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+  },
+  "raw_source_audit_sha256": "12e14edbf74893be48c44ba118859b23df6dbe8e5376bbedac85c5a281800327",
+  "replay_material": {
+    "audit_cards": [],
+    "reference_case": {
+      "id": "meta24_before",
+      "question": "截至 2025-01-28，根据提供原件总结 Meta FY2024 经营表现。",
+      "as_of": "2025-01-28",
+      "required": [],
+      "counter": [],
+      "point_definitions": {},
+      "limitations": [
+        "给定原件尚未公开，不能利用未来披露内容。"
+      ],
+      "expected_answerability": "unanswerable"
+    }
+  },
+  "id": "meta24_before",
+  "split": "known_source",
+  "protocol_sha256": "5ec64580ad346d12823b29c8f0f3a9c2b5e03e7a2d93f20327dbc7b62d6d9d23",
+  "finished_utc": "2026-09-10T02:19:48.192362+00:00",
+  "wall_seconds": 8.984
+}

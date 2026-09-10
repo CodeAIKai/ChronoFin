@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04660",
+  "uid": "financebench_id_04660_dev",
+  "split": "development",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "693d27e05ce5de300ff7697c0b64506b8c4957c53119403cafcae75352a9a07b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "c5828e09810a7620f8bae9b8ae518740f36fb543268ca8c14208fe23272c2687",
+  "started_utc": "2026-09-10T01:32:17.219842+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "without these figures, I cannot calculate or provide the working capital ratio for FY2016",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot provide the ratio due to missing figures and asks for data instead of answering; evidence actually contains Total current assets 1,001,425 and Total current liabilities 577,464 (ratio ≈ 1.73), but candidate refused."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d0caba6a308ac4dc8ed4d8033bf4e5c0e676e71307f210ac42ae990de888ba2c",
+    "latency_seconds": 9.641,
+    "usage": {
+      "prompt_tokens": 2117,
+      "completion_tokens": 121,
+      "total_tokens": 2238,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "728c6c0b444771d47703802ff05c7b8982851abf9c23e3bdc995918b09267abd"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

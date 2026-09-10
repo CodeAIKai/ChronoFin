@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00407",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "9a1153d8b359fa319e89b4f3d77cdda865b92e45ca52924431fee5dec35b7a38",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "abb04931d8451069faec7767cce73ca5669f1902a4941e0022aa8af7c351a5ba",
+  "started_utc": "2026-09-09T17:32:40.242203+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate refused claiming no data for MGM H1 FY2023 short-term investments, but evidence (10-Q June 30 2023) lists short-term investments with corporate bonds at $416,420k, the largest category, matching reference. Candidate's negative claim is false.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is MGM short-term investments, correctly identified in question and evidence."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period H1 FY2023 corresponds to June 30 2023 evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is debt type/category; evidence provides amounts in thousands USD."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave refusal/no answer instead of corporate bonds, which is the largest per evidence and reference."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claimed absence of data, but evidence explicitly shows short-term investment categories for June 30 2023."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a306738c48ab04c677a1884c404a9c7bbb3861d9de36d8974c2b680936b70e1c",
+    "latency_seconds": 4.299,
+    "usage": {
+      "prompt_tokens": 1699,
+      "completion_tokens": 260,
+      "total_tokens": 1959,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8e0b0f381d24440bf376f0d841f3b9f326e3eff498c78e09038224f7f033bde5"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00585",
+  "uid": "financebench_id_00585_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "2492fc7fca57f701ce7c1931a2fa9a416b180d6675339e968aae4b3cde1e7ed3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "e55d7f7f48841f5c3acd4a45cd14525ba1b3d7080da40ec828eddc9b71a0ecb6",
+  "started_utc": "2026-09-09T18:06:41.593852+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but the provided context does not contain specific information regarding Boeing's effective tax rate for fiscal years 2021 and 2022.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot answer due to missing Boeing tax rate info, despite evidence containing Boeing 10K with tax figures; this is an explicit refusal to answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "84b2671755417dd9a23c06d4403a7fe4ee2353bd5b3bc0be7bb3f4ea57ebd797",
+    "latency_seconds": 6.447,
+    "usage": {
+      "prompt_tokens": 1515,
+      "completion_tokens": 114,
+      "total_tokens": 1629,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a81b371868eeee7bd1d8ea788034ef71b9003b604e6048ef39cf3ac1884fd3a7"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

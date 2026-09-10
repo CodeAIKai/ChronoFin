@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04254",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "568a474defec66b2bcd6d3acad37277187278d01668228c5ead578af22e62b7d",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ec21fa7227101e6af4d8aae7a10308818876d09abf602415fd3ea00826f8f891",
+  "started_utc": "2026-09-09T17:34:50.498213+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot provide the requested figure and gives no substantive numeric answer, only explains what would be needed."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e67d849e67441696b3283aa96f2edb96af3c263116a00cfc279d3b8ac73f4ff2",
+    "latency_seconds": 1.734,
+    "usage": {
+      "prompt_tokens": 3549,
+      "completion_tokens": 44,
+      "total_tokens": 3593,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a2ea68ee5438c4bce2a8385e5cf4ca00e7c2c6299b72cd8626953ba1bb5127ca"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

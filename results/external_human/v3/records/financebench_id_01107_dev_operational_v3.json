@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01107",
+  "uid": "financebench_id_01107_dev",
+  "split": "development",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "7c3371fa8360bfa8bc26c36e2994969da7a59dcac2b9c09a803a096fa3b23b7e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "792c566cb5e0544d4a5ebad0266757c554bd437793e1e3c9e02a1ba1b222bf09",
+  "started_utc": "2026-09-09T18:09:33.322579+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Based on the evidence provided, CVS Health has reported several materially important ongoing legal battles from the years 2020, 2021, and 2022.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate confirms ongoing legal battles 2020-2022 covering usual/customary pricing, PBM litigation, controlled substances/opioids with $4.3B remediation and $625M fees, matching reference and 2022 10K evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4f4238fad69832baf04a82c9d27f7ccf871c4408ac1ab3d099eef9c13188f651",
+    "latency_seconds": 6.316,
+    "usage": {
+      "prompt_tokens": 4601,
+      "completion_tokens": 132,
+      "total_tokens": 4733,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "473c39f8633ce9fd7152d2e9f03f53fd2e131c7f617ee1e940589a30dcfaac3d"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00723",
+  "uid": "financebench_id_00723_dev",
+  "split": "development",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "acc416c68ce21171529d38f9f00d1ada0e6a2c1f12f7997604527878e31c8389",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "782d020d40fa890490709f7512ba6c494f912be2ce8f9ec2f6df3517a5bd4e2f",
+  "started_utc": "2026-09-09T18:07:48.525503+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Operating margin is a useful metric for a company like American Express because it provides insight",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Reference states 'Performance is not measured through operating margin', but candidate computed operating margin and asserted it is a useful metric for AMEX, directly contradicting the reference and failing to state that operating margin is not useful as instructed."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c4669d5a25fc46feb631eb8fd342104adf8330320121ef145c675d7e99a678f8",
+    "latency_seconds": 6.238,
+    "usage": {
+      "prompt_tokens": 2456,
+      "completion_tokens": 110,
+      "total_tokens": 2566,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2c7fefffb873cb4c70697e4e06ad6bbf5fd13ee0bc8186c98a81e13c5c055034"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

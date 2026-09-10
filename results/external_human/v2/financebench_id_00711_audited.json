@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00711",
+  "company": "Johnson & Johnson",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0f8f3e2d12b79790b385f7a1e77bd975f4bd8192d4256c1dea8a3118f12f8c42",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "3d54e7e2fba55b99b4a2a9cfa000b272ca597cedb30e699030a19d7cc70b5ef9",
+  "started_utc": "2026-09-09T17:45:32.197484+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot answer without provided data and withholds the requested inventory turnover conclusion despite evidence supplying COGS and inventories.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity JnJ identified in question."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 specified in question."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Times (ratio) requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer given; candidate declined to calculate or state ratio."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence provides COGS 31,089 and avg inventory ~11,435 => ~2.7x, but candidate ignored it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "60592fbd26487aeaf45d3f1fa12768fb3bd6dad20a2cd83dc7d0c00e6d58bc59",
+    "latency_seconds": 9.773,
+    "usage": {
+      "prompt_tokens": 2268,
+      "completion_tokens": 216,
+      "total_tokens": 2484,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "7645d9a1aefb8b118c61e7d41178f5e9ebce437f6a363b554c7d244e995d4ae2"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

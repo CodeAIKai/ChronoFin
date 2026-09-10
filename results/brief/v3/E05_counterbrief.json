@@ -1,0 +1,933 @@
+{
+  "case_id": "E05",
+  "split": "evaluation",
+  "group": "amazon24",
+  "task": "公开数据问答",
+  "strategy": "counterbrief",
+  "started_utc": "2026-09-09T15:58:23.122434+00:00",
+  "protocol_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "给出 AWS FY2024 营业利润率及对 Amazon 集团营业利润的占比，解释它们说明什么、不说明什么。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "A03",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual sales",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 net sales: USD 107556 million.",
+        "value": 107556,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A04",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 operating income: USD 39834 million.",
+        "value": 39834,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A02",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 operating income: USD 68593 million.",
+        "value": 68593,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A05",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "caution",
+        "status": "observed",
+        "text": "Amazon FY2024 free cash flow: USD 38219 million.",
+        "value": 38219,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A06",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 operating cash flow reached about USD 115.9 billion, a 36% increase.",
+        "value": 115.9,
+        "unit": "USD billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A08",
+        "source_id": "amazon24",
+        "locator": "p11 AWS quarterly margins",
+        "role": "caution",
+        "status": "observed",
+        "text": "AWS operating margin: Q3 2024 38.1%; Q4 2024 36.9%.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A09",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "context",
+        "status": "observed",
+        "text": "Amazon FY2023 free cash flow: USD 36813 million.",
+        "value": 36813,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A07",
+        "source_id": "amazon24",
+        "locator": "p10 FCF definition footnotes",
+        "role": "caution",
+        "status": "definition",
+        "text": "Amazon headline free cash flow deducts net property purchases; separate variants also deduct lease principal.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "依据 Amazon FY2024 报告，AWS 净销售额 107556 百万美元、营业利润 39834 百万美元，营业利润率约 37.057%，对集团营业利润占比约 58.067%。这说明 AWS 以约 16.86% 的销售额贡献了集团近六成营业利润，是核心利润驱动。但不说明集团整体现金生成质量或 AWS 季度利润率已稳定，因 FCF 口径含购建资产扣除且 AWS 四季度利润率略降。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024 净销售额为 107556 百万美元",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A03"
+          ],
+          "numbers": [
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AWS FY2024 营业利润为 39834 百万美元",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "A04"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Amazon FY2024 集团营业利润为 68593 百万美元",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "AWS FY2024 营业利润率约 37.057%，是集团核心利润驱动",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "A03",
+            "A04"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "AWS 营业利润占 Amazon 集团营业利润约 58.067%",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "AWS 季度营业利润率 Q3 38.1%、Q4 36.9%，不说明其利润率已稳定",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A08"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "Amazon 自由现金流口径扣除净房产购置，不说明 AWS 利润直接等同整体现金质量",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A07",
+            "A05"
+          ],
+          "numbers": [
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "A04/A03*100",
+          "value": 37.057,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A04"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "A04/A02*100",
+          "value": 58.067,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "A03/A01*100",
+          "value": 16.86,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未披露 AWS 资本开支及分业务自由现金流，无法判断 AWS 现金转化效率",
+        "未提供 AWS 同比营业利润率及集团除 AWS 外分部利润明细"
+      ],
+      "follow_up": [
+        {
+          "action": "核查 Amazon 10-K 中 AWS 资本支出与分部现金流附表",
+          "reason": "可判断 AWS 利润含多少非现金及真实现金回报，改变对利润质量的结论",
+          "evidence_ids": [
+            "A07",
+            "A05"
+          ]
+        },
+        {
+          "action": "追踪 AWS 2025 各季营业利润率",
+          "reason": "确认 Q4 下滑是否为趋势，改变对 AWS 盈利稳定性的判断",
+          "evidence_ids": [
+            "A08"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "依据 Amazon FY2024 报告（披露日 2025-02-06），AWS 净销售额 107556 百万美元、营业利润 39834 百万美元，营业利润率 37.036%，占集团营业利润 58.073%。AWS 以 16.859% 的销售额贡献近六成集团营业利润，是核心利润驱动。但不说明集团现金生成质量等同 AWS 利润，因自由现金流扣除净房产购置且含租赁变体；也不说明 AWS 利润率已稳定，其 Q4 营业利润率 36.9% 低于 Q3 的 38.1%。资料未披露 AWS 资本开支及分部现金流。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024 净销售额为 107556 百万美元",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A03"
+          ],
+          "numbers": [
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AWS FY2024 营业利润为 39834 百万美元",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "A04"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Amazon FY2024 集团营业利润为 68593 百万美元",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "AWS FY2024 营业利润率 37.036%，是集团核心利润驱动",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "A03",
+            "A04"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "AWS 营业利润占 Amazon 集团营业利润 58.073%",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "AWS 季度营业利润率 Q3 38.1%、Q4 36.9%，不说明其利润率已稳定",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A08"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "Amazon 自由现金流口径扣除净房产购置，不说明 AWS 利润直接等同整体现金质量",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A07",
+            "A05"
+          ],
+          "numbers": [
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "A04/A03*100",
+          "value": 37.036,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A04"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "A04/A02*100",
+          "value": 58.073,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "A03/A01*100",
+          "value": 16.859,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未披露 AWS 资本开支及分业务自由现金流，无法判断 AWS 现金转化效率",
+        "未提供 AWS 同比营业利润率及集团除 AWS 外分部利润明细"
+      ],
+      "follow_up": [
+        {
+          "action": "核查 Amazon 10-K 中 AWS 资本支出与分部现金流附表",
+          "reason": "可判断 AWS 利润含多少非现金及真实现金回报，改变对利润质量的结论",
+          "evidence_ids": [
+            "A07",
+            "A05"
+          ]
+        },
+        {
+          "action": "追踪 AWS 2025 各季营业利润率",
+          "reason": "确认 Q4 下滑是否为趋势，改变对 AWS 盈利稳定性的判断",
+          "evidence_ids": [
+            "A08"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "0d7492dd13d830a19486cd6ebd4389d9a47a78fa3800203cd1b68025d4217208",
+        "latency_seconds": 10.326,
+        "usage": {
+          "prompt_tokens": 1430,
+          "completion_tokens": 986,
+          "total_tokens": 2416,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "e74a222b57f5934c8477c4f9ab3fa6a5eba5f097d1783b571f0d8d719c9a8bf9"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "3ef61932162c17c6ab7b68355673450efd6620b9d24fa0ffb61b66f8e83df0c4",
+        "latency_seconds": 10.475,
+        "usage": {
+          "prompt_tokens": 2615,
+          "completion_tokens": 1020,
+          "total_tokens": 3635,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "ea2e026366115e0e1dfe7ef7aeba500ae60794bebb66ddb1580352383afebd35"
+      }
+    ],
+    "input_sha256": "ba970ec6fb0eb54d1cce5c7d9f8876348db6c73fe25eb1c2abb807dc0789f9f4",
+    "calculator_results": [
+      {
+        "id": "K1",
+        "expression": "A04/A03*100",
+        "executed_value": 37.03559076202164,
+        "unit": "%",
+        "status": "executed"
+      },
+      {
+        "id": "K2",
+        "expression": "A04/A02*100",
+        "executed_value": 58.07298120799499,
+        "unit": "%",
+        "status": "executed"
+      },
+      {
+        "id": "K3",
+        "expression": "A03/A01*100",
+        "executed_value": 16.859390650496348,
+        "unit": "%",
+        "status": "executed"
+      }
+    ],
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "依据 Amazon FY2024 报告（披露日 2025-02-06），AWS 净销售额 107556 百万美元、营业利润 39834 百万美元，营业利润率 37.036%，占集团营业利润 58.073%。AWS 以 16.859% 的销售额贡献近六成集团营业利润，是核心利润驱动。但不说明集团现金生成质量等同 AWS 利润，因自由现金流扣除净房产购置且含租赁变体；也不说明 AWS 利润率已稳定，其 Q4 营业利润率 36.9% 低于 Q3 的 38.1%。资料未披露 AWS 资本开支及分部现金流。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024 净销售额为 107556 百万美元",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A03"
+          ],
+          "numbers": [
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AWS FY2024 营业利润为 39834 百万美元",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "A04"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Amazon FY2024 集团营业利润为 68593 百万美元",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "AWS FY2024 营业利润率 37.036%，是集团核心利润驱动",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "A03",
+            "A04"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "AWS 营业利润占 Amazon 集团营业利润 58.073%",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "AWS 季度营业利润率 Q3 38.1%、Q4 36.9%，不说明其利润率已稳定",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A08"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "Amazon 自由现金流口径扣除净房产购置，不说明 AWS 利润直接等同整体现金质量",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A07",
+            "A05"
+          ],
+          "numbers": [
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "A04/A03*100",
+          "value": 37.036,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A04"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "A04/A02*100",
+          "value": 58.073,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "A03/A01*100",
+          "value": 16.859,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未披露 AWS 资本开支及分业务自由现金流，无法判断 AWS 现金转化效率",
+        "未提供 AWS 同比营业利润率及集团除 AWS 外分部利润明细"
+      ],
+      "follow_up": [
+        {
+          "action": "核查 Amazon 10-K 中 AWS 资本支出与分部现金流附表",
+          "reason": "可判断 AWS 利润含多少非现金及真实现金回报，改变对利润质量的结论",
+          "evidence_ids": [
+            "A07",
+            "A05"
+          ]
+        },
+        {
+          "action": "追踪 AWS 2025 各季营业利润率",
+          "reason": "确认 Q4 下滑是否为趋势，改变对 AWS 盈利稳定性的判断",
+          "evidence_ids": [
+            "A08"
+          ]
+        }
+      ]
+    },
+    "answer_sha256": "eb57bd16149e3a75d056b4affb9b8a85f312840e1fc3255e857ea95078ca1034"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文引用A03数值107556百万美元且语义一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文引用A04数值39834百万美元且语义一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选正文引用A02数值68593百万美元且语义一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "由A03/A04算出37.036%并推断为核心驱动，计算正确",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "由A04/A02算出58.073%占比，计算正确",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "引用A08中Q3 38.1% Q4 36.9%说明不稳定性",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "引用A07口径与A05数值说明现金质量不等同",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "A02",
+          "present": true,
+          "quote": "Amazon FY2024 集团营业利润为 68593 百万美元"
+        },
+        {
+          "id": "A03",
+          "present": true,
+          "quote": "AWS FY2024 净销售额为 107556 百万美元"
+        },
+        {
+          "id": "A04",
+          "present": true,
+          "quote": "AWS FY2024 营业利润为 39834 百万美元"
+        },
+        {
+          "id": "A08",
+          "present": true,
+          "quote": "AWS 季度营业利润率 Q3 38.1%、Q4 36.9%"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确计算AWS营业利润率37.036%及占集团58.073%，并说明不说明现金质量与稳定性，但缺失参考要求的行业总额限制故limitations未覆盖"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "fabfbe385ef07fa741cc60a9266a86a64000db6984d08232ac56024e064be264",
+      "latency_seconds": 6.158,
+      "usage": {
+        "prompt_tokens": 5119,
+        "completion_tokens": 599,
+        "total_tokens": 5718,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "b8f375b91a3aa3ffa066a922c0fdff072cbfe128ea7ec4a982fd0b1b4a864dc8"
+    },
+    "input_sha256": "66ecb9613ecf29763717ce43b051c2fdac5d92b0b75115472ccc85812905ba1c",
+    "answer_sha256": "eb57bd16149e3a75d056b4affb9b8a85f312840e1fc3255e857ea95078ca1034",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "eb57bd16149e3a75d056b4affb9b8a85f312840e1fc3255e857ea95078ca1034",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 96.0,
+    "score": 96.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T15:58:50.091392+00:00",
+  "wall_seconds": 26.969
+}

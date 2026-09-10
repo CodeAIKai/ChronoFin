@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03531",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "006ad51a64eaadbac1df160b0b87d6058009a729ef854bd855816c7b0c2f39b9",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "0f4ce5657e420a6101bf63579b89c09a3ae89e313d3c1488e6302f4753901799",
+  "started_utc": "2026-09-09T17:34:34.471325+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate claims the balance sheet does not include total current assets for Nike FY2019, but evidence clearly shows Total current assets of $16,525 million for 2019 (May 31). This is a refusal-style incorrect answer due to false claim of missing data.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Nike, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2019 (May 31, 2019) is the period in question and present in evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Requested USD millions; evidence states dollars in millions."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says data not provided; evidence shows $16,525 million total current assets."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate's claim of missing info contradicts explicit balance sheet line item."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ad0fbc9a12ff8ad24aa38d0b04282850915bbfd919da0fa073f0139df1ea7cd8",
+    "latency_seconds": 4.539,
+    "usage": {
+      "prompt_tokens": 1540,
+      "completion_tokens": 240,
+      "total_tokens": 1780,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2307afdeb56c3c1e9ad4a044b353fd2fa4c06f3a30e8d5ff8f19a1099fa8a44c"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

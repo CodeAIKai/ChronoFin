@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04417",
+  "company": "Best Buy",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "f3927e78a16985f92db5f5281d63cb0252e4ee491a15e2c589c9d4f45a849fb9",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9be53510484786a61e3880a7d93c53b5df11cb1c5a1b8f868086b8f894a46dd4",
+  "started_utc": "2026-09-09T17:34:54.403956+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.99,
+    "reason": "Evidence shows Merchandise inventories (FY2019, Feb 2 2019) is $5,409 million, not $11,395 million as candidate states."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "43865aa7076b1ca8c09fd71581cafcf2ace3a9d418c5142b23e15865a39f0a13",
+    "latency_seconds": 1.873,
+    "usage": {
+      "prompt_tokens": 1545,
+      "completion_tokens": 58,
+      "total_tokens": 1603,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bbf02f438e421fb6631a41237ef48315f6ae7ff6e6170f42f390dd79dd427a3c"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

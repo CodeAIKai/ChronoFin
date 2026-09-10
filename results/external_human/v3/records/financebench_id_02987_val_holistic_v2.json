@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_02987",
+  "uid": "financebench_id_02987_val",
+  "split": "new_response_validation",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b8e5d4e212a84a3d5917cc4373b6aec11ed0743737ca3254ddf880203973c45a",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "4ed3992e4927804d45e024fd6343c86af24d9a1e8680657866ef377691819f07",
+  "started_utc": "2026-09-10T01:29:43.156094+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computed 6489/267.5 = 24.25, but exact value is 24.2523..., which rounds to 24.25; however reference is 24.26. Evidence supports revenue 6489 and avg PP&E 267.5, so correct rounded answer per given data is 24.25, not 24.26. Since candidate answer (24.25) disagrees with reference (24.26) and instructions define correct as agreeing with reference, label incorrect. (Note: if evidence-based, ref may be off, but must compare to reference.)"
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "16f28a32a460c36f8d03ce7d6e669f5243b1a8f2050fb962859228127e115503",
+    "latency_seconds": 11.195,
+    "usage": {
+      "prompt_tokens": 3140,
+      "completion_tokens": 144,
+      "total_tokens": 3284,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cb7855ad24eb4d9937dca7651acb83321d962a21aa187745e68512b091ed45df"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00585",
+  "uid": "financebench_id_00585_dev",
+  "split": "development",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "706289c365363ba3bf165919f27253c9ba85cdd4aec4713f7706519d8bc1c610",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "3cd1fc140f9f24bce7f71a034af201b2f1311035568c5d6b65b0d3682c532ef2",
+  "started_utc": "2026-09-09T18:06:39.273035+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Boeing's effective tax rate in FY2022 was positive, albeit small, compared to a negative effective tax rate in FY2021",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate computed FY2022 rate 0.617% (~0.62% per reference) and FY2021 -14.76%, matching reference; evidence shows loss before tax (5,022)/(5,033) and tax (31 exp)/(743 benefit) supporting calculations."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2b396804cbefbe438d90c01b2718e26198e392983b30766fcbb9c95bcc78233e",
+    "latency_seconds": 6.234,
+    "usage": {
+      "prompt_tokens": 1786,
+      "completion_tokens": 133,
+      "total_tokens": 1919,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "de019c26850187420a1792cf7004790d3547ba623a31f8294fafcff3be1984cb"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

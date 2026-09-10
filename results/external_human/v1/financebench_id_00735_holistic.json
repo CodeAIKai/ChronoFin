@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00735",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "6dc4b742fb6ef6ac1c15a8eac7cb09c51dd6c9ad0b113e6ea44d3613eed83d82",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "f6ddd838a9f750cd15a6e6cf75236a7508e911b915633be170478532b312a066",
+  "started_utc": "2026-09-09T18:00:13.446026+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence from 2022 10K states management believes legal proceedings will not have material adverse effect, supporting reference that no material legal battles exist. Candidate says cannot provide info and implies possible unknown material battles, disagreeing with reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3f0563e0b27f56fe049f8a29cf3f22569c64c202ad9e85dbfb90a4aeda03c35f",
+    "latency_seconds": 6.451,
+    "usage": {
+      "prompt_tokens": 1216,
+      "completion_tokens": 70,
+      "total_tokens": 1286,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "355fcf3ebd5d533d138bd8d4270cfc44e2d4f2c7386fe02e74dbeffe9f0c67a0"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

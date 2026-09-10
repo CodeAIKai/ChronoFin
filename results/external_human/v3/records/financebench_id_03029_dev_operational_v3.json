@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03029",
+  "uid": "financebench_id_03029_dev",
+  "split": "development",
+  "company": "3M",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "e799f511f9175354f86d7ad557e40fde590ebb6df6d6446147ab33b2d7f4a0ac",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "565f35914234d14a0e1f2907abc0d6adb9b33ed8b22ece43b033041930787919",
+  "started_utc": "2026-09-10T01:29:49.104231+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "The FY2018 capital expenditure amount (in USD millions) for 3M is $1,577 million.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states $1,577 million for FY2018 PP&E purchases from cash flow statement; evidence shows 'Purchases of property, plant and equipment (PP&E) (1,577)' for 2018 in Millions, matching reference 1577."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1dea95bf16464a56c24e9d6ae98aa64f1b9034c57e505bfe816a8aadebe313b2",
+    "latency_seconds": 8.814,
+    "usage": {
+      "prompt_tokens": 3096,
+      "completion_tokens": 123,
+      "total_tokens": 3219,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ff1e0bb0033c4b4764693276fd27e05e57e5afd348ac6c7e50cf694102104b39"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

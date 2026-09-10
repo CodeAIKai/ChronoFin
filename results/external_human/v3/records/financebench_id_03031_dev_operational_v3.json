@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03031",
+  "uid": "financebench_id_03031_dev",
+  "split": "development",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "e8c43bb44652858334e005d1f6e7ca31e85c7e252262bcea6563ce85c17c73cc",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "88d637eb30c62c11c8d1c82d24d682480460afd99641c3af3efd745049b4d489",
+  "started_utc": "2026-09-10T01:29:56.595667+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but you haven't provided the balance sheet for Lockheed Martin or any specific financial figures",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it lacks the balance sheet and asks for figures instead of answering; evidence contains the balance sheet but candidate did not use it."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "20f70939084c231d193161dbd0be2e82ee4d17d6a732ca2c655b08307de8e97f",
+    "latency_seconds": 11.774,
+    "usage": {
+      "prompt_tokens": 1607,
+      "completion_tokens": 101,
+      "total_tokens": 1708,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a529b95fc51e8b65e446527a70c6ad693fd509b8063edc7e1b82f357c487048a"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

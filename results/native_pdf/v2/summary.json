@@ -1,0 +1,473 @@
+{
+  "planned": 12,
+  "complete": 12,
+  "scope": "12 questions, five official PDFs; three source documents first introduced after v3 application freeze. Author-defined criteria, not external expert gold.",
+  "records": [
+    {
+      "id": "meta24_after",
+      "status": "ok",
+      "split": "known_source",
+      "score": 100.0,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 15,
+        "facts_accepted": 14,
+        "rejected": [
+          {
+            "index": 11,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "dea89c41f05877d156bba0b577f9426c8d795a2c5a79cacf56876f9dcc196a9f",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 62.578,
+      "source": {
+        "id": "pdf_6cce34aa0fb3",
+        "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+        "pages": 10,
+        "bytes": 177759,
+        "metadata_identity": "pinned_official",
+        "title": "Meta Q4 and FY2024 earnings release",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+      }
+    },
+    {
+      "id": "amazon24_after",
+      "status": "ok",
+      "split": "known_source",
+      "score": 35,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 14,
+        "facts_accepted": 12,
+        "rejected": [
+          {
+            "index": 6,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 7,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "dcb1a6deb4de75ef175c8a124158dd4b2a624f6be0e27de2a3d8b63fa08e95a4",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 62.99,
+      "source": {
+        "id": "pdf_0435f36d49cc",
+        "sha256": "0435f36d49cc40373c1ec7d6a8aa77abf83f90f7774b477d69f28b3859e7fe72",
+        "pages": 13,
+        "bytes": 358812,
+        "metadata_identity": "pinned_official",
+        "title": "Amazon Q4 and FY2024 earnings release",
+        "entity": "Amazon",
+        "published_at": "2025-02-06",
+        "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2024/q4/AMZN-Q4-2024-Earnings-Release.pdf"
+      }
+    },
+    {
+      "id": "meta24_before",
+      "status": "ok",
+      "split": "known_source",
+      "score": 100.0,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 0,
+        "facts_accepted": 0,
+        "rejected": [],
+        "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 33.708,
+      "source": {
+        "id": "pdf_6cce34aa0fb3",
+        "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+        "pages": 10,
+        "bytes": 177759,
+        "metadata_identity": "pinned_official",
+        "title": "Meta Q4 and FY2024 earnings release",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+      }
+    },
+    {
+      "id": "NV01",
+      "status": "ok",
+      "split": "new_source",
+      "score": 55,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 16,
+        "facts_accepted": 15,
+        "rejected": [
+          {
+            "index": 4,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "85366ff2da47938b6e692cc176f9a23e64840981a33074b43aae5db6148addea",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 76.894,
+      "source": {
+        "id": "pdf_842a50961f04",
+        "sha256": "842a50961f0466d50584f8017200ab72c5a86c7438f0560cefb0506442149ce7",
+        "pages": 8,
+        "bytes": 82336,
+        "metadata_identity": "pinned_official",
+        "title": "NVIDIA Q4 and FY2025 CFO Commentary",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf"
+      }
+    },
+    {
+      "id": "NV02",
+      "status": "ok",
+      "split": "new_source",
+      "score": 100.0,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 15,
+        "facts_accepted": 12,
+        "rejected": [
+          {
+            "index": 7,
+            "reason": "原文数字无法解析"
+          },
+          {
+            "index": 8,
+            "reason": "原文数字无法解析"
+          },
+          {
+            "index": 15,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "29b9ba0258251330f04825753b93d1c71f0723d41fbc7f53c5c41840d1875280",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 65.394,
+      "source": {
+        "id": "pdf_842a50961f04",
+        "sha256": "842a50961f0466d50584f8017200ab72c5a86c7438f0560cefb0506442149ce7",
+        "pages": 8,
+        "bytes": 82336,
+        "metadata_identity": "pinned_official",
+        "title": "NVIDIA Q4 and FY2025 CFO Commentary",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf"
+      }
+    },
+    {
+      "id": "NV03",
+      "status": "ok",
+      "split": "new_source",
+      "score": 90.0,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 13,
+        "facts_accepted": 12,
+        "rejected": [
+          {
+            "index": 11,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "6745c7cef8aa3111b75803353fceac775fbae31b6f31d2a953f2890667325765",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 59.107,
+      "source": {
+        "id": "pdf_842a50961f04",
+        "sha256": "842a50961f0466d50584f8017200ab72c5a86c7438f0560cefb0506442149ce7",
+        "pages": 8,
+        "bytes": 82336,
+        "metadata_identity": "pinned_official",
+        "title": "NVIDIA Q4 and FY2025 CFO Commentary",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf"
+      }
+    },
+    {
+      "id": "AP01",
+      "status": "ok",
+      "split": "new_source",
+      "score": 97.257,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 16,
+        "facts_accepted": 15,
+        "rejected": [
+          {
+            "index": 2,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "864737888a162edda3ba0104d127dd14a95e9e58522154873c9f5a9b5e60a6e8",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 74.12,
+      "source": {
+        "id": "pdf_43e7f0730b3c",
+        "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+        "pages": 4,
+        "bytes": 4919649,
+        "metadata_identity": "pinned_official",
+        "title": "Apple FY2025 Q4 consolidated financial statements",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf"
+      }
+    },
+    {
+      "id": "AP02",
+      "status": "ok",
+      "split": "new_source",
+      "score": 55,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 15,
+        "facts_accepted": 14,
+        "rejected": [
+          {
+            "index": 14,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "42fb6a97e7e4621bf9c17b4866a7282fc627f4eef17839a90955cbec79ffc782",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 62.021,
+      "source": {
+        "id": "pdf_43e7f0730b3c",
+        "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+        "pages": 4,
+        "bytes": 4919649,
+        "metadata_identity": "pinned_official",
+        "title": "Apple FY2025 Q4 consolidated financial statements",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf"
+      }
+    },
+    {
+      "id": "AP03",
+      "status": "ok",
+      "split": "new_source",
+      "score": 55,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 15,
+        "facts_accepted": 11,
+        "rejected": [
+          {
+            "index": 1,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 2,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 3,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 14,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "1eb2982acbdf8ef2fc8dce439fa4b716195bedc5be4494b64cef317c0d173ce2",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 63.345,
+      "source": {
+        "id": "pdf_43e7f0730b3c",
+        "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+        "pages": 4,
+        "bytes": 4919649,
+        "metadata_identity": "pinned_official",
+        "title": "Apple FY2025 Q4 consolidated financial statements",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf"
+      }
+    },
+    {
+      "id": "TC01",
+      "status": "ok",
+      "split": "new_source",
+      "score": 35,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 17,
+        "facts_accepted": 5,
+        "rejected": [
+          {
+            "index": 1,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 2,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 3,
+            "reason": "原文数字无法解析"
+          },
+          {
+            "index": 4,
+            "reason": "原文数字无法解析"
+          },
+          {
+            "index": 5,
+            "reason": "原文数字无法解析"
+          },
+          {
+            "index": 6,
+            "reason": "原文数字无法解析"
+          },
+          {
+            "index": 7,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 8,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 11,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 12,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 16,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 17,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "dab089752d430295921aedf8b1ab0601e6d584011a9f4b80f6f1dabb3f19782c",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 61.943,
+      "source": {
+        "id": "pdf_7ad084b68b67",
+        "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+        "pages": 9,
+        "bytes": 649814,
+        "metadata_identity": "pinned_official",
+        "title": "腾讯二零二五年第二季度业绩",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+      }
+    },
+    {
+      "id": "TC02",
+      "status": "ok",
+      "split": "new_source",
+      "score": 100.0,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 0,
+        "facts_accepted": 0,
+        "rejected": [],
+        "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 32.361,
+      "source": {
+        "id": "pdf_7ad084b68b67",
+        "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+        "pages": 9,
+        "bytes": 649814,
+        "metadata_identity": "pinned_official",
+        "title": "腾讯二零二五年第二季度业绩",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+      }
+    },
+    {
+      "id": "TC03",
+      "status": "ok",
+      "split": "new_source",
+      "score": 55,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 13,
+        "facts_accepted": 6,
+        "rejected": [
+          {
+            "index": 2,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 4,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 6,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 9,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 10,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 11,
+            "reason": "引用不在原文连续片段中"
+          },
+          {
+            "index": 12,
+            "reason": "引用不在原文连续片段中"
+          }
+        ],
+        "raw_response_sha256": "4ea06904cb550af2bd32a06f150ba1c8602eef462325e4b340c7795e2b95b8fa",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+      },
+      "wall_seconds": 63.186,
+      "source": {
+        "id": "pdf_7ad084b68b67",
+        "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+        "pages": 9,
+        "bytes": 649814,
+        "metadata_identity": "pinned_official",
+        "title": "腾讯二零二五年第二季度业绩",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+      }
+    }
+  ]
+}

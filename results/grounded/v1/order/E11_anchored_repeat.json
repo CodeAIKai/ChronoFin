@@ -1,0 +1,222 @@
+{
+  "case_id": "E11",
+  "method": "anchored",
+  "order": "repeat",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "answer_sha256": "26fbfd65336ada7f367b5af74fae8b60594d31b40b5e582613aa1699ad3ef051",
+  "status": "ok",
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文引I01称2024数据中心用电415TWh约占全球1.5%，与来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文引I02预测2030约945TWh较2024增长，来源为forecast且数值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选正文引I03称电网约束延迟20%项目，来源为forecast且数值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选正文明确M04为指引非事实，600–650亿美元与来源forecast一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选正文写自由现金流52103百万美元，local_witness等价且来源M07为observed",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选写亏17729百万美元，来源M03经营亏损-17729百万美元，等价且口径一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选推AI改善电网但存障碍，来源I06为forecast支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C8",
+          "verdict": "supported",
+          "reason": "候选称无FY25收入指引，来源M09为absence一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M04",
+          "present": true,
+          "quote": "Meta预计FY2025资本支出600–650亿美元，为指引而非事实"
+        },
+        {
+          "id": "I02",
+          "present": true,
+          "quote": "IEA预测2030年数据中心用电约945TWh"
+        },
+        {
+          "id": "I03",
+          "present": true,
+          "quote": "电网约束或延迟约20%计划数据中心项目"
+        },
+        {
+          "id": "I04",
+          "present": true,
+          "quote": "2035需求情景700–1700TWh差异大"
+        },
+        {
+          "id": "M05",
+          "present": false
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "Meta AI专项资本支出未披露，M04为总capex指引非事实；IEA 2035情景700–1700TWh（I04）显示需求不确定性"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": false,
+      "reason": "候选未直接给简报段落但摘要与声明覆盖机会与约束，M05未覆盖但非required核心，answerability标partial合理"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "402ccf28276aecce9fdaeb48ea3cd95a5b5261d604f6658f334951e8f9af796d",
+      "latency_seconds": 7.475,
+      "usage": {
+        "prompt_tokens": 5524,
+        "completion_tokens": 721,
+        "total_tokens": 6245,
+        "prompt_tokens_details": {
+          "cached_tokens": 5440
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "bb9f7fd21f49c59afc4305b03d768880039e3ff89605fab1a2031873c5a97657"
+    },
+    "input_sha256": "1d514b94eb5e98c2bb7ab5059b570a9e6df1d853f82eee84640f01c4a9d13426",
+    "answer_sha256": "26fbfd65336ada7f367b5af74fae8b60594d31b40b5e582613aa1699ad3ef051",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "26fbfd65336ada7f367b5af74fae8b60594d31b40b5e582613aa1699ad3ef051",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 0.666667,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 93.5,
+    "score": 93.5,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  }
+}

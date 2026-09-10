@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01254",
+  "company": "MGM Resorts",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "20c7d62194f23f52a867b5af533de89f25029860a9a940d2234730824ec633df",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "64122767c9adb4500b93074057cec0bd3edd3ca95fd77304d4b4b299de35391c",
+  "started_utc": "2026-09-09T17:33:47.922518+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly states MGM paid common shareholder dividends in FY2022 ($0.01/share), matching reference and evidence; 2023 suspension caveat does not contradict FY2022 answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c8f010d570c918e9b48f6f8b2a698ea0b05248412eb8b9d440c5bafb3f55b5a1",
+    "latency_seconds": 1.828,
+    "usage": {
+      "prompt_tokens": 1121,
+      "completion_tokens": 58,
+      "total_tokens": 1179,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "aca89475c2f7be5c0e8838c6e3e7a5aa203d15b750c48ce1fadc0bb27a5f2092"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

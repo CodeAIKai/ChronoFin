@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01328",
+  "uid": "financebench_id_01328_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "2639baa363862a930fcbc1ba2a187cffe536ff09b0266bceb797380a7e957de4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "fa2e23ef4d60b5827198d4d7b0d05323937a737b40c1fd6ec0163bede6ab143c",
+  "started_utc": "2026-09-09T18:10:46.094497+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide the quantity of restructuring costs for FY2022.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and asks for missing data instead of stating 0 or $411M; evidence shows $411M total restructuring and impairment charges in 2022, but candidate refused."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0768f1f7e156587232e72239cf97ee135a92ad441557ae79f178996b104b3b02",
+    "latency_seconds": 9.475,
+    "usage": {
+      "prompt_tokens": 1626,
+      "completion_tokens": 103,
+      "total_tokens": 1729,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ad44919b3ffa42e46e8d3ad01a24eafe64c1bf763511ebd90acd606c8f26189f"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

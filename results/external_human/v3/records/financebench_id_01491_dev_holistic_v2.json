@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01491",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "44869399f99ee2abffd4e734a4f7c9fe179bbe00ac839351d7d96b3fe3d2c82a",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "29bbff87ad71b5cad4ab99351ca2da544a1137565f433b51bc83525e6598d10d",
+  "started_utc": "2026-09-09T17:49:30.814056+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers $13.2 billion cash proceeds from Kenvue separation, matching reference and evidence; initial hedging is followed by clear answer, not refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f21f52f7d74b5379152586fe7f489351f8083fe809d8aa451fc3b523cd4ee80b",
+    "latency_seconds": 6.734,
+    "usage": {
+      "prompt_tokens": 1549,
+      "completion_tokens": 55,
+      "total_tokens": 1604,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "89ade692a21183627009ea1bbfa61fe2fda1ab45259dfa75bebfcca7eab9b909"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01491_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01491_holistic.json",
+  "parent_sha256": "e011587802755645f8cfb8fcae27aae5121e17593b19a9f8bf96a97ac7b4ebda"
+}

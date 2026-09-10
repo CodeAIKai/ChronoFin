@@ -1,0 +1,14 @@
+{
+  "case_id": "D01",
+  "split": "dev",
+  "group": "meta24",
+  "task": "财报阅读",
+  "strategy": "counterbrief",
+  "started_utc": "2026-09-09T15:41:29.431884+00:00",
+  "protocol_sha256": "c8eadc99a15c3bc0ac28586bff1dcace39cb229a3ff928cbdd680165d3e63ab2",
+  "status": "error",
+  "error_type": "ValueError",
+  "error": "answerability enum",
+  "finished_utc": "2026-09-09T15:42:25.968900+00:00",
+  "wall_seconds": 56.537
+}

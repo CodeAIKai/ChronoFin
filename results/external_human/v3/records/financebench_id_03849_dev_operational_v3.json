@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03849",
+  "uid": "financebench_id_03849_dev",
+  "split": "development",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "fc21dfa8f0f804586c3f657b5133e4da85a9814c063c3938088957a82d4a3db0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "af748d202519cc74cdea2777cc7ed87c4241541df28f71d7fe62911fd8591169",
+  "started_utc": "2026-09-10T01:30:59.722219+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, the FY2018 - FY2020 3-year average of capex as a percentage of revenue for MGM Resorts is 7.8%.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate computed 2018 capex 1,486,843 / rev 11,763,096=12.6%, 2019 739,006/12,899,672=5.7%, 2020 270,579/5,162,082=5.2%, avg=7.8% using evidence cash flow capex and income stmt revenue. Reference 0.079 (7.9%) conflicts; candidate's arithmetic from supplied statements yields 7.8% rounded to one decimal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a81ff98316d7a92d3e0758121985b81eb6a319903bd4d6ca95a5b4e923fd3075",
+    "latency_seconds": 6.505,
+    "usage": {
+      "prompt_tokens": 6329,
+      "completion_tokens": 189,
+      "total_tokens": 6518,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0c1eb8f856a3a6887fd6faedfd18ea9089261d14053f45e0798cc4042e090dd4"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

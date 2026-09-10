@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00407",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "9a1153d8b359fa319e89b4f3d77cdda865b92e45ca52924431fee5dec35b7a38",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "abb04931d8451069faec7767cce73ca5669f1902a4941e0022aa8af7c351a5ba",
+  "started_utc": "2026-09-09T17:32:39.119109+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence shows MGM short-term investments as of June 30 2023 (H1 FY2023) with corporate bonds at $416,420k of $507,726k total (~82%), matching reference. Candidate refused claiming no data, which is wrong given evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "de870ceac2fd1aa3f80f19dd53e715ca7d075d67a8d0f1196b35110991a7871f",
+    "latency_seconds": 2.611,
+    "usage": {
+      "prompt_tokens": 1514,
+      "completion_tokens": 78,
+      "total_tokens": 1592,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f26a5d2a957a4450dae89a3aabd76daa97ff0c61a6978da409afa19a9ec7258c"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

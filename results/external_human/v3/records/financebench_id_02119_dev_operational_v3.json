@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02119",
+  "uid": "financebench_id_02119_dev",
+  "split": "development",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4de7a7b0ec975c8b40cfdcc1d547c7c3d9d65ee25bb0e4c8ba72cc2daac84d96",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "f519ecb7af6592e6d544748d5dc8d6ef84bd2f7a58d398505e6a0654ef35c0a0",
+  "started_utc": "2026-09-10T01:28:59.079416+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide an answer to the question",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer, stating the scenario is hypothetical and did not occur, rather than giving the $66.56 per share from reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9ee49f3216f4c1ff9d9097762af384f7040c7069108bb51ffc39163abacefeb4",
+    "latency_seconds": 10.522,
+    "usage": {
+      "prompt_tokens": 1261,
+      "completion_tokens": 89,
+      "total_tokens": 1350,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3828e1ae0a94eee480cba5625ccfd7ed261b41ca887f6d06d95207fec3f50f9d"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

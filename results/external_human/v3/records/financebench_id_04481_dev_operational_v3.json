@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04481",
+  "uid": "financebench_id_04481_dev",
+  "split": "development",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0b13fd27ba6249ff2515f28513b9a22a25cb0754bb081bab57b2a94a369324e3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "878573d43607ba710195a3e0219f77cbfb18fd64a22d0fa970248b218fd6cfdc",
+  "started_utc": "2026-09-10T01:32:11.384631+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but as an AI language model, I do not have access to external databases or the ability to retrieve documents such as financial filings.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and states inability to access financial filings instead of providing the requested FY2022 EBITDA margin."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "36c2bf9b405369e67a86773b256df207c6357494698f4df22a0b5b6b278e41f3",
+    "latency_seconds": 8.702,
+    "usage": {
+      "prompt_tokens": 3022,
+      "completion_tokens": 108,
+      "total_tokens": 3130,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "856f39e6985c4c8f2a4c2cbe2346b7c12cac5b9368bf5f29e41ab0481120c14a"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

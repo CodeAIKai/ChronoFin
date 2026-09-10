@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_02049",
+  "uid": "financebench_id_02049_val",
+  "split": "new_response_validation",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "794fd31ef81800fd2efd6a23a4acbd19c325a4ec753845a04ddda63a497c9394",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "b16f9051652a4eacd0ced985322aa96d71a472ea0fed98a2231ad912b03e0e35",
+  "started_utc": "2026-09-10T01:28:53.373116+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate discusses accounting standards, not VaR risk comparison for Q2 2023 vs prior year, and does not answer the question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b849f5924d6c0f85ecf9a894139261fd4f9c39f05f7d913a3e65124461dee192",
+    "latency_seconds": 11.521,
+    "usage": {
+      "prompt_tokens": 2132,
+      "completion_tokens": 49,
+      "total_tokens": 2181,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "27adc53c6d07064f4063556756d350712c288f91f2da7389444e52ed7923f2c4"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

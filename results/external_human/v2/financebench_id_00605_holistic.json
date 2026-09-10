@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00605",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0af0347d9a3a94d7e9490555d37b4df28bb29423f7324f560cffe3224fce85b6",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "db3d66da382c98fa89329f708dc7d4c749f5619e5dd3e5dd16c857fb2199168e",
+  "started_utc": "2026-09-09T17:44:42.437129+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states the context lacks specific info and withholds the requested percentage, despite evidence showing 328.1/900.0 = 36.5% (~36%) for Q4 fiscal 2022 (FY2023 per reference)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "711f5326f5c7686057612971f6523cfe610ea0e05715be68bb36e9ad394869d2",
+    "latency_seconds": 6.298,
+    "usage": {
+      "prompt_tokens": 1215,
+      "completion_tokens": 70,
+      "total_tokens": 1285,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "7239eb73cb0c8c95ed8a02cd9651e89c48f28c43a2229ef475c8bb518dff35b3"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

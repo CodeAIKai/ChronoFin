@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_08135",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "8891a6097fbc8afd2eacd6dd5d8310d681a3cdef731a952f5e09d22f8f7e0d46",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "410e50ebd11c9a0e22bc43ca8c84aecfa30bf4280161b25f32f488ce244a59c9",
+  "started_utc": "2026-09-09T18:03:47.147240+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate used Total net sales from evidence (135,987 and 177,866 million) and computed (177866-135987)/135987*100 = 30.8%, matching reference and requested unit/period.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Amazon, as in question and evidence."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2016 to FY2017 used, matching question."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer in percents rounded to one decimal (30.8%), as requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "30.8% matches reference and correct calculation from evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows Total net sales 135,987 (2016) and 177,866 (2017); calculation supported."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "455029778369d8dd049c29bb65c1a1d560fffa973f34d815897f7d7af904cec5",
+    "latency_seconds": 9.733,
+    "usage": {
+      "prompt_tokens": 1680,
+      "completion_tokens": 236,
+      "total_tokens": 1916,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "24b7bd79f25a6773fba7ec56af57b4b312c47aa1150e27babd347af2ab0fba37"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

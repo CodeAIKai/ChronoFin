@@ -1,0 +1,25 @@
+{
+  "quality_tiers": {
+    "good": {
+      "score": 100.0,
+      "verdict": "excellent",
+      "hard_cap": null
+    },
+    "medium": {
+      "score": 55.0,
+      "verdict": "fail",
+      "hard_cap": 55.0
+    },
+    "bad": {
+      "score": 40.0,
+      "verdict": "fail",
+      "hard_cap": 40.0
+    }
+  },
+  "PDA": 1.0,
+  "IVR": 0.0,
+  "causal_fidelity": 1.0,
+  "strict_future_leaks": 0,
+  "naive_future_leaks": 3,
+  "output": "/root/autodl-tmp/Tencent/Tencent/code/results/offline_experiment.json"
+}

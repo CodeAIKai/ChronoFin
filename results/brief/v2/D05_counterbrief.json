@@ -1,0 +1,696 @@
+{
+  "case_id": "D05",
+  "split": "dev",
+  "group": "fed25",
+  "task": "行业研报摘要",
+  "strategy": "counterbrief",
+  "started_utc": "2026-09-09T15:50:53.607396+00:00",
+  "protocol_sha256": "9c9470eb4679aec8b97927f8beee4b2e4c5abed2aa9a13a14b745f0848544cf4",
+  "record": {
+    "version": "counterbrief-1.1",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "将美联储稳定性报告整理成信用研究晨会简报，分别说明风险与缓冲。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "F01",
+        "source_id": "fed25",
+        "locator": "overview opening",
+        "role": "context",
+        "status": "observed",
+        "text": "The assessment uses market conditions and data through April 11, 2025.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F02",
+        "source_id": "fed25",
+        "locator": "asset valuations",
+        "role": "caution",
+        "status": "observed",
+        "text": "Equity valuations remained high versus expected earnings; liquidity deteriorated, with generally orderly functioning.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F03",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "caution",
+        "status": "observed",
+        "text": "Hedge-fund leverage indicators were near decade highs and concentrated in larger funds.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F04",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "support",
+        "status": "observed",
+        "text": "Banks remained broadly resilient, with most reporting capital well above regulatory requirements.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F05",
+        "source_id": "fed25",
+        "locator": "household and business debt",
+        "role": "support",
+        "status": "observed",
+        "text": "Business and household debt vulnerabilities were moderate; debt relative to GDP had declined.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F06",
+        "source_id": "fed25",
+        "locator": "funding risks",
+        "role": "support",
+        "status": "observed",
+        "text": "Funding vulnerabilities had declined to moderate levels; runnable liabilities remained a persistent risk.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F07",
+        "source_id": "fed25",
+        "locator": "household credit",
+        "role": "caution",
+        "status": "observed",
+        "text": "Credit-card and auto delinquencies exceeded pre-pandemic levels, especially among non-prime borrowers.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "美联储2025年稳定性报告（数据截至2025-04-11，2025-05-07披露）显示，美国金融体系风险与缓冲并存。风险端：股票估值偏高且流动性恶化但有序；对冲基金杠杆近十年高位且集中；信用卡与汽车贷款违约率超疫情前，非优级借款人突出；可挤兑负债仍是持续风险。缓冲端：银行资本普遍远高于监管要求，企业和家庭债务脆弱性温和且占GDP比下降，融资脆弱性降至温和。整体系统有韧性但局部脆弱。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "报告评估使用截至2025-04-11的市场条件和数据，于2025-05-07披露",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F01"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C2",
+          "text": "股票估值相对预期盈利仍高，流动性恶化但整体运转有序",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F02"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "对冲基金杠杆指标接近十年高位且集中于较大基金",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F03"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "银行整体保持韧性，多数资本远高于监管要求",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "企业和家庭债务脆弱性温和，债务占GDP比重下降",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "融资脆弱性降至温和水平，但可挤兑负债仍是持续风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "信用卡和汽车贷款违约率超疫情前水平，非优级借款人尤甚",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "报告未提供具体估值倍数、杠杆数值、违约率等量化数字，无法计算风险敞口规模",
+        "未披露非银行机构以外的具体资本充足率数值"
+      ],
+      "follow_up": [
+        {
+          "action": "核查美联储后续补充表格中对冲基金杠杆具体倍数及集中度的基金名单",
+          "reason": "可判断系统性杠杆风险是否集中于系统重要性基金",
+          "evidence_ids": [
+            "F03"
+          ]
+        },
+        {
+          "action": "跟踪非优级借款人信用卡与汽车贷款违约率的季度变化",
+          "reason": "可确认消费端信用恶化是否扩散至优级人群",
+          "evidence_ids": [
+            "F07"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "美联储2025年稳定性报告（数据截至2025-04-11，2025-05-07披露）显示美国金融体系风险与缓冲并存。风险端：股票估值偏高、流动性恶化但有序；对冲基金杠杆近十年高位且集中；信用卡与车贷违约超疫情前、非优级突出；可挤兑负债持续风险。缓冲端：银行资本普遍远高于监管要求，企业与家庭债务脆弱性温和且占GDP比降，融资脆弱性降至温和。整体有韧性但局部脆弱，原稿未混淆口径、未将指引当事实，反证已覆盖。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "报告评估使用截至2025-04-11的市场条件和数据，于2025-05-07披露",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F01"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C2",
+          "text": "股票估值相对预期盈利仍高，流动性恶化但整体运转有序",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F02"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "对冲基金杠杆指标接近十年高位且集中于较大基金",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F03"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "银行整体保持韧性，多数资本远高于监管要求",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "企业和家庭债务脆弱性温和，债务占GDP比重下降",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "融资脆弱性降至温和水平，但可挤兑负债仍是持续风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "信用卡和汽车贷款违约率超疫情前水平，非优级借款人尤甚",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "报告未提供具体估值倍数、杠杆数值、违约率等量化数字，无法计算风险敞口规模",
+        "未披露非银行机构以外的具体资本充足率数值"
+      ],
+      "follow_up": [
+        {
+          "action": "核查美联储后续补充表格中对冲基金杠杆具体倍数及集中度的基金名单",
+          "reason": "可判断系统性杠杆风险是否集中于系统重要性基金",
+          "evidence_ids": [
+            "F03"
+          ]
+        },
+        {
+          "action": "跟踪非优级借款人信用卡与汽车贷款违约率的季度变化",
+          "reason": "可确认消费端信用恶化是否扩散至优级人群",
+          "evidence_ids": [
+            "F07"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "e60102e8591c52f159a16f508623f19fa9a9d985466ef5db79f875aa467c8463",
+        "latency_seconds": 4.833,
+        "usage": {
+          "prompt_tokens": 1200,
+          "completion_tokens": 631,
+          "total_tokens": 1831,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "265de78f485709b7e50ebaaf1b7274eac3358c8eb3a2634dc50bb7c394dab92e"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "25a27361b7d6f40af92b542e3eb1f7242d60537c3207524b037bdfc028ad6165",
+        "latency_seconds": 9.125,
+        "usage": {
+          "prompt_tokens": 1873,
+          "completion_tokens": 643,
+          "total_tokens": 2516,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "4b9087021be83afcbf2a872347105d76d9bcaebf48cf5d7b7b1119183b0154c7"
+      }
+    ],
+    "input_sha256": "e9397c383813469fcd1bf9c8139132fcc7990e77729273dd6a46b9a1b15f70e3",
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "美联储2025年稳定性报告（数据截至2025-04-11，2025-05-07披露）显示美国金融体系风险与缓冲并存。风险端：股票估值偏高、流动性恶化但有序；对冲基金杠杆近十年高位且集中；信用卡与车贷违约超疫情前、非优级突出；可挤兑负债持续风险。缓冲端：银行资本普遍远高于监管要求，企业与家庭债务脆弱性温和且占GDP比降，融资脆弱性降至温和。整体有韧性但局部脆弱，原稿未混淆口径、未将指引当事实，反证已覆盖。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "报告评估使用截至2025-04-11的市场条件和数据，于2025-05-07披露",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F01"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C2",
+          "text": "股票估值相对预期盈利仍高，流动性恶化但整体运转有序",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F02"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "对冲基金杠杆指标接近十年高位且集中于较大基金",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F03"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "银行整体保持韧性，多数资本远高于监管要求",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "企业和家庭债务脆弱性温和，债务占GDP比重下降",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "融资脆弱性降至温和水平，但可挤兑负债仍是持续风险",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C7",
+          "text": "信用卡和汽车贷款违约率超疫情前水平，非优级借款人尤甚",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "报告未提供具体估值倍数、杠杆数值、违约率等量化数字，无法计算风险敞口规模",
+        "未披露非银行机构以外的具体资本充足率数值"
+      ],
+      "follow_up": [
+        {
+          "action": "核查美联储后续补充表格中对冲基金杠杆具体倍数及集中度的基金名单",
+          "reason": "可判断系统性杠杆风险是否集中于系统重要性基金",
+          "evidence_ids": [
+            "F03"
+          ]
+        },
+        {
+          "action": "跟踪非优级借款人信用卡与汽车贷款违约率的季度变化",
+          "reason": "可确认消费端信用恶化是否扩散至优级人群",
+          "evidence_ids": [
+            "F07"
+          ]
+        }
+      ]
+    },
+    "answer_sha256": "8a9fb9275f2d10da72ee1aa563625d627034ecc0ecdea6f561c9ab7f1c879a70"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文明确说数据截至2025-04-11、2025-05-07披露，与F01一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选描述与F02股票估值高、流动性恶化但有序一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选描述与F03对冲基金杠杆近十年高位且集中较大基金一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选说银行资本远高于监管要求，与F04一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选说债务脆弱性温和且占GDP比降，与F05一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选说融资脆弱性降至温和、可挤兑负债持续风险，与F06一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选说信用卡车贷违约超疫情前、非优级突出，与F07一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M01",
+          "present": false
+        },
+        {
+          "id": "M02",
+          "present": false
+        },
+        {
+          "id": "M03",
+          "present": false
+        },
+        {
+          "id": "M04",
+          "present": false
+        },
+        {
+          "id": "M05",
+          "present": false
+        },
+        {
+          "id": "M06",
+          "present": false
+        },
+        {
+          "id": "M07",
+          "present": false
+        },
+        {
+          "id": "M08",
+          "present": false
+        },
+        {
+          "id": "M09",
+          "present": false
+        },
+        {
+          "id": "M10",
+          "present": false
+        },
+        {
+          "id": "A01",
+          "present": false
+        },
+        {
+          "id": "A02",
+          "present": false
+        },
+        {
+          "id": "A03",
+          "present": false
+        },
+        {
+          "id": "A04",
+          "present": false
+        },
+        {
+          "id": "A05",
+          "present": false
+        },
+        {
+          "id": "A06",
+          "present": false
+        },
+        {
+          "id": "A07",
+          "present": false
+        },
+        {
+          "id": "A08",
+          "present": false
+        },
+        {
+          "id": "T01",
+          "present": false
+        },
+        {
+          "id": "T02",
+          "present": false
+        },
+        {
+          "id": "T03",
+          "present": false
+        },
+        {
+          "id": "T04",
+          "present": false
+        },
+        {
+          "id": "T05",
+          "present": false
+        },
+        {
+          "id": "T06",
+          "present": false
+        },
+        {
+          "id": "I01",
+          "present": false
+        },
+        {
+          "id": "I02",
+          "present": false
+        },
+        {
+          "id": "I03",
+          "present": false
+        },
+        {
+          "id": "I04",
+          "present": false
+        },
+        {
+          "id": "I05",
+          "present": false
+        },
+        {
+          "id": "I06",
+          "present": false
+        },
+        {
+          "id": "F01",
+          "present": true,
+          "quote": "报告评估使用截至2025-04-11的市场条件和数据，于2025-05-07披露"
+        },
+        {
+          "id": "F02",
+          "present": true,
+          "quote": "股票估值相对预期盈利仍高，流动性恶化但整体运转有序"
+        },
+        {
+          "id": "F03",
+          "present": true,
+          "quote": "对冲基金杠杆指标接近十年高位且集中于较大基金"
+        },
+        {
+          "id": "F04",
+          "present": true,
+          "quote": "银行整体保持韧性，多数资本远高于监管要求"
+        },
+        {
+          "id": "F05",
+          "present": true,
+          "quote": "企业和家庭债务脆弱性温和，债务占GDP比重下降"
+        },
+        {
+          "id": "F06",
+          "present": true,
+          "quote": "融资脆弱性降至温和水平，但可挤兑负债仍是持续风险"
+        },
+        {
+          "id": "F07",
+          "present": true,
+          "quote": "信用卡和汽车贷款违约率超疫情前水平，非优级借款人尤甚"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确将美联储报告整理为风险与缓冲简报，覆盖所需及反证ID，未混淆主体期间币种口径，局限未提风险非概率但整体可答"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "833245495ff8d3b5fac607c722f9a716c162e06aced114dce27daf72b2d7dc12",
+      "latency_seconds": 9.75,
+      "usage": {
+        "prompt_tokens": 4581,
+        "completion_tokens": 1061,
+        "total_tokens": 5642,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "3e0778bda376aeb63416bf5939e0a1fc37304a9efc798351fd93f4fdffcfa5fa"
+    },
+    "input_sha256": "81b488f2570fb60e2b8be6b0c654f8e574cd52c866d7a1185d9570ebdfd59d5d",
+    "answer_sha256": "8a9fb9275f2d10da72ee1aa563625d627034ecc0ecdea6f561c9ab7f1c879a70",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "status": "error",
+  "error_type": "ValueError",
+  "error": "judge coverage IDs incomplete/duplicated",
+  "finished_utc": "2026-09-09T15:51:17.324124+00:00",
+  "wall_seconds": 23.717
+}

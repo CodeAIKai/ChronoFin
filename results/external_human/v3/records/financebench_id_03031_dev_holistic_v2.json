@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_03031",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "e8c43bb44652858334e005d1f6e7ca31e85c7e252262bcea6563ce85c17c73cc",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "88d637eb30c62c11c8d1c82d24d682480460afd99641c3af3efd745049b4d489",
+  "started_utc": "2026-09-09T17:51:26.754658+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds the answer stating figures were not provided and only explains how to calculate, despite evidence containing the balance sheet data."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ea4e1c5764e0889f8bd2fa973f721a43fad723471bf11ff18c9fa3b9d1f3672f",
+    "latency_seconds": 5.631,
+    "usage": {
+      "prompt_tokens": 1472,
+      "completion_tokens": 47,
+      "total_tokens": 1519,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d94447789774c747708253676c13c193a16ac2e44463852034915237cf281914"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_03031_dev",
+  "reused_from": "results/external_human/v2/financebench_id_03031_holistic.json",
+  "parent_sha256": "803f8f4f6f997e3d066280830e48f10bf7b213b5995969250de5c6e62955b7cc"
+}

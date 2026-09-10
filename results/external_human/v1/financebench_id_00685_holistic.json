@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00685",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "a0c3b0bb5cf49df13b12b7ec3c00810033beee9679dc67155682e172a0a405f0",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9e331cfc8908e07343661a077e758645595bfd81f0e8e3be21599fa29d24ebf2",
+  "started_utc": "2026-09-09T17:59:34.597948+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate concludes gross margins fluctuate within ~2% annually and are historically consistent, matching reference's 'consistent, minor 1.1% decline FY22-FY23'. Evidence shows gross margins: FY21 22.4%, FY22 22.5%, FY23 21.4% (within ~1.1pp band), supporting claim."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8b23d4efcf76bba437f3ee26c6a90aa77eae007687033ed79b3d480ecd3ff793",
+    "latency_seconds": 7.122,
+    "usage": {
+      "prompt_tokens": 1798,
+      "completion_tokens": 93,
+      "total_tokens": 1891,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1d3cb6ab49b6349a4bde304fdedf5d1aa7177daa6ec92c1ee93d84b41d39f5bc"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

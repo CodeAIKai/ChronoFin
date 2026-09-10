@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00552",
+  "company": "Microsoft",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "7713cc3f46f96f63ce809e6a644fa5cc33e8cec90dfa76c3b8be4e697226749a",
+  "started_utc": "2026-09-09T17:44:02.922397+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate output '[END OF FILING]' provides no substantive answer to whether Microsoft increased debt; it withholds the conclusion entirely."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "88092d48d8938f6a68983b275bb59e34583ab5c56e1030bff149075edecdfb45",
+    "latency_seconds": 7.528,
+    "usage": {
+      "prompt_tokens": 2287,
+      "completion_tokens": 48,
+      "total_tokens": 2335,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "47861a5cdebf4ad9ba1f766eb836a9662f3860b4b5aa0c0fe3e2de00dbcc6aec"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00552_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00552_holistic.json",
+  "parent_sha256": "bad396866b758ee11d37923a916e7a54793364e851a15c619e45c22966f55f35"
+}

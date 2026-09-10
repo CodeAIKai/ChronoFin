@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01964",
+  "uid": "financebench_id_01964_dev",
+  "split": "development",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c5d14620b70e71dda5f980a56ad86a33783bc38eaaace2d3559bb49aa0001853",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "2352b022fcc41d192fffc6fe590efeded2e3424ceb8bd8c4a5dffeabdbdf2742",
+  "started_utc": "2026-09-10T01:28:27.442822+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "the largest liability in American Express's Balance Sheet in 2022 was the \"Membership Rewards liability,\" which amounted to $12,789 million",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Reference says Customer deposits; evidence balance sheet shows Customer deposits $110,239 million, far larger than any listed liability. Candidate named non-listed Membership Rewards liability and wrong amount."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "43f33167a65efa6b962614d612affa43c967ed75c02b51cf687191cc5f2d5260",
+    "latency_seconds": 11.257,
+    "usage": {
+      "prompt_tokens": 2065,
+      "completion_tokens": 117,
+      "total_tokens": 2182,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ec5800d4c9dcb8aa63b5218e243090b0d27f989b85efb64c37a6a000e8548ff1"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

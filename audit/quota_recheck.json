@@ -1,0 +1,6 @@
+{
+  "utc": "2026-09-09T16:34:35.639886+00:00",
+  "status": 402,
+  "code": "401008",
+  "message": "服务免费体验额度已耗尽，且未开启后付费，无法正常访问。请前往控制台 > 在线推理服务开启后付费，查看链接：https://console.cloud.tencent.com/tokenhub/inference"
+}

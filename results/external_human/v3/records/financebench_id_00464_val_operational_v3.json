@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00464",
+  "uid": "financebench_id_00464_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ef296a70d65f10967764690947123755a46794219ebee72ec474f8e3b6d47bf7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "ba810f862fca7ab90acded4d77fdf6568ac40ba0751a75ae25b9b781c3c29db1",
+  "started_utc": "2026-09-09T18:05:57.101231+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Yes, Boeing's business is subject to cyclicality.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate affirms Boeing's business is subject to cyclicality, matching reference and supported by evidence stating airline industry has been cyclical, affecting Boeing's commercial aircraft demand."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "31b8fa5d407439c38e603526a62a786023c762e3a52c13ed6e424cd4fa7ff2cc",
+    "latency_seconds": 6.382,
+    "usage": {
+      "prompt_tokens": 1314,
+      "completion_tokens": 90,
+      "total_tokens": 1404,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "446220d1e7c766eb61ab7f22e2b8c7591afa3ee1c17490f740e20ec1bcfbfa6f"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

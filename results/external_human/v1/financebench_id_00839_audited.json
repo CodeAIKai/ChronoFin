@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00839",
+  "company": "Foot Locker",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "ceea20d2e5adc9cc176bb11dc118d32800e5db0d85bb8d03e51b5674bf810bf2",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "0d20b3171a1833876b3097f7748041f9858537518da9431be9ab19c7841a5454",
+  "started_utc": "2026-09-09T17:33:24.067293+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence states new CEO Mary N. Dillon was former CEO of Ulta Beauty, a similar retail company, contradicting candidate's claim of no info. Reference says yes.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Foot Locker new CEO Mary N. Dillon, identified in evidence."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period is prior to Sept 2022 appointment; evidence covers prior Ulta CEO role."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Qualitative yes/no question, no numeric unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says no info/refuses; evidence shows she was CEO of Ulta Beauty, so answer should be yes."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claims no supporting text, but evidence explicitly states former CEO of Ulta Beauty."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3d4b4fa9c29583d2d2d951e35ccaefdf96fa9f8c199fc5621cf50234d2811900",
+    "latency_seconds": 3.285,
+    "usage": {
+      "prompt_tokens": 2005,
+      "completion_tokens": 238,
+      "total_tokens": 2243,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "aace888da652083c4a44030fa228c6b0fc92f2a3e67c4669332e08c107578263"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

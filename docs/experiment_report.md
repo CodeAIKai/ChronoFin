@@ -1,5 +1,7 @@
 # ChronoFin 实验报告
 
+> 适用版本：历史规则评估器及其确定性回归。当前开放式研究应用见[实验分析报告](最终实验分析报告.md)与[十维评估方法](开放式评估方法.md)。下文的“当前”指该历史阶段。
+
 版本：2026-08-27  
 目标：验证 ChronoFin 是否真的执行时间隔离、证据/计算审计与因果局部响应，而不是只生成一篇看起来专业的报告。
 
@@ -240,13 +242,13 @@ PYTHONPATH=src python scripts/run_deterministic_stability.py --runs 5
 
 ### 6.3 无网无密钥干净环境复现
 
-`scripts/run_cleanroom_check.py` 会计算提交树指纹，将项目复制到随机临时目录，移除 Hy3/OpenAI 密钥与代理环境变量，设置 `PIP_NO_INDEX=1`，再在新虚拟环境执行离线核心链路。由于当前提交树仍在收尾，本报告不预写步骤数或通过结论；最终状态只以收尾后重新生成、树指纹匹配且由 `verify_submission.py` 校验的 [cleanroom_verification.json](../results/cleanroom_verification.json) 为准。
+`scripts/run_cleanroom_check.py` 会计算提交树指纹，将项目复制到随机临时目录，移除 Hy3/OpenAI 密钥与代理环境变量，设置 `PIP_NO_INDEX=1`，再在新虚拟环境执行离线核心链路。历史运行保存在[cleanroom_verification.json](../results/cleanroom_verification.json)，其指纹绑定当时版本。当前开放式应用另用 `scripts/verify_clean_checkout.py` 复核，实际状态见[audit/clean_checkout_verification.json](../audit/clean_checkout_verification.json)。
 
-即使最终通过，它也只能排除“依赖未提交 PDF 缓存、API Key 或当前工作目录状态”的一类复现风险；它仍继承宿主 build tooling，不是第三方系统复现，也不重放在线 Hy3 调用。
+该检查范围限于排除“依赖未提交 PDF 缓存、API Key 或当前工作目录状态”的一类复现风险；它仍继承宿主 build tooling，不是第三方系统复现，也不重放在线 Hy3 调用。
 
 ### 6.4 提交演示资产
 
-`scripts/build_demo_gif.py` 从冻结的腾讯前后时点答案、因果实验、正式 benchmark 与组件消融 JSON 生成 1280×720、56 秒的离线 GIF，不联网、不调用模型、不读取密钥。资产见 [chronofin_demo.gif](../assets/chronofin_demo.gif)，带口播版本见[两分钟脚本](demo_script.md)。GIF 展示的是已落盘证据的回放，不冒充可交互在线运行。
+`scripts/build_demo_gif.py` 从冻结的腾讯前后时点答案、因果实验、正式 benchmark 与组件消融 JSON 生成 1280×720、56 秒的离线 GIF，不联网、不调用模型、不读取密钥。资产见 [chronofin_demo.gif](../assets/chronofin_demo.gif)，当前配音视频见[演示说明](演示说明.md)。GIF 展示的是已落盘证据的回放，不冒充可交互在线运行。
 
 ## 7. 当前结论与不成立的主张
 
@@ -267,16 +269,12 @@ PYTHONPATH=src python scripts/run_deterministic_stability.py --runs 5
 - 没有证明 manifest 日期在修订、重述、时区和盘中情形下始终正确；
 - 没有证明同族 Hy3 judge 无自偏好；
 - 历史三次 Hy3 语义复评未绑定当前投影后的答案，因而没有证明当前答案的三次语义一致性；
-- cleanroom 只有在最终提交树稳定后重跑并通过指纹核验，才能写入最终通过结论；
+- 历史cleanroom结果绑定旧版指纹，不证明后续任意版本均能通过；
 - 没有把合成 PDA=1、单次 causal fidelity=1 或内部 100 分解释为真实投资可靠性；
 - 没有提供任何买卖建议、回报预测或生产部署承诺。
 
-人工校准的预注册步骤见[人工标注协议](human_annotation_protocol.md)。在实际招募、盲标和仲裁完成之前，结果表必须继续标记为“未执行”。
+该阶段未执行新增人工标注。后续公开人工标签三分类实验见[外部人工标签验证](外部人工标签验证.md)，其结果不替代十维专家评价。
 
-## 8. 下一轮优先级
+## 8. 后续版本的实际扩展
 
-1. 新建由开发者未见、专家独立构造和仲裁的真实公司 held-out 集；当前三公司数据已被开发者看见，只保留为版本化回归；
-2. 在相同证据和调用预算下加入 plain Hy3、普通 RAG、exact-citation RAG 的端到端生成基线；当前仅完成 evaluator 组件消融；
-3. 使用至少两名具备财报阅读能力的独立标注者校准引用蕴含、重要信息覆盖和推断边界；
-4. 建模 amendment/supersedes、首次可得时间、修订生效时间与跨时区；
-5. 引入结构化表格/XBRL 或页面视觉通道，但继续以官方原文作为最终可读证据。
+开放式研究版本实现了完整资料单轮、通用二次修订与反证修订的实际Hy3对照，并引入新来源PDF、公开人工标签及语义压力验证。完整结果见[实验分析报告](最终实验分析报告.md)。新公司专家盲测、结构化XBRL集成、重述与盘中时间建模尚不在已验证范围。

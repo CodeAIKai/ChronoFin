@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04209",
+  "uid": "financebench_id_04209_val",
+  "split": "new_response_validation",
+  "company": "Costco",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "d5ff08f4c9fbcd0c5f00099b157547cef4e7e539565e4341234aa72a1a1c52ff",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "128262e347ee972298b48a1205a1237f3e4b779cef83d1573496a1fa74542503",
+  "started_utc": "2026-09-10T01:31:38.077809+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Costco had total assets amounting to $59,268 million USD",
+    "content_correct": true,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate states total assets $59,268 million at FY2021 end; balance sheet TOTAL ASSETS line for Aug 29, 2021 shows $59,268 million, matching reference 59268."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0d42b93464cc5d424040cddf172498e29e1fd0fdbda5ec7543ec89631e422bd4",
+    "latency_seconds": 7.9,
+    "usage": {
+      "prompt_tokens": 1782,
+      "completion_tokens": 106,
+      "total_tokens": 1888,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f564f94f0e5c3c7a3f42ec41e02ca61967be8f1cbcf0a455a5bdd732ba4d1628"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

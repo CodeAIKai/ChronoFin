@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_02981",
+  "company": "Corning",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "233b7fed3126bce1eb20a1a99db92926b912a8c07c392a8864853a6666ab554e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "7e9092db1e55d62e413d85d8fa216d181ead2816625e30505c464ad6422e8d7c",
+  "started_utc": "2026-09-09T18:02:26.405840+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed average using margins (14.9%,16.8%,17.3%) not supported by evidence. Evidence income statement shows operating income / net sales: 2019=1306/11503=11.4%, 2020=509/11303=4.5%, 2021=2112/14082=15.0%; 3yr avg=10.3%, matching reference. Candidate's numbers and result are wrong.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Corning, correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2019-FY2021 three-year average requested and used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer given in percents as requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says 16.3%; correct per evidence/reference is 10.3%"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate's yearly margins (14.9/16.8/17.3) absent from evidence; evidence yields 11.4/4.5/15.0"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "db2015f1fef4dd23c5f911d5c37d1b25c8ab3fd6ae62b9140e9d9db2a44e2b34",
+    "latency_seconds": 8.187,
+    "usage": {
+      "prompt_tokens": 2206,
+      "completion_tokens": 291,
+      "total_tokens": 2497,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f0f99ea7458833405c7fb6e62c73e8c2dc13fcdf6b9e835fee7e90674074954f"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

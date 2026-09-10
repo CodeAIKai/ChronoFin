@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03029",
+  "company": "3M",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "e799f511f9175354f86d7ad557e40fde590ebb6df6d6446147ab33b2d7f4a0ac",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d3871e495e46177f0388cd84e77ee1e0d602e7ed8390154301ab60bb9fa5250c",
+  "started_utc": "2026-09-09T17:34:24.594039+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states FY2018 3M capex is $1,577 million from cash flow statement PP&E purchases; evidence shows 2018 Purchases of PP&E as (1,577) in millions, i.e. $1,577M outflow, matching reference.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 / year ended Dec 31 2018 referenced and used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "USD millions requested; candidate gives $1,577 million, evidence in Millions."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core numeric answer $1,577 million matches reference and evidence magnitude."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence cash flow investing section shows Purchases of PP&E (1,577) for 2018, supporting capex amount."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7c92a7ad9f5301f4f3bb8c36a388db8d74bc9324371884e77518ec5f37b49f82",
+    "latency_seconds": 3.41,
+    "usage": {
+      "prompt_tokens": 3079,
+      "completion_tokens": 253,
+      "total_tokens": 3332,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "590f0d6dc2ff875e8af86379aa327268e3cd0234e7456f1d1619f19a4ac2cf1e"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

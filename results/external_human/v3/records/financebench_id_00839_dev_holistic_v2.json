@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00839",
+  "company": "Foot Locker",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "ceea20d2e5adc9cc176bb11dc118d32800e5db0d85bb8d03e51b5674bf810bf2",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "0d20b3171a1833876b3097f7748041f9858537518da9431be9ab19c7841a5454",
+  "started_utc": "2026-09-09T17:46:32.223016+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it lacks information to answer and withholds the requested conclusion, despite evidence showing new CEO was former CEO of Ulta Beauty."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "97acc8a2c0ea79ceb600478947a9da6d71922e3517c005dadbf98690d4cc9ce3",
+    "latency_seconds": 5.555,
+    "usage": {
+      "prompt_tokens": 1889,
+      "completion_tokens": 49,
+      "total_tokens": 1938,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "456bfaf971ff6ce477bf417be805546d837e7275945145e583f652890f1baaea"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00839_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00839_holistic.json",
+  "parent_sha256": "33e0f37948b130896f50ddc147e8b6896df6ebdfe59eddcaa8e357780169c436"
+}

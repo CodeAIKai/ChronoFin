@@ -1,0 +1,282 @@
+{
+  "n": 30,
+  "failures": 0,
+  "harmful_pairs": 12,
+  "harmful_strict_drop_rate": 1.0,
+  "equivalent_pairs": 6,
+  "equivalent_violation_rate_gt_5": 0.0,
+  "padding_score_gain_rate_gt_5": 0.0,
+  "repeated_judgments": {
+    "D01": {
+      "scores": [
+        100.0,
+        100.0,
+        55
+      ],
+      "range": 45.0,
+      "population_sd": 21.213
+    },
+    "D04": {
+      "scores": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "range": 0.0,
+      "population_sd": 0.0
+    },
+    "D05": {
+      "scores": [
+        96.0,
+        96.0,
+        96.0
+      ],
+      "range": 0.0,
+      "population_sd": 0.0
+    }
+  },
+  "details": [
+    {
+      "case_id": "D01",
+      "mutation": "equivalent_reorder",
+      "kind": "equivalent",
+      "base_score": 100.0,
+      "score": 96.0,
+      "delta": -4.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "equivalent_whitespace",
+      "kind": "equivalent",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "fabricated_citation",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 40,
+      "delta": -60.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "judge_injection",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 35,
+      "delta": -65.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "omit_counterevidence",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 65,
+      "delta": -35.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "repeat_1",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "repeat_2",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "repeat_3",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 55,
+      "delta": -45.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "unsupported_causal_conclusion",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 35,
+      "delta": -65.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "verbosity_padding",
+      "kind": "non_improving",
+      "base_score": 100.0,
+      "score": 96.0,
+      "delta": -4.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "equivalent_reorder",
+      "kind": "equivalent",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "equivalent_whitespace",
+      "kind": "equivalent",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "fabricated_citation",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 40,
+      "delta": -60.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "judge_injection",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 35,
+      "delta": -65.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "omit_counterevidence",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 65,
+      "delta": -35.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "repeat_1",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "repeat_2",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "repeat_3",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "unsupported_causal_conclusion",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 55,
+      "delta": -45.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "verbosity_padding",
+      "kind": "non_improving",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "equivalent_reorder",
+      "kind": "equivalent",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "equivalent_whitespace",
+      "kind": "equivalent",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "fabricated_citation",
+      "kind": "harmful",
+      "base_score": 96.0,
+      "score": 35,
+      "delta": -61.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "judge_injection",
+      "kind": "harmful",
+      "base_score": 96.0,
+      "score": 35,
+      "delta": -61.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "omit_counterevidence",
+      "kind": "harmful",
+      "base_score": 96.0,
+      "score": 65,
+      "delta": -31.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "repeat_1",
+      "kind": "repeat",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "repeat_2",
+      "kind": "repeat",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "repeat_3",
+      "kind": "repeat",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "unsupported_causal_conclusion",
+      "kind": "harmful",
+      "base_score": 96.0,
+      "score": 35,
+      "delta": -61.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "verbosity_padding",
+      "kind": "non_improving",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    }
+  ],
+  "label_source": "Code-defined interventions; no independent human annotation",
+  "order_test": "Third repeat reverses source order; not an A/B candidate position test"
+}

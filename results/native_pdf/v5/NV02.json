@@ -1,0 +1,1978 @@
+{
+  "status": "ok",
+  "mode": "live_pdf",
+  "stage": "complete",
+  "record": {
+    "version": "native-generation-5.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "NVIDIA Q1 FY2026 已实现 430 亿美元营收和 71% GAAP 毛利率吗？根据当前文件纠正并区分口径。",
+      "as_of": "2025-12-01"
+    },
+    "evidence": [
+      {
+        "id": "F7",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q1 FY2026营收预期为430亿美元，正负2%，是展望而非已实现。",
+        "quote": "First Quarter of Fiscal 2026 Outlook\nOutlook for the first quarter of fiscal 2026 is as follows:\n\n    •  Revenue is expected to be $43.0 billion, plus or minus 2%.",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 43.0,
+        "unit": "USD billion",
+        "raw_number": "43.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "forecast",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 34,
+        "end_line": 37,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY25 GAAP营收为39,331百万美元，非用户所称Q1 FY2026的430亿美元。",
+        "quote": "                                GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)\nRevenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 39331,
+        "unit": "USD million",
+        "raw_number": "39,331",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 5,
+        "end_line": 7,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_842a50961f04",
+        "text": "Fiscal 2025 GAAP全年营收130,497百万美元，同比增114%，非Q1 FY2026。",
+        "quote": "Fiscal 2025 Summary\n\n                                GAAP\n ($ in millions, except earnings per share)                   FY25           FY24            Y/Y\nRevenue                                             $130,497          $60,922        Up 114%",
+        "source_chunk_id": "P842A50962B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–3526",
+        "value": 130497,
+        "unit": "USD million",
+        "raw_number": "130,497",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 1,
+        "end_line": 5,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q1 FY2026 GAAP毛利率预期70.6%，正负50基点。",
+        "quote": "    •  GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%, respectively, plus or\n      minus 50 basis points.",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 70.6,
+        "unit": "%",
+        "raw_number": "70.6",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "forecast",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 39,
+        "end_line": 40,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q1 FY2026展望补充：GAAP毛利率70.6%，Non-GAAP毛利率71.0%，差额0.4%来自SBC等。",
+        "quote": "GAAP gross margin                                                                             70.6 %\n   Impact of stock-based compensation expense, acquisition-related costs, and other                                                                                                       0.4 %    costs\nNon-GAAP gross margin                                                                       71.0 %",
+        "source_chunk_id": "P842A50968B1",
+        "page": 8,
+        "locator": "PDF p8, chars 0–1027",
+        "value": 71.0,
+        "unit": "%",
+        "raw_number": "71.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "forecast",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 7,
+        "end_line": 9,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q1 FY2026 Non-GAAP毛利率预期71.0%，正负50基点。",
+        "quote": "    •  GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%, respectively, plus or\n      minus 50 basis points.",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 71.0,
+        "unit": "%",
+        "raw_number": "71.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "forecast",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 39,
+        "end_line": 40,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY25 GAAP毛利率为73.0%，非71%。",
+        "quote": "                                GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)\nRevenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%\nGross margin                        73.0 %         74.6 %         76.0 %  Down 1.6 pts  Down 3.0 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 73.0,
+        "unit": "%",
+        "raw_number": "73.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 5,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F1",
+        "source_id": "pdf_842a50961f04",
+        "text": "文件标题为CFO Commentary on Fourth Quarter and Fiscal 2025 Results，未包含Q1 FY2026实际业绩，仅含Q4 FY25与FY25。",
+        "quote": "CFO Commentary on Fourth Quarter and Fiscal 2025 Results",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 1,
+        "end_line": 1,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY25 Non-GAAP毛利率为73.5%，亦非71%。",
+        "quote": "                                 Non-GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)\n Revenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%\n Gross margin                        73.5 %         75.0 %         76.7 %  Down 1.5 pts  Down 3.2 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 73.5,
+        "unit": "%",
+        "raw_number": "73.5",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 14,
+        "end_line": 17,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_842a50961f04",
+        "text": "Fiscal 2025 GAAP毛利率75.0%，非71%。",
+        "quote": "                                GAAP\n ($ in millions, except earnings per share)                   FY25           FY24            Y/Y\nRevenue                                             $130,497          $60,922        Up 114%\nGross margin                                                75.0 %            72.7 %      Up 2.3 pts",
+        "source_chunk_id": "P842A50962B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–3526",
+        "value": 75.0,
+        "unit": "%",
+        "raw_number": "75.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 3,
+        "end_line": 6,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_842a50961f04",
+        "text": "表中金额单位为百万美元，每股数据除外；列期间为Q4 FY25/Q3 FY25/Q4 FY24。",
+        "quote": "                                GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "definition",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 5,
+        "end_line": 6,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_842a50961f04",
+        "text": "Non-GAAP口径定义：剔除SBC、收购相关成本、股权证券损益等，不与GAAP替代。",
+        "quote": "Non-GAAP Measures\nTo supplement NVIDIA’s condensed consolidated financial statements presented in accordance with\nGAAP, the company uses non-GAAP measures of certain components of financial performance.\nThese non-GAAP measures include non-GAAP gross profit, non-GAAP gross margin, non-GAAP",
+        "source_chunk_id": "P842A50965B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–4196",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "definition",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 11,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_842a50961f04",
+        "text": "2024年6月7日完成10拆1，所有每股数据已追溯调整。",
+        "quote": "On June 7, 2024, we completed a 10-for-1 forward stock split. All share and per share amounts\npresented have been retroactively adjusted to reflect the stock split.",
+        "source_chunk_id": "P842A50962B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–3526",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "definition",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 43,
+        "end_line": 44,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_842a50961f04",
+        "text": "FY2025股东回报34.5十亿（回购33.7十亿+股息0.834十亿），体现现金运用约束。",
+        "quote": "We  utilized cash of $8.1  billion towards shareholder  returns, including $7.8  billion  in share\nrepurchases and $245 million in cash dividends. In fiscal 2025, we utilized cash of $34.5 billion\ntowards shareholder returns, including $33.7 billion in share repurchases and $834 million in cash",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 34.5,
+        "unit": "USD billion",
+        "raw_number": "34.5",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 29,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_842a50961f04",
+        "text": "现金及等价物与有价证券43.2十亿，同比26.0十亿、环比38.5十亿，反映现金约束与投入背景。",
+        "quote": "Cash, cash equivalents and marketable securities were $43.2 billion, up from $26.0 billion a year ago\nand $38.5 billion a quarter ago. The increases primarily reflect higher revenue partially offset by stock",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 43.2,
+        "unit": "USD billion",
+        "raw_number": "43.2",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 9,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "根据NVIDIA于2025-02-26披露的Q4及FY2025 CFO评论，文件未含Q1 FY2026实际业绩。用户所称Q1 FY2026已实现430亿美元营收与71% GAAP毛利率均不准确：430亿美元为Q1 FY2026营收展望（±2%），非已实现；GAAP毛利率展望为70.6%（±50基点），71.0%为Non-GAAP口径而非GAAP。已披露最近实际为Q4 FY25营收393.31亿美元、GAAP毛利率73.0%。需区分展望与实现、GAAP与Non-GAAP口径。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "文件为NVIDIA Q4及FY2025 CFO评论，未包含Q1 FY2026实际业绩，仅含Q4 FY25与FY25数据。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F1"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C2",
+          "text": "Q1 FY2026营收430亿美元为展望值（±2%），并非已实现的季度营收。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F7",
+              "value": 43.0,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Q1 FY2026 GAAP毛利率展望为70.6%（±50基点），非用户所称71% GAAP毛利率。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F8"
+          ],
+          "numbers": [
+            {
+              "source_id": "F8",
+              "value": 70.6,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Q1 FY2026 Non-GAAP毛利率展望为71.0%（±50基点），与GAAP差额0.4%来自SBC等成本，71%实为Non-GAAP口径。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F9",
+            "F10"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 71.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "F10",
+              "value": 71.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "已披露最近实际季度Q4 FY25营收为39,331百万美元，GAAP毛利率73.0%，Non-GAAP毛利率73.5%。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 39331,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 73.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "F4",
+              "value": 73.5,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "FY2025 GAAP全年营收130,497百万美元、毛利率75.0%，亦非Q1 FY2026数据。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F5",
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 130497,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F6",
+              "value": 75.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "Non-GAAP口径定义明确剔除SBC、收购成本等，不与GAAP替代，使用时应区分。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F11"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "Q1 FY2026实际营收与毛利率在文件中未披露，仅能依据展望区间说明；实际值待后续财报确认。"
+      ],
+      "follow_up": [
+        {
+          "action": "跟踪NVIDIA Q1 FY2026实际财报披露以核对430亿营收与70.6% GAAP毛利率实现情况",
+          "reason": "可确认用户所称已实现数据是否准确及展望偏差",
+          "evidence_ids": [
+            "F7",
+            "F8"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "根据NVIDIA于2025-02-26披露的Q4及FY2025 CFO评论，文件未含Q1 FY2026实际业绩。用户所称Q1 FY2026已实现430亿美元营收与71% GAAP毛利率均不准确：430亿美元为Q1 FY2026营收展望（±2%），非已实现；GAAP毛利率展望为70.6%（±50基点），71.0%为Non-GAAP口径而非GAAP。已披露最近实际为Q4 FY25营收39,331百万美元、GAAP毛利率73.0%。需严格区分展望与实现、GAAP与Non-GAAP口径，文件未披露Q1 FY2026实际数据。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "文件为NVIDIA Q4及FY2025 CFO评论，未包含Q1 FY2026实际业绩，仅含Q4 FY25与FY25数据。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F1"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C2",
+          "text": "Q1 FY2026营收430亿美元为展望值（±2%），并非已实现的季度营收。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F7",
+              "value": 43.0,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Q1 FY2026 GAAP毛利率展望为70.6%（±50基点），非用户所称71% GAAP毛利率。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F8"
+          ],
+          "numbers": [
+            {
+              "source_id": "F8",
+              "value": 70.6,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Q1 FY2026 Non-GAAP毛利率展望为71.0%（±50基点），与GAAP差额0.4%来自SBC等成本，71%实为Non-GAAP口径。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F9",
+            "F10"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 71.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "F10",
+              "value": 71.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "已披露最近实际季度Q4 FY25营收为39,331百万美元，GAAP毛利率73.0%，Non-GAAP毛利率73.5%。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 39331,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 73.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "F4",
+              "value": 73.5,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "FY2025 GAAP全年营收130,497百万美元、毛利率75.0%，亦非Q1 FY2026数据。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F5",
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 130497,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F6",
+              "value": 75.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "Non-GAAP口径定义明确剔除SBC、收购成本等，不与GAAP替代，使用时应区分。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F11"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "Q1 FY2026实际营收与毛利率在文件中未披露，仅能依据展望区间说明；实际值待后续财报确认。",
+        "文件中未提供Q1 FY2026与Q4 FY25营收、毛利率的精确差额或占比计算所需实际值，故无编译计算。"
+      ],
+      "follow_up": [
+        {
+          "action": "跟踪NVIDIA Q1 FY2026实际财报披露以核对430亿营收与70.6% GAAP毛利率实现情况",
+          "reason": "可确认用户所称已实现数据是否准确及展望偏差",
+          "evidence_ids": [
+            "F7",
+            "F8"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "a6868d1ca744997620a6f1710335a70cdfeac059dfbaeea05f285ddf37d91339",
+        "latency_seconds": 9.524,
+        "usage": {
+          "prompt_tokens": 4614,
+          "completion_tokens": 934,
+          "total_tokens": 5548,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "23da66f0c560fc09f07708dad07abcb733f87c05b5ac85031e17c6db98ce9d38"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "f3982f32889545558f03cf27c756efbe7b29e0086e21a35cc392179f979b35d2",
+        "latency_seconds": 8.334,
+        "usage": {
+          "prompt_tokens": 5606,
+          "completion_tokens": 980,
+          "total_tokens": 6586,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "c8dddc9a9f3320c7ea1fe147a5035e9dc9ddb7dc18edfbed266c2865a555533b"
+      }
+    ],
+    "input_sha256": "d0fb884ce9b522ff9ca7863a2abb4f398284e4e6a0bfeedac2ad8edd3c9544a8",
+    "numeric_registry": {
+      "F7": {
+        "value": 43.0,
+        "unit": "USD billion"
+      },
+      "F2": {
+        "value": 39331,
+        "unit": "USD million"
+      },
+      "F5": {
+        "value": 130497,
+        "unit": "USD million"
+      },
+      "F8": {
+        "value": 70.6,
+        "unit": "%"
+      },
+      "F10": {
+        "value": 71.0,
+        "unit": "%"
+      },
+      "F9": {
+        "value": 71.0,
+        "unit": "%"
+      },
+      "F3": {
+        "value": 73.0,
+        "unit": "%"
+      },
+      "F4": {
+        "value": 73.5,
+        "unit": "%"
+      },
+      "F6": {
+        "value": 75.0,
+        "unit": "%"
+      },
+      "F15": {
+        "value": 34.5,
+        "unit": "USD billion"
+      },
+      "F14": {
+        "value": 43.2,
+        "unit": "USD billion"
+      }
+    },
+    "compiled_calculations": [],
+    "operation_errors": [],
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "根据NVIDIA于2025-02-26披露的Q4及FY2025 CFO评论，文件未含Q1 FY2026实际业绩。用户所称Q1 FY2026已实现430亿美元营收与71% GAAP毛利率均不准确：430亿美元为Q1 FY2026营收展望（±2%），非已实现；GAAP毛利率展望为70.6%（±50基点），71.0%为Non-GAAP口径而非GAAP。已披露最近实际为Q4 FY25营收39,331百万美元、GAAP毛利率73.0%。需严格区分展望与实现、GAAP与Non-GAAP口径，文件未披露Q1 FY2026实际数据。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "文件为NVIDIA Q4及FY2025 CFO评论，未包含Q1 FY2026实际业绩，仅含Q4 FY25与FY25数据。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F1"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C2",
+          "text": "Q1 FY2026营收430亿美元为展望值（±2%），并非已实现的季度营收。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F7",
+              "value": 43.0,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Q1 FY2026 GAAP毛利率展望为70.6%（±50基点），非用户所称71% GAAP毛利率。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F8"
+          ],
+          "numbers": [
+            {
+              "source_id": "F8",
+              "value": 70.6,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Q1 FY2026 Non-GAAP毛利率展望为71.0%（±50基点），与GAAP差额0.4%来自SBC等成本，71%实为Non-GAAP口径。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F9",
+            "F10"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 71.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "F10",
+              "value": 71.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "已披露最近实际季度Q4 FY25营收为39,331百万美元，GAAP毛利率73.0%，Non-GAAP毛利率73.5%。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 39331,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 73.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "F4",
+              "value": 73.5,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "FY2025 GAAP全年营收130,497百万美元、毛利率75.0%，亦非Q1 FY2026数据。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F5",
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 130497,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F6",
+              "value": 75.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "Non-GAAP口径定义明确剔除SBC、收购成本等，不与GAAP替代，使用时应区分。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F11"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "Q1 FY2026实际营收与毛利率在文件中未披露，仅能依据展望区间说明；实际值待后续财报确认。",
+        "文件中未提供Q1 FY2026与Q4 FY25营收、毛利率的精确差额或占比计算所需实际值，故无编译计算。"
+      ],
+      "follow_up": [
+        {
+          "action": "跟踪NVIDIA Q1 FY2026实际财报披露以核对430亿营收与70.6% GAAP毛利率实现情况",
+          "reason": "可确认用户所称已实现数据是否准确及展望偏差",
+          "evidence_ids": [
+            "F7",
+            "F8"
+          ]
+        }
+      ]
+    },
+    "pre_repair_proof_issues": [],
+    "answer_sha256": "7749a66d80e7e4409d9eb710e968f0140637862b160d41b42c5138221d88a6e5",
+    "final_proof_issues": [],
+    "source_document": {
+      "id": "pdf_842a50961f04",
+      "sha256": "842a50961f0466d50584f8017200ab72c5a86c7438f0560cefb0506442149ce7",
+      "pages": 8,
+      "bytes": 82336,
+      "metadata_identity": "pinned_official",
+      "title": "NVIDIA Q4 and FY2025 CFO Commentary",
+      "entity": "NVIDIA",
+      "published_at": "2025-02-26",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 9,
+      "selected_ids": [
+        "P842A50961B1",
+        "P842A50962B1",
+        "P842A50963B1",
+        "P842A50964B1",
+        "P842A50965B1",
+        "P842A50965B2",
+        "P842A50966B1",
+        "P842A50967B1",
+        "P842A50968B1"
+      ],
+      "selected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selection_sha256": "c5180a25a34bbecb60726bf68c871cb61b6c6f8c76879bc0591062b670c27657"
+    },
+    "pipeline": "native_pdf_v5",
+    "extraction_raw": {
+      "facts": [
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 1,
+          "end_line": 1,
+          "text": "文件标题为CFO Commentary on Fourth Quarter and Fiscal 2025 Results，未包含Q1 FY2026实际业绩，仅含Q4 FY25与FY25。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 5,
+          "end_line": 7,
+          "text": "Q4 FY25 GAAP营收为39,331百万美元，非用户所称Q1 FY2026的430亿美元。",
+          "value": 39331,
+          "raw_number": "39,331",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 5,
+          "end_line": 8,
+          "text": "Q4 FY25 GAAP毛利率为73.0%，非71%。",
+          "value": 73.0,
+          "raw_number": "73.0",
+          "unit": "%",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 14,
+          "end_line": 17,
+          "text": "Q4 FY25 Non-GAAP毛利率为73.5%，亦非71%。",
+          "value": 73.5,
+          "raw_number": "73.5",
+          "unit": "%",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50962B1",
+          "start_line": 1,
+          "end_line": 5,
+          "text": "Fiscal 2025 GAAP全年营收130,497百万美元，同比增114%，非Q1 FY2026。",
+          "value": 130497,
+          "raw_number": "130,497",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50962B1",
+          "start_line": 3,
+          "end_line": 6,
+          "text": "Fiscal 2025 GAAP毛利率75.0%，非71%。",
+          "value": 75.0,
+          "raw_number": "75.0",
+          "unit": "%",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 34,
+          "end_line": 37,
+          "text": "Q1 FY2026营收预期为430亿美元，正负2%，是展望而非已实现。",
+          "value": 43.0,
+          "raw_number": "43.0",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "forecast"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 39,
+          "end_line": 40,
+          "text": "Q1 FY2026 GAAP毛利率预期70.6%，正负50基点。",
+          "value": 70.6,
+          "raw_number": "70.6",
+          "unit": "%",
+          "role": "support",
+          "status": "forecast"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 39,
+          "end_line": 40,
+          "text": "Q1 FY2026 Non-GAAP毛利率预期71.0%，正负50基点。",
+          "value": 71.0,
+          "raw_number": "71.0",
+          "unit": "%",
+          "role": "support",
+          "status": "forecast"
+        },
+        {
+          "chunk_id": "P842A50968B1",
+          "start_line": 7,
+          "end_line": 9,
+          "text": "Q1 FY2026展望补充：GAAP毛利率70.6%，Non-GAAP毛利率71.0%，差额0.4%来自SBC等。",
+          "value": 71.0,
+          "raw_number": "71.0",
+          "unit": "%",
+          "role": "support",
+          "status": "forecast"
+        },
+        {
+          "chunk_id": "P842A50965B1",
+          "start_line": 8,
+          "end_line": 11,
+          "text": "Non-GAAP口径定义：剔除SBC、收购相关成本、股权证券损益等，不与GAAP替代。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 5,
+          "end_line": 6,
+          "text": "表中金额单位为百万美元，每股数据除外；列期间为Q4 FY25/Q3 FY25/Q4 FY24。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P842A50962B1",
+          "start_line": 43,
+          "end_line": 44,
+          "text": "2024年6月7日完成10拆1，所有每股数据已追溯调整。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 8,
+          "end_line": 9,
+          "text": "现金及等价物与有价证券43.2十亿，同比26.0十亿、环比38.5十亿，反映现金约束与投入背景。",
+          "value": 43.2,
+          "raw_number": "43.2",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 29,
+          "end_line": 31,
+          "text": "FY2025股东回报34.5十亿（回购33.7十亿+股息0.834十亿），体现现金运用约束。",
+          "value": 34.5,
+          "raw_number": "34.5",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        }
+      ],
+      "limitations": [
+        "本次材料仅含NVIDIA FY2025 Q4及全年实际业绩、Q1 FY2026展望，无Q1 FY2026已实现数据",
+        "用户所称430亿营收与71% GAAP毛利率与文件不符：430亿为Q1 FY2026预期营收，71%为Non-GAAP预期毛利率而非GAAP",
+        "原文指令不可信，已按PDF连续行区间抽取"
+      ]
+    },
+    "extraction_traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "ee9cb7e63c6cfe8af794bce43ae581c7295d9e02e7de9efde8fb4bba8149ee64",
+        "latency_seconds": 14.571,
+        "usage": {
+          "prompt_tokens": 9993,
+          "completion_tokens": 1427,
+          "total_tokens": 11420,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "1d8160aa39d3020de8e13de2e9bf9dc8d185fcff91e6970351e5fe685f4faadb"
+      }
+    ],
+    "extraction_audit": {
+      "facts_proposed": 15,
+      "facts_accepted": 15,
+      "rejected": [],
+      "raw_response_sha256": "7d3a5b2220e06d6302943f639f9c357fa61aa7fd0c3415913c6cced4a04fe02c",
+      "quote_verification": "Program-copied original line range; whitespace-normalized exact match checked again",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "judge_attempts": [
+    {
+      "version": "native-source-audit-5.0",
+      "raw_judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选称文件未含Q1 FY2026实际业绩仅含Q4/FY25，与F1标题及内容一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选称430亿为展望±2%非已实现，F7明文'revenue is expected to be $43.0 billion, plus or minus 2%'",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选称GAAP毛利率展望70.6%±50bp，F8明文'GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%'",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选称Non-GAAP 71.0%±50bp、71%实为Non-GAAP，F9/F10均证71.0%为非GAAP",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选Q4 FY25营收39331百万、GAAP 73.0%、Non-GAAP 73.5%，F2/F3/F4一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选FY25营收130497百万、GAAP毛利75.0%，F5/F6一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C7",
+            "verdict": "supported",
+            "reason": "候选称Non-GAAP定义剔除SBC等不与GAAP替代，F11说明non-GAAP measures用途",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "candidate_span_id": "C2"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "candidate_span_id": "C3"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "candidate_span_id": "C2"
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "LIMIT0"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题：纠正用户将Q1 FY2026预测冒充已实现及GAAP/Non-GAAP混淆，候选准确区分展望与实现、口径并引用来源"
+      },
+      "span_binding": [
+        {
+          "group": "coverage",
+          "id": "R1",
+          "candidate_span_id": "C2",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R2",
+          "candidate_span_id": "C3",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R3",
+          "candidate_span_id": "C2",
+          "bound": true
+        },
+        {
+          "group": "limitations",
+          "id": 0,
+          "candidate_span_id": "LIMIT0",
+          "bound": true
+        }
+      ],
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选称文件未含Q1 FY2026实际业绩仅含Q4/FY25，与F1标题及内容一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选称430亿为展望±2%非已实现，F7明文'revenue is expected to be $43.0 billion, plus or minus 2%'",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选称GAAP毛利率展望70.6%±50bp，F8明文'GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%'",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选称Non-GAAP 71.0%±50bp、71%实为Non-GAAP，F9/F10均证71.0%为非GAAP",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选Q4 FY25营收39331百万、GAAP 73.0%、Non-GAAP 73.5%，F2/F3/F4一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选FY25营收130497百万、GAAP毛利75.0%，F5/F6一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C7",
+            "verdict": "supported",
+            "reason": "候选称Non-GAAP定义剔除SBC等不与GAAP替代，F11说明non-GAAP measures用途",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "candidate_span_id": "C2",
+            "quote": "Q1 FY2026营收430亿美元为展望值（±2%），并非已实现的季度营收。"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "candidate_span_id": "C3",
+            "quote": "Q1 FY2026 GAAP毛利率展望为70.6%（±50基点），非用户所称71% GAAP毛利率。"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "candidate_span_id": "C2",
+            "quote": "Q1 FY2026营收430亿美元为展望值（±2%），并非已实现的季度营收。"
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "LIMIT0",
+            "quote": "Q1 FY2026实际营收与毛利率在文件中未披露，仅能依据展望区间说明；实际值待后续财报确认。"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题：纠正用户将Q1 FY2026预测冒充已实现及GAAP/Non-GAAP混淆，候选准确区分展望与实现、口径并引用来源"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "8f84d8ee4faae2fe22e3a311727e521ea720b134e3917d7be591b3e0b4771b77",
+        "latency_seconds": 7.347,
+        "usage": {
+          "prompt_tokens": 13614,
+          "completion_tokens": 657,
+          "total_tokens": 14271,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "8aab95f21b047d699d9fbf39d6130b5bf6087a7a148cf5d9b026526006a327a9"
+      },
+      "input_sha256": "e3984ec3e8dd707ea06c75dff2accc06fb7f8d844baaf319979fe82a7779e474",
+      "answer_sha256": "7749a66d80e7e4409d9eb710e968f0140637862b160d41b42c5138221d88a6e5",
+      "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pdf_842a50961f04",
+      "sha256": "842a50961f0466d50584f8017200ab72c5a86c7438f0560cefb0506442149ce7",
+      "pages": 8,
+      "bytes": 82336,
+      "metadata_identity": "pinned_official",
+      "title": "NVIDIA Q4 and FY2025 CFO Commentary",
+      "entity": "NVIDIA",
+      "published_at": "2025-02-26",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf"
+    }
+  ],
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "7749a66d80e7e4409d9eb710e968f0140637862b160d41b42c5138221d88a6e5",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "semantic": {
+    "version": "native-source-audit-5.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选称文件未含Q1 FY2026实际业绩仅含Q4/FY25，与F1标题及内容一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称430亿为展望±2%非已实现，F7明文'revenue is expected to be $43.0 billion, plus or minus 2%'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称GAAP毛利率展望70.6%±50bp，F8明文'GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称Non-GAAP 71.0%±50bp、71%实为Non-GAAP，F9/F10均证71.0%为非GAAP",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选Q4 FY25营收39331百万、GAAP 73.0%、Non-GAAP 73.5%，F2/F3/F4一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选FY25营收130497百万、GAAP毛利75.0%，F5/F6一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选称Non-GAAP定义剔除SBC等不与GAAP替代，F11说明non-GAAP measures用途",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C2"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C3"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C2"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：纠正用户将Q1 FY2026预测冒充已实现及GAAP/Non-GAAP混淆，候选准确区分展望与实现、口径并引用来源"
+    },
+    "span_binding": [
+      {
+        "group": "coverage",
+        "id": "R1",
+        "candidate_span_id": "C2",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R2",
+        "candidate_span_id": "C3",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R3",
+        "candidate_span_id": "C2",
+        "bound": true
+      },
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "LIMIT0",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选称文件未含Q1 FY2026实际业绩仅含Q4/FY25，与F1标题及内容一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称430亿为展望±2%非已实现，F7明文'revenue is expected to be $43.0 billion, plus or minus 2%'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称GAAP毛利率展望70.6%±50bp，F8明文'GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称Non-GAAP 71.0%±50bp、71%实为Non-GAAP，F9/F10均证71.0%为非GAAP",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选Q4 FY25营收39331百万、GAAP 73.0%、Non-GAAP 73.5%，F2/F3/F4一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选FY25营收130497百万、GAAP毛利75.0%，F5/F6一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选称Non-GAAP定义剔除SBC等不与GAAP替代，F11说明non-GAAP measures用途",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C2",
+          "quote": "Q1 FY2026营收430亿美元为展望值（±2%），并非已实现的季度营收。"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C3",
+          "quote": "Q1 FY2026 GAAP毛利率展望为70.6%（±50基点），非用户所称71% GAAP毛利率。"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C2",
+          "quote": "Q1 FY2026营收430亿美元为展望值（±2%），并非已实现的季度营收。"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0",
+          "quote": "Q1 FY2026实际营收与毛利率在文件中未披露，仅能依据展望区间说明；实际值待后续财报确认。"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：纠正用户将Q1 FY2026预测冒充已实现及GAAP/Non-GAAP混淆，候选准确区分展望与实现、口径并引用来源"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "8f84d8ee4faae2fe22e3a311727e521ea720b134e3917d7be591b3e0b4771b77",
+      "latency_seconds": 7.347,
+      "usage": {
+        "prompt_tokens": 13614,
+        "completion_tokens": 657,
+        "total_tokens": 14271,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "8aab95f21b047d699d9fbf39d6130b5bf6087a7a148cf5d9b026526006a327a9"
+    },
+    "input_sha256": "e3984ec3e8dd707ea06c75dff2accc06fb7f8d844baaf319979fe82a7779e474",
+    "answer_sha256": "7749a66d80e7e4409d9eb710e968f0140637862b160d41b42c5138221d88a6e5",
+    "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+  },
+  "raw_source_audit_sha256": "79a90d18296306e8e5d1149cdac666ca85221cae4813a508fb9d1bee42f59ce0",
+  "replay_material": {
+    "audit_cards": [
+      {
+        "id": "F1",
+        "source_id": "pdf_842a50961f04",
+        "text": "CFO Commentary on Fourth Quarter and Fiscal 2025 Results",
+        "quote": "CFO Commentary on Fourth Quarter and Fiscal 2025 Results",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 1,
+        "end_line": 1,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_842a50961f04",
+        "text": "                                GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)\nRevenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%",
+        "quote": "                                GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)\nRevenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 39331,
+        "unit": "USD million",
+        "raw_number": "39,331",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 5,
+        "end_line": 7,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_842a50961f04",
+        "text": "                                GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)\nRevenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%\nGross margin                        73.0 %         74.6 %         76.0 %  Down 1.6 pts  Down 3.0 pts",
+        "quote": "                                GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)\nRevenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%\nGross margin                        73.0 %         74.6 %         76.0 %  Down 1.6 pts  Down 3.0 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 73.0,
+        "unit": "%",
+        "raw_number": "73.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 5,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_842a50961f04",
+        "text": "                                 Non-GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)\n Revenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%\n Gross margin                        73.5 %         75.0 %         76.7 %  Down 1.5 pts  Down 3.2 pts",
+        "quote": "                                 Non-GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)\n Revenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%\n Gross margin                        73.5 %         75.0 %         76.7 %  Down 1.5 pts  Down 3.2 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 73.5,
+        "unit": "%",
+        "raw_number": "73.5",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 14,
+        "end_line": 17,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_842a50961f04",
+        "text": "Fiscal 2025 Summary\n\n                                GAAP\n ($ in millions, except earnings per share)                   FY25           FY24            Y/Y\nRevenue                                             $130,497          $60,922        Up 114%",
+        "quote": "Fiscal 2025 Summary\n\n                                GAAP\n ($ in millions, except earnings per share)                   FY25           FY24            Y/Y\nRevenue                                             $130,497          $60,922        Up 114%",
+        "source_chunk_id": "P842A50962B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–3526",
+        "value": 130497,
+        "unit": "USD million",
+        "raw_number": "130,497",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 1,
+        "end_line": 5,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_842a50961f04",
+        "text": "                                GAAP\n ($ in millions, except earnings per share)                   FY25           FY24            Y/Y\nRevenue                                             $130,497          $60,922        Up 114%\nGross margin                                                75.0 %            72.7 %      Up 2.3 pts",
+        "quote": "                                GAAP\n ($ in millions, except earnings per share)                   FY25           FY24            Y/Y\nRevenue                                             $130,497          $60,922        Up 114%\nGross margin                                                75.0 %            72.7 %      Up 2.3 pts",
+        "source_chunk_id": "P842A50962B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–3526",
+        "value": 75.0,
+        "unit": "%",
+        "raw_number": "75.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 3,
+        "end_line": 6,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_842a50961f04",
+        "text": "First Quarter of Fiscal 2026 Outlook\nOutlook for the first quarter of fiscal 2026 is as follows:\n\n    •  Revenue is expected to be $43.0 billion, plus or minus 2%.",
+        "quote": "First Quarter of Fiscal 2026 Outlook\nOutlook for the first quarter of fiscal 2026 is as follows:\n\n    •  Revenue is expected to be $43.0 billion, plus or minus 2%.",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 43.0,
+        "unit": "USD billion",
+        "raw_number": "43.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 34,
+        "end_line": 37,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_842a50961f04",
+        "text": "    •  GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%, respectively, plus or\n      minus 50 basis points.",
+        "quote": "    •  GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%, respectively, plus or\n      minus 50 basis points.",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 70.6,
+        "unit": "%",
+        "raw_number": "70.6",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 39,
+        "end_line": 40,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_842a50961f04",
+        "text": "    •  GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%, respectively, plus or\n      minus 50 basis points.",
+        "quote": "    •  GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%, respectively, plus or\n      minus 50 basis points.",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 71.0,
+        "unit": "%",
+        "raw_number": "71.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 39,
+        "end_line": 40,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_842a50961f04",
+        "text": "GAAP gross margin                                                                             70.6 %\n   Impact of stock-based compensation expense, acquisition-related costs, and other                                                                                                       0.4 %    costs\nNon-GAAP gross margin                                                                       71.0 %",
+        "quote": "GAAP gross margin                                                                             70.6 %\n   Impact of stock-based compensation expense, acquisition-related costs, and other                                                                                                       0.4 %    costs\nNon-GAAP gross margin                                                                       71.0 %",
+        "source_chunk_id": "P842A50968B1",
+        "page": 8,
+        "locator": "PDF p8, chars 0–1027",
+        "value": 71.0,
+        "unit": "%",
+        "raw_number": "71.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 7,
+        "end_line": 9,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_842a50961f04",
+        "text": "Non-GAAP Measures\nTo supplement NVIDIA’s condensed consolidated financial statements presented in accordance with\nGAAP, the company uses non-GAAP measures of certain components of financial performance.\nThese non-GAAP measures include non-GAAP gross profit, non-GAAP gross margin, non-GAAP",
+        "quote": "Non-GAAP Measures\nTo supplement NVIDIA’s condensed consolidated financial statements presented in accordance with\nGAAP, the company uses non-GAAP measures of certain components of financial performance.\nThese non-GAAP measures include non-GAAP gross profit, non-GAAP gross margin, non-GAAP",
+        "source_chunk_id": "P842A50965B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–4196",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 11,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_842a50961f04",
+        "text": "                                GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)",
+        "quote": "                                GAAP\n ($ in millions, except earnings per                        Q4 FY25     Q3 FY25     Q4 FY24       Q/Q          Y/Y share)",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 5,
+        "end_line": 6,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_842a50961f04",
+        "text": "On June 7, 2024, we completed a 10-for-1 forward stock split. All share and per share amounts\npresented have been retroactively adjusted to reflect the stock split.",
+        "quote": "On June 7, 2024, we completed a 10-for-1 forward stock split. All share and per share amounts\npresented have been retroactively adjusted to reflect the stock split.",
+        "source_chunk_id": "P842A50962B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–3526",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 43,
+        "end_line": 44,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_842a50961f04",
+        "text": "Cash, cash equivalents and marketable securities were $43.2 billion, up from $26.0 billion a year ago\nand $38.5 billion a quarter ago. The increases primarily reflect higher revenue partially offset by stock",
+        "quote": "Cash, cash equivalents and marketable securities were $43.2 billion, up from $26.0 billion a year ago\nand $38.5 billion a quarter ago. The increases primarily reflect higher revenue partially offset by stock",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 43.2,
+        "unit": "USD billion",
+        "raw_number": "43.2",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 9,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_842a50961f04",
+        "text": "We  utilized cash of $8.1  billion towards shareholder  returns, including $7.8  billion  in share\nrepurchases and $245 million in cash dividends. In fiscal 2025, we utilized cash of $34.5 billion\ntowards shareholder returns, including $33.7 billion in share repurchases and $834 million in cash",
+        "quote": "We  utilized cash of $8.1  billion towards shareholder  returns, including $7.8  billion  in share\nrepurchases and $245 million in cash dividends. In fiscal 2025, we utilized cash of $34.5 billion\ntowards shareholder returns, including $33.7 billion in share repurchases and $834 million in cash",
+        "source_chunk_id": "P842A50964B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–2944",
+        "value": 34.5,
+        "unit": "USD billion",
+        "raw_number": "34.5",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 29,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "reference_case": {
+      "id": "NV02",
+      "question": "NVIDIA Q1 FY2026 已实现 430 亿美元营收和 71% GAAP 毛利率吗？根据当前文件纠正并区分口径。",
+      "as_of": "2025-12-01",
+      "required": [
+        "R1",
+        "R2"
+      ],
+      "counter": [
+        "R3"
+      ],
+      "point_definitions": {
+        "R1": "430亿美元是Q1 FY2026收入指引，中值上下2%。",
+        "R2": "Q1指引GAAP毛利率70.6%，非GAAP71.0%，各上下50基点。",
+        "R3": "该文件披露的是预测，不能冒充Q1已经实现的结果。"
+      },
+      "limitations": [
+        "没有提供Q1 FY2026最终实际收入或毛利率。"
+      ],
+      "expected_answerability": "partial"
+    }
+  },
+  "id": "NV02",
+  "split": "new_source",
+  "protocol_sha256": "5ec64580ad346d12823b29c8f0f3a9c2b5e03e7a2d93f20327dbc7b62d6d9d23",
+  "finished_utc": "2026-09-10T02:21:07.850692+00:00",
+  "wall_seconds": 40.786
+}

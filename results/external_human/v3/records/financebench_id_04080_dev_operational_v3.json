@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04080",
+  "uid": "financebench_id_04080_dev",
+  "split": "development",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "d97694222e4c1a4f390c74a34b2cd52543567dbc48694289b1b021704038180f",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "601b6562eb5e9d89c04cdd178afb17d97f57f66c76e8354f29b28ef5cca68ba9",
+  "started_utc": "2026-09-10T01:31:15.973456+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "[This is the end of the filing and there are no further contents to display.]",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided an unrelated end-of-filing note instead of computing inventory turnover = 24576 / ((6854+7367)/2) = 3.46 per evidence; no answer given."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ec2889d4846f5418eb78c33008d39969af781f028d63832f589db36d38aad358",
+    "latency_seconds": 7.217,
+    "usage": {
+      "prompt_tokens": 2455,
+      "completion_tokens": 106,
+      "total_tokens": 2561,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e5caf375ddedf55fc90e1e544e1a3884c86d0c0061afff6b5af3a6fd6f5fc699"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_07507",
+  "uid": "financebench_id_07507_val",
+  "split": "new_response_validation",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4a6307da26673cb97a8724e615c0b6c7818e1c9fa6305e645089c1c03776bfa9",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d899a27f22a6f039b0282c0fd9ff2fa07f258253681a9110d268ab887891f7ca",
+  "started_utc": "2026-09-10T01:33:41.241529+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Rounded to one decimal place, the year-over-year change in unadjusted operating income from FY2015 to FY2016 is 65.4%.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate computed (1,493,602-903,095)/903,095*100=65.4% from income statement evidence (Operating income 1,493,602 and 903,095). Reference value 0.654 (i.e. 65.4%) matches candidate's 65.4%; no conflict in meaning, but reference given as 0.654 vs candidate 65.4% presentation differs yet equivalent. Actually reference 0.654 equals 65.4%, so no material conflict; reference_conflict set false. Correct per evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "52afec8c9c5788d00a768c8802891fe1977d9364debce20435690fdc97928f48",
+    "latency_seconds": 8.5,
+    "usage": {
+      "prompt_tokens": 2010,
+      "completion_tokens": 196,
+      "total_tokens": 2206,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "865edc3eece468003c1e2fed8a787fc685b0172326bda20474bf2970388b9a67"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

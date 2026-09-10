@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00302",
+  "uid": "financebench_id_00302_val",
+  "split": "new_response_validation",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "53cb3d583c9faa9b88fed48da388085984968bb76b62e3299bf1024c76618bf4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "794115a2d1ca76ce4da9486f5f1ceb201239465797f1aade31bcbc5b443ad419",
+  "started_utc": "2026-09-09T18:05:29.841581+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but you haven't provided the specific financial data or evidence from Pfizer's financial reports for fiscal years 2020 and 2021 that would be necessary to determine whether Pfizer grew its Property, Plant, and Equipment (PP&E) net between those years.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot answer without provided data and asks for missing information, despite evidence showing PPNE 14,882 vs 13,745 (growth)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5dcf2db78ec7fa710dd7a89cba8db30855e8e98f7d3c92a585e04c2998cbcc36",
+    "latency_seconds": 6.557,
+    "usage": {
+      "prompt_tokens": 1560,
+      "completion_tokens": 138,
+      "total_tokens": 1698,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4e8268ad993fdc845ecf8c22c49172f3e8c1f40c68d6ac387b55134e4a40fc3b"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

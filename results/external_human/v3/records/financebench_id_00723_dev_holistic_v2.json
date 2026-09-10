@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00723",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "acc416c68ce21171529d38f9f00d1ada0e6a2c1f12f7997604527878e31c8389",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "782d020d40fa890490709f7512ba6c494f912be2ce8f9ec2f6df3517a5bd4e2f",
+  "started_utc": "2026-09-09T17:45:41.972113+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Reference states performance is not measured through operating margin and candidate should state that if not useful; candidate instead computed operating margin and claimed it is useful, contradicting reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bd9b95de18aac6be1a1677fcacb39c1ae0eea7cc568e8a9dac4c2da15de8514b",
+    "latency_seconds": 6.416,
+    "usage": {
+      "prompt_tokens": 2321,
+      "completion_tokens": 55,
+      "total_tokens": 2376,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b3ce8add6e2427f4470f4a5b0635e9211678bf0b7771104702f88629f77a672c"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00723_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00723_holistic.json",
+  "parent_sha256": "2f87f27f6cd45a08c5c163b098e5a40b131adf277c797f80b2c7d2df4288eccb"
+}

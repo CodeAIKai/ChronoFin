@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00382",
+  "uid": "financebench_id_00382_dev",
+  "split": "development",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b57d4ee9fafe1d8fd008e4717d33365bfb2864ee3a51fa6a44d3462c785a4ade",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "a78f174384dd626627b6300e6328b84646ed85daab12a7c492ef532e8fb0e204",
+  "started_utc": "2026-09-09T18:05:32.228003+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the Las Vegas Strip Resorts had the Highest EBITDAR Contribution for MGM during FY2022",
+    "content_correct": true,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Candidate identifies Las Vegas Strip Resorts as highest EBITDAR contributor in FY2022; evidence table shows Las Vegas Strip Resorts Adjusted Property EBITDAR $3,142,308k (highest) vs Regional $1,294,630k and MGM China negative, matching reference's Las Vegas resorts ~90% claim."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6d4cf37c409e8924d81c27288e7b23f9fd6f7d7b92d99299f111e095e0dc016c",
+    "latency_seconds": 5.522,
+    "usage": {
+      "prompt_tokens": 1920,
+      "completion_tokens": 138,
+      "total_tokens": 2058,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "12e8ade1c7bbf4e8844e7b3dd8aba4c79baba5f102ec7bf987a322fa3aabfe28"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

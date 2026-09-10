@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_07507",
+  "uid": "financebench_id_07507_dev",
+  "split": "development",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "be1418293956f29a82f2b623771f324a2cc4292276c57fd3b9cf9c6cc635e536",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "f7923868f370f1a55229a9562d9a8bb8f7932e9cbcff5388c1b7d7ef5bf18d69",
+  "started_utc": "2026-09-10T01:33:38.384872+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "the year-over-year change in unadjusted operating income from FY2015 to FY2016 was 65.2%.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate computed (1494-903)/903=65.2% using $1,494M and $903M from income statement (evidence shows 1,493,602k and 903,095k, ~65.3%). Reference value is 0.654 (65.4%), conflicting with candidate's 65.2%; both differ from reference and candidate rounding/calc yields incorrect per reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ccb18ecfb3fbe5832bfaddd0f65e3e1664396ba4a7edd0fa42842a370a3242d1",
+    "latency_seconds": 7.817,
+    "usage": {
+      "prompt_tokens": 2008,
+      "completion_tokens": 157,
+      "total_tokens": 2165,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "eff6a242424e391183a29f4c244bbe91c52df03693468139fde9c905f4c92405"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

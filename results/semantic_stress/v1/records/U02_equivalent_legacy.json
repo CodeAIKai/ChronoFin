@@ -1,0 +1,156 @@
+{
+  "id": "U02_equivalent",
+  "base": 2,
+  "mutation": "equivalent",
+  "expected_supported": true,
+  "method": "legacy",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "contradicted",
+          "reason": "来源S1为2.9 USD billion，候选写为29.0亿美元且称已实现，数值单位转换错误且来源为observed非预测写成已实现",
+          "kind_valid": false,
+          "scope_valid": false,
+          "numbers_consistent": false
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": true,
+          "quote": "虚构甲公司 FY2024 全年已经实现营业利润 29.0 亿美元。"
+        }
+      ],
+      "limitations": [],
+      "summary_supported": false,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选将S1的2.9 USD billion错误转为29.0亿美元并称已实现，与来源矛盾，摘要断言不受支持"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "ac793020897752d52d78080b235ffcdf88aaf3f7e5e71691d22c19dc5f35ca4d",
+      "latency_seconds": 10.78,
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 176,
+        "total_tokens": 941,
+        "prompt_tokens_details": {
+          "cached_tokens": 448
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "65bb3b660a631f748b8c021d5457f4df11b5def27e412536b5ee05232ddedaa6"
+    },
+    "input_sha256": "a183c712908574bad1d66c4b4f4cb7248f3592fc5987038b8f879e083a202b94",
+    "answer_sha256": "18ca603c3070748e7c259b1f8686aa44d274a893660a36ad782666e094f0d306",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "18ca603c3070748e7c259b1f8686aa44d274a893660a36ad782666e094f0d306",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 52.273,
+    "score": 52.273,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      },
+      {
+        "reason": "unsupported summary",
+        "cap": 65
+      },
+      {
+        "reason": "scope mismatch",
+        "cap": 60
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": false,
+  "decision_correct": false
+}

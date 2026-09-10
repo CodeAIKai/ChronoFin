@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00711",
+  "uid": "financebench_id_00711_val",
+  "split": "new_response_validation",
+  "company": "Johnson & Johnson",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "fe934bfc3b411983c18823f0567fefe31848098462302fd0bdb6e8cd9d693441",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "755cfbc62da4c68a061f1cfa5c7219f604b594b0f26b080a83bb737a3c6b1721",
+  "started_utc": "2026-09-09T18:07:40.715243+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states necessary data is not provided and answer cannot be determined, withholding the requested ratio despite evidence containing COGS and inventory to compute it."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "69decc0bb0a4bb494155edeca48359ea3e24226dc97b39f57b39322a7714979f",
+    "latency_seconds": 5.419,
+    "usage": {
+      "prompt_tokens": 2123,
+      "completion_tokens": 50,
+      "total_tokens": 2173,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9e7f9acf9c702935fbf30c1ae3c5a43f5b10282c078ac88b4a3ba626f9220b6b"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

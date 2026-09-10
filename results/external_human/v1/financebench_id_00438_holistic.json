@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00438",
+  "company": "Adobe",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "5bc1db2a60e8ed0c65df55b59d2c029c6c87027bff496a4945360e49a28fc89c",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9d59ebc33ca193f3e0b3df53b52e120be1451f5c23ac2c452c8c1f5b435ef557",
+  "started_utc": "2026-09-09T17:32:40.907584+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate correctly states Adobe's operating margin declined from FY2021 (36.76%) to FY2022 (34.63%), matching reference's 36.8% to 34.6% drop. It also affirms operating margin is useful, which reference does not contradict. Evidence supports the calculated margins."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f7802d5f7719ebcd6f705396e11caeb77b0b7c97be60d8a5cd9b02f6ba753421",
+    "latency_seconds": 2.109,
+    "usage": {
+      "prompt_tokens": 1838,
+      "completion_tokens": 84,
+      "total_tokens": 1922,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "138ab5dde24c0097686577ed3862703fc3646ee723cbb418ca39b31af6261a37"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

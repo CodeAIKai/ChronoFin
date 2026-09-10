@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00216",
+  "uid": "financebench_id_00216_dev",
+  "split": "development",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "d8cc105e7cd58564cae29bd1f241f306dcd00386ff4b1cc0ff9f0c1b1b60c221",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "8224336c16127f68ef10a5c4aa518408b5d3d1039362a68f2f71ffc2fb66a269",
+  "started_utc": "2026-09-09T18:05:05.072204+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "it is not possible to directly assess Verizon's liquidity profile based on the quick ratio. To provide a more accurate answer, additional financial data for FY 2022 would be required.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states no direct quick ratio info for FY2022 and refuses to assess, asking for more data; reference says quick ratio ~0.54 and not healthy, but candidate explicitly declines to answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "86374f24482a0ce93d8f4469c7bb13a8a81974e778eeb95be1d00b75234b75b0",
+    "latency_seconds": 5.552,
+    "usage": {
+      "prompt_tokens": 2140,
+      "completion_tokens": 128,
+      "total_tokens": 2268,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b786b9d493f82553ce9627caabcb4b36d041a063b1bd099c6a59125982efdd2b"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

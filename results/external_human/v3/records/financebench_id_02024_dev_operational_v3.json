@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02024",
+  "uid": "financebench_id_02024_dev",
+  "split": "development",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9512586fdab4431500c28909c8953d4ae38a730ff15c6c98bf748415a8ea98e2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "208a1641956a9b628c813bc0888b406a0d45ecb64a08404c9665b98127f985bb",
+  "started_utc": "2026-09-10T01:28:43.058654+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Verizon expected to pay $862 million for health care and life insurance benefits to its retirees in 2024.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Question asks total retiree payments in 2024. Reference states pension $1097M + health care/life $862M = $1959M total. Candidate only gave health care/life $862M, omitting $1097M pension benefits, so answer is incomplete/wrong."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ccf2a5634601d986f556e58cc19ef27ec9d4ffbc23506a2dc56e9ef84d723e78",
+    "latency_seconds": 10.313,
+    "usage": {
+      "prompt_tokens": 2726,
+      "completion_tokens": 132,
+      "total_tokens": 2858,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cd15093c91e430374557df74332336c10c69c19b9d226fe6f6b44a36b4d4ac99"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00005",
+  "company": "Corning",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "08af333c3c480de7a3963d4aab36e7d239246a09a1f8f575f03f9276f404f01e",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "aba5daeadfbfdf2bc435e17c73eeb106d122e88d1f8a83e489aa00652e80c4b3",
+  "started_utc": "2026-09-09T17:42:03.153040+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate discusses Corning's Executive Supplemental Pension Plan and never addresses working capital or FY2022 positive/negative status, withholding the requested conclusion entirely.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate describes pension plan, not Corning working capital"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2022 working capital data referenced"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No working capital amount or sign provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Does not state yes/no on positive working capital nor claim metric irrelevant"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence on balance sheet ignored; candidate text unrelated to question"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "079692aecb1999bbb8054c3b64326a975eb4d88bd41216bbd730d7fd66a0fed3",
+    "latency_seconds": 5.116,
+    "usage": {
+      "prompt_tokens": 2308,
+      "completion_tokens": 210,
+      "total_tokens": 2518,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6428dee3cf80ec5a608223824e0894932171bef60d47bc7e7b0ed27258ae11f4"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

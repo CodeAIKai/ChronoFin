@@ -1,0 +1,74 @@
+{
+  "id": "financebench_id_00070",
+  "company": "American Water Works",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "5c80a3cfc9067b4ca00fe8489047d9ad18f0d07f8254489fa3f0d1bdd182e3ec",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "f584d28e5646cca6ae238bba3755117cb4f23282e5871927981530cfe49353c8",
+  "started_utc": "2026-09-09T17:42:05.174944+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computes working capital as -$1,561Mn from FY2022 evidence (current assets 1,250; liabilities 2,811), concluding negative, while reference states positive $124Mn. Evidence supports candidate's math, not reference; candidate answered substantively but contradicts reference.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is American Water Works, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Uses FY2022 (Dec 31, 2022) balance sheet data as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Uses millions (Mn) consistent with evidence and question context."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says negative working capital (-$1,561Mn); reference says positive $124Mn. Contradicts reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Candidate's numbers (CA=1250, CL=2811) match evidence; calc correct per evidence."
+      }
+    ],
+    "reference_conflict": true,
+    "reference_conflict_reason": "Reference claims positive working capital of $124Mn for FY2022, but evidence shows current assets $1,250Mn and current liabilities $2,811Mn, yielding -$1,561Mn. Reference figure unsupported by supplied evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0022e524ba033372ea376351d7d2eefeb1b2ea4100dcad455ac7768207fdc878",
+    "latency_seconds": 10.704,
+    "usage": {
+      "prompt_tokens": 2420,
+      "completion_tokens": 332,
+      "total_tokens": 2752,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "77c343e0a4f47dab4a69e4bc53cb24ec3444c95c045adb8b344a00653db7c7a7"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": true
+}

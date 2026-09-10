@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01488",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "838beed9ec833e9d831ea9dc2683a4789c63d198308fa8658d7cd276060b4349",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "275ca17e4f85472888fb549dd471aace370e716d0e7d98f459ec8adde5ebb4cb",
+  "started_utc": "2026-09-09T17:49:21.338527+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate explicitly states it does not know and claims context lacks info, withholding the requested answer despite evidence showing Consumer Health is discontinued from Aug 30, 2023.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Requested entity is JnJ business segment; candidate did not answer."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Requested period Aug 30, 2023 onward; candidate did not answer."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Qualitative segment name requested; not provided."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refused to provide Consumer Health as answer."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence states Consumer Health presented as discontinued operations from completion on Aug 30, 2023; candidate incorrectly claims no info."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "46ddb12a0d28f1406a920430face2ae3bd9f1b777b0e48fe7dabfd1597c7a05b",
+    "latency_seconds": 9.474,
+    "usage": {
+      "prompt_tokens": 1696,
+      "completion_tokens": 237,
+      "total_tokens": 1933,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "16a3d34c43d2d7e72eb21ab0c5bacdfa56b1aad8e98d26f92d65f1ca86daffb3"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

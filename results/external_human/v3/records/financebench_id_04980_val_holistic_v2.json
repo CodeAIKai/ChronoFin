@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04980",
+  "uid": "financebench_id_04980_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "edda634a5e9d4b4edb0916812fcd84ed9539f34bd48451d0b5af9e987840af88",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "fed5cab51d6d23bfa70428a15f616f7fa21e2926020a63f978ba38e2ca9f5a01",
+  "started_utc": "2026-09-10T01:32:58.252057+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate responds with unrelated boilerplate about stock articles/by-laws, not the FY2021 capex from cash flows; withholds requested answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a8456151c1afd1935db07267a51d12139dadd4a9139792342432a5c6ed98062b",
+    "latency_seconds": 6.591,
+    "usage": {
+      "prompt_tokens": 1770,
+      "completion_tokens": 52,
+      "total_tokens": 1822,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bf2e73e8ec4adef6066ef587b430532e491dbeea5de99a1a48f403ac7a2c2c9a"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

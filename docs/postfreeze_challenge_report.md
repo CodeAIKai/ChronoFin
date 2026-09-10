@@ -1,5 +1,7 @@
 # Real-company challenge: historical record and current regression
 
+> 适用版本：历史规则评估器及其确定性回归。当前开放式研究应用见[实验分析报告](最终实验分析报告.md)与[十维评估方法](开放式评估方法.md)。下文的“当前”指该历史阶段。
+
 ## Result in one sentence
 
 The four challenge-data files are unchanged. The repository-local historical

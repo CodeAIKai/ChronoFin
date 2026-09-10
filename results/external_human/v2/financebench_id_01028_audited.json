@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01028",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "65a85de45945e88978eecab9d082d84c923092682ea80772720452e1ca60fdaf",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "9e1736aef098071461aa40ff162cde48cdbf7952d6318ede83e7b74ad25bbad2",
+  "started_utc": "2026-09-09T17:47:16.470264+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate withholds answer and only explains how to obtain it, not providing the requested geographies.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not identify American Express geographies"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No 2022 geography answer provided"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No substantive content"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Refuses to answer, suggests external sources"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No answer to support with evidence"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "51f1430bec29cd9a6ceb4c296c5906c06615dd856aa019bd91eb36ed95ee3c87",
+    "latency_seconds": 8.623,
+    "usage": {
+      "prompt_tokens": 1447,
+      "completion_tokens": 182,
+      "total_tokens": 1629,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ab111990a1d67aa6dd08c0d29954f52b52ba0adb7c5e69155f56a81cbdd4ae12"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

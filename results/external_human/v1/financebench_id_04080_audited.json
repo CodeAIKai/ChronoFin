@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04080",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "d97694222e4c1a4f390c74a34b2cd52543567dbc48694289b1b021704038180f",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ed75ee390d08735943b79843f4db0ed36123a4597ba632cb78d3cb93544e1417",
+  "started_utc": "2026-09-09T17:34:45.045589+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states end of filing with no answer; provides no inventory turnover ratio or calculation.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "No Nike entity answer provided"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2021 period addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No ratio unit given"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No numeric answer (ref 3.46) provided"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate is non-substantive refusal, not supported by evidence"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "aca015b9adf2b15f4b67db0e3fa4c6897ae26e3ef64b62966ab41c1b2d04401a",
+    "latency_seconds": 2.626,
+    "usage": {
+      "prompt_tokens": 2436,
+      "completion_tokens": 172,
+      "total_tokens": 2608,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "93a6fa8539fb5f894837964068d0b9e9bff4f8e96c2df056046b02cad50b513f"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00859",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c94ca4d4e825c166647ef17b623e2b8ad7a890f0b80be93e136d5ebc46ca0eea",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "f6e6f339c9f688001656f152268bec711aed38895ccfc5f0b1bae289c7691879",
+  "started_utc": "2026-09-09T17:46:37.779429+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate correctly identifies cross currency swaps as the derivative with highest notional value in FY2021 ($32,502 million), matching reference and evidence table.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Verizon derivative instruments; candidate addresses Verizon derivatives."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2021 (At Dec 31, 2021) referenced correctly."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Notional value in millions of dollars, consistent with evidence and reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Cross currency swaps with $32,502 million is highest per evidence table and matches reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table shows cross currency swaps $32,502M > others in 2021."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a3c871e5d1011322412ef31b84a99bcb4b10621a69737b025c918a2c8615880f",
+    "latency_seconds": 9.134,
+    "usage": {
+      "prompt_tokens": 1673,
+      "completion_tokens": 238,
+      "total_tokens": 1911,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1266842b01bb8c9acf78907a255e347b9ab160f3ac32208c9220c2824b26c75f"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

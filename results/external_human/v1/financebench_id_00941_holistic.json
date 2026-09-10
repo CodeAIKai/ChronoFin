@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00941",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "57d62c2c6bac7ecab53a045919f6f45a4799c0f21e238764483e39ecb2093f7e",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "f6a9e68e40b406f081d16317f6c784ee450465c28fdeb3f100758e699a73d273",
+  "started_utc": "2026-09-09T17:33:28.892441+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate lists the three debt securities from reference/evidence (MMM26, MMM30, MMM31 on NYSE) and adds common stock info not asked but not contradicting; substantive answer matches reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bb0a8e26416425ea81e2eff48f9294cdbc9ab1df9c74542d03bfc89cc28f2987",
+    "latency_seconds": 3.034,
+    "usage": {
+      "prompt_tokens": 1388,
+      "completion_tokens": 65,
+      "total_tokens": 1453,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "43d330a3308e59477f89239705c02703a8a82643c6d758b541349fe61034694f"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

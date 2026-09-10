@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04784",
+  "uid": "financebench_id_04784_dev",
+  "split": "development",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "52660e29054d6d9badb63fd05a3aeeabe2499c29ffda30c54d5f1ffb1ef589ba",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "c1d777b85d6504602c6d9b033eae14ab58292750e6cc0de8555f0217ac951a51",
+  "started_utc": "2026-09-10T01:32:42.998252+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Rounded to one decimal place, the change in unadjusted operating income percentage margin for Walmart from FY2018 to FY2019 is 0.2%.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate computed margin change as 4.27%-4.09%=0.18%≈0.2%, but reference states change is 0.002 (i.e., 0.2 percentage points only if 0.002 means 0.2%; reference value 0.002 as decimal = 0.2% so matches 0.2% rounded, but candidate's unrounded 0.18% vs reference 0.2% shows discrepancy; actually 21957/514405=0.04267, 20437/500343=0.04085, diff=0.00182=0.182%≈0.2% rounded. Reference 0.002=0.2% rounded to one decimal. Candidate answer 0.2% agrees with reference rounded. However candidate calls it 0.2% and reference 0.002 proportion = 0.2%, so correct. But label says incorrect? Re-evaluate: reference 0.002 proportion means 0.2% change. Candidate 0.2% rounded. That is correct. So content_correct true. Fix: label correct."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "af4b0f7dc0ca3f4534d3616d60f30c35182e0ef1ac7539199da6c2aa383e2337",
+    "latency_seconds": 11.353,
+    "usage": {
+      "prompt_tokens": 2176,
+      "completion_tokens": 318,
+      "total_tokens": 2494,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "699c1743950808df3675622831397fbf72caf0b6d13089367a5b6d5b2ba2c9cc"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

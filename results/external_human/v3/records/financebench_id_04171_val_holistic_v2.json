@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04171",
+  "uid": "financebench_id_04171_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9c4db8f1a44266afa5a236e8f98e0edabac8403b77f1b3370fcb5efdc2837152",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "bca90cf048c715d32ac87e3c599730c1c0d867e2c7d91a4bd88b33df71dd2a86",
+  "started_utc": "2026-09-10T01:31:29.273816+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states it cannot provide the information and withholds the answer despite evidence showing accounts payable of $302,578 thousand = $302.578M (reference 303M)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1c8853d576308f8592cc21b3b1fb229944d18775f7364ddb36c69a6096961fb4",
+    "latency_seconds": 8.803,
+    "usage": {
+      "prompt_tokens": 2254,
+      "completion_tokens": 57,
+      "total_tokens": 2311,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c1df1a9fada5a8841e70b04964a3f6fb1c4214dd54ec82f6510ee5ab703e2370"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

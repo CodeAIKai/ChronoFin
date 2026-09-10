@@ -1,0 +1,13 @@
+id,status,split,score,error,wall_seconds
+meta24_after,ok,known_source,100.0,,62.578
+amazon24_after,ok,known_source,35,,62.99
+meta24_before,ok,known_source,100.0,,33.708
+NV01,ok,new_source,55,,76.894
+NV02,ok,new_source,100.0,,65.394
+NV03,ok,new_source,90.0,,59.107
+AP01,ok,new_source,97.257,,74.12
+AP02,ok,new_source,55,,62.021
+AP03,ok,new_source,55,,63.345
+TC01,ok,new_source,35,,61.943
+TC02,ok,new_source,100.0,,32.361
+TC03,ok,new_source,55,,63.186

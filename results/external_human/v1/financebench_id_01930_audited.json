@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01930",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "58bb93f401d6cee3b9a4ff3f0b1b002701fa01b421ca1a929e772b0bbdff6fc9",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "6516384b755e923d847300eee07c9e10ee22012da46db344f43f9bb43e721d2f",
+  "started_utc": "2026-09-09T18:01:48.011463+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate concludes real change in sales excluding FX, passthrough costs and one-off items is 0% (flat), matching reference 'Real Growth was flat'. Evidence shows Total reported growth 1%, FX -3%, pass-through 5%, items -1%; candidate's adjustment narrative has sign/label quirks but final comparable constant currency conclusion of 0% aligns with reference and question intent.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is AMCOR (Amcor), correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY 2023 vs FY 2022, correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Change expressed as percentage growth (0%/flat), consistent with reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer 0% / flat matches reference 'flat'."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence provides sales figures and adjustment components; final 0% consistent with reference despite candidate's intermediate sign wording."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a75a896208284e413684d8225f98c73384bed424b3fb9e9fdb8bf930dcb8916d",
+    "latency_seconds": 8.941,
+    "usage": {
+      "prompt_tokens": 1441,
+      "completion_tokens": 270,
+      "total_tokens": 1711,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0deb4c37090e32a85e27397a4ce4739e0c2ac391bae231bf6bdf648bc9dfa604"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04735",
+  "uid": "financebench_id_04735_val",
+  "split": "new_response_validation",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "96c0cf732f06dc4320a87d0d9da8d0fc39cdad32970c7addac29c62df7dbcdfc",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "cc285f07004b3577cee93e9189f30db36acf563af1b13d307cec6d4a7d107f8a",
+  "started_utc": "2026-09-10T01:32:38.800647+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot provide the ratio because total current liabilities is missing, and only explains how to calculate it; it withholds the requested answer despite evidence containing both CFO ($1,469,502k) and current liabilities ($2,213,556k) yielding 0.66."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "37c54a5e1c4bcd7537a91356708dd519ff32de2cd0730e60e76e978485fd09e7",
+    "latency_seconds": 9.103,
+    "usage": {
+      "prompt_tokens": 4829,
+      "completion_tokens": 81,
+      "total_tokens": 4910,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5e2620ebd029bfec7648a83871d69f53cbc6e0d6a605dac1a5386b47de9f78a5"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

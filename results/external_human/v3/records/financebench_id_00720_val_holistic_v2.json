@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00720",
+  "uid": "financebench_id_00720_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "678c992c3b6daf3fe65a7e7bb317cde3ca5c42477a5f68e439aed0a54321b742",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "90c4691c6632e77e4c587c790be06e0babde709fdbe5c51453c41d55d80a0010",
+  "started_utc": "2026-09-09T18:07:45.087517+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate states it cannot provide specific answer on gross margin change and says context lacks AmEx gross margin info, withholding the requested conclusion that gross margin is not a useful metric per reference; despite evidence showing no gross margin line, it refuses to state the metric is not useful as instructed."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "991e7fcfd52442c79a2572b42f1fb5183b0d0d79c2c16583b98f764ac5158ab8",
+    "latency_seconds": 6.172,
+    "usage": {
+      "prompt_tokens": 2161,
+      "completion_tokens": 78,
+      "total_tokens": 2239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "be054163c97b74d3e4b92d4ded163307e972a6f33496eb0b71648af821ce5ccc"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

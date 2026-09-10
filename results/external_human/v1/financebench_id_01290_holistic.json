@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01290",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "835d0da6f56e9073339070285a889c3a526279beb46a78d85f33790df3e00786",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "738ba12dfe93d3d21b0d91cd6819d4d64c0d775bbb20ec1c56f0adc2f6dc3e62",
+  "started_utc": "2026-09-09T17:33:52.843689+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.9,
+    "reason": "Candidate identifies primary customers as commercial airlines and the U.S. government (plus other governments/defense agencies), consistent with reference's 'limited number of commercial airlines and the US government' and evidence showing significant revenue from both. U.S. government 40% revenue noted in evidence matches reference. Extra background does not contradict."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "45d118ed09487f1529ab58c6d763e56fd86ff22d53e6e3179fd355443e3b31ae",
+    "latency_seconds": 3.418,
+    "usage": {
+      "prompt_tokens": 3224,
+      "completion_tokens": 86,
+      "total_tokens": 3310,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "57aa28bf7c708929e02dba5f0d301bba88f564982d81cc8fdbd37045a04c707d"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

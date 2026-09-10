@@ -1,0 +1,14 @@
+{
+  "case_id": "D05",
+  "split": "dev",
+  "group": "fed25",
+  "task": "行业研报摘要",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:47:00.537134+00:00",
+  "protocol_sha256": "c8eadc99a15c3bc0ac28586bff1dcace39cb229a3ff928cbdd680165d3e63ab2",
+  "status": "error",
+  "error_type": "ValueError",
+  "error": "answerability enum",
+  "finished_utc": "2026-09-09T15:47:37.675393+00:00",
+  "wall_seconds": 37.138
+}

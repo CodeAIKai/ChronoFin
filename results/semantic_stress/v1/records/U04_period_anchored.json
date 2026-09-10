@@ -1,0 +1,157 @@
+{
+  "id": "U04_period",
+  "base": 4,
+  "mutation": "period",
+  "expected_supported": false,
+  "method": "anchored",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "contradicted",
+          "reason": "候选称'FY2023 全年已经实现营业利润 521.03 亿美元'，但来源 S1 明确为'FY2024 全年营业利润 52103 USD million'，期间混淆（2023 vs 2024）且预测/已实现无矛盾但年度错误",
+          "kind_valid": false,
+          "scope_valid": false,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": true,
+          "quote": "虚构甲公司 FY2023 全年已经实现营业利润 521.03 亿美元。"
+        }
+      ],
+      "limitations": [],
+      "summary_supported": false,
+      "follow_up_useful": false,
+      "direct_answer": true,
+      "reason": "最重要问题：候选将 S1 的 FY2024 营业利润误述为 FY2023 已实现，期间矛盾且摘要断言不受支持"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "3b9e1f6659c7132dab89bd93b3d67a74cc604061ef540ce0a716bbbf0b94220d",
+      "latency_seconds": 9.622,
+      "usage": {
+        "prompt_tokens": 1072,
+        "completion_tokens": 206,
+        "total_tokens": 1278,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "289c965f5ab22a788c9e91c31acb87f54b5e2691abba6e662f4866eb0533844f"
+    },
+    "input_sha256": "79f741e20a7f6b3bd050cfa40295634179ee6db3a2f5fa43d766a635cdab4d5e",
+    "answer_sha256": "12f3fa7d248e51faf041aa9ad2024a5dac5c2119bd8c45d25be669e4e805ce1e",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "12f3fa7d248e51faf041aa9ad2024a5dac5c2119bd8c45d25be669e4e805ce1e",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 63.068,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      },
+      {
+        "reason": "unsupported summary",
+        "cap": 65
+      },
+      {
+        "reason": "scope mismatch",
+        "cap": 60
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": false,
+  "decision_correct": true
+}

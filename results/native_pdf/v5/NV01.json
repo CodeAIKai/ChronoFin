@@ -1,0 +1,1891 @@
+{
+  "status": "ok",
+  "mode": "live_pdf",
+  "stage": "complete",
+  "record": {
+    "version": "native-generation-5.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "核查 NVIDIA FY2025 Q4 增长的质量：数据中心、毛利率和现金转化是否同向改善？提出后续核查。",
+      "as_of": "2025-12-01"
+    },
+    "evidence": [
+      {
+        "id": "F4",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY25 GAAP毛利率73.0%，较Q4 FY24的76.0%下降3.0个百分点（非同向改善）",
+        "quote": "Gross margin                        73.0 %         74.6 %         76.0 %  Down 1.6 pts  Down 3.0 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 73.0,
+        "unit": "%",
+        "raw_number": "73.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F16",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4毛利率同比与环比下滑，主因数据中心内更复杂高成本系统过渡",
+        "quote": "GAAP and non-GAAP gross margins for the fourth quarter decreased from a year ago and\nsequentially, primarily due to a transition to more complex and higher cost systems within Data\nCenter.",
+        "source_chunk_id": "P842A50963B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–3750",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 29,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F1",
+        "source_id": "pdf_842a50961f04",
+        "text": "数据中心Q4 FY25营收355.80亿美元，同比增93%，环比增16%",
+        "quote": " Data Center                      $35,580       $30,771       $18,404      Up 16%      Up 93%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 35580,
+        "unit": "USD million",
+        "raw_number": "35,580",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 31,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_842a50961f04",
+        "text": "数据中心Q4 FY24营收184.04亿美元（比较期基数，用于同比）",
+        "quote": " Data Center                      $35,580       $30,771       $18,404      Up 16%      Up 93%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 18404,
+        "unit": "USD million",
+        "raw_number": "18,404",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 31,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY24 GAAP毛利率76.0%（比较期基数）",
+        "quote": "Gross margin                        73.0 %         74.6 %         76.0 %  Down 1.6 pts  Down 3.0 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 76.0,
+        "unit": "%",
+        "raw_number": "76.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY25 Non-GAAP毛利率73.5%，较Q4 FY24的76.7%下降3.2个百分点",
+        "quote": " Gross margin                        73.5 %         75.0 %         76.7 %  Down 1.5 pts  Down 3.2 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 73.5,
+        "unit": "%",
+        "raw_number": "73.5",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 17,
+        "end_line": 17,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY24 Non-GAAP毛利率76.7%（比较期基数）",
+        "quote": " Gross margin                        73.5 %         75.0 %         76.7 %  Down 1.5 pts  Down 3.2 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 76.7,
+        "unit": "%",
+        "raw_number": "76.7",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 17,
+        "end_line": 17,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY25 GAAP经营活动净现金166.28亿美元",
+        "quote": " activities                         $   16,628  $   17,629  $   11,499  $   64,089  $   28,090",
+        "source_chunk_id": "P842A50967B1",
+        "page": 7,
+        "locator": "PDF p7, chars 0–2818",
+        "value": 16628,
+        "unit": "USD million",
+        "raw_number": "16,628",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 13,
+        "end_line": 13,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY25自由现金流155.19亿美元（GAAP经营现金流减资本性支付）",
+        "quote": "Free cash flow                     $   15,519  $   16,787  $   11,217  $   60,724  $   26,947",
+        "source_chunk_id": "P842A50967B1",
+        "page": 7,
+        "locator": "PDF p7, chars 0–2818",
+        "value": 15519,
+        "unit": "USD million",
+        "raw_number": "15,519",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 18,
+        "end_line": 18,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY25 GAAP净利润220.91亿美元，同比增80%",
+        "quote": "Net income                      $22,091       $19,309       $12,285      Up 14%      Up 80%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 22091,
+        "unit": "USD million",
+        "raw_number": "22,091",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 11,
+        "end_line": 11,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_842a50961f04",
+        "text": "Q4 FY25总营收393.31亿美元，同比增78%，环比增12%",
+        "quote": "Revenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 39331,
+        "unit": "USD million",
+        "raw_number": "39,331",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 7,
+        "end_line": 7,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "NVIDIA FY2025 Q4 增长质量呈现分化：数据中心营收同比增93%至355.80亿美元、环比增16%，经营现金流与自由现金流分别为166.28亿和155.19亿美元，现金转化保持强劲；但GAAP与Non-GAAP毛利率均同比下降约3个百分点，主因数据中心高成本复杂系统过渡。因此营收与现金转化同向改善，毛利率反向走弱，三者未同向改善。后续需核查系统过渡完成节奏及毛利率拐点。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "数据中心Q4 FY25营收355.80亿美元，同比增93%、环比增16%，为增长核心驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F1",
+            "F2"
+          ],
+          "numbers": [
+            {
+              "source_id": "F1",
+              "value": 35580,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F2",
+              "value": 18404,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Q4 FY25 GAAP毛利率73.0%，较Q4 FY24的76.0%降3.0个百分点，未同向改善",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F4",
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 73.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "F5",
+              "value": 76.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Q4 FY25 Non-GAAP毛利率73.5%，较Q4 FY24的76.7%降3.2个百分点，确认毛利承压",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F6",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 73.5,
+              "unit": "%"
+            },
+            {
+              "source_id": "F7",
+              "value": 76.7,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "毛利率下滑主因数据中心内更复杂高成本系统过渡，属结构性成本因素",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "F16"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "Q4 FY25 GAAP经营净现金166.28亿美元，自由现金流155.19亿美元，现金转化强劲",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F11"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 16628,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F11",
+              "value": 15519,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Q4 FY25总营收393.31亿美元、净利润220.91亿美元，规模与盈利绝对额仍扩张",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F3",
+            "F12"
+          ],
+          "numbers": [
+            {
+              "source_id": "F3",
+              "value": 39331,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F12",
+              "value": 22091,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未披露数据中心细分资本开支及毛利过渡期结束时间，无法判断毛利率修复时点",
+        "未提供Q4 FY24自由现金流基数外的完整现金转化比率口径，不能跨期精确比较转化效率"
+      ],
+      "follow_up": [
+        {
+          "action": "核查下季度财报中数据中心系统过渡相关表述及毛利率指引",
+          "reason": "若过渡完成则毛利率有望回升，改变'毛利与增长背离'判断",
+          "evidence_ids": [
+            "F16"
+          ]
+        },
+        {
+          "action": "提取Q4 FY24自由现金流与经营现金流基数，计算同比现金转化变化",
+          "reason": "确认现金转化是否真正同向改善而非仅绝对额高",
+          "evidence_ids": [
+            "F10",
+            "F11"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "NVIDIA FY2025 Q4 增长质量呈分化：数据中心营收355.80亿美元，同比增93%、环比增16%，为核心驱动；GAAP与Non-GAAP毛利率分别为73.0%与73.5%，较去年同期降3.0和3.2个百分点，主因数据中心高成本复杂系统过渡，毛利反向走弱；同期经营净现金166.28亿、自由现金流155.19亿美元，现金转化强劲。营收与现金转化同向改善，毛利率未同向，三者未齐步改善。后续需跟踪系统过渡节奏及跨期现金转化效率。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "数据中心Q4 FY25营收355.80亿美元，同比增93%、环比增16%，为增长核心驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F1",
+            "F2"
+          ],
+          "numbers": [
+            {
+              "source_id": "F1",
+              "value": 35580,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F2",
+              "value": 18404,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Q4 FY25 GAAP毛利率73.0%，较Q4 FY24的76.0%降3.0个百分点，未同向改善",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F4",
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 73.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "F5",
+              "value": 76.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Q4 FY25 Non-GAAP毛利率73.5%，较Q4 FY24的76.7%降3.2个百分点，确认毛利承压",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F6",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 73.5,
+              "unit": "%"
+            },
+            {
+              "source_id": "F7",
+              "value": 76.7,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "毛利率下滑主因数据中心内更复杂高成本系统过渡，属结构性成本因素",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "F16"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "Q4 FY25 GAAP经营净现金166.28亿美元，自由现金流155.19亿美元，现金转化强劲",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F11"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 16628,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F11",
+              "value": 15519,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Q4 FY25总营收393.31亿美元、净利润220.91亿美元，规模与盈利绝对额仍扩张",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F3",
+            "F12"
+          ],
+          "numbers": [
+            {
+              "source_id": "F3",
+              "value": 39331,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F12",
+              "value": 22091,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未披露数据中心细分资本开支及毛利过渡期结束时间，无法判断毛利率修复时点",
+        "未提供Q4 FY24自由现金流基数，不能跨期精确比较现金转化效率变化"
+      ],
+      "follow_up": [
+        {
+          "action": "核查下季度财报中数据中心系统过渡相关表述及毛利率指引",
+          "reason": "若过渡完成则毛利率有望回升，改变'毛利与增长背离'判断",
+          "evidence_ids": [
+            "F16"
+          ]
+        },
+        {
+          "action": "提取Q4 FY24自由现金流与经营现金流基数，计算同比现金转化变化",
+          "reason": "确认现金转化是否真正同向改善而非仅绝对额高",
+          "evidence_ids": [
+            "F10",
+            "F11"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "dd4693e7872627201d365f2bb00f26715ff11d278b08a63d2edb8abaa43b827d",
+        "latency_seconds": 7.267,
+        "usage": {
+          "prompt_tokens": 3384,
+          "completion_tokens": 890,
+          "total_tokens": 4274,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "674841b97c0346a8c4278c0cb0498b315f860e7c62a9217022fe835ab78930bd"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "bcc50e03ddb94bb5479041d1d477e22ccf48f4b1b5dcec2c1ca08f5cedc703c7",
+        "latency_seconds": 8.982,
+        "usage": {
+          "prompt_tokens": 4332,
+          "completion_tokens": 909,
+          "total_tokens": 5241,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "1705fc2aee1f8fbde5cb464a37c11d7d562ce2c30175cdfa048f83b6a465342f"
+      }
+    ],
+    "input_sha256": "3cf6053d1f32a8f9a17fd71782904321b91dee0a50e3f1f65f3ab42749fea18c",
+    "numeric_registry": {
+      "F4": {
+        "value": 73.0,
+        "unit": "%"
+      },
+      "F1": {
+        "value": 35580,
+        "unit": "USD million"
+      },
+      "F2": {
+        "value": 18404,
+        "unit": "USD million"
+      },
+      "F5": {
+        "value": 76.0,
+        "unit": "%"
+      },
+      "F6": {
+        "value": 73.5,
+        "unit": "%"
+      },
+      "F7": {
+        "value": 76.7,
+        "unit": "%"
+      },
+      "F10": {
+        "value": 16628,
+        "unit": "USD million"
+      },
+      "F11": {
+        "value": 15519,
+        "unit": "USD million"
+      },
+      "F12": {
+        "value": 22091,
+        "unit": "USD million"
+      },
+      "F3": {
+        "value": 39331,
+        "unit": "USD million"
+      }
+    },
+    "compiled_calculations": [],
+    "operation_errors": [],
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "NVIDIA FY2025 Q4 增长质量呈分化：数据中心营收355.80亿美元，同比增93%、环比增16%，为核心驱动；GAAP与Non-GAAP毛利率分别为73.0%与73.5%，较去年同期降3.0和3.2个百分点，主因数据中心高成本复杂系统过渡，毛利反向走弱；同期经营净现金166.28亿、自由现金流155.19亿美元，现金转化强劲。营收与现金转化同向改善，毛利率未同向，三者未齐步改善。后续需跟踪系统过渡节奏及跨期现金转化效率。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "数据中心Q4 FY25营收355.80亿美元，同比增93%、环比增16%，为增长核心驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F1",
+            "F2"
+          ],
+          "numbers": [
+            {
+              "source_id": "F1",
+              "value": 35580,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F2",
+              "value": 18404,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Q4 FY25 GAAP毛利率73.0%，较Q4 FY24的76.0%降3.0个百分点，未同向改善",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F4",
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 73.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "F5",
+              "value": 76.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Q4 FY25 Non-GAAP毛利率73.5%，较Q4 FY24的76.7%降3.2个百分点，确认毛利承压",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F6",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 73.5,
+              "unit": "%"
+            },
+            {
+              "source_id": "F7",
+              "value": 76.7,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "毛利率下滑主因数据中心内更复杂高成本系统过渡，属结构性成本因素",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "F16"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "Q4 FY25 GAAP经营净现金166.28亿美元，自由现金流155.19亿美元，现金转化强劲",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F11"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 16628,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F11",
+              "value": 15519,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Q4 FY25总营收393.31亿美元、净利润220.91亿美元，规模与盈利绝对额仍扩张",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F3",
+            "F12"
+          ],
+          "numbers": [
+            {
+              "source_id": "F3",
+              "value": 39331,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F12",
+              "value": 22091,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未披露数据中心细分资本开支及毛利过渡期结束时间，无法判断毛利率修复时点",
+        "未提供Q4 FY24自由现金流基数，不能跨期精确比较现金转化效率变化"
+      ],
+      "follow_up": [
+        {
+          "action": "核查下季度财报中数据中心系统过渡相关表述及毛利率指引",
+          "reason": "若过渡完成则毛利率有望回升，改变'毛利与增长背离'判断",
+          "evidence_ids": [
+            "F16"
+          ]
+        },
+        {
+          "action": "提取Q4 FY24自由现金流与经营现金流基数，计算同比现金转化变化",
+          "reason": "确认现金转化是否真正同向改善而非仅绝对额高",
+          "evidence_ids": [
+            "F10",
+            "F11"
+          ]
+        }
+      ]
+    },
+    "pre_repair_proof_issues": [],
+    "answer_sha256": "2c386a0165d338c6dc3a41fdedc57d251a125044f1d45c591660224f9bf473a8",
+    "final_proof_issues": [],
+    "source_document": {
+      "id": "pdf_842a50961f04",
+      "sha256": "842a50961f0466d50584f8017200ab72c5a86c7438f0560cefb0506442149ce7",
+      "pages": 8,
+      "bytes": 82336,
+      "metadata_identity": "pinned_official",
+      "title": "NVIDIA Q4 and FY2025 CFO Commentary",
+      "entity": "NVIDIA",
+      "published_at": "2025-02-26",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 9,
+      "selected_ids": [
+        "P842A50961B1",
+        "P842A50962B1",
+        "P842A50963B1",
+        "P842A50964B1",
+        "P842A50965B1",
+        "P842A50965B2",
+        "P842A50966B1",
+        "P842A50967B1",
+        "P842A50968B1"
+      ],
+      "selected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selection_sha256": "c5180a25a34bbecb60726bf68c871cb61b6c6f8c76879bc0591062b670c27657"
+    },
+    "pipeline": "native_pdf_v5",
+    "extraction_raw": {
+      "facts": [
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 31,
+          "end_line": 31,
+          "text": "数据中心Q4 FY25营收355.80亿美元，同比增93%，环比增16%",
+          "value": 35580,
+          "raw_number": "35,580",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 31,
+          "end_line": 31,
+          "text": "数据中心Q4 FY24营收184.04亿美元（比较期基数，用于同比）",
+          "value": 18404,
+          "raw_number": "18,404",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 7,
+          "end_line": 7,
+          "text": "Q4 FY25总营收393.31亿美元，同比增78%，环比增12%",
+          "value": 39331,
+          "raw_number": "39,331",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 8,
+          "end_line": 8,
+          "text": "Q4 FY25 GAAP毛利率73.0%，较Q4 FY24的76.0%下降3.0个百分点（非同向改善）",
+          "value": 73.0,
+          "raw_number": "73.0",
+          "unit": "%",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 8,
+          "end_line": 8,
+          "text": "Q4 FY24 GAAP毛利率76.0%（比较期基数）",
+          "value": 76.0,
+          "raw_number": "76.0",
+          "unit": "%",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 17,
+          "end_line": 17,
+          "text": "Q4 FY25 Non-GAAP毛利率73.5%，较Q4 FY24的76.7%下降3.2个百分点",
+          "value": 73.5,
+          "raw_number": "73.5",
+          "unit": "%",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 17,
+          "end_line": 17,
+          "text": "Q4 FY24 Non-GAAP毛利率76.7%（比较期基数）",
+          "value": 76.7,
+          "raw_number": "76.7",
+          "unit": "%",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 23,
+          "end_line": 24,
+          "text": "Q4 FY25经营活动现金流166亿美元，同比从115亿增加；FY25为641亿美元，同比从281亿增加",
+          "value": 16600,
+          "raw_number": "16.6",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 23,
+          "end_line": 24,
+          "text": "Q4 FY24经营活动现金流115亿美元（比较期基数，用于现金转化）",
+          "value": 11500,
+          "raw_number": "11.5",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50967B1",
+          "start_line": 13,
+          "end_line": 13,
+          "text": "Q4 FY25 GAAP经营活动净现金166.28亿美元",
+          "value": 16628,
+          "raw_number": "16,628",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50967B1",
+          "start_line": 18,
+          "end_line": 18,
+          "text": "Q4 FY25自由现金流155.19亿美元（GAAP经营现金流减资本性支付）",
+          "value": 15519,
+          "raw_number": "15,519",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50961B1",
+          "start_line": 11,
+          "end_line": 11,
+          "text": "Q4 FY25 GAAP净利润220.91亿美元，同比增80%",
+          "value": 22091,
+          "raw_number": "22,091",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 8,
+          "end_line": 9,
+          "text": "现金及有价证券432亿美元，较一年前260亿增加，较一季前385亿增加",
+          "value": 43200,
+          "raw_number": "43.2",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 14,
+          "end_line": 15,
+          "text": "库存101亿美元，DSI 86天，较 Sequential 的77亿和78天上升（投入约束信号）",
+          "value": 10100,
+          "raw_number": "10.1",
+          "unit": "USD billion",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 16,
+          "end_line": 17,
+          "text": "采购承诺与制造产能义务308亿美元，含新产能与部件；供应预付51亿美元",
+          "value": 30800,
+          "raw_number": "30.8",
+          "unit": "USD billion",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50963B1",
+          "start_line": 29,
+          "end_line": 31,
+          "text": "Q4毛利率同比与环比下滑，主因数据中心内更复杂高成本系统过渡",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P842A50965B1",
+          "start_line": 8,
+          "end_line": 26,
+          "text": "公司补充非GAAP指标（含自由现金流），称非GAAP不代表孤立或替代GAAP结果",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P842A50964B1",
+          "start_line": 37,
+          "end_line": 40,
+          "text": "Q1 FY26展望：营收预期430亿美元±2%；GAAP/Non-GAAP毛利率预期70.6%/71.0%±50bps（低于Q4）",
+          "value": 43000,
+          "raw_number": "43.0",
+          "unit": "USD billion",
+          "role": "caution",
+          "status": "forecast"
+        }
+      ],
+      "limitations": [
+        "本次材料仅含NVIDIA CFO Commentary及GAAP/Non-GAAP调节表（FY25 Q4及全年），未含完整财报附注与细分现金转化率公式",
+        "未提供Q4 FY25数据中心毛利率绝对值，仅给总毛利率与同比/环比变动",
+        "现金转化质量需结合应收DSO 53天、库存DSI 86天及资本支出进一步核对，本材料未直接计算转化率",
+        "后续核查建议：1) 数据中心分部毛利率与成本结构；2) 经营现金流中应收与库存变动对自由现金流的拖累；3) Q1 FY26毛利率指引降至70.6%是否延续数据中心高成本过渡"
+      ]
+    },
+    "extraction_traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "fb7e5c99ae231632eb01dbf2fd2fb28fff70448f4fb76544c55e2eb490ba5bdd",
+        "latency_seconds": 15.614,
+        "usage": {
+          "prompt_tokens": 9987,
+          "completion_tokens": 1725,
+          "total_tokens": 11712,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "8dde2f90377387e9e786ec239eeb6f555071c8f02155482249087cc6699d041c"
+      }
+    ],
+    "extraction_audit": {
+      "facts_proposed": 18,
+      "facts_accepted": 11,
+      "rejected": [
+        {
+          "index": 8,
+          "reason": "数字与原文不相等或被换算"
+        },
+        {
+          "index": 9,
+          "reason": "数字与原文不相等或被换算"
+        },
+        {
+          "index": 13,
+          "reason": "数字与原文不相等或被换算"
+        },
+        {
+          "index": 14,
+          "reason": "数字与原文不相等或被换算"
+        },
+        {
+          "index": 15,
+          "reason": "数字与原文不相等或被换算"
+        },
+        {
+          "index": 17,
+          "reason": "行区间超出原文或超过12行"
+        },
+        {
+          "index": 18,
+          "reason": "数字与原文不相等或被换算"
+        }
+      ],
+      "raw_response_sha256": "314a13245f6efbdeea3db5515059e463e3bbe4ad7f77bb23dce14e3428a2a823",
+      "quote_verification": "Program-copied original line range; whitespace-normalized exact match checked again",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "judge_attempts": [
+    {
+      "version": "native-source-audit-5.0",
+      "raw_judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选称数据中心Q4营收355.80亿美元(=35580百万美元)同比增93%环比增16%，与F1/F2及P842A50961B1一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选GAAP毛利率73.0%较76.0%降3.0pts，与F4/F5及P842A50961B1一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选Non-GAAP毛利率73.5%较76.7%降3.2pts，与F6/F7及P842A50961B1一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选称毛利下滑主因数据中心高成本系统过渡，F16原文支持该推断",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选经营净现金166.28亿、自由现金流155.19亿美元，与F10/F11(16628/15519百万美元)等价",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选总营收393.31亿、净利润220.91亿美元，与F3/F12(39331/22091百万美元)等价",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "candidate_span_id": "C6"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "candidate_span_id": "C1"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "candidate_span_id": "C2"
+          },
+          {
+            "id": "R4",
+            "present": false,
+            "candidate_span_id": null
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": false,
+            "candidate_span_id": null
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "候选正确指出数据中心增长、毛利未同向改善、现金转化强，但未覆盖R4中经营现金流低于上季及应收库存增加的具体 counter 事实，且未说明营收增长不能证明毛利与现金转化均环比改善的限制。"
+      },
+      "span_binding": [
+        {
+          "group": "coverage",
+          "id": "R1",
+          "candidate_span_id": "C6",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R2",
+          "candidate_span_id": "C1",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R3",
+          "candidate_span_id": "C2",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R4",
+          "candidate_span_id": null,
+          "bound": true
+        },
+        {
+          "group": "limitations",
+          "id": 0,
+          "candidate_span_id": null,
+          "bound": true
+        }
+      ],
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选称数据中心Q4营收355.80亿美元(=35580百万美元)同比增93%环比增16%，与F1/F2及P842A50961B1一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选GAAP毛利率73.0%较76.0%降3.0pts，与F4/F5及P842A50961B1一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选Non-GAAP毛利率73.5%较76.7%降3.2pts，与F6/F7及P842A50961B1一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选称毛利下滑主因数据中心高成本系统过渡，F16原文支持该推断",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选经营净现金166.28亿、自由现金流155.19亿美元，与F10/F11(16628/15519百万美元)等价",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选总营收393.31亿、净利润220.91亿美元，与F3/F12(39331/22091百万美元)等价",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "candidate_span_id": "C6",
+            "quote": "Q4 FY25总营收393.31亿美元、净利润220.91亿美元，规模与盈利绝对额仍扩张"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "candidate_span_id": "C1",
+            "quote": "数据中心Q4 FY25营收355.80亿美元，同比增93%、环比增16%，为增长核心驱动"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "candidate_span_id": "C2",
+            "quote": "Q4 FY25 GAAP毛利率73.0%，较Q4 FY24的76.0%降3.0个百分点，未同向改善"
+          },
+          {
+            "id": "R4",
+            "present": false,
+            "candidate_span_id": null,
+            "quote": ""
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": false,
+            "candidate_span_id": null,
+            "quote": ""
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "候选正确指出数据中心增长、毛利未同向改善、现金转化强，但未覆盖R4中经营现金流低于上季及应收库存增加的具体 counter 事实，且未说明营收增长不能证明毛利与现金转化均环比改善的限制。"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "0e224f00129d233cf8ecad910d657286b4ac86c1c0bc0ec5edbf4427260606a6",
+        "latency_seconds": 6.793,
+        "usage": {
+          "prompt_tokens": 11758,
+          "completion_tokens": 620,
+          "total_tokens": 12378,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "d2a70228a5f8ffc183d06965c86186f510dfe86bda1178dac3cb2bc21266506a"
+      },
+      "input_sha256": "e7bcda7d9cbd0a3656d7c158e79e484504a5742e87634e6c35b3023dbc76205f",
+      "answer_sha256": "2c386a0165d338c6dc3a41fdedc57d251a125044f1d45c591660224f9bf473a8",
+      "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pdf_842a50961f04",
+      "sha256": "842a50961f0466d50584f8017200ab72c5a86c7438f0560cefb0506442149ce7",
+      "pages": 8,
+      "bytes": 82336,
+      "metadata_identity": "pinned_official",
+      "title": "NVIDIA Q4 and FY2025 CFO Commentary",
+      "entity": "NVIDIA",
+      "published_at": "2025-02-26",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf"
+    }
+  ],
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "2c386a0165d338c6dc3a41fdedc57d251a125044f1d45c591660224f9bf473a8",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 90.0,
+    "score": 90.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "semantic": {
+    "version": "native-source-audit-5.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选称数据中心Q4营收355.80亿美元(=35580百万美元)同比增93%环比增16%，与F1/F2及P842A50961B1一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选GAAP毛利率73.0%较76.0%降3.0pts，与F4/F5及P842A50961B1一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选Non-GAAP毛利率73.5%较76.7%降3.2pts，与F6/F7及P842A50961B1一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称毛利下滑主因数据中心高成本系统过渡，F16原文支持该推断",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选经营净现金166.28亿、自由现金流155.19亿美元，与F10/F11(16628/15519百万美元)等价",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选总营收393.31亿、净利润220.91亿美元，与F3/F12(39331/22091百万美元)等价",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C6"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C1"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C2"
+        },
+        {
+          "id": "R4",
+          "present": false,
+          "candidate_span_id": null
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "candidate_span_id": null
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确指出数据中心增长、毛利未同向改善、现金转化强，但未覆盖R4中经营现金流低于上季及应收库存增加的具体 counter 事实，且未说明营收增长不能证明毛利与现金转化均环比改善的限制。"
+    },
+    "span_binding": [
+      {
+        "group": "coverage",
+        "id": "R1",
+        "candidate_span_id": "C6",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R2",
+        "candidate_span_id": "C1",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R3",
+        "candidate_span_id": "C2",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R4",
+        "candidate_span_id": null,
+        "bound": true
+      },
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": null,
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选称数据中心Q4营收355.80亿美元(=35580百万美元)同比增93%环比增16%，与F1/F2及P842A50961B1一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选GAAP毛利率73.0%较76.0%降3.0pts，与F4/F5及P842A50961B1一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选Non-GAAP毛利率73.5%较76.7%降3.2pts，与F6/F7及P842A50961B1一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称毛利下滑主因数据中心高成本系统过渡，F16原文支持该推断",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选经营净现金166.28亿、自由现金流155.19亿美元，与F10/F11(16628/15519百万美元)等价",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选总营收393.31亿、净利润220.91亿美元，与F3/F12(39331/22091百万美元)等价",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C6",
+          "quote": "Q4 FY25总营收393.31亿美元、净利润220.91亿美元，规模与盈利绝对额仍扩张"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C1",
+          "quote": "数据中心Q4 FY25营收355.80亿美元，同比增93%、环比增16%，为增长核心驱动"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C2",
+          "quote": "Q4 FY25 GAAP毛利率73.0%，较Q4 FY24的76.0%降3.0个百分点，未同向改善"
+        },
+        {
+          "id": "R4",
+          "present": false,
+          "candidate_span_id": null,
+          "quote": ""
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "candidate_span_id": null,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确指出数据中心增长、毛利未同向改善、现金转化强，但未覆盖R4中经营现金流低于上季及应收库存增加的具体 counter 事实，且未说明营收增长不能证明毛利与现金转化均环比改善的限制。"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "0e224f00129d233cf8ecad910d657286b4ac86c1c0bc0ec5edbf4427260606a6",
+      "latency_seconds": 6.793,
+      "usage": {
+        "prompt_tokens": 11758,
+        "completion_tokens": 620,
+        "total_tokens": 12378,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "d2a70228a5f8ffc183d06965c86186f510dfe86bda1178dac3cb2bc21266506a"
+    },
+    "input_sha256": "e7bcda7d9cbd0a3656d7c158e79e484504a5742e87634e6c35b3023dbc76205f",
+    "answer_sha256": "2c386a0165d338c6dc3a41fdedc57d251a125044f1d45c591660224f9bf473a8",
+    "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+  },
+  "raw_source_audit_sha256": "13af19bc9b5768ce3002ce8d2800f9dbc342a3e789c11f08398354c8e32c195c",
+  "replay_material": {
+    "audit_cards": [
+      {
+        "id": "F1",
+        "source_id": "pdf_842a50961f04",
+        "text": " Data Center                      $35,580       $30,771       $18,404      Up 16%      Up 93%",
+        "quote": " Data Center                      $35,580       $30,771       $18,404      Up 16%      Up 93%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 35580,
+        "unit": "USD million",
+        "raw_number": "35,580",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 31,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_842a50961f04",
+        "text": " Data Center                      $35,580       $30,771       $18,404      Up 16%      Up 93%",
+        "quote": " Data Center                      $35,580       $30,771       $18,404      Up 16%      Up 93%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 18404,
+        "unit": "USD million",
+        "raw_number": "18,404",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 31,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_842a50961f04",
+        "text": "Revenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%",
+        "quote": "Revenue                         $39,331       $35,082       $22,103      Up 12%      Up 78%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 39331,
+        "unit": "USD million",
+        "raw_number": "39,331",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 7,
+        "end_line": 7,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_842a50961f04",
+        "text": "Gross margin                        73.0 %         74.6 %         76.0 %  Down 1.6 pts  Down 3.0 pts",
+        "quote": "Gross margin                        73.0 %         74.6 %         76.0 %  Down 1.6 pts  Down 3.0 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 73.0,
+        "unit": "%",
+        "raw_number": "73.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_842a50961f04",
+        "text": "Gross margin                        73.0 %         74.6 %         76.0 %  Down 1.6 pts  Down 3.0 pts",
+        "quote": "Gross margin                        73.0 %         74.6 %         76.0 %  Down 1.6 pts  Down 3.0 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 76.0,
+        "unit": "%",
+        "raw_number": "76.0",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_842a50961f04",
+        "text": " Gross margin                        73.5 %         75.0 %         76.7 %  Down 1.5 pts  Down 3.2 pts",
+        "quote": " Gross margin                        73.5 %         75.0 %         76.7 %  Down 1.5 pts  Down 3.2 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 73.5,
+        "unit": "%",
+        "raw_number": "73.5",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 17,
+        "end_line": 17,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_842a50961f04",
+        "text": " Gross margin                        73.5 %         75.0 %         76.7 %  Down 1.5 pts  Down 3.2 pts",
+        "quote": " Gross margin                        73.5 %         75.0 %         76.7 %  Down 1.5 pts  Down 3.2 pts",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 76.7,
+        "unit": "%",
+        "raw_number": "76.7",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 17,
+        "end_line": 17,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_842a50961f04",
+        "text": " activities                         $   16,628  $   17,629  $   11,499  $   64,089  $   28,090",
+        "quote": " activities                         $   16,628  $   17,629  $   11,499  $   64,089  $   28,090",
+        "source_chunk_id": "P842A50967B1",
+        "page": 7,
+        "locator": "PDF p7, chars 0–2818",
+        "value": 16628,
+        "unit": "USD million",
+        "raw_number": "16,628",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 13,
+        "end_line": 13,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_842a50961f04",
+        "text": "Free cash flow                     $   15,519  $   16,787  $   11,217  $   60,724  $   26,947",
+        "quote": "Free cash flow                     $   15,519  $   16,787  $   11,217  $   60,724  $   26,947",
+        "source_chunk_id": "P842A50967B1",
+        "page": 7,
+        "locator": "PDF p7, chars 0–2818",
+        "value": 15519,
+        "unit": "USD million",
+        "raw_number": "15,519",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 18,
+        "end_line": 18,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_842a50961f04",
+        "text": "Net income                      $22,091       $19,309       $12,285      Up 14%      Up 80%",
+        "quote": "Net income                      $22,091       $19,309       $12,285      Up 14%      Up 80%",
+        "source_chunk_id": "P842A50961B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–2877",
+        "value": 22091,
+        "unit": "USD million",
+        "raw_number": "22,091",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 11,
+        "end_line": 11,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F16",
+        "source_id": "pdf_842a50961f04",
+        "text": "GAAP and non-GAAP gross margins for the fourth quarter decreased from a year ago and\nsequentially, primarily due to a transition to more complex and higher cost systems within Data\nCenter.",
+        "quote": "GAAP and non-GAAP gross margins for the fourth quarter decreased from a year ago and\nsequentially, primarily due to a transition to more complex and higher cost systems within Data\nCenter.",
+        "source_chunk_id": "P842A50963B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–3750",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "NVIDIA",
+        "published_at": "2025-02-26",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 29,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "reference_case": {
+      "id": "NV01",
+      "question": "核查 NVIDIA FY2025 Q4 增长的质量：数据中心、毛利率和现金转化是否同向改善？提出后续核查。",
+      "as_of": "2025-12-01",
+      "required": [
+        "R1",
+        "R2"
+      ],
+      "counter": [
+        "R3",
+        "R4"
+      ],
+      "point_definitions": {
+        "R1": "Q4总收入39331百万美元，同比增78%，单季不是全年。",
+        "R2": "Q4数据中心收入35580百万美元，同比增93%。",
+        "R3": "Q4 GAAP毛利率73.0%，同比下降3个百分点；更复杂高成本系统是原因。",
+        "R4": "Q4经营现金流16628百万美元，低于上一季17629百万美元；应收和库存增加。"
+      },
+      "limitations": [
+        "营收增长不能证明毛利率和现金转化均环比改善。"
+      ],
+      "expected_answerability": "answerable"
+    }
+  },
+  "id": "NV01",
+  "split": "new_source",
+  "protocol_sha256": "5ec64580ad346d12823b29c8f0f3a9c2b5e03e7a2d93f20327dbc7b62d6d9d23",
+  "finished_utc": "2026-09-10T02:20:27.059338+00:00",
+  "wall_seconds": 38.866
+}

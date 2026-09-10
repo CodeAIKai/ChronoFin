@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01009",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "dad901c194b4b193bc9269f2de56c01507de94b0a1954ccb0d2aeb01e1badc31",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "43a4b285e2ea3aaf9c0b6c1274656ed3382794e81217b502496f1f8a2cf99d5a",
+  "started_utc": "2026-09-09T18:00:29.910263+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate provided FY2022 financial results and operations summary but never listed the geographies Pepsico primarily operates in, failing to answer the question. Reference and evidence specify North America, Latin America, Europe, Africa, Middle East, South Asia, Asia Pacific, Australia, New Zealand and China."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2cfdf345dad5066c032d6056f08d678c36949d11606fa79b817c2debfa7bce35",
+    "latency_seconds": 6.287,
+    "usage": {
+      "prompt_tokens": 3218,
+      "completion_tokens": 81,
+      "total_tokens": 3299,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c7176b1a7478d62bb25def16e39138203dd79ba8495d0b701bbf5618f1d71229"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

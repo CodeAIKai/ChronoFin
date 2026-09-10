@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03856",
+  "uid": "financebench_id_03856_dev",
+  "split": "development",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9b4d63d5f4df87ab5e07a6bd2b2de4d20f3a75550ecd335161c83604066afcda",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "922ef793523e5d173b3d93e82c8d51047583c32f51917e28f72529ce5d9dffc9",
+  "started_utc": "2026-09-10T01:31:04.022958+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "3.1 Restated Certificate of Incorporation of Adobe Systems Incorporated",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided an exhibit list from SEC filings unrelated to FY2017 operating cash flow ratio; no calculation or answer to the question was given."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6c5a56a9ab2c3836b6891240422df8ca362a3bee708511fb6008c231c31d584a",
+    "latency_seconds": 6.019,
+    "usage": {
+      "prompt_tokens": 6090,
+      "completion_tokens": 93,
+      "total_tokens": 6183,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "246667e72d27860e5f8236fa489933d76a5dfdc9d146064f5f2c15f0d3009e35"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

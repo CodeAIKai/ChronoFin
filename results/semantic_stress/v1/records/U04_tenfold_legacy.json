@@ -1,0 +1,148 @@
+{
+  "id": "U04_tenfold",
+  "base": 4,
+  "mutation": "tenfold",
+  "expected_supported": false,
+  "method": "legacy",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "contradicted",
+          "reason": "来源S1为52103 USD million（即5210.3亿美元），候选写5210.30亿美元数值一致但称'已经实现'，来源status为observed非预测，但候选将observed转述为'已经实现'无矛盾；实际矛盾在口径：52103 USD million=5210.3亿美元，候选写5210.30亿美元数值同，但来源是FY2024全年营业利润，候选同，无矛盾。然而候选摘要与C1均写5210.30亿美元，S1为52103 USD million=5210.3亿美元，等同，无数字矛盾。但verdict应为supported？重核：S1 text'虚构甲公司 FY2024 全年营业利润为 52103 USD million'，候选C1'虚构甲公司 FY2024 全年已经实现营业利润 5210.30 亿美元'，52103 USD million = 5210.3亿美元 = 5210.30亿美元，主体期间口径一致，status observed即已实现，候选说已经实现受支持。故应为supported。",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": true,
+          "quote": "虚构甲公司 FY2024 全年已经实现营业利润 5210.30 亿美元。"
+        }
+      ],
+      "limitations": [],
+      "summary_supported": true,
+      "follow_up_useful": false,
+      "direct_answer": true,
+      "reason": "候选正确依据S1给出虚构甲公司FY2024营业利润5210.30亿美元，数值换算一致，但follow_up仅提查下份年报无具体指标意义说明不充分。"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "ce277bd66396a5c97e7a770f5460a0a3da952ca674331514a7f6bb06e510f77f",
+      "latency_seconds": 13.401,
+      "usage": {
+        "prompt_tokens": 768,
+        "completion_tokens": 377,
+        "total_tokens": 1145,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "0e65d64525a8d1c8650c8e8d556c10d5825ff2953cc425d0e413574300199d8a"
+    },
+    "input_sha256": "7e1f2103150a82d08c153362de763f8f568040791bb98c59ae1f72220b4ee218",
+    "answer_sha256": "d9b8415134a4198d0b8224514c654599f966344eb5d3db423ac55e55e23f7509",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "d9b8415134a4198d0b8224514c654599f966344eb5d3db423ac55e55e23f7509",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.2,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 80.795,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": false,
+  "decision_correct": true
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_09724",
+  "uid": "financebench_id_09724_val",
+  "split": "new_response_validation",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "099f638a55d0b1b17dba3217b300b478a32e8662a250f8ad3815f16cc5568aa4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "d5796545d3890b013c2d0044a92065d2019a02d8dbc028b639c98722f03c1250",
+  "started_utc": "2026-09-10T01:34:07.565023+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate computed COGS % margin as 15357/38655 = 39.73%, matching reference 0.397 (39.7%) with reasonable rounding using stated income statement line items."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bf9e1330c7ef7593daf3398f8f67e732eadda258aee48a34284237bd39db8edd",
+    "latency_seconds": 6.85,
+    "usage": {
+      "prompt_tokens": 1488,
+      "completion_tokens": 61,
+      "total_tokens": 1549,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "98e7cb1fa63b0afa33a6e75b5799bd43cc73052b713c1e3b6ecc9a81fa90d74f"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

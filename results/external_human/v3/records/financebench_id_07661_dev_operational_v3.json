@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_07661",
+  "uid": "financebench_id_07661_dev",
+  "split": "development",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "022c094b228aa7c57280368b6511731376c22e19bc19da7f8320f00ea1d71168",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "3f3e681cfe0f57ce50aeac373e97cc5d3713a0f33148847b0fed39b51fc58b3a",
+  "started_utc": "2026-09-10T01:33:43.199613+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but the information provided does not include the cash flow from operating activities for Block (formerly known as Square) for FY2020.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot answer and asks for missing data, despite evidence containing Square's FY2020 operating cash flow of 381,603 thousand USD = 381.6 million, reference 382 million."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "47e63e9ed1666e15df11d5710fe1ad39f0869dd58d55eac81432fecd8e1f88d1",
+    "latency_seconds": 8.211,
+    "usage": {
+      "prompt_tokens": 3029,
+      "completion_tokens": 123,
+      "total_tokens": 3152,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d238a3c20d06600b2effd0865c4b280dd995f75a0c25be81625593d249a5d3b4"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

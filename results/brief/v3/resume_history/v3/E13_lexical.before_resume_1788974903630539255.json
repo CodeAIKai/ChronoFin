@@ -1,0 +1,14 @@
+{
+  "case_id": "E13",
+  "split": "evaluation",
+  "group": "fed25",
+  "task": "行业研报摘要",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:59:14.836448+00:00",
+  "protocol_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "status": "error",
+  "error_type": "LLMError",
+  "error": "Hy3 request failed after 2 attempts: Hy3 HTTP 402: {\"error\":{\"type\":\"gateway_error\",\"code\":\"401008\",\"message\":\"The free trial quota for the service has been exhausted and postpaid billing is not enabled, so the service cannot be accessed. Please go to Console \\u003e Online Inference Service to enable postpaid billing. See: https://console.cloud.tencent.com/tokenhub/inference\",\"message_zh\":\"服务免费体验额度已耗尽，且未开启后付费，无法正常访问。请前往控制台 \\u003e 在线推理服务开启后付费，查看链接：https://console.cloud.tencent.com/tokenhub/inference\",\"request_id\":\"b0aff8a5-6768-4d49-b9fe-74334d68",
+  "finished_utc": "2026-09-09T15:59:15.040390+00:00",
+  "wall_seconds": 0.204
+}

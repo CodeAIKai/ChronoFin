@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01912",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "14cf2c8dfbf831438b7833c2f4ded9f461668593a47c0a837d7f3a624478953a",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "72c134514f8e7eee920361fceb8a16bfe5b289fdde395e7e96694af71cf1a235",
+  "started_utc": "2026-09-09T18:01:36.521186+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate identifies MGM China as worst topline performer in FY2022 with 44% revenue decline, matching reference and evidence (MGM China net revenues down 44%, other regions up).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate correctly names MGM China as the region."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 / current year vs prior year matches question and evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Revenue decline expressed as percentage (44%) and dollar amounts in millions, consistent with evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Worst topline performance attributed to MGM China with 44% decrease, agrees with reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows MGM China net revenues $674M vs $1.2B (down 44%), Las Vegas +77%, Regional +12%; supports claim."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "24aa059cfd4c63308fe98f48faea651f6dd33176545d4f74828cd4034441957b",
+    "latency_seconds": 9.498,
+    "usage": {
+      "prompt_tokens": 3117,
+      "completion_tokens": 252,
+      "total_tokens": 3369,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4da3f51688d5da6bb5662138ad1625b37bc2906d1520d27344189ddd02455dd9"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

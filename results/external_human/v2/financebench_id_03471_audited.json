@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_03471",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "16b05bbb0cd5fb57d12a639cb898b5a8ad314a776c4a9947d95d0f9944c7655f",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "4a494c0fcc8a15133f09ab97af89b4c02ecd1e2b342e5946742f591a869ca2f7",
+  "started_utc": "2026-09-09T17:51:43.290489+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it cannot calculate the ratio because General Mills data is not provided, withholding the requested conclusion despite evidence containing the needed balance sheet figures.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references General Mills as the entity in question."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate mentions FY2020 / fiscal year 2020 as required period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate discusses ratio (unitless) as defined."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate provides no numeric answer; claims data absent and refuses to conclude."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supplies General Mills FY2020 current assets 5121.3 and liabilities 7491.5, enabling ratio 0.68, but candidate ignores it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0f1e0d410a9a0367f10b6997f645e6789ceccbd87209307b55c7e33d620d2cf2",
+    "latency_seconds": 10.829,
+    "usage": {
+      "prompt_tokens": 2319,
+      "completion_tokens": 242,
+      "total_tokens": 2561,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1b06630ff4cbb3561731825763b5a1b1cfdae73d38ea4ebe9b35cac518dc737e"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

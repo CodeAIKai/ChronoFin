@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01935",
+  "uid": "financebench_id_01935_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f5c1a20a6c4a9649f6d7e0bbe79d5d0803896063bbf47c3a58b820760373971b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "9a85b1023e741f0b6d87c42d4f25090dbbb79c826e5bb6c0c588bb0a2254a387",
+  "started_utc": "2026-09-10T01:28:11.510758+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states the key agenda is not explicitly stated in provided context and that it cannot provide an answer, withholding the requested conclusion despite evidence supplying it."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "aec3d7c935fb821b0ce6c6b3cbed9730ad5c493af0212c99215e25f4449596c6",
+    "latency_seconds": 11.534,
+    "usage": {
+      "prompt_tokens": 2561,
+      "completion_tokens": 51,
+      "total_tokens": 2612,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "68d4605a3f4a4bb9e0772f24e74f7d881d2ad28be60fffd60d9b2ecda6c88a70"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

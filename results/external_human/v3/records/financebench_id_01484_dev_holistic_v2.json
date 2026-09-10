@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01484",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "8a1b3a2b73412364afb44fda37e200f43413c928fcd503842ecaf4c92320149e",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "fa27df882f3939fa9452fcb94751c18921157310b2c30c2f86c3118d09262c54",
+  "started_utc": "2026-09-09T17:49:09.017448+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it lacks specific JnJ FY2022 US vs international sales growth info and withholds the answer, despite evidence providing US +3.0% and international -0.6% reported growth."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bfe9b2422bf2bcd89ec8585332af0f5d5fdf036736d4a11b5b8ce66617a98fd8",
+    "latency_seconds": 6.647,
+    "usage": {
+      "prompt_tokens": 1831,
+      "completion_tokens": 64,
+      "total_tokens": 1895,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5dd1d5fce46e88a40a77d473accc4a50605efef2e3002d0b7b5999ef99fc9e4f"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01484_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01484_holistic.json",
+  "parent_sha256": "9daa6a3b720775b03d23b0344b0a4fff0ebf0c6eff8077eee438f54d6e42edf3"
+}

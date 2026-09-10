@@ -1,0 +1,319 @@
+{
+  "dimensions": [
+    {
+      "name": "temporal_integrity",
+      "score": 100.0,
+      "weight": 0.15,
+      "metrics": {
+        "valid_fraction": 1.0,
+        "future_count": 0.0,
+        "known_at_mismatch_count": 0.0
+      },
+      "issues": [],
+      "method": "deterministic"
+    },
+    {
+      "name": "citation_correctness",
+      "score": 80.0,
+      "weight": 0.14,
+      "metrics": {
+        "identity_accuracy": 1.0,
+        "exact_quote_accuracy": 0.6
+      },
+      "issues": [
+        "E1: quote is not an exact source substring",
+        "E4: quote is not an exact source substring"
+      ],
+      "method": "deterministic"
+    },
+    {
+      "name": "citation_completeness",
+      "score": 100.0,
+      "weight": 0.09,
+      "metrics": {
+        "claim_completeness": 1.0
+      },
+      "issues": [],
+      "method": "deterministic"
+    },
+    {
+      "name": "factual_support",
+      "score": 100.0,
+      "weight": 0.1,
+      "metrics": {
+        "supported_fraction": 1.0,
+        "claim_supported_fraction": 1.0,
+        "deterministic_claim_grounding": 1.0,
+        "lexical_overlap_diagnostic": 1.0,
+        "summary_claim_alignment": 1.0,
+        "summary_clause_count": 4.0,
+        "summary_bound_clause_count": 4.0
+      },
+      "issues": [],
+      "method": "deterministic_exact_evidence_or_calculation_projection"
+    },
+    {
+      "name": "numeric_lineage",
+      "score": 100.0,
+      "weight": 0.15,
+      "metrics": {
+        "execution_accuracy": 1.0,
+        "leaf_binding_accuracy": 1.0,
+        "trace_coverage": 1.0,
+        "unit_consistency": 1.0,
+        "claim_value_accuracy": 1.0,
+        "claim_text_accuracy": 1.0,
+        "claim_numeric_grounding_accuracy": 1.0,
+        "summary_numeric_grounding_accuracy": 1.0
+      },
+      "issues": [],
+      "method": "deterministic"
+    },
+    {
+      "name": "entity_period_unit",
+      "score": 90.0,
+      "weight": 0.1,
+      "metrics": {
+        "entity_period_alignment": 1.0,
+        "claim_calculation_unit": 1.0,
+        "source_unit_currency_alignment": 1.0,
+        "query_target_alignment": 1.0,
+        "query_metric_alignment": 0.5,
+        "requested_metric_slot_count": 4.0,
+        "substantive_metric_slot_count": 0.0,
+        "unknown_metric_slot_count": 2.0
+      },
+      "issues": [
+        "claims do not address every detected query metric slot"
+      ],
+      "method": "deterministic"
+    },
+    {
+      "name": "proof_graph_validity",
+      "score": 100.0,
+      "weight": 0.09,
+      "metrics": {
+        "issue_count": 0.0
+      },
+      "issues": [],
+      "method": "deterministic"
+    },
+    {
+      "name": "material_completeness",
+      "score": 50.0,
+      "weight": 0.07,
+      "metrics": {
+        "material_coverage": 1.0,
+        "answerability_oracle_supplied": 1.0,
+        "answerability_match": 1.0,
+        "output_structure_valid": 1.0,
+        "refusal_support": 1.0,
+        "substantive_claim_count": 0.0,
+        "unknown_claim_count": 4.0,
+        "verified_future_exclusion": 0.0,
+        "query_target_alignment": 1.0,
+        "query_metric_alignment": 0.5,
+        "unknown_epistemic_language_accuracy": 1.0,
+        "unknown_projection_accuracy": 1.0,
+        "summary_claim_alignment": 1.0,
+        "target_aligned_substantive_count": 0.0,
+        "target_aligned_unknown_count": 4.0
+      },
+      "issues": [
+        "one or more requested metric slots lack the required claim type"
+      ],
+      "method": "answerability_structure_no_gold_nuggets"
+    },
+    {
+      "name": "inference_boundary",
+      "score": 0.0,
+      "weight": 0.06,
+      "metrics": {
+        "typed_claim_fraction": 0.0
+      },
+      "issues": [
+        "C1: UNKNOWN claim is overconfident",
+        "C2: UNKNOWN claim is overconfident",
+        "C3: UNKNOWN claim is overconfident",
+        "C4: UNKNOWN claim is overconfident"
+      ],
+      "method": "deterministic"
+    },
+    {
+      "name": "safety_and_communication",
+      "score": 100.0,
+      "weight": 0.05,
+      "metrics": {
+        "unsafe_advice": 0.0,
+        "injection_echo": 0.0,
+        "has_summary": 1.0,
+        "caveat_projection_accuracy": 1.0
+      },
+      "issues": [],
+      "method": "deterministic"
+    }
+  ],
+  "raw_score": 86.7,
+  "final_score": 40.0,
+  "hard_cap": 40.0,
+  "hard_gate_reasons": [
+    "forged, missing, or non-exact citation",
+    "answer omits one or more detected query metric slots",
+    "substantive entity, fiscal-period, or unit mismatch"
+  ],
+  "proof_graph": {
+    "nodes": [
+      {
+        "id": "E1",
+        "kind": "source",
+        "payload": {
+          "chunk_id": "tencent_2025_interim:p5:c4",
+          "document_id": "tencent_2025_interim",
+          "page": 5,
+          "published_at": "2025-08-26"
+        }
+      },
+      {
+        "id": "E2",
+        "kind": "source",
+        "payload": {
+          "chunk_id": "tencent_2025_interim:p5:c4",
+          "document_id": "tencent_2025_interim",
+          "page": 5,
+          "published_at": "2025-08-26"
+        }
+      },
+      {
+        "id": "E3",
+        "kind": "source",
+        "payload": {
+          "chunk_id": "tencent_2025_interim:p5:c4",
+          "document_id": "tencent_2025_interim",
+          "page": 5,
+          "published_at": "2025-08-26"
+        }
+      },
+      {
+        "id": "E4",
+        "kind": "source",
+        "payload": {
+          "chunk_id": "tencent_2024_annual:p8:c32",
+          "document_id": "tencent_2024_annual",
+          "page": 8,
+          "published_at": "2025-04-08"
+        }
+      },
+      {
+        "id": "E5",
+        "kind": "source",
+        "payload": {
+          "chunk_id": "tencent_2024_annual:p8:c32",
+          "document_id": "tencent_2024_annual",
+          "page": 8,
+          "published_at": "2025-04-08"
+        }
+      },
+      {
+        "id": "C1",
+        "kind": "claim",
+        "payload": {
+          "claim_type": "UNKNOWN",
+          "semantic_key": "TencentHoldingsLimited.revenue.FY2025",
+          "entity": "Tencent Holdings Limited",
+          "period": "FY2025",
+          "unit": "RMB million"
+        }
+      },
+      {
+        "id": "C2",
+        "kind": "claim",
+        "payload": {
+          "claim_type": "UNKNOWN",
+          "semantic_key": "TencentHoldingsLimited.ifrs_profit.FY2025",
+          "entity": "Tencent Holdings Limited",
+          "period": "FY2025",
+          "unit": "RMB million"
+        }
+      },
+      {
+        "id": "C3",
+        "kind": "claim",
+        "payload": {
+          "claim_type": "UNKNOWN",
+          "semantic_key": "TencentHoldingsLimited.non_ifrs_profit.FY2025",
+          "entity": "Tencent Holdings Limited",
+          "period": "FY2025",
+          "unit": "RMB million"
+        }
+      },
+      {
+        "id": "C4",
+        "kind": "claim",
+        "payload": {
+          "claim_type": "UNKNOWN",
+          "semantic_key": "TencentHoldingsLimited.ifrs_profit_margin.FY2025",
+          "entity": "Tencent Holdings Limited",
+          "period": "FY2025",
+          "unit": "%"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "E1",
+        "target": "C1",
+        "kind": "supports"
+      },
+      {
+        "source": "E4",
+        "target": "C1",
+        "kind": "supports"
+      },
+      {
+        "source": "E2",
+        "target": "C2",
+        "kind": "supports"
+      },
+      {
+        "source": "E3",
+        "target": "C3",
+        "kind": "supports"
+      },
+      {
+        "source": "E5",
+        "target": "C3",
+        "kind": "supports"
+      },
+      {
+        "source": "E1",
+        "target": "C4",
+        "kind": "supports"
+      },
+      {
+        "source": "E2",
+        "target": "C4",
+        "kind": "supports"
+      },
+      {
+        "source": "E3",
+        "target": "C4",
+        "kind": "supports"
+      },
+      {
+        "source": "E4",
+        "target": "C4",
+        "kind": "supports"
+      },
+      {
+        "source": "E5",
+        "target": "C4",
+        "kind": "supports"
+      }
+    ]
+  },
+  "verdict": "fail",
+  "limitations": [
+    "No semantic entailment judge was supplied; only exact source spans and canonical executed-calculation projections can receive factual credit.",
+    "No gold nugget set was supplied; material completeness is structural only."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_03882",
+  "company": "Amcor",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "879cc6aa6fc003f36fab071183b1fd3fa7346b91cc6e16b760705f1e2b1ef8a7",
+  "reference_text_differs": true,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "bddfe8f5b8961ca4bef350236b034e2ddb8f4670dee3b8389f7b3989497dbb47",
+  "started_utc": "2026-09-09T17:52:26.057292+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states balance sheet details are not provided and withholds the answer, despite evidence containing the balance sheet with Trade receivables, net of 1,615.9 (≈1616). Refusal per rules even though evidence makes it answerable."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "343eab471f1f9c882896ca902ca2f75d6e5ce57b30f26cf242e42e0a52bd6ae2",
+    "latency_seconds": 6.348,
+    "usage": {
+      "prompt_tokens": 2071,
+      "completion_tokens": 72,
+      "total_tokens": 2143,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cf74afa3dbaa912b7e82ffe17396b0842989c285ca8c61977c95370ab40fd4d7"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

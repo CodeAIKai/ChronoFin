@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01346",
+  "uid": "financebench_id_01346_val",
+  "split": "new_response_validation",
+  "company": "Corning",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "7b826b227cdcfcef194b3b9fc0f0390e1f53a45ef1baf40be8aff660539c606b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "cc66dc6087cac3d6630679956e8563c0a2f8fe91585fbeaa68780552ae2336ea",
+  "started_utc": "2026-09-09T18:10:53.773906+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "Therefore, I cannot determine the change in the effective tax rate between FY2021 and FY2022.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot determine the change because FY2022 rate not provided, but evidence table shows Effective tax rate 23% (2022) and 20% (2021), matching reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a1024f87e6ffc4149492019d7928ac96a8dae1f275997be8ee047914077fb282",
+    "latency_seconds": 10.722,
+    "usage": {
+      "prompt_tokens": 1995,
+      "completion_tokens": 113,
+      "total_tokens": 2108,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cfb9b52286799e7bd71509eda64c6779b88a221f01e428127555ee33d04258e5"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

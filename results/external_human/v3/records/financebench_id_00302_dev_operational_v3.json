@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00302",
+  "uid": "financebench_id_00302_dev",
+  "split": "development",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ac3d04d48db39f70eccf70baaa65a810d37566f034d52f789c80b441b93c817e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "2aae2529f84bf6ac2fa358a254b5186e3b9360df72b0050d9d5a30413581f2f2",
+  "started_utc": "2026-09-09T18:05:28.074640+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Pfizer did indeed grow its PP&E between FY20 and FY21 by $1,137 million.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states PP&E grew from $13,745M (FY20) to $14,882M (FY21), matching evidence balance sheet and reference positive change."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6fa5c374d7e427877d9e37009a8652b6cce20a64372f317c9ecd2144fabaef78",
+    "latency_seconds": 5.023,
+    "usage": {
+      "prompt_tokens": 1611,
+      "completion_tokens": 102,
+      "total_tokens": 1713,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "53207f85af1856587b7d20fc198cacfe28632194f0efb24d07ca9284e32b8c1f"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

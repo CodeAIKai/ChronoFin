@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00995",
+  "uid": "financebench_id_00995_dev",
+  "split": "development",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cd50e9048aa7020b598e633f80506b84a738a5d49cb78f7ac7f499d1b1926569",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "ab738631c645fde5e2660fb1b443193348218308e9e5195a7db5d63af9e0e262",
+  "started_utc": "2026-09-09T18:09:03.222325+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Based on the provided context, as of FY22, AMD's major products and services include:",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate lists vague market-based categories and examples (e.g., healthcare, aerospace, automotive adaptive products) not matching reference's specific product classes (server CPUs/GPUs/DPUs/FPGAs/Adaptive SoC for data centers; PC CPUs/APUs/chipsets; discrete GPUs/semi-custom SoC; embedded CPUs/GPUs/APUs/FPGAs/Adaptive SoC). Candidate omits chipsets, DPUs, embedded lines and adds unsupported product applications."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "70ce7693a22397ea162d2f9594dc99f4645d58795d0372e1063dcc700de3190b",
+    "latency_seconds": 6.385,
+    "usage": {
+      "prompt_tokens": 1710,
+      "completion_tokens": 168,
+      "total_tokens": 1878,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5fe2350ef690d3b315b29163f0187ec6a304b4535ba84cb13dbdfcd7684dbe8b"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

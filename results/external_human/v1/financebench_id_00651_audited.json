@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00651",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "602f5c146b75a40e08afd8d486c1a1d227c24b2cb7905e00989204e87b67d4d9",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ee64ffbedb5cdb11bfd374a3fe9f9ded00882969542dbf14dce1f958eb37490a",
+  "started_utc": "2026-09-09T17:59:18.266568+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate concludes J&J adjusted EPS growth does not accelerate in FY2023 (3.5% vs 3.6% in FY2022), matching reference and evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Johnson & Johnson (JnJ), correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Compared FY2023 guidance to FY2022 actual, as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Growth expressed in percentages, consistent with reference and evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answer: no acceleration, slight decel to 3.5% from 3.6%; matches reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows FY2022 adj EPS +3.6%, FY2023 guide +3.5%, supporting claim."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "110ccb4d4a9e43691ab4f9b90275cf980047001a2254659664e78d35c229e5fd",
+    "latency_seconds": 6.95,
+    "usage": {
+      "prompt_tokens": 1586,
+      "completion_tokens": 237,
+      "total_tokens": 1823,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cde9ee18c24f456b4c72e4103396c647f47712091b8c155327f7da45bd5139f2"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

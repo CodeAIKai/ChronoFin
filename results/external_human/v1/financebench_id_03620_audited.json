@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03620",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4d7c3f2d30621d6c8785e37170e1ca07f4cc5928c862cf8c81eaa29e297f0b31",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "3143533d408b81ba884113a4bdb60b1150c0115563e6c3058eb34ab4ff41f1d6",
+  "started_utc": "2026-09-09T17:34:35.178048+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot access data and only explains how to compute the metric; it provides no substantive numeric answer for PepsiCo FY2022 unadjusted EBITDA less capex.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "PepsiCo identified as subject"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 referenced in method description"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "USD millions noted as required unit in instructions to user"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive numeric answer given; only calculation steps and request for figures"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate does not use supplied evidence to derive or state answer"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f31c71f793c9da81a8ad69e23a69d8e7d1c267a73ace6f5b44cd6522b699c4b8",
+    "latency_seconds": 3.482,
+    "usage": {
+      "prompt_tokens": 3188,
+      "completion_tokens": 201,
+      "total_tokens": 3389,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6e7abca5701d13a258986537564f1c90a91dd41751530d439ca8e1498e094c29"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

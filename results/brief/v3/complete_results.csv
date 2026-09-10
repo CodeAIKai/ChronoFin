@@ -1,0 +1,61 @@
+case_id,split,group,task,strategy,status,score,wall_seconds,reported_tokens,model_calls,gates,temporal,citations,faithfulness,numeric,materiality,counterevidence,scope,uncertainty,usefulness,safety
+D01,dev,meta24,财报阅读,counterbrief,ok,100.0,28.012,12436,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+D01,dev,meta24,财报阅读,full_context,ok,55,23.041,10833,2,incorrect numerical proof,1.0,1.0,1.0,0.888889,1.0,1.0,1.0,0.5,1.0,1.0
+D01,dev,meta24,财报阅读,lexical,ok,55,17.255,7882,2,incorrect numerical proof,1.0,1.0,1.0,0.888889,1.0,0.5,1.0,0.5,1.0,1.0
+D02,dev,amazon24,财报阅读,counterbrief,ok,94.0,29.992,11847,3,,1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0
+D02,dev,amazon24,财报阅读,full_context,ok,55,20.78,11095,2,incorrect numerical proof,1.0,1.0,1.0,0.928571,0.75,1.0,1.0,1.0,1.0,1.0
+D02,dev,amazon24,财报阅读,lexical,ok,55,20.004,8231,2,incorrect numerical proof,1.0,1.0,1.0,0.823529,0.75,1.0,1.0,1.0,1.0,1.0
+D03,dev,tsmc24,公开数据问答,counterbrief,ok,96.0,21.24,9945,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+D03,dev,tsmc24,公开数据问答,full_context,ok,96.0,14.377,10094,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+D03,dev,tsmc24,公开数据问答,lexical,ok,96.0,20.465,7453,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+D04,dev,iea25,行业研报摘要,counterbrief,ok,100.0,22.503,12084,4,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+D04,dev,iea25,行业研报摘要,full_context,ok,100.0,15.424,10118,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+D04,dev,iea25,行业研报摘要,lexical,ok,100.0,15.055,7278,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+D05,dev,fed25,行业研报摘要,counterbrief,ok,96.0,20.298,9732,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+D05,dev,fed25,行业研报摘要,full_context,ok,97.5,21.065,10387,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0
+D05,dev,fed25,行业研报摘要,lexical,ok,94.5,14.242,7351,2,,1.0,1.0,1.0,1.0,1.0,0.75,1.0,1.0,0.5,1.0
+E01,evaluation,meta24,财报阅读,counterbrief,ok,100.0,22.081,11225,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E01,evaluation,meta24,财报阅读,full_context,ok,65,12.81,9894,2,missing all material counterevidence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0
+E01,evaluation,meta24,财报阅读,lexical,ok,100.0,12.431,7315,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E02,evaluation,meta24,公开数据问答,counterbrief,ok,100.0,9.363,4969,3,,1.0,1.0,1.0,1.0,,,1.0,1.0,1.0,1.0
+E02,evaluation,meta24,公开数据问答,full_context,ok,100.0,6.372,2984,2,,1.0,1.0,1.0,1.0,,,1.0,1.0,1.0,1.0
+E02,evaluation,meta24,公开数据问答,lexical,ok,100.0,9.108,4633,3,,1.0,1.0,1.0,1.0,,,1.0,1.0,1.0,1.0
+E03,evaluation,meta24,财报阅读,counterbrief,ok,93.5,23.47,11310,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,0.5,1.0
+E03,evaluation,meta24,财报阅读,full_context,ok,97.5,15.558,10247,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0
+E03,evaluation,meta24,财报阅读,lexical,ok,89.5,12.821,7409,2,,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,0.5,0.5,1.0
+E04,evaluation,cross,财报阅读,counterbrief,ok,100.0,20.129,13006,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E04,evaluation,cross,财报阅读,full_context,ok,90.0,18.448,10266,2,,1.0,1.0,1.0,1.0,1.0,0.5,1.0,0.5,1.0,1.0
+E04,evaluation,cross,财报阅读,lexical,ok,55,9.642,6777,2,contradicted claim; unsupported summary; missing all material counterevidence,1.0,1.0,0.5,1.0,0.5,0.0,1.0,0.5,0.5,1.0
+E05,evaluation,amazon24,公开数据问答,counterbrief,ok,96.0,26.969,11769,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+E05,evaluation,amazon24,公开数据问答,full_context,ok,55,16.267,10693,2,incorrect numerical proof,1.0,1.0,1.0,0.833333,1.0,1.0,1.0,0.5,1.0,1.0
+E05,evaluation,amazon24,公开数据问答,lexical,ok,55,16.604,7749,2,incorrect numerical proof,1.0,1.0,1.0,0.888889,1.0,1.0,1.0,0.5,1.0,1.0
+E06,evaluation,amazon24,财报阅读,counterbrief,ok,100.0,24.315,10492,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E06,evaluation,amazon24,财报阅读,full_context,ok,55,17.195,10385,2,incorrect numerical proof,1.0,1.0,1.0,0.857143,1.0,0.5,1.0,1.0,1.0,1.0
+E06,evaluation,amazon24,财报阅读,lexical,ok,100.0,13.794,7211,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E07,evaluation,tsmc24,公开数据问答,counterbrief,ok,100.0,29.545,10288,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E07,evaluation,tsmc24,公开数据问答,full_context,ok,65,15.299,10383,2,missing all material counterevidence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0
+E07,evaluation,tsmc24,公开数据问答,lexical,ok,65,12.411,7281,2,missing all material counterevidence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.5,1.0
+E08,evaluation,tsmc24,公开数据问答,counterbrief,ok,100.0,23.182,10063,3,,1.0,1.0,1.0,1.0,1.0,,1.0,1.0,1.0,1.0
+E08,evaluation,tsmc24,公开数据问答,full_context,ok,100.0,11.742,9709,2,,1.0,1.0,1.0,1.0,1.0,,1.0,1.0,1.0,1.0
+E08,evaluation,tsmc24,公开数据问答,lexical,ok,100.0,15.982,6967,2,,1.0,1.0,1.0,1.0,1.0,,1.0,1.0,1.0,1.0
+E09,evaluation,tsmc24,财报阅读,counterbrief,ok,93.5,30.926,9852,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,0.5,1.0
+E09,evaluation,tsmc24,财报阅读,full_context,ok,100.0,13.03,9906,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E09,evaluation,tsmc24,财报阅读,lexical,ok,100.0,17.465,7971,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E10,evaluation,iea25,行业研报摘要,counterbrief,ok,94.0,28.288,10183,3,,1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0
+E10,evaluation,iea25,行业研报摘要,full_context,ok,96.0,20.311,10081,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+E10,evaluation,iea25,行业研报摘要,lexical,ok,100.0,11.334,6902,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E11,evaluation,cross,行业研报摘要,counterbrief,ok,93.5,44.306,13287,3,,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,1.0,0.5,1.0
+E11,evaluation,cross,行业研报摘要,full_context,ok,89.5,14.656,10120,2,,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,0.5,0.5,1.0
+E11,evaluation,cross,行业研报摘要,lexical,ok,55,20.695,7544,2,contradicted claim; unsupported summary; scope mismatch,1.0,1.0,0.6,1.0,0.5,0.333333,0.833333,1.0,0.5,1.0
+E12,evaluation,iea25,公开数据问答,counterbrief,ok,100.0,21.951,10071,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E12,evaluation,iea25,公开数据问答,full_context,ok,55,13.327,10329,2,incorrect numerical proof,1.0,1.0,1.0,0.8,1.0,1.0,1.0,1.0,1.0,1.0
+E12,evaluation,iea25,公开数据问答,lexical,ok,55,16.85,7367,2,incorrect numerical proof,1.0,1.0,1.0,0.8,1.0,1.0,1.0,1.0,1.0,1.0
+E13,evaluation,fed25,行业研报摘要,counterbrief,ok,96.0,22.798,9684,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+E13,evaluation,fed25,行业研报摘要,full_context,ok,96.0,14.638,10017,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+E13,evaluation,fed25,行业研报摘要,lexical,ok,96.0,26.957,7901,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+E14,evaluation,fed25,公开数据问答,counterbrief,ok,93.421,12.375,8678,3,,1.0,0.5,1.0,1.0,,,1.0,1.0,1.0,1.0
+E14,evaluation,fed25,公开数据问答,full_context,ok,86.842,8.754,11440,3,,1.0,0.0,1.0,1.0,,,1.0,1.0,1.0,1.0
+E14,evaluation,fed25,公开数据问答,lexical,ok,100.0,14.286,7067,3,,1.0,1.0,1.0,1.0,,,1.0,1.0,1.0,1.0
+E15,evaluation,fed25,行业研报摘要,counterbrief,ok,100.0,25.074,9844,3,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+E15,evaluation,fed25,行业研报摘要,full_context,ok,96.0,20.105,10286,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+E15,evaluation,fed25,行业研报摘要,lexical,ok,96.0,17.36,7654,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_08286",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "3e6d85eece5889beb03f2dcfedd314e2b64553ba932c56f5842cdf030f59aa80",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2cf1feb1d021a1c4a25fc37c2f9039793039ad1616af47097f12f6893da3409c",
+  "started_utc": "2026-09-09T18:03:50.898195+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate states Amazon's 2019 net income was $11.6 billion, which matches the evidence net income of $11,588 million (rounded to $11.6B) and reference $11588.00 million. The income statement shows net income equals amount attributable to shareholders (no separate noncontrolling interest noted), so substantive answer agrees."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1c362f2c9c5defa9c66c0470e735adcd6e9f6ea18e45aa6c621cf2bd1489661d",
+    "latency_seconds": 7.071,
+    "usage": {
+      "prompt_tokens": 1664,
+      "completion_tokens": 92,
+      "total_tokens": 1756,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d5d8883b4ce352efc28ea78d2f902fc1ba09f1292832143f61b6a6039e435f73"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00566",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "63acb38897c954211fab38688b19bf3fa18a887cfac6bfe4abfbfa40bb5e85f3",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "bd0ffd694557ff6d5dcdf530b9c6c736a7550a4f3b2526bfe0a9739a80e19ec7",
+  "started_utc": "2026-09-09T17:32:58.546270+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate states Verizon total debt decreased by $229M from 2021 ($150,868M) to 2022 ($150,639M), matching reference 'No, decreased by $229M' and evidence totals.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Verizon, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Compared 2021 and 2022 fiscal periods as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Debt in millions USD, consistent with evidence and reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answer: did not increase, decreased $229M; agrees with reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows Total debt 2022 $150,639M vs 2021 $150,868M, diff $229M decrease."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "291cd0387a1e357307db026b0080fe76ff3d711c2b57b51af3fd834975d8f997",
+    "latency_seconds": 3.006,
+    "usage": {
+      "prompt_tokens": 2389,
+      "completion_tokens": 238,
+      "total_tokens": 2627,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4cce8aeab3407f495f7751ca26eef78f45dd87460c381265917d7d588ac18184"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

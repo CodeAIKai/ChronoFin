@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00669",
+  "uid": "financebench_id_00669_val",
+  "split": "new_response_validation",
+  "company": "Johnson & Johnson",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "ae3063cac14af66a717a3b677cbdae8a27eeca107476b8823b265205b0e5a93b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d90977fb592f23ff51b9388103ac7a6de6d4d26288158cfdc4fbb0178b21e961",
+  "started_utc": "2026-09-09T18:07:14.885609+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "the information provided does not include data for the fiscal year 2022, so I cannot provide an answer regarding what drove the gross margin change for Johnson & Johnson",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot answer due to missing FY2022 data, but evidence (JNJ 2022 10K p.33) and reference both contain FY2022 gross margin drivers, so refusal is unfounded."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fe8523638f62c16a4c6be2343d1d1e2e2e437157c90aa4a27ee755d89b2c1663",
+    "latency_seconds": 6.736,
+    "usage": {
+      "prompt_tokens": 1223,
+      "completion_tokens": 131,
+      "total_tokens": 1354,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "25b7799fa96595e74d1673486434d48e38ca4e129fe5d369349af0bd1ccb9c65"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

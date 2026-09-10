@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00080",
+  "uid": "financebench_id_00080_val",
+  "split": "new_response_validation",
+  "company": "Paypal",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4c141f8666dd280c6c7e6c1d87bddd8c22dabc60a3895eb6917f2eecbf9031d7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "76608160ff7de1ddfff1a266e539ebff7675aa665e97f3475cf948ded244e738",
+  "started_utc": "2026-09-09T18:04:53.055865+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.9,
+    "reason": "Candidate answers yes with positive working capital per FY2022; evidence shows current assets $57,517M minus liabilities $45,101M = $12,416M, positive. Reference says $1.6Bn but candidate's $2,278M differs; however both confirm positive working capital and candidate provides substantive correct conclusion. Reference amount discrepancy is minor vs question's yes/no focus."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f1726a41620a8e84642f04c2c4cbab9e40779e618d9a6deff75a21afc28d8c3f",
+    "latency_seconds": 5.995,
+    "usage": {
+      "prompt_tokens": 1734,
+      "completion_tokens": 101,
+      "total_tokens": 1835,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "007d5c4c23258758eb629fa81a6d536d764ffcf92807d3a7efed58148ccba613"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

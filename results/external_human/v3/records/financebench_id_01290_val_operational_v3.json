@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01290",
+  "uid": "financebench_id_01290_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "767259d564303688a8d426a4d2e222a31dca5800bb2e0788adf64e99b831d11d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d7a6e4d19ecfd0498790f1d3d06be49065baa40f8a873d4f2833d611d74c3a89",
+  "started_utc": "2026-09-09T18:10:31.421253+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Boeing's primary customers as of FY2022 are commercial airlines and the U.S. government",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate identifies primary customers as commercial airlines and U.S. government for FY2022, matching reference; evidence shows revenues from limited commercial airlines and 40% from U.S. government contracts in 2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e0fed76209ecb44a52b1c28bd98e425490db22a0660d6643c886ba0ffc77845f",
+    "latency_seconds": 9.232,
+    "usage": {
+      "prompt_tokens": 3269,
+      "completion_tokens": 110,
+      "total_tokens": 3379,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9dde1c1875cba037dafc4501f3d2d16322bb94fde08e0bd56454d6eb18ac622c"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

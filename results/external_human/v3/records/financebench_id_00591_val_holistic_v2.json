@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00591",
+  "uid": "financebench_id_00591_val",
+  "split": "new_response_validation",
+  "company": "Adobe",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6e3ca12abfedebaef6e22186869fc035c0799a605430f3367a449857b9ef43d3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "04dfb51408bd6b540504b17c2e15b04593f9541dd7f8d98d5e6ac5969833980c",
+  "started_utc": "2026-09-09T18:06:45.508846+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.9,
+    "reason": "Candidate substantively answers 'yes' with improving FCF conversion (154% vs 141%, ~13% rise) using net income denominator, consistent with reference's 156% vs 143% and evidence (FCF ~7838/4756=165% operating cash; candidate's 154% uses stated FCF 7.4B likely after capex 442M = 7396M/4756=155.5%≈154%). Minor numeric variance immaterial; answer agrees."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "033f38eae43860452e2ad9fde39b0340675a765579bc16598710cb201fccd27a",
+    "latency_seconds": 6.085,
+    "usage": {
+      "prompt_tokens": 2359,
+      "completion_tokens": 124,
+      "total_tokens": 2483,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "198f2e0329d838c060539b798c9fdbfd37f782e7681822d9bbf422aa973edfc4"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00720",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "36c7be23558c700c1447ce1939e6f34aec43492628f3703eb6a35e4fcc142bce",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "69300092a1f833412f0576c43edbc5eb9b549bd67f9a68cbb9e32cafdae267c5",
+  "started_utc": "2026-09-09T17:59:57.097098+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.9,
+    "reason": "Reference states performance is not measured through gross margin, implying gross margin is not a useful metric. Candidate instead suggests reviewing MD&A for gross margin drivers and only speculates it may be irrelevant, not stating it is not a useful metric as required. Evidence shows no COGS/gross margin line, supporting reference. Candidate fails to affirmatively state non-usefulness per question instruction."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fb22319ad7ece110a4ad4950bc44475e281e34816a0b8dfee2a3569a10c58415",
+    "latency_seconds": 6.705,
+    "usage": {
+      "prompt_tokens": 2142,
+      "completion_tokens": 100,
+      "total_tokens": 2242,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "84d79e304a3d609b0ceb52d2deb232ce1a4dc8f8148b114a5f05fa331cfc63cd"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

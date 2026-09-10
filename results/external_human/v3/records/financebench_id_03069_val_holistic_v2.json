@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_03069",
+  "uid": "financebench_id_03069_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "f539494f098ee4919a86bf9122d19e59d9485c8d09ceac89a43f484aa3ee3e50",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "adefce42b03ad7de095a292a1dba4046a3db6e1ef46e013bc1829167641582b1",
+  "started_utc": "2026-09-10T01:30:08.371230+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computed D&A margin as 167/3991 = 4.18%, matching evidence (D&A 167M, revenue 3991M) and reference 0.042 (4.2%) within rounding."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b912343d92c33b9be6e8698f971e0834735f9a58207eb99a261b4ce79b561937",
+    "latency_seconds": 10.305,
+    "usage": {
+      "prompt_tokens": 3055,
+      "completion_tokens": 67,
+      "total_tokens": 3122,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ab915626811351426983982f66a92afaee27eb2811ba7f7f4119e40cea72b1fa"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

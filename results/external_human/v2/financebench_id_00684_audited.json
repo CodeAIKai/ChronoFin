@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00684",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "878a6fa7d936484bfb7751d9f59e05a0dee1915a159f543059874d1ff5e2233d",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "f5fdad7ccd7025866101eb44b8db53c764d81c33eaea1689a88dffe5a353f033",
+  "started_utc": "2026-09-09T17:45:10.243500+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate claims Amcor's gross margin improved in FY2023, but evidence shows gross profit fell from $2,820M (2022) to $2,725M on sales of $14,544M to $14,694M, so gross margin declined from ~19.4% to ~18.5% (down ~0.9pt). Reference also states slight decline of 0.8%. Candidate's core claim of improvement is wrong and internally contradictory (says increased to 18.5% from 19.4%).",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Amcor (AMCOR), correctly addressed."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2023 (year ended June 30, 2023) assessed."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Gross margin discussed in % terms, consistent with question."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says margin improved; evidence and reference show decline (~0.8-0.9pt drop)."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence income statement shows lower gross profit and margin; candidate's numbers (18.5% up from 19.4%) self-contradictory and unsupported."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5538c43d8ffab23d571422bb994904de8583858e227a6b6bdda716e56677c8b1",
+    "latency_seconds": 10.903,
+    "usage": {
+      "prompt_tokens": 1494,
+      "completion_tokens": 335,
+      "total_tokens": 1829,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b660cc55ade43e28adc0dda16cbf42aed8112ce306c12b4b3ba2354000f0878c"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,157 @@
+{
+  "id": "U01_period",
+  "base": 1,
+  "mutation": "period",
+  "expected_supported": false,
+  "method": "anchored",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "contradicted",
+          "reason": "候选称'虚构甲公司 FY2023 全年已经实现营业利润 15.50 亿美元'，但来源 S1 明确为'虚构甲公司 FY2024 全年营业利润为 1.55 USD billion'，期间 FY2023 与 S1 的 FY2024 冲突，且 S1 为 observed 非预测，候选写'已经实现'但期间错误。",
+          "kind_valid": true,
+          "scope_valid": false,
+          "numbers_consistent": false
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": true,
+          "quote": "虚构甲公司 FY2023 全年已经实现营业利润 15.50 亿美元。"
+        }
+      ],
+      "limitations": [],
+      "summary_supported": false,
+      "follow_up_useful": false,
+      "direct_answer": true,
+      "reason": "最重要问题：候选将 S1 的 FY2024 营业利润误述为 FY2023 已实现，期间矛盾，摘要与结论均不被支持。"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "c0527afe75a51ddf7ffae825bc51b3fad387772ad561349d07d3fdaf7e52533b",
+      "latency_seconds": 7.599,
+      "usage": {
+        "prompt_tokens": 1070,
+        "completion_tokens": 231,
+        "total_tokens": 1301,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "bd04b6bcbbb29abbcce498a831e97abd5a5b86195179514f99e7ff91470aa50a"
+    },
+    "input_sha256": "d4ec8689baf0ad9a5755136fb748c7d8db7f9b29fbaaa8c609ec1fd259ce17a6",
+    "answer_sha256": "a3194f46fad885a2038930e4db5e13a58829c8fdcdd0961c9b480c9431dd2ac8",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "a3194f46fad885a2038930e4db5e13a58829c8fdcdd0961c9b480c9431dd2ac8",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 53.977,
+    "score": 53.977,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      },
+      {
+        "reason": "unsupported summary",
+        "cap": 65
+      },
+      {
+        "reason": "scope mismatch",
+        "cap": 60
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": false,
+  "decision_correct": true
+}

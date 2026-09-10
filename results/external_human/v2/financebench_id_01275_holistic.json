@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_01275",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "824e9697cd932917c607594f01db9c5779ec049d781fc8fd9a515574a61a3d04",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "0acbf2e39d354cd24e79d01fad6845db210eac85ea05f71adb56763c6eac8dd5",
+  "started_utc": "2026-09-09T17:48:15.226690+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states it cannot determine the answer due to missing FY2023 data, withholding the conclusion even though evidence provides FY2023 cash flow figures."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c4560b1adea9de90b481eefbe2b64a68cb4c560b874ff5e46b8d6a2e4ff1c67c",
+    "latency_seconds": 6.287,
+    "usage": {
+      "prompt_tokens": 2913,
+      "completion_tokens": 51,
+      "total_tokens": 2964,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "34a7b92a9568b31f43fa2c02af247711b1b4f8ddd08f58085f09d8064f03a454"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00517",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "06d2c3128adc4f43bd92b13f565e21694a4bb8ceff392fdcd69d0f6834f85bad",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "96cdfd9e996ef540fe511799048a38f11f7c59d48173a5c81ce7901510953295",
+  "started_utc": "2026-09-09T17:43:48.491549+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate only pastes 10-K cover/business text and does not answer whether any categories exceed 20% of FY2022 revenue; it withholds the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "25a505a24bcb97a8b654d644dcf38a5710258a9e1356ca2f05aaa684211162a1",
+    "latency_seconds": 5.698,
+    "usage": {
+      "prompt_tokens": 3240,
+      "completion_tokens": 56,
+      "total_tokens": 3296,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "56aeaa7dbdc8137972ca26ab1f1d18c67e56b72613a36ecbfc31b263cae1783f"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00517_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00517_holistic.json",
+  "parent_sha256": "6aca4abed6486049e003361c18ef0431604cc1998c17b330c42665c2c26d8bbe"
+}

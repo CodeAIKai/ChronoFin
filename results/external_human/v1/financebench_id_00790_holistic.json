@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00790",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "55594efd8efa26c02a42cedc8ed180c4cb8532c4d8949c7bf01637fd5a91a2e4",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "529466fb861cd39f57f473d9bc9abb1e98bef014b6da7de73b4bf35b5cbdf9cf",
+  "started_utc": "2026-09-09T17:33:17.295383+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.9,
+    "reason": "Candidate concludes CVS Health is capital-intensive based on FY2022 asset data from evidence, agreeing with reference's substantive 'Yes'. It notes physical assets are smaller vs goodwill/intangibles and qualifies intensity, which is consistent with reference's caveats (goodwill heavy, low fixed asset ratio)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5bda964a89993d3401ce0de092662abc154142ec85accb0dbab18396f804bd06",
+    "latency_seconds": 3.248,
+    "usage": {
+      "prompt_tokens": 3079,
+      "completion_tokens": 81,
+      "total_tokens": 3160,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "586dc84a24669660c69615ca5d9bd1a96fd1ba6dbed322e48a75f9408365eb8b"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

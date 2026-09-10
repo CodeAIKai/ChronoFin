@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03620",
+  "uid": "financebench_id_03620_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0d77dfd1bec2b3884cd0aca42bd9cab88f2074d1c1b1d0a08fb55398359efd0d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "3282609e9e17f19974750a183b36793e1a8789cd0d829d4ef879bee387ced560",
+  "started_utc": "2026-09-10T01:30:44.321079+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but I don't have access to the specific financial documents for PepsiCo or any other real-world company's financial data beyond my knowledge cutoff date.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it lacks access to PepsiCo financial documents and asks user to provide figures, declining to answer the question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "079fb96e34308f39e0f354764c6b8e45a89cfbddaf58e773e81d1aef396a5221",
+    "latency_seconds": 7.601,
+    "usage": {
+      "prompt_tokens": 3189,
+      "completion_tokens": 110,
+      "total_tokens": 3299,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4cb4e4ba59da711f7be4e6fa8f1688989a9b94cea597657850825ff7eb7aefcf"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

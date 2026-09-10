@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04980",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "80bca5a04a365994173dd0ff4db5d13ccd6616d091ec8d16502f8be8f6264559",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ec328017ef99a4f27129b697544b361b04d6cad879256659a45f6db0d41b8ff4",
+  "started_utc": "2026-09-09T18:02:51.277875+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence shows PepsiCo FY2021 capital spending of $(4,625) million = $4.625B ≈ $4.60B in statement of cash flows; candidate refused claiming data absent, which is wrong."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6c054fda92f7e625d7bfd14f26ab1681dddce89c8153adefeae93c20a45455b8",
+    "latency_seconds": 6.601,
+    "usage": {
+      "prompt_tokens": 1686,
+      "completion_tokens": 67,
+      "total_tokens": 1753,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "633253b2752b510697c85d6dc5c2be890c55ef373cb8d39a232bfca16655ff9e"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

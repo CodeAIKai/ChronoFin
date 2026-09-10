@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01490",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "de5fbb3d7a53b7bd524c880c5e3c936fdab0d56923835a19fd8f0441722c5631",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "6fb721452cbc5bdcd001e01a8d34c9ac5f936728e2c4488ef4f1853b1242f7be",
+  "started_utc": "2026-09-09T18:01:01.279482+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states gain of approximately $20 billion from Consumer Health separation as of Aug 30, 2023, matching reference and evidence (exhibit states ~$20B gain in Q3 2023 from separation finalized via exchange offer)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5a60908294fd866080943f2ad4d3aed24e0824fefe347472b7a6e61a6588d320",
+    "latency_seconds": 7.46,
+    "usage": {
+      "prompt_tokens": 1472,
+      "completion_tokens": 69,
+      "total_tokens": 1541,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "fd5bce086c201c8c08ada72ab0f48d9650b030c4f7ee556dcf27fedb744731fd"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

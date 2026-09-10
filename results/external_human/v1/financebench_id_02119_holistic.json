@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_02119",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4de7a7b0ec975c8b40cfdcc1d547c7c3d9d65ee25bb0e4c8ba72cc2daac84d96",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "f519ecb7af6592e6d544748d5dc8d6ef84bd2f7a58d398505e6a0654ef35c0a0",
+  "started_utc": "2026-09-09T18:02:25.080289+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate declines to answer the hypothetical question, stating it did not occur and offering no substantive per-share amount, despite reference providing $66.56 per share from evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ede293d8007e573cc97b06d43587d1ce5620bbbd3cd36fe9b83636b0d320249e",
+    "latency_seconds": 5.295,
+    "usage": {
+      "prompt_tokens": 1057,
+      "completion_tokens": 56,
+      "total_tokens": 1113,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a344cde6a9ab747a3abd17816d93b6f20f0d1c6512ed329b4779e16fed2252d2"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

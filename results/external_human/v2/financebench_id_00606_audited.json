@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00606",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "436e091b4702e44bc598e708a2f4a2ebe39dc7c46f24fe974ec18e0b8109c502",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "a1a3f8c11dff24673f6f7aef9a8cb073a4b7407fe74a0b917d47bd83ad24bc99",
+  "started_utc": "2026-09-09T17:44:48.736748+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate says wages expense % of net sales decreased in FY2023, but reference states it increased; evidence shows FY2023 per reference is fiscal 2022 (12mo ended Jan 28 2023) and SG&A % decreased while reference claims wages % increased, candidate wrongly equates SG&A with wages direction. Also candidate uses FY2022 vs FY2021 data as FY2023 vs FY2022.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Ulta Beauty wages expense as % of net sales"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Candidate treats FY2023 as fiscal 2023 (vs FY2022) but reference defines FY2023 as fiscal 2022 (vs fiscal 2021)"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is percent of net sales, consistent"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says decreased; reference says increased"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows SG&A % decreased but not wages %; candidate infers wages from SG&A incorrectly"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8a705fa2d127f9d5d820421acfe4fc469b6df2f9ee142d5b330cd128416f811f",
+    "latency_seconds": 13.0,
+    "usage": {
+      "prompt_tokens": 2055,
+      "completion_tokens": 294,
+      "total_tokens": 2349,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f6af54b563fe6da06059a23f2b4d2d1ba309e6a2d385ba87c3a8c1fc98618d6f"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

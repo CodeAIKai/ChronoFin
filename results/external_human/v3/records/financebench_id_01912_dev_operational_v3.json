@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01912",
+  "uid": "financebench_id_01912_dev",
+  "split": "development",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "14cf2c8dfbf831438b7833c2f4ded9f461668593a47c0a837d7f3a624478953a",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "72c134514f8e7eee920361fceb8a16bfe5b289fdde395e7e96694af71cf1a235",
+  "started_utc": "2026-09-10T01:27:47.746919+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "MGM China had the worst topline performance for MGM during FY2022.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate identifies MGM China as worst topline performer in FY2022, matching reference and evidence showing MGM China net revenues decreased 44% while Las Vegas Strip (+77%) and Regional Operations (+12%) increased."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c6d44149738e62a7075ed42bd47b2117905474a1be77a8c000b797a6040286ec",
+    "latency_seconds": 8.627,
+    "usage": {
+      "prompt_tokens": 3136,
+      "completion_tokens": 108,
+      "total_tokens": 3244,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "710d8fcc7cf0fa67babde3b983582e36ab2b3e96538261aa2df00c3d474f5e12"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

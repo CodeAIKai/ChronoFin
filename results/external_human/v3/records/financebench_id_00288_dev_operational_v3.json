@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00288",
+  "uid": "financebench_id_00288_dev",
+  "split": "development",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "998a1746640ed831b9408b555c084eb063dd566f077b1655d7eb10f4086ced30",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "a2f78804c481d59730260b63a760921ba08a44ce9bc491f643c0d442d6b96243",
+  "started_utc": "2026-09-09T18:05:18.403602+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "there was indeed a drop in Cash & Cash equivalents between the end of Fiscal Year 2023 (January 28, 2023) and the second quarter of Fiscal Year 2024 (July 29, 2023)",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states drop from $1,874M (Jan 28 2023/FY23) to $1,093M (Jul 29 2023/Q2 FY24), matching evidence table and confirming reference's decline assertion (reference ~42% drop vs candidate $781M decrease = 41.7%)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "618b60f3e79955d3f5968d351279f66b1fc73e8c28bff91c00a357de71caad76",
+    "latency_seconds": 6.361,
+    "usage": {
+      "prompt_tokens": 3569,
+      "completion_tokens": 159,
+      "total_tokens": 3728,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d8d7087c4ea2ba31395436b959e415286405f6ab7d7697582d3aa2008c6446db"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00288",
+  "uid": "financebench_id_00288_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "3b6e780a3e005c893ee3e2bf0c371a6d4162383f329d7184f990b15a46b08a53",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "7d5160080148ea22c96777940f821980768287223f15a35ff93a1274e0009e8b",
+  "started_utc": "2026-09-09T18:05:20.214310+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate provides cash figures ($1.1B at quarter end vs $1.9B at end of last fiscal year) but never directly answers whether there was a drop between FY2023 and Q2 FY2024, instead summarizing unrelated performance. Withholds the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6b9f992abed2e562bcfc19f0c40e5458af4175e1072be533a13e9b836a3c516f",
+    "latency_seconds": 5.37,
+    "usage": {
+      "prompt_tokens": 3599,
+      "completion_tokens": 78,
+      "total_tokens": 3677,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "891e40225e0c7249bd36bf23ef2b4c7aee7d6de284d90c136121943b0c7ccff9"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

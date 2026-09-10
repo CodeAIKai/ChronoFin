@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_07507",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "be1418293956f29a82f2b623771f324a2cc4292276c57fd3b9cf9c6cc635e536",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "f7923868f370f1a55229a9562d9a8bb8f7932e9cbcff5388c1b7d7ef5bf18d69",
+  "started_utc": "2026-09-09T17:54:38.732168+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computes (1494-903)/903=65.2% using operating income from evidence (1,493,602k~1494M, 903,095k~903M), matching reference 0.654 (65.4% vs 65.2% minor rounding diff acceptable) and giving requested percent to one decimal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b8055e8b414f80996868a044c7f4b2f2af7b44ae7cd8afa3d52677a900b380a6",
+    "latency_seconds": 7.617,
+    "usage": {
+      "prompt_tokens": 1873,
+      "completion_tokens": 91,
+      "total_tokens": 1964,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9f78815db50d7635852fcdb6ad44c85eaf018d8c2ef6ef8632194046a7395b95"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_07507_dev",
+  "reused_from": "results/external_human/v2/financebench_id_07507_holistic.json",
+  "parent_sha256": "ccce13f07d4e8dbc438ef2d57f97312d044598392760b8476834788fd4c2054b"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00566",
+  "uid": "financebench_id_00566_val",
+  "split": "new_response_validation",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "47d7bc36a0c03c79266d60e4126f6d215d8a03c35fd738d433bb284416b32a4d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "8871023a26eed44ba8bccd40f441e4197e09cbb2fedc9cbe20cef169ec9004e4",
+  "started_utc": "2026-09-09T18:06:36.259052+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it is not possible to answer and only explains how to obtain the answer, withholding the requested conclusion despite evidence showing total debt decreased from $150,868M to $150,639M."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "aaf29f130d65e9de947e8e42a78a6e1b359c88d868aee9484648d1675b9057f0",
+    "latency_seconds": 5.333,
+    "usage": {
+      "prompt_tokens": 2378,
+      "completion_tokens": 62,
+      "total_tokens": 2440,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "080bdd49852725d9aa1a44453c7fd03af9caea10eeb482e758b2011f7f6c303e"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

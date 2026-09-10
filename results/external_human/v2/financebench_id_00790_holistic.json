@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00790",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "55594efd8efa26c02a42cedc8ed180c4cb8532c4d8949c7bf01637fd5a91a2e4",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "529466fb861cd39f57f473d9bc9abb1e98bef014b6da7de73b4bf35b5cbdf9cf",
+  "started_utc": "2026-09-09T17:46:09.456747+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.9,
+    "reason": "Candidate provides substantive answer that CVS Health is a capital-intensive business based on FY2022 data, agreeing with reference's conclusion. Evidence supports asset base figures used. Caveat on degree does not constitute refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "420f90cddfe35cec7cbbdf3da67bf7adfa07706e6cba1c158cc36ad99e8d35ef",
+    "latency_seconds": 6.745,
+    "usage": {
+      "prompt_tokens": 3148,
+      "completion_tokens": 63,
+      "total_tokens": 3211,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "996fe0a46a3c2737657d3a4d9b7aad6f064c339b81632e3a89a0d0724c4c35a0"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

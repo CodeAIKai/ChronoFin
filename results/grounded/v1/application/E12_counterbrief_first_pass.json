@@ -1,0 +1,602 @@
+{
+  "case_id": "E12",
+  "split": "evaluation",
+  "method": "counterbrief_first_pass",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "parent_record_sha256": "7d059921ce2a9671a56f828fe9343799207f1c88b5797fa4050f51f5e84d695e",
+  "started_utc": "2026-09-09T17:42:31.266613+00:00",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief_first_pass",
+    "query": {
+      "question": "IEA 数据中心用电预测为什么不应只给单点值？比较 2030 展望与 2035 情景范围。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "I02",
+        "source_id": "iea25",
+        "locator": "2030 outlook section",
+        "role": "support",
+        "status": "forecast",
+        "text": "IEA projected data-centre electricity demand of around 945 TWh in 2030.",
+        "value": 945,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I04",
+        "source_id": "iea25",
+        "locator": "uncertainty section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "IEA scenario range for 2035 data-centre demand: 700–1700 TWh; adoption, efficiency and bottlenecks matter.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I05",
+        "source_id": "iea25",
+        "locator": "global demand growth section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Data centres represent roughly one-tenth of projected global electricity-demand growth through 2030.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I01",
+        "source_id": "iea25",
+        "locator": "current consumption section",
+        "role": "context",
+        "status": "estimate",
+        "text": "IEA estimated 2024 data-centre electricity use at 415 TWh, about 1.5% globally.",
+        "value": 415,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I03",
+        "source_id": "iea25",
+        "locator": "grid integration section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Without action, grid constraints could delay around 20% of planned data-centre projects.",
+        "value": 20,
+        "unit": "%",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "IEA不应只给数据中心用电单点预测，因其需求受AI采用、能效与电网瓶颈等多变量影响，单点值掩盖不确定性。2030年展望为约945 TWh单点预测；2035年则给出700–1700 TWh情景区间，跨度约2.4倍。2024年实际约415 TWh，至2030年增幅明显但仅占全球用电增量约一成。电网约束或拖慢20%规划项目，进一步说明单点值不足以支撑规划，须用区间表达风险与情景。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA对2030年数据中心用电给出约945 TWh的单点展望值",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA对2035年数据中心用电给出700–1700 TWh的情景范围而非单点",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "IEA指出2035区间差异来自采用率、能效与瓶颈等不确定因素，故不宜单点表达",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "I04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "2024年数据中心用电估计为415 TWh，约占全球1.5%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "数据中心至2030年约占全球用电增量的一成，单点预测易夸大其边际冲击",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "I05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "电网约束可能使约20%规划数据中心项目延迟，说明单点需求值忽略落地风险",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I03"
+          ],
+          "numbers": [
+            {
+              "source_id": "I03",
+              "value": 20,
+              "unit": "%"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "I02/I01",
+          "value": 2.277,
+          "unit": "x",
+          "evidence_ids": [
+            "I01",
+            "I02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "I04_upper/I04_lower",
+          "value": 2.429,
+          "unit": "x",
+          "evidence_ids": [
+            "I04"
+          ]
+        }
+      ],
+      "limitations": [
+        "I04仅给范围无上下界卡片数值，K2上下界用文字700和1700代入；AI部署障碍具体规模未披露"
+      ],
+      "follow_up": [
+        {
+          "action": "核查IEA 2035情景的基准假设与变量分布",
+          "reason": "可判断区间偏度及单点预测偏差方向",
+          "evidence_ids": [
+            "I04"
+          ]
+        },
+        {
+          "action": "跟踪电网约束实际导致项目延迟比例",
+          "reason": "修正20%风险对用电落地量的影响",
+          "evidence_ids": [
+            "I03"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "IEA不应只给数据中心用电单点预测，因其需求受AI采用、能效与电网瓶颈等多变量影响，单点值掩盖不确定性。2030年展望为约945 TWh单点预测；2035年则给出700–1700 TWh情景区间，跨度约2.4倍。2024年实际约415 TWh，至2030年增幅明显但仅占全球用电增量约一成。电网约束或拖慢20%规划项目，进一步说明单点值不足以支撑规划，须用区间表达风险与情景。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA对2030年数据中心用电给出约945 TWh的单点展望值",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA对2035年数据中心用电给出700–1700 TWh的情景范围而非单点",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "IEA指出2035区间差异来自采用率、能效与瓶颈等不确定因素，故不宜单点表达",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "I04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "2024年数据中心用电估计为415 TWh，约占全球1.5%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "数据中心至2030年约占全球用电增量的一成，单点预测易夸大其边际冲击",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "I05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "电网约束可能使约20%规划数据中心项目延迟，说明单点需求值忽略落地风险",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I03"
+          ],
+          "numbers": [
+            {
+              "source_id": "I03",
+              "value": 20,
+              "unit": "%"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "I02/I01",
+          "value": 2.277,
+          "unit": "x",
+          "evidence_ids": [
+            "I01",
+            "I02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "I04_upper/I04_lower",
+          "value": 2.429,
+          "unit": "x",
+          "evidence_ids": [
+            "I04"
+          ]
+        }
+      ],
+      "limitations": [
+        "I04仅给范围无上下界卡片数值，K2上下界用文字700和1700代入；AI部署障碍具体规模未披露"
+      ],
+      "follow_up": [
+        {
+          "action": "核查IEA 2035情景的基准假设与变量分布",
+          "reason": "可判断区间偏度及单点预测偏差方向",
+          "evidence_ids": [
+            "I04"
+          ]
+        },
+        {
+          "action": "跟踪电网约束实际导致项目延迟比例",
+          "reason": "修正20%风险对用电落地量的影响",
+          "evidence_ids": [
+            "I03"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "f2f93f93904585850177ed512a255686865e6b1c0f8bfb97d1cc9a073650d9fe",
+        "latency_seconds": 7.597,
+        "usage": {
+          "prompt_tokens": 1185,
+          "completion_tokens": 746,
+          "total_tokens": 1931,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "a0183650ffbaa8769691c387ae2294da25aa1b4291de63de13ec372a3e98bafe"
+      }
+    ],
+    "input_sha256": "886378fcd0f2789e211d3c9e9e813373aa72258a086bf48257548f3b1155cffb",
+    "answer_sha256": "a8ff90495537525c90c882e936e060048313d234fe6265a96f91810f54cbd9a3"
+  },
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选称2030年约945 TWh单点展望，与I02预测约945 TWh一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称2035年700–1700 TWh情景范围，与I04情景范围一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称区间差异来自采用率、能效与瓶颈，I04指明adoption, efficiency and bottlenecks matter",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称2024年415 TWh约占全球1.5%，与I01估计415 TWh约1.5%一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选称至2030年约占全球用电增量一成，与I05 roughly one-tenth through 2030一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选称电网约束或延迟20%规划项目，与I03 around 20% of planned projects一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "I02",
+          "present": true,
+          "quote": "2030年展望为约945 TWh单点预测"
+        },
+        {
+          "id": "I04",
+          "present": true,
+          "quote": "2035年则给出700–1700 TWh情景区间"
+        },
+        {
+          "id": "I03",
+          "present": true,
+          "quote": "电网约束或拖慢20%规划项目"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "AI部署障碍具体规模未披露"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确比较2030单点与2035区间并解释不宜单点，覆盖required与counter且限制说明具体"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "f1592acd6031a9bc82cc0273c33756a850374d798f8057074081bb7a5aeefa45",
+      "latency_seconds": 5.697,
+      "usage": {
+        "prompt_tokens": 5073,
+        "completion_tokens": 544,
+        "total_tokens": 5617,
+        "prompt_tokens_details": {
+          "cached_tokens": 576
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "81d22876458fe56001399d2323672ce179aeabc7b5a8da0772df365f162b6dea"
+    },
+    "input_sha256": "a83c9df7ce1746920211e8840a7a7e4c93b098c367a976e1b740dcf01fa7a2d7",
+    "answer_sha256": "a8ff90495537525c90c882e936e060048313d234fe6265a96f91810f54cbd9a3",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "a8ff90495537525c90c882e936e060048313d234fe6265a96f91810f54cbd9a3",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.8,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 97.6,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "incorrect numerical proof",
+        "cap": 55
+      }
+    ],
+    "issues": [
+      "calculation: K2"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "proof_feedback": {
+    "money": [],
+    "calculations": [
+      {
+        "id": "K1",
+        "executed_value": 2.2771084337349397,
+        "claimed_value": 2.277,
+        "unit": "x"
+      },
+      {
+        "id": "K2",
+        "error": "UnsafeExpression"
+      }
+    ],
+    "citation_identity": [
+      {
+        "claim_id": "C1",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C2",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C3",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C4",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C5",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C6",
+        "unknown_ids": []
+      }
+    ]
+  },
+  "status": "ok",
+  "new_work_wall_seconds": 5.703
+}

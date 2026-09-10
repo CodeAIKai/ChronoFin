@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04412",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "88e8b90249365384ecb8a546f0f55a33925910c9079dcaba0dc21ee532c6b7a6",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "7b382bcd1b7838817276bf4588ee82ab5e1e563cc541b160324682e232b158b4",
+  "started_utc": "2026-09-09T17:53:04.708452+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate provides financial highlights and data but does not compute or state the asset turnover ratio (FY2020 revenue / average total assets). It withholds the requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate discusses Lockheed Martin as required."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY2020 and FY2019 data from evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No ratio unit provided by candidate; question asks ratio rounded to 2 decimals."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No asset turnover ratio numeric answer given; only contextual data listed."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supports calculation (65398/(50710+47528)/2=1.33) but candidate did not use it to answer."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "89629e6b9434b739bd5130e062eb85bd57e02b788c6e1e23a127ff9f1108b777",
+    "latency_seconds": 9.933,
+    "usage": {
+      "prompt_tokens": 3269,
+      "completion_tokens": 242,
+      "total_tokens": 3511,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "844d6f1513fcd2b391f54fe4ea4dd9fe531cb92c7282e3c54e1965518327e869"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03069",
+  "company": "AMD",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "7b2eae5d540d7cf2d447ad6fc97b77ac14d4dd285804eba026e831fbf9dbf943",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "830ada8641c5a0e07a26468bcbb12fcf0d232adadcda24d1d9ba69eee1cdb3ee",
+  "started_utc": "2026-09-09T18:02:29.044354+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence includes AMD FY2015 P&L (revenue $3,991M) and cash flow (D&A $167M); D&A margin = 167/3991 = 4.2%, matching reference. Candidate refused claiming data absent, which is false.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Evidence is AMD consolidated statements, entity matches."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2015 (Dec 26, 2015) data present in evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question asks % margin; reference 4.2% and evidence supports percentage calculation."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave refusal/no answer instead of 4.2%."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claims no AMD data provided, but evidence contains AMD FY2015 P&L and cash flow."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "56d506895d57136599f98ba7f547a054eeabf4c6b34e01a0951f017828a4ed62",
+    "latency_seconds": 7.916,
+    "usage": {
+      "prompt_tokens": 3143,
+      "completion_tokens": 250,
+      "total_tokens": 3393,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8a44a329e601a3f4ceded64787daa585b27679be3f0bc94ba35659d11e31362e"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

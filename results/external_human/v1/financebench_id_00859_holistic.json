@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00859",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c94ca4d4e825c166647ef17b623e2b8ad7a890f0b80be93e136d5ebc46ca0eea",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "f6e6f339c9f688001656f152268bec711aed38895ccfc5f0b1bae289c7691879",
+  "started_utc": "2026-09-09T17:33:25.770237+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate identifies cross currency swaps with $32,502 million notional, matching reference and evidence table for FY2021 derivative instruments."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3736731a9b61ca792c221aca9bbe5e6f419152ccbcfafdedc6db333669286cfa",
+    "latency_seconds": 1.634,
+    "usage": {
+      "prompt_tokens": 1370,
+      "completion_tokens": 47,
+      "total_tokens": 1417,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2702f7ab1cd31de36441567b8e08c44ba6a415be413e4a821c6125062a1e2f23"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

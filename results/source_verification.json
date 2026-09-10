@@ -1,0 +1,40 @@
+{
+  "utc": "2026-09-09T15:54:52.026766+00:00",
+  "sources": [
+    {
+      "source_id": "meta24",
+      "status": "verified",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "expected_sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "note": ""
+    },
+    {
+      "source_id": "amazon24",
+      "status": "verified",
+      "sha256": "0435f36d49cc40373c1ec7d6a8aa77abf83f90f7774b477d69f28b3859e7fe72",
+      "expected_sha256": "0435f36d49cc40373c1ec7d6a8aa77abf83f90f7774b477d69f28b3859e7fe72",
+      "note": ""
+    },
+    {
+      "source_id": "tsmc24",
+      "status": "verified",
+      "sha256": "76879d644cbd54944a4a479fdab1d00ec8388ee929cd0cd30bb20752c46e6011",
+      "expected_sha256": "76879d644cbd54944a4a479fdab1d00ec8388ee929cd0cd30bb20752c46e6011",
+      "note": ""
+    },
+    {
+      "source_id": "iea25",
+      "status": "verified",
+      "sha256": "f04fbd23f594f50f0c1563aeae9223ab814b949ea73c398cbb063384f34c4394",
+      "expected_sha256": "f04fbd23f594f50f0c1563aeae9223ab814b949ea73c398cbb063384f34c4394",
+      "note": ""
+    },
+    {
+      "source_id": "fed25",
+      "status": "verified",
+      "sha256": "1faf3800b68f79dc11684a2ac4456fd240d515cf344a7be0da71626aeef3aa8a",
+      "expected_sha256": "1faf3800b68f79dc11684a2ac4456fd240d515cf344a7be0da71626aeef3aa8a",
+      "note": ""
+    }
+  ]
+}

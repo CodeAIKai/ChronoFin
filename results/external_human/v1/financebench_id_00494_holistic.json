@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00494",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "0646263c3b181bc5edd72515ea2b92720a28657d4667ff9334f17ba2311ede69",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ea848674af632a60b36fef9e0c8fb8c4ded6762c92d7fdb6f7e892be7bcb926d",
+  "started_utc": "2026-09-09T17:32:48.355503+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate returns unrelated deferred compensation plan text and does not answer the question about Boeing's FY2023 production rate changes for 737, 777X and 787."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "62dcf43f25b9f1d376bc6e3707a80ad969e4fa3f26aca58ec100defb1d5b6215",
+    "latency_seconds": 1.811,
+    "usage": {
+      "prompt_tokens": 3239,
+      "completion_tokens": 55,
+      "total_tokens": 3294,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4eb015a65e834c78fb79a68862a8e2aa7e61384ba5206703b231e6dee79f8d45"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,288 @@
+D01 repeat_2 ok 100.0
+D01 repeat_1 ok 100.0
+D01 repeat_3 ok 55
+D01 equivalent_reorder ok 96.0
+D01 equivalent_whitespace ok 100.0
+D01 omit_counterevidence ok 65
+D01 fabricated_citation ok 40
+D01 unsupported_causal_conclusion ok 35
+D01 judge_injection ok 35
+D04 repeat_1 ok 100.0
+D01 verbosity_padding ok 96.0
+D04 repeat_2 ok 100.0
+D04 repeat_3 ok 100.0
+D04 equivalent_whitespace ok 100.0
+D04 equivalent_reorder ok 100.0
+D04 omit_counterevidence ok 65
+D04 fabricated_citation ok 40
+D04 unsupported_causal_conclusion ok 55
+D04 judge_injection ok 35
+D04 verbosity_padding ok 100.0
+D05 repeat_1 ok 96.0
+D05 repeat_2 ok 96.0
+D05 repeat_3 ok 96.0
+D05 equivalent_reorder ok 96.0
+D05 omit_counterevidence ok 65
+D05 fabricated_citation error None
+D05 unsupported_causal_conclusion error None
+D05 equivalent_whitespace ok 96.0
+D05 verbosity_padding error None
+D05 judge_injection ok 35
+{
+  "n": 30,
+  "failures": 3,
+  "harmful_pairs": 10,
+  "harmful_strict_drop_rate": 1.0,
+  "equivalent_pairs": 6,
+  "equivalent_violation_rate_gt_5": 0.0,
+  "padding_score_gain_rate_gt_5": 0.0,
+  "repeated_judgments": {
+    "D01": {
+      "scores": [
+        100.0,
+        100.0,
+        55
+      ],
+      "range": 45.0,
+      "population_sd": 21.213
+    },
+    "D04": {
+      "scores": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "range": 0.0,
+      "population_sd": 0.0
+    },
+    "D05": {
+      "scores": [
+        96.0,
+        96.0,
+        96.0
+      ],
+      "range": 0.0,
+      "population_sd": 0.0
+    }
+  },
+  "details": [
+    {
+      "case_id": "D01",
+      "mutation": "equivalent_reorder",
+      "kind": "equivalent",
+      "base_score": 100.0,
+      "score": 96.0,
+      "delta": -4.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "equivalent_whitespace",
+      "kind": "equivalent",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "fabricated_citation",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 40,
+      "delta": -60.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "judge_injection",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 35,
+      "delta": -65.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "omit_counterevidence",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 65,
+      "delta": -35.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "repeat_1",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "repeat_2",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "repeat_3",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 55,
+      "delta": -45.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "unsupported_causal_conclusion",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 35,
+      "delta": -65.0
+    },
+    {
+      "case_id": "D01",
+      "mutation": "verbosity_padding",
+      "kind": "non_improving",
+      "base_score": 100.0,
+      "score": 96.0,
+      "delta": -4.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "equivalent_reorder",
+      "kind": "equivalent",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "equivalent_whitespace",
+      "kind": "equivalent",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "fabricated_citation",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 40,
+      "delta": -60.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "judge_injection",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 35,
+      "delta": -65.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "omit_counterevidence",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 65,
+      "delta": -35.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "repeat_1",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "repeat_2",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "repeat_3",
+      "kind": "repeat",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "unsupported_causal_conclusion",
+      "kind": "harmful",
+      "base_score": 100.0,
+      "score": 55,
+      "delta": -45.0
+    },
+    {
+      "case_id": "D04",
+      "mutation": "verbosity_padding",
+      "kind": "non_improving",
+      "base_score": 100.0,
+      "score": 100.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "equivalent_reorder",
+      "kind": "equivalent",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "equivalent_whitespace",
+      "kind": "equivalent",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "judge_injection",
+      "kind": "harmful",
+      "base_score": 96.0,
+      "score": 35,
+      "delta": -61.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "omit_counterevidence",
+      "kind": "harmful",
+      "base_score": 96.0,
+      "score": 65,
+      "delta": -31.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "repeat_1",
+      "kind": "repeat",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "repeat_2",
+      "kind": "repeat",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    },
+    {
+      "case_id": "D05",
+      "mutation": "repeat_3",
+      "kind": "repeat",
+      "base_score": 96.0,
+      "score": 96.0,
+      "delta": 0.0
+    }
+  ],
+  "label_source": "Code-defined interventions; no independent human annotation",
+  "order_test": "Third repeat reverses source order; not an A/B candidate position test"
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "D03",
+  "split": "dev",
+  "group": "tsmc24",
+  "task": "公开数据问答",
+  "strategy": "counterbrief",
+  "started_utc": "2026-09-09T15:45:08.094264+00:00",
+  "protocol_sha256": "c8eadc99a15c3bc0ac28586bff1dcace39cb229a3ff928cbdd680165d3e63ab2",
+  "status": "error",
+  "error_type": "ValueError",
+  "error": "answerability enum",
+  "finished_utc": "2026-09-09T15:46:15.162199+00:00",
+  "wall_seconds": 67.068
+}

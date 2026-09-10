@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00552",
+  "uid": "financebench_id_00552_val",
+  "split": "new_response_validation",
+  "company": "Microsoft",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "6d93fb6187fc6f0ff18a5bffb4392e8760314daa073017141b8138c01f949c2c",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "bdb77f697a54392b1351e16ad6c513645a6817316b4ef301bfbd36cf6dddeff1",
+  "started_utc": "2026-09-09T18:06:27.370705+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it lacks information to answer and withholds the conclusion, despite evidence showing total debt fell from $49,781M to $47,237M, making the question answerable."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ea8947611f5435b8000de344a68e405638d30a015e9cd8b89bb89b92245cd000",
+    "latency_seconds": 6.001,
+    "usage": {
+      "prompt_tokens": 2396,
+      "completion_tokens": 59,
+      "total_tokens": 2455,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8526032be7908196aa1e68287b72439d021810ab73170ed3755248b1cbec7e36"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

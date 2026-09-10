@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03882",
+  "uid": "financebench_id_03882_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "25156d87f70009b034248dd52c19d6143e7ca7be655254b9e3f331d3355ce7de",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "f54f2fee682b4b9bf80ab1a95c8794c4d12cf8df0a179b45f6a1c37c390257d6",
+  "started_utc": "2026-09-10T01:31:14.029002+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "Here is a summary of the key points regarding Amcor's securities registered under Section 12 of the Exchange Act",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided unrelated securities summary instead of FY2020 net AR from balance sheet; evidence shows Trade receivables, net 2020 = 1,615.9 USD millions, reference 1616; question unanswered."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "39b780e4faec2da5768c15d7082683d03b5c8574939ba26fae5138b4fbd255f0",
+    "latency_seconds": 8.339,
+    "usage": {
+      "prompt_tokens": 2573,
+      "completion_tokens": 117,
+      "total_tokens": 2690,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "40f79f4940a4d83f6b6cb15072cf11228db83f581c4522276cd4d9a6b021bf3b"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

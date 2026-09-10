@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00499",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "e25b399f98d3c5b8f1f6298d91b85fcaedabd152de7365187b6abb0036c0bdd9",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "5eeffc407b2d9bc8a4bbd45133cd19e209c2bc06cbf6c4cbaf52e88a96024a3f",
+  "started_utc": "2026-09-09T17:32:49.702820+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate claims data is unavailable, but evidence provides FY2022 net sales ($34,229M), PP&E purchases ($1,749M -> CAPEX/Rev ~5.1%), net PP&E ($9,178M) plus other fixed assets and total assets ($46,455M -> fixed assets/total ~20%), matching reference that 3M is not capital-intensive. Candidate's refusal is factually wrong given evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cab13d162416c73c55c4528c88a7a188a5ae65a396882ca61043935b651ffb7f",
+    "latency_seconds": 2.741,
+    "usage": {
+      "prompt_tokens": 3283,
+      "completion_tokens": 110,
+      "total_tokens": 3393,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "7934c461105773981cfcfa832e960a18e82234db845f23b294e33479235b0a4f"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

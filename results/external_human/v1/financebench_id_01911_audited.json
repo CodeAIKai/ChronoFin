@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01911",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "40c711f344ddb6805be16a290ba46bd38dfdafe9649fff60960492254e5b117e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "857aa77b043661420f4f3d6587d43a62c32ea3e5e5967567e75cab31a4660122",
+  "started_utc": "2026-09-09T18:01:30.834606+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence shows FY2022 Adjusted EBITDAR of $957,307k and interest expense $594,954k (twelve months ended Dec 31 2022); Adjusted EBIT can be derived as Adjusted EBITDAR minus rent ($1,950,566k) = negative ~$993M, so reference says coverage is zero. Candidate refused claiming Adjusted EBIT not in evidence, but evidence contains sufficient data to derive it; refusal is thus wrong/substantively incorrect.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is MGM Resorts International, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 (twelve months ended Dec 31, 2022) is the required period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Ratio is unitless; candidate did not state a wrong unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave refusal due to missing Adjusted EBIT, but evidence allows derivation showing negative EBIT => coverage zero per reference."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claims lack of Adjusted EBIT data; evidence provides components to compute Adjusted EBIT (negative), contradicting refusal."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3db8462697d22d6f052c5a4290ac6f1cacc099639c87466faadb7d67a3b2c984",
+    "latency_seconds": 10.087,
+    "usage": {
+      "prompt_tokens": 2600,
+      "completion_tokens": 315,
+      "total_tokens": 2915,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "30e9c855b8efe88d2cdb50bc3a41870e5e785d1caecddfbc7a0b8788c5cb1d82"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01290",
+  "uid": "financebench_id_01290_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "767259d564303688a8d426a4d2e222a31dca5800bb2e0788adf64e99b831d11d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "d7a6e4d19ecfd0498790f1d3d06be49065baa40f8a873d4f2833d611d74c3a89",
+  "started_utc": "2026-09-09T18:10:28.821576+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers that primary customers are commercial airlines and U.S. government (with emphasis on U.S. DoD), consistent with reference and evidence showing revenues from limited commercial airlines and 40% from U.S. government contracts primarily defense-related."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b802605986a9113e283bff24a22b4a859b4cc9ee356b8c2801de56fe3db66dd1",
+    "latency_seconds": 8.656,
+    "usage": {
+      "prompt_tokens": 3134,
+      "completion_tokens": 71,
+      "total_tokens": 3205,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "148943ff07304182971d4cc81857619448d1732236d999bc71f6a61946ee8e79"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

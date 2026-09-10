@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_03473",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "6e986afce56e9bc760e76f3c2313d66dec260c1afdcad89805ca8a0445522ba0",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "6eaebcab18fcfa0eea57cdd96fd4db41fd88f5a668cf6f3120938399c2197d96",
+  "started_utc": "2026-09-09T17:51:48.609561+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate provided substantive ROA answer of 7.13% using wrong net income ($14,293M vs evidence $1,248M attributable net income; total assets $199,203M/$201,536M vs evidence $87,896M/$87,270M). Correct ROA ≈ 1248/((87896+87270)/2)=0.0143≈0.01 per reference. Candidate's numbers not supported by evidence.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate addresses Coca Cola (though initially claims data not specified, then uses Coca-Cola figures from evidence)."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2017 with average of FY2016-FY2017 assets used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer given as proportion 0.0713 / 7.13%, two decimal places as requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "ROA computed as 7.13% using unsupported net income $14,293M and assets ~$200,369.5M; evidence shows net income attributable $1,248M and avg assets $87,583M, ROA≈0.01."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate's numerator and denominator figures do not appear in supplied Coca-Cola evidence; likely from different company or hallucinated."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9a3545e370bfc5dbd2e25906f54d550288d93a9eb6f6fddd9a18d891c4a37bc4",
+    "latency_seconds": 11.064,
+    "usage": {
+      "prompt_tokens": 4194,
+      "completion_tokens": 359,
+      "total_tokens": 4553,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e1b36af03b993eb7c099c10356724fa215578c8e8cd25985d9da1f74b7218a2c"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

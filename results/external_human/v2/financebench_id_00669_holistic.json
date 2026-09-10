@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00669",
+  "company": "Johnson & Johnson",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b99f69ea555a266919e382e01d9ce225a1f9e220802c568df2476fa3c7ee1ea2",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "e22cd3e69fc9fd0c97c0e66935c34f5cf2c11b2e52de58fc200d526dcb597aa2",
+  "started_utc": "2026-09-09T17:44:59.629448+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers the FY2022 gross margin drivers matching reference/evidence (vaccine exit costs, currency in Pharma, commodity inflation in MedTech/Consumer Health, offset by Consumer Health supply chain benefits) and addresses the caveat by stating metric remains useful, not refusing."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6afc30e740c30a58972afb8715711f6a6f6b1cf4a60447cff7b6a96041a8243d",
+    "latency_seconds": 5.737,
+    "usage": {
+      "prompt_tokens": 1159,
+      "completion_tokens": 77,
+      "total_tokens": 1236,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ac8f6ea934adc42e062faa542becfc3a4c73716e8aac7655e2058a447cb98f03"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

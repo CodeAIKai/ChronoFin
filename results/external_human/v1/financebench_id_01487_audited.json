@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01487",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "8ff749d1284291edaa200a3172271185f903d6a260a7ee31d5018725e6b09e88",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "eebc2659533b449dcacc89d5fda6e88d08bf0e34d1ea26f6a591b4254861b7b9",
+  "started_utc": "2026-09-09T18:00:52.523876+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate correctly states JnJ net earnings as % of sales rose from 20.0% (Q2 FY2022) to 20.1% (Q2 FY2023), matching reference and evidence table.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is JnJ (Johnson & Johnson), correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Compared Q2 FY2023 vs Q2 FY2022 as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Metric expressed as percent of sales, consistent with question and reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer 'yes, increased from 20.0% to 20.1%' matches reference and evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table shows Net earnings 20.1% (2023) and 20.0% (2022); candidate calculations align."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "08460d1846d81515ec7a5c8553f35f9a41a9719cf146dd03dac473fddba2a914",
+    "latency_seconds": 8.754,
+    "usage": {
+      "prompt_tokens": 1843,
+      "completion_tokens": 254,
+      "total_tokens": 2097,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6c7b3a98157702492ce77ba946e2a8539530c68f7aea29799aabad688d7a719a"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

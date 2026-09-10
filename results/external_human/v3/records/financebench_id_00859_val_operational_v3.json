@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00859",
+  "uid": "financebench_id_00859_val",
+  "split": "new_response_validation",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9788d0e00d28bf6a854d56c475b571a65599b7f7681a6c142b702f1227ed70b5",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "66daeff4f325e946688157da14a723c58d5d42e124e22200c0b29697e14ef951",
+  "started_utc": "2026-09-09T18:08:40.302622+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Here are the key points on Verizon's employee benefit plans and severance",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate answered with unrelated employee benefit/severancetext instead of identifying cross currency swaps as highest notional ($32,502M) derivative for FX/interest risk in FY2021 per evidence table."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c579d028970ff68e5764d1a00abce1c5fd99444277a3aec571b08a6695e838f5",
+    "latency_seconds": 7.753,
+    "usage": {
+      "prompt_tokens": 1871,
+      "completion_tokens": 105,
+      "total_tokens": 1976,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4f73f693b265fd3f20d3298f9fc68d3c1d595ecac137921191d8fe9103fb6b34"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01244",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cab4e714a277e81436ebe4e40770fd5a494ce0b2a6a33a357fbed92f3f5f4450",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "0b7249913a9521f6ddfe9a607f4c9fe7d393f0f4e9eaab3e0a5bcbbf77c48e23",
+  "started_utc": "2026-09-09T17:48:03.446291+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers yes, inferring Q2 FY2022 dividend payment from evidence of $0.55 quarterly dividends in 2022, matching reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c05f16675867c12fb767011bc88ff604963745d033264bd22ebc799347a65c3f",
+    "latency_seconds": 6.795,
+    "usage": {
+      "prompt_tokens": 1354,
+      "completion_tokens": 53,
+      "total_tokens": 1407,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1173729d70abf323620574a12c710ceb495580a074af8db471a3238538d12640"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01244_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01244_holistic.json",
+  "parent_sha256": "3fe63403b20df1bab63ba8aa585c228bd58108f6f99fc27f0dedc3e70b1978b3"
+}

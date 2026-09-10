@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_10420",
+  "uid": "financebench_id_10420_val",
+  "split": "new_response_validation",
+  "company": "AES Corporation",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "52555f5b6da2b361ee4ac353ea2cbe800dd1067691f1f771c6d6440eff7fe4be",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "babf82b0846f652717f409925bf2b3e58e5017db99e3adb69291c51651e4be82",
+  "started_utc": "2026-09-10T01:34:29.960731+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states total assets for FY2021 and FY2022 are not provided and withholds the ROA answer, despite evidence containing those figures (38,363 and 32,963)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "db0a480e5b7ec3eeb6fcdb20db0c347d71a05cee5998a6edfc713691cd40426f",
+    "latency_seconds": 6.81,
+    "usage": {
+      "prompt_tokens": 4642,
+      "completion_tokens": 60,
+      "total_tokens": 4702,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "08b89be69852bc6ac3123e38b966f6cb5dadf7c1fabef43ab9f2c583da596e29"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

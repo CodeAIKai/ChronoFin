@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01148",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "969bfa712618e318e0aa2dd01a9a51cf788f0f3da2104a6980c2b60fc372adcf",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "053dfef0994cc4717a63ff9148ba0dbcc38290ca3d7ea03a831acbf245165012",
+  "started_utc": "2026-09-09T17:47:43.196037+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states Amcor primarily operates in packaging industry, matching reference and evidence (10K describes Amcor as global leader in responsible packaging).",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Amcor/Amcor PLC as requested"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "No specific fiscal period requested; general industry question"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Industry classification, no numeric unit"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answer 'packaging industry' agrees with reference and evidence"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence from 10K confirms packaging production leadership"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3763a72dadf74c2aac623e8147eb9d533c2be5e672f8c6ca9f580d12b9ea417b",
+    "latency_seconds": 9.343,
+    "usage": {
+      "prompt_tokens": 1322,
+      "completion_tokens": 202,
+      "total_tokens": 1524,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f221ef99aab6894abd70d8663cafe34fb73fa822044c7037211c8bcfd888fedc"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

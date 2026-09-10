@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00678",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "1051de6161bb15d27de792bd20bed02746380ea6075d32d13a3cafe78cca5218",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "60d8d5e2596a8aa93c542c0bece947c2d8832d23d9b7fc5fa750ffac54057038",
+  "started_utc": "2026-09-09T17:45:05.367733+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate response is unrelated plan document text and does not address Boeing gross margin profile for FY2022 or state that metric is not useful.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not mention Boeing gross margin or FY2022 financials"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2022 margin discussion present"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No gross margin % or magnitude provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No answer to question; provided deferred comp plan text"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence not referenced or used"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cf42ec1acec9aa1d11b71def2431d89c4bd92c961856d5568ff8463dd9ca63d5",
+    "latency_seconds": 9.161,
+    "usage": {
+      "prompt_tokens": 3296,
+      "completion_tokens": 200,
+      "total_tokens": 3496,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b137f59d543b89cdff37ad98af0312cf3af35dbe24d5954e01086980b0597a2c"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

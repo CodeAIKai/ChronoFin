@@ -1,0 +1,14 @@
+{
+  "id": "financebench_id_00684",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "878a6fa7d936484bfb7751d9f59e05a0dee1915a159f543059874d1ff5e2233d",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "f5fdad7ccd7025866101eb44b8db53c764d81c33eaea1689a88dffe5a353f033",
+  "started_utc": "2026-09-09T17:33:09.418715+00:00",
+  "status": "error",
+  "error": "Hy3 request failed after 2 attempts: Hy3 HTTP 429: {\"error\":{\"message\":\"The request rate exceeds the current model RPM limit 60. Please reduce the request frequency or contact Tencent Cloud support to request a higher limit.\",\"message_zh\":\"请求速率超过当前模型 RPM 阈值 60，请降低访问频率或联系腾讯云售后申请更高限额。\",\"code\":\"429001\",\"type\":\"gateway_error\",\"request_id\":\"[request_sha256:6a1191cddc6325de]\"}}\n"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01351",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2ce9a3d3a672e015be6d5095722692a44dfde121839fc0a66793eb5ef0435645",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d113ea7abb4aa854ef1e3530dd244aa6c7fb05971d7fd7e9ae219861006744a9",
+  "started_utc": "2026-09-09T17:33:58.478058+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate answered about short-term borrowings and debt, not the effective tax rate change requested; substantive answer does not address question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0903757fe5c2a640f1a23b8d63de44bf3b995987922912f5e18a7d88a2f8ae0d",
+    "latency_seconds": 2.01,
+    "usage": {
+      "prompt_tokens": 2568,
+      "completion_tokens": 47,
+      "total_tokens": 2615,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1b66544dec5a2942877f1b75f6817837e35ba0e33d542ebe5ab3a7771c45a51c"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

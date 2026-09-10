@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_03882",
+  "company": "Amcor",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "879cc6aa6fc003f36fab071183b1fd3fa7346b91cc6e16b760705f1e2b1ef8a7",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "bddfe8f5b8961ca4bef350236b034e2ddb8f4670dee3b8389f7b3989497dbb47",
+  "started_utc": "2026-09-09T17:52:26.921036+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states balance sheet details are not provided and withholds the answer, though evidence contains the balance sheet with Trade receivables, net 1,615.9 for FY2020. Per rules, withholding despite available evidence is refusal.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate identifies Amcor and AR (accounts receivable)."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY2020."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate mentions USD millions context via balance sheet."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refuses to provide numeric answer despite evidence showing 1,615.9."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claims absence of balance sheet evidence, but evidence includes the balance sheet."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a0efb8e4f7a647f53e62dff7b761c4c700872cc49402d9529b07536f5254aba5",
+    "latency_seconds": 10.244,
+    "usage": {
+      "prompt_tokens": 2305,
+      "completion_tokens": 235,
+      "total_tokens": 2540,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "85ff01fb4913330b2dedab94247e00b64f322b3be0015ddb65d17b748f030b82"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

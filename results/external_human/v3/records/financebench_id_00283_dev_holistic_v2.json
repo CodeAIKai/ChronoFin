@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00283",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "63a4ddd7e52d66b9c0414f9cebf8987401079df34c7fc4fb0ab324d225d2ec12",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "674083a9edf5fb1995d04ef55235f11a319067f887af4cc78ee29cfd74cd71b6",
+  "started_utc": "2026-09-09T17:42:37.765334+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides Q2 2023 earnings summary but does not answer the specific question about future Upjohn spin-off costs in USD million; it withholds the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dbdfd5a4114a633cd9b6306623f994056a88ddc67e22b9b55b7c641dcfa554c6",
+    "latency_seconds": 5.309,
+    "usage": {
+      "prompt_tokens": 1859,
+      "completion_tokens": 56,
+      "total_tokens": 1915,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a8192bbbc986ce3ca3b0ac283c4bd1dc36ceff80c3c38b80d1bbc51901875ffc"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00283_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00283_holistic.json",
+  "parent_sha256": "b283d8dc7db006e38d0c5ca2cc86efe8f78d42bb9820bb056b66a93b410e5dbf"
+}

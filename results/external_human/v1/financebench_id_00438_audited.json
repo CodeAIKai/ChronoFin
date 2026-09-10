@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00438",
+  "company": "Adobe",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "5bc1db2a60e8ed0c65df55b59d2c029c6c87027bff496a4945360e49a28fc89c",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9d59ebc33ca193f3e0b3df53b52e120be1451f5c23ac2c452c8c1f5b435ef557",
+  "started_utc": "2026-09-09T17:32:41.731290+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.97,
+    "reason": "Candidate correctly states Adobe's operating margin did not improve FY2021 to FY2022 (34.6% vs 36.8% per reference; calc 34.63% vs 36.76% from evidence), agreeing with reference's decline conclusion. Reference asks to state if metric not useful; candidate explains it is useful, which is a valid alternative since condition not met. No refusal.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Adobe, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 and FY2021 compared, matches question and reference."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Operating margin expressed as percentage, consistent with reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer: not improving from FY2021 to FY2022 (declined), matches reference's 'No... declined'."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Calculations from evidence income statement: 6098/17606=34.63%, 5802/15785=36.76%, supporting decline."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "78b2b838903a69d27d1a67f249c5cdac15e4375b30afd41f0786be209c007579",
+    "latency_seconds": 4.653,
+    "usage": {
+      "prompt_tokens": 2023,
+      "completion_tokens": 286,
+      "total_tokens": 2309,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bd6000962c75f159644967ef8a6555d6101f4f9c3c82b8f1c19a80348fde11aa"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.97,
+  "reference_conflict": false
+}

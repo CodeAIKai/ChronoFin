@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_01290",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "835d0da6f56e9073339070285a889c3a526279beb46a78d85f33790df3e00786",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "738ba12dfe93d3d21b0d91cd6819d4d64c0d775bbb20ec1c56f0adc2f6dc3e62",
+  "started_utc": "2026-09-09T17:48:24.939899+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.9,
+    "reason": "Candidate substantively answers that Boeing's primary customers include commercial airlines and the U.S. government (and other governments/defense agencies), consistent with reference and evidence showing significant revenue from limited commercial airlines and U.S. government (40% in 2022). Extra background does not negate answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7a02b9d12046cab2b11aa48f8e4d708c7186127c506534d51777fc1681d5b841",
+    "latency_seconds": 7.556,
+    "usage": {
+      "prompt_tokens": 3293,
+      "completion_tokens": 80,
+      "total_tokens": 3373,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "10452b39b8bf3fbeeb135cf64a2f75aecb2c19341be54012b0fd374c485bd0ec"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

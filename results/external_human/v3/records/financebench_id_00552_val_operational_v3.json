@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00552",
+  "uid": "financebench_id_00552_val",
+  "split": "new_response_validation",
+  "company": "Microsoft",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "6d93fb6187fc6f0ff18a5bffb4392e8760314daa073017141b8138c01f949c2c",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "bdb77f697a54392b1351e16ad6c513645a6817316b4ef301bfbd36cf6dddeff1",
+  "started_utc": "2026-09-09T18:06:29.468003+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I don't have the information needed to answer whether Microsoft has increased its debt between FY2023 and FY2022.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it lacks information to answer, despite evidence balance sheet showing total debt (current 5,247+long-term 41,990=47,237 in 2023 vs 2,749+47,032=49,781 in 2022) decreased, matching reference. Candidate declined rather than answered."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "673138d5186f404464abc85bec6bb5dc3ed3dd0b0f71ca9bcc8da699b59b8869",
+    "latency_seconds": 5.388,
+    "usage": {
+      "prompt_tokens": 2531,
+      "completion_tokens": 141,
+      "total_tokens": 2672,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0fc6a5c5c9ce551c2bd16a18405dc4c7ac957865ec96972ef91576c1aa0e0ba2"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

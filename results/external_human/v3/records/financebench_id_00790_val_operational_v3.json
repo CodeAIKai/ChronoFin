@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00790",
+  "uid": "financebench_id_00790_val",
+  "split": "new_response_validation",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "de6998108e76643a88cdc701f58043112eb8dabcb24a955f9a0ccb210b944ec1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "2fd979876ae09680da9f4f84977ad3a5967390f3cb873d69b113e3f5b662e261",
+  "started_utc": "2026-09-09T18:08:16.323883+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "Without this financial data, I cannot accurately answer whether CVS Health is a capital-intensive business based on FY2022 data.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer, stating it cannot determine capital-intensity without specific financial data, despite reference and evidence containing FY2022 asset data."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a70f9c1f9557d90023abf0ac54c1182a79ce44976123477f4a345eff28f102b8",
+    "latency_seconds": 5.909,
+    "usage": {
+      "prompt_tokens": 2858,
+      "completion_tokens": 104,
+      "total_tokens": 2962,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6530d3a830f4681073e056b60855f18e62a317be4fc07f3d53d24adebb32da81"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

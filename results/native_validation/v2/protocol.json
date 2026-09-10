@@ -1,0 +1,194 @@
+{
+  "sha256": "7ce1ad78a9be46f184570a9d2da926c3617e2cca06bbe51cf5db82ac1359148f",
+  "files": {
+    "scripts/run_native_validation_v2.py": "f47fa414d262171f9388302f5a5140613d69773e0a8ca4118d0ce57da180eef1",
+    "src/chronofin/pdf_research_v5.py": "70eb5a3a2e39109e8a80a94f417b19a439013daf12fe594b1ffb7f627b7bff81",
+    "src/chronofin/span_evidence.py": "cc0cb0a1bb456242e638f3c6f4d8b68c7cfc0f871e714d8ffedafbe31b7a80c2",
+    "src/chronofin/brief.py": "d574e3759bd15f2f89358a45b9e4f5f7ec2e4f4ffeb8f5e762adfa6371b14079",
+    "src/chronofin/runtime.py": "699fc8e91b326739fb8da961eaf498b76048a3a3ba9e81b4f5241046f56e76f9"
+  },
+  "pairs": [
+    {
+      "id": "meta24_after_v2_control",
+      "case_id": "meta24_after",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "amazon24_after_v2_control",
+      "case_id": "amazon24_after",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "meta24_before_v2_control",
+      "case_id": "meta24_before",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "NV01_v2_control",
+      "case_id": "NV01",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "NV02_v2_control",
+      "case_id": "NV02",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "NV03_v2_control",
+      "case_id": "NV03",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "AP01_v2_control",
+      "case_id": "AP01",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "AP02_v2_control",
+      "case_id": "AP02",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "AP03_v2_control",
+      "case_id": "AP03",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "TC01_v2_control",
+      "case_id": "TC01",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "TC02_v2_control",
+      "case_id": "TC02",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "TC03_v2_control",
+      "case_id": "TC03",
+      "base_version": "v2",
+      "kind": "v2_control"
+    },
+    {
+      "id": "meta24_after_repeat",
+      "case_id": "meta24_after",
+      "base_version": "v5",
+      "kind": "repeat"
+    },
+    {
+      "id": "meta24_after_source_reverse",
+      "case_id": "meta24_after",
+      "base_version": "v5",
+      "kind": "source_reverse"
+    },
+    {
+      "id": "meta24_after_claim_reorder",
+      "case_id": "meta24_after",
+      "base_version": "v5",
+      "kind": "claim_reorder"
+    },
+    {
+      "id": "meta24_after_fabricated_citation",
+      "case_id": "meta24_after",
+      "base_version": "v5",
+      "kind": "fabricated_citation"
+    },
+    {
+      "id": "meta24_after_wrong_amount",
+      "case_id": "meta24_after",
+      "base_version": "v5",
+      "kind": "wrong_amount"
+    },
+    {
+      "id": "meta24_after_judge_injection",
+      "case_id": "meta24_after",
+      "base_version": "v5",
+      "kind": "judge_injection"
+    },
+    {
+      "id": "amazon24_after_repeat",
+      "case_id": "amazon24_after",
+      "base_version": "v5",
+      "kind": "repeat"
+    },
+    {
+      "id": "amazon24_after_source_reverse",
+      "case_id": "amazon24_after",
+      "base_version": "v5",
+      "kind": "source_reverse"
+    },
+    {
+      "id": "amazon24_after_claim_reorder",
+      "case_id": "amazon24_after",
+      "base_version": "v5",
+      "kind": "claim_reorder"
+    },
+    {
+      "id": "amazon24_after_fabricated_citation",
+      "case_id": "amazon24_after",
+      "base_version": "v5",
+      "kind": "fabricated_citation"
+    },
+    {
+      "id": "amazon24_after_wrong_amount",
+      "case_id": "amazon24_after",
+      "base_version": "v5",
+      "kind": "wrong_amount"
+    },
+    {
+      "id": "amazon24_after_judge_injection",
+      "case_id": "amazon24_after",
+      "base_version": "v5",
+      "kind": "judge_injection"
+    },
+    {
+      "id": "TC01_repeat",
+      "case_id": "TC01",
+      "base_version": "v5",
+      "kind": "repeat"
+    },
+    {
+      "id": "TC01_source_reverse",
+      "case_id": "TC01",
+      "base_version": "v5",
+      "kind": "source_reverse"
+    },
+    {
+      "id": "TC01_claim_reorder",
+      "case_id": "TC01",
+      "base_version": "v5",
+      "kind": "claim_reorder"
+    },
+    {
+      "id": "TC01_fabricated_citation",
+      "case_id": "TC01",
+      "base_version": "v5",
+      "kind": "fabricated_citation"
+    },
+    {
+      "id": "TC01_wrong_amount",
+      "case_id": "TC01",
+      "base_version": "v5",
+      "kind": "wrong_amount"
+    },
+    {
+      "id": "TC01_judge_injection",
+      "case_id": "TC01",
+      "base_version": "v5",
+      "kind": "judge_injection"
+    }
+  ],
+  "fixed_judge": "Native source audit v5, same criteria for saved v2 and v5 answers; does not rewrite historical judgments.",
+  "mutation_labels": "Three equivalent/repeat treatments and three deliberately harmful treatments per answer. Small constructed regression, not comprehensive security testing."
+}

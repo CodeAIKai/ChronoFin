@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_02024",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9512586fdab4431500c28909c8953d4ae38a730ff15c6c98bf748415a8ea98e2",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "208a1641956a9b628c813bc0888b406a0d45ecb64a08404c9665b98127f985bb",
+  "started_utc": "2026-09-09T18:02:12.899635+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Question asks total expected payments to retirees in 2024. Reference and evidence show pension $1097M plus health care/life $862M = $1959M total. Candidate only gave health care/life insurance ($862M), omitting pension benefits, so materially missing requested content."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "87a5df5207e99e0900c4651e7fd167c6f1131671a9838079f40ebce2c909db8f",
+    "latency_seconds": 7.437,
+    "usage": {
+      "prompt_tokens": 2522,
+      "completion_tokens": 83,
+      "total_tokens": 2605,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9808a7cd420bb0d507dc0316cea98ecd4f14aaf1609a187b9e7185e77911bf71"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

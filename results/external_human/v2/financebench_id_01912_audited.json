@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01912",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "14cf2c8dfbf831438b7833c2f4ded9f461668593a47c0a837d7f3a624478953a",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "72c134514f8e7eee920361fceb8a16bfe5b289fdde395e7e96694af71cf1a235",
+  "started_utc": "2026-09-09T17:49:59.558966+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate identifies MGM China as worst topline performer in FY2022, matching reference and evidence showing MGM China revenue down 44% while other regions increased.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate correctly names MGM China as the region."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 (current year vs prior year) correctly referenced."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Revenue decline expressed as percentage and absolute $ millions consistent with evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Worst topline performance attributed to MGM China with 44% revenue decline, matching evidence and reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows MGM China net revenues decreased 44% from $1.2B to $674M; other regions increased."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d02d12f5c24fc454b019251fcb093a29515b0a3242ad6ce5836b03c442b489eb",
+    "latency_seconds": 11.163,
+    "usage": {
+      "prompt_tokens": 3235,
+      "completion_tokens": 247,
+      "total_tokens": 3482,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "76edab97bd11e5b0b028ce15de2cbee7f5c477828eb1ff416aa88d19a658c608"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

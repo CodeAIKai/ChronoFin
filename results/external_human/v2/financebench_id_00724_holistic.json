@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00724",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f8835ad8b841dda2e2f6210e8af669268cc6077bb94fac6df1ea8b59a4aae8f0",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "1faf619d4d19ed348944bbfbdd56d67117bf77dc906d261d06b1ee514f76254b",
+  "started_utc": "2026-09-09T17:45:47.386937+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate withholds the answer and only explains how to obtain it, saying it lacks access to data, despite evidence making the question answerable."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8af329feea9fc744375978ed929354134b21c2de0f2d950b4db08afd076c85ce",
+    "latency_seconds": 6.444,
+    "usage": {
+      "prompt_tokens": 2113,
+      "completion_tokens": 49,
+      "total_tokens": 2162,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e92d929c642c1eb83dbf04a394d51b30c31e8354a461e4bf7354fdb2b34998cd"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

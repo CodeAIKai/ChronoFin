@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00299",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4c1caf9a3d7927ca4ab4d17d691e94db372b6e26083704b6683845036ce77b01",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "29375774264be0dc318136cc2e46a9b9d76eea61aef4130fca86cf6237d58456",
+  "started_utc": "2026-09-09T17:42:47.704309+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate correctly identifies Corporate as the lowest net revenue segment in 2021 Q1 with -$473 million, matching reference and evidence showing Corporate net revenue of $(473) vs positive others."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "713d011793141635d4597603e83b06a1aae2f1ad55bb19fc908bc3172219d11e",
+    "latency_seconds": 6.31,
+    "usage": {
+      "prompt_tokens": 2032,
+      "completion_tokens": 59,
+      "total_tokens": 2091,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b9e59dce8a1c4f9456ea7daa80c5ae8cd1cbbfd97e57158e9ceb09f03ef0a8c4"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00299_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00299_holistic.json",
+  "parent_sha256": "cbeb481628f15a438ec191d33ed5c2566e7181b70349ff0fcba8ffc99b3136f9"
+}

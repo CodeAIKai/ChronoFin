@@ -1,0 +1,467 @@
+{
+  "status": "ok",
+  "mode": "live_pdf",
+  "stage": "complete",
+  "record": {
+    "version": "native-generation-5.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "有人用腾讯 2025Q2 新闻稿证明 2025年6月30日已经公开三角洲行动7月DAU突破2000万。核查披露时点。",
+      "as_of": "2025-06-30"
+    },
+    "evidence": [],
+    "excluded_ids": [
+      "P7AD084B61B1",
+      "P7AD084B62B1",
+      "P7AD084B63B1",
+      "P7AD084B64B1",
+      "P7AD084B65B1",
+      "P7AD084B66B1",
+      "P7AD084B67B1",
+      "P7AD084B68B1",
+      "P7AD084B69B1"
+    ],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "本次查询所依据的资料为空，且来源文件《腾讯二零二五年第二季度业绩》的官方发布日期为2025年8月13日，因涉及未来日期已被隔离，不在截至2025年6月30日的可信资料范围内。因此无法核查所谓2025年6月30日已公开三角洲行动7月DAU突破2000万的说法，亦不能确认该披露时点。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "截至2025年6月30日资料边界内无任何证据可支持腾讯2025年6月30日已公开三角洲行动7月DAU突破2000万的说法",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无可用资料；来源文件发布日2025-08-13晚于as_of 2025-06-30被排除，不能用于证明该时点的披露"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对2025年6月30日或之前发布的腾讯官方新闻稿或公告原文",
+          "reason": "确认三角洲行动相关DAU数据是否在该时点前已公开，以验证用户假设",
+          "evidence_ids": []
+        }
+      ],
+      "source_notice": "文件《腾讯二零二五年第二季度业绩》发布于2025-08-13，因晚于as_of 2025-06-30被隔离，不纳入本次核查。"
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "本次查询所依据的资料为空，且来源文件《腾讯二零二五年第二季度业绩》的官方发布日期为2025年8月13日，因晚于资料边界日2025年6月30日已被隔离，不在可信资料范围内。因此无法核查所谓2025年6月30日已公开三角洲行动7月DAU突破2000万的说法，亦不能确认该披露时点。用户以2025Q2新闻稿证明6月30日已披露7月数据，在现有资料下无法成立。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "截至2025年6月30日资料边界内无任何证据可支持腾讯2025年6月30日已公开三角洲行动7月DAU突破2000万的说法",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无可用资料；来源文件发布日2025-08-13晚于as_of 2025-06-30被排除，不能用于证明该时点的披露",
+        "无法判断三角洲行动DAU实际披露渠道与日期，亦无法验证7月数据是否在6月30日前公开"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对2025年6月30日或之前发布的腾讯官方新闻稿或公告原文",
+          "reason": "确认三角洲行动相关DAU数据是否在该时点前已公开，以验证用户假设",
+          "evidence_ids": []
+        }
+      ],
+      "source_notice": "文件《腾讯二零二五年第二季度业绩》发布于2025-08-13，因晚于as_of 2025-06-30被隔离，不纳入本次核查。"
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "a2c000aaed2d69d694b848a6f01da374ca395b6604c16f40509b205675b17ecb",
+        "latency_seconds": 4.934,
+        "usage": {
+          "prompt_tokens": 959,
+          "completion_tokens": 323,
+          "total_tokens": 1282,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "ddc84d05663e01b3ba4b0bd099b828d844df98d1ae37c787a8225b861b8c7e3d"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "c94e5a4ccb221b06435ed33db2564407ec4463838ac2f9fde7e21b390f5c1963",
+        "latency_seconds": 3.533,
+        "usage": {
+          "prompt_tokens": 1340,
+          "completion_tokens": 375,
+          "total_tokens": 1715,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "4a960f73f9cd5562d7f775c4a363d0a78dd7e60b0c6e30856565d85cac8fb0ee"
+      }
+    ],
+    "input_sha256": "20bc5c7209c77d79413235c03efa061de56cf043b990fcee6fea9b7ef6a6dacd",
+    "numeric_registry": {},
+    "compiled_calculations": [],
+    "operation_errors": [],
+    "revision_raw": {
+      "answerability": "unanswerable",
+      "summary": "本次查询所依据的资料为空，且来源文件《腾讯二零二五年第二季度业绩》的官方发布日期为2025年8月13日，因晚于资料边界日2025年6月30日已被隔离，不在可信资料范围内。因此无法核查所谓2025年6月30日已公开三角洲行动7月DAU突破2000万的说法，亦不能确认该披露时点。用户以2025Q2新闻稿证明6月30日已披露7月数据，在现有资料下无法成立。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "截至2025年6月30日资料边界内无任何证据可支持腾讯2025年6月30日已公开三角洲行动7月DAU突破2000万的说法",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无可用资料；来源文件发布日2025-08-13晚于as_of 2025-06-30被排除，不能用于证明该时点的披露",
+        "无法判断三角洲行动DAU实际披露渠道与日期，亦无法验证7月数据是否在6月30日前公开"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对2025年6月30日或之前发布的腾讯官方新闻稿或公告原文",
+          "reason": "确认三角洲行动相关DAU数据是否在该时点前已公开，以验证用户假设",
+          "evidence_ids": []
+        }
+      ],
+      "source_notice": "文件《腾讯二零二五年第二季度业绩》发布于2025-08-13，因晚于as_of 2025-06-30被隔离，不纳入本次核查。"
+    },
+    "pre_repair_proof_issues": [],
+    "answer_sha256": "e64229526f9cd15606afaf5a19a4822bdb077a14f668ee8a1959233b8f9d2669",
+    "final_proof_issues": [],
+    "source_document": {
+      "id": "pdf_7ad084b68b67",
+      "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+      "pages": 9,
+      "bytes": 649814,
+      "metadata_identity": "pinned_official",
+      "title": "腾讯二零二五年第二季度业绩",
+      "entity": "腾讯",
+      "published_at": "2025-08-13",
+      "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 9,
+      "selected_ids": [],
+      "selected_pages": [],
+      "selection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "pipeline": "native_pdf_v5",
+    "extraction_raw": null,
+    "extraction_traces": [],
+    "extraction_audit": {
+      "facts_proposed": 0,
+      "facts_accepted": 0,
+      "rejected": [],
+      "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "quote_verification": "Program-copied original line range; whitespace-normalized exact match checked again",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "judge_attempts": [
+    {
+      "version": "native-source-audit-5.0",
+      "raw_judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选指出资料边界内无证据支持该说法，且来源为空、未来新闻稿被隔离，合理拒答不构成幻觉",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "LIMIT0"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题为核查披露时点：新闻稿2025-08-13晚于6月30日，不能用于证明6月30日已披露，候选正确判定不可答。"
+      },
+      "span_binding": [
+        {
+          "group": "limitations",
+          "id": 0,
+          "candidate_span_id": "LIMIT0",
+          "bound": true
+        }
+      ],
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选指出资料边界内无证据支持该说法，且来源为空、未来新闻稿被隔离，合理拒答不构成幻觉",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "LIMIT0",
+            "quote": "无可用资料；来源文件发布日2025-08-13晚于as_of 2025-06-30被排除，不能用于证明该时点的披露"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题为核查披露时点：新闻稿2025-08-13晚于6月30日，不能用于证明6月30日已披露，候选正确判定不可答。"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "228e51ac7a88339b2cced6fdc11e6d15f54f5003524a34287017783d325eb471",
+        "latency_seconds": 2.516,
+        "usage": {
+          "prompt_tokens": 1672,
+          "completion_tokens": 167,
+          "total_tokens": 1839,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "40c0e8f93d8f7c3f12e82a80d4de8ec5d1e950299c612fbab1580969e7fc95a3"
+      },
+      "input_sha256": "fd68bce66d29264f7bdc6f8dd8289a85d7aad260b68c8bd0d1ae5a92b0a371d3",
+      "answer_sha256": "e64229526f9cd15606afaf5a19a4822bdb077a14f668ee8a1959233b8f9d2669",
+      "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pdf_7ad084b68b67",
+      "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+      "pages": 9,
+      "bytes": 649814,
+      "metadata_identity": "pinned_official",
+      "title": "腾讯二零二五年第二季度业绩",
+      "entity": "腾讯",
+      "published_at": "2025-08-13",
+      "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+    }
+  ],
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "e64229526f9cd15606afaf5a19a4822bdb077a14f668ee8a1959233b8f9d2669",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "semantic": {
+    "version": "native-source-audit-5.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选指出资料边界内无证据支持该说法，且来源为空、未来新闻稿被隔离，合理拒答不构成幻觉",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题为核查披露时点：新闻稿2025-08-13晚于6月30日，不能用于证明6月30日已披露，候选正确判定不可答。"
+    },
+    "span_binding": [
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "LIMIT0",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选指出资料边界内无证据支持该说法，且来源为空、未来新闻稿被隔离，合理拒答不构成幻觉",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0",
+          "quote": "无可用资料；来源文件发布日2025-08-13晚于as_of 2025-06-30被排除，不能用于证明该时点的披露"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题为核查披露时点：新闻稿2025-08-13晚于6月30日，不能用于证明6月30日已披露，候选正确判定不可答。"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "228e51ac7a88339b2cced6fdc11e6d15f54f5003524a34287017783d325eb471",
+      "latency_seconds": 2.516,
+      "usage": {
+        "prompt_tokens": 1672,
+        "completion_tokens": 167,
+        "total_tokens": 1839,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "40c0e8f93d8f7c3f12e82a80d4de8ec5d1e950299c612fbab1580969e7fc95a3"
+    },
+    "input_sha256": "fd68bce66d29264f7bdc6f8dd8289a85d7aad260b68c8bd0d1ae5a92b0a371d3",
+    "answer_sha256": "e64229526f9cd15606afaf5a19a4822bdb077a14f668ee8a1959233b8f9d2669",
+    "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+  },
+  "raw_source_audit_sha256": "323cfa8f4b5d5fd3e196bf6db7a6a775c1212d17f2992de74d6b1657b8a89d53",
+  "replay_material": {
+    "audit_cards": [],
+    "reference_case": {
+      "id": "TC02",
+      "question": "有人用腾讯 2025Q2 新闻稿证明 2025年6月30日已经公开三角洲行动7月DAU突破2000万。核查披露时点。",
+      "as_of": "2025-06-30",
+      "required": [],
+      "counter": [],
+      "point_definitions": {},
+      "limitations": [
+        "新闻稿2025年8月13日公开，晚于6月30日；不能利用未来披露内容。"
+      ],
+      "expected_answerability": "unanswerable"
+    }
+  },
+  "id": "TC02",
+  "split": "new_source",
+  "protocol_sha256": "5ec64580ad346d12823b29c8f0f3a9c2b5e03e7a2d93f20327dbc7b62d6d9d23",
+  "finished_utc": "2026-09-10T02:24:39.029757+00:00",
+  "wall_seconds": 11.376
+}

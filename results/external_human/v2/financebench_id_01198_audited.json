@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01198",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2d42ebd6ad3216d88abb0f05f79b0287a52b6f27773dbe55fa9a7e62ef35a580",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "6f5b81d4602ef68724a7738d837a3b75472d39c3366398c590cbdb9aedb92a1b",
+  "started_utc": "2026-09-09T17:47:53.695369+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate says 'This is the end of the filing.' and does not provide the drivers of AMD FY22 revenue change, withholding the requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Question entity is AMD; candidate does not dispute entity."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Requested period FY22; candidate does not address period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Qualitative drivers requested; candidate gives none."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate provides no substantive answer on revenue change drivers."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No supporting content given; evidence available but unused."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f8cc67b673cf763e0047e21427efb3129f1f6b7c5a978d65f54823d304383fa2",
+    "latency_seconds": 9.749,
+    "usage": {
+      "prompt_tokens": 1826,
+      "completion_tokens": 211,
+      "total_tokens": 2037,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5962fc9b3cc68a0c8b37445afa5b9994af61cadf9763fc32a87f1be62b303945"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

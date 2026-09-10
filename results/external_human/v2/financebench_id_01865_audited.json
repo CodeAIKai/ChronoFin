@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01865",
+  "company": "3M",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a794ddac09dac00a3f6f4b3f0c9b5de537d2fd4f5971152163cfc874530f6090",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "d73fac4fdba07b06d47434f270717f3b3ebf07b8ccf96afe6f2aaff21a9940da",
+  "started_utc": "2026-09-09T17:49:43.275874+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it is not possible to determine which segment dragged down growth excluding M&A, withholding the requested conclusion despite evidence showing Consumer organic sales -0.9%.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Question asks which 3M segment; candidate addresses 3M segments."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Question specifies 2022; candidate references 2022 filing."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question asks for segment name, not numeric unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refuses to answer instead of identifying Consumer segment with -0.9% organic (ex-M&A) sales."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence table shows Consumer organic sales (0.9)% i.e. -0.9%, making answer determinable; candidate claims insufficient."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a71cc14b9ea13f0259f965c13f1db6ee28f5fbdefede6ee44557ad95b6fe00b7",
+    "latency_seconds": 9.561,
+    "usage": {
+      "prompt_tokens": 1928,
+      "completion_tokens": 253,
+      "total_tokens": 2181,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a2e222953b8a07d77cbb38084a294412b4b84810a3b5738aa0397321c0b2fa40"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

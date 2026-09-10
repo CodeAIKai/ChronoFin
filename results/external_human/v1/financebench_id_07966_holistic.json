@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_07966",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6c173e76a5b95f15bc69002dad5cd525cf1d5d77b18d05a959027ad79de8090d",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ae9b4845e9bd1e7d7aed43bd1fc4d48c89a799da38e04534e78b49628f186ceb",
+  "started_utc": "2026-09-09T18:03:39.719849+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly extracts CapEx (155,131,116M) and revenues (7017,7500,6489M) from evidence, computes yearly % and 3-yr average 1.92% rounded to 1.9%, matching reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "240c01575ad9c64cc257e7a35b2b480e53d67494043c31297630f15e801b9f77",
+    "latency_seconds": 7.426,
+    "usage": {
+      "prompt_tokens": 3762,
+      "completion_tokens": 74,
+      "total_tokens": 3836,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2db7159c2b67bc2ffab76c88bc354256501d50fa2b7e398887cf00a10f1c440e"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

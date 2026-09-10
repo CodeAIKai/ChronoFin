@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_05915",
+  "company": "CVS Health",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f5c6232d1ac89ba003171b54f20b35d57d7c6d4d1a24506ef4c3380b53e4e4b4",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "284ed16c43bcee03af2ee3c94a7a3aff347f6aa01552eb52dd98e9f7b589e7ee",
+  "started_utc": "2026-09-09T18:03:04.803784+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states it cannot answer due to missing/cut-off filing and asks for clarification; provides no substantive fixed asset turnover ratio or calculation.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity CVS Health implied but no answer given"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 referenced in question; candidate does not answer"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Ratio unit requested; candidate gives none"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No numeric answer provided; refusal only"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate does not use evidence; evidence shows revenue 194,579 and avg PP&E (11,349+10,292)/2=10,820.5 => 17.98, but candidate ignored it"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "935a6080834d0b9ab28be9112185c06f41061df5e96578083c4d33c4c1d78505",
+    "latency_seconds": 8.158,
+    "usage": {
+      "prompt_tokens": 3583,
+      "completion_tokens": 221,
+      "total_tokens": 3804,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "665cbd9743437ac486fe1388f4d176578e1b104cb042496249c0c80a09a1285f"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_10285",
+  "uid": "financebench_id_10285_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "637da5d0efe57be87ce9de2df2713630ca1cc474dab0b9c3c9a7f072caebc022",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "c9290a50662088037eac2173d1c8d4dac5ff123792ce1a046d68bf0f0078f57e",
+  "started_utc": "2026-09-10T01:34:25.771811+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the net property, plant, and equipment for Boeing at the end of FY2018 is $12,645 million",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states $12,645 million for Boeing FY2018 net PP&E; evidence balance sheet shows 'Property, plant and equipment, net 12,645' for Dec 31, 2018, matching reference 12645."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2a8fb5d5f5418846f34c9a92dba146c09937de432307eda323128124b233b066",
+    "latency_seconds": 8.177,
+    "usage": {
+      "prompt_tokens": 1789,
+      "completion_tokens": 119,
+      "total_tokens": 1908,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "24ae9289fb6ceaa5ed32ef555fdc6439d561b0746e44459bba3452e3c04338d1"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04854",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "972110aee862980b727953b3321e9f602c1e06738aafbfa1f969a02423df4dfe",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "bb0081dc312350228853641ac1c93201b0a222aeba8088a1e3df420b27d31d10",
+  "started_utc": "2026-09-09T17:53:53.986447+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate declines to provide FY2020 General Mills FCF and only explains how to obtain it from external sources, withholding the requested answer despite evidence supplying the data (CFO 3676.2, capex 460.8, FCF=3215.4).",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity General Mills identified in question and evidence."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2020 specified in question and present in evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "USD millions requested; evidence in millions."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive FCF answer provided; candidate refused."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate did not use supplied evidence to compute or state FCF."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bb569e875cff23ae4152d6ffb5184adfbaa97414330dcfa262451000c5fc2346",
+    "latency_seconds": 9.889,
+    "usage": {
+      "prompt_tokens": 3489,
+      "completion_tokens": 238,
+      "total_tokens": 3727,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "44f896ce94a35f509c49c821edf05422ea3a2c8c63415ceff63abe8bd61a894d"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

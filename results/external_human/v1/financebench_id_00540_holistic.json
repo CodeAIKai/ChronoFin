@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00540",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "1689813b3f99fed7e3b0d9fd51ae2e6fd300beecc126884e675085bfaa8d387f",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "6c46f2ef666d416db27e8808e51421fca9d99eb4f06aacf4d9b0db1e5eafccf9",
+  "started_utc": "2026-09-09T17:32:53.953279+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence provides inventory (2022: $1,055M, 2021: $604M) and COGS ($10,069M), enabling calculation (~9.5x using avg inventory). Candidate refused to answer citing missing data and did not state the 9.5 times result or agree with reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bddff100464f0c3823662e176cce84abd4f77346252206aa48e41f6ba41d0650",
+    "latency_seconds": 2.402,
+    "usage": {
+      "prompt_tokens": 3040,
+      "completion_tokens": 86,
+      "total_tokens": 3126,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1d68972f9a91a1e12c82a757e0e4dd2b74e9ead56ac88e0b459911769f45f098"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

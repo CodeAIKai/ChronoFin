@@ -1,0 +1,14 @@
+{
+  "id": "financebench_id_03069",
+  "company": "AMD",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "7b2eae5d540d7cf2d447ad6fc97b77ac14d4dd285804eba026e831fbf9dbf943",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "830ada8641c5a0e07a26468bcbb12fcf0d232adadcda24d1d9ba69eee1cdb3ee",
+  "started_utc": "2026-09-09T17:34:28.185442+00:00",
+  "status": "error",
+  "error": "Hy3 request failed after 2 attempts: Hy3 HTTP 429: {\"error\":{\"message\":\"The request rate exceeds the current model RPM limit 60. Please reduce the request frequency or contact Tencent Cloud support to request a higher limit.\",\"message_zh\":\"请求速率超过当前模型 RPM 阈值 60，请降低访问频率或联系腾讯云售后申请更高限额。\",\"code\":\"429001\",\"type\":\"gateway_error\",\"request_id\":\"[request_sha256:09fd4c5ea4803d03]\"}}\n"
+}

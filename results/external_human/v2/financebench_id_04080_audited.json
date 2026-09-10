@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04080",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "d97694222e4c1a4f390c74a34b2cd52543567dbc48694289b1b021704038180f",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "601b6562eb5e9d89c04cdd178afb17d97f57f66c76e8354f29b28ef5cca68ba9",
+  "started_utc": "2026-09-09T17:52:32.406697+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate only states end of filing with no inventory turnover ratio or substantive answer.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "No entity answer provided"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2021 period addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No ratio unit given"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No numeric answer provided"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No computation or evidence used"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "61c57da8de5a5051857e8c86b3047a8b0b707e1c915288db8a5065431f5451d9",
+    "latency_seconds": 8.629,
+    "usage": {
+      "prompt_tokens": 2554,
+      "completion_tokens": 169,
+      "total_tokens": 2723,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4f72b260cde1749034b0c1703bd02bc408f0cd11d84f4458c6743047dbf176cd"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

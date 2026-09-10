@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03471",
+  "uid": "financebench_id_03471_val",
+  "split": "new_response_validation",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "2c61a67d440f3182bb42a3f1f4a80af423840763c6971ac479fe24f0ed12fc6e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "fa6af8d6b876f73d3d1eacb6bfc345a8b534b746ceb9efb814ab2d667af2aef9",
+  "started_utc": "2026-09-10T01:30:26.320856+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Rounded to two decimal places, the working capital ratio for General Mills in FY2020 is approximately 0.68.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate used balance sheet evidence: total current assets $5,121.3M / total current liabilities $7,491.5M = 0.6835, rounded to 0.68, matching reference 0.68."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e0c1a90c3370e047514250af11e62512cdc6ebac320ec1bcd5095385a6c31057",
+    "latency_seconds": 7.459,
+    "usage": {
+      "prompt_tokens": 2223,
+      "completion_tokens": 120,
+      "total_tokens": 2343,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "68bba11e73ee00f8f9571b3a8a4f295d2ce672e9824ce88e5df164c1edfacafc"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

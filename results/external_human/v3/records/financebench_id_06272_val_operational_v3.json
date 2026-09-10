@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_06272",
+  "uid": "financebench_id_06272_val",
+  "split": "new_response_validation",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4ebeba15c9f74d808069309159b26ef7769e944813a2b5a68cd8e3efc1c028d7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "1559a771e466da70ce2e099651636d9b803a0206ffca8f862f2dcafc5a726d40",
+  "started_utc": "2026-09-10T01:33:23.004922+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but I don't have access to the specific financial statements for Coca-Cola or any other company's fiscal year 2022 dividend payout ratio.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it lacks access to the required financial statements and asks user to provide net income, declining to answer from given evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "368089872a6bb873a9ae11b4925496f8d69f77ee93de21e22808feeb9a9e8916",
+    "latency_seconds": 7.831,
+    "usage": {
+      "prompt_tokens": 3419,
+      "completion_tokens": 110,
+      "total_tokens": 3529,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a2d410d429e6179bd8d2b99a7f6b18efee03eaa497e995f36c7df4187eaa620b"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

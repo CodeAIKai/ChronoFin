@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00790",
+  "uid": "financebench_id_00790_val",
+  "split": "new_response_validation",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "de6998108e76643a88cdc701f58043112eb8dabcb24a955f9a0ccb210b944ec1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "2fd979876ae09680da9f4f84977ad3a5967390f3cb873d69b113e3f5b662e261",
+  "started_utc": "2026-09-09T18:08:15.473629+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot accurately answer and withholds the conclusion despite evidence showing asset base and ROA data; it only explains how to determine capital intensity."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e4227d6cedfd4901555b72fb61e772e9100748f94db86111536b042a23ec4c9f",
+    "latency_seconds": 6.109,
+    "usage": {
+      "prompt_tokens": 2723,
+      "completion_tokens": 52,
+      "total_tokens": 2775,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "64dd2b90a5e8a5b73d0a9165af31624fa4c398c7515ef5e9da4e424ef1b94f11"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00464",
+  "uid": "financebench_id_00464_dev",
+  "split": "development",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "3922dd16561b663de55d42727b47a63096cf2a71f0a4255039b16081901d253e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "236e71ee93c69ef1f9fbafc81618f4d6a49e8757770272333be60e06c39fb832",
+  "started_utc": "2026-09-09T18:05:55.900961+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "The Boeing Company Executive Supplemental Savings Plan (the \"Plan\") was established to provide a means for eligible employees to defer payment of their base salaries",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Question asks if Boeing's business is subject to cyclicality; candidate dumps unrelated deferred compensation plan text and never answers the cyclicality question, thus incorrect."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e4aac635fe61ffce8eafa0c5fe96ebff3f1cff34305a1f88122972618fdff9a7",
+    "latency_seconds": 4.595,
+    "usage": {
+      "prompt_tokens": 1772,
+      "completion_tokens": 108,
+      "total_tokens": 1880,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "526dbfb78f889f7c46c1733d4b5ef0a0ec4fb263fb5fe4ff714f66b133dfc107"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

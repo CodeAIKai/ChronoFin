@@ -1,0 +1,433 @@
+{
+  "case_id": "E02",
+  "split": "evaluation",
+  "method": "full_context_revision",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "parent_record_sha256": "6d9dc33b5ca7fac5c8b02b1e86516f2558d9ce8ff04d4e9edc59ada8b3345e23",
+  "started_utc": "2026-09-09T17:39:48.139581+00:00",
+  "record": {
+    "version": "grounded-audit-1.0",
+    "strategy": "full_context_revision",
+    "query": {
+      "question": "截至 2025-01-28，根据提供的披露总结 Meta FY2024 全年经营表现。",
+      "as_of": "2025-01-28"
+    },
+    "evidence": [
+      {
+        "id": "T01",
+        "source_id": "tsmc24",
+        "locator": "opening results paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 revenue: TWD 868.46 billion.",
+        "value": 868.46,
+        "unit": "TWD billion",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T02",
+        "source_id": "tsmc24",
+        "locator": "year-over-year paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 38.8% measured in TWD.",
+        "value": 38.8,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T03",
+        "source_id": "tsmc24",
+        "locator": "USD results paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 37.0% measured in USD.",
+        "value": 37.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T04",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 gross margin: 59.0%.",
+        "value": 59.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T07",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "TSMC Q4 2024 net profit margin: 43.1%.",
+        "value": 43.1,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T05",
+        "source_id": "tsmc24",
+        "locator": "technology mix paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Nodes of 7nm or smaller contributed 74% of Q4 wafer revenue.",
+        "value": 74,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      }
+    ],
+    "excluded_ids": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M08",
+      "M09",
+      "M10",
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A09",
+      "A06",
+      "A07",
+      "A08",
+      "I01",
+      "I02",
+      "I03",
+      "I04",
+      "I05",
+      "I06",
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07"
+    ],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "所提供的资料均为台积电（TSMC）2024年第四季度经营数据及2025年一季度展望，包含营收、增速、毛利率、净利率及先进制程占比等，未包含任何Meta公司及其FY2024全年经营表现的信息。基于给定资料无法回答关于Meta的问题。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "提供的证据资料全部指向TSMC而非Meta",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01",
+            "T02",
+            "T03",
+            "T04",
+            "T05",
+            "T06",
+            "T07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无Meta FY2024全年营收、利润、用户、资本开支等任何数据",
+        "资料仅覆盖TSMC Q4 2024单季，非全年亦非Meta"
+      ],
+      "follow_up": [
+        {
+          "action": "检索Meta官方FY2024 10-K或四季度财报新闻稿",
+          "reason": "当前资料完全无关，需Meta自身披露才能总结其全年经营表现",
+          "evidence_ids": [
+            "T01"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "所提供的资料均为台积电（TSMC）2024年第四季度经营数据及2025年一季度展望，包含营收、增速、毛利率、净利率及先进制程占比等，未包含任何Meta公司及其FY2024全年经营表现的信息。基于给定资料无法回答关于Meta的问题。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "提供的证据资料全部指向TSMC而非Meta",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01",
+            "T02",
+            "T03",
+            "T04",
+            "T05",
+            "T06",
+            "T07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无Meta FY2024全年营收、利润、用户、资本开支等任何数据",
+        "资料仅覆盖TSMC Q4 2024单季，非全年亦非Meta"
+      ],
+      "follow_up": [
+        {
+          "action": "检索Meta官方FY2024 10-K或四季度财报新闻稿",
+          "reason": "当前资料完全无关，需Meta自身披露才能总结其全年经营表现",
+          "evidence_ids": [
+            "T01"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "311d82cc574f663c973bfa69adeeb1d787a291138f20ea413e8d309a341c6bb1",
+        "latency_seconds": 3.223,
+        "usage": {
+          "prompt_tokens": 1148,
+          "completion_tokens": 251,
+          "total_tokens": 1399,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "7b8bf9bbcf0c8d17413f62d0cbe80e7452b49551ddb06aa5ddb4d5c38f6f8aae"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "79bddd5663788e4d7d1c8846bca8096e455739c27a9ce5b14cd61d68dd1695fe",
+        "latency_seconds": 4.966,
+        "usage": {
+          "prompt_tokens": 1432,
+          "completion_tokens": 251,
+          "total_tokens": 1683,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "8f1a61d243edd768b56b4063fc5a57dd064961e08f981bbfd54ec1ab45dd3956"
+      }
+    ],
+    "input_sha256": "c807d8ba105c26aaa9f980896eb97d3f37aec1d7d778aa7c902ba45ea2e98c1c",
+    "answer_sha256": "bc29be68e1bd6b72a98626305d5c652752fa13496897228c5280832131256e6e",
+    "revision_raw": {
+      "answerability": "unanswerable",
+      "summary": "所提供的资料均为台积电（TSMC）2024年第四季度经营数据及2025年一季度展望，包含营收、增速、毛利率、净利率及先进制程占比等，未包含任何Meta公司及其FY2024全年经营表现的信息。基于给定资料无法回答关于Meta的问题。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "提供的证据资料全部指向TSMC而非Meta",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01",
+            "T02",
+            "T03",
+            "T04",
+            "T05",
+            "T06",
+            "T07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无Meta FY2024全年营收、利润、用户、资本开支等任何数据",
+        "资料仅覆盖TSMC Q4 2024单季，非全年亦非Meta"
+      ],
+      "follow_up": [
+        {
+          "action": "检索Meta官方FY2024 10-K或四季度财报新闻稿",
+          "reason": "当前资料完全无关，需Meta自身披露才能总结其全年经营表现",
+          "evidence_ids": [
+            "T01"
+          ]
+        }
+      ]
+    }
+  },
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文指出资料均指向TSMC而非Meta，来源T01-T07实体均为TSMC且未提Meta，语义受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "资料仅覆盖TSMC Q4 2024单季，非全年亦非Meta"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：给定资料全为TSMC Q4 2024数据，无Meta FY2024全年信息，候选正确判定不可答并说明限制"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "2da554ed54159696e3b6a67a608336987db4f550c101d47a46b2d89d8e7bfe9e",
+      "latency_seconds": 2.348,
+      "usage": {
+        "prompt_tokens": 1648,
+        "completion_tokens": 174,
+        "total_tokens": 1822,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "30c6eb218e963a84a741eef8dfed226c61259f9ba62e97f9086ff3d94db50d42"
+    },
+    "input_sha256": "df3c2dc2757e8dfde4070198a254cb69458b270f122ed1cd801f473fe8288a0f",
+    "answer_sha256": "bc29be68e1bd6b72a98626305d5c652752fa13496897228c5280832131256e6e",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "bc29be68e1bd6b72a98626305d5c652752fa13496897228c5280832131256e6e",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "proof_feedback": {
+    "money": [],
+    "calculations": [],
+    "citation_identity": [
+      {
+        "claim_id": "C1",
+        "unknown_ids": []
+      }
+    ]
+  },
+  "status": "ok",
+  "new_work_wall_seconds": 7.318
+}

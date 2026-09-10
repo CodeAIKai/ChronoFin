@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01935",
+  "uid": "financebench_id_01935_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f5c1a20a6c4a9649f6d7e0bbe79d5d0803896063bbf47c3a58b820760373971b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "9a85b1023e741f0b6d87c42d4f25090dbbb79c826e5bb6c0c588bb0a2254a387",
+  "started_utc": "2026-09-10T01:28:17.977910+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide an answer to the question about the key agenda of the filing.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot answer due to missing context, despite evidence showing 8-K disclosed substitution of issuer and assumption of covenants for notes due 2026/2028."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c86371f3f364a8211d1746d9c818e2b8be2a9432a0cdd3aa73c6f1bd629488d5",
+    "latency_seconds": 9.462,
+    "usage": {
+      "prompt_tokens": 2696,
+      "completion_tokens": 104,
+      "total_tokens": 2800,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f6270b7c72d60e5eb77f26c057ae05776d8ac46bc42b75fec86f95b81c9415a5"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

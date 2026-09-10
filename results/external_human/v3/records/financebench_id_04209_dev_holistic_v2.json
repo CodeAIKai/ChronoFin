@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_04209",
+  "company": "Costco",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0c0682f8672fecff084aa9f6502637f3007ec93b5cf28885ba4b2fd76ce73753",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "845822c3a74ec16eae5eab2779009e53aeee19a0a2414d3d694b797ca7d1f0f5",
+  "started_utc": "2026-09-09T17:52:46.852210+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states evidence lacks FY2021 balance sheet and withholds the answer, despite evidence showing total assets of $59,268 million at August 29, 2021."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1e35fe6ee197c9f3de8874e4ba9a8136f5ba5f2e4a49bcf54d9c9e53f2cf48aa",
+    "latency_seconds": 7.352,
+    "usage": {
+      "prompt_tokens": 1696,
+      "completion_tokens": 57,
+      "total_tokens": 1753,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "eeeadaf6641bd5e3bc4c506a25a4484bac3ea338c538889a7bd3e38a5bf20366"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_04209_dev",
+  "reused_from": "results/external_human/v2/financebench_id_04209_holistic.json",
+  "parent_sha256": "402f627c4e6a297d8ba6a9e82a9dd56729ec543965bb890af40ba990b9f41d55"
+}

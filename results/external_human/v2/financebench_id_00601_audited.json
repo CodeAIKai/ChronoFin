@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00601",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4aceffecb5fa45f2c5b7949e517adae1d9792b768c2dd93ca351b76fab538ce6",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "c62da4021fe60e0765090f8199d9a15bbdf5a0f9f86807bceb2525515bdff819",
+  "started_utc": "2026-09-09T17:44:32.091925+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate says reduction driven by 'leverage of marketing expenses' but evidence and reference state 'lower marketing expenses and leverage of incentive compensation'. Candidate misstates driver (marketing leverage vs lower marketing expense).",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Ulta Beauty SG&A expense as percent of net sales, correctly addressed."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2023 per question = fiscal 2022 per evidence/reference; candidate uses full year fiscal 2022 data."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Metric is percent of net sales; no unit conversion needed."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate claims leverage of marketing expenses drove reduction; evidence says lower marketing expenses and leverage of incentive compensation."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence does not support marketing expense leverage; it supports lower marketing expenses."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b4055b452b3cbb4e5a7969f79d24851edaf19650e516cf60ca73ca95178f0d16",
+    "latency_seconds": 10.344,
+    "usage": {
+      "prompt_tokens": 2220,
+      "completion_tokens": 259,
+      "total_tokens": 2479,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "108e9440ca4a8164b92fc65fdff8a6dacc154002f1edb50ab7b9b18905fa0a4c"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

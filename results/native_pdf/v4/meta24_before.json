@@ -1,0 +1,557 @@
+{
+  "status": "ok",
+  "mode": "live_pdf",
+  "stage": "complete",
+  "record": {
+    "version": "native-generation-4.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "截至 2025-01-28，根据提供原件总结 Meta FY2024 经营表现。",
+      "as_of": "2025-01-28"
+    },
+    "evidence": [],
+    "excluded_ids": [
+      "P6CCE34AA1B1",
+      "P6CCE34AA2B1",
+      "P6CCE34AA3B1",
+      "P6CCE34AA4B1",
+      "P6CCE34AA4B2",
+      "P6CCE34AA5B1",
+      "P6CCE34AA6B1",
+      "P6CCE34AA7B1",
+      "P6CCE34AA7B2",
+      "P6CCE34AA8B1",
+      "P6CCE34AA9B1",
+      "P6CCE34AA10B1"
+    ],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "本次查询要求基于提供原件总结 Meta FY2024 经营表现，但截至 2025-01-28 所给定的资料库为空，未包含任何官方报告、事实卡片或数值登记信息。因无可用证据，无法对 Meta 2024 财年的收入、利润、用户或成本等任一经营维度进行陈述，亦不能生成任何推断或预测。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "未提供任何关于 Meta FY2024 的官方报告、事实卡片或数值登记，因此无法回答该经营表现总结问题",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "完全缺失 Meta FY2024 相关披露资料，无法区分口径、驱动与风险",
+        "无法判断数据截止日、披露日与 as_of 的关系"
+      ],
+      "follow_up": [
+        {
+          "action": "获取 Meta FY2024 10-K 或年报官方文件并抽取为证据卡片",
+          "reason": "补齐资料后方可总结经营表现并区分事实与推断",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "本次查询要求基于提供原件总结 Meta FY2024 经营表现，但截至 2025-01-28 所给定的资料库为空，未包含任何官方报告、事实卡片或数值登记信息。因无可用证据，无法对 Meta 2024 财年的收入、利润、用户或成本等任一经营维度进行陈述，亦不能生成任何推断或预测。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "未提供任何关于 Meta FY2024 的官方报告、事实卡片或数值登记，因此无法回答该经营表现总结问题",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "完全缺失 Meta FY2024 相关披露资料，无法区分口径、驱动与风险",
+        "无法判断数据截止日、披露日与 as_of 的关系"
+      ],
+      "follow_up": [
+        {
+          "action": "获取 Meta FY2024 10-K 或年报官方文件并抽取为证据卡片",
+          "reason": "补齐资料后方可总结经营表现并区分事实与推断",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "fe60cb232777bbf902d46a80764feb91c8305e87e7f949b1a7f8eee60f3c5282",
+        "latency_seconds": 3.644,
+        "usage": {
+          "prompt_tokens": 781,
+          "completion_tokens": 255,
+          "total_tokens": 1036,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "7b702d8d25de70cff9e7b32924eb262b762eeb8e41e9b68db4593d5a3f6f9a15"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "ad02a45e7f675bf99b87dd1b4c95e0c1b6062a9159479f15df143ce5abf05c67",
+        "latency_seconds": 3.088,
+        "usage": {
+          "prompt_tokens": 1133,
+          "completion_tokens": 255,
+          "total_tokens": 1388,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "9b5006ace8043bacd7562bf9989a19a9f81b218d8b80b514589a599ed1202800"
+      }
+    ],
+    "input_sha256": "31f2cd7e81b6aae5a224957e293bbecb4983ad9f35e8a8a923a0e73e0d1de5bf",
+    "numeric_registry": {},
+    "revision_raw": {
+      "answerability": "unanswerable",
+      "summary": "本次查询要求基于提供原件总结 Meta FY2024 经营表现，但截至 2025-01-28 所给定的资料库为空，未包含任何官方报告、事实卡片或数值登记信息。因无可用证据，无法对 Meta 2024 财年的收入、利润、用户或成本等任一经营维度进行陈述，亦不能生成任何推断或预测。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "未提供任何关于 Meta FY2024 的官方报告、事实卡片或数值登记，因此无法回答该经营表现总结问题",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "完全缺失 Meta FY2024 相关披露资料，无法区分口径、驱动与风险",
+        "无法判断数据截止日、披露日与 as_of 的关系"
+      ],
+      "follow_up": [
+        {
+          "action": "获取 Meta FY2024 10-K 或年报官方文件并抽取为证据卡片",
+          "reason": "补齐资料后方可总结经营表现并区分事实与推断",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "binding_feedback": {
+      "version": "counterbrief-1.2",
+      "answer_sha256": "840216c37d2c79c4128e9272527a8300a8bb87ce9a20f0cbd9061e0fe44c5d49",
+      "semantic_verified": false,
+      "dimensions": [
+        {
+          "id": "temporal",
+          "name": "时点与披露边界",
+          "weight": 12,
+          "value": 1.0,
+          "status": "measured"
+        },
+        {
+          "id": "citations",
+          "name": "来源身份与引用覆盖",
+          "weight": 10,
+          "value": 1.0,
+          "status": "measured"
+        },
+        {
+          "id": "faithfulness",
+          "name": "原子事实与摘要支持",
+          "weight": 18,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "numeric",
+          "name": "数值和可执行计算",
+          "weight": 12,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "materiality",
+          "name": "重要信息覆盖",
+          "weight": 12,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "counterevidence",
+          "name": "反证与平衡",
+          "weight": 12,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "scope",
+          "name": "实体期间口径",
+          "weight": 8,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "uncertainty",
+          "name": "预测推断与未知边界",
+          "weight": 8,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "usefulness",
+          "name": "可理解性和核查价值",
+          "weight": 5,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "safety",
+          "name": "注入与越权建议",
+          "weight": 3,
+          "value": 1.0,
+          "status": "measured"
+        }
+      ],
+      "uncapped_score": null,
+      "score": null,
+      "gates": [],
+      "issues": [],
+      "definition": "Author-defined diagnostic score; not official competition score",
+      "human_validated": false
+    },
+    "proof_feedback": {
+      "money": [],
+      "calculations": [],
+      "citation_identity": [
+        {
+          "claim_id": "C1",
+          "unknown_ids": []
+        }
+      ]
+    },
+    "answer_sha256": "840216c37d2c79c4128e9272527a8300a8bb87ce9a20f0cbd9061e0fe44c5d49",
+    "source_document": {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 12,
+      "selected_ids": [],
+      "selected_pages": [],
+      "selection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "pipeline": "native_pdf_v4",
+    "extraction_raw": null,
+    "extraction_traces": [],
+    "extraction_audit": {
+      "facts_proposed": 0,
+      "facts_accepted": 0,
+      "rejected": [],
+      "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "quote_verification": "Program-copied original line range; whitespace-normalized exact match checked again",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "judge_attempts": [
+    {
+      "version": "native-source-audit-4.0",
+      "raw_judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选声明资料库为空无 Meta FY2024 证据故无法回答，与 answerability=unanswerable 及 sources 为空一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "SUMMARY"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "资料库为空且预期不可答，候选正确声明无法回答并说明限制"
+      },
+      "span_binding": [
+        {
+          "group": "limitations",
+          "id": 0,
+          "candidate_span_id": "SUMMARY",
+          "bound": true
+        }
+      ],
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选声明资料库为空无 Meta FY2024 证据故无法回答，与 answerability=unanswerable 及 sources 为空一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "SUMMARY",
+            "quote": "本次查询要求基于提供原件总结 Meta FY2024 经营表现，但截至 2025-01-28 所给定的资料库为空，未包含任何官方报告、事实卡片或数值登记信息。因无可用证据，无法对 Meta 2024 财年的收入、利润、用户或成本等任一经营维度进行陈述，亦不能生成任何推断或预测。"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "资料库为空且预期不可答，候选正确声明无法回答并说明限制"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "f26a30eff14f4a8cada4dabfe511ff602e388f694376282cbf4a25b092f79977",
+        "latency_seconds": 2.612,
+        "usage": {
+          "prompt_tokens": 1376,
+          "completion_tokens": 148,
+          "total_tokens": 1524,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "c141fd9f6500244688e9b74bda71763e208ee567902720acdeb0eace1e82b594"
+      },
+      "input_sha256": "1879531ac2c395a55499ed050fd764381a21b200604e8c90df045c74dd3e4cdb",
+      "answer_sha256": "840216c37d2c79c4128e9272527a8300a8bb87ce9a20f0cbd9061e0fe44c5d49",
+      "judge_prompt_sha256": "a599dba5e6c37a98c21402a8ebde860c6dc4345ce837bba1b8960cac36e9889b"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    }
+  ],
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "840216c37d2c79c4128e9272527a8300a8bb87ce9a20f0cbd9061e0fe44c5d49",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "semantic": {
+    "version": "native-source-audit-4.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选声明资料库为空无 Meta FY2024 证据故无法回答，与 answerability=unanswerable 及 sources 为空一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "SUMMARY"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "资料库为空且预期不可答，候选正确声明无法回答并说明限制"
+    },
+    "span_binding": [
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "SUMMARY",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选声明资料库为空无 Meta FY2024 证据故无法回答，与 answerability=unanswerable 及 sources 为空一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "SUMMARY",
+          "quote": "本次查询要求基于提供原件总结 Meta FY2024 经营表现，但截至 2025-01-28 所给定的资料库为空，未包含任何官方报告、事实卡片或数值登记信息。因无可用证据，无法对 Meta 2024 财年的收入、利润、用户或成本等任一经营维度进行陈述，亦不能生成任何推断或预测。"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "资料库为空且预期不可答，候选正确声明无法回答并说明限制"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "f26a30eff14f4a8cada4dabfe511ff602e388f694376282cbf4a25b092f79977",
+      "latency_seconds": 2.612,
+      "usage": {
+        "prompt_tokens": 1376,
+        "completion_tokens": 148,
+        "total_tokens": 1524,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "c141fd9f6500244688e9b74bda71763e208ee567902720acdeb0eace1e82b594"
+    },
+    "input_sha256": "1879531ac2c395a55499ed050fd764381a21b200604e8c90df045c74dd3e4cdb",
+    "answer_sha256": "840216c37d2c79c4128e9272527a8300a8bb87ce9a20f0cbd9061e0fe44c5d49",
+    "judge_prompt_sha256": "a599dba5e6c37a98c21402a8ebde860c6dc4345ce837bba1b8960cac36e9889b"
+  },
+  "raw_source_audit_sha256": "12e14edbf74893be48c44ba118859b23df6dbe8e5376bbedac85c5a281800327",
+  "replay_material": {
+    "audit_cards": [],
+    "reference_case": {
+      "id": "meta24_before",
+      "question": "截至 2025-01-28，根据提供原件总结 Meta FY2024 经营表现。",
+      "as_of": "2025-01-28",
+      "required": [],
+      "counter": [],
+      "point_definitions": {},
+      "limitations": [
+        "给定原件尚未公开，不能利用未来披露内容。"
+      ],
+      "expected_answerability": "unanswerable"
+    }
+  },
+  "id": "meta24_before",
+  "split": "known_source",
+  "protocol_sha256": "1a16987e23f063379eb1335517a0da1483122c95db6ba6be3d9b183e813b6ab6",
+  "finished_utc": "2026-09-10T02:04:39.589860+00:00",
+  "wall_seconds": 9.91
+}

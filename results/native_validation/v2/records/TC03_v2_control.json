@@ -1,0 +1,1078 @@
+{
+  "id": "TC03_v2_control",
+  "case_id": "TC03",
+  "base_version": "v2",
+  "kind": "v2_control",
+  "protocol_sha256": "7ce1ad78a9be46f184570a9d2da926c3617e2cca06bbe51cf5db82ac1359148f",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "腾讯 2025 年第二季度非IFRS归母盈利同比增10%，剔除联营合营后增20%，这两个增速冲突吗？",
+      "as_of": "2025-12-01"
+    },
+    "evidence": [
+      {
+        "id": "F1",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "2Q2025非国际财务报告准则下本公司权益持有人归属盈利631亿元，同比增10%",
+        "quote": "期内本公司权益持有人归属盈利为人民币631 亿元，同比增长10%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "%",
+        "raw_number": "10%",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "2Q2025按非国际财务报告准则经营盈利同比增18%",
+        "quote": "按非国际财务报告准则1的经营盈利：同比增长18%",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "%",
+        "raw_number": "18%",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "2Q2025总收入1845亿元同比增15%（与收益表184,504百万元一致）",
+        "quote": "总收入为人民币1,845 亿元，同比增长15%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "%",
+        "raw_number": "15%",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "简明综合收益表列示非国际财务报告准则本公司权益持有人应占盈利2Q2025为630.52亿元（百万元单位），2Q2024为573.13亿元",
+        "quote": "非国际财务报告准则 本公司权益持有人应占盈利 63,052 57,313",
+        "source_chunk_id": "P7AD084B65B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–2823",
+        "value": null,
+        "unit": "人民币百万元",
+        "raw_number": "63,052",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "非国际财报准则下权益持有人归属盈利金额631亿元",
+        "quote": "期内本公司权益持有人归属盈利为人民币631 亿元",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "人民币亿元",
+        "raw_number": "631 亿元",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "非国际财报准则调节表：2Q2025本公司权益持有人应占盈利报告值556.28亿，调节至非国际准则630.52亿",
+        "quote": "本公司权益持有人应占盈利 55,628 8,071 (3,192) 2,848 (405) 751 – (649) 63,052",
+        "source_chunk_id": "P7AD084B69B1",
+        "page": 9,
+        "locator": "PDF p9, chars 0–3605",
+        "value": null,
+        "unit": "人民币百万元",
+        "raw_number": "63,052",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "partial",
+      "summary": "根据腾讯2025年8月13日披露资料，2Q2025非IFRS归母盈利631亿元同比增10%（F1、F5、F7），非IFRS经营盈利同比增18%（F3），总收入同比增15%（F13）。资料未包含“剔除联营合营后增20%”的任何卡片，无法验证该增速。仅就已知10%与资料内其他增速看，因归母盈利含投资收益等而经营盈利不含，二者口径不同不冲突；但用户所称20%增速缺证据，两增速是否冲突尚不能判断。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "腾讯2Q2025非IFRS本公司权益持有人归属盈利631亿元，同比增10%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F1",
+            "F5",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 631,
+              "unit": "人民币亿元"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "腾讯2Q2025非IFRS经营盈利同比增18%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F3"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "腾讯2Q2025总收入1845亿元同比增15%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F13",
+              "value": 1845,
+              "unit": "人民币亿元"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "资料未提供任何关于“剔除联营合营后非IFRS归母盈利增20%”的卡片，该增速无法核实",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "inference: 已知10%为归母盈利增速、18%为经营盈利增速，二者统计口径不同（归母含投资收益等，经营盈利不含），不直接冲突",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "F1",
+            "F3"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "缺失“剔除联营合营后增20%”的官方或整理卡片，无法判断该增速真实性及与10%是否冲突",
+        "未披露联营合营收益对非IFRS归母盈利的具体影响金额，不能推算剔除后增速"
+      ],
+      "follow_up": [
+        {
+          "action": "检索腾讯2Q2025业绩电话会纪要或财报附注中“剔除联营合营公司收益后的非IFRS归母盈利”表述及数值",
+          "reason": "若存在该口径且增速为20%，则可判断与10%因包含/剔除联营合营而差异合理，不构成冲突；若缺失则用户假设无据",
+          "evidence_ids": [
+            "F1",
+            "F7"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "partial",
+      "summary": "根据腾讯2025年8月13日披露资料，2Q2025非IFRS归母盈利631亿元同比增10%（F1、F5、F7），非IFRS经营盈利同比增18%（F3），总收入同比增15%（F13）。资料未包含“剔除联营合营后增20%”的任何卡片，无法验证该增速。仅就已知10%与资料内其他增速看，因归母盈利含投资收益等而经营盈利不含，二者口径不同不冲突；但用户所称20%增速缺证据，两增速是否冲突尚不能判断。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "腾讯2Q2025非IFRS本公司权益持有人归属盈利631亿元，同比增10%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F1",
+            "F5",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 631,
+              "unit": "人民币亿元"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "腾讯2Q2025非IFRS经营盈利同比增18%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F3"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "腾讯2Q2025总收入1845亿元同比增15%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F13",
+              "value": 1845,
+              "unit": "人民币亿元"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "资料未提供任何关于“剔除联营合营后非IFRS归母盈利增20%”的卡片，该增速无法核实",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "inference: 已知10%为归母盈利增速、18%为经营盈利增速，二者统计口径不同（归母含投资收益等，经营盈利不含），不直接冲突",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "F1",
+            "F3"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "缺失“剔除联营合营后增20%”的官方或整理卡片，无法判断该增速真实性及与10%是否冲突",
+        "未披露联营合营收益对非IFRS归母盈利的具体影响金额，不能推算剔除后增速"
+      ],
+      "follow_up": [
+        {
+          "action": "检索腾讯2Q2025业绩电话会纪要或财报附注中“剔除联营合营公司收益后的非IFRS归母盈利”表述及数值",
+          "reason": "若存在该口径且增速为20%，则可判断与10%因包含/剔除联营合营而差异合理，不构成冲突；若缺失则用户假设无据",
+          "evidence_ids": [
+            "F1",
+            "F7"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "e2aec998971aee31c4aa60a27051333ff416808d8f60966ab2d0439b5a941ada",
+        "latency_seconds": 11.442,
+        "usage": {
+          "prompt_tokens": 1616,
+          "completion_tokens": 636,
+          "total_tokens": 2252,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "53fcc6df85479165161d7416103d919dead5d28c5a5e2ef4f480f2885179d857"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "969047da2aab8ff3892441dcf84848ac36bf3acc3d95c877abf3fa4f2e9ee6ec",
+        "latency_seconds": 15.219,
+        "usage": {
+          "prompt_tokens": 2318,
+          "completion_tokens": 636,
+          "total_tokens": 2954,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "37b67132fcbac5a51d746741b1182e8f6e4513f3eb62aacf9bb2c65de8548370"
+      }
+    ],
+    "input_sha256": "41b3afba0e15276290d73e0d4f5aaeee5579870b091be43f9ff6e2a83e30b145",
+    "calculator_results": [],
+    "revision_raw": {
+      "answerability": "partial",
+      "summary": "根据腾讯2025年8月13日披露资料，2Q2025非IFRS归母盈利631亿元同比增10%（F1、F5、F7），非IFRS经营盈利同比增18%（F3），总收入同比增15%（F13）。资料未包含“剔除联营合营后增20%”的任何卡片，无法验证该增速。仅就已知10%与资料内其他增速看，因归母盈利含投资收益等而经营盈利不含，二者口径不同不冲突；但用户所称20%增速缺证据，两增速是否冲突尚不能判断。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "腾讯2Q2025非IFRS本公司权益持有人归属盈利631亿元，同比增10%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F1",
+            "F5",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 631,
+              "unit": "人民币亿元"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "腾讯2Q2025非IFRS经营盈利同比增18%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F3"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "腾讯2Q2025总收入1845亿元同比增15%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F13",
+              "value": 1845,
+              "unit": "人民币亿元"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "资料未提供任何关于“剔除联营合营后非IFRS归母盈利增20%”的卡片，该增速无法核实",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "inference: 已知10%为归母盈利增速、18%为经营盈利增速，二者统计口径不同（归母含投资收益等，经营盈利不含），不直接冲突",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "F1",
+            "F3"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "缺失“剔除联营合营后增20%”的官方或整理卡片，无法判断该增速真实性及与10%是否冲突",
+        "未披露联营合营收益对非IFRS归母盈利的具体影响金额，不能推算剔除后增速"
+      ],
+      "follow_up": [
+        {
+          "action": "检索腾讯2Q2025业绩电话会纪要或财报附注中“剔除联营合营公司收益后的非IFRS归母盈利”表述及数值",
+          "reason": "若存在该口径且增速为20%，则可判断与10%因包含/剔除联营合营而差异合理，不构成冲突；若缺失则用户假设无据",
+          "evidence_ids": [
+            "F1",
+            "F7"
+          ]
+        }
+      ]
+    },
+    "answer_sha256": "19cdbd06f57ba50d74ea1da7a0b2e3b4c9f119986ce7a063a2af2a5203bbcd09",
+    "source_document": {
+      "id": "pdf_7ad084b68b67",
+      "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+      "pages": 9,
+      "bytes": 649814,
+      "metadata_identity": "pinned_official",
+      "title": "腾讯二零二五年第二季度业绩",
+      "entity": "腾讯",
+      "published_at": "2025-08-13",
+      "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 9,
+      "selected_ids": [
+        "P7AD084B61B1",
+        "P7AD084B62B1",
+        "P7AD084B63B1",
+        "P7AD084B64B1",
+        "P7AD084B65B1",
+        "P7AD084B66B1",
+        "P7AD084B67B1",
+        "P7AD084B68B1",
+        "P7AD084B69B1"
+      ],
+      "selected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "selection_sha256": "4997718d1077601cee87ddb82cd76c061fae8c409a2c0f0b5b8f813ae51db11d"
+    },
+    "pipeline": "native_pdf_v2",
+    "extraction_raw": {
+      "facts": [
+        {
+          "chunk_id": "P7AD084B61B1",
+          "quote": "期内本公司权益持有人归属盈利为人民币631 亿元，同比增长10%。",
+          "text": "2Q2025非国际财务报告准则下本公司权益持有人归属盈利631亿元，同比增10%",
+          "value": null,
+          "raw_number": "10%",
+          "unit": "%",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "quote": "剔除本季及去年同期非国际财务报告准则分占联营公司及合营公司盈利后，2Q2025 的非国际财务报告准则本公司权益持有人归属盈利为人民币568 亿元，同比增长20%。",
+          "text": "剔除本季及去年同期非国际财务报告准则分占联营公司及合营公司盈利后，2Q2025非国际财报准则本公司权益持有人归属盈利568亿元，同比增20%",
+          "value": null,
+          "raw_number": "20%",
+          "unit": "%",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "quote": "按非国际财务报告准则1的经营盈利：同比增长18%",
+          "text": "2Q2025按非国际财务报告准则经营盈利同比增18%",
+          "value": null,
+          "raw_number": "18%",
+          "unit": "%",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "quote": "非国际财务报告准则撇除股份酬金、并购带来的效应，如来自投资公司的（收益）/ 亏损净额、无形资产摊销及减值拨备/（拨回）、集团可持续社会价值及共同富裕计划项目所产生的捐款及开支、所得税影响及其他",
+          "text": "非国际财务报告准则定义：撇除股份酬金、并购效应、投资公司损益、无形资产摊销减值、SSV及CPP开支、所得税影响等",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "definition",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "quote": "期内本公司权益持有人归属盈利为人民币631 亿元",
+          "text": "非国际财报准则下权益持有人归属盈利金额631亿元",
+          "value": null,
+          "raw_number": "631 亿元",
+          "unit": "人民币亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "quote": "2Q2025 的非国际财务报告准则本公司权益持有人归属盈利为人民币568 亿元",
+          "text": "剔除联营合营公司盈利后非国际财报准则权益持有人归属盈利568亿元",
+          "value": null,
+          "raw_number": "568 亿元",
+          "unit": "人民币亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B65B1",
+          "quote": "非国际财务报告准则 本公司权益持有人应占盈利 63,052 57,313",
+          "text": "简明综合收益表列示非国际财务报告准则本公司权益持有人应占盈利2Q2025为630.52亿元（百万元单位），2Q2024为573.13亿元",
+          "value": null,
+          "raw_number": "63,052",
+          "unit": "人民币百万元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B69B1",
+          "quote": "本公司权益持有人应占盈利 55,628 8,071 (3,192) 2,848 (405) 751 – (649) 63,052",
+          "text": "非国际财报准则调节表：2Q2025本公司权益持有人应占盈利报告值556.28亿，调节至非国际准则630.52亿",
+          "value": null,
+          "raw_number": "63,052",
+          "unit": "人民币百万元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B69B1",
+          "quote": "分占联营公司及合营公司盈利/（亏损）净额 4,473 903 (798) 1,544 226 – – – 6,348",
+          "text": "2Q2025分占联营合营公司盈利调节后非国际准则金额为63.48亿元（百万元）",
+          "value": null,
+          "raw_number": "6,348",
+          "unit": "人民币百万元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B69B1",
+          "quote": "分占联营公司及合营公司盈利/（亏损）净额 7,718 926 (91) 1,313 20 – – – 9,886",
+          "text": "2Q2024分占联营合营公司盈利调节后非国际准则金额为98.86亿元（百万元）",
+          "value": null,
+          "raw_number": "9,886",
+          "unit": "人民币百万元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B64B1",
+          "quote": "非国际财务报告准则财务计量藉排除若干非现金项目及投资相关交易的若干影响为投资者评估本公司核心业务的业绩提供有用的补充资料。",
+          "text": "管理层称非国际财报准则排除若干非现金及投资相关影响以补充评估核心业务业绩",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "definition",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P7AD084B64B1",
+          "quote": "非国际财务报告准则调整包括本集团主要联营公司的相关非国际财务报告准则调整",
+          "text": "非国际财报准则调整包含主要联营公司相关调整",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "caution",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "quote": "总收入为人民币1,845 亿元，同比增长15%。",
+          "text": "2Q2025总收入1845亿元同比增15%（与收益表184,504百万元一致）",
+          "value": null,
+          "raw_number": "15%",
+          "unit": "%",
+          "role": "support",
+          "status": "observed"
+        }
+      ]
+    },
+    "extraction_traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "9bcc5e4361bea61594efd60536db33f04c52811866a4a347298a9a4b50a29dd9",
+        "latency_seconds": 21.395,
+        "usage": {
+          "prompt_tokens": 6961,
+          "completion_tokens": 1357,
+          "total_tokens": 8318,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "5b8263c1218010872316411279e4917e518c08fcddc930ad0efa8b55078b2ef1"
+      }
+    ],
+    "extraction_audit": {
+      "facts_proposed": 13,
+      "facts_accepted": 6,
+      "rejected": [
+        {
+          "index": 2,
+          "reason": "引用不在原文连续片段中"
+        },
+        {
+          "index": 4,
+          "reason": "引用不在原文连续片段中"
+        },
+        {
+          "index": 6,
+          "reason": "引用不在原文连续片段中"
+        },
+        {
+          "index": 9,
+          "reason": "引用不在原文连续片段中"
+        },
+        {
+          "index": 10,
+          "reason": "引用不在原文连续片段中"
+        },
+        {
+          "index": 11,
+          "reason": "引用不在原文连续片段中"
+        },
+        {
+          "index": 12,
+          "reason": "引用不在原文连续片段中"
+        }
+      ],
+      "raw_response_sha256": "4ea06904cb550af2bd32a06f150ba1c8602eef462325e4b340c7795e2b95b8fa",
+      "quote_verification": "whitespace-normalized exact contiguous source match",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "parent_record_sha256": "1b18cc6faa96659cf30af83397ec88649ac2342897e86949dd232525ef28366b",
+  "base_score": 55,
+  "raw_source_sha256": "2d091ccc33e500b151e2f05b25072d58c0fa3f42b465171f320c450c062df16a",
+  "replay_material": {
+    "audit_cards": [
+      {
+        "id": "F1",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "期内本公司权益持有人归属盈利为人民币631 亿元，同比增长10%。",
+        "quote": "期内本公司权益持有人归属盈利为人民币631 亿元，同比增长10%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "%",
+        "raw_number": "10%",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "按非国际财务报告准则1的经营盈利：同比增长18%",
+        "quote": "按非国际财务报告准则1的经营盈利：同比增长18%",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "%",
+        "raw_number": "18%",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "期内本公司权益持有人归属盈利为人民币631 亿元",
+        "quote": "期内本公司权益持有人归属盈利为人民币631 亿元",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "人民币亿元",
+        "raw_number": "631 亿元",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "非国际财务报告准则 本公司权益持有人应占盈利 63,052 57,313",
+        "quote": "非国际财务报告准则 本公司权益持有人应占盈利 63,052 57,313",
+        "source_chunk_id": "P7AD084B65B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–2823",
+        "value": null,
+        "unit": "人民币百万元",
+        "raw_number": "63,052",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "本公司权益持有人应占盈利 55,628 8,071 (3,192) 2,848 (405) 751 – (649) 63,052",
+        "quote": "本公司权益持有人应占盈利 55,628 8,071 (3,192) 2,848 (405) 751 – (649) 63,052",
+        "source_chunk_id": "P7AD084B69B1",
+        "page": 9,
+        "locator": "PDF p9, chars 0–3605",
+        "value": null,
+        "unit": "人民币百万元",
+        "raw_number": "63,052",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "总收入为人民币1,845 亿元，同比增长15%。",
+        "quote": "总收入为人民币1,845 亿元，同比增长15%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "%",
+        "raw_number": "15%",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      }
+    ],
+    "reference_case": {
+      "id": "TC03",
+      "question": "腾讯 2025 年第二季度非IFRS归母盈利同比增10%，剔除联营合营后增20%，这两个增速冲突吗？",
+      "as_of": "2025-12-01",
+      "required": [
+        "R1",
+        "R2"
+      ],
+      "counter": [
+        "R3"
+      ],
+      "point_definitions": {
+        "R1": "非IFRS归母盈利631亿元，同比增长10%。",
+        "R2": "剔除本季及去年同期非IFRS分占联营合营盈利后为568亿元，同比增长20%。",
+        "R3": "IFRS归母盈利556亿元，同比增长17%，是另一口径。"
+      },
+      "limitations": [
+        "不同调整范围不可混同，不能声称数字互相矛盾。"
+      ],
+      "expected_answerability": "answerable"
+    }
+  },
+  "semantic": {
+    "version": "native-source-audit-5.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选C1称非IFRS归母盈利631亿同比增10%，来源P7AD084B61B1有'期内本公司权益持有人归属盈利为人民币631亿元，同比增长10%'及F5/F1支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选C2称非IFRS经营盈利同比增18%，来源P7AD084B61B1有'按非国际财务报告准则1的经营盈利：同比增长18%'及F3支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选C3称总收入1845亿同比增15%，来源P7AD084B61B1有'总收入为人民币1,845亿元，同比增长15%'及F13支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选C4称资料未提供剔除联营合营后增20%卡片，来源摘录中确实无此数据，仅P7AD084B61B1提剔除后568亿增20%但候选未引用，其声明未提供该卡片属实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "partial",
+          "reason": "候选C5推断10%与18%口径不同不冲突，但问题问的是10%与20%是否冲突，候选未覆盖用户所指20%增速（仅称缺证据），推断对象偏移且未实质回答两增速冲突性",
+          "kind_valid": true,
+          "scope_valid": false,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C1"
+        },
+        {
+          "id": "R2",
+          "present": false,
+          "candidate_span_id": null
+        },
+        {
+          "id": "R3",
+          "present": false,
+          "candidate_span_id": null
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "C4"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": false,
+      "reason": "最重要问题：候选未覆盖R2（剔除联营合营后增20%）及R3（IFRS归母556亿增17%），且未直接回答10%与20%是否冲突，仅以缺卡片为由未判断，answerability标partial合理但核心冲突问题未解"
+    },
+    "span_binding": [
+      {
+        "group": "coverage",
+        "id": "R1",
+        "candidate_span_id": "C1",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R2",
+        "candidate_span_id": null,
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R3",
+        "candidate_span_id": null,
+        "bound": true
+      },
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "C4",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选C1称非IFRS归母盈利631亿同比增10%，来源P7AD084B61B1有'期内本公司权益持有人归属盈利为人民币631亿元，同比增长10%'及F5/F1支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选C2称非IFRS经营盈利同比增18%，来源P7AD084B61B1有'按非国际财务报告准则1的经营盈利：同比增长18%'及F3支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选C3称总收入1845亿同比增15%，来源P7AD084B61B1有'总收入为人民币1,845亿元，同比增长15%'及F13支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选C4称资料未提供剔除联营合营后增20%卡片，来源摘录中确实无此数据，仅P7AD084B61B1提剔除后568亿增20%但候选未引用，其声明未提供该卡片属实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "partial",
+          "reason": "候选C5推断10%与18%口径不同不冲突，但问题问的是10%与20%是否冲突，候选未覆盖用户所指20%增速（仅称缺证据），推断对象偏移且未实质回答两增速冲突性",
+          "kind_valid": true,
+          "scope_valid": false,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C1",
+          "quote": "腾讯2Q2025非IFRS本公司权益持有人归属盈利631亿元，同比增10%"
+        },
+        {
+          "id": "R2",
+          "present": false,
+          "candidate_span_id": null,
+          "quote": ""
+        },
+        {
+          "id": "R3",
+          "present": false,
+          "candidate_span_id": null,
+          "quote": ""
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "C4",
+          "quote": "资料未提供任何关于“剔除联营合营后非IFRS归母盈利增20%”的卡片，该增速无法核实"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": false,
+      "reason": "最重要问题：候选未覆盖R2（剔除联营合营后增20%）及R3（IFRS归母556亿增17%），且未直接回答10%与20%是否冲突，仅以缺卡片为由未判断，answerability标partial合理但核心冲突问题未解"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "f83dd497fb409a7ecc9e6814eaa79ab9398c202706d5b25be3672e2e9287c5d2",
+      "latency_seconds": 6.609,
+      "usage": {
+        "prompt_tokens": 9776,
+        "completion_tokens": 612,
+        "total_tokens": 10388,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "7fedce3004952abee43a9df5ae2da1213e7d4291104f09d2f4a0de6dd75a6d5b"
+    },
+    "input_sha256": "98af4c92402d42fe910dcf76be6f24fbad4be33a1d5651c11b2401b98130c88c",
+    "answer_sha256": "19cdbd06f57ba50d74ea1da7a0b2e3b4c9f119986ce7a063a2af2a5203bbcd09",
+    "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "19cdbd06f57ba50d74ea1da7a0b2e3b4c9f119986ce7a063a2af2a5203bbcd09",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 0.8,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.92,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 0.8,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 62.46,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "missing all material counterevidence",
+        "cap": 65
+      },
+      {
+        "reason": "scope mismatch",
+        "cap": 60
+      },
+      {
+        "reason": "incorrect numerical proof",
+        "cap": 55
+      }
+    ],
+    "issues": [
+      "numeric binding: C1",
+      "numeric binding: C3"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok"
+}

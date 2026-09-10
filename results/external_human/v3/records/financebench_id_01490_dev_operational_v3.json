@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01490",
+  "uid": "financebench_id_01490_dev",
+  "split": "development",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "de5fbb3d7a53b7bd524c880c5e3c936fdab0d56923835a19fd8f0441722c5631",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "6fb721452cbc5bdcd001e01a8d34c9ac5f936728e2c4488ef4f1853b1242f7be",
+  "started_utc": "2026-09-10T01:26:54.562830+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "is approximately $20 billion",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states gain of ~$20 billion from Consumer Health separation as of Aug 30 2023, matching reference and evidence Exhibit 99.1 stating gain of approximately $20 billion in Q3 2023 from separation of Kenvue (former Consumer Health)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "32a0ef3b1a5ffa2412842ade59d9e41e8639209725b53771bebb243dd97b1f44",
+    "latency_seconds": 12.045,
+    "usage": {
+      "prompt_tokens": 1676,
+      "completion_tokens": 108,
+      "total_tokens": 1784,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "273ba3853a9de096547d66ad49f9fc1952b750b35ecb42830d0a7cac86b00d67"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

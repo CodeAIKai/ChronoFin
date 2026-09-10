@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00941",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "57d62c2c6bac7ecab53a045919f6f45a4799c0f21e238764483e39ecb2093f7e",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "f6a9e68e40b406f081d16317f6c784ee450465c28fdeb3f100758e699a73d273",
+  "started_utc": "2026-09-09T17:46:51.720858+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate lists the three debt securities (1.500% 2026 MMM26, 1.750% 2030 MMM30, 1.500% 2031 MMM31) on NYSE per evidence and reference; extra common stock info does not contradict the debt securities answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8e9f8fad67193a7c414a952b9e5d664e980eb5adf18a04984cc29d09edee6aa4",
+    "latency_seconds": 8.008,
+    "usage": {
+      "prompt_tokens": 1457,
+      "completion_tokens": 83,
+      "total_tokens": 1540,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1724ab4c600c86629e518789ca1ce6b2b379e5f05d3fd2371e6f120792f1d80e"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00941_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00941_holistic.json",
+  "parent_sha256": "d7824d1b4060edc9f1879165ce40b1c421a23967667dea2da10fe0b03053bcb4"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00517",
+  "uid": "financebench_id_00517_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "afb98cf01fb0731d53faa1a9f11f25105f7a39a35c041d4e9ed19b9c34951cd4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "0dd8ad5e4b57b1dbdcb59080d674cff424072b46d2dd279c6e90a5d103eb345e",
+  "started_utc": "2026-09-09T18:06:15.424539+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, there are three product/service categories that represent more than 20% of Boeing's revenue for FY2022.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate computed Commercial Airplanes 38.82%, Defense 34.77%, Global Services 26.43% from evidence segment revenues and total $66,608M, all >20%, matching reference's yes with three categories (Commercial 39%, Defence 35%, Services 26%)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6486c43ff939264aafb5fbf0fd3d406ec37b119800c8fa53c172b4ba4757036f",
+    "latency_seconds": 6.121,
+    "usage": {
+      "prompt_tokens": 1504,
+      "completion_tokens": 130,
+      "total_tokens": 1634,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "14fd9e68276a65b533c499b0819bdc67da65f8d122321d0e3a83de543668b174"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

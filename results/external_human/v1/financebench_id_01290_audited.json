@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01290",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "835d0da6f56e9073339070285a889c3a526279beb46a78d85f33790df3e00786",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "738ba12dfe93d3d21b0d91cd6819d4d64c0d775bbb20ec1c56f0adc2f6dc3e62",
+  "started_utc": "2026-09-09T17:33:53.785731+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate identifies primary customers as commercial airlines and the U.S. government (plus other governments/defense agencies), consistent with reference and evidence showing limited commercial airlines and U.S. government (40% of 2022 revenues). No contradictory or missing core content.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Boeing, correctly addressed."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY2022 / fiscal year ended Dec 31 2022 as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No numeric unit required; qualitative customers described."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Primary customers: commercial airlines, U.S. government, other governments/defense agencies - matches reference's commercial airlines and US government."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows significant revenues from limited commercial airlines and 40% from U.S. government in 2022, supporting candidate."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bc2f066b542aee5939f3d831f5bdb825ac859c077f6346b71bd1093678558a99",
+    "latency_seconds": 3.056,
+    "usage": {
+      "prompt_tokens": 3409,
+      "completion_tokens": 254,
+      "total_tokens": 3663,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4c21b8f63325d0c41e2047c3db7b96c4b0e23cf963fa5653d2da9e583c310354"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

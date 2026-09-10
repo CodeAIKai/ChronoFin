@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00499",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "e25b399f98d3c5b8f1f6298d91b85fcaedabd152de7365187b6abb0036c0bdd9",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "5eeffc407b2d9bc8a4bbd45133cd19e209c2bc06cbf6c4cbaf52e88a96024a3f",
+  "started_utc": "2026-09-09T17:32:49.726734+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate claims data to assess capital intensity is absent, but evidence provides FY2022 net sales ($34,229M), PP&E purchases/CAPEX ($1,749M), net PP&E ($9,178M), total assets ($46,455M), supporting reference's non-capital-intensive conclusion with CAPEX/Revenue ~5.1% and Fixed/Total Assets ~19.8%.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M, correctly identified in candidate and evidence."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 data present in evidence (2022 columns)."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Evidence in millions USD; candidate does not assert wrong units."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says cannot determine; reference and evidence show it can be assessed as not capital-intensive."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claims no CAPEX or fixed asset data, but evidence has PP&E purchases $1,749M and net PP&E $9,178M."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "40211668aff51beb90d41449ff27d510ecd433fb4abe1fec12d32c5480778dd4",
+    "latency_seconds": 4.648,
+    "usage": {
+      "prompt_tokens": 3468,
+      "completion_tokens": 285,
+      "total_tokens": 3753,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5cd0a15fa981a988b7ef9f5c00652e464c8953b9db518e20ae525a60a840eb50"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

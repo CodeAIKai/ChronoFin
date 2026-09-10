@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_05718",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "16318a0497a5c9346152158c2830474ca98551743f36b5a3ff150374927a5c54",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ea320da0899b53db9f4f350c7895db372a4c37a953cb53aa37fc2004708942fe",
+  "started_utc": "2026-09-09T18:02:57.881416+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence shows Dividends paid of $389 million in FY2020 = $0.389 billion, but reference states $0.40 billion. Candidate's computed $0.389B is materially inconsistent with reference $0.40B (rounding to 0.39 not 0.40).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is American Water Works, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2020 (year ended Dec 31, 2020) correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Converted millions to USD billions as requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate answer $0.389B vs reference $0.40B; not within reasonable rounding."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence supports $389M dividends paid from cash flow statement."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9503fec931eec5b79ad2f4c9cc49f766af06abbc14469b81141fe28bd05a5b00",
+    "latency_seconds": 9.784,
+    "usage": {
+      "prompt_tokens": 2613,
+      "completion_tokens": 247,
+      "total_tokens": 2860,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c67fa2616fef1a99ece2e1a7cf13b6ddb0136cc80068323b80464562eb1e5c14"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

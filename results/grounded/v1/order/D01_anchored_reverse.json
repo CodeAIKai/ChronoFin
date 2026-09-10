@@ -1,0 +1,220 @@
+{
+  "case_id": "D01",
+  "method": "anchored",
+  "order": "reverse",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+  "status": "ok",
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文'Meta FY2024 营收与净利润规模分别达 164501 百万美元与 62360 百万美元'与M01、M02观测值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文'广告曝光增 11% 与均价增 10% 共同驱动营收'对应M06'FY2024 ad impressions grew 11%; average ad price rose 10%'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选'FY2024 自由现金流 52103 百万美元，但为非 GAAP 口径（扣财产购置与融资租约本金）'与M07、M08一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选'Reality Labs FY2024 经营亏损 17729 百万美元'与M03值-17729百万美元等价",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选'Q4 费用因 15.5 亿美元法律损失拨备转回而受益'对应M10'Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses'",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选'指引 FY2025 capex 600–650 亿美元且服务器寿命延长将减折旧 29 亿美元，均为前瞻未实现'与M04 forecast、M05 forecast一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选'公司本次未提供 FY2025 全年营收指引'与M09'Meta provided no FY2025 full-year revenue guidance'一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M01",
+          "present": true,
+          "quote": "Meta FY2024 营收与净利润规模分别达 164501 百万美元"
+        },
+        {
+          "id": "M02",
+          "present": true,
+          "quote": "与 62360 百万美元，盈利绝对值高"
+        },
+        {
+          "id": "M06",
+          "present": true,
+          "quote": "广告曝光增 11% 与均价增 10% 共同驱动营收"
+        },
+        {
+          "id": "M07",
+          "present": true,
+          "quote": "FY2024 自由现金流 52103 百万美元"
+        },
+        {
+          "id": "M03",
+          "present": true,
+          "quote": "Reality Labs FY2024 经营亏损 17729 百万美元"
+        },
+        {
+          "id": "M10",
+          "present": true,
+          "quote": "Q4 费用因 15.5 亿美元法律损失拨备转回而受益"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "FY2025 capex 与折旧变更尚未发生，实际影响未知"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选完整覆盖Meta FY2024盈利质量业务驱动、利润现金流、反面证据及后续核查，且局限中讲清一次性法律拨备转回不代表持续经营改善"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "241b529dc4740e426610a00ddc9b7a5b43c807bb76885c358aee7c4bfd040957",
+      "latency_seconds": 9.123,
+      "usage": {
+        "prompt_tokens": 5674,
+        "completion_tokens": 833,
+        "total_tokens": 6507,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "5f1a645d838f15edb3bbe00a11261b65f580d5ad7addac067cc54b192a9e822f"
+    },
+    "input_sha256": "5e646ce649a76daa4f2fe5d66928e3c5332f80ac8e16337a6626b34d0230026d",
+    "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  }
+}

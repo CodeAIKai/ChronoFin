@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00807",
+  "uid": "financebench_id_00807_val",
+  "split": "new_response_validation",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "211e7c81229c2dcbc28c4dbf0ce36f037fcd833d420511f5a0d738ae42a51266",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "0987da9d498c8ece8bf5a61438125ce5426bc0b71149fec54b11e5feae8a4130",
+  "started_utc": "2026-09-09T18:08:24.629671+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate states quick ratio was 1.44 and concludes healthy liquidity, but evidence shows cash+securities+AR = 9259M vs current liabilities 10936M, quick ratio ≈0.846; reference says 0.96 and 'No' to healthy. Metric and conclusion both wrong."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "93b90161c2e4b2d337e525c6b75f8dabdd7991e4f5d8a42b093efb77b4b93625",
+    "latency_seconds": 7.207,
+    "usage": {
+      "prompt_tokens": 1851,
+      "completion_tokens": 84,
+      "total_tokens": 1935,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2e25824e85f8e625538a9151c0ac379e6e20e6c19de2c94a7ad8313c93c1ac0a"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

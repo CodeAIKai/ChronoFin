@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_05915",
+  "company": "CVS Health",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f5c6232d1ac89ba003171b54f20b35d57d7c6d4d1a24506ef4c3380b53e4e4b4",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "91bc88a7bc80da27f95fdefc8692de4494ec7bcd55d0c106d08799155c679d80",
+  "started_utc": "2026-09-09T17:54:09.035685+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate withholds answer, claiming text is cut off and asking for clarification, rather than providing the requested ratio."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2c6f386b59812ddd499d2083dce986935e296c4da2c9f1d82dbf4f560d32fe3d",
+    "latency_seconds": 6.515,
+    "usage": {
+      "prompt_tokens": 3467,
+      "completion_tokens": 44,
+      "total_tokens": 3511,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "df96c7a8235b11d03c49d128d38faf87d0a76b05f2cbe9e2eb2bdfb0f9e4c878"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

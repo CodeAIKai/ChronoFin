@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04458",
+  "company": "Netflix",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a278628b4561b1965fc4dfc649a6621c0ff1d40f5a48eb22e715542c356578cb",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9e6a512c1fbffbd12ad3546f6805d914d264d59fc4ad0f383059464a335cd690",
+  "started_utc": "2026-09-09T17:34:56.219090+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence provides FY2015 operating income (305,826) and D&A (62,283 from cash flow statement 'Depreciation and amortization of property, equipment and intangibles'; total D&A including content amortization is ambiguous but unadjusted EBITDA per reference 5.4% uses operating income + 62,283 = 368,109; 368,109/6,779,511 = 5.43% ≈ 5.4%). Candidate refused by falsely claiming data absent, though calculation method described. Reference answer is 5.4%."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5f84cc344bff9d1081143c0dcb6584372917c8407041075f30b4cfb5ce8194da",
+    "latency_seconds": 2.826,
+    "usage": {
+      "prompt_tokens": 3667,
+      "completion_tokens": 140,
+      "total_tokens": 3807,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f58217a0a252dca2e34aed53a91946d9c62bcfb8b3b4b88729ca21f854c763c6"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

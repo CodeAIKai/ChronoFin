@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_07966",
+  "uid": "financebench_id_07966_dev",
+  "split": "development",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6c173e76a5b95f15bc69002dad5cd525cf1d5d77b18d05a959027ad79de8090d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "3f9688d0591b7e2adfc51f35ba8245c224920a936901940c7f411087133e65db",
+  "started_utc": "2026-09-10T01:33:49.744067+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Rounded to one decimal place, the 3-year average of CapEx as a percentage of revenue for Activision Blizzard for FY2017 - FY2019 is 1.9%.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate computed 1.9% from capex/revenue (155/7017=2.21%, 131/7500=1.75%, 116/6489=1.79%, avg 1.92%≈1.9%). Reference value is 0.019 = 1.9% only if interpreted as 1.9%, but reference given as 0.019 (numeric) conflicts with candidate's 1.9% percent representation; candidate's method matches evidence (capex 116/131/155M, revenues 6489/7500/7017M) and yields 1.9%, while reference 0.019 likely means 1.9% proportion yet labeled 0.019 not 0.019*100; per instruction proportion 0.019 = 1.9% when context supports, so candidate answer 1.9% actually agrees in meaning but reference numeric 0.019 vs candidate 1.9% shows conflict in numeral form. However candidate's detailed math is correct per evidence, so content_correct should be true? Re-evaluate: reference 0.019 as proportion = 1.9%. Candidate says 1.9%. They agree. But label says reference_conflict true and explain rather than assuming matching numeral proves correctness. Numeral 0.019 vs 1.9% differ but meaning same. So content_correct true, label correct. Fix: content_correct true, label correct, reference_conflict true."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d9b01086ef618e522cfed4881657eaa898b25490f726694b9a0e2cbbb669f603",
+    "latency_seconds": 10.839,
+    "usage": {
+      "prompt_tokens": 3965,
+      "completion_tokens": 398,
+      "total_tokens": 4363,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9170e6173c0970d58a5a1e5b79ad581fe5c05fe82ae274b9e2a6a3853d513e88"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

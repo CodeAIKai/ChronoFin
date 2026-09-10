@@ -1,0 +1,1018 @@
+{
+  "case_id": "D01",
+  "split": "dev",
+  "group": "meta24",
+  "task": "财报阅读",
+  "strategy": "full_context",
+  "started_utc": "2026-09-09T15:49:34.123682+00:00",
+  "protocol_sha256": "9c9470eb4679aec8b97927f8beee4b2e4c5abed2aa9a13a14b745f0848544cf4",
+  "record": {
+    "version": "counterbrief-1.1",
+    "strategy": "full_context",
+    "query": {
+      "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "M01",
+        "source_id": "meta24",
+        "locator": "p1 annual revenue row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 revenue: USD 164501 million.",
+        "value": 164501,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M02",
+        "source_id": "meta24",
+        "locator": "p1 annual net income row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 net income: USD 62360 million.",
+        "value": 62360,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M03",
+        "source_id": "meta24",
+        "locator": "p9 segment operating results",
+        "role": "caution",
+        "status": "observed",
+        "text": "Reality Labs FY2024 operating loss: USD 17729 million.",
+        "value": -17729,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M06",
+        "source_id": "meta24",
+        "locator": "p1 annual ad metrics",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 ad impressions grew 11%; average ad price rose 10%.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M07",
+        "source_id": "meta24",
+        "locator": "p10 annual free cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 free cash flow: USD 52103 million.",
+        "value": 52103,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M04",
+        "source_id": "meta24",
+        "locator": "p2 CFO outlook",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Meta anticipated FY2025 capital expenditures of USD 60–65 billion; guidance, not realized spending.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M05",
+        "source_id": "meta24",
+        "locator": "p2 depreciation footnote",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Longer server lives were expected to reduce FY2025 depreciation by USD 2.9 billion; an accounting-estimate change.",
+        "value": 2.9,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M09",
+        "source_id": "meta24",
+        "locator": "p2 revenue outlook",
+        "role": "caution",
+        "status": "absence",
+        "text": "Meta provided no FY2025 full-year revenue guidance in this release.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M08",
+        "source_id": "meta24",
+        "locator": "p4 non-GAAP definition",
+        "role": "caution",
+        "status": "definition",
+        "text": "Meta free cash flow deducts property purchases and finance-lease principal; non-GAAP comparability is limited.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M10",
+        "source_id": "meta24",
+        "locator": "p1 expense footnote",
+        "role": "caution",
+        "status": "observed",
+        "text": "Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses.",
+        "value": 1.55,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A02",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 operating income: USD 68593 million.",
+        "value": 68593,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A03",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual sales",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 net sales: USD 107556 million.",
+        "value": 107556,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A04",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 operating income: USD 39834 million.",
+        "value": 39834,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A05",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "caution",
+        "status": "observed",
+        "text": "Amazon FY2024 free cash flow: USD 38219 million; FY2023: USD 36813 million.",
+        "value": 38219,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A06",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 operating cash flow reached about USD 115.9 billion, a 36% increase.",
+        "value": 115.9,
+        "unit": "USD billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A08",
+        "source_id": "amazon24",
+        "locator": "p11 AWS quarterly margins",
+        "role": "caution",
+        "status": "observed",
+        "text": "AWS operating margin: Q3 2024 38.1%; Q4 2024 36.9%.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "I01",
+        "source_id": "iea25",
+        "locator": "current consumption section",
+        "role": "context",
+        "status": "estimate",
+        "text": "IEA estimated 2024 data-centre electricity use at 415 TWh, about 1.5% globally.",
+        "value": 415,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "T01",
+        "source_id": "tsmc24",
+        "locator": "opening results paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 revenue: TWD 868.46 billion.",
+        "value": 868.46,
+        "unit": "TWD billion",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T02",
+        "source_id": "tsmc24",
+        "locator": "year-over-year paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 38.8% measured in TWD.",
+        "value": 38.8,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T03",
+        "source_id": "tsmc24",
+        "locator": "USD results paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 37.0% measured in USD.",
+        "value": 37.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T04",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 gross margin was 59.0%; net profit margin was 43.1%.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "A07",
+        "source_id": "amazon24",
+        "locator": "p10 FCF definition footnotes",
+        "role": "caution",
+        "status": "definition",
+        "text": "Amazon headline free cash flow deducts net property purchases; separate variants also deduct lease principal.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "F01",
+        "source_id": "fed25",
+        "locator": "overview opening",
+        "role": "context",
+        "status": "observed",
+        "text": "The assessment uses market conditions and data through April 11, 2025.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F02",
+        "source_id": "fed25",
+        "locator": "asset valuations",
+        "role": "caution",
+        "status": "observed",
+        "text": "Equity valuations remained high versus expected earnings; liquidity deteriorated, with generally orderly functioning.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F03",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "caution",
+        "status": "observed",
+        "text": "Hedge-fund leverage indicators were near decade highs and concentrated in larger funds.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F04",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "support",
+        "status": "observed",
+        "text": "Banks remained broadly resilient, with most reporting capital well above regulatory requirements.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F05",
+        "source_id": "fed25",
+        "locator": "household and business debt",
+        "role": "support",
+        "status": "observed",
+        "text": "Business and household debt vulnerabilities were moderate; debt relative to GDP had declined.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F06",
+        "source_id": "fed25",
+        "locator": "funding risks",
+        "role": "support",
+        "status": "observed",
+        "text": "Funding vulnerabilities had declined to moderate levels; runnable liabilities remained a persistent risk.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F07",
+        "source_id": "fed25",
+        "locator": "household credit",
+        "role": "caution",
+        "status": "observed",
+        "text": "Credit-card and auto delinquencies exceeded pre-pandemic levels, especially among non-prime borrowers.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "I02",
+        "source_id": "iea25",
+        "locator": "2030 outlook section",
+        "role": "support",
+        "status": "forecast",
+        "text": "IEA projected data-centre electricity demand of around 945 TWh in 2030.",
+        "value": 945,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I03",
+        "source_id": "iea25",
+        "locator": "grid integration section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Without action, grid constraints could delay around 20% of planned data-centre projects.",
+        "value": 20,
+        "unit": "%",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I04",
+        "source_id": "iea25",
+        "locator": "uncertainty section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "IEA scenario range for 2035 data-centre demand: 700–1700 TWh; adoption, efficiency and bottlenecks matter.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I05",
+        "source_id": "iea25",
+        "locator": "global demand growth section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Data centres represent roughly one-tenth of projected global electricity-demand growth through 2030.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "T05",
+        "source_id": "tsmc24",
+        "locator": "technology mix paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Nodes of 7nm or smaller contributed 74% of Q4 wafer revenue.",
+        "value": 74,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "Meta FY2024盈利质量显示：营收164501百万美元，净利润62360百万美元，自由现金流52103百万美元，利润与现金流强劲。业务由广告量价齐升驱动（展示增11%、均价涨10%）。反面证据包括Reality Labs运营亏损17729百万美元、Q4因15.5亿美元法律拨备回拨压低费用、FY2025资本开支指引600–650亿美元且服务器寿命变更减折旧29亿美元。无全年营收指引，FCF为非GAAP口径。需核查法律拨备与资本开支实际执行。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Meta FY2024营收164501百万美元，净利润62360百万美元，自由现金流52103百万美元，盈利与现金生成能力强。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "M01",
+            "M02",
+            "M07"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M07",
+              "value": 52103,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "FY2024广告展示量增11%、平均广告价格涨10%，量价齐升为业务核心驱动。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "M06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "Reality Labs FY2024运营亏损17729百万美元，拖累集团盈利质量。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M03"
+          ],
+          "numbers": [
+            {
+              "source_id": "M03",
+              "value": -17729,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Q4费用因15.5亿美元法律损失拨备回拨而受益，短期夸大利润。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M10"
+          ],
+          "numbers": [
+            {
+              "source_id": "M10",
+              "value": 1.55,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Meta预期FY2025资本开支600–650亿美元，且服务器寿命延长将减折旧29亿美元，为会计估计变更。",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "M04",
+            "M05"
+          ],
+          "numbers": [
+            {
+              "source_id": "M05",
+              "value": 2.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Meta未提供FY2025全年营收指引，且自由现金流为非GAAP口径（扣物业购置与融资租赁本金），可比性有限。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M09",
+            "M08"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "M02/M01*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "M07/M02*100",
+          "value": 83.565,
+          "unit": "%",
+          "evidence_ids": [
+            "M07",
+            "M02"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "M03/M02*100",
+          "value": -28.435,
+          "unit": "%",
+          "evidence_ids": [
+            "M03",
+            "M02"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未提供Meta分部门营收与毛利率，无法分解广告与Reality Labs收入贡献",
+        "FY2025资本开支与折旧为指引而非实际，尚不能判断对当年盈利的最终影响",
+        "未提供Meta经营现金流与FCF差异明细，非GAAP可比性影响程度未知"
+      ],
+      "follow_up": [
+        {
+          "action": "核查Meta 10-K中法律拨备回拨的可持续性及是否一次性",
+          "reason": "判断Q4费用受益是否扭曲FY2024真实盈利质量",
+          "evidence_ids": [
+            "M10"
+          ]
+        },
+        {
+          "action": "跟踪Meta FY2025实际资本开支与折旧执行 vs 指引",
+          "reason": "验证高CAPEX与会计估计变更对自由现金流的挤压程度",
+          "evidence_ids": [
+            "M04",
+            "M05"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "Meta FY2024盈利质量显示：营收164501百万美元，净利润62360百万美元，自由现金流52103百万美元，利润与现金流强劲。业务由广告量价齐升驱动（展示增11%、均价涨10%）。反面证据包括Reality Labs运营亏损17729百万美元、Q4因15.5亿美元法律拨备回拨压低费用、FY2025资本开支指引600–650亿美元且服务器寿命变更减折旧29亿美元。无全年营收指引，FCF为非GAAP口径。需核查法律拨备与资本开支实际执行。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Meta FY2024营收164501百万美元，净利润62360百万美元，自由现金流52103百万美元，盈利与现金生成能力强。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "M01",
+            "M02",
+            "M07"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M07",
+              "value": 52103,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "FY2024广告展示量增11%、平均广告价格涨10%，量价齐升为业务核心驱动。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "M06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "Reality Labs FY2024运营亏损17729百万美元，拖累集团盈利质量。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M03"
+          ],
+          "numbers": [
+            {
+              "source_id": "M03",
+              "value": -17729,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Q4费用因15.5亿美元法律损失拨备回拨而受益，短期夸大利润。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M10"
+          ],
+          "numbers": [
+            {
+              "source_id": "M10",
+              "value": 1.55,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Meta预期FY2025资本开支600–650亿美元，且服务器寿命延长将减折旧29亿美元，为会计估计变更。",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "M04",
+            "M05"
+          ],
+          "numbers": [
+            {
+              "source_id": "M05",
+              "value": 2.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Meta未提供FY2025全年营收指引，且自由现金流为非GAAP口径（扣物业购置与融资租赁本金），可比性有限。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M09",
+            "M08"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "M02/M01*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "M07/M02*100",
+          "value": 83.565,
+          "unit": "%",
+          "evidence_ids": [
+            "M07",
+            "M02"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "M03/M02*100",
+          "value": -28.435,
+          "unit": "%",
+          "evidence_ids": [
+            "M03",
+            "M02"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未提供Meta分部门营收与毛利率，无法分解广告与Reality Labs收入贡献",
+        "FY2025资本开支与折旧为指引而非实际，尚不能判断对当年盈利的最终影响",
+        "未提供Meta经营现金流与FCF差异明细，非GAAP可比性影响程度未知"
+      ],
+      "follow_up": [
+        {
+          "action": "核查Meta 10-K中法律拨备回拨的可持续性及是否一次性",
+          "reason": "判断Q4费用受益是否扭曲FY2024真实盈利质量",
+          "evidence_ids": [
+            "M10"
+          ]
+        },
+        {
+          "action": "跟踪Meta FY2025实际资本开支与折旧执行 vs 指引",
+          "reason": "验证高CAPEX与会计估计变更对自由现金流的挤压程度",
+          "evidence_ids": [
+            "M04",
+            "M05"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "c4f6ddff4cfdb38a4545829f78c0ee63821924b6f87e52f58ec8f287fc67dfcb",
+        "latency_seconds": 10.694,
+        "usage": {
+          "prompt_tokens": 3875,
+          "completion_tokens": 968,
+          "total_tokens": 4843,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "9da2e22ea45d58fa3fd0dd11582e1494865b85b49a9c5c9e826280094a9a260d"
+      }
+    ],
+    "input_sha256": "839e3b566fea0161ea2a4d3fa500604580c1dba3543fa1febcf4774aee80e10c",
+    "answer_sha256": "b5f7d70e75b275cb7aefa3cb11bdaa6108ced5321f60349012e7716b6a2a0a71"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文列明Meta FY2024营收、净利润、自由现金流数值与M01/M02/M07一致，并称盈利与现金生成能力强",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文称广告展示量增11%、均价涨10%，与M06观察值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选正文称Reality Labs运营亏损17729百万美元，与M03一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选正文称Q4因15.5亿美元法律损失拨备回拨受益，与M10的1.55 billion USD一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选正文称FY2025 CAPEX 600–650亿、服务器寿命延长减折旧29亿为会计估计变更，与M04/M05预测一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选正文称无FY2025营收指引且FCF非GAAP口径可比性有限，与M09/M08一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M01",
+          "present": true,
+          "quote": "营收164501百万美元"
+        },
+        {
+          "id": "M02",
+          "present": true,
+          "quote": "净利润62360百万美元"
+        },
+        {
+          "id": "M06",
+          "present": true,
+          "quote": "展示增11%、均价涨10%"
+        },
+        {
+          "id": "M07",
+          "present": true,
+          "quote": "自由现金流52103百万美元"
+        },
+        {
+          "id": "M03",
+          "present": true,
+          "quote": "Reality Labs运营亏损17729百万美元"
+        },
+        {
+          "id": "M10",
+          "present": true,
+          "quote": "Q4因15.5亿美元法律拨备回拨压低费用"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选完整覆盖required与counter证据，概括业务驱动、利润现金流、反面证据及核查，且局限中虽未直接写'一次性因素不能代表持续经营改善'但C4指出短期夸大利润、局限提FY2025为指引非实际，部分触及；但按规则空泛或未讲清该具体限制故present false"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "28503c02ed17af6f2ef601772fdb83f8985db5068defeb0fc3dace67fc956e41",
+      "latency_seconds": 10.037,
+      "usage": {
+        "prompt_tokens": 4910,
+        "completion_tokens": 666,
+        "total_tokens": 5576,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "44bce12753cedf8fc553a34f37536e283ed1da40159a8a8fe9f5082ba253fa1f"
+    },
+    "input_sha256": "24ff4e7d8e8ca2d83c052145c7752cc73d0fd49fe565ba75e76b7fc43e9f95e9",
+    "answer_sha256": "b5f7d70e75b275cb7aefa3cb11bdaa6108ced5321f60349012e7716b6a2a0a71",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.1",
+    "answer_sha256": "b5f7d70e75b275cb7aefa3cb11bdaa6108ced5321f60349012e7716b6a2a0a71",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.777778,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 93.333,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "incorrect numerical proof",
+        "cap": 55
+      }
+    ],
+    "issues": [
+      "calculation: K2",
+      "calculation: K3"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T15:49:54.868620+00:00",
+  "wall_seconds": 20.745
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00566",
+  "uid": "financebench_id_00566_dev",
+  "split": "development",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "63acb38897c954211fab38688b19bf3fa18a887cfac6bfe4abfbfa40bb5e85f3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "bd0ffd694557ff6d5dcdf530b9c6c736a7550a4f3b2526bfe0a9739a80e19ec7",
+  "started_utc": "2026-09-09T18:06:34.859181+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Verizon did not increase its debt on the balance sheet between 2022 and the 2021 fiscal period; instead, it slightly decreased its total debt.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states total debt 2022 $150,639M vs 2021 $150,868M, a $229M decrease, matching reference 'decreased by $229 million' and evidence table Total debt $150,639 (2022) / $150,868 (2021). Question asks if increased; answer correctly says no, decreased."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dc4e6c943ffd1f6806f11c4302c650b08f0efe3a38c3ee4d97b5fb6cd56a109b",
+    "latency_seconds": 6.215,
+    "usage": {
+      "prompt_tokens": 2408,
+      "completion_tokens": 151,
+      "total_tokens": 2559,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bdda625376c78028f9650fe6a673d6dd862830052fed959790a0806e388bccce"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

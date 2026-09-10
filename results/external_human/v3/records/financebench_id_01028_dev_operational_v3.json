@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01028",
+  "uid": "financebench_id_01028_dev",
+  "split": "development",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "65a85de45945e88978eecab9d082d84c923092682ea80772720452e1ca60fdaf",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "9e1736aef098071461aa40ff162cde48cdbf7952d6318ede83e7b74ad25bbad2",
+  "started_utc": "2026-09-09T18:09:12.242520+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but as an AI language model, I do not have access to external databases or the ability to retrieve documents such as SEC filings.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and asks user to access filings externally instead of providing the geographies, despite evidence listing US, EMEA, APAC, LACC."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0755ab791ae499b30e4ef8ee3f03d8ceb3bfc1e2cd191213120e5ad38294180c",
+    "latency_seconds": 7.258,
+    "usage": {
+      "prompt_tokens": 1348,
+      "completion_tokens": 117,
+      "total_tokens": 1465,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "82f708806dcfa67ba71aabf50b0fdc7c165018e9299f8e46e0055ad80b53c650"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

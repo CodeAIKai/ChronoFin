@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00005",
+  "company": "Corning",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "08af333c3c480de7a3963d4aab36e7d239246a09a1f8f575f03f9276f404f01e",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "aba5daeadfbfdf2bc435e17c73eeb106d122e88d1f8a83e489aa00652e80c4b3",
+  "started_utc": "2026-09-09T17:42:03.152115+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate ignores the question about Corning's FY2022 working capital and instead summarizes an unrelated pension plan document, providing no answer or stated irrelevance."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b1d97b73b619e27a825e6d9d9213b7d052b06c9c0277fb916b9a6745e5e50662",
+    "latency_seconds": 2.022,
+    "usage": {
+      "prompt_tokens": 2074,
+      "completion_tokens": 52,
+      "total_tokens": 2126,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4c3938163b66e44f55c1513ff0972ceabc46853ade2936ccfe3ad8ef052b4b4b"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

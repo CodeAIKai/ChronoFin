@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_02608",
+  "company": "Best Buy",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "13eecd8187aa00d7beabe0d3c9432400dd6376cd21e327f1f0119c3b9c821f06",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d1697347f107855cca7bf56ab631d3f1931ccd71d57344f9108819f54bc69dcb",
+  "started_utc": "2026-09-09T17:34:20.912771+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate responds with unrelated disclosure controls text, not the requested 3-year average net profit margin for Best Buy FY2015-FY2017.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not address Best Buy net profit margin."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2015-FY2017 period addressed."
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No percent value provided."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive numeric answer; unrelated boilerplate."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence not used; candidate text from other section."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d6c04339ef4e1e2ace8e361ea9bc5c09e4982b62a060e5dbf72e1b44d31f147b",
+    "latency_seconds": 3.095,
+    "usage": {
+      "prompt_tokens": 1932,
+      "completion_tokens": 191,
+      "total_tokens": 2123,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4ef58e65bd11a8b55a449f430ab2bc7eefbc17219352748450a3775cd50069d8"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04254",
+  "uid": "financebench_id_04254_val",
+  "split": "new_response_validation",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c052881493cca6bc04a7ee32fffb171ce8a5d1f8141e2acec8890d8179d90357",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "c55acf19c994de149dbf9dbadfc6c2ab67dcb2dd57e19ab020851491fc9a65e5",
+  "started_utc": "2026-09-10T01:31:44.029900+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "American Water Works's FY2021 unadjusted operating income + depreciation and amortization from the cash flow statement (unadjusted EBITDA) is $1,832 million.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Income statement shows FY2021 operating income $1,196M and depreciation & amortization $636M; cash flow statement confirms D&A $636M. Sum = $1,832M matches reference 1832."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5555e4673b2470278237bf87021dec88fb5a9e19757dd2c7b71e27964a61f3c2",
+    "latency_seconds": 9.692,
+    "usage": {
+      "prompt_tokens": 3773,
+      "completion_tokens": 127,
+      "total_tokens": 3900,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0d00f056ac4025ae20c02e04c10d959ce3818889188be1ac05692e52f7cd9709"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

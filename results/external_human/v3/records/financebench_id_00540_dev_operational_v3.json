@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00540",
+  "uid": "financebench_id_00540_dev",
+  "split": "development",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "1689813b3f99fed7e3b0d9fd51ae2e6fd300beecc126884e675085bfaa8d387f",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "6c46f2ef666d416db27e8808e51421fca9d99eb4f06aacf4d9b0db1e5eafccf9",
+  "started_utc": "2026-09-09T18:06:21.548313+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "it is not possible to calculate the inventory turnover ratio for AES Corporation for FY2022",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate declines to answer, stating provided text lacks data to calculate ratio and does not state conventional inventory mgmt not meaningful as required; reference says 9.5 times but candidate explicitly refuses rather than answering."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f6e20aabac187f23c76e5997f7e7853e7fc8a61b4872b2ab402fca52d23f4bc5",
+    "latency_seconds": 5.821,
+    "usage": {
+      "prompt_tokens": 3244,
+      "completion_tokens": 110,
+      "total_tokens": 3354,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "711251dc322a4773fd296698fae91f0086b62b7aa838474c000455805abe712d"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

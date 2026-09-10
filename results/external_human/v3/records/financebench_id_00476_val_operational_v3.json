@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00476",
+  "uid": "financebench_id_00476_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "c431ac7df58e8fe770f21e4652ce158903f75bdf49dde5c654bc13172921ebb0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "e682f25a005337f84b651ff8033a33f826e5b9aff64d4aa886769a03f18fe21d",
+  "started_utc": "2026-09-09T18:06:01.446394+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide the requested information as the filing has been cut off and does not include the necessary details",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and asks for complete filing instead of answering the question about debt securities."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0865a6167271384c8d672d15d2f44290a920081f7730affdd6f168b02b7c8d48",
+    "latency_seconds": 6.513,
+    "usage": {
+      "prompt_tokens": 1631,
+      "completion_tokens": 91,
+      "total_tokens": 1722,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "444b83a0da30c4299a2d379ed9bb864383ee87673cd5057268ee8335fdb0691a"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

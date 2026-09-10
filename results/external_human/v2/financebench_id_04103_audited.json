@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04103",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e106ef835bc32f7b4a55483ac91c850bf1ac2037cb8d66c01d18b1d3831bbf31",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "5d5d7032ea7638460a99fb79c717f9373f2e9d4e5b43351e74298a7af5b9981f",
+  "started_utc": "2026-09-09T17:52:37.540985+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate response is unrelated boilerplate about euro-zone bonds and does not attempt to compute or state General Mills FY2019 CCC; it withholds the requested answer.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not address General Mills"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2019 referenced"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No CCC value or unit provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer to CCC question"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No use of evidence line items"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e17c92948ffa2634232851f324b3332a705885c917ba9b33a7b5cd8f64ef43da",
+    "latency_seconds": 9.309,
+    "usage": {
+      "prompt_tokens": 6440,
+      "completion_tokens": 193,
+      "total_tokens": 6633,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3319dbbf221a0ced47e8ad9e17b8b4053f05132d071f4876c7e84fe3699bfea4"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

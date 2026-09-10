@@ -1,0 +1,616 @@
+{
+  "generated_utc": "2026-09-10T02:42:46.634828+00:00",
+  "model_calls": 0,
+  "grounded_paired": {
+    "full_context": {
+      "n": 15,
+      "mean_difference": 8.471933333333334,
+      "source_group_bootstrap95": [
+        2.3328235294117654,
+        16.5
+      ],
+      "source_groups": 6,
+      "note": "Small author-visible regression; cross-source cases overlap other groups. CI is exploratory."
+    },
+    "full_context_revision": {
+      "n": 15,
+      "mean_difference": 5.3386000000000005,
+      "source_group_bootstrap95": [
+        0.1930000000000026,
+        11.642857142857142
+      ],
+      "source_groups": 6,
+      "note": "Small author-visible regression; cross-source cases overlap other groups. CI is exploratory."
+    },
+    "counterbrief_first_pass": {
+      "n": 15,
+      "mean_difference": 9.2386,
+      "source_group_bootstrap95": [
+        0.22368750000000048,
+        23.03846153846154
+      ],
+      "source_groups": 6,
+      "note": "Small author-visible regression; cross-source cases overlap other groups. CI is exploratory."
+    }
+  },
+  "order_reliability": {
+    "legacy": {
+      "n_answers": 6,
+      "judgments_per_answer": 4,
+      "mean_range": 9.166666666666666,
+      "max_range": 45.0,
+      "range_over5": 2
+    },
+    "anchored": {
+      "n_answers": 6,
+      "judgments_per_answer": 4,
+      "mean_range": 2.3333333333333335,
+      "max_range": 6.0,
+      "range_over5": 1
+    }
+  },
+  "native_versions": {
+    "v1": {
+      "planned": 3,
+      "completed": 1,
+      "mean_score_failure_zero": 33.333333333333336,
+      "mean_success_only": 100.0,
+      "n_scored": 1,
+      "cases": [
+        {
+          "id": "meta24_after",
+          "status": "error",
+          "score": null
+        },
+        {
+          "id": "amazon24_after",
+          "status": "error",
+          "score": null
+        },
+        {
+          "id": "meta24_before",
+          "status": "ok",
+          "score": 100.0
+        }
+      ]
+    },
+    "v2": {
+      "planned": 12,
+      "completed": 12,
+      "mean_score_failure_zero": 73.10475000000001,
+      "mean_success_only": 73.10475,
+      "n_scored": 12,
+      "cases": [
+        {
+          "id": "meta24_after",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "amazon24_after",
+          "status": "ok",
+          "score": 35
+        },
+        {
+          "id": "meta24_before",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "NV01",
+          "status": "ok",
+          "score": 55
+        },
+        {
+          "id": "NV02",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "NV03",
+          "status": "ok",
+          "score": 90.0
+        },
+        {
+          "id": "AP01",
+          "status": "ok",
+          "score": 97.257
+        },
+        {
+          "id": "AP02",
+          "status": "ok",
+          "score": 55
+        },
+        {
+          "id": "AP03",
+          "status": "ok",
+          "score": 55
+        },
+        {
+          "id": "TC01",
+          "status": "ok",
+          "score": 35
+        },
+        {
+          "id": "TC02",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "TC03",
+          "status": "ok",
+          "score": 55
+        }
+      ]
+    },
+    "v3": {
+      "planned": 12,
+      "completed": 8,
+      "mean_score_failure_zero": 54.879999999999995,
+      "mean_success_only": 82.32,
+      "n_scored": 8,
+      "cases": [
+        {
+          "id": "meta24_after",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "amazon24_after",
+          "status": "ok",
+          "score": 91.0
+        },
+        {
+          "id": "meta24_before",
+          "status": "error",
+          "score": null
+        },
+        {
+          "id": "NV01",
+          "status": "error",
+          "score": null
+        },
+        {
+          "id": "NV02",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "NV03",
+          "status": "ok",
+          "score": 92.56
+        },
+        {
+          "id": "AP01",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "AP02",
+          "status": "error",
+          "score": null
+        },
+        {
+          "id": "AP03",
+          "status": "ok",
+          "score": 55
+        },
+        {
+          "id": "TC01",
+          "status": "ok",
+          "score": 60
+        },
+        {
+          "id": "TC02",
+          "status": "error",
+          "score": null
+        },
+        {
+          "id": "TC03",
+          "status": "ok",
+          "score": 60
+        }
+      ]
+    },
+    "v4": {
+      "planned": 12,
+      "completed": 11,
+      "mean_score_failure_zero": 78.91666666666667,
+      "mean_success_only": 86.0909090909091,
+      "n_scored": 11,
+      "cases": [
+        {
+          "id": "meta24_after",
+          "status": "ok",
+          "score": 87.0
+        },
+        {
+          "id": "amazon24_after",
+          "status": "ok",
+          "score": 60
+        },
+        {
+          "id": "meta24_before",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "NV01",
+          "status": "ok",
+          "score": 96.0
+        },
+        {
+          "id": "NV02",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "NV03",
+          "status": "ok",
+          "score": 94.0
+        },
+        {
+          "id": "AP01",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "AP02",
+          "status": "ok",
+          "score": 55
+        },
+        {
+          "id": "AP03",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "TC01",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "TC02",
+          "status": "error",
+          "score": null
+        },
+        {
+          "id": "TC03",
+          "status": "ok",
+          "score": 55
+        }
+      ]
+    },
+    "v5": {
+      "planned": 12,
+      "completed": 12,
+      "mean_score_failure_zero": 94.62258333333334,
+      "mean_success_only": 94.62258333333334,
+      "n_scored": 12,
+      "cases": [
+        {
+          "id": "meta24_after",
+          "status": "ok",
+          "score": 90.0
+        },
+        {
+          "id": "amazon24_after",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "meta24_before",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "NV01",
+          "status": "ok",
+          "score": 90.0
+        },
+        {
+          "id": "NV02",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "NV03",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "AP01",
+          "status": "ok",
+          "score": 97.5
+        },
+        {
+          "id": "AP02",
+          "status": "ok",
+          "score": 92.971
+        },
+        {
+          "id": "AP03",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "TC01",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "TC02",
+          "status": "ok",
+          "score": 100.0
+        },
+        {
+          "id": "TC03",
+          "status": "ok",
+          "score": 65
+        }
+      ]
+    }
+  },
+  "external_human": {
+    "planned": 600,
+    "records": 600,
+    "complete": 600,
+    "groups": {
+      "development/holistic_v2": {
+        "n": 150,
+        "accuracy_failure_wrong": 0.7466666666666667,
+        "macro_f1": 0.7051162233405224,
+        "balanced_accuracy": 0.7310101906375198,
+        "cohen_kappa": 0.6173212487411884,
+        "confusion_matrix": {
+          "correct": {
+            "correct": 50,
+            "incorrect": 5,
+            "refusal": 0,
+            "error": 0
+          },
+          "incorrect": {
+            "correct": 1,
+            "incorrect": 14,
+            "refusal": 31,
+            "error": 0
+          },
+          "refusal": {
+            "correct": 1,
+            "incorrect": 0,
+            "refusal": 48,
+            "error": 0
+          }
+        }
+      },
+      "development/operational_v3": {
+        "n": 150,
+        "accuracy_failure_wrong": 0.9333333333333333,
+        "macro_f1": 0.9342092615288492,
+        "balanced_accuracy": 0.9374660536151219,
+        "cohen_kappa": 0.9000999000999002,
+        "confusion_matrix": {
+          "correct": {
+            "correct": 47,
+            "incorrect": 8,
+            "refusal": 0,
+            "error": 0
+          },
+          "incorrect": {
+            "correct": 1,
+            "incorrect": 45,
+            "refusal": 0,
+            "error": 0
+          },
+          "refusal": {
+            "correct": 1,
+            "incorrect": 0,
+            "refusal": 48,
+            "error": 0
+          }
+        }
+      },
+      "new_response_validation/holistic_v2": {
+        "n": 150,
+        "accuracy_failure_wrong": 0.78,
+        "macro_f1": 0.7478391434913174,
+        "balanced_accuracy": 0.7624338624338625,
+        "cohen_kappa": 0.6656534954407296,
+        "confusion_matrix": {
+          "correct": {
+            "correct": 54,
+            "incorrect": 8,
+            "refusal": 1,
+            "error": 0
+          },
+          "incorrect": {
+            "correct": 2,
+            "incorrect": 19,
+            "refusal": 21,
+            "error": 0
+          },
+          "refusal": {
+            "correct": 1,
+            "incorrect": 0,
+            "refusal": 44,
+            "error": 0
+          }
+        }
+      },
+      "new_response_validation/operational_v3": {
+        "n": 150,
+        "accuracy_failure_wrong": 0.9,
+        "macro_f1": 0.9,
+        "balanced_accuracy": 0.9058201058201059,
+        "cohen_kappa": 0.8486682808716706,
+        "confusion_matrix": {
+          "correct": {
+            "correct": 54,
+            "incorrect": 9,
+            "refusal": 0,
+            "error": 0
+          },
+          "incorrect": {
+            "correct": 2,
+            "incorrect": 38,
+            "refusal": 2,
+            "error": 0
+          },
+          "refusal": {
+            "correct": 1,
+            "incorrect": 1,
+            "refusal": 43,
+            "error": 0
+          }
+        }
+      }
+    },
+    "split_note": "150 development responses already evaluated; 150 new response selections on the same questions and companies. Not a blind or unseen-company test.",
+    "primary": "Three-class agreement with published human labels; failures count wrong.",
+    "paired": {
+      "development": {
+        "n": 150,
+        "company_groups": 32,
+        "mean_accuracy_difference": 0.18666666666666668,
+        "company_bootstrap95": [
+          0.10596026490066225,
+          0.28187919463087246
+        ],
+        "improved": 31,
+        "worsened": 3
+      },
+      "new_response_validation": {
+        "n": 150,
+        "company_groups": 32,
+        "mean_accuracy_difference": 0.12,
+        "company_bootstrap95": [
+          0.06474820143884892,
+          0.18045112781954886
+        ],
+        "improved": 21,
+        "worsened": 3
+      }
+    }
+  },
+  "external_confidence_diagnostics": {
+    "development/holistic_v2": {
+      "accuracy_cluster95": [
+        0.6453900709219859,
+        0.8309859154929577
+      ],
+      "n": 150,
+      "mean_self_confidence": 0.9742,
+      "mean_binary_confidence_brier": 0.2428513333333333,
+      "note": "Post-hoc diagnostic of confidence in predicted class, not multiclass Brier or a calibrated probability."
+    },
+    "development/operational_v3": {
+      "accuracy_cluster95": [
+        0.8931297709923665,
+        0.9666666666666667
+      ],
+      "n": 150,
+      "mean_self_confidence": 0.9491999999999999,
+      "mean_binary_confidence_brier": 0.060956,
+      "note": "Post-hoc diagnostic of confidence in predicted class, not multiclass Brier or a calibrated probability."
+    },
+    "new_response_validation/holistic_v2": {
+      "accuracy_cluster95": [
+        0.7021276595744681,
+        0.8471337579617835
+      ],
+      "n": 150,
+      "mean_self_confidence": 0.9743333333333333,
+      "mean_binary_confidence_brier": 0.208286,
+      "note": "Post-hoc diagnostic of confidence in predicted class, not multiclass Brier or a calibrated probability."
+    },
+    "new_response_validation/operational_v3": {
+      "accuracy_cluster95": [
+        0.8449612403100775,
+        0.9452054794520548
+      ],
+      "n": 150,
+      "mean_self_confidence": 0.9501999999999999,
+      "mean_binary_confidence_brier": 0.091562,
+      "note": "Post-hoc diagnostic of confidence in predicted class, not multiclass Brier or a calibrated probability."
+    }
+  },
+  "semantic_stress": {
+    "planned": 60,
+    "records": 60,
+    "complete": 60,
+    "scope": "Constructed synthetic monetary and semantic contrast set; not real-world accuracy.",
+    "methods": {
+      "legacy": {
+        "n": 30,
+        "accuracy_failure_wrong": 0.8,
+        "equivalent_accepted": 2,
+        "equivalent_planned": 6,
+        "semantic_or_magnitude_errors_rejected": 22,
+        "negative_planned": 24,
+        "by_mutation": {
+          "equivalent": {
+            "n": 6,
+            "correct": 2
+          },
+          "tenfold": {
+            "n": 6,
+            "correct": 4
+          },
+          "period": {
+            "n": 6,
+            "correct": 6
+          },
+          "entity": {
+            "n": 6,
+            "correct": 6
+          },
+          "forecast_as_fact": {
+            "n": 6,
+            "correct": 6
+          }
+        }
+      },
+      "anchored": {
+        "n": 30,
+        "accuracy_failure_wrong": 1.0,
+        "equivalent_accepted": 6,
+        "equivalent_planned": 6,
+        "semantic_or_magnitude_errors_rejected": 24,
+        "negative_planned": 24,
+        "by_mutation": {
+          "equivalent": {
+            "n": 6,
+            "correct": 6
+          },
+          "tenfold": {
+            "n": 6,
+            "correct": 6
+          },
+          "period": {
+            "n": 6,
+            "correct": 6
+          },
+          "entity": {
+            "n": 6,
+            "correct": 6
+          },
+          "forecast_as_fact": {
+            "n": 6,
+            "correct": 6
+          }
+        }
+      }
+    }
+  },
+  "usage_lower_bound": {
+    "unique_successful_request_traces": 1755,
+    "fallback_trace_digest_count": 0,
+    "input_tokens": 6102531,
+    "output_tokens": 708134,
+    "total_tokens": 6810665,
+    "uncached_list_price_estimate_cny": 8.935067,
+    "price_assumption": "Hy3 listed 2026-09-08 input CNY1/million and output CNY4/million; ignores cached-input discounts, free credits and unlogged failures.",
+    "price_source": "https://cloud.tencent.com/document/product/1823/130055",
+    "scope": "New brief/grounded/external/native/stress experiments and saved live browser calls; request hashes deduplicate reused drafts and repeated copies. Not an exact account bill."
+  }
+}

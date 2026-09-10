@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00684",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "878a6fa7d936484bfb7751d9f59e05a0dee1915a159f543059874d1ff5e2233d",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "f5fdad7ccd7025866101eb44b8db53c764d81c33eaea1689a88dffe5a353f033",
+  "started_utc": "2026-09-09T17:45:10.134179+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate claims gross margin improved in FY2023, but evidence shows gross profit fell from $2,820M to $2,725M on slightly higher sales, implying margin decline; reference states slight decline of 0.8%. Candidate also gives contradictory/inconsistent margin figures (18.5% up from 19.4% is a decline)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c7155a58a2800aed421c6b5bcc10af153a5ceffdbafacab34ddc285c1621fa18",
+    "latency_seconds": 5.72,
+    "usage": {
+      "prompt_tokens": 1260,
+      "completion_tokens": 93,
+      "total_tokens": 1353,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bd0004f012275af423b4f00c018e28f9bdcc78b47d5c218cecacd68c9b8515d3"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

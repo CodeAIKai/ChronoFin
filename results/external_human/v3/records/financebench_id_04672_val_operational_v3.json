@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04672",
+  "uid": "financebench_id_04672_val",
+  "split": "new_response_validation",
+  "company": "3M",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "612c9e030839725680b2bb441d5d8e941e206d37e0b2f7de74a9712fad848716",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "262fd33bbf6ffcf4dc158301c1e1294f22b7de8982e42b3cc074f4753d85e797",
+  "started_utc": "2026-09-10T01:32:27.432205+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Here are the key points I gathered from the financial statement notes regarding derivatives",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate summarized derivatives notes instead of answering FY2018 net PPNE. Evidence balance sheet shows Property, plant and equipment net 2018 = $8,738 million = $8.7 billion, matching reference 8.7, but candidate gave no such figure."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8fa74456499beb528d189e252783b79652d6f5eb0027f96fb5a5456afce3acf5",
+    "latency_seconds": 8.513,
+    "usage": {
+      "prompt_tokens": 2902,
+      "completion_tokens": 117,
+      "total_tokens": 3019,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5d2e88e4fc2220d04a102b2c335c3713b44c20fef127b330aa7fe766d16507aa"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00601",
+  "uid": "financebench_id_00601_val",
+  "split": "new_response_validation",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "3c68f29a1d4520c3f5f6dd1e7f7f9e91eb8228ed4ffc7b37ff2971b1f989f551",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "ea6336f298a7fc77d4221cfc0031ff680b7513f68601f94733fd27a1d663c9e9",
+  "started_utc": "2026-09-09T18:06:49.502307+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers that lower marketing expenses and leverage of incentive compensation due to higher sales drove the reduction, matching reference and evidence (FY2023 = fiscal 2022 per reference). Additional context on offsetting deleverage is consistent with evidence and not a refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8f48db3863e1e2f4b80f5ab196491a30619d413d83a1132dbe3da330b232348f",
+    "latency_seconds": 5.968,
+    "usage": {
+      "prompt_tokens": 1887,
+      "completion_tokens": 74,
+      "total_tokens": 1961,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "60df6ca3037385e7439c0db1f50b5dcc7df945b7487ca6a5f82c84125aa2c958"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

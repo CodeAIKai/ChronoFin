@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04735",
+  "uid": "financebench_id_04735_dev",
+  "split": "development",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "d8ac00941788c3a11cf78ecfc6e234c20ef979bb1bdeab61b63d30e11812efbd",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "ba02194d24bb1bee1429d9a20e53c3f8d2c6bca197bc92ab269821c38821e30e",
+  "started_utc": "2026-09-10T01:32:35.948595+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "/s/ JENNIFER STRINGER\nJennifer Stringer",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate output is a dump of signature blocks and exhibit index from 10-K, not an operating cash flow ratio answer; no calculation or refusal present."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e4de2c2b95948aacebe0c99eaa0f4ef4efe20a4d813a63f3135e4d4d88dd615b",
+    "latency_seconds": 8.516,
+    "usage": {
+      "prompt_tokens": 7001,
+      "completion_tokens": 94,
+      "total_tokens": 7095,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cc9d93a5886fb26b38744e514fb4812899aad53c44f2537112e4366881aeab33"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

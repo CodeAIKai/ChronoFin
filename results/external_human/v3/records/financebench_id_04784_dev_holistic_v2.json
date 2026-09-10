@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_04784",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "52660e29054d6d9badb63fd05a3aeeabe2499c29ffda30c54d5f1ffb1ef589ba",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "c1d777b85d6504602c6d9b033eae14ab58292750e6cc0de8555f0217ac951a51",
+  "started_utc": "2026-09-09T17:53:48.262564+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate computed FY2019 margin 21,957/514,405≈4.27% and FY2018 20,437/500,343≈4.09%, difference 0.18% rounded to 0.2%, matching reference 0.002 (0.2%) using evidence operating income and total revenues."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e4cf7dcdd07fce2a7a5f970fcfbef71656bc6cba18b92a61abf5063438f5dfe8",
+    "latency_seconds": 5.722,
+    "usage": {
+      "prompt_tokens": 2041,
+      "completion_tokens": 89,
+      "total_tokens": 2130,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1727a224b18332bf222629c11830cc6c05e4d82ab564726ff3bb5557ba052956"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_04784_dev",
+  "reused_from": "results/external_human/v2/financebench_id_04784_holistic.json",
+  "parent_sha256": "fa4deeac4284fad973507f5b4166864cea0d8f3bc0689665dd5039446bec8498"
+}

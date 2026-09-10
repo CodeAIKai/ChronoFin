@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00476",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c963467d3e55fc121c5607e8fb6a51dc569a2d6c5dd237e6c7cc88caa666783e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "111d433e03a1448d5dae5cc12c95f8fd4c0486855d27088f3790d75e4a4e5af6",
+  "started_utc": "2026-09-09T17:32:46.564497+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Question asks for debt securities registered on a national exchange under American Express as of 2022; reference says none. Evidence shows only Common Shares (AXP) registered under 12(b), and 12(g) securities None. Candidate gives general debt info and never states none, failing to answer requested content.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate discusses American Express debt entities/facilities"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate uses 2022 figures consistent with question"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate uses $ billions, not asked to convert"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate does not state there are no debt securities registered on exchange; provides unrelated debt details"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows only common shares registered, no debt securities; candidate's text not responsive"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3cef88561159d5568e8e9ea9ef544ff9a6fec1afa7adb416c342ee558cd93b07",
+    "latency_seconds": 3.16,
+    "usage": {
+      "prompt_tokens": 1911,
+      "completion_tokens": 240,
+      "total_tokens": 2151,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cf7890bb59544e2a960868c1e8526a071077e17065404f0d0a76a9a5bb7a4677"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

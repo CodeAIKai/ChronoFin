@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01488",
+  "uid": "financebench_id_01488_val",
+  "split": "new_response_validation",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "62f7926ea367ee7008603759dce3eb35722b0b9239ff2619d6f5b947bbd80f8f",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "f6fe4a43b65d2b2c2ee0ef1eda43a7b45cb457b60bab4a62e700bf7c57656ed6",
+  "started_utc": "2026-09-10T01:26:52.991546+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the business segment of Johnson & Johnson (JnJ) that will be treated as a discontinued operation from August 30, 2023, onward is the Consumer Health business",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate identifies Consumer Health as discontinued operation from Aug 30 2023, matching reference and evidence stating JnJ will present Consumer Health business financial results as discontinued operations after Kenvue separation on Aug 30 2023."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "14be564dd5af0f71e164349a5337f09d6ed68588480e5a3ed725f9e6942dfb6c",
+    "latency_seconds": 12.521,
+    "usage": {
+      "prompt_tokens": 1632,
+      "completion_tokens": 129,
+      "total_tokens": 1761,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8b24133cd29a9f312460fcfb48353407e0b13e37f394c19a07ec70ec72dfbe41"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

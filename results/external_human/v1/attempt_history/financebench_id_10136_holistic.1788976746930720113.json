@@ -1,0 +1,14 @@
+{
+  "id": "financebench_id_10136",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "a28f4cc20380037d00767cde8646e94bde2d69902d6b04d6d1134c5951536ee6",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "8ba67ecd668170b599fe4974f4905e052b4f493021318ec34a32eb1dc6b24e77",
+  "started_utc": "2026-09-09T17:35:16.404169+00:00",
+  "status": "error",
+  "error": "Hy3 request failed after 2 attempts: Hy3 HTTP 429: {\"error\":{\"message\":\"The request rate exceeds the current model RPM limit 60. Please reduce the request frequency or contact Tencent Cloud support to request a higher limit.\",\"message_zh\":\"请求速率超过当前模型 RPM 阈值 60，请降低访问频率或联系腾讯云售后申请更高限额。\",\"code\":\"429001\",\"type\":\"gateway_error\",\"request_id\":\"[request_sha256:89b38b6469b09ce7]\"}}\n"
+}

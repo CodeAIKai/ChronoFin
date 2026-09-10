@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01279",
+  "uid": "financebench_id_01279_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "5c670fcb3622cc9696ea070d6f374a740aa10c80a5652f89eb444e9e9d370ee7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "8524c3c198e0d132947973d9328203b6e13b6345d33315ec16ceeb8894875188",
+  "started_utc": "2026-09-09T18:10:27.327521+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "AMD generated strong operating cash flow of $3.6 billion in 2022",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate summarized only operating cash flow ($3.565B) and never compared to investing ($1.999B) or financing (-$3.264B), thus failing to answer which category brought in most/least lost cash. Evidence shows operating $3565M > investing $1999M > financing -$3264M, so operations brought in most, but candidate did not state this comparison."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "46358a6db9b36c3ed45ba37832c588c7b7868821cb3dd0bed9951c87a0e1695b",
+    "latency_seconds": 7.393,
+    "usage": {
+      "prompt_tokens": 2351,
+      "completion_tokens": 146,
+      "total_tokens": 2497,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e2d6be42a51621d280558e11347caa04086bd67754445f80f59a0fc7beca7fcf"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

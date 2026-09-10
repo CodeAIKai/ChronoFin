@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01346",
+  "uid": "financebench_id_01346_dev",
+  "split": "development",
+  "company": "Corning",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "be8c0fa9c4a2567aa294d408b809c7eebbfc835e373a595077095de4221e4fc1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "2db44c5801c998a107a63cb3bcc1569c414475ed5c16b94f96a95dcb5c1458c4",
+  "started_utc": "2026-09-09T18:10:48.122990+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide information on the effective tax rate change for Corning between FY2021 and FY2022.",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and asks for external documents instead of providing the rate change."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f5d5444630251d746891716d831371335914e3fd2594761a75139828d2660f75",
+    "latency_seconds": 9.044,
+    "usage": {
+      "prompt_tokens": 2108,
+      "completion_tokens": 90,
+      "total_tokens": 2198,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ac99b17cbf12f7eb1948074261e9ef2fc1636dc53165a286f661e2f6b533d78c"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

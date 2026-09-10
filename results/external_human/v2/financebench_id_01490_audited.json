@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01490",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "de5fbb3d7a53b7bd524c880c5e3c936fdab0d56923835a19fd8f0441722c5631",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "6fb721452cbc5bdcd001e01a8d34c9ac5f936728e2c4488ef4f1853b1242f7be",
+  "started_utc": "2026-09-09T17:49:26.659735+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states JnJ gain from Consumer Health separation as approx $20 billion as of Aug 30 2023, matching reference and evidence (exhibit states ~$20B gain in Q3 2023 from separation finalized Aug 30 2023).",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "JnJ / Johnson & Johnson identified correctly"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "As of Aug 30 2023 / Q3 2023 gain from separation consistent with evidence"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Amount in billions USD as requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Approximately $20 billion gain matches reference and evidence"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence explicitly states ~$20B gain from Consumer Health separation"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ad34ccc74b8c4054db1cc95599b33ab6cf452c22b5ecadcb721635b6a00c01dd",
+    "latency_seconds": 9.804,
+    "usage": {
+      "prompt_tokens": 1775,
+      "completion_tokens": 239,
+      "total_tokens": 2014,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ceca697b74f35b64740b95fa9dd023045822311494de2c427e9170a1217b9ba1"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

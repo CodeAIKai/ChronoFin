@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04660",
+  "uid": "financebench_id_04660_val",
+  "split": "new_response_validation",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a1a3a106569f10d521dde43b6c1f49183b144a64306d4bc5d32bb2de2e6f8fb5",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "aba403ca72077f2d91081667678b8fdc66d3c9eae75aec2b1c31db120a04f287",
+  "started_utc": "2026-09-10T01:32:20.087881+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds the requested ratio, claiming data is cut off and asking for relevant data, rather than computing 1,001,425/577,464=1.73 from supplied evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "24c1bb85a6cd372ada62303553b52950b62dbad4f6c4af32445805bdf728ca72",
+    "latency_seconds": 7.343,
+    "usage": {
+      "prompt_tokens": 1955,
+      "completion_tokens": 61,
+      "total_tokens": 2016,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "823f0db3920f3380bad42b891f32379b68f40b65049d3fccb215457bb34e036e"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

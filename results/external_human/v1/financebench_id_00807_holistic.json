@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00807",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "eb1ecd981eb8cc7bfed771778efc85ce1a923a2fb58e865dd4995b908d08ff43",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "41ed74dd9b7f88c081dc8b305eccaedf22b9eb8aa20b08b629382e246ae8867c",
+  "started_utc": "2026-09-09T17:33:21.404040+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computes quick ratio as 0.85 from balance sheet evidence, but reference states quick ratio was 0.96 by Jun'23. Candidate's calculated value contradicts reference and evidence-based reference metric; also fails to answer 'No' as reference does regarding healthy profile."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3083670a1965a82c3bf8f5a3021dd930b5ccb8667a5c5dd0a94b7803265762f8",
+    "latency_seconds": 2.662,
+    "usage": {
+      "prompt_tokens": 1967,
+      "completion_tokens": 77,
+      "total_tokens": 2044,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "54e614f807f21b20dd28de9b0a472743af355c842d8890453a5fd97ed7bbabe8"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_02049",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "d8c7f9a34e581031c60b1491f92cf15bb0eda2594ef046d965dbb0f48773a346",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "257dc56cfd66db779f0dd0c467df55b7901a48899d806e9255b91354158c29e1",
+  "started_utc": "2026-09-09T17:50:42.034604+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers 'yes' with supporting VaR figures (54M FY2022 vs 47M FY2023) matching evidence and reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "43260abd80355af7483fa8efb6b4b611d40ef62a159602592b86408edef85dc9",
+    "latency_seconds": 6.559,
+    "usage": {
+      "prompt_tokens": 1955,
+      "completion_tokens": 52,
+      "total_tokens": 2007,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "da0a252eb0ff78cb3c1ba0af97cf8e6db10fe31bb9a6c74836dae5874664c3ff"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

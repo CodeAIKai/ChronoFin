@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00521",
+  "uid": "financebench_id_00521_dev",
+  "split": "development",
+  "company": "Ulta Beauty",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "52ab88a6c2bc24bf2b3dbb58a530d5c9a901f6c31585cdcf662ae6fd2bd12fe6",
+  "started_utc": "2026-09-09T18:06:17.011897+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "[END OF FILING]",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate output '[END OF FILING]' is an unrelated document terminator with no answer about Ulta Beauty acquisitions in FY2023/FY2022; it is off-topic and does not address the question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f7c23d50e378269121d1264e3853ac8a55a3924e6189b2acc1d15cc2e7f42207",
+    "latency_seconds": 5.816,
+    "usage": {
+      "prompt_tokens": 1755,
+      "completion_tokens": 99,
+      "total_tokens": 1854,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "044ec0902e1418f0983480645df6bc74255db731f16957e86ff80c7b2ef4d97a"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_08135",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "8891a6097fbc8afd2eacd6dd5d8310d681a3cdef731a952f5e09d22f8f7e0d46",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "ff4071c4ed0162a401e935b118d76fb41fca9ae85961bf4c1580fd1181259fd6",
+  "started_utc": "2026-09-09T17:55:00.013299+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate computed YoY revenue change using Total net sales FY2016=135,987 and FY2017=177,866 from evidence, yielding (177866-135987)/135987*100≈30.8%, matching reference 0.308 (30.8%).",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Amazon, consistent with question and evidence."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Periods FY2016 and FY2017 used as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer given in percents rounded to one decimal (30.8%)."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "30.8% matches reference 0.308 and evidence calculation."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Used Total net sales line from consolidated statements of operations in evidence."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "be2bdaa3c9684b684585296e5f704dd70b3c9a7111bdae219511d69b0577a78d",
+    "latency_seconds": 11.466,
+    "usage": {
+      "prompt_tokens": 1797,
+      "completion_tokens": 250,
+      "total_tokens": 2047,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "af5c296ff394ecb0d2d165c89017b698dd89a566fa0842f8b64189e25079f630"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

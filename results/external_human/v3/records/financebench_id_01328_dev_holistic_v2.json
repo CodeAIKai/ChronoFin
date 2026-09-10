@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01328",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "81b7e235d2f53bbb4944b0ffe2b6068579e03fe52958bc21659c8fe03e06f5a3",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "4f6f7ebba22c793b65d4a390fb2af4e145841a91f5ad479c79744a74187a66b9",
+  "started_utc": "2026-09-09T17:48:36.223124+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds the requested answer, says it cannot access data, and only explains how to obtain it, stating conditional 0 without providing the substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1fe1b8968865c36988b053d970443e2200f30c4644eeeb5c4f126adc6e4f1def",
+    "latency_seconds": 6.913,
+    "usage": {
+      "prompt_tokens": 1627,
+      "completion_tokens": 53,
+      "total_tokens": 1680,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6ba670ed5385ad14ded84f519c0be1d4b2371e404a21b2fc0044145d7825dbfd"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01328_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01328_holistic.json",
+  "parent_sha256": "08a21c88d9c2f039da2359db6b258be41b8ea51db0d74958914747cf7ff06cf9"
+}

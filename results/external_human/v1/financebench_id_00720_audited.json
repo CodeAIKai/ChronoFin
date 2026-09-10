@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00720",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "36c7be23558c700c1447ce1939e6f34aec43492628f3703eb6a35e4fcc142bce",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "69300092a1f833412f0576c43edbc5eb9b549bd67f9a68cbb9e32cafdae267c5",
+  "started_utc": "2026-09-09T17:59:58.079465+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.9,
+    "reason": "Candidate did not state that gross margin is not a useful metric for American Express as required by the conditional; instead it suggested reviewing MD&A for gross margin and only offered a hypothetical explanation, contradicting reference 'Performance is not measured through gross margin' and evidence showing no COGS/gross margin line.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity American Express correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 / fiscal year ended Dec 31 2022 referenced"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No metric unit required as gross margin deemed not useful"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Failed to state gross margin not useful; gave hypothetical MD&A review instead of required statement per reference"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence income statement has no COGS/gross margin, supporting reference, but candidate did not use it to affirm non-usefulness"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4999ffc2d35512f8ed17a54d456053fb83df88b213bbfad64bbe46e267637dad",
+    "latency_seconds": 9.693,
+    "usage": {
+      "prompt_tokens": 2327,
+      "completion_tokens": 251,
+      "total_tokens": 2578,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9f5a1fbc8d5a6d36808e04a6e7376bd905bb37673fe8b341918e9ef7de7c47a1"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

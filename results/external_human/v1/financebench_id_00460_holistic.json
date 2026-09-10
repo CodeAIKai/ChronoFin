@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00460",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "aeea948243f8a36578937863422f3c265c19dfe324f903a4fc4f96c5711f3859",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "789d4f369ae0970634d0d97a75585dd04371ff29773364d2d18a0fc156b3cf27",
+  "started_utc": "2026-09-09T17:32:41.926066+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate states Best Buy stores declined from 930 to 907 (23 stores), but evidence shows Best Buy stores were 930 at end Q2 FY2023 and 907 at end Q2 FY2024, which matches candidate numbers; however reference defines total stores (982 to 969, -1.32%) as the change, and question asks number of Best Buy stores. Candidate correctly reports Best Buy-branded store decline per evidence, but reference answer is about total stores decline of 1.32% (982 to 969). Candidate's substantive answer (Best Buy stores 930->907) conflicts with reference's total-store framing and figures; materially wrong vs reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5b5cacfaa6900494497052e512a6fb3b88f9e2b174d8e1a7207d2b834f31577f",
+    "latency_seconds": 3.307,
+    "usage": {
+      "prompt_tokens": 2551,
+      "completion_tokens": 160,
+      "total_tokens": 2711,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "167754a19f7fdfa402fb2dd1bb72a311ab6e192d4e83616cdfe603146b875054"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

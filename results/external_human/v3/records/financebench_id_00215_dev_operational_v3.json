@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00215",
+  "uid": "financebench_id_00215_dev",
+  "split": "development",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "43cce23c0df3d545f6c2e25136fffcdee54e316d42c40f0484937b36cdd3d0a2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "bae9cc1339ffade351dc01b94c29eb179da47e928a801e52fbafa317e685187d",
+  "started_utc": "2026-09-09T18:05:00.802982+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Verizon can be considered a capital-intensive business",
+    "content_correct": true,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Candidate answers yes for FY2022 capital intensive using capex $23.1B and net PPE $107.434B from evidence, agreeing with reference conclusion that Verizon is capital intensive in FY2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "df0c072b0f4efaad653d3984eeb9dea2543d85b0bef0f425fd33431aab0d08ea",
+    "latency_seconds": 5.604,
+    "usage": {
+      "prompt_tokens": 3573,
+      "completion_tokens": 101,
+      "total_tokens": 3674,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "aa9b25f1711d3d14163023f53c4485c2f14ea752bfb7df010e2e7e7f70c99b33"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

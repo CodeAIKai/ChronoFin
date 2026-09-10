@@ -1,0 +1,683 @@
+{
+  "scope": "Only provider request UUIDs in error fields hashed; statuses, causes, answers and scores unchanged. Private originals excluded from distribution.",
+  "files": [
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00605_audited.1788976746851774734.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "1873ed993dee811e2026a00b30a4cdc7c3a6d2a1a2450f71d35ac4eba8c991b2",
+      "public_sha256": "bf3a9eafd299c965968d454755a776a8b8221434a8b1db40e2f8f01edde536b2"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00605_holistic.1788976746852029575.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "536fec278db7a12cf5c08593a481e134e31b01f05a6cb7a6cab6a0d52fddfac1",
+      "public_sha256": "f1eccf6faf7c944fc4461f6f3b6c27b55b3f60d143d4052bb8323268189f9afa"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00606_holistic.1788976746852193628.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "5828eb9e542fb939ef69da52316ef9681e9680fb1250388b615da73c14064194",
+      "public_sha256": "f97028a65b11791716ae03c8bac71513374dc128629f400039dc546503ece201"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00606_audited.1788976746852444898.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "dd8fa372b716623c444fc8d78d0b08ca32b877364000d313ecf244d6ba955b6b",
+      "public_sha256": "b20a0473e8513ec49c2ac0ce0db826bbcff6094724bd2b0ee25e6d42d044f3a9"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00651_holistic.1788976746852623550.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "1ab68861ae2f49f56feed044112275a5116ae53420751db43b15859fdc738bbf",
+      "public_sha256": "15acdb33ff91176a159f09e42961b6577144204901f4640055d821f8e4ab5021"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00651_audited.1788976746853232494.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "5a2d879518245496feb3afdb8e62bbd8c7020c52c856059ec2c7ebf804fee293",
+      "public_sha256": "abd901ae850ba057b42c71599aa93b61bae3050d8400c7549800810b41f6d60f"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00669_holistic.1788976746853380706.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "efb78348b133a95935dc30649e095baff854b4bb4e8bff100998ab365e75901a",
+      "public_sha256": "1d43ba5ea5af1c9094372432a23ee4da9a828f2988c0e1ef26164f29b471c98b"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00678_holistic.1788976746853521479.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "129c4f3e7b569c681d0a3b2412ad7d543fc5f0155b2eb25c11b00849c862d0ba",
+      "public_sha256": "ad85d7c46a7506f8fb6adaacb77600d67f6929b0821ed3209eea0575879ff307"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00669_audited.1788976746853655545.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "a1279b659b3ab98cfe181896c3b29d7780415a67be034ab0b25a5257918b69ea",
+      "public_sha256": "781cd3c5f5a7b7c475e45b5003de338d7b65e12fb2c66ba4b6e5fe76d4894069"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00678_audited.1788976746853788928.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "e1fd1befe96ed0fd51b1c1b9ee2a029bb599da42a1ca0406ed0606cda6a8010a",
+      "public_sha256": "6208a2101131cbf7a50b3745234d23cb29bfd95ac37f09c66ace9215d654c6b0"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00684_holistic.1788976746853923009.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "eb49438c3ff8621f9d37450f1a4b8d283cf03360f445d9e945f84068b069e7ea",
+      "public_sha256": "9c7e6a1aee0243a23eb836b581de10e018cec25a6958f1d894a1c62b8a3fee6e"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00685_holistic.1788976746854067997.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "3cd2552a3f08380b65db4c65507308e647c03a52ee37b4fa43773fb9995bd8b7",
+      "public_sha256": "b4ae257f9c7d3c517c23d89ac8318630d0e10be77b02a9d088339736849a90ba"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00684_audited.1788976746854201380.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "1576471ddbf3d23dd0186c89eeef5b3d9f66d79e31b57bc9f250d4bb53846a68",
+      "public_sha256": "23dd6a63cacc889e719f64e408118bd4bdf2d0e9c8a45629b7b9c54eb7391909"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00702_holistic.1788976746854329324.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "39d0cbae90fe1dc8b78e71a348fb84b07bf448f00274bab79b3257cd348efa46",
+      "public_sha256": "a0c3cd8f16aa35684865409ed2af86316349d88834836c21049fecb496b17dea"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00685_audited.1788976746854457950.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "0f2561a37ace7850f06a9d0b53cb340ff749067c6efb6f4a6e9450fd065fc82e",
+      "public_sha256": "0974520a13d1fadb15ebc7140a987fb3d6b010d6e40eaab364b0178f9fae658a"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00702_audited.1788976746854586961.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "6b4b682c7e8bf57583c2f5ecbbc5da0260456831caa5c9472759c2697662be2d",
+      "public_sha256": "b2f66577165888257eaab9c50946dc84458a09cadc7885d3389cccb18cb3d0ca"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00705_holistic.1788976746854715708.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "195612c9912638938d7fa847317dd1b7354bd474f2afcbbbef5d4c6bc98ff4d5",
+      "public_sha256": "5f8369485a8bcd3685374f0e1e570e4ab89edf09bd6296eb936aafd52b5fd59a"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00705_audited.1788976746854851724.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "d7d8232d44ab8ca8dba695b8a7f92ae80eed392197a067856c978673740e6062",
+      "public_sha256": "a4621022129c5ef5a030123de588e53b38b9af5f0036d82edcded058e9bf07a3"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00711_holistic.1788976746854979852.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "088ff681666a8039be22a522938558bc3bab864769e4ebb4a7749d30fd9695ec",
+      "public_sha256": "81ea8384c446eb668cdeaaa2ebb9103312d1430c7a01690fc7ed50f9882aa4c1"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00711_audited.1788976746855108760.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "61f18a5f6cced66e3896a5fd4394038b6724691ab5a37085893b6d04bccf9c2f",
+      "public_sha256": "ed31fa2784be836e791cc53e37aa6d03aa1f48b1d37a271faf335bdab419fdea"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00720_holistic.1788976746855241817.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "f3df291e46ed4635a26983f1a6b3561a5ceb74a5e3351a203e072937a213d414",
+      "public_sha256": "2e06dbdbc2bb625718b7766c14de1313c003abc6b8abc5894065146431bd7f6e"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00720_audited.1788976746855370477.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "c4657a5614b95f329abb6577381fca2bc515970640db423e3f99cefb3d7384ad",
+      "public_sha256": "72f857fb72aac78de2db700a6568308ecc767fac722a4900aa7a8a23e815dd70"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00723_holistic.1788976746855499156.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "57fcccbbb8fa01b179d0963c4e6f0255479ae27520c8c94922e6c684bb4f0f18",
+      "public_sha256": "de24eba16f25624802ec5ffd3628934fca10894dd4b80d66ffcb91e346f8d93e"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00723_audited.1788976746855627742.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "093aa1bc4fde9ebaa7458f5af8c6b5e92cc7e04b1c3d70ebc28817d2d2bf4005",
+      "public_sha256": "692c5cf04ce583a60f73471fb2c686edab1160ead8103a1c7309668932b47923"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00724_holistic.1788976746855760542.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "093fd7cf1b4b9aef2358a5d0c8ae3d5ea36085f6f955629d404d5ca717237c83",
+      "public_sha256": "5ff6820a7d174c225806019c1349b5a165366bd9e88bfd77e5db434374255171"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00724_audited.1788976746855891967.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "1a8eef3c01eb3b754219a796026ff388471db979279caaace17f8a4d5af46abb",
+      "public_sha256": "950be170407444c3a68009f221c19236b1471c554dc7a7300622a2cfdeea93af"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00735_holistic.1788976746856018969.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "c10814a2d48952836cd698c42e6a5f7821830cad441e6f9a96099efe8cfede2a",
+      "public_sha256": "973b21bcce54cc0814c4585f929f193c7d05996e2ebaf02656b1218cc9a3c3e2"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00735_audited.1788976746856151017.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "afcd0c1eb0ffb3a8f73dee3a695bbfcef32c242a73b69e35a751dbde08d747cb",
+      "public_sha256": "d27484a1ed9e8f2797beb851cfb019c46a963a11f98a5e38dfd14d3e58731f69"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00746_holistic.1788976746856279349.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "486cb053f2a16f0af54e625346335c326e9e99734fd5c0903731e9ef759c8ce3",
+      "public_sha256": "34ed010b1764987d92ce7bf498bb5c1c67add249b9c2eca42a29459aeab40d93"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00807_audited.1788976746856623176.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "c29c0d78f6bdbf6ba0bca760be235b1cde5f7a6c12c77fbe5d5cdbbb5f9bfe64",
+      "public_sha256": "21ea13f5f0f65e58cab5924dc700782fff40f12fb3e0b2b514d8a80d8e67d633"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00917_holistic.1788976746857002127.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "705b9c9d627276f2444ad6cfed3ffe2b20b0969ad3642cababc1459126fed81b",
+      "public_sha256": "dedd616a53ded9ba24d3bcc97aaae834669db1b54e3af138d4263a84d8e75bcb"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_00882_audited.1788976746858379862.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "75fca8d4bce9921cd6f57336ee1e771b6f48c44b3a36f96417135449569954dc",
+      "public_sha256": "ca2731b6d67c75b5394d0dd5b8997106ab5a5a421eacaa632603060cbbb21bf1"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01009_holistic.1788976746858701170.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "754a578c3a52bc45dc95cf985e44cac9d0fe182938d833e74313d3bd6871d7c7",
+      "public_sha256": "a96cde5cc0d0139e2d26b68fbb9a60e33c571dadfd71a4a5bc815f1dcbcfa08f"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01009_audited.1788976746858833036.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "a88addd693da58d77815d5706b7c8bacb79c0bf81352df979828057283b6da99",
+      "public_sha256": "c17a4d5bdc4d6d162d294041d7b8f765b5e28fcba2c219489e6e4e592fc6d309"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01198_holistic.1788976746859301756.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "a4e02ea922df5eceec01140d4fa1bcb49c6058598fd0384cb3b7ffa301680426",
+      "public_sha256": "f2cf1a0800aa5e275f20922a048a01bbd57c92eb3d3080a174743ee8ec8e36cd"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01198_audited.1788976746859460580.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "e5a90f32171786af9e447811057e589d220a049bddf82ed38d0257b267490154",
+      "public_sha256": "205c12702730b399118c8322257c14263d4dd33a62d103e0912fd0e0c1b3cb70"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01226_holistic.1788976746859586808.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "18643722e4d80adf425ea388253d5b044329332f2c294a056705f6f7ab8bc9a1",
+      "public_sha256": "4b0e50937c3e591ff2a30c6a05fb3a4ca1b1006d9b366ed41a511c15dc230eca"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01279_audited.1788976746859851510.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "6d2dc7a818b66da921b624c67bacd15b5c08b67540348e80096ad50f53e6b8bc",
+      "public_sha256": "6fa16de58ffcb9db6ede6ef43c64a0391be4f2ea57c5c8f2de938d67c6a7ab1d"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01484_holistic.1788976746860346661.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "f7cdc4402b9301627484071e8a163c44b835088d7f9b8db70ab863bd81ea125e",
+      "public_sha256": "284a4d4127f81bcac1205ebc1606c52094c9509c0dbfc7d353421a5725696e83"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01484_audited.1788976746860467164.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "ff32d8a5f832f2a20a132ca81ccb4719ad2a730ca080eb61e0f5ec62f08cc2c6",
+      "public_sha256": "c6514aba3eb52f626c518435aef35ab1583e5ee493310181ce17e326532fbfb1"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01487_holistic.1788976746920681251.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "3377f45a58dacf84185f373a68daa0f782842a03c23cf05acf91c790c94485de",
+      "public_sha256": "24522ce53ef5b74b32282be19c67a9595a3e41775222a3e0562ef86310ecb514"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01487_audited.1788976746920917786.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "416bb3b9d984cca41ab6646d79ded3bf8eadfecff08eda5bd5f4ad7b1d4d458b",
+      "public_sha256": "3544583b0547c08a0482c25462fe4ea0af8ddcb067f309fa039125add9a57982"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01488_holistic.1788976746921057209.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "4e2ca9de5c2049c09e9c874745ca211cc19178c0985c1c4a94b5f8a2b7a4a483",
+      "public_sha256": "624628df46270dcf0dd20dfb3fb3a16177c3d07cf7bf29073827ff55e1f1a533"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01488_audited.1788976746921186365.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "b6519bafa6e9b4cd007920f179851ca9b1438cd9bdf84ce1ac5bdc2dee2fa897",
+      "public_sha256": "d5947aa6b1915caed482e58b23824710c27903e6f9717a4e0bdcd15f8233eb08"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01490_holistic.1788976746921388092.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "78816c04f113f6bdc8f5828473fae2dd61e55be0e561b7cd18b20122d45b4bed",
+      "public_sha256": "01aaaac1ec435d110d1398b9395425bbf9da320cafa1e7a3318334880ce9c7ff"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01490_audited.1788976746921527587.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "faca71e283016172ed714fbcad5a40cfc70c94cd25c50ee69edefce0cf4965df",
+      "public_sha256": "c82968ad9ad38d914e588b4ee2471ccdda3d524fa159eb90c4a8f86135bca437"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01491_holistic.1788976746921645004.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "8a5ae5beb804288609cc6cd817de60a0215f93cc2950b86948453509bd5ef687",
+      "public_sha256": "f5488704684efadee74dce562f51b868a1ed3613e8e5115e157c9dc6d6f37987"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01491_audited.1788976746921753232.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "709844e99d0b0ecefd972a06a2190d305ab8a6e960c67056f494783e1497ecd6",
+      "public_sha256": "9e523ca79423cc540d62112d9939e7de9f307302c2bdf5c10a7895068d63fe30"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01858_holistic.1788976746921865395.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "c479aee1f60b623442dc5ee64caaca18fc34956020b844fb7a1c9d3144bc9564",
+      "public_sha256": "3b9c700250cd2be42d928989d61c0f3f1f0bc7b284ed6740015f05aa784a9217"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01865_holistic.1788976746921975229.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "7e102eb210b4a7ec4f8cd9a979ba2504aebf2e45f058ded296f0066feb68a66c",
+      "public_sha256": "5322778885d52fc6d5973bca5ab1787764c88e37cd99f3c639f7ec28c5e5a468"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01858_audited.1788976746922115985.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "dffbadff4f205e933e1b8c44b1d9df0f4ec0ebdad8217cd865377be80986e855",
+      "public_sha256": "98d318740437464e9a54bf60f660c8e9a0b5313d64b2f72a5247cc1033cd78ee"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01865_audited.1788976746922225743.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "1a4f3cdc167b7f97dbb1b71e701ed2120821c85ee10265eb79faad534a580a20",
+      "public_sha256": "b338fab2421ee5031f93757639fc532dc7f3728ae62089fd9e56f2b6188cc1e2"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01902_holistic.1788976746922336870.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "a278bee00fb870c4156df78e7a9da7cdf434a66cac77bd3bed5545cfbb9ee2cf",
+      "public_sha256": "5fb07620d83b7b79636b088a15d1459df24cdb622b77923deb516e64ea9ec272"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01902_audited.1788976746922445917.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "c9b0774ad6ad91b5f9e4b6f9961b26348fd329d8985fe5e15720810be7dbace0",
+      "public_sha256": "3e017792bb2a6998720cd98a2bb781835b2da2ea87722743f3aa4e1e53853ef2"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01911_holistic.1788976746922551795.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "7cd516d46eeea6a11a5959f94b04977f06fb97ab75fe1d1e1eec932d6583d16c",
+      "public_sha256": "baf6f659c8a766a8bf21e5fba3a4b852e4450d6b7b849beef224bc46f73b75bf"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01911_audited.1788976746922657583.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "29c47c76f970a45ae2cb538ca8eecb2f6b503b5c4f481ec8454bf8bacf1310f0",
+      "public_sha256": "5d5383d20a2cd6b90ef74ff974ee1370dad278ee5d64765e0c99e3683597aa19"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01912_holistic.1788976746922780829.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "dc70d0de0c865dddbff34b483d7babc03fadeb08b0fff3fe9a7027c89ee1554a",
+      "public_sha256": "caac63dc151e784d30871b86589305453810962f40bb7c940ffb1dd873b717ac"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01928_holistic.1788976746922888678.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "89570e19d92e701171faa4bb5fde8b45046567048bc0de59cd406ef2748bea48",
+      "public_sha256": "2e0039cfcbb6d3a8d5f99447d6cb59ec01ae71c032a232f7a5b8e64993611651"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01912_audited.1788976746923000273.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "b8dbc767d7160a4ccf479482e4981da0e510a4e8056d847905c4a263be5c2021",
+      "public_sha256": "a199ae7ea21674d99b631e0355db9c57396c5dd831e45c90d52f423a7f0f8134"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01928_audited.1788976746923108016.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "2606808221eb3869580630fdf8286c6efbd5d8c0ef57439dae88ab169cfe23de",
+      "public_sha256": "e95419ad0223079f1e090d0a5c23f319c6dbfa33cffe5804e7ebf3ac4be7ef95"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01930_holistic.1788976746923213087.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "1442f1efbc06e9884be033d05f020bcf7963a75b81be2bcc4f668c2d5bb58a56",
+      "public_sha256": "4f4fd0f9f9234704382ee8ff2722f10e51c7382aa4b53cb9da8c5fa6b038bc20"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01935_holistic.1788976746923326672.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "2a10fe15018d879820c290c3195fc5c74ffd2e8a531730c42fff5642bbba6b92",
+      "public_sha256": "408a127f4a29f4b26cd291af1ac15e480b24139fcb8403feb32095bfb2cebbec"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01930_audited.1788976746923435159.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "656c1212112cee1e98ddfdf1506a435b57629c34f6f83c7cc4137e060f4e2b7e",
+      "public_sha256": "8b70bd1a0c21e2113d407b10e6f4f183608d7460d90464cc442a6f3b49dea55d"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01935_audited.1788976746923538997.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "08412fe619801c30875202bd2efa8b660d84ff8bd9cc959ad4b9f235a7fc1472",
+      "public_sha256": "c1e1b9868e882bcfc574d3e162911829518c6a33147a8a53750da89b624dc9ac"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01936_holistic.1788976746923646915.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "a51fa1a7241e3f20bbe12cef20e3c273369f53be77d863ab3a75fcfdc7199fb9",
+      "public_sha256": "0e31019df2214a467c72cd16df1777c8d13d662da636e462407e8c22582e019b"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01936_audited.1788976746923753049.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "0642d08380e06713d725a8c09a1fc1a99f36afb1ef8a964acb208d82c47bc585",
+      "public_sha256": "9ce176b32c377fcf45eb31ca675004945b2d148373bfd536b68a6cdf5010444c"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01964_holistic.1788976746923858722.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "647ecb74a5d1db9efcd27bf27766ca6750eb6d9fd58e5578dfbf752907024800",
+      "public_sha256": "1a8bd56278d814e9016cc6d73bc289cbb0104df5fb8e0d4262b5608fae108358"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01964_audited.1788976746923964961.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "83a0e35e61aa00a863c6ae05327e57113fdb03ac5e9e760ce48c98ca2bf42525",
+      "public_sha256": "155f954d6e3bc5f300f73b0248b08b95b58283b2f073de943269e91a8e30652a"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01981_holistic.1788976746924074162.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "419dad4967efc77e842d49d8bb1f6e5b546b1040b309428b0d20058021883bc2",
+      "public_sha256": "32ea3e8d81255ffcb426b5d4f3fac783d8250b80771c0b2ff83312914c39bfef"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_01981_audited.1788976746924181892.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "a407124e01290eac2103f8611931d058024edb528ce289fb3acf1456db20373b",
+      "public_sha256": "09a06cf20c517178d69534913ce64f5f65f3cadba93e0668fca696a52187a149"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_02024_holistic.1788976746924285760.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "290afd1bda6cc9a32a83ca02ce8b3125f6206b5e4b84b16385e08e1e061b07f5",
+      "public_sha256": "b1486cb219e750a69061c2562b233f68480427f01cb0928c624570a12e9b0fcc"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_02024_audited.1788976746924392634.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "eb871f1c9a825ff0f7880af9d883492abac19475368245f4e74d807e7a85be38",
+      "public_sha256": "554fe51dc7463026f649908225df1f44a835de73ed5fa2001782e2ecc3865d26"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_02049_holistic.1788976746924499101.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "8c1d553492b4b3af0d0bacc56a7a89c41a839dcf45ae729ba972e540337159f3",
+      "public_sha256": "2dd89da64ffa05222e33c0ab765a983d1dec73d7c2087ebe3fe3177683f2fc43"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_02119_holistic.1788976746924620858.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "a5585ce891fd6219caa14b731de8dcddeaa7524d2dd51471b51a6e9ed1fa785a",
+      "public_sha256": "d21fd27391adcdbea9a89d2316756f1628c180499d0b66735eab848ae30d0903"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_02049_audited.1788976746924742015.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "47db713d329ed6b701d83775cb0d8307527915ce41b31e99d044b3b4738767fc",
+      "public_sha256": "a5b9c5cf5f6dfce23530ad9e4da7126863da883185523326ea4a7ca715be57d7"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_02981_audited.1788976746924995145.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "4bf5066f9988b7b59d06435b546d1fe2149f525ae0942842548f18f3ee1169b8",
+      "public_sha256": "aff385a9adc05bb88c61550417b26452649c80fc02e21246a8c7cdde22e91b26"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_03282_holistic.1788976746925313892.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "b107d0c971a0e62376209cee228ee97364141c82cf44bce6c840975b3c571733",
+      "public_sha256": "46b417e8be0647157f530f8084c9e542cb7c09c8ad1d3df48e59b8db801f44a0"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_03069_audited.1788976746925432739.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "d98a07261c70290e69a64e70430b1cb816e27e8060a19a2253e89e795e94e6d3",
+      "public_sha256": "862f63d0281c22619032ea760027307e7b85eafc9576142391ffafc174e7227b"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_04103_holistic.1788976746926101813.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "83c7bda13df7bf25a240e7d77e6c21e312b75733655c3586fd4f81a814d41431",
+      "public_sha256": "e21d08922793af8444450b9cc5309c0d221fe2cb14d447f30cf354ef4c250f3a"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_04103_audited.1788976746926239416.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "2d8761c2d6c2bac406bfb75613a5e23f1dde43831cc20e6ef91f03f3853a5d3b",
+      "public_sha256": "1d5742fb43d277280a85312b66e3d1c2237e9cd91cf2df62f2a4633a014e79ac"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_04784_holistic.1788976746926941632.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "6fc03f88623c2d46badd66584735f85401fd0d124ce0ac0717e3c53a65c8b770",
+      "public_sha256": "cb88f21ce7471f4d2eb7f080c794cf9d30030a890acb978f67edbe9fae093a25"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_04784_audited.1788976746927072382.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "2ec9976c1c0df7600d895b6de678ece8a832735eb61090e92224f35f0132bf1d",
+      "public_sha256": "f319001e65256a2f03ab9117599dbf7755b8d5624de1f0eca292e057fd3e0010"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_04854_holistic.1788976746927223599.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "5091ebb762a6e6c686909939ac7224b3110b5bfaf229a361d5b3f1800b7d24be",
+      "public_sha256": "ce762eb84833e17b60449c8300861ee0294a4734b6158404add3f419ed15d250"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_04854_audited.1788976746927341153.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "fd6e1185a9d81b7d4867cb70311d479b34056c8b188223940304038f302cb4dc",
+      "public_sha256": "65e496265bf5fbeccf3b4485526b727acb90d15b00d9ccc13290d5b6101fea40"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_04980_holistic.1788976746927454203.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "3631fc2b72f2c2417f59e64895bfdfc115bd9d963d1bc5ccd18703f36a85f41b",
+      "public_sha256": "5e770e08841030ce1bcef87b6f38efe19272102186ebe1a8a53cda03e8f6c562"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_04980_audited.1788976746927565339.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "cc4c9845752b080c937902053f3399ca062340e90d28b11b3394287f0176464c",
+      "public_sha256": "8ccc3bb83c2e764adc8aeaacc0a24f3195beb0c1f6108241a54848dc7cb9e36d"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_05718_holistic.1788976746927673803.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "89ede92efd5ba5f94af0ab858cffd3994beb1135d102ee580c9071f8bb26920a",
+      "public_sha256": "2fb3bf60da6460bccf5c4541a67793bb2f71220255808e195c85d88568797717"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_05718_audited.1788976746927782716.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "05ea37f985eb222a54322550b1f65ea17b59629e0516679591d6692afc46bf53",
+      "public_sha256": "1634427e9d2fbf7dd2f1a759f99906a203bd4f8ccb65416ae1a529c7089d6c13"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_05915_holistic.1788976746927891396.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "fb84a2a989bc6920ac2fe73f820315966953fd7e59cbaf07f24964ac9d922827",
+      "public_sha256": "b2cf6b40cc145e6e8ba35db3020a9b83e4ddd341602c29fc6fed7abd0d05e975"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_05915_audited.1788976746928002293.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "871de6e5912c7937b1fc0aef144ceafbd302a088304ba6639e6759bc1b779e6c",
+      "public_sha256": "be2b063cdc988621ac8299f70a1f7734da337cb9328ec02da1754f66edf553cc"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_06247_holistic.1788976746928112592.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "15cfd30ae6b8fdd762684facdc899b42ee3eb8037ed5eda3be6c16140aea79a1",
+      "public_sha256": "3b307baa63dc7047a9757342a7374ce280cdc2e6d5f61e46bee3db6340f5d732"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_06247_audited.1788976746928221233.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "ad0fcafd791cd32d59e76cb58be3dc593271035a183193e121c51e7faecd3707",
+      "public_sha256": "c6d9a2b29a42aa122cf5280eae6ff0c15d5eb3cedbc0b426635bd9947ea3bd64"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_06272_holistic.1788976746928326743.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "dd8852887f7d0ed2fae90063becf69878cebbf2373015bddbb4a0923d6886660",
+      "public_sha256": "896fe24eeea61278f37fdc3fc1bf0e6a8993782148bb5e48fcbff1026bdfe3f5"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_06272_audited.1788976746928444396.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "0ab4f9dbce44a573ba2dc68379ddbd64b9ccb487943e58b1d7b86924b510f6fc",
+      "public_sha256": "f12869e6f5378789b240fe47b57811b5de47daeeeb25cfdcd4b27717fce23bbd"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_06655_holistic.1788976746928551837.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "c99cd4417a2cd54a4bf19ac008dd0192186f7baa30bbe3d7809d2b676632a67f",
+      "public_sha256": "6105cc3bb3e2d4a03a72da77cd534f9da2b59770c807d60a8da8b5881e3f9ce7"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_06655_audited.1788976746928666622.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "0f94a3dd751f69e4f37b16e4a526ebe069e07797a4950a43597a334ca1e2aefe",
+      "public_sha256": "40a9d7c3a2cd31d903eb7ac0dcc42eda0d105c9c128f9285695665d944cf6411"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_06741_holistic.1788976746928771908.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "10ccc67ad37a5d07d6c870219a259c7f2f59104a3678e603f86e32b00803c133",
+      "public_sha256": "80a6f32985a95acb2bbac8e35ca69f6dafa97f008eb2c1c034bf1376187b7509"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_06741_audited.1788976746928877874.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "d187f2c96bcdb76028d43917f82a05989bb68fa332186efdd8f3426bc90936a8",
+      "public_sha256": "a40aacfa5b0cc81bf3b63a197c0df59a40f30fa01b36df8a066cc0cb273b0391"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_07507_holistic.1788976746928982160.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "8057a427b4ae20326c2df533a691422cffcd68b4d3c45a7a3408465bef4065d0",
+      "public_sha256": "4ae2bee435a9b430177ecd251d9e173302d3a3bd4fc7cae514055765d07f0e09"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_07507_audited.1788976746929090580.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "6ca620652440c1f1fdd5e3e196eab125028d9b19969f941341c3ed6bbea3b848",
+      "public_sha256": "7f44424a365755ee7b95bcfdd93f750f191993dd53f177e457866ae36899501c"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_07661_holistic.1788976746929192995.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "70a389987ad63f470287aec71bc706abe9f7443df133e9c53f719323eb5c788b",
+      "public_sha256": "ee475558aafd752ade5915ce864c454000972f986ae3bc4fdfd1b6718f108446"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_07661_audited.1788976746929300441.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "e4bdd198afe52fac6c75a0979f324da4bbbeb58274aef4dbbabddaebb539cb16",
+      "public_sha256": "580552fd183aff2cafaeddefdb47b63e37e956d71ff7f82d9f3d58276d0e9a29"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_07966_holistic.1788976746929408421.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "b76bbed6b3677a2ade4deaec261d941f8e8e4fd8313eb292121a85d8722cf6d7",
+      "public_sha256": "acf99eb0659ed2ea5fccd8354a17f564e26836e868eeb756b9b745a8ce3002e5"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_07966_audited.1788976746929518976.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "6d0315a551dae92c8d742412b1d634083cfed57f4f73cc6eb55744bcf4af289d",
+      "public_sha256": "48e484266f5c79b4d6bc635bb020aed6bef6dec2135491388de3674c053b924e"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_08135_holistic.1788976746929629636.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "f74f03318f2df2f143a76901e0a03bc3abdec44fcd987562fde1579ef6c2d9ee",
+      "public_sha256": "6397163774e1c935035bd9ac824361092738559766c29ce79a4371939dff1136"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_08286_holistic.1788976746929735353.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "6743b05d8cfa29319d4a59683b685aa0b50274e575acc15e82f81e859dba9d13",
+      "public_sha256": "98946b34eaaec302b4e67362e9f39abaa76463529b4cac1e5e4b1f4760440147"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_08135_audited.1788976746929843700.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "cc66125f833352d58ba6f8bf209f040dfd656e2c4fd276159f537d6ce8f31131",
+      "public_sha256": "0b0a2e3f7e1fb4c82580a685ebe4d9fcf9d26a8dda98fc37fd63c3df4a720f55"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_08286_audited.1788976746929950453.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "ffe866576dabf6121b3609fee0b85794fff3dc5610cc0dc2d330003f13bfa092",
+      "public_sha256": "61a454907626deffb812ad6ebcfc7249a3d0c4edf0525b4d6b8bf3a56a5090d4"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_09724_holistic.1788976746930246127.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "d332cded72c17ff568c7ce8102df637d8fb3fdfb5df5f45528b826878cfd9dd1",
+      "public_sha256": "847100d4bc6123ed25ca22f0ed2608160589c7edf2ccab81cf0e8944e0003f4a"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_10130_holistic.1788976746930366988.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "2ec9347106dd3d255429bc2cd8966a165aa7ba58b5e5bc5faaa15983e07fffd9",
+      "public_sha256": "60c79ef155876d8a1563d892f2e1a249201a6a43676d730c717673e8abb5d390"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_09724_audited.1788976746930480715.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "6a68c1673a8fcf3a400634f79b5bb3e88674fe648a10b057a4370e77106740dc",
+      "public_sha256": "03368cd977ae62a00fed023499c28df8448f5f9daadb7a79e9b4b68057b6049c"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_10130_audited.1788976746930592615.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "d349fb08d6509fa510068d68b99fd51aeaa2c995a980cab07430375cf5e0c584",
+      "public_sha256": "79d440f1aa25bf8c6a2f2860472dfc0b45702c5578d7be11c28bfc6a087edeb6"
+    },
+    {
+      "path": "results/external_human/v1/attempt_history/financebench_id_10136_holistic.1788976746930720113.json",
+      "request_ids_hashed": 1,
+      "original_sha256": "f1d56930dbdef3efd76d1b961ec3f0b76cb9108d161866a08e5c2cc16c3c85ba",
+      "public_sha256": "256e3263edfe1bc5495528df61a3c555d430f0b997576d6a1c8162b6ce119a8c"
+    }
+  ]
+}

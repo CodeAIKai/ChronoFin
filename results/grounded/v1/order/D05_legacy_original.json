@@ -1,0 +1,224 @@
+{
+  "case_id": "D05",
+  "method": "legacy",
+  "order": "original",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "answer_sha256": "67f892f960dd294dd8d8e8731013a76eea69a26b35264b07b2f0e3af9ddc99c9",
+  "status": "ok",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文明确说数据截至2025年4月11日、2025年5月7日发布，与F01一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选描述股票估值高、流动性恶化有序，对应F02原意",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选说对冲基金杠杆近十年高位且集中大基金，与F03一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选说银行资本远高于监管要求，对应F04",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选说企业家庭债务脆弱性温和且占GDP比降，对应F05",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选说融资脆弱性降至温和、可挤兑负债持续风险，对应F06",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选说信用卡车贷拖欠超疫情前、非优质借款人尤甚，对应F07",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "F01",
+          "present": true,
+          "quote": "数据截至2025年4月11日"
+        },
+        {
+          "id": "F02",
+          "present": true,
+          "quote": "股票估值偏高且流动性恶化"
+        },
+        {
+          "id": "F03",
+          "present": true,
+          "quote": "对冲基金杠杆近十年高位且集中大基金"
+        },
+        {
+          "id": "F04",
+          "present": true,
+          "quote": "银行资本普遍远高于监管要求"
+        },
+        {
+          "id": "F05",
+          "present": true,
+          "quote": "企业与家庭债务脆弱性温和且占GDP比下降"
+        },
+        {
+          "id": "F06",
+          "present": true,
+          "quote": "融资脆弱性降至温和"
+        },
+        {
+          "id": "F07",
+          "present": true,
+          "quote": "信用卡与车贷拖欠超疫情前（非优质借款人尤甚）"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确将美联储报告整理为风险与缓冲简报，覆盖required与counter全部ID，但未说明风险描述非危机概率这一限制"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "000d1d714e920eb980c9ddcccf703fdf6b10166f76411227e89aec7c61681197",
+      "latency_seconds": 9.235,
+      "usage": {
+        "prompt_tokens": 4721,
+        "completion_tokens": 662,
+        "total_tokens": 5383,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "56fadcde876862d43725a32a2228132e56d9c0f4ba746f727f22679ba51cad27"
+    },
+    "input_sha256": "9cba95191124958583f3472e6b16184089aa6c46502d1c1b0d118f8f50891886",
+    "answer_sha256": "67f892f960dd294dd8d8e8731013a76eea69a26b35264b07b2f0e3af9ddc99c9",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "67f892f960dd294dd8d8e8731013a76eea69a26b35264b07b2f0e3af9ddc99c9",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 96.0,
+    "score": 96.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00494",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "0646263c3b181bc5edd72515ea2b92720a28657d4667ff9334f17ba2311ede69",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "ea848674af632a60b36fef9e0c8fb8c4ded6762c92d7fdb6f7e892be7bcb926d",
+  "started_utc": "2026-09-09T17:43:37.470578+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate response is unrelated plan document text and does not address Boeing FY2023 production rate changes; it withholds the requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not identify Boeing production programs"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2023 production forecast addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No production rate unit provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer on rate changes"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Provided text is deferred compensation plan, not evidence-based answer"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2fc42f96337b5c9ed2d2f77d279b5a37bf9690e57a8be193828df3562165f855",
+    "latency_seconds": 9.462,
+    "usage": {
+      "prompt_tokens": 3542,
+      "completion_tokens": 193,
+      "total_tokens": 3735,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "024aa6d6bfb40d7000a99389fdcf2ddbdf67d0fb5f6749ac697be12895fa1e37"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

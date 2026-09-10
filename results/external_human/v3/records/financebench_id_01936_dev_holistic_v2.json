@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01936",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cfa4b9dfed26385d87209cd138f35b897c01617308e470de0f6ae1ae9f58f26c",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "cbb363933b3799f115719d8c7d10f399f33200b41365b622df5eaa75f7133d03",
+  "started_utc": "2026-09-09T17:50:20.220847+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.9,
+    "reason": "Candidate describes nature/purpose but omits the reference fact that 87% of the liability is employee-related (81/93 from evidence). Missing requested key content from reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cc16ae2e64e75e5b7e19dc358fed6801d8a49661ffa890eb658530c5f14b1d4c",
+    "latency_seconds": 6.689,
+    "usage": {
+      "prompt_tokens": 1272,
+      "completion_tokens": 57,
+      "total_tokens": 1329,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "09d2477ebc0a43728bd3a738ed313b424ff6fc82a8a4d6136f52573c8e6dcc55"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01936_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01936_holistic.json",
+  "parent_sha256": "f7e515950709f2afbb51e536ed96a7fc85dd4deccfc1feb778342b74e38bb42d"
+}

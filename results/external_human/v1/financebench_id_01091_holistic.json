@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01091",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "8c1d4711bbf3ba9502c35ce833ac8823e5e689b0b4bef7af7266c5d459331c39",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2736bbcdb18475c6db8a907d7df0781164efe1012941e52f526aeab12bbd532b",
+  "started_utc": "2026-09-09T17:33:39.507769+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate ignored the question about legal battles and instead described a savings plan, providing no answer on Boeing's FY2022 litigation."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "aac66d307f889931a05e437a9f67b64ecb167177f8b0292df4900ee87799f62f",
+    "latency_seconds": 1.668,
+    "usage": {
+      "prompt_tokens": 1473,
+      "completion_tokens": 47,
+      "total_tokens": 1520,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8fefc6c513fe5cae760765e8060bc16e781d9bdbe16de527616fb98a0ffdc128"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

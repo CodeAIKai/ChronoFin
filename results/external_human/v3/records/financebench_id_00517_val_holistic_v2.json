@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00517",
+  "uid": "financebench_id_00517_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "afb98cf01fb0731d53faa1a9f11f25105f7a39a35c041d4e9ed19b9c34951cd4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "0dd8ad5e4b57b1dbdcb59080d674cff424072b46d2dd279c6e90a5d103eb345e",
+  "started_utc": "2026-09-09T18:06:13.635492+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers yes and identifies three categories (Commercial Airplanes, Defense/Space/Security, Global Services) exceeding 20% of FY2022 revenue, with percentages computed from evidence matching reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fd3d83400923536415c2b7190804f5ba86ae64d51bbe22219f5bbede070324f0",
+    "latency_seconds": 6.056,
+    "usage": {
+      "prompt_tokens": 1369,
+      "completion_tokens": 62,
+      "total_tokens": 1431,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "31f5c4e767084cacf8d686afd2e2bd38bdbfbf9eaa72d64bfcc724f89318f66d"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

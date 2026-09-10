@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00394",
+  "uid": "financebench_id_00394_dev",
+  "split": "development",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "984b6079b0942ef11686d7618e62bd52fa16fa58d7a8bf7e82b47c38277d4d6b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "dde779e31cfe1dc434176d9cb5b4dce11cb190407f4391d71c6e959efb2334e9",
+  "started_utc": "2026-09-09T18:05:36.401362+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but the provided evidence does not contain specific information regarding the net income of JPMorgan Chase's individual business segments for the second quarter of 2022.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states evidence lacks Q2 2022 segment net income data and declines to answer, though evidence table actually shows CIB net income $3,725M highest among segments."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1c16fd7e4c08e4928768f7576e67ae20d855c47c1ac8ceee1b68192d0f97bf2d",
+    "latency_seconds": 6.254,
+    "usage": {
+      "prompt_tokens": 3003,
+      "completion_tokens": 123,
+      "total_tokens": 3126,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8387ef469003c3f0c54049f517af11b51faa2fd1f3a731bf453118839622ebe2"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

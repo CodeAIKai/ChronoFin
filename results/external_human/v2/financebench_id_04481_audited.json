@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04481",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0b13fd27ba6249ff2515f28513b9a22a25cb0754bb081bab57b2a94a369324e3",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "878573d43607ba710195a3e0219f77cbfb18fd64a22d0fa970248b218fd6cfdc",
+  "started_utc": "2026-09-09T17:53:21.246399+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states it lacks access to external data and does not provide the requested FY2022 unadjusted EBITDA % margin; it only explains where to find filings.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Question concerns PepsiCo; candidate acknowledges PepsiCo but does not answer."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 referenced in question; candidate does not compute for any period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Requested % margin; candidate gives no numeric answer."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer provided; declines to compute."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No use of evidence; candidate claims no access to filings."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0a93448e126ad61357fc702f399920d19c5a444b1c7ac5254d1e92772dc5b5d5",
+    "latency_seconds": 10.043,
+    "usage": {
+      "prompt_tokens": 3121,
+      "completion_tokens": 228,
+      "total_tokens": 3349,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3f1f3fb812bbc1184e960eacd2cf19c7e7a77a8ac7b898040b152916c04b9dee"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

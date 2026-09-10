@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01163",
+  "uid": "financebench_id_01163_dev",
+  "split": "development",
+  "company": "Nike",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "f9e8070d34ff4f9e3cda92b48a59a0addfbd80a15cfe4d4761d7c10dd9eb1a4e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "551f38f8df0a20db9bf9e34e397a770e4c303ae0fc8b4161ddb56a91dea6b64c",
+  "started_utc": "2026-09-09T18:09:42.422866+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "This concludes the filing for NIKE, Inc.'s Form 10-K for the fiscal year ended May 31, 2023.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate only provides a closing statement for the 10-K filing and does not answer which cash flow activity brought in most/least cash for Nike FY2023; evidence shows operations +5841M, investing +564M, financing -7447M, so operations highest, but candidate is off-topic."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dd07146e0392d6346566abc790f6b14683b416e920c3bb72ff0c25534cc3aba4",
+    "latency_seconds": 7.898,
+    "usage": {
+      "prompt_tokens": 2292,
+      "completion_tokens": 139,
+      "total_tokens": 2431,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2c69bcacd39de46d0d438891d7d12c64d8eed5616310639413dc2666e8a4e9a9"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

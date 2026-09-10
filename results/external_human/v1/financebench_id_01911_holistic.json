@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01911",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "40c711f344ddb6805be16a290ba46bd38dfdafe9649fff60960492254e5b117e",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "857aa77b043661420f4f3d6587d43a62c32ea3e5e5967567e75cab31a4660122",
+  "started_utc": "2026-09-09T18:01:28.857307+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence shows FY2022 Adjusted EBITDAR and components; reference states Adjusted EBIT is negative so coverage is zero. Candidate refused claiming Adjusted EBIT unavailable, but evidence provides data to derive negative Adjusted EBIT (Operating income + adjustments minus rent yields negative), and reference answer is zero, not a refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e8376697d8b2df84a157ab0a1e0d8193507310da2cbef999c50d2e2e8e166667",
+    "latency_seconds": 7.644,
+    "usage": {
+      "prompt_tokens": 2415,
+      "completion_tokens": 88,
+      "total_tokens": 2503,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "dad2a07d4e5ea2f6ec8f9ea2a7db34daf7318fe947efd94f178de28c2f494811"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,732 @@
+{
+  "case_id": "E01",
+  "split": "evaluation",
+  "method": "counterbrief_first_pass",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "parent_record_sha256": "4074cf2c12002088d32a99a49d4895f12dd3c1ef193aec71ee96834243874ea6",
+  "started_utc": "2026-09-09T17:39:30.285165+00:00",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief_first_pass",
+    "query": {
+      "question": "据 Meta 披露写 FY2025 投入与盈利展望：能否确认全年收入及资本回报率？",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "M04",
+        "source_id": "meta24",
+        "locator": "p2 CFO outlook",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Meta anticipated FY2025 capital expenditures of USD 60–65 billion; guidance, not realized spending.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M05",
+        "source_id": "meta24",
+        "locator": "p2 depreciation footnote",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Longer server lives were expected to reduce FY2025 depreciation by USD 2.9 billion; an accounting-estimate change.",
+        "value": 2.9,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M09",
+        "source_id": "meta24",
+        "locator": "p2 revenue outlook",
+        "role": "caution",
+        "status": "absence",
+        "text": "Meta provided no FY2025 full-year revenue guidance in this release.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M01",
+        "source_id": "meta24",
+        "locator": "p1 annual revenue row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 revenue: USD 164501 million.",
+        "value": 164501,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M02",
+        "source_id": "meta24",
+        "locator": "p1 annual net income row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 net income: USD 62360 million.",
+        "value": 62360,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M03",
+        "source_id": "meta24",
+        "locator": "p9 segment operating results",
+        "role": "caution",
+        "status": "observed",
+        "text": "Reality Labs FY2024 operating loss: USD 17729 million.",
+        "value": -17729,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M06",
+        "source_id": "meta24",
+        "locator": "p1 annual ad metrics",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 ad impressions grew 11%; average ad price rose 10%.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M07",
+        "source_id": "meta24",
+        "locator": "p10 annual free cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 free cash flow: USD 52103 million.",
+        "value": 52103,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M08",
+        "source_id": "meta24",
+        "locator": "p4 non-GAAP definition",
+        "role": "caution",
+        "status": "definition",
+        "text": "Meta free cash flow deducts property purchases and finance-lease principal; non-GAAP comparability is limited.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M10",
+        "source_id": "meta24",
+        "locator": "p1 expense footnote",
+        "role": "caution",
+        "status": "observed",
+        "text": "Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses.",
+        "value": 1.55,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "partial",
+      "summary": "据 Meta 2025-01-29 披露资料，仅能确认 FY2024 实际收入 164501 百万美元、净利 62360 百万美元及自由现金流 52103 百万美元，FY2025 资本开支指引为 600–650 亿美元且未实现。公司未提供 FY2025 全年收入指引，故全年收入无法确认；资本回报率因缺乏 FY2025 净利与资本占用数据亦不能确认。Reality Labs 持续亏损、折旧会计变更及法律费用冲回等影响盈利质量，但均不改变 FY2025 收入与回报率未披露的结论。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Meta FY2024 收入为 164501 百万美元，为已观察实际值。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M01"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Meta FY2024 净利润为 62360 百万美元，为已观察实际值。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M02"
+          ],
+          "numbers": [
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Meta 预计 FY2025 资本开支 600–650 亿美元，属指引而非实际支出。",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "M04"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Meta 在本次披露中未提供 FY2025 全年收入指引，全年收入不可确认。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M09"
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "因缺失 FY2025 净利及资本占用数据，资本回报率无法确认。",
+          "kind": "unknown",
+          "role": "risk",
+          "evidence_ids": [
+            "M04",
+            "M09"
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "服务器寿命延长预计减少 FY2025 折旧 2.9 亿美元，属会计估计变更。",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "M05"
+          ],
+          "numbers": [
+            {
+              "source_id": "M05",
+              "value": 2.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "Reality Labs FY2024 经营亏损 17729 百万美元，反映持续投入压力。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M03"
+          ],
+          "numbers": [
+            {
+              "source_id": "M03",
+              "value": -17729,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "M02/M01*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        }
+      ],
+      "limitations": [
+        "FY2025 全年收入无指引，无法确认",
+        "FY2025 资本回报率缺乏净利与资本基数，无法计算",
+        "资本开支为指引值，非实际发生"
+      ],
+      "follow_up": [
+        {
+          "action": "跟踪 Meta 后续季报或业绩会是否给出 FY2025 收入指引及实际资本开支",
+          "reason": "若有收入指引或实际开支，可修正全年收入与回报率的可确认性",
+          "evidence_ids": [
+            "M09",
+            "M04"
+          ]
+        },
+        {
+          "action": "核查 FY2025 实际折旧与净利以重算资本回报率",
+          "reason": "当前会计变更与亏损结构影响盈利，需实际值确认回报率",
+          "evidence_ids": [
+            "M05",
+            "M03"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "partial",
+      "summary": "据 Meta 2025-01-29 披露资料，仅能确认 FY2024 实际收入 164501 百万美元、净利 62360 百万美元及自由现金流 52103 百万美元，FY2025 资本开支指引为 600–650 亿美元且未实现。公司未提供 FY2025 全年收入指引，故全年收入无法确认；资本回报率因缺乏 FY2025 净利与资本占用数据亦不能确认。Reality Labs 持续亏损、折旧会计变更及法律费用冲回等影响盈利质量，但均不改变 FY2025 收入与回报率未披露的结论。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Meta FY2024 收入为 164501 百万美元，为已观察实际值。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M01"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Meta FY2024 净利润为 62360 百万美元，为已观察实际值。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M02"
+          ],
+          "numbers": [
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Meta 预计 FY2025 资本开支 600–650 亿美元，属指引而非实际支出。",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "M04"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Meta 在本次披露中未提供 FY2025 全年收入指引，全年收入不可确认。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M09"
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "因缺失 FY2025 净利及资本占用数据，资本回报率无法确认。",
+          "kind": "unknown",
+          "role": "risk",
+          "evidence_ids": [
+            "M04",
+            "M09"
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "服务器寿命延长预计减少 FY2025 折旧 2.9 亿美元，属会计估计变更。",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "M05"
+          ],
+          "numbers": [
+            {
+              "source_id": "M05",
+              "value": 2.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "Reality Labs FY2024 经营亏损 17729 百万美元，反映持续投入压力。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M03"
+          ],
+          "numbers": [
+            {
+              "source_id": "M03",
+              "value": -17729,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "M02/M01*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        }
+      ],
+      "limitations": [
+        "FY2025 全年收入无指引，无法确认",
+        "FY2025 资本回报率缺乏净利与资本基数，无法计算",
+        "资本开支为指引值，非实际发生"
+      ],
+      "follow_up": [
+        {
+          "action": "跟踪 Meta 后续季报或业绩会是否给出 FY2025 收入指引及实际资本开支",
+          "reason": "若有收入指引或实际开支，可修正全年收入与回报率的可确认性",
+          "evidence_ids": [
+            "M09",
+            "M04"
+          ]
+        },
+        {
+          "action": "核查 FY2025 实际折旧与净利以重算资本回报率",
+          "reason": "当前会计变更与亏损结构影响盈利，需实际值确认回报率",
+          "evidence_ids": [
+            "M05",
+            "M03"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "8652dd76036c6bb40dd55d504e97c72b1ab1e11424626b080c36a80414530c4f",
+        "latency_seconds": 8.593,
+        "usage": {
+          "prompt_tokens": 1512,
+          "completion_tokens": 840,
+          "total_tokens": 2352,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "808fd00f8794eefcbdd135dbafb5dc62113a7638de75b7effcab52d5b253aedc"
+      }
+    ],
+    "input_sha256": "e37012d408e4284bd0d446934971697d4373685a35be210d1496acc1e89758c9",
+    "answer_sha256": "bd09f48c2301b0cd072e46e0364d04832a269b3e98e0587cc37cf71490c0260e"
+  },
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选称FY2024收入164501百万美元实际值，与M01观察值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称FY2024净利62360百万美元实际值，与M02观察值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称FY2025资本开支600-650亿美元为指引非实际，与M04 forecast一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称未提供FY2025全年收入指引，与M09 absence一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选称缺FY2025净利及资本占用故回报率无法确认，材料无相关数据",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "contradicted",
+          "reason": "候选写'减少FY2025折旧2.9亿美元'，但M05源为2.9 USD billion即29亿美元，金额冲突",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": false
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选称Reality Labs FY2024经营亏损17729百万美元，与M03观察值一致（源为负值，文字正向金额表述）",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M01",
+          "present": true,
+          "quote": "Meta FY2024 收入为 164501 百万美元"
+        },
+        {
+          "id": "M02",
+          "present": true,
+          "quote": "Meta FY2024 净利润为 62360 百万美元"
+        },
+        {
+          "id": "M04",
+          "present": true,
+          "quote": "Meta 预计 FY2025 资本开支 600–650 亿美元，属指引而非实际支出"
+        },
+        {
+          "id": "M05",
+          "present": true,
+          "quote": "服务器寿命延长预计减少 FY2025 折旧 2.9 亿美元"
+        },
+        {
+          "id": "M09",
+          "present": true,
+          "quote": "Meta 在本次披露中未提供 FY2025 全年收入指引"
+        },
+        {
+          "id": "M03",
+          "present": true,
+          "quote": "Reality Labs FY2024 经营亏损 17729 百万美元"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "FY2025 全年收入无指引，无法确认"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：能否确认Meta FY2025全年收入及资本回报率？材料仅提供FY2025资本开支指引且无收入指引，回报率缺数据，故部分可答（不可确认）。C6折旧金额单位误写2.9亿 vs 源29亿需修正。"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "5125c6bd19e3303db461c7ac48b5f701af942acf8de53a3538dd132f838dc0a1",
+      "latency_seconds": 7.415,
+      "usage": {
+        "prompt_tokens": 5476,
+        "completion_tokens": 747,
+        "total_tokens": 6223,
+        "prompt_tokens_details": {
+          "cached_tokens": 576
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "6d31680d753ec1de2d63a433adb9579b63ed7a87f52543f0b83ccacb60fbd6ca"
+    },
+    "input_sha256": "a784fabda3ec32930d9cab59f67d223e2058c8a6d8e8ac28e301b1222e9ebd2c",
+    "answer_sha256": "bd09f48c2301b0cd072e46e0364d04832a269b3e98e0587cc37cf71490c0260e",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "bd09f48c2301b0cd072e46e0364d04832a269b3e98e0587cc37cf71490c0260e",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.885714,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.857143,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 96.229,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      }
+    ],
+    "issues": [
+      "ignored non-reference coverage IDs: M01,M02"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "proof_feedback": {
+    "money": [
+      {
+        "claim_id": "C1",
+        "source_id": "M01",
+        "source_value": 164501,
+        "source_unit": "USD million",
+        "text_value": "164501",
+        "text_unit": "百万美元",
+        "numerically_equivalent": true,
+        "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+      },
+      {
+        "claim_id": "C2",
+        "source_id": "M02",
+        "source_value": 62360,
+        "source_unit": "USD million",
+        "text_value": "62360",
+        "text_unit": "百万美元",
+        "numerically_equivalent": true,
+        "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+      },
+      {
+        "claim_id": "C6",
+        "source_id": "M05",
+        "source_value": 2.9,
+        "source_unit": "USD billion",
+        "text_value": "2.9",
+        "text_unit": "亿美元",
+        "numerically_equivalent": false,
+        "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+      },
+      {
+        "claim_id": "C7",
+        "source_id": "M03",
+        "source_value": -17729,
+        "source_unit": "USD million",
+        "text_value": "17729",
+        "text_unit": "百万美元",
+        "numerically_equivalent": true,
+        "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+      }
+    ],
+    "calculations": [
+      {
+        "id": "K1",
+        "executed_value": 37.90858414234564,
+        "claimed_value": 37.909,
+        "unit": "%"
+      }
+    ],
+    "citation_identity": [
+      {
+        "claim_id": "C1",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C2",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C3",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C4",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C5",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C6",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C7",
+        "unknown_ids": []
+      }
+    ]
+  },
+  "status": "ok",
+  "new_work_wall_seconds": 7.422
+}

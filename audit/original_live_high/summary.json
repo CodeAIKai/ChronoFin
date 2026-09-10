@@ -1,0 +1,69 @@
+{
+  "utc": "2026-09-09T15:57:59.862910+00:00",
+  "executed_source": "/root/autodl-tmp/Tencent/Tencent/code",
+  "results": [
+    {
+      "case": "before",
+      "status": "ok",
+      "answerability": "unanswerable",
+      "score": 55.0,
+      "gates": [
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "8a8d03dd3c52018086eb276e53b85e3b3776a67315cc25b97de163a6d296d860",
+        "latency_seconds": 36.972,
+        "usage": {
+          "prompt_tokens": 4763,
+          "completion_tokens": 5332,
+          "total_tokens": 10095,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 4282
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "high",
+        "request_id_sha256": "2dd8653bd80cf000144fa550864cd8f47960da1a062dd4abd134c940cf7ae48f"
+      }
+    },
+    {
+      "case": "after",
+      "status": "ok",
+      "answerability": "partial",
+      "score": 20.0,
+      "gates": [
+        "answerability contradicts the supplied oracle",
+        "answer omits one or more detected query metric slots",
+        "material numeric execution, source-leaf, claim-text, or summary error",
+        "refusal lacks exact negative evidence or a registry-verified future exclusion",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "f0a74505978d6d1e810bc5496dbfe251b1004d637c3e7d5e3a71951c6bc075c6",
+        "latency_seconds": 51.749,
+        "usage": {
+          "prompt_tokens": 4999,
+          "completion_tokens": 4979,
+          "total_tokens": 9978,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3880
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "high",
+        "request_id_sha256": "4fd5fd669aabd38099ace70ea195b961010eb84f92b0972818c1b6bf87e9d0d7"
+      }
+    }
+  ]
+}

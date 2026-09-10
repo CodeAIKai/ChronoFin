@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00216",
+  "uid": "financebench_id_00216_val",
+  "split": "new_response_validation",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b8350c245dc9e3c3eba10ae92ed2e5eef2a388d36136300daf6f430f6df492b3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "94855517c69ad0b8c133c308522d5333b5cbfb07a2ec01e99b79c96914285c0b",
+  "started_utc": "2026-09-09T18:05:06.408673+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed quick ratio ~0.54 correctly but concluded it may suggest challenges yet argued quick ratio may not be relevant for Verizon and did not state it does NOT have a healthy liquidity profile as the reference requires."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b87e6b9c870b0807b68308497a3e32cae697ad978ef28e116c4c559a0893e775",
+    "latency_seconds": 5.509,
+    "usage": {
+      "prompt_tokens": 2301,
+      "completion_tokens": 65,
+      "total_tokens": 2366,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4f2720b7989ea8632166d389d01dcf6f175d27fbbd79758130e7e000ad1009e8"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

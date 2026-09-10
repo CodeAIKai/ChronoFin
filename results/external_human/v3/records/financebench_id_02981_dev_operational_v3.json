@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02981",
+  "uid": "financebench_id_02981_dev",
+  "split": "development",
+  "company": "Corning",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "233b7fed3126bce1eb20a1a99db92926b912a8c07c392a8864853a6666ab554e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "9884d344f1b757e98bc656242d103fedfe3415235733cb1c9a855939f48bee3c",
+  "started_utc": "2026-09-10T01:29:32.619099+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, the 3-year average unadjusted operating income % margin for Corning for FY2019 - FY2021 is 16.3%",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Reference says 0.103 (10.3%) but candidate computes 16.3% from stated margins 14.9/16.8/17.3%. Evidence income statement shows operating income 2109? actually 2112/509/1306 and net sales 14082/11303/11503, giving margins 15.0%/4.5%/11.3%; candidate's year margins and average are unsupported by evidence and conflict with reference 10.3%."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "16ad7b138c901b1a6092a01edc1e049613f105769949de977d223504efb6da6a",
+    "latency_seconds": 10.535,
+    "usage": {
+      "prompt_tokens": 2224,
+      "completion_tokens": 181,
+      "total_tokens": 2405,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a70a16c0baad427aa9064cfc297df53341ee7b07d1c743cd29f7202d265417c7"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

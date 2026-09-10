@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00807",
+  "uid": "financebench_id_00807_dev",
+  "split": "development",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "eb1ecd981eb8cc7bfed771778efc85ce1a923a2fb58e865dd4995b908d08ff43",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "41ed74dd9b7f88c081dc8b305eccaedf22b9eb8aa20b08b629382e246ae8867c",
+  "started_utc": "2026-09-09T18:08:22.235715+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Quick Ratio ≈ 0.85",
+    "content_correct": false,
+    "confidence": 0.9,
+    "reference_conflict": true,
+    "reason": "Candidate computed quick ratio 0.85 from Jun 30 2023 balance sheet, but reference states 3M quick ratio was 0.96 by Jun'23 close; candidate's figure and conclusion (not reasonably healthy, but not critical) conflict with reference's 'No' and 0.96 value."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6052f9b9a84702b099b234a3d44732bc5ac868a1224d1eecb069921ece25c423",
+    "latency_seconds": 8.276,
+    "usage": {
+      "prompt_tokens": 2171,
+      "completion_tokens": 121,
+      "total_tokens": 2292,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c151f700d30bcc88dbb7d4ec7d62a52a75c8c7ecc220a58c95f342272ff610ec"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": true
+}

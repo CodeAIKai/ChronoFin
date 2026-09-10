@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00941",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "57d62c2c6bac7ecab53a045919f6f45a4799c0f21e238764483e39ecb2093f7e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "f6a9e68e40b406f081d16317f6c784ee450465c28fdeb3f100758e699a73d273",
+  "started_utc": "2026-09-09T17:33:28.953991+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate lists the three 3M debt securities (1.500% 2026 MMM26, 1.750% 2030 MMM30, 1.500% 2031 MMM31) on NYSE as of Q2 2023 per reference and evidence; extra common stock info is truthful and not contradictory to debt security answer.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M debt securities, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Q2 2023 (10-Q period ended June 30, 2023) matched."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Securities listed with symbols and exchange; no mismatched unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Three debt securities match reference exactly; common stock addition is accurate per evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence 10-Q page shows same three notes on NYSE plus common stock context."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "17b1029daea03b5ec227c57aa409cec005dcdf35dd8459c61eb1a2650f018266",
+    "latency_seconds": 5.33,
+    "usage": {
+      "prompt_tokens": 1573,
+      "completion_tokens": 267,
+      "total_tokens": 1840,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "541019678ed913e06c20239a524b264a77a798dd88ac42ab63cda52b7870367e"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

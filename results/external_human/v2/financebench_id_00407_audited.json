@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00407",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "9a1153d8b359fa319e89b4f3d77cdda865b92e45ca52924431fee5dec35b7a38",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "abb04931d8451069faec7767cce73ca5669f1902a4941e0022aa8af7c351a5ba",
+  "started_utc": "2026-09-09T17:43:10.614842+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states evidence does not include H1 FY2023 short-term investment details and declines to answer, despite evidence showing corporate bonds as largest short-term investment.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references MGM short-term investments as requested entity"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references H1 FY2023 as requested period"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question asks type of debt; no numeric unit required"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate withholds answer, claims data absent; evidence provides answer (corporate bonds)"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate asserts no supporting evidence, contradicting supplied evidence text"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9bb6b666cbe2d818fc67ad4e84cb76592898d4981077fc4a212add108145061d",
+    "latency_seconds": 9.711,
+    "usage": {
+      "prompt_tokens": 1817,
+      "completion_tokens": 220,
+      "total_tokens": 2037,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "26e51acc864e196483a01b3ef413ad8c111f0b2a522d74daa44f52147fca1723"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

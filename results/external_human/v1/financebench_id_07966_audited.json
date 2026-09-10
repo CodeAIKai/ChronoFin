@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_07966",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6c173e76a5b95f15bc69002dad5cd525cf1d5d77b18d05a959027ad79de8090d",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ae9b4845e9bd1e7d7aed43bd1fc4d48c89a799da38e04534e78b49628f186ceb",
+  "started_utc": "2026-09-09T18:03:41.471385+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computed FY2017-2019 capex/revenue per year using evidence figures (155/7017, 131/7500, 116/6489), averaged to 1.92% and rounded to 1.9%, matching reference. Evidence supports revenues and capex amounts.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Activision Blizzard, as required."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Fiscal years 2017, 2018, 2019 used, matching FY2017-FY2019."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer given in percents, rounded to one decimal (1.9%), as requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "3-year average capex % of revenue = 1.9%, matches reference and evidence math."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Capex from cash flow stmt (116,131,155) and revenues from ops stmt (6489,7500,7017) support calculations."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3c766118571b814a8a4005aa41e823787105513215c56a658a43987a5ec27940",
+    "latency_seconds": 9.425,
+    "usage": {
+      "prompt_tokens": 3947,
+      "completion_tokens": 282,
+      "total_tokens": 4229,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "da1f26fb7322ab731a17f18ae8325f6c59206fffdcd03dac5b2941d529316a92"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

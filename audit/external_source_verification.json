@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "records_verified": 600,
+  "dataset_commit": "cc39aeb4afdf33909ee1412188bf89035950c2eb",
+  "source_manifest_sha256": "3eab67697cefb51556e9c6ea957c1c991d4782b12900e98ccdb9042db70c15d0",
+  "same_text_across_dev_and_validation": 0
+}

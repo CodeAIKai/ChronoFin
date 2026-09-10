@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_04103",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e106ef835bc32f7b4a55483ac91c850bf1ac2037cb8d66c01d18b1d3831bbf31",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "5d5d7032ea7638460a99fb79c717f9373f2e9d4e5b43351e74298a7af5b9981f",
+  "started_utc": "2026-09-09T17:52:37.167053+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate response is unrelated boilerplate about euro-zone bonds and does not attempt to compute or state General Mills FY2019 CCC; it withholds the requested answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a470e65fd4affa9c231dea7863520fa394d41960cdc3d2657a884f365b96d4ae",
+    "latency_seconds": 6.088,
+    "usage": {
+      "prompt_tokens": 6206,
+      "completion_tokens": 55,
+      "total_tokens": 6261,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ca7e5011108b68ccdee9e397f80dc2a8ebd314bd7479238e40a3322870b8ac6e"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

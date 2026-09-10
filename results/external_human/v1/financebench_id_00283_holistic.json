@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00283",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "63a4ddd7e52d66b9c0414f9cebf8987401079df34c7fc4fb0ab324d225d2ec12",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "b69f1c05c322d55917354c50ffda995ae63992f621a885ff72af99ce3f374214",
+  "started_utc": "2026-09-09T17:32:29.646053+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate provided unrelated Q2 2023 earnings summary and did not answer the question. Reference is 77.78 USD million; evidence shows ~700M total Upjohn separation cost with ~90% incurred by Q2 2023, implying ~70M future (close to 77.78M), but candidate gave no substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a24d0f153208b849b674881a222d0dc231be2e88e9af7e07667a98971501695d",
+    "latency_seconds": 2.552,
+    "usage": {
+      "prompt_tokens": 1790,
+      "completion_tokens": 91,
+      "total_tokens": 1881,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6bc1304ef85d64b3830c2dbb27d452a07b0774dc45cfa160ec8b21827ff775e2"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

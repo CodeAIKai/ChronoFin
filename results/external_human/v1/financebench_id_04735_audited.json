@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04735",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "d8ac00941788c3a11cf78ecfc6e234c20ef979bb1bdeab61b63d30e11812efbd",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2095c501f58edcf2423b5861cf1c7eeea79783a26aa2d9f98506949a0dae3536",
+  "started_utc": "2026-09-09T17:35:04.420637+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate output is a block of signature/exhibit text from the 10-K and provides no operating cash flow ratio or substantive answer.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not identify or answer for Adobe ratio"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2015 period addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No ratio value given"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No numeric answer (0.66 expected per reference)"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Text is unrelated signatures/exhibits, not calculation support"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c81685f8e85296b4ca6b317831f0fead1acdaf1899daffbc763ace386e81c343",
+    "latency_seconds": 3.192,
+    "usage": {
+      "prompt_tokens": 6982,
+      "completion_tokens": 184,
+      "total_tokens": 7166,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "dbcb14435affe4cd55fe9a083bdeafeafdfddcf83d6372760a044195e035408b"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

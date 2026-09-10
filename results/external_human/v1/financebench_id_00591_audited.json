@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00591",
+  "company": "Adobe",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4db3b699625bfd47eb0b5dc4a193c594ed53e367c2ae160f2e69ddd9294f9b60",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ef5aaa37db212ac23ca66458ddd674db7bd7b4e03474541a930baaf7144fa5a1",
+  "started_utc": "2026-09-09T17:33:01.118019+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot answer without provided data and does not give a substantive answer, despite evidence being supplied with cash flow figures.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references Adobe as requested entity"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate mentions FY2022 as requested period"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No specific unit asserted in refusal"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive yes/no answer given; claims lack of data though evidence present"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate ignores supplied evidence showing operating cash flow and net income to compute FCF conversion"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "372108862b23fe970fbf5d707d283007b5da7c8d066252ead6feba68e1e69a37",
+    "latency_seconds": 4.556,
+    "usage": {
+      "prompt_tokens": 2265,
+      "completion_tokens": 192,
+      "total_tokens": 2457,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "52e826f3a6d49d58a4bf7332f664b2a627acf4e5dcec9b40c54685e31eecd51c"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

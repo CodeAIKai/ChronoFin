@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00839",
+  "uid": "financebench_id_00839_dev",
+  "split": "development",
+  "company": "Foot Locker",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "ceea20d2e5adc9cc176bb11dc118d32800e5db0d85bb8d03e51b5674bf810bf2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "0d20b3171a1833876b3097f7748041f9858537518da9431be9ab19c7841a5454",
+  "started_utc": "2026-09-09T18:08:33.724694+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "Therefore, I don't have the information needed to answer the question about the new CEO's previous experience.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it lacks info to answer, but evidence shows Mary Dillon (new CEO) was former CEO of Ulta Beauty, contradicting candidate's claim of no direct information."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ff0b3b49df4c80a5be4d1933389d3e14a069349aadf887b11a021976ab237822",
+    "latency_seconds": 5.3,
+    "usage": {
+      "prompt_tokens": 2024,
+      "completion_tokens": 109,
+      "total_tokens": 2133,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3121d9863fb1e4b859487e7d0379c017a992dd64cbde96ee6ab5e3399ae4eac4"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

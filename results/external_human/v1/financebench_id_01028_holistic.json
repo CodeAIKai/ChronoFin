@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01028",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "65a85de45945e88978eecab9d082d84c923092682ea80772720452e1ca60fdaf",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9e1736aef098071461aa40ff162cde48cdbf7952d6318ede83e7b74ad25bbad2",
+  "started_utc": "2026-09-09T17:33:34.928670+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate does not answer the question, instead apologizes and redirects to external sources without providing the geographies."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7b16a15f3af4cdc2f7d9b07218f03f9a17f43a4edba763e7790029ee8b6d19a9",
+    "latency_seconds": 2.721,
+    "usage": {
+      "prompt_tokens": 1144,
+      "completion_tokens": 43,
+      "total_tokens": 1187,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ed7ef1c437280a60ab537c4ec95a8e8bf25e7c376fb7f5d7a1a16c5864a83cdd"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03838",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "a14dabdedcc2e069706b730e8315b42dd8b83f34e9c18a12b89b2083edb40820",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "87909ebb1709ed0f97d19c1fce810bb859c69c4fd0eb643d054d2f223862084f",
+  "started_utc": "2026-09-09T17:34:38.662470+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate computed FY2019-FY2020 total net revenue growth using income statement figures from evidence (9,497,578 vs 4,713,500 thousand) and obtained 101.5%, matching reference and requested percent unit with one decimal place.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Block (Square) identified and uses its statements of operations."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2019 to FY2020 used as required."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer expressed in percents as requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "101.5% matches reference and evidence calculation."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows Total net revenue 9,497,578 (2020) and 4,713,500 (2019); growth = (9,497,578-4,713,500)/4,713,500 = 101.5%."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5d92a3c5a8fd9152e921337c5ce7de66a62f1c57f8029c53fdcf4f2ef6d6d072",
+    "latency_seconds": 4.034,
+    "usage": {
+      "prompt_tokens": 2086,
+      "completion_tokens": 262,
+      "total_tokens": 2348,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "99aa92e5b58b89d61eec2c92c834cd65391e8466bd174e5eb3db216b33216bf0"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

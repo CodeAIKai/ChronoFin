@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01858",
+  "company": "3M",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "0f076d7e9e5654b58ef08f233338e43cb69c07092a61e6930722f02ecc80142b",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "5ebba2b781199b7343301af4372311c0e133a47753cd581a05643eb826ac4267",
+  "started_utc": "2026-09-09T18:01:14.654246+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate answers yes with stable trend and cites consecutive dividend increases up to 65 years, matching reference and evidence (3M_2023Q2_10Q shows 65th consecutive year increase).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M, consistent with question and reference."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references up to 2023 and 65 consecutive years, matching evidence and reference."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Dividend per share and consecutive years used; no conflicting unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Substantive answer yes, stable trend via consecutive increases, agrees with reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence supports 65th consecutive year increase in Feb 2023; candidate's 2016/2019 details not in supplied evidence but not contradicted and core claim supported."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8bed305897639dc2a07579dc36d0a786df8c6d2cae72d2eab31e70b883fc496c",
+    "latency_seconds": 8.985,
+    "usage": {
+      "prompt_tokens": 1729,
+      "completion_tokens": 253,
+      "total_tokens": 1982,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5e0dd073a59d04f22e456a0fcd9b1e1d9d5ef99ae3f27b9f49fc1a78e0747dd1"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

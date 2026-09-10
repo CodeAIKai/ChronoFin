@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00839",
+  "uid": "financebench_id_00839_val",
+  "split": "new_response_validation",
+  "company": "Foot Locker",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "70e253f8e916a501f2c71e0dfca4d2abb5a913c1181bed4d567c37547f90201f",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "2a45456543975651015b87b1ad3575c579980f4402f83bba9cee284ee84915f6",
+  "started_utc": "2026-09-09T18:08:35.523151+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Mary N. Dillon, the new CEO of Foot Locker, Inc., does indeed have previous CEO experience in a similar company.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states new CEO Mary N. Dillon was CEO of Ulta Beauty (per evidence: CEO of Ulta 2013-2021) and compares it to Foot Locker as retail with brick-and-mortar + online, matching reference's yes with Ulta Beauty similarity."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e014e4cdddcec4bab2cccf75438aaa15065e32cd2b985436284cf50236321ef1",
+    "latency_seconds": 8.27,
+    "usage": {
+      "prompt_tokens": 2082,
+      "completion_tokens": 132,
+      "total_tokens": 2214,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "934191a14a7bb06341beb3f58cb6c6c68cc525fa5fd89f538b7d585d2b0a0887"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

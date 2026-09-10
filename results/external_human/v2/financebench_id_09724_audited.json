@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_09724",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "796657168d4190b00c6f880811edcfb577e2c8032344c5d9c853b5c46b40f5ae",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "dd1da044e78c0046264cbd6c5c78fb7dc958288bd79dc5174cc366738e64f16f",
+  "started_utc": "2026-09-09T17:55:13.286110+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate discusses pension/postretirement obligations and does not provide Coca-Cola FY2021 COGS % margin or calculate it from income statement line items; withholds requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate addresses Coca-Cola pension plans, not COGS margin metric"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Mentions 2021 but not for COGS margin"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No margin percentage provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No COGS % margin answer given"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence income statement not used; candidate text unrelated"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1ea46f62db40d90eb54987cebcc36760ac42b0d706ecb8a6b2364540e9382f52",
+    "latency_seconds": 13.301,
+    "usage": {
+      "prompt_tokens": 1947,
+      "completion_tokens": 208,
+      "total_tokens": 2155,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8d77b2ebbba930576820e2afad833d69c752c3c4b14ed89370898ed966a1b30a"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

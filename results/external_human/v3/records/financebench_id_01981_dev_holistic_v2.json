@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01981",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "dabb43d1ffcdb7f47fbc76751fe30dee5c514115853a08f197de9ea15808e543",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "935d3c8942d58f52288128bf382c6af281581fef80dd5c9ccc3d11149acd3fd3",
+  "started_utc": "2026-09-09T17:50:31.610359+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers 'Yes' (retained/grew base, high retention per evidence) with supporting evidence, agreeing with reference. Despite initial hedging, provides requested answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6294bcb40d169a46f8efa20d2634a879dea7bb6cbb607acb482467ee1809b355",
+    "latency_seconds": 5.883,
+    "usage": {
+      "prompt_tokens": 1521,
+      "completion_tokens": 57,
+      "total_tokens": 1578,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d4128e10a5514d444fb0d473a05755c0128ae899c04b08c50589a763b84000dd"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01981_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01981_holistic.json",
+  "parent_sha256": "7f7acf50df06b2bf6cacf5430537755861e204a773fd8ea3e4d13cd20f8480bb"
+}

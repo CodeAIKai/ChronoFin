@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00566",
+  "uid": "financebench_id_00566_val",
+  "split": "new_response_validation",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "47d7bc36a0c03c79266d60e4126f6d215d8a03c35fd738d433bb284416b32a4d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "8871023a26eed44ba8bccd40f441e4197e09cbb2fedc9cbe20cef169ec9004e4",
+  "started_utc": "2026-09-09T18:06:37.290302+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "it is not possible to answer the question based on the information given",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states filing lacks comparative debt figures and declines to answer, but evidence shows Total debt $150,639M in 2022 vs $150,868M in 2021, a decrease, matching reference 'decreased by $229 million'."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f045f177937e47ebc822e1e2e32b18fba60b7b04b114644d3cdc72bd6823b091",
+    "latency_seconds": 6.548,
+    "usage": {
+      "prompt_tokens": 2513,
+      "completion_tokens": 116,
+      "total_tokens": 2629,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "199372e14697c7a8df86cfbe8b4a23317a98d9290fb6f8fda6e0d876f70c982c"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00540",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "1689813b3f99fed7e3b0d9fd51ae2e6fd300beecc126884e675085bfaa8d387f",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "6c46f2ef666d416db27e8808e51421fca9d99eb4f06aacf4d9b0db1e5eafccf9",
+  "started_utc": "2026-09-09T17:43:59.267509+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states data insufficient and does not calculate or provide the inventory turnover ratio; it only explains method and notes possible non-meaningfulness without concluding the requested answer.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Identifies AES Corporation correctly."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "References FY2022 / fiscal year 2022."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Discusses ratio as times sold/replaced, correct unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Withholds substantive answer; says cannot calculate, no 9.5 times given."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence provides inventory and COGS to compute, but candidate claims insufficient and does not use it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0d6597585cf2f7d9f39fb59c402a09212a9ab346fb2a24ce89997f6f23606d43",
+    "latency_seconds": 9.175,
+    "usage": {
+      "prompt_tokens": 3343,
+      "completion_tokens": 228,
+      "total_tokens": 3571,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "72b6fbab30873018d2595e99b64891cd57ed93b166653f9e603180c457d1768f"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

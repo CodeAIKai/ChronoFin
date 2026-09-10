@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00995",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cd50e9048aa7020b598e633f80506b84a738a5d49cb78f7ac7f499d1b1926569",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ab738631c645fde5e2660fb1b443193348218308e9e5195a7db5d63af9e0e262",
+  "started_utc": "2026-09-09T17:33:33.556143+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate lists high-level market solutions and specific end-use examples (healthcare, aerospace, automotive, gaming consoles) not stated in evidence/reference; misses explicit core product categories like DPUs, FPGAs, embedded products, chipsets, and data center/PC segmentation as described. Evidence only supports the reference's product categories.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is AMD, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period FY22 (2022 10-K) correctly referenced."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is product/service description, no numeric unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate answer diverges from reference: adds unspecified market solutions and misses listed product types (DPUs, FPGAs, chipsets, embedded)."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence does not support healthcare/aerospace/automotive specifics or high-level phrasing; only supports reference categories."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d3d124204d0e296ea6c14a10d5aa6c69e998d5c6b7a65ba14947c642ba33c772",
+    "latency_seconds": 5.404,
+    "usage": {
+      "prompt_tokens": 1691,
+      "completion_tokens": 265,
+      "total_tokens": 1956,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "585d4badeb0ed76d64b90c9c85d51e95f82c41d8b13f58d62818ad12eec26f7b"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

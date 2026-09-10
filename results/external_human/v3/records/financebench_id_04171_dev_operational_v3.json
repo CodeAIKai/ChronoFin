@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04171",
+  "uid": "financebench_id_04171_dev",
+  "split": "development",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "3614d5cca06e7c9631495b0f7f6f51cba23c40a162a3bff3d6a66b00c13c7945",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "46e602b03cf0b26c4940cb5735c41bdd4e0fb05cc89a8d5a2670593db92464f5",
+  "started_utc": "2026-09-10T01:31:26.387404+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the year end FY2018 amount of accounts payable for MGM Resorts is $302,578,000",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Balance sheet evidence shows Accounts payable $302,578 in thousands as of Dec 31 2018 = $302,578,000 = 302.578 USD millions, rounded to 303 matching reference. Candidate stated $302,578,000 correctly in USD."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9f1012380a256d3b966b6c1ef8c6109043cf2cc71331736740806d69cceca81b",
+    "latency_seconds": 9.172,
+    "usage": {
+      "prompt_tokens": 2441,
+      "completion_tokens": 124,
+      "total_tokens": 2565,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "821a4066eb00124abeaceb675e88ab6f00053b95afd603476674a8b63a0ee3c6"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

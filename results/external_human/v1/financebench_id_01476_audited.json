@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01476",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "7e19acbd5ac43a4dd15f677c5a5f05b2243b2fe91dacb2d535ed92e415992ede",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "18f0f27c32d6aafd4d9578297f98402bef50e582a67716c79de7b3f9dc18c104",
+  "started_utc": "2026-09-09T17:34:01.729267+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states PepsiCo raised full-year core constant currency EPS growth guidance from 8% to 9%, a 1 percentage point increase, matching reference and evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is PepsiCo, matches question and evidence."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period is FY2023 full-year guidance as of Q1 2023, matches question."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is percentage points, matches question and reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answer is 1 percentage point increase, agrees with reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows guidance raised from 8% to 9% for core constant currency EPS, supporting 1pp increase."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f96f7a12e2fb938306f400056221d253faf2d63b6560ba156a666e095b04832e",
+    "latency_seconds": 3.434,
+    "usage": {
+      "prompt_tokens": 1113,
+      "completion_tokens": 226,
+      "total_tokens": 1339,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "81bb7c977cf7e13607457602d3e7d3b09f8f65b47e7b535736e7c5d38bbded96"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

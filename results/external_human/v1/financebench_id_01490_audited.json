@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01490",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "de5fbb3d7a53b7bd524c880c5e3c936fdab0d56923835a19fd8f0441722c5631",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "6fb721452cbc5bdcd001e01a8d34c9ac5f936728e2c4488ef4f1853b1242f7be",
+  "started_utc": "2026-09-09T18:01:03.112856+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states JnJ gain from Consumer Health separation is ~$20B as of Aug 30 2023, matching reference and evidence (exhibit says gain ~$20B in Q3 2023 from separation finalized Aug 30 2023).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Johnson & Johnson (JnJ), correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "As of Aug 30 2023 / Q3 2023 gain, consistent with evidence and question."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is US dollars (billion), matches reference and evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer ~$20 billion gain agrees with reference and evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence explicitly states gain of approximately $20 billion from Consumer Health separation."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e2ac971cdcec60588b23a68de5ceabcc71d85107c610e1c0750efc44e6f673e1",
+    "latency_seconds": 11.131,
+    "usage": {
+      "prompt_tokens": 1657,
+      "completion_tokens": 245,
+      "total_tokens": 1902,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1e69e703a2b3cdbe5b03dc4ee42c3597c4433e2577b7eb146a9340cae2030b37"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

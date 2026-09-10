@@ -1,0 +1,215 @@
+{
+  "case_id": "D02",
+  "method": "anchored",
+  "order": "original",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "answer_sha256": "f25bc6134fa05f1a794e17c9f9d39d64671c4333e4b12d1c0ff6351186914023",
+  "status": "ok",
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选计算107556/637959=16.859%，不足两成且称重要板块，A03/A01支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选计算39834/68593=58.073%近六成，A04/A02支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称A08中Q3 38.1% Q4 36.9%略降，来源A08同",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称经营现金流约1159亿美元同比增36%，A06为115.9 billion USD增36%，等价",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选推FCF 38219较36813微增未同步转化，A05/A09数值一致且为推断",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选称A07口径扣净物业另有租赁本金变体，A07文支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "A01",
+          "present": true,
+          "quote": "AWS 净销售额 107556 百万美元，占集团 16.859%"
+        },
+        {
+          "id": "A02",
+          "present": true,
+          "quote": "其经营利润 39834 百万美元，占集团经营利润 58.073%"
+        },
+        {
+          "id": "A03",
+          "present": true,
+          "quote": "AWS FY2024 净销售额 107556 百万美元"
+        },
+        {
+          "id": "A04",
+          "present": true,
+          "quote": "AWS FY2024 经营利润 39834 百万美元"
+        },
+        {
+          "id": "A05",
+          "present": true,
+          "quote": "但自由现金流 38219 百万美元"
+        },
+        {
+          "id": "A08",
+          "present": true,
+          "quote": "AWS 经营利润率 Q3 38.1%、Q4 36.9%"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "未披露 AWS 分部自由现金流，无法判断 AWS 自身利润现金转化效率"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选用Amazon FY2024数据解释AWS利润重要性并评估现金转化，覆盖所需ID且限制清晰"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "510efbaf1f59d91c5ddee8b59bbf91dcb2ae5a5f7f398c9078ba96a90b86656d",
+      "latency_seconds": 7.833,
+      "usage": {
+        "prompt_tokens": 5428,
+        "completion_tokens": 661,
+        "total_tokens": 6089,
+        "prompt_tokens_details": {
+          "cached_tokens": 576
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "be395f3fb0d1f55b5a7c8ff1699135b3b84e1161157274cecfb09f4f7763d529"
+    },
+    "input_sha256": "5ff14adb42ff9359459d3edf818aff5324608db5bdbd52a726edd1300859b477",
+    "answer_sha256": "f25bc6134fa05f1a794e17c9f9d39d64671c4333e4b12d1c0ff6351186914023",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "f25bc6134fa05f1a794e17c9f9d39d64671c4333e4b12d1c0ff6351186914023",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 94.0,
+    "score": 94.0,
+    "gates": [],
+    "issues": [
+      "unverifiable positive judge quote",
+      "unverifiable positive judge quote"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  }
+}

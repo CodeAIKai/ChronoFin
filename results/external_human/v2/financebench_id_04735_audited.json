@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04735",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "d8ac00941788c3a11cf78ecfc6e234c20ef979bb1bdeab61b63d30e11812efbd",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "ba02194d24bb1bee1429d9a20e53c3f8d2c6bca197bc92ab269821c38821e30e",
+  "started_utc": "2026-09-09T17:53:42.917905+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate output is a list of signatures, trademark summary and exhibit index from 10-K; it does not provide FY2015 operating cash flow ratio or compute it, thus withholds the requested answer.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "No identification of Adobe ratio answer; only boilerplate text"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "FY2015 not addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No ratio value provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer to requested metric"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No use of cash flow or balance sheet figures"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1cedae7d08027a73d9057a906f12f1eb38a50de6434fd10bf4759f4d81308b3a",
+    "latency_seconds": 9.893,
+    "usage": {
+      "prompt_tokens": 7100,
+      "completion_tokens": 206,
+      "total_tokens": 7306,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3841bc2656364292a45a3c45670a0be7846b23ca69c4e8f5c79272210662e312"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

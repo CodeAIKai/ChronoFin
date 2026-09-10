@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_04980",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "80bca5a04a365994173dd0ff4db5d13ccd6616d091ec8d16502f8be8f6264559",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "8709ef7fbebb0fe76b607188a1df5d57e580a966f317592a0a94497163f91aa3",
+  "started_utc": "2026-09-09T17:53:59.381416+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states the information is not provided and withholds the answer, despite evidence showing Capital spending of (4,625) million = 4.6 billion USD in the cash flows."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "09f5c96c4349dd058fcdd357878e0cbc77247f415076e51a602c003a2da1b5ae",
+    "latency_seconds": 5.891,
+    "usage": {
+      "prompt_tokens": 1755,
+      "completion_tokens": 59,
+      "total_tokens": 1814,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "53876a655eb90e3ea3506c0fe341401a92daa2dd21af20b8a9bf2b1fcc9513a5"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_04980_dev",
+  "reused_from": "results/external_human/v2/financebench_id_04980_holistic.json",
+  "parent_sha256": "7e02ad41b6f610c3efaa42c005a032659cdae9d063b862731db5978966282dbe"
+}

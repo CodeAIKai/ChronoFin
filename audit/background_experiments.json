@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-10T01:26:43.831930+00:00",
+  "processes": [
+    {
+      "name": "external_v3",
+      "pid": 469831,
+      "log": "data/cache/run_logs/external_v3.log"
+    },
+    {
+      "name": "native_v2",
+      "pid": 469832,
+      "log": "data/cache/run_logs/native_v2.log"
+    },
+    {
+      "name": "native_v3",
+      "pid": 469833,
+      "log": "data/cache/run_logs/native_v3.log"
+    },
+    {
+      "name": "semantic_stress",
+      "pid": 469834,
+      "log": "data/cache/run_logs/semantic_stress.log"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_02416",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c6b73c6c7081d43f35e1435e67b16db2c88a2f6f8f779cc0bf9201e29f1f4b2e",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "0ff32632120544caca239040207959f5af7f1beb227d2cc8dc7b524be53d6d58",
+  "started_utc": "2026-09-09T17:50:54.011041+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate lists Trillium, Array, and Therachon as the three main acquired companies, matching reference and evidence; details are supported by 10-K excerpts.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entities Trillium, Array, Therachon match reference and evidence"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Acquisition dates provided align with 10-K evidence (2021, 2019)"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No specific metric unit requested; company names are qualitative"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Three companies correctly identified as in reference"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence text confirms all three acquisitions by Pfizer in 10-K"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "770c6513870c13bdb85f4f0ec2801621d7c485c12688ed0c4485774df79c731c",
+    "latency_seconds": 9.838,
+    "usage": {
+      "prompt_tokens": 4407,
+      "completion_tokens": 223,
+      "total_tokens": 4630,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f7c44ee009cc624021212fbc524af3930b6c801dcaaf4c6a173f53880dfb2688"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

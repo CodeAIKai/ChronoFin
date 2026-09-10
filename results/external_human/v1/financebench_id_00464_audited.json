@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00464",
+  "company": "Boeing",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "3922dd16561b663de55d42727b47a63096cf2a71f0a4255039b16081901d253e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "236e71ee93c69ef1f9fbafc81618f4d6a49e8757770272333be60e06c39fb832",
+  "started_utc": "2026-09-09T17:32:45.234332+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate discusses Boeing deferred compensation plan and does not answer whether Boeing's business is subject to cyclicality; no substantive answer provided.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity Boeing mentioned but in unrelated context"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "No fiscal period requested"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No unit requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate fails to answer cyclicality question; provides plan description instead"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supports cyclicality but candidate ignores it"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "41fce48873758f7dff7908ea0f4c29b77f43e92c63fad5f1da112ece3e86fb39",
+    "latency_seconds": 3.119,
+    "usage": {
+      "prompt_tokens": 1753,
+      "completion_tokens": 176,
+      "total_tokens": 1929,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ba033816c6e24b6835d8336225fc7067bcdbffe316832be7bf78e8ab1122f7b1"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

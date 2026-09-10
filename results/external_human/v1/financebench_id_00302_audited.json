@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00302",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ac3d04d48db39f70eccf70baaa65a810d37566f034d52f789c80b441b93c817e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2aae2529f84bf6ac2fa358a254b5186e3b9360df72b0050d9d5a30413581f2f2",
+  "started_utc": "2026-09-09T17:32:34.471996+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate correctly states Pfizer PP&E grew from $13,745M (FY20) to $14,882M (FY21), matching evidence and reference's positive change.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Pfizer, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Periods FY20 and FY21 (Dec 31 2020 vs 2021) correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is millions USD for PP&E, consistent with evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answer yes, grew by $1,137M; matches reference positive change."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows PP&E 13,745 (2020) and 14,882 (2021), supporting growth claim."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ca35f726aa676e05881263e34ce85a2e624847d3824a9ef7761283c73e495304",
+    "latency_seconds": 4.646,
+    "usage": {
+      "prompt_tokens": 1592,
+      "completion_tokens": 233,
+      "total_tokens": 1825,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4c47a1d0a9abaf183c175cad6ec18d2a03c4776fbc71716756ec19bf12eaa6cf"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

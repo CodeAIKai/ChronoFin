@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01077",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "477d71c06ca3a155a9ecab0e4be1d2db3d8df7e9512845fa80071a38b277e8dd",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "cd12db58ad8e8369f00bc10cba1623e437794ee5d7d54d8ac38d94da376d20f4",
+  "started_utc": "2026-09-09T17:47:22.735301+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly lists no major acquisitions in FY2023 and FY2021, and identifies the two FY2022 acquisitions (Current Health Ltd and Yardbird) with details matching evidence and reference.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Best Buy; candidate addresses Best Buy acquisitions."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate covers FY2023, FY2022, FY2021 as requested."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Acquisition names and dollar amounts in millions provided; no mismatched unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "FY2023 none, FY2022 two acquisitions with correct names and amounts, FY2021 none; matches reference and evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence 10-K page 50 confirms both FY2022 acquisitions and no others in stated years."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d22c8395af5c118c8b145c5768a911b4a5365a3f6344ce80f0567060c5a22533",
+    "latency_seconds": 8.676,
+    "usage": {
+      "prompt_tokens": 2221,
+      "completion_tokens": 255,
+      "total_tokens": 2476,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "98946e21980bc79dfc16f195f674423d2eac9488b58946a8617555022437204e"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

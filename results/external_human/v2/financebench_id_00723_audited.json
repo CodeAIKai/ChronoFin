@@ -1,0 +1,74 @@
+{
+  "id": "financebench_id_00723",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "acc416c68ce21171529d38f9f00d1ada0e6a2c1f12f7997604527878e31c8389",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "782d020d40fa890490709f7512ba6c494f912be2ce8f9ec2f6df3517a5bd4e2f",
+  "started_utc": "2026-09-09T17:45:43.579829+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Question asks to state operating margin is not useful for AMEX if so; reference says performance not measured via operating margin. Candidate instead computes operating margin and claims it is useful, contradicting reference and failing conditional instruction.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate addresses American Express (AMEX) as requested."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate uses 2020-2022 data, covering as of 2022."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Operating margin expressed in % as computed."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says operating margin is useful and analyzes trend; reference states it is not a useful/measured metric, so conditional 'state that' not met."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Calculations use evidence totals correctly (52,862-41,095)/52,862≈22.26% etc."
+      }
+    ],
+    "reference_conflict": true,
+    "reference_conflict_reason": "Reference states 'Performance is not measured through operating margin' implying metric not useful; candidate asserts it is useful and computes it."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8d6f0b7a56ef2ab5c56a061dc539c270cc953a9d1048109c2e842f96382817f4",
+    "latency_seconds": 9.392,
+    "usage": {
+      "prompt_tokens": 2555,
+      "completion_tokens": 298,
+      "total_tokens": 2853,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "89e196a2b6ca0f144fc1a1a1ba417f192af86175be0704c2a41a27e16a280df3"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

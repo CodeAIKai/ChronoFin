@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00283",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "63a4ddd7e52d66b9c0414f9cebf8987401079df34c7fc4fb0ab324d225d2ec12",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "674083a9edf5fb1995d04ef55235f11a319067f887af4cc78ee29cfd74cd71b6",
+  "started_utc": "2026-09-09T17:42:38.028759+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate provides Q2 2023 earnings summary but never states or estimates future USD million cost to spin off Upjohn; withholds requested answer.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate discusses Pfizer but not the requested Upjohn spin-off cost."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Question asks future; candidate covers Q2 2023 but not future spin-off cost."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question requests USD million; candidate does not provide any such figure for spin-off."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No answer given to requested metric (future Upjohn spin-off cost)."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows ~$700M total with 90% incurred, so ~$70M future, but candidate ignores it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8f49b8c6e8f328db73cdbd3cde91e9c1ec7be147b2af890dee732a978a3b873e",
+    "latency_seconds": 9.674,
+    "usage": {
+      "prompt_tokens": 2093,
+      "completion_tokens": 246,
+      "total_tokens": 2339,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2c796fc0436686e6b884e34b700f5937614a8130ed12d16a937ea61bd1a6b85e"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

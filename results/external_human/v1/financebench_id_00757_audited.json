@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00757",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "df1fed1c6085d36225160d2d718097f01c0d0ff3f70b5c1624899620eaed6067",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "1b69ee83d0c7cf677263199b78603288c946f66474c4458715a1d5aaf0333ee5",
+  "started_utc": "2026-09-09T17:33:17.002859+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it does not know and claims evidence was not provided, but evidence clearly shows AMD reported one customer at 16% of consolidated net revenue in FY22; candidate gives no substantive answer.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is AMD, correctly identified in question."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period FY22 (year ended Dec 31, 2022) is in question and evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question asks yes/no; no numeric unit required."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refused with 'I don't know' instead of answering yes per evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence directly supports yes, but candidate falsely claims no evidence provided."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "29805eb91b55095ddb434d3985cc4181a31a6f6de850c10b00fca605c0db68c4",
+    "latency_seconds": 4.399,
+    "usage": {
+      "prompt_tokens": 1226,
+      "completion_tokens": 224,
+      "total_tokens": 1450,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3c711f174b0361d71a076151ccc3a9369fcf92d76b61fd7cd9aa3fea1f80c6c1"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_03718",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "f9d8ad68929f070c74d5abb881facdc9a072381da0debe6260edc7b13de30a78",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9d889756eca15c593a1e1efcc47cf9d2f826fb0e5ed7b003583cf4002c6cbb41",
+  "started_utc": "2026-09-09T17:34:36.095494+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence shows FY2020 total net sales $65,398M and FY2022 $65,984M; 2yr CAGR = (65984/65398)^(1/2)-1 ≈ 0.4%, matching reference. Candidate used wrong figures ($65.4B, $66.0B) and reported 0.5%, disagreeing with reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f726ddc5dba82ad2f45bed087b9f3c6dbde5fa269ab3cf021ee32dfd4c61aaee",
+    "latency_seconds": 2.124,
+    "usage": {
+      "prompt_tokens": 1728,
+      "completion_tokens": 102,
+      "total_tokens": 1830,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ee4362e108ca7cefbfb4a8ae7584b8099d6b5b4708230c5282786baf5bd07efc"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

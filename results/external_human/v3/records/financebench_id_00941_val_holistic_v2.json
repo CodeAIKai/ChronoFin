@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00941",
+  "uid": "financebench_id_00941_val",
+  "split": "new_response_validation",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "d3adfa1acaa4dbc7a8d61f1b38c3572834bf43acaf0d509421bc9713e4da02d6",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "11471bde9b4cfe93eb393fd77c80072962bbf1e73ef6b72321333600472c99ec",
+  "started_utc": "2026-09-09T18:08:54.167894+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate lists the three 3M debt securities (1.500% Notes due 2026, 1.750% Notes due 2030, 1.500% Notes due 2031) trading on NYSE as of Q2 2023, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b44d99214202043ca0290a70791a76ef7328131da556c1154e48f8f714254c1c",
+    "latency_seconds": 6.903,
+    "usage": {
+      "prompt_tokens": 1546,
+      "completion_tokens": 80,
+      "total_tokens": 1626,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "fd852396c1cc6239f0e9ca89a87a536d3dea36ac6326002d676c04a21ef0b89d"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

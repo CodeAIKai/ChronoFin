@@ -1,0 +1,81 @@
+case_id,split,method,status,score,gates
+D01,dev,full_context,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+D01,dev,counterbrief_first_pass,ok,100.0,[]
+D01,dev,counterbrief,ok,100.0,[]
+D02,dev,full_context,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+D01,dev,full_context_revision,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+D02,dev,counterbrief_first_pass,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+D02,dev,counterbrief,ok,94.0,[]
+D03,dev,full_context,ok,100.0,[]
+D02,dev,full_context_revision,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+D03,dev,counterbrief_first_pass,ok,100.0,[]
+D03,dev,counterbrief,ok,100.0,[]
+D03,dev,full_context_revision,ok,100.0,[]
+D04,dev,full_context,ok,100.0,[]
+D04,dev,counterbrief_first_pass,ok,100.0,[]
+D04,dev,counterbrief,ok,100.0,[]
+D04,dev,full_context_revision,ok,100.0,[]
+D05,dev,full_context,ok,97.5,[]
+D05,dev,counterbrief_first_pass,ok,96.0,[]
+D05,dev,counterbrief,ok,96.0,[]
+D05,dev,full_context_revision,ok,100.0,[]
+E01,evaluation,full_context,ok,65,"[{""reason"": ""missing all material counterevidence"", ""cap"": 65}]"
+E01,evaluation,counterbrief_first_pass,ok,55,"[{""reason"": ""contradicted claim"", ""cap"": 55}]"
+E01,evaluation,counterbrief,ok,55,"[{""reason"": ""contradicted claim"", ""cap"": 55}]"
+E01,evaluation,full_context_revision,ok,65,"[{""reason"": ""missing all material counterevidence"", ""cap"": 65}]"
+E02,evaluation,full_context,ok,100.0,[]
+E02,evaluation,counterbrief_first_pass,ok,100.0,[]
+E02,evaluation,counterbrief,ok,100.0,[]
+E02,evaluation,full_context_revision,ok,100.0,[]
+E03,evaluation,full_context,ok,93.5,[]
+E03,evaluation,counterbrief_first_pass,ok,96.0,[]
+E03,evaluation,counterbrief,ok,97.5,[]
+E03,evaluation,full_context_revision,ok,93.5,[]
+E04,evaluation,full_context,ok,90.0,[]
+E04,evaluation,counterbrief_first_pass,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+E04,evaluation,counterbrief,ok,100.0,[]
+E04,evaluation,full_context_revision,ok,96.0,[]
+E05,evaluation,full_context,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+E05,evaluation,counterbrief_first_pass,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+E05,evaluation,counterbrief,ok,96.0,[]
+E05,evaluation,full_context_revision,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+E06,evaluation,full_context,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+E06,evaluation,counterbrief_first_pass,ok,100.0,[]
+E06,evaluation,counterbrief,ok,55,"[{""reason"": ""contradicted claim"", ""cap"": 55}, {""reason"": ""unsupported summary"", ""cap"": 65}, {""reason"": ""scope mismatch"", ""cap"": 60}]"
+E06,evaluation,full_context_revision,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+E07,evaluation,full_context,ok,65,"[{""reason"": ""missing all material counterevidence"", ""cap"": 65}]"
+E07,evaluation,counterbrief_first_pass,ok,96.0,[]
+E07,evaluation,counterbrief,ok,100.0,[]
+E07,evaluation,full_context_revision,ok,65,"[{""reason"": ""missing all material counterevidence"", ""cap"": 65}]"
+E08,evaluation,full_context,ok,100.0,[]
+E08,evaluation,counterbrief_first_pass,ok,100.0,[]
+E08,evaluation,counterbrief,ok,100.0,[]
+E08,evaluation,full_context_revision,ok,100.0,[]
+E09,evaluation,full_context,ok,100.0,[]
+E09,evaluation,counterbrief_first_pass,ok,97.5,[]
+E09,evaluation,full_context_revision,ok,100.0,[]
+E09,evaluation,counterbrief,ok,97.5,[]
+E10,evaluation,full_context,ok,100.0,[]
+E10,evaluation,counterbrief_first_pass,ok,96.0,[]
+E10,evaluation,counterbrief,ok,100.0,[]
+E10,evaluation,full_context_revision,ok,96.0,[]
+E11,evaluation,full_context,ok,93.5,[]
+E11,evaluation,counterbrief_first_pass,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+E11,evaluation,counterbrief,ok,93.5,[]
+E11,evaluation,full_context_revision,ok,89.5,[]
+E12,evaluation,full_context,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+E12,evaluation,counterbrief_first_pass,ok,55,"[{""reason"": ""incorrect numerical proof"", ""cap"": 55}]"
+E12,evaluation,counterbrief,ok,100.0,[]
+E13,evaluation,full_context,ok,96.0,[]
+E12,evaluation,full_context_revision,ok,100.0,[]
+E13,evaluation,counterbrief_first_pass,ok,96.0,[]
+E13,evaluation,counterbrief,ok,90.0,[]
+E13,evaluation,full_context_revision,ok,100.0,[]
+E14,evaluation,full_context,ok,86.842,[]
+E14,evaluation,counterbrief_first_pass,ok,86.842,[]
+E14,evaluation,full_context_revision,ok,86.842,[]
+E14,evaluation,counterbrief,ok,93.421,[]
+E15,evaluation,full_context,ok,96.0,[]
+E15,evaluation,counterbrief_first_pass,ok,96.0,[]
+E15,evaluation,counterbrief,ok,100.0,[]
+E15,evaluation,full_context_revision,ok,96.0,[]

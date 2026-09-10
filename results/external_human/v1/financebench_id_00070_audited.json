@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00070",
+  "company": "American Water Works",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "5c80a3cfc9067b4ca00fe8489047d9ad18f0d07f8254489fa3f0d1bdd182e3ec",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "fa7ba6c05bc4a22b225fba25dec498fcb5f6810df039540fcd0b303c7f52a84e",
+  "started_utc": "2026-09-09T17:32:18.071962+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly computes FY2022 working capital as -$1,561M (negative), matching reference and evidence (current assets $1,250M, current liabilities $2,811M). It also addresses metric relevance for utility with explanation, not a refusal.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is American Water Works, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 (Dec 31, 2022) data used, matches reference."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Values in millions USD, consistent with evidence and reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer: negative working capital of $1,561M, agrees with reference -$1561M."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows current assets 1250, liabilities 2811, diff -1561; candidate math supported."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "eecb43708048f56cd77244486ffa4051f94f488e036b47ca3bc358f94e4e7594",
+    "latency_seconds": 5.737,
+    "usage": {
+      "prompt_tokens": 2301,
+      "completion_tokens": 251,
+      "total_tokens": 2552,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "870d5eeca93a5f37fc113bb3d68c248df16a563f5a337824e2d5d91b250506df"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

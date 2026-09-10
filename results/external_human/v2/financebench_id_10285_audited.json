@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_10285",
+  "company": "Boeing",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "a9738259dbfc75f5a8893a94d7925995311220ade411afc4cd0a280e54752b2e",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "95cb598807c8832233caf40b421a804018d6920e2edfdf54a9366b4ce6c8fe6c",
+  "started_utc": "2026-09-09T17:55:32.350139+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate pasted 10-K cover and business text but never stated Boeing FY2018 net PP&E value; no substantive answer provided.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Boeing identified in source text"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 (Dec 31 2018) in source"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "USD millions context available in evidence"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No numeric answer given by candidate"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate did not cite or use balance sheet PP&E figure"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "906458e01289693518b93a0b63603aa7c6f84de602e03154d0acf51b0325a226",
+    "latency_seconds": 11.892,
+    "usage": {
+      "prompt_tokens": 4014,
+      "completion_tokens": 201,
+      "total_tokens": 4215,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c0913ced94eacec1acdefca824dcbf0eaa724560802edbf93b8c1bce341b2d5e"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

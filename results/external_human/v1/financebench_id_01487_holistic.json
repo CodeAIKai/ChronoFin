@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01487",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "8ff749d1284291edaa200a3172271185f903d6a260a7ee31d5018725e6b09e88",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "eebc2659533b449dcacc89d5fda6e88d08bf0e34d1ea26f6a591b4254861b7b9",
+  "started_utc": "2026-09-09T18:00:52.161254+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate correctly states net earnings as % of sales rose from 20.0% in Q2 FY2022 to 20.1% in Q2 FY2023, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "de5908c340afa44becf9caec0401eed91b6e8a8206438c27d5c1e02c895d7db8",
+    "latency_seconds": 5.55,
+    "usage": {
+      "prompt_tokens": 1658,
+      "completion_tokens": 61,
+      "total_tokens": 1719,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e0a951c083a842fac37aa0c5c26c639bc0f2b0e70ab9f2792469cbef0188cb6f"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

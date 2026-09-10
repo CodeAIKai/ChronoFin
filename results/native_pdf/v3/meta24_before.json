@@ -1,0 +1,119 @@
+{
+  "status": "error",
+  "mode": "live_pdf",
+  "stage": "generate",
+  "record": {
+    "source_document": {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 12,
+      "selected_ids": [],
+      "selected_pages": [],
+      "selection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "pipeline": "native_pdf_v3",
+    "extraction_raw": null,
+    "extraction_traces": [],
+    "extraction_audit": {
+      "facts_proposed": 0,
+      "facts_accepted": 0,
+      "rejected": [],
+      "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "quote_verification": "whitespace-normalized exact contiguous source match",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    },
+    "version": "native-generation-3.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "截至 2025-01-28，根据提供原件总结 Meta FY2024 经营表现。",
+      "as_of": "2025-01-28"
+    },
+    "evidence": [],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "本次查询要求基于提供原件总结 Meta FY2024 经营表现，但当前资料库为空，未包含任何证据卡片或数值登记，无法对 Meta 2024 财年经营表现进行事实总结或推断。",
+      "claims": [],
+      "calculations": [],
+      "limitations": [
+        "未提供任何关于 Meta FY2024 的官方报告、事实卡片或数值数据，无法判断收入、利润、用户规模等经营指标"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 官方年报或经核对的英文事实卡片（含来源 ID 与数值登记）",
+          "reason": "补齐证据后方可回答经营表现并区分公司口径与行业情景",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "本次查询要求基于提供原件总结 Meta FY2024 经营表现，但当前资料库为空，未包含任何证据卡片或数值登记，无法对 Meta 2024 财年经营表现进行事实总结或推断。",
+      "claims": [],
+      "calculations": [],
+      "limitations": [
+        "未提供任何关于 Meta FY2024 的官方报告、事实卡片或数值数据，无法判断收入、利润、用户规模等经营指标"
+      ],
+      "follow_up": [
+        {
+          "action": "获取并核对 Meta FY2024 官方年报或经核对的英文事实卡片（含来源 ID 与数值登记）",
+          "reason": "补齐证据后方可回答经营表现并区分公司口径与行业情景",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "44a49b335b188f237c971bf0134dac21ef11437a244ee81f691b2aae775485db",
+        "latency_seconds": 11.766,
+        "usage": {
+          "prompt_tokens": 757,
+          "completion_tokens": 168,
+          "total_tokens": 925,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "c73fd17596a95b6ed29f66289bc41118a597d3645cee6fdb7962ae8cd1913df0"
+      }
+    ],
+    "input_sha256": "31f2cd7e81b6aae5a224957e293bbecb4983ad9f35e8a8a923a0e73e0d1de5bf",
+    "numeric_registry": {}
+  },
+  "judge_attempts": [],
+  "sources": [
+    {
+      "id": "pdf_6cce34aa0fb3",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "pages": 10,
+      "bytes": 177759,
+      "metadata_identity": "pinned_official",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "entity": "Meta",
+      "published_at": "2025-01-29",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+    }
+  ],
+  "error": "claims length 1..30",
+  "id": "meta24_before",
+  "split": "known_source",
+  "protocol_sha256": "40e7a87c0823f7251bd51522f3e0b1d5de83af7a2c018228b346dbdf72dd326b",
+  "finished_utc": "2026-09-10T01:29:31.406887+00:00",
+  "wall_seconds": 13.176
+}

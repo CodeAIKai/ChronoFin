@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00702",
+  "uid": "financebench_id_00702_val",
+  "split": "new_response_validation",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "d05b765423b9bf889466a4e1c61565b0c8d56b06f0af17ac5664d4325c87320a",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "8a15572540f2178ef526fe9647130fb20c79a11a2e6ba946fc9913aeca080dd1",
+  "started_utc": "2026-09-09T18:07:31.472457+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers yes, identifying the gain on completion of Consumer Healthcare JV transaction as a non-standard event that substantially increased 2019 net income, matching reference and evidence (gain of $8,107M in 2019)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5fa7d0006488d46e308ea88e5befd6c62ef41cadf9d8470180d301bc1600f1da",
+    "latency_seconds": 6.061,
+    "usage": {
+      "prompt_tokens": 1489,
+      "completion_tokens": 69,
+      "total_tokens": 1558,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0f2071b8f535bdaaf0c497905e8a111e1c49f8e9b64ed509c184032d3bd13e19"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00476",
+  "uid": "financebench_id_00476_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "c431ac7df58e8fe770f21e4652ce158903f75bdf49dde5c654bc13172921ebb0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "e682f25a005337f84b651ff8033a33f826e5b9aff64d4aa886769a03f18fe21d",
+  "started_utc": "2026-09-09T18:06:00.497110+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot provide the requested information and withholds the answer despite evidence showing only common shares (not debt securities) are registered, making the answer 'none'. This is a refusal, not a substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cc0b24c6a7e9c1de81d2824464397235ff28285bd8a8199d5cd5371ae08d3a25",
+    "latency_seconds": 5.257,
+    "usage": {
+      "prompt_tokens": 1496,
+      "completion_tokens": 65,
+      "total_tokens": 1561,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8db903d2fe5de744fd1cf49c5d3197838b220ca365cd5efcde040846ba4e8612"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00882",
+  "uid": "financebench_id_00882_dev",
+  "split": "development",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "ce7e888cd60f3db547c6ef7e6c25ce2a3764f4fab044a7e10441b8379881811e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "6c33a85f80a5f328a1a89b6827c44b0bc0f6239846c64b331d86bea46dbdaa38",
+  "started_utc": "2026-09-09T18:08:43.795920+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide the requested information as it appears to be from a filing that is beyond my knowledge cutoff date of April 2023",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer citing knowledge cutoff, no substantive answer provided."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "571702b9295d52846c4f2bd781006109f25aa2dabaf85f144e1708d14372c3ba",
+    "latency_seconds": 5.777,
+    "usage": {
+      "prompt_tokens": 2806,
+      "completion_tokens": 92,
+      "total_tokens": 2898,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "69419268ee7a7147ca838b7395f6a5b3ab79b65e15c3eafaf2b66132e8c09452"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

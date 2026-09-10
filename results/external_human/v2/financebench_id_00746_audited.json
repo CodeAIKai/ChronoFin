@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00746",
+  "company": "Ulta Beauty",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "09419340f582f1c3e46653613be646505485e4fa2dcb889ab9b17f7f701a751f",
+  "started_utc": "2026-09-09T17:45:59.848271+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate output '[END OF FILING]' does not address the question and provides no substantive answer about debt securities registered on an exchange.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not identify Ulta Beauty debt securities"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2023 reference made"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No security listing provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No answer given; only '[END OF FILING]'"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No supporting content for question"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "73f4a9270aeef8029d76106a7b7e126ebb6e6b3945b1d543a3ec1cb6af9d6ea3",
+    "latency_seconds": 9.607,
+    "usage": {
+      "prompt_tokens": 1695,
+      "completion_tokens": 194,
+      "total_tokens": 1889,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1859478563870fb53c3a75e10897747092c85b7ecca358f111b9610e1a96d33e"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01935",
+  "uid": "financebench_id_01935_dev",
+  "split": "development",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "1ae7fadbd422ef72b7953d7ee285c877700f0377e5591a6e774a79d1c28708f8",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "b471942a8293407f30ef6900cd583f80d114dbf2ae0428e5c3c04f19124c00f3",
+  "started_utc": "2026-09-10T01:28:09.534114+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "The key agenda of AMCOR's 8-K filing dated July 1st, 2022, was to report the substitution of Amcor Flexibles North America, Inc. (the \"Substitute Issuer\") for Amcor Finance (USA), Inc. (the \"Former Issuer\") and the assumption by the Substitute Issuer of the covenants of the Former Issuer under the Indentures related to certain Guaranteed Senior Notes.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate correctly states the 8-K filing's key agenda matches reference: substitution of Substitute Issuer for Former Issuer and assumption of covenants for Guaranteed Senior Notes due 2026 and 2028, supported by evidence text describing same supplemental indentures dated June 30 2022 filed July 1 2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "23016f07d8e90a5b6d18fa2a21b58f165927259204006de970f105dae09fa744",
+    "latency_seconds": 11.702,
+    "usage": {
+      "prompt_tokens": 2831,
+      "completion_tokens": 207,
+      "total_tokens": 3038,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "966c0d11377198d28a1ef579396877d271d098c3ca731192d7e4ce77ac7dfade"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

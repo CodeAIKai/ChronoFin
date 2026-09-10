@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_03849",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "fc21dfa8f0f804586c3f657b5133e4da85a9814c063c3938088957a82d4a3db0",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "af748d202519cc74cdea2777cc7ed87c4241541df28f71d7fe62911fd8591169",
+  "started_utc": "2026-09-09T17:52:16.080028+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computed capex/revenue per year from evidence cash flows and income statements, averaged to 7.8% matching reference 0.079 (7.9% rounded to 7.8% via per-year rounding then average; minor rounding diff immaterial).",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "MGM Resorts identified correctly"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018-FY2020 used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer in percents as requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "3yr avg capex/revenue = 7.8% aligns with evidence and reference 7.9% within rounding"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Revenue and capex figures taken from provided statements; calculations correct"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "95c9c7dd5d712f4917ceaee455ff3b1290de911409c79ea36e8f8352f5e116ef",
+    "latency_seconds": 9.976,
+    "usage": {
+      "prompt_tokens": 6428,
+      "completion_tokens": 241,
+      "total_tokens": 6669,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bdb6672549780a63b1803483be152af9e70873f127a1dfc81369cb46553b0a18"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

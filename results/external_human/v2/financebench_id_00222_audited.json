@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00222",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "be276834767d6067111cb04b472895454b17e688327d794b66fa859f53f18f80",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "220980b49e3c483314a5563e69737ed894a8c25e98fe02b1e6f3aca804dd63a8",
+  "started_utc": "2026-09-09T17:42:32.410942+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computed quick ratio 1.57 from FY22 balance sheet evidence and concluded AMD has reasonably healthy liquidity, matching reference. Quick ratio relevance not challenged, so answer aligns.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is AMD, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY22 / Dec 31 2022 balance sheet used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Ratio is dimensionless; computed from millions, consistent."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Quick ratio 1.57 and healthy liquidity conclusion matches reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows cash 4835, ST inv 1020, AR 4126, curr liab 6369 => 9981/6369=1.57."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bc8156a00e56c74e4a6d19eb65ca2f4dd705e7f8a50f421e862f4fae9fac92c5",
+    "latency_seconds": 10.912,
+    "usage": {
+      "prompt_tokens": 2153,
+      "completion_tokens": 243,
+      "total_tokens": 2396,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d297431e9db91384a6f5aad8ea10af7a7f1a13f6235ebd897bedf1f36df2970e"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04784",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "52660e29054d6d9badb63fd05a3aeeabe2499c29ffda30c54d5f1ffb1ef589ba",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "c1d777b85d6504602c6d9b033eae14ab58292750e6cc0de8555f0217ac951a51",
+  "started_utc": "2026-09-09T17:53:49.012638+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate computed change as 0.2% (0.18pp) but reference and evidence show FY2019 margin=21957/514405=4.268%, FY2018=20437/500343=4.084%, change=0.184%≈0.2% in percentage points; however reference answer is 0.002 (0.2% as proportion = 0.2 percentage points? Actually 0.002=0.2% of revenues i.e. 0.2pp). Wait: reference 0.002 means 0.2% in percent units? Question asks units of percents, round one decimal: 0.2%. Candidate says 0.2%. That matches. But reference given as 0.002 likely proportion (0.2%). So candidate answer 0.2% agrees. Re-evaluate: margin19=4.27%, margin18=4.09%, diff=0.18%→0.2%. Reference 0.002 proportion =0.2%. Correct. So label correct.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Walmart identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 to FY2019 used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer in percents (0.2%)"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Change 0.2% matches reference 0.002 proportion"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Uses operating income and total revenues from evidence"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "88bf9143abe6a00bad0427b8b222cad29d76bd995f685161585976a2a90b3800",
+    "latency_seconds": 10.482,
+    "usage": {
+      "prompt_tokens": 2275,
+      "completion_tokens": 393,
+      "total_tokens": 2668,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3c308b36f1b019c6d2f7b2305edb813d12919b92ad7eeeab2cd28db521f57107"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

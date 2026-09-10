@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_02987",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e41014be9d6f138e0282f21d87298588e3999903f3c7b4073c34cd95fc9df007",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "dc73f58567b570ea43568706072c7e4dad3ea96e0fcd647f68b1f40afe86e107",
+  "started_utc": "2026-09-09T17:34:23.998969+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate pasted untrusted 10-K header text and business overview with no substantive fixed asset turnover calculation or answer; it is a refusal.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate did not identify or analyze Activision Blizzard's metric."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2019 analysis provided."
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No ratio computed."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No numeric answer (expected ~24.26) given."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence not used to derive answer; only boilerplate text supplied."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9b2f10618ea648ab83f5045dde44659b55fa490a10515a563bc544bb7fbcde7f",
+    "latency_seconds": 4.184,
+    "usage": {
+      "prompt_tokens": 5194,
+      "completion_tokens": 195,
+      "total_tokens": 5389,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "7304cbfa0bd8b1eb965350c9129ed5a5d73e08eaa6ebdaca47cd0328055ea781"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,5 +1,7 @@
 # ChronoFin 开放式金融输出评估方法
 
+> 适用版本：历史规则评估器及其确定性回归。当前开放式研究应用见[实验分析报告](最终实验分析报告.md)与[十维评估方法](开放式评估方法.md)。下文的“当前”指该历史阶段。
+
 本文档定义 ChronoFin 当前评估器的计算口径、硬门禁、因果/变形指标和适用边界。除特别标为“规范指标”或“后续协议”的部分外，描述均以以下代码与配置为准：
 
 - `configs/rubric.json`（`chronofin-rubric-v1.1`）
@@ -290,7 +292,7 @@ oracle 必须覆盖所有材料性后代；否则当前 CKR 会忽略未列入 `
 
 不同文件来自不同修订轮次。例如 `public_tencent_summary.json` 与 `public_tencent_after_publication_final_score.json` 属于不同重处理阶段；语义稳定性的 v1、intermediate 与 final 也使用不同证据上下文/prompt hash。历史 Hy3 结果、当前确定性重处理、历史 v1 challenge 和当前 v2 seen regression 必须分别命名，报告时绑定确切文件、输入哈希、模型配置和代码版本，不能混合版本取最好结果。
 
-截至本文档编写时，仓库没有已执行的人类标注或专家一致性数据。相关计划见 `docs/human_annotation_protocol.md`。
+该历史阶段未新增专家标注。后续已执行的FinanceBench公开人工标签三分类验证见[外部人工标签验证](外部人工标签验证.md)；十维开放式评分仍无新增专家盲标。
 
 ## 9. 最小报告要求
 

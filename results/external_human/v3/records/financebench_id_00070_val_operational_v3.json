@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00070",
+  "uid": "financebench_id_00070_val",
+  "split": "new_response_validation",
+  "company": "American Water Works",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "74e3882a21bedb4ff50c0c7d101e745bf1c2f769953ab1e5f56fe5fb1f477fea",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "4c37be5e1117fc39449788a5d24397b4a7039d44e530c18b343b8e144cd4d922",
+  "started_utc": "2026-09-09T18:04:49.487313+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "American Water Works has positive working capital based on FY2022 data.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Reference states positive working capital of $124Mn FY2022, but candidate's own balance sheet figures (current assets $1,250Mn minus current liabilities $2,811Mn = negative $1,561Mn) show negative working capital, contradicting reference. Candidate also later correctly computes negative working capital, making initial positive claim incorrect."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "161134f5a90909a0abb2c875e98ded327dc332e901398cfbfcd9dbae0dcf2aa1",
+    "latency_seconds": 6.297,
+    "usage": {
+      "prompt_tokens": 2397,
+      "completion_tokens": 130,
+      "total_tokens": 2527,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "dd24c61fe1b5b6b6b160923c36cbc028d5d0e4fb074f9056f038c2bcf2d97d82"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

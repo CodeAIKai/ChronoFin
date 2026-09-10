@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_02419",
+  "uid": "financebench_id_02419_val",
+  "split": "new_response_validation",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "bcdec9b73a3d2a99a431881946f6e080f652ebc810f4e4786d51206dd7c8f2b1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "ce159ad48dcd5ca800b110a50022f4621f3c3607c47e3891457682398506d90a",
+  "started_utc": "2026-09-10T01:29:17.624971+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate pasted a 10-Q excerpt and did not state whether Pfizer is spinning off any large business segments as of Q2 2023; it withholds the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a0400a3a116a8f6d48b483fc1f285d05a50268ae9c63326445c840f58aa3ecbc",
+    "latency_seconds": 10.139,
+    "usage": {
+      "prompt_tokens": 3771,
+      "completion_tokens": 58,
+      "total_tokens": 3829,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6a385f7ff23e1cf29047c20e58354be32422dc5ae348450dbef4b6e28a43587b"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_10499",
+  "uid": "financebench_id_10499_val",
+  "split": "new_response_validation",
+  "company": "Kraft Heinz",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ce6eab31e696aae7c4cf9e32584900eb3d4dafbd857d677f1deb0bb3d3b2a9b7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "b8adf6f283e5428f8af1e3a93393ea4850f0bdac3115ce5904260aa080d8c3ad",
+  "started_utc": "2026-09-10T01:34:35.959457+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate computed FY2019 COGS ($16,830M) / avg inventory (($2,721M+$2,667M)/2=$2,694M) = 6.25, matching reference and evidence, rounded to two decimals."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d833f794ab13014a887a9773a959d4521e20a73e32dcb843052e015dfc0f5243",
+    "latency_seconds": 6.766,
+    "usage": {
+      "prompt_tokens": 2979,
+      "completion_tokens": 72,
+      "total_tokens": 3051,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "49057bcca122a903aaebf673eac4b9d2bad94afe8fa437ae07be965c34d6a4de"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_03282",
+  "company": "Netflix",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ebb50fa19a5811cfb7f221a96ea1f5e12cb4953fb50bc539bf1943cfac0bd78d",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "47daadd813b350e0f45ec0c4166279c5d4564258a38f167f081bb4eca03f664d",
+  "started_utc": "2026-09-09T17:51:38.184196+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate correctly states Netflix FY2017 year-end total current liabilities as $5,466.312 million (from $5,466,312 thousand in balance sheet), matching reference 5466 with reasonable rounding.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Netflix, as requested"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2017 year-end (Dec 31, 2017) balance sheet used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Converted thousands to USD millions correctly: 5,466,312k = 5,466.312M"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Total current liabilities = 5,466.312 million, matches reference 5466"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence balance sheet shows Total current liabilities 5,466,312 in thousands"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "265a0540b729670e50010557ea0952398c7fdb7237fd1f05224045a4cd8f8f86",
+    "latency_seconds": 8.942,
+    "usage": {
+      "prompt_tokens": 1961,
+      "completion_tokens": 249,
+      "total_tokens": 2210,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3bbf191c3d7655e1ba063a68c26177fdac75d5aaa1beb43986fb8ae4d429868a"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01028",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "65a85de45945e88978eecab9d082d84c923092682ea80772720452e1ca60fdaf",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9e1736aef098071461aa40ff162cde48cdbf7952d6318ede83e7b74ad25bbad2",
+  "started_utc": "2026-09-09T17:33:35.640771+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate does not answer the question, instead apologizes and redirects to external sources without providing the geographies.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not identify American Express geographies"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No 2022 geography answer provided"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No substantive content to assess unit"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Refuses to answer, gives no list of regions"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate explicitly disclaims access to filings; evidence not used"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cec4aa63a0803858ebca8c48d3fbffaa338bdbfd5b7614d857f8c124c5996bde",
+    "latency_seconds": 3.865,
+    "usage": {
+      "prompt_tokens": 1329,
+      "completion_tokens": 181,
+      "total_tokens": 1510,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "691d5f441e25ba8df9a9960457ab3a4db1c688bdba237b41ad02b15b794a6fcc"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

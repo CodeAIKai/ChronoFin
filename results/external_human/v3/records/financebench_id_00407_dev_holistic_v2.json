@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00407",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "9a1153d8b359fa319e89b4f3d77cdda865b92e45ca52924431fee5dec35b7a38",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "abb04931d8451069faec7767cce73ca5669f1902a4941e0022aa8af7c351a5ba",
+  "started_utc": "2026-09-09T17:43:09.643423+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot answer due to missing data and withholds the conclusion, despite evidence showing corporate bonds were the largest short-term investment."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fb8bda0e8927151a23f0a4ba38e4048c3eacb9d5f167d3c22e0f44ed00db2463",
+    "latency_seconds": 6.25,
+    "usage": {
+      "prompt_tokens": 1583,
+      "completion_tokens": 49,
+      "total_tokens": 1632,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "393ebd3f3d976430a8bfd2d7f3657bad309b370e4b5cf170b79a8f06f4c9c5ae"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00407_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00407_holistic.json",
+  "parent_sha256": "8d28641fbe0e9cf3e8eb64c0039fcbc08c95ceb191064aa731e0423e30e7e16f"
+}

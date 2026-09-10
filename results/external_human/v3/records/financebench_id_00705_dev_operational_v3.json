@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00705",
+  "uid": "financebench_id_00705_dev",
+  "split": "development",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6b7fbe1d2930dd93b7630bb1fa36a5c25efec8bef1813877ef06595fa48173a5",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "6d9ced47b1d9826b775282bd23cc952a81b7b3cc7f3ba4642acfde5c0666bd8a",
+  "started_utc": "2026-09-09T18:07:33.489355+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "This is an increase of $400,000,000.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states PepsiCo increased five-year unsecured revolving credit agreement from $3.8B to $4.2B on May 26, 2023, a $400M increase, matching reference and evidence (old $3.8B terminated, new $4.2B five year agreement same date)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e635fe8733af302e1f4548fb2a18d61e6819b60fa7b6b90dc9c19f9da62c5ddb",
+    "latency_seconds": 7.224,
+    "usage": {
+      "prompt_tokens": 2228,
+      "completion_tokens": 124,
+      "total_tokens": 2352,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "894f778cd4b18479eb5e56fd132fc36ebdfaac816371d6bffa68dcb13f8ddc34"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00603",
+  "uid": "financebench_id_00603_dev",
+  "split": "development",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "a7fe6a3a54865003dac67b41517b4809c3ced794a003f0ece733588183d8fc66",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "b9fb3f9a84e3dd89f25ce2ac0493766ddde796533d4992e5b99121f0547fa4ce",
+  "started_utc": "2026-09-09T18:06:53.777242+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "The $104.2 million increase was primarily due to the opening of 47 new stores since January 29, 2022, inventory to support new brand launches and brand expansions, and inventory cost increases.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate correctly lists drivers (47 new stores, new brand launches/expansions, inventory cost increases) matching evidence and reference for FY2023 = period ended Jan 28 2023 (fiscal 2022)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6dfe05f8c930aebfe0dc773291382a179ce34b21b587c36f66da08317783d519",
+    "latency_seconds": 5.215,
+    "usage": {
+      "prompt_tokens": 1472,
+      "completion_tokens": 133,
+      "total_tokens": 1605,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4bc8efa6a50aa01020c9533adcc0c9dc7689d1160da2b17cae69b069144f18e0"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

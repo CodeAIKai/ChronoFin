@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_06272",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "160777a667b19da0a6f653e891769c74455e9c85c82ecaf40e4a5160cd026b67",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2e0bd56349ab9b2b559af9b7d132e9d8a29c3d50bf263f7be88656716c518891",
+  "started_utc": "2026-09-09T18:03:14.449501+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it lacks access to external data and only explains how to calculate the ratio, providing no substantive numeric answer for Coca-Cola FY2022 payout ratio.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references Coca-Cola as entity but gives no answer"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 mentioned in explanation only"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No ratio value provided in any unit"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer given; refusal to compute"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate does not use supplied evidence to derive answer"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8540115a0ef225cbb86324a9abecc4cecace6b2fc780ea91d3a9ecc4a28de1e9",
+    "latency_seconds": 9.075,
+    "usage": {
+      "prompt_tokens": 3467,
+      "completion_tokens": 190,
+      "total_tokens": 3657,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4d453be7ba26bb95c0c8ee33d23ca0e09d9a13a53a5a5f0540d7c8116060a47c"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

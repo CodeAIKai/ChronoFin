@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01226",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c5111956e72eab9675ceaa4b5546097c88b09deddfe4a786e5d149c4418ba595",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "e5b99fd7f20ba7e4505d62d42648402f852a2bf60b36f8a4bc380166b8aec83d",
+  "started_utc": "2026-09-09T18:00:40.080159+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.9,
+    "reason": "Reference states operating margin decreased 1.7% primarily due to lower gross margin and one-off charges (litigation, PFAS impairment, Russia exit, divestiture restructuring). Candidate adds 2.4pp raw material/logistics cost as primary driver and omits that decrease was primarily via gross margin; evidence shows raw material costs hit cost of sales but reference attributes to gross margin decrease and one-off charges, not standalone 2.4pp operating margin driver as candidate implies."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "28b5920073e2e2f32e9320702ac7496b2b599990a473a5462d90a98b874c062a",
+    "latency_seconds": 9.9,
+    "usage": {
+      "prompt_tokens": 1501,
+      "completion_tokens": 119,
+      "total_tokens": 1620,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6613420054f9ab22cbea984b1d3fcdb29bd04efbd4551089309ada10987efc0d"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

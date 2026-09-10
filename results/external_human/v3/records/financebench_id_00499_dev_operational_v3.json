@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00499",
+  "uid": "financebench_id_00499_dev",
+  "split": "development",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "e25b399f98d3c5b8f1f6298d91b85fcaedabd152de7365187b6abb0036c0bdd9",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "5eeffc407b2d9bc8a4bbd45133cd19e209c2bc06cbf6c4cbaf52e88a96024a3f",
+  "started_utc": "2026-09-09T18:06:07.963296+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "it is not possible to determine whether 3M is a capital-intensive business based on FY2022 data",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot determine the answer and claims the filing lacks CAPEX and fixed asset ratios, declining to answer despite evidence containing PP&E and CAPEX figures."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a215832587a99755809b8a2fcdbf04475cfe5b2c8491414ef28a31221dfdb7b6",
+    "latency_seconds": 5.671,
+    "usage": {
+      "prompt_tokens": 3487,
+      "completion_tokens": 106,
+      "total_tokens": 3593,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2f1932c52bbc026d5f43a490221251fabf879f2218d9b8fab9c2798aa0890563"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

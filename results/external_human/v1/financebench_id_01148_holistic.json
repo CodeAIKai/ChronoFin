@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01148",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "969bfa712618e318e0aa2dd01a9a51cf788f0f3da2104a6980c2b60fc372adcf",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "053dfef0994cc4717a63ff9148ba0dbcc38290ca3d7ea03a831acbf245165012",
+  "started_utc": "2026-09-09T17:33:42.308134+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states Amcor primarily operates in packaging industry, matching reference and evidence describing Amcor as a global leader in responsible packaging production."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "274e7f452c426358503062cf2c8dcdf5797136f75eeeaab332d7fedc4fcd6173",
+    "latency_seconds": 1.786,
+    "usage": {
+      "prompt_tokens": 1019,
+      "completion_tokens": 47,
+      "total_tokens": 1066,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8fabd0ca5c7bc69374a3065762dc89ff520e0f66b5f025e7df4e8e94e21b73b8"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

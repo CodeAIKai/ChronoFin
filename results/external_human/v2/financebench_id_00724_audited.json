@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00724",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f8835ad8b841dda2e2f6210e8af669268cc6077bb94fac6df1ea8b59a4aae8f0",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "1faf619d4d19ed348944bbfbdd56d67117bf77dc906d261d06b1ee514f76254b",
+  "started_utc": "2026-09-09T17:45:48.389948+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate withholds the requested answer and only explains how to obtain it, declining to answer due to lack of access.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Question entity Pfizer recognized but not answered"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Q2 2023 YoY mentioned in instructions to user, not answered"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Percentage basis mentioned in instructions, not answered"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive region provided; refused to answer"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No evidence used; candidate disclaims access"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0d6de6346e793ad9115666c7d102a57d533e316c55339c8c5bd6c21329b2bfc2",
+    "latency_seconds": 8.818,
+    "usage": {
+      "prompt_tokens": 2347,
+      "completion_tokens": 200,
+      "total_tokens": 2547,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c5b83bcb6cf35e9b7e8b4b2871e3f48f707c3774de9500d42144f90283e9da1c"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

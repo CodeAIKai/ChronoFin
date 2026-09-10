@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00790",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "55594efd8efa26c02a42cedc8ed180c4cb8532c4d8949c7bf01637fd5a91a2e4",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "529466fb861cd39f57f473d9bc9abb1e98bef014b6da7de73b4bf35b5cbdf9cf",
+  "started_utc": "2026-09-09T17:33:20.266752+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.92,
+    "reason": "Candidate concludes CVS Health is capital-intensive in FY2022, agreeing with reference's yes verdict; uses balance sheet evidence (total assets $228,275M, PP&E, leases, goodwill) consistent with supplied data and acknowledges lower physical asset intensity, matching reference nuance.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is CVS Health, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 data used, matches question and reference."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Uses millions as per evidence; no conflicting unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Substantive answer: yes, capital-intensive (with caveats on degree), aligns with reference yes."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Balance sheet figures (PP&E 12,873; leases 17,872; goodwill 78,150; intangibles 24,754; total assets 228,275) match evidence."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c20c9dc3893faaae5cd25185a426a3985904f532a27b7e4f153f83b7a9cfc637",
+    "latency_seconds": 3.752,
+    "usage": {
+      "prompt_tokens": 3264,
+      "completion_tokens": 264,
+      "total_tokens": 3528,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "eed70173cfe284c3aabdeabbba880fcc0b77b551ac09cc2e370e832ea514ab8e"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.92,
+  "reference_conflict": false
+}

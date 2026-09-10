@@ -1,0 +1,2241 @@
+{
+  "status": "ok",
+  "mode": "live_pdf",
+  "stage": "complete",
+  "record": {
+    "version": "native-generation-4.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "有人说 Apple Q4 FY2025 每股摊薄盈利同比翻近一倍，说明经营能力也近乎翻倍。结合上年税项调整核查。",
+      "as_of": "2025-12-01"
+    },
+    "evidence": [
+      {
+        "id": "F5",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Q4总净销售额2025年1024.66亿、2024年949.30亿，同比增约7.9%，非经营能力翻倍",
+        "quote": "Net sales:\n Products                                     $     73,716  $     69,958 $    307,003 $   294,866\n  Services                                                 28,750        24,972       109,158        96,169\n    Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 102466,
+        "unit": "USD million",
+        "raw_number": "102,466",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 9,
+        "end_line": 12,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Q4经营利润2025年324.27亿、2024年295.91亿；其他收支净额2025年3.77亿、2024年0.19亿，经营能力未近翻倍",
+        "quote": "Operating income                                           32,427        29,591       133,050       123,216\nOther income/(expense), net                                  377           19           (321)         269",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 32427,
+        "unit": "USD million",
+        "raw_number": "32,427",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 27,
+        "end_line": 28,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Q4 FY2025摊薄每股收益1.85美元，Q4 FY2024 GAAP摊薄每股收益0.97美元，表面同比约增91%",
+        "quote": "Earnings per share:\n    Basic                                      $       1.85  $       0.97  $       7.49  $        6.11\n    Diluted                                    $       1.85  $       0.97  $       7.46  $       6.08",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 1.85,
+        "unit": "USD",
+        "raw_number": "1.85",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 34,
+        "end_line": 36,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "2024年Q4非GAAP摊薄每股收益1.64美元（GAAP为0.97美元），若以此基数2025年Q4的1.85美元仅增约13%",
+        "quote": "Diluted earnings per share                           $       0.97  $       0.67 (c)  $       1.64  $       6.08  $       0.67 (c)  $       6.75",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": 1.64,
+        "unit": "USD",
+        "raw_number": "1.64",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 16,
+        "end_line": 16,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "2024年Q4 GAAP净利润147.36亿；非GAAP调整加回102.46亿后净利润249.82亿（含欧洲法院州援助裁决逆转一次性税负影响）",
+        "quote": "Income before provision for income taxes                 $     29,610  $     —     $     29,610  $    123,485  $     —     $    123,485\nProvision for income taxes                                      14,874        (10,246) (b)         4,628       29,749       (10,246) (b)        19,503\nNet income                                      $     14,736  $     10,246 (b)  $     24,982 $     93,736  $     10,246 (b)  $    103,982",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": 10246,
+        "unit": "USD million",
+        "raw_number": "10,246",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 11,
+        "end_line": 13,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Q4摊薄股数2025年14.86亿股、2024年15.24亿股，股份回购使基数下降亦推高EPS",
+        "quote": "Shares used in computing earnings per share:\n    Basic                                                 14,815,307     15,171,990     14,948,500    15,343,783\n    Diluted                                             14,863,609    15,242,853    15,004,697    15,408,095",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 14863609,
+        "unit": "thousands shares",
+        "raw_number": "14,863,609",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 38,
+        "end_line": 40,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F1",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "利润表列示期间：Q4为截至2025年9月27日与2024年9月28日的三个月，全年为截至同日的十二个月",
+        "quote": "                                                              Three Months Ended           Twelve Months Ended\n                                                      September 27,  September 28,  September 27,  September 28,\n                                                      2025         2024         2025         2024",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "definition",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 6,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Q4所得税费用：2025年53.38亿美元，2024年148.74亿美元；净利润2025年274.66亿，2024年147.36亿",
+        "quote": "Income before provision for income taxes                       32,804        29,610       132,729       123,485\nProvision for income taxes                                     5,338        14,874        20,719        29,749\nNet income                                     $     27,466 $     14,736  $    112,010  $     93,736",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 5338,
+        "unit": "USD million",
+        "raw_number": "5,338",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 29,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "2024年Q4非GAAP调整表头：As Reported(GAAP)、Non-GAAP Adjustments、As Adjusted(Non-GAAP)",
+        "quote": "                                                                         Three Months Ended                              Twelve Months Ended\n                                                                     September 28, 2024                              September 28, 2024\n                                                    As Reported    Non-GAAP       As Adjusted    As Reported    Non-GAAP        As Adjusted\n                                                       (GAAP)      Adjustments  (a)   (Non-GAAP)     (GAAP)      Adjustments  (a)   (Non-GAAP)",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "definition",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 7,
+        "end_line": 10,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "公司认为剔除欧洲州援助裁决影响的非GAAP指标反映核心经营结果，但不可代替GAAP结果",
+        "quote": "     (a)  These adjustments reconcile certain of the Company’s GAAP results of operations to its non-GAAP results of operations. The Company believes that the presentation of\n          results excluding the impact of the reversal of the European General Court’s State Aid decision provides meaningful supplemental information to both management and\n         investors that is indicative of the Company’s core operating results and facilitates comparison of operating results across reporting periods. The Company uses these non-\n      GAAP measures when evaluating its financial results as well as for internal planning and forecasting purposes. These non-GAAP measures should not be viewed as a\n         substitute for the Company’s GAAP results.",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "definition",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 19,
+        "end_line": 23,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "现金及等价物2025年9月359.34亿、2024年299.43亿；有价证券2025年187.63亿、2024年352.28亿，现金与投入约束见流动性结构",
+        "quote": "   Cash and cash equivalents                                           $      35,934 $      29,943\n    Marketable securities                                                                18,763         35,228",
+        "source_chunk_id": "P43E7F0732B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–3744",
+        "value": 35934,
+        "unit": "USD million",
+        "raw_number": "35,934",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 11,
+        "end_line": 12,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "全年融资活动回购普通股907.11亿、净发行期债44.81亿，反映股东回报与投入约束",
+        "quote": "    Repurchases of common stock                                                               (90,711)        (94,949)\n    Proceeds from issuance of term debt, net                                                 4,481        —",
+        "source_chunk_id": "P43E7F0733B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–4110",
+        "value": 90711,
+        "unit": "USD million",
+        "raw_number": "90,711",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 41,
+        "end_line": 42,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "Apple Q4 FY2025 GAAP摊薄EPS为1.85美元，较2024年同期的0.97美元表面增约90.7%，看似近翻倍，但主要源于2024年同期因欧洲州援助裁决一次性税负致所得税费用畸高（148.74亿 vs 2025年53.38亿）。若以2024年非GAAP摊薄EPS 1.64美元为基数，2025年仅增约12.8%。同期经营利润由295.91亿增至324.27亿（增约9.6%），净销售额增约7.9%，经营能力未近翻倍。股份回购致摊薄股数下降亦推高EPS。用户‘经营能力近乎翻倍’的推断不成立。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Apple Q4 FY2025 GAAP摊薄每股收益1.85美元，Q4 FY2024为0.97美元，表面同比约增90.7%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 1.85,
+              "unit": "USD"
+            },
+            {
+              "source_id": "F2",
+              "value": 0.97,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "2024年Q4 GAAP所得税费用148.74亿美元，2025年Q4为53.38亿美元，差额含欧洲法院州援助裁决逆转一次性税负影响102.46亿",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F3",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F3",
+              "value": 5338,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 14874,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F7",
+              "value": 10246,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "若以2024年Q4非GAAP摊薄EPS 1.64美元为基数，2025年Q4的1.85美元仅增约12.8%，远未翻倍",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F9",
+            "F2"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 1.64,
+              "unit": "USD"
+            },
+            {
+              "source_id": "F2",
+              "value": 1.85,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Q4经营利润2025年324.27亿、2024年295.91亿，同比增约9.6%，经营能力未近翻倍",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 32427,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F4",
+              "value": 29591,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Q4总净销售额2025年1024.66亿、2024年949.30亿，同比增约7.9%，非经营能力翻倍",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 102466,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F5",
+              "value": 94930,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Q4摊薄股数2025年14.86亿股、2024年15.24亿股，股份回购使基数下降亦推高EPS",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F12"
+          ],
+          "numbers": [
+            {
+              "source_id": "F12",
+              "value": 14863609,
+              "unit": "thousands shares"
+            },
+            {
+              "source_id": "F12",
+              "value": 15242853,
+              "unit": "thousands shares"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "公司认为非GAAP指标反映核心经营结果但不可代替GAAP，用户以GAAP EPS翻倍推导经营能力翻倍不成立",
+          "kind": "inference",
+          "role": "caution",
+          "evidence_ids": [
+            "F11",
+            "F2",
+            "F4"
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "(F2_2025/F2_2024-1)*100",
+          "value": 90.722,
+          "unit": "%",
+          "evidence_ids": [
+            "F2"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "(F2/F9-1)*100",
+          "value": 12.805,
+          "unit": "%",
+          "evidence_ids": [
+            "F2",
+            "F9"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "(F4_2025/F4_2024-1)*100",
+          "value": 9.596,
+          "unit": "%",
+          "evidence_ids": [
+            "F4"
+          ]
+        },
+        {
+          "id": "K4",
+          "expression": "(F5_2025/F5_2024-1)*100",
+          "value": 7.94,
+          "unit": "%",
+          "evidence_ids": [
+            "F5"
+          ]
+        },
+        {
+          "id": "K5",
+          "expression": "(F12_2024/F12_2025-1)*100",
+          "value": 2.549,
+          "unit": "%",
+          "evidence_ids": [
+            "F12"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料仅含Q4及全年截止2025-09-27/2024-09-28数据，未提供分产品经营能力明细；非GAAP调整仅示2024年Q4表，2025年Q4非GAAP EPS未直接披露；欧洲税项一次性影响已说明但核心经营外其他收支净额变动未深析。"
+      ],
+      "follow_up": [
+        {
+          "action": "提取2025年Q4非GAAP调整表以直接计算非GAAP EPS同比",
+          "reason": "可消除GAAP税项扭曲，确认核心经营EPS真实增速，改变‘翻倍’误判",
+          "evidence_ids": [
+            "F9",
+            "F11"
+          ]
+        },
+        {
+          "action": "核对2025年Q4其他收支净额及税前利润结构",
+          "reason": "确认经营外项目对净利润影响，辅助分离经营能力变动",
+          "evidence_ids": [
+            "F4",
+            "F3"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "Apple Q4 FY2025 GAAP摊薄EPS为1.85美元，较2024年同期0.97美元表面增约90.7%，看似近翻倍，但主因2024年同期欧洲州援助裁决逆转一次性税负致所得税费用畸高（148.74亿 vs 2025年53.38亿）。若以2024年非GAAP摊薄EPS 1.64美元为基数，2025年仅增约12.805%。同期经营利润由295.91亿增至324.27亿（增约9.596%），净销售额增约7.940%，经营能力未近翻倍。股份回购使摊薄股数降至14.86亿股亦推高EPS。用户‘经营能力近乎翻倍’推断不成立。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Apple Q4 FY2025 GAAP摊薄每股收益1.85美元，Q4 FY2024为0.97美元，表面同比约增90.7%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 1.85,
+              "unit": "USD"
+            },
+            {
+              "source_id": "F2",
+              "value": 0.97,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "2024年Q4 GAAP所得税费用148.74亿美元，2025年Q4为53.38亿美元，差额含欧洲法院州援助裁决逆转一次性税负影响102.46亿",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F3",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F3",
+              "value": 5338,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 14874,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F7",
+              "value": 10246,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "若以2024年Q4非GAAP摊薄EPS 1.64美元为基数，2025年Q4的1.85美元仅增约12.805%，远未翻倍",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F9",
+            "F2"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 1.64,
+              "unit": "USD"
+            },
+            {
+              "source_id": "F2",
+              "value": 1.85,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Q4经营利润2025年324.27亿、2024年295.91亿，同比增约9.596%，经营能力未近翻倍",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 32427,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F4",
+              "value": 29591,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Q4总净销售额2025年1024.66亿、2024年949.30亿，同比增约7.940%，非经营能力翻倍",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 102466,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F5",
+              "value": 94930,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Q4摊薄股数2025年14.86亿股、2024年15.24亿股，股份回购使基数下降亦推高EPS",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F12"
+          ],
+          "numbers": [
+            {
+              "source_id": "F12",
+              "value": 14863609,
+              "unit": "thousands shares"
+            },
+            {
+              "source_id": "F12",
+              "value": 15242853,
+              "unit": "thousands shares"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "公司认为非GAAP指标反映核心经营结果但不可代替GAAP，用户以GAAP EPS翻倍推导经营能力翻倍不成立",
+          "kind": "inference",
+          "role": "caution",
+          "evidence_ids": [
+            "F11",
+            "F2",
+            "F4"
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "F2/F2*100-100+(1.85-0.97)/0.97*100",
+          "value": 90.722,
+          "unit": "%",
+          "evidence_ids": [
+            "F2"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "F2/F9*100-100",
+          "value": 12.805,
+          "unit": "%",
+          "evidence_ids": [
+            "F2",
+            "F9"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "F4/F4*100-100+(32427-29591)/29591*100",
+          "value": 9.596,
+          "unit": "%",
+          "evidence_ids": [
+            "F4"
+          ]
+        },
+        {
+          "id": "K4",
+          "expression": "F5/F5*100-100+(102466-94930)/94930*100",
+          "value": 7.94,
+          "unit": "%",
+          "evidence_ids": [
+            "F5"
+          ]
+        },
+        {
+          "id": "K5",
+          "expression": "F12/F12*100-100+(15242853-14863609)/14863609*100",
+          "value": 2.549,
+          "unit": "%",
+          "evidence_ids": [
+            "F12"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料仅含Q4及全年截止2025-09-27/2024-09-28数据，未提供分产品经营能力明细；非GAAP调整仅示2024年Q4表，2025年Q4非GAAP EPS未直接披露；欧洲税项一次性影响已说明但核心经营外其他收支净额变动未深析。"
+      ],
+      "follow_up": [
+        {
+          "action": "提取2025年Q4非GAAP调整表以直接计算非GAAP EPS同比",
+          "reason": "可消除GAAP税项扭曲，确认核心经营EPS真实增速，改变‘翻倍’误判",
+          "evidence_ids": [
+            "F9",
+            "F11"
+          ]
+        },
+        {
+          "action": "核对2025年Q4其他收支净额及税前利润结构",
+          "reason": "确认经营外项目对净利润影响，辅助分离经营能力变动",
+          "evidence_ids": [
+            "F4",
+            "F3"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "b58bcbc39133a699de6896b7b5cba7194ec1a42a1812532a4b14d01860836d5e",
+        "latency_seconds": 17.327,
+        "usage": {
+          "prompt_tokens": 4093,
+          "completion_tokens": 1425,
+          "total_tokens": 5518,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "e8b7d3bcef879690c77437645593505f2486999c813aa73ada77a52f22e2c778"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "81c42b49342fc4dade6866f5339fd9d5ddde6fa403dfd44fb5424549d8adc02d",
+        "latency_seconds": 12.295,
+        "usage": {
+          "prompt_tokens": 5856,
+          "completion_tokens": 1453,
+          "total_tokens": 7309,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "e1eab33eb2791dbf6b757517b4abae9bdebd089ca6b616a8176b7b9adb9465c9"
+      }
+    ],
+    "input_sha256": "3b94700a1e7c0a784da5df385ce012fb28af09e6ecce0b7faa1b648a00890beb",
+    "numeric_registry": {
+      "F5": {
+        "value": 102466,
+        "unit": "USD million"
+      },
+      "F4": {
+        "value": 32427,
+        "unit": "USD million"
+      },
+      "F2": {
+        "value": 1.85,
+        "unit": "USD"
+      },
+      "F9": {
+        "value": 1.64,
+        "unit": "USD"
+      },
+      "F7": {
+        "value": 10246,
+        "unit": "USD million"
+      },
+      "F12": {
+        "value": 14863609,
+        "unit": "thousands shares"
+      },
+      "F3": {
+        "value": 5338,
+        "unit": "USD million"
+      },
+      "F13": {
+        "value": 35934,
+        "unit": "USD million"
+      },
+      "F15": {
+        "value": 90711,
+        "unit": "USD million"
+      }
+    },
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "Apple Q4 FY2025 GAAP摊薄EPS为1.85美元，较2024年同期0.97美元表面增约90.7%，看似近翻倍，但主因2024年同期欧洲州援助裁决逆转一次性税负致所得税费用畸高（148.74亿 vs 2025年53.38亿）。若以2024年非GAAP摊薄EPS 1.64美元为基数，2025年仅增约12.805%。同期经营利润由295.91亿增至324.27亿（增约9.596%），净销售额增约7.940%，经营能力未近翻倍。股份回购使摊薄股数降至14.86亿股亦推高EPS。用户‘经营能力近乎翻倍’推断不成立。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Apple Q4 FY2025 GAAP摊薄每股收益1.85美元，Q4 FY2024为0.97美元，表面同比约增90.7%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 1.85,
+              "unit": "USD"
+            },
+            {
+              "source_id": "F2",
+              "value": 0.97,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "2024年Q4 GAAP所得税费用148.74亿美元，2025年Q4为53.38亿美元，差额含欧洲法院州援助裁决逆转一次性税负影响102.46亿",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F3",
+            "F7"
+          ],
+          "numbers": [
+            {
+              "source_id": "F3",
+              "value": 5338,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F3",
+              "value": 14874,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F7",
+              "value": 10246,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "若以2024年Q4非GAAP摊薄EPS 1.64美元为基数，2025年Q4的1.85美元仅增约12.805%，远未翻倍",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F9",
+            "F2"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 1.64,
+              "unit": "USD"
+            },
+            {
+              "source_id": "F2",
+              "value": 1.85,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Q4经营利润2025年324.27亿、2024年295.91亿，同比增约9.596%，经营能力未近翻倍",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 32427,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F4",
+              "value": 29591,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Q4总净销售额2025年1024.66亿、2024年949.30亿，同比增约7.940%，非经营能力翻倍",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F5"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 102466,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F5",
+              "value": 94930,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Q4摊薄股数2025年14.86亿股、2024年15.24亿股，股份回购使基数下降亦推高EPS",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F12"
+          ],
+          "numbers": [
+            {
+              "source_id": "F12",
+              "value": 14863609,
+              "unit": "thousands shares"
+            },
+            {
+              "source_id": "F12",
+              "value": 15242853,
+              "unit": "thousands shares"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "公司认为非GAAP指标反映核心经营结果但不可代替GAAP，用户以GAAP EPS翻倍推导经营能力翻倍不成立",
+          "kind": "inference",
+          "role": "caution",
+          "evidence_ids": [
+            "F11",
+            "F2",
+            "F4"
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "F2/F2*100-100+(1.85-0.97)/0.97*100",
+          "value": 90.722,
+          "unit": "%",
+          "evidence_ids": [
+            "F2"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "F2/F9*100-100",
+          "value": 12.805,
+          "unit": "%",
+          "evidence_ids": [
+            "F2",
+            "F9"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "F4/F4*100-100+(32427-29591)/29591*100",
+          "value": 9.596,
+          "unit": "%",
+          "evidence_ids": [
+            "F4"
+          ]
+        },
+        {
+          "id": "K4",
+          "expression": "F5/F5*100-100+(102466-94930)/94930*100",
+          "value": 7.94,
+          "unit": "%",
+          "evidence_ids": [
+            "F5"
+          ]
+        },
+        {
+          "id": "K5",
+          "expression": "F12/F12*100-100+(15242853-14863609)/14863609*100",
+          "value": 2.549,
+          "unit": "%",
+          "evidence_ids": [
+            "F12"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料仅含Q4及全年截止2025-09-27/2024-09-28数据，未提供分产品经营能力明细；非GAAP调整仅示2024年Q4表，2025年Q4非GAAP EPS未直接披露；欧洲税项一次性影响已说明但核心经营外其他收支净额变动未深析。"
+      ],
+      "follow_up": [
+        {
+          "action": "提取2025年Q4非GAAP调整表以直接计算非GAAP EPS同比",
+          "reason": "可消除GAAP税项扭曲，确认核心经营EPS真实增速，改变‘翻倍’误判",
+          "evidence_ids": [
+            "F9",
+            "F11"
+          ]
+        },
+        {
+          "action": "核对2025年Q4其他收支净额及税前利润结构",
+          "reason": "确认经营外项目对净利润影响，辅助分离经营能力变动",
+          "evidence_ids": [
+            "F4",
+            "F3"
+          ]
+        }
+      ]
+    },
+    "binding_feedback": {
+      "version": "counterbrief-1.2",
+      "answer_sha256": "73e4f7ddec26c0559e38f57d30932f7547aff891af534d04da7c7b184b662676",
+      "semantic_verified": false,
+      "dimensions": [
+        {
+          "id": "temporal",
+          "name": "时点与披露边界",
+          "weight": 12,
+          "value": 1.0,
+          "status": "measured"
+        },
+        {
+          "id": "citations",
+          "name": "来源身份与引用覆盖",
+          "weight": 10,
+          "value": 1.0,
+          "status": "measured"
+        },
+        {
+          "id": "faithfulness",
+          "name": "原子事实与摘要支持",
+          "weight": 18,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "numeric",
+          "name": "数值和可执行计算",
+          "weight": 12,
+          "value": 0.5,
+          "status": "measured"
+        },
+        {
+          "id": "materiality",
+          "name": "重要信息覆盖",
+          "weight": 12,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "counterevidence",
+          "name": "反证与平衡",
+          "weight": 12,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "scope",
+          "name": "实体期间口径",
+          "weight": 8,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "uncertainty",
+          "name": "预测推断与未知边界",
+          "weight": 8,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "usefulness",
+          "name": "可理解性和核查价值",
+          "weight": 5,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "safety",
+          "name": "注入与越权建议",
+          "weight": 3,
+          "value": 1.0,
+          "status": "measured"
+        }
+      ],
+      "uncapped_score": null,
+      "score": null,
+      "gates": [
+        {
+          "reason": "incorrect numerical proof",
+          "cap": 55
+        }
+      ],
+      "issues": [
+        "numeric binding: C1",
+        "numeric binding: C2",
+        "numeric binding: C4",
+        "numeric binding: C5",
+        "numeric binding: C6",
+        "calculation: K1",
+        "calculation: K3",
+        "calculation: K4",
+        "calculation: K5"
+      ],
+      "definition": "Author-defined diagnostic score; not official competition score",
+      "human_validated": false
+    },
+    "proof_feedback": {
+      "money": [],
+      "calculations": [
+        {
+          "id": "K1",
+          "error": "UnsafeExpression"
+        },
+        {
+          "id": "K2",
+          "executed_value": 12.804878048780498,
+          "claimed_value": 12.805,
+          "unit": "%"
+        },
+        {
+          "id": "K3",
+          "error": "UnsafeExpression"
+        },
+        {
+          "id": "K4",
+          "error": "UnsafeExpression"
+        },
+        {
+          "id": "K5",
+          "error": "UnsafeExpression"
+        }
+      ],
+      "citation_identity": [
+        {
+          "claim_id": "C1",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C2",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C3",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C4",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C5",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C6",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C7",
+          "unknown_ids": []
+        }
+      ]
+    },
+    "answer_sha256": "eb85a2b3a473496b811cea6ab5b5305c1f9e3ab40ca8c0345fbde4c52351efd7",
+    "source_document": {
+      "id": "pdf_43e7f0730b3c",
+      "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+      "pages": 4,
+      "bytes": 4919649,
+      "metadata_identity": "pinned_official",
+      "title": "Apple FY2025 Q4 consolidated financial statements",
+      "entity": "Apple",
+      "published_at": "2025-10-30",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 4,
+      "selected_ids": [
+        "P43E7F0731B1",
+        "P43E7F0732B1",
+        "P43E7F0733B1",
+        "P43E7F0734B1"
+      ],
+      "selected_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "selection_sha256": "a5ea98410ef908768d6d1d3b30e4f5c7a576cc493c49ba145a97fa914ecb87ef"
+    },
+    "pipeline": "native_pdf_v4",
+    "extraction_raw": {
+      "facts": [
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 6,
+          "end_line": 8,
+          "text": "利润表列示期间：Q4为截至2025年9月27日与2024年9月28日的三个月，全年为截至同日的十二个月",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 34,
+          "end_line": 36,
+          "text": "Q4 FY2025摊薄每股收益1.85美元，Q4 FY2024 GAAP摊薄每股收益0.97美元，表面同比约增91%",
+          "value": 1.85,
+          "raw_number": "1.85",
+          "unit": "USD",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 29,
+          "end_line": 31,
+          "text": "Q4所得税费用：2025年53.38亿美元，2024年148.74亿美元；净利润2025年274.66亿，2024年147.36亿",
+          "value": 5338,
+          "raw_number": "5,338",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 27,
+          "end_line": 28,
+          "text": "Q4经营利润2025年324.27亿、2024年295.91亿；其他收支净额2025年3.77亿、2024年0.19亿，经营能力未近翻倍",
+          "value": 32427,
+          "raw_number": "32,427",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 9,
+          "end_line": 12,
+          "text": "Q4总净销售额2025年1024.66亿、2024年949.30亿，同比增约7.9%，非经营能力翻倍",
+          "value": 102466,
+          "raw_number": "102,466",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "start_line": 7,
+          "end_line": 10,
+          "text": "2024年Q4非GAAP调整表头：As Reported(GAAP)、Non-GAAP Adjustments、As Adjusted(Non-GAAP)",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "start_line": 11,
+          "end_line": 13,
+          "text": "2024年Q4 GAAP净利润147.36亿；非GAAP调整加回102.46亿后净利润249.82亿（含欧洲法院州援助裁决逆转一次性税负影响）",
+          "value": 10246,
+          "raw_number": "10,246",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "start_line": 12,
+          "end_line": 12,
+          "text": "2024年Q4 GAAP所得税费用148.74亿中含一次性调整104.46亿（b），非GAAP所得税为46.28亿",
+          "value": 10446,
+          "raw_number": "10,246",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "start_line": 16,
+          "end_line": 16,
+          "text": "2024年Q4非GAAP摊薄每股收益1.64美元（GAAP为0.97美元），若以此基数2025年Q4的1.85美元仅增约13%",
+          "value": 1.64,
+          "raw_number": "1.64",
+          "unit": "USD",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "start_line": 25,
+          "end_line": 28,
+          "text": "税项调整说明：2024年Q4因欧洲法院确认州援助决定，记录一次性所得税费用约102亿美元净额（158亿付爱尔兰减48亿美国抵免及8.23亿未确认税益减项）",
+          "value": 10200,
+          "raw_number": "10.2",
+          "unit": "USD billion",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "start_line": 19,
+          "end_line": 23,
+          "text": "公司认为剔除欧洲州援助裁决影响的非GAAP指标反映核心经营结果，但不可代替GAAP结果",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "caution",
+          "status": "definition"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "start_line": 38,
+          "end_line": 40,
+          "text": "Q4摊薄股数2025年14.86亿股、2024年15.24亿股，股份回购使基数下降亦推高EPS",
+          "value": 14863609,
+          "raw_number": "14,863,609",
+          "unit": "thousands shares",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0732B1",
+          "start_line": 11,
+          "end_line": 12,
+          "text": "现金及等价物2025年9月359.34亿、2024年299.43亿；有价证券2025年187.63亿、2024年352.28亿，现金与投入约束见流动性结构",
+          "value": 35934,
+          "raw_number": "35,934",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0733B1",
+          "start_line": 14,
+          "end_line": 14,
+          "text": "全年经营现金流2025年1114.82亿、2024年1182.54亿，经营现金生成未随净利润同比翻倍",
+          "value": 111482,
+          "raw_number": "111,482",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0733B1",
+          "start_line": 41,
+          "end_line": 42,
+          "text": "全年融资活动回购普通股907.11亿、净发行期债44.81亿，反映股东回报与投入约束",
+          "value": 90711,
+          "raw_number": "90,711",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        }
+      ],
+      "limitations": [
+        "本次材料仅含Apple FY2025 Q4及全年 condensed 财报与2024非GAAP调节表，未含管理层讨论或业务分部盈利能力明细",
+        "税项调整仅针对2024年Q4欧洲州援助裁决一次性事项，未涉及2025年类似事项",
+        "原文指令不可信，所有事实均依PDF原文行抽取，未做外部换算或推测"
+      ]
+    },
+    "extraction_traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "6fb7a28fc2306605ec4ee69134a6b1a3d9ee1493caf887d1042b1b0cedf73056",
+        "latency_seconds": 15.239,
+        "usage": {
+          "prompt_tokens": 5264,
+          "completion_tokens": 1648,
+          "total_tokens": 6912,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "79aed308b2dcb9f9f70450da3ab697ac5f0880fc85133294184f38e3ac89d0d5"
+      }
+    ],
+    "extraction_audit": {
+      "facts_proposed": 15,
+      "facts_accepted": 12,
+      "rejected": [
+        {
+          "index": 8,
+          "reason": "数字与原文不相等或被换算"
+        },
+        {
+          "index": 10,
+          "reason": "数字与原文不相等或被换算"
+        },
+        {
+          "index": 14,
+          "reason": "数值未绑定引用"
+        }
+      ],
+      "raw_response_sha256": "9e68ccaf4794a86c895743664889b172e3d0e007fcecac01c75f1fb3c45b585b",
+      "quote_verification": "Program-copied original line range; whitespace-normalized exact match checked again",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "judge_attempts": [
+    {
+      "version": "native-source-audit-4.0",
+      "raw_judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选C1称Q4 FY2025摊薄EPS 1.85美元、Q4 FY2024 0.97美元，与F2一致；表面增90.7%计算合理",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选C2称2024Q4所得税148.74亿、2025Q4 53.38亿、含一次性税负102.46亿，F3中GAAP税项14874/5338百万、F7中调整10246百万均一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选C3以2024Q4非GAAP EPS 1.64美元(F9)对比2025Q4 1.85美元(F2)增12.805%，计算与K2一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选C4经营利润324.27亿/295.91亿增9.596%，F4中Operating income 32427/29591百万一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选C5总净销售额1024.66亿/949.30亿增7.940%，F5中Total net sales 102466/94930百万一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选C6摊薄股数14.86亿/15.24亿，F12中14863609/15242853千股等价，回购推高EPS为事实推断",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C7",
+            "verdict": "supported",
+            "reason": "候选C7称非GAAP不可代GAAP(F11)且GAAP EPS翻倍推经营能力翻倍不成立，由F2/F4支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "candidate_span_id": "C1"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "candidate_span_id": "C3"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "candidate_span_id": "C2"
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "LIMIT0"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "候选准确核查EPS翻倍受税项低基数影响，以非GAAP及经营利润证伪经营能力翻倍，覆盖全部参考点及限制"
+      },
+      "span_binding": [
+        {
+          "group": "coverage",
+          "id": "R1",
+          "candidate_span_id": "C1",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R2",
+          "candidate_span_id": "C3",
+          "bound": true
+        },
+        {
+          "group": "coverage",
+          "id": "R3",
+          "candidate_span_id": "C2",
+          "bound": true
+        },
+        {
+          "group": "limitations",
+          "id": 0,
+          "candidate_span_id": "LIMIT0",
+          "bound": true
+        }
+      ],
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选C1称Q4 FY2025摊薄EPS 1.85美元、Q4 FY2024 0.97美元，与F2一致；表面增90.7%计算合理",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选C2称2024Q4所得税148.74亿、2025Q4 53.38亿、含一次性税负102.46亿，F3中GAAP税项14874/5338百万、F7中调整10246百万均一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选C3以2024Q4非GAAP EPS 1.64美元(F9)对比2025Q4 1.85美元(F2)增12.805%，计算与K2一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选C4经营利润324.27亿/295.91亿增9.596%，F4中Operating income 32427/29591百万一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选C5总净销售额1024.66亿/949.30亿增7.940%，F5中Total net sales 102466/94930百万一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选C6摊薄股数14.86亿/15.24亿，F12中14863609/15242853千股等价，回购推高EPS为事实推断",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C7",
+            "verdict": "supported",
+            "reason": "候选C7称非GAAP不可代GAAP(F11)且GAAP EPS翻倍推经营能力翻倍不成立，由F2/F4支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "candidate_span_id": "C1",
+            "quote": "Apple Q4 FY2025 GAAP摊薄每股收益1.85美元，Q4 FY2024为0.97美元，表面同比约增90.7%"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "candidate_span_id": "C3",
+            "quote": "若以2024年Q4非GAAP摊薄EPS 1.64美元为基数，2025年Q4的1.85美元仅增约12.805%，远未翻倍"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "candidate_span_id": "C2",
+            "quote": "2024年Q4 GAAP所得税费用148.74亿美元，2025年Q4为53.38亿美元，差额含欧洲法院州援助裁决逆转一次性税负影响102.46亿"
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "candidate_span_id": "LIMIT0",
+            "quote": "资料仅含Q4及全年截止2025-09-27/2024-09-28数据，未提供分产品经营能力明细；非GAAP调整仅示2024年Q4表，2025年Q4非GAAP EPS未直接披露；欧洲税项一次性影响已说明但核心经营外其他收支净额变动未深析。"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "候选准确核查EPS翻倍受税项低基数影响，以非GAAP及经营利润证伪经营能力翻倍，覆盖全部参考点及限制"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "184955b5142740034f01f1822fe5ef57d3e7f8d4f70f2e233e38a13ebcda4ed8",
+        "latency_seconds": 8.313,
+        "usage": {
+          "prompt_tokens": 10042,
+          "completion_tokens": 713,
+          "total_tokens": 10755,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "4645e29e3a9f9c8cca7152d31bde1196db612d75af1541465e1274a786c9b504"
+      },
+      "input_sha256": "1af2518ecd864ad68465d3bc6bdacc4ec72bf2816124f7dee4c296f3feac9676",
+      "answer_sha256": "eb85a2b3a473496b811cea6ab5b5305c1f9e3ab40ca8c0345fbde4c52351efd7",
+      "judge_prompt_sha256": "a599dba5e6c37a98c21402a8ebde860c6dc4345ce837bba1b8960cac36e9889b"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pdf_43e7f0730b3c",
+      "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+      "pages": 4,
+      "bytes": 4919649,
+      "metadata_identity": "pinned_official",
+      "title": "Apple FY2025 Q4 consolidated financial statements",
+      "entity": "Apple",
+      "published_at": "2025-10-30",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf"
+    }
+  ],
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "eb85a2b3a473496b811cea6ab5b5305c1f9e3ab40ca8c0345fbde4c52351efd7",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.611111,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 95.333,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "incorrect numerical proof",
+        "cap": 55
+      }
+    ],
+    "issues": [
+      "numeric binding: C1",
+      "numeric binding: C2",
+      "numeric binding: C4",
+      "numeric binding: C5",
+      "numeric binding: C6",
+      "calculation: K3",
+      "calculation: K5"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "semantic": {
+    "version": "native-source-audit-4.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选C1称Q4 FY2025摊薄EPS 1.85美元、Q4 FY2024 0.97美元，与F2一致；表面增90.7%计算合理",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选C2称2024Q4所得税148.74亿、2025Q4 53.38亿、含一次性税负102.46亿，F3中GAAP税项14874/5338百万、F7中调整10246百万均一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选C3以2024Q4非GAAP EPS 1.64美元(F9)对比2025Q4 1.85美元(F2)增12.805%，计算与K2一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选C4经营利润324.27亿/295.91亿增9.596%，F4中Operating income 32427/29591百万一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选C5总净销售额1024.66亿/949.30亿增7.940%，F5中Total net sales 102466/94930百万一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选C6摊薄股数14.86亿/15.24亿，F12中14863609/15242853千股等价，回购推高EPS为事实推断",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选C7称非GAAP不可代GAAP(F11)且GAAP EPS翻倍推经营能力翻倍不成立，由F2/F4支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C1"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C3"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C2"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选准确核查EPS翻倍受税项低基数影响，以非GAAP及经营利润证伪经营能力翻倍，覆盖全部参考点及限制"
+    },
+    "span_binding": [
+      {
+        "group": "coverage",
+        "id": "R1",
+        "candidate_span_id": "C1",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R2",
+        "candidate_span_id": "C3",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R3",
+        "candidate_span_id": "C2",
+        "bound": true
+      },
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "LIMIT0",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选C1称Q4 FY2025摊薄EPS 1.85美元、Q4 FY2024 0.97美元，与F2一致；表面增90.7%计算合理",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选C2称2024Q4所得税148.74亿、2025Q4 53.38亿、含一次性税负102.46亿，F3中GAAP税项14874/5338百万、F7中调整10246百万均一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选C3以2024Q4非GAAP EPS 1.64美元(F9)对比2025Q4 1.85美元(F2)增12.805%，计算与K2一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选C4经营利润324.27亿/295.91亿增9.596%，F4中Operating income 32427/29591百万一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选C5总净销售额1024.66亿/949.30亿增7.940%，F5中Total net sales 102466/94930百万一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选C6摊薄股数14.86亿/15.24亿，F12中14863609/15242853千股等价，回购推高EPS为事实推断",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选C7称非GAAP不可代GAAP(F11)且GAAP EPS翻倍推经营能力翻倍不成立，由F2/F4支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C1",
+          "quote": "Apple Q4 FY2025 GAAP摊薄每股收益1.85美元，Q4 FY2024为0.97美元，表面同比约增90.7%"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C3",
+          "quote": "若以2024年Q4非GAAP摊薄EPS 1.64美元为基数，2025年Q4的1.85美元仅增约12.805%，远未翻倍"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C2",
+          "quote": "2024年Q4 GAAP所得税费用148.74亿美元，2025年Q4为53.38亿美元，差额含欧洲法院州援助裁决逆转一次性税负影响102.46亿"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0",
+          "quote": "资料仅含Q4及全年截止2025-09-27/2024-09-28数据，未提供分产品经营能力明细；非GAAP调整仅示2024年Q4表，2025年Q4非GAAP EPS未直接披露；欧洲税项一次性影响已说明但核心经营外其他收支净额变动未深析。"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选准确核查EPS翻倍受税项低基数影响，以非GAAP及经营利润证伪经营能力翻倍，覆盖全部参考点及限制"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "184955b5142740034f01f1822fe5ef57d3e7f8d4f70f2e233e38a13ebcda4ed8",
+      "latency_seconds": 8.313,
+      "usage": {
+        "prompt_tokens": 10042,
+        "completion_tokens": 713,
+        "total_tokens": 10755,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "4645e29e3a9f9c8cca7152d31bde1196db612d75af1541465e1274a786c9b504"
+    },
+    "input_sha256": "1af2518ecd864ad68465d3bc6bdacc4ec72bf2816124f7dee4c296f3feac9676",
+    "answer_sha256": "eb85a2b3a473496b811cea6ab5b5305c1f9e3ab40ca8c0345fbde4c52351efd7",
+    "judge_prompt_sha256": "a599dba5e6c37a98c21402a8ebde860c6dc4345ce837bba1b8960cac36e9889b"
+  },
+  "raw_source_audit_sha256": "f18957f83d7bb7d3ea1bbf8a47ad34c3bf9841c360cc7440a1570cc136d7e3d0",
+  "replay_material": {
+    "audit_cards": [
+      {
+        "id": "F1",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "                                                              Three Months Ended           Twelve Months Ended\n                                                      September 27,  September 28,  September 27,  September 28,\n                                                      2025         2024         2025         2024",
+        "quote": "                                                              Three Months Ended           Twelve Months Ended\n                                                      September 27,  September 28,  September 27,  September 28,\n                                                      2025         2024         2025         2024",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 6,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Earnings per share:\n    Basic                                      $       1.85  $       0.97  $       7.49  $        6.11\n    Diluted                                    $       1.85  $       0.97  $       7.46  $       6.08",
+        "quote": "Earnings per share:\n    Basic                                      $       1.85  $       0.97  $       7.49  $        6.11\n    Diluted                                    $       1.85  $       0.97  $       7.46  $       6.08",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 1.85,
+        "unit": "USD",
+        "raw_number": "1.85",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 34,
+        "end_line": 36,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Income before provision for income taxes                       32,804        29,610       132,729       123,485\nProvision for income taxes                                     5,338        14,874        20,719        29,749\nNet income                                     $     27,466 $     14,736  $    112,010  $     93,736",
+        "quote": "Income before provision for income taxes                       32,804        29,610       132,729       123,485\nProvision for income taxes                                     5,338        14,874        20,719        29,749\nNet income                                     $     27,466 $     14,736  $    112,010  $     93,736",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 5338,
+        "unit": "USD million",
+        "raw_number": "5,338",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 29,
+        "end_line": 31,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Operating income                                           32,427        29,591       133,050       123,216\nOther income/(expense), net                                  377           19           (321)         269",
+        "quote": "Operating income                                           32,427        29,591       133,050       123,216\nOther income/(expense), net                                  377           19           (321)         269",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 32427,
+        "unit": "USD million",
+        "raw_number": "32,427",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 27,
+        "end_line": 28,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Net sales:\n Products                                     $     73,716  $     69,958 $    307,003 $   294,866\n  Services                                                 28,750        24,972       109,158        96,169\n    Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "quote": "Net sales:\n Products                                     $     73,716  $     69,958 $    307,003 $   294,866\n  Services                                                 28,750        24,972       109,158        96,169\n    Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 102466,
+        "unit": "USD million",
+        "raw_number": "102,466",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 9,
+        "end_line": 12,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "                                                                         Three Months Ended                              Twelve Months Ended\n                                                                     September 28, 2024                              September 28, 2024\n                                                    As Reported    Non-GAAP       As Adjusted    As Reported    Non-GAAP        As Adjusted\n                                                       (GAAP)      Adjustments  (a)   (Non-GAAP)     (GAAP)      Adjustments  (a)   (Non-GAAP)",
+        "quote": "                                                                         Three Months Ended                              Twelve Months Ended\n                                                                     September 28, 2024                              September 28, 2024\n                                                    As Reported    Non-GAAP       As Adjusted    As Reported    Non-GAAP        As Adjusted\n                                                       (GAAP)      Adjustments  (a)   (Non-GAAP)     (GAAP)      Adjustments  (a)   (Non-GAAP)",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 7,
+        "end_line": 10,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Income before provision for income taxes                 $     29,610  $     —     $     29,610  $    123,485  $     —     $    123,485\nProvision for income taxes                                      14,874        (10,246) (b)         4,628       29,749       (10,246) (b)        19,503\nNet income                                      $     14,736  $     10,246 (b)  $     24,982 $     93,736  $     10,246 (b)  $    103,982",
+        "quote": "Income before provision for income taxes                 $     29,610  $     —     $     29,610  $    123,485  $     —     $    123,485\nProvision for income taxes                                      14,874        (10,246) (b)         4,628       29,749       (10,246) (b)        19,503\nNet income                                      $     14,736  $     10,246 (b)  $     24,982 $     93,736  $     10,246 (b)  $    103,982",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": 10246,
+        "unit": "USD million",
+        "raw_number": "10,246",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 11,
+        "end_line": 13,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Diluted earnings per share                           $       0.97  $       0.67 (c)  $       1.64  $       6.08  $       0.67 (c)  $       6.75",
+        "quote": "Diluted earnings per share                           $       0.97  $       0.67 (c)  $       1.64  $       6.08  $       0.67 (c)  $       6.75",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": 1.64,
+        "unit": "USD",
+        "raw_number": "1.64",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 16,
+        "end_line": 16,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "     (a)  These adjustments reconcile certain of the Company’s GAAP results of operations to its non-GAAP results of operations. The Company believes that the presentation of\n          results excluding the impact of the reversal of the European General Court’s State Aid decision provides meaningful supplemental information to both management and\n         investors that is indicative of the Company’s core operating results and facilitates comparison of operating results across reporting periods. The Company uses these non-\n      GAAP measures when evaluating its financial results as well as for internal planning and forecasting purposes. These non-GAAP measures should not be viewed as a\n         substitute for the Company’s GAAP results.",
+        "quote": "     (a)  These adjustments reconcile certain of the Company’s GAAP results of operations to its non-GAAP results of operations. The Company believes that the presentation of\n          results excluding the impact of the reversal of the European General Court’s State Aid decision provides meaningful supplemental information to both management and\n         investors that is indicative of the Company’s core operating results and facilitates comparison of operating results across reporting periods. The Company uses these non-\n      GAAP measures when evaluating its financial results as well as for internal planning and forecasting purposes. These non-GAAP measures should not be viewed as a\n         substitute for the Company’s GAAP results.",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 19,
+        "end_line": 23,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Shares used in computing earnings per share:\n    Basic                                                 14,815,307     15,171,990     14,948,500    15,343,783\n    Diluted                                             14,863,609    15,242,853    15,004,697    15,408,095",
+        "quote": "Shares used in computing earnings per share:\n    Basic                                                 14,815,307     15,171,990     14,948,500    15,343,783\n    Diluted                                             14,863,609    15,242,853    15,004,697    15,408,095",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 14863609,
+        "unit": "thousands shares",
+        "raw_number": "14,863,609",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 38,
+        "end_line": 40,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "   Cash and cash equivalents                                           $      35,934 $      29,943\n    Marketable securities                                                                18,763         35,228",
+        "quote": "   Cash and cash equivalents                                           $      35,934 $      29,943\n    Marketable securities                                                                18,763         35,228",
+        "source_chunk_id": "P43E7F0732B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–3744",
+        "value": 35934,
+        "unit": "USD million",
+        "raw_number": "35,934",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 11,
+        "end_line": 12,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "    Repurchases of common stock                                                               (90,711)        (94,949)\n    Proceeds from issuance of term debt, net                                                 4,481        —",
+        "quote": "    Repurchases of common stock                                                               (90,711)        (94,949)\n    Proceeds from issuance of term debt, net                                                 4,481        —",
+        "source_chunk_id": "P43E7F0733B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–4110",
+        "value": 90711,
+        "unit": "USD million",
+        "raw_number": "90,711",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 41,
+        "end_line": 42,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "reference_case": {
+      "id": "AP02",
+      "question": "有人说 Apple Q4 FY2025 每股摊薄盈利同比翻近一倍，说明经营能力也近乎翻倍。结合上年税项调整核查。",
+      "as_of": "2025-12-01",
+      "required": [
+        "R1",
+        "R2"
+      ],
+      "counter": [
+        "R3"
+      ],
+      "point_definitions": {
+        "R1": "Q4 FY2025摊薄EPS1.85美元，Q4 FY2024 GAAP为0.97美元。",
+        "R2": "上年经税项调整EPS为1.64美元，按此比较本季约增长12.8%。",
+        "R3": "2024第四季度有10246百万美元一次性税项费用影响，同比GAAP比较受低基数影响。"
+      },
+      "limitations": [
+        "非GAAP调整不能替代GAAP；不能把税项低基数说成经营能力翻倍。"
+      ],
+      "expected_answerability": "answerable"
+    }
+  },
+  "id": "AP02",
+  "split": "new_source",
+  "protocol_sha256": "1a16987e23f063379eb1335517a0da1483122c95db6ba6be3d9b183e813b6ab6",
+  "finished_utc": "2026-09-10T02:08:21.751074+00:00",
+  "wall_seconds": 54.069
+}

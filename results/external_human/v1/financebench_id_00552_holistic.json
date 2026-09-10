@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00552",
+  "company": "Microsoft",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "37b678dabc39f7e108fa5c56b8b4065b1fa37f79386c4ffa0e7a1cd06c466c54",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "7713cc3f46f96f63ce809e6a644fa5cc33e8cec90dfa76c3b8be4e697226749a",
+  "started_utc": "2026-09-09T17:32:55.027775+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate '[END OF FILING]' provides no substantive answer to the question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "00c871dae91c29daddecfc380c92db0be42a34947e6f773272780d7417ea54b9",
+    "latency_seconds": 1.513,
+    "usage": {
+      "prompt_tokens": 2218,
+      "completion_tokens": 38,
+      "total_tokens": 2256,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2a28a563d3a8344082c22eefb504b5a7d543ca3fec83eff805eff412de782e23"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

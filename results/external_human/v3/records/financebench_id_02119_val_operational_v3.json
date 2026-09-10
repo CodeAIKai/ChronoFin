@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02119",
+  "uid": "financebench_id_02119_val",
+  "split": "new_response_validation",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "9a6776616c21ccbd86cfc662c63140c5d83786a8b79896263fdd58ae06ff9cb3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "48e7dcf5e7bfb01e1212dccac15255d4ee616916dd4e3da69ea4c7d93318b702",
+  "started_utc": "2026-09-10T01:29:04.895731+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but you haven't provided the specific financial data necessary to calculate how much each shareholder could get",
+    "content_correct": null,
+    "confidence": 0.98,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer and asks for missing financial data instead of providing the $66.56 per share answer from reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ba50cc5d58f51b8bccc2c6797392d3a9ef9f15d0996873f140edee226f1e8742",
+    "latency_seconds": 10.744,
+    "usage": {
+      "prompt_tokens": 1315,
+      "completion_tokens": 99,
+      "total_tokens": 1414,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1954fcf68944a5a3e4c74923783a0fee59a0825465154d24de2bdc6275d7b7be"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

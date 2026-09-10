@@ -1,0 +1,703 @@
+{
+  "case_id": "E09",
+  "split": "evaluation",
+  "group": "tsmc24",
+  "task": "财报阅读",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:58:51.364627+00:00",
+  "protocol_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "lexical",
+    "query": {
+      "question": "依据 TSMC 的先进制程占比和管理层展望，分析 AI 景气能否完全消除手机季节性。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T01",
+        "source_id": "tsmc24",
+        "locator": "opening results paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 revenue: TWD 868.46 billion.",
+        "value": 868.46,
+        "unit": "TWD billion",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T02",
+        "source_id": "tsmc24",
+        "locator": "year-over-year paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 38.8% measured in TWD.",
+        "value": 38.8,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T03",
+        "source_id": "tsmc24",
+        "locator": "USD results paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 37.0% measured in USD.",
+        "value": 37.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T04",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 gross margin: 59.0%.",
+        "value": 59.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T05",
+        "source_id": "tsmc24",
+        "locator": "technology mix paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Nodes of 7nm or smaller contributed 74% of Q4 wafer revenue.",
+        "value": 74,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T07",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "TSMC Q4 2024 net profit margin: 43.1%.",
+        "value": 43.1,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "partial",
+      "summary": "截至2025-06-01资料可知，TSMC于2025-01-16披露Q4 2024先进制程（7nm及以下）占晶圆营收74%（T05），Q4营收868.46亿台币（T01）、同比增38.8%（T02）、美元增37.0%（T03），毛利率59.0%（T04）、净利率43.1%（T07）。管理层2025-01-16展望Q1 2025手机有季节性、部分被AI需求增长抵消（T06）。资料未给先进制程中AI相关占比，也未给Q1实际数据，故仅能判断AI需求可部分抵消手机季节性，无法证实其完全消除季节性。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "TSMC Q4 2024营收868.46亿台币，同比增38.8%（台币）与37.0%（美元）",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01",
+            "T02",
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T01",
+              "value": 868.46,
+              "unit": "TWD billion"
+            },
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            },
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "TSMC Q4 2024毛利率59.0%、净利率43.1%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T04",
+            "T07"
+          ],
+          "numbers": [
+            {
+              "source_id": "T04",
+              "value": 59.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "T07",
+              "value": 43.1,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "TSMC Q4 2024中7nm及以下节点占晶圆营收74%，体现先进制程主导",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T05"
+          ],
+          "numbers": [
+            {
+              "source_id": "T05",
+              "value": 74,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "管理层2025-01-16预期Q1 2025智能手机有季节性，部分被AI需求增长抵消",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "T06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "inference: 依据T06，AI需求仅部分抵消手机季节性，资料未支持其完全消除季节性",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "T06"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "未提供TSMC先进制程中AI相关具体占比，无法量化AI对季节性的抵消程度",
+        "未提供Q1 2025实际营收或出货量数据，无法验证季节性是否被完全消除",
+        "资料未定义'完全消除'的判定阈值"
+      ],
+      "follow_up": [
+        {
+          "action": "核查TSMC后续季报中Q1 2025分应用（手机/AI）营收与先进制程明细",
+          "reason": "可判断AI需求实际抵消手机季节性的幅度，验证C5推断",
+          "evidence_ids": [
+            "T06",
+            "T05"
+          ]
+        },
+        {
+          "action": "获取TSMC先进制程中AI加速器占比的官方披露",
+          "reason": "补充AI景气与先进制程结构的直接关联，支撑完全消除与否的结论",
+          "evidence_ids": [
+            "T05"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "partial",
+      "summary": "截至2025-06-01资料可知，TSMC于2025-01-16披露Q4 2024先进制程（7nm及以下）占晶圆营收74%（T05），Q4营收868.46亿台币（T01）、同比增38.8%（T02）、美元增37.0%（T03），毛利率59.0%（T04）、净利率43.1%（T07）。管理层2025-01-16展望Q1 2025手机有季节性、部分被AI需求增长抵消（T06）。资料未给先进制程中AI相关占比，也未给Q1实际数据，故仅能判断AI需求可部分抵消手机季节性，无法证实其完全消除季节性。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "TSMC Q4 2024营收868.46亿台币，同比增38.8%（台币）与37.0%（美元）",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T01",
+            "T02",
+            "T03"
+          ],
+          "numbers": [
+            {
+              "source_id": "T01",
+              "value": 868.46,
+              "unit": "TWD billion"
+            },
+            {
+              "source_id": "T02",
+              "value": 38.8,
+              "unit": "%"
+            },
+            {
+              "source_id": "T03",
+              "value": 37.0,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "TSMC Q4 2024毛利率59.0%、净利率43.1%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T04",
+            "T07"
+          ],
+          "numbers": [
+            {
+              "source_id": "T04",
+              "value": 59.0,
+              "unit": "%"
+            },
+            {
+              "source_id": "T07",
+              "value": 43.1,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "TSMC Q4 2024中7nm及以下节点占晶圆营收74%，体现先进制程主导",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "T05"
+          ],
+          "numbers": [
+            {
+              "source_id": "T05",
+              "value": 74,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "管理层2025-01-16预期Q1 2025智能手机有季节性，部分被AI需求增长抵消",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "T06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "inference: 依据T06，AI需求仅部分抵消手机季节性，资料未支持其完全消除季节性",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "T06"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "未提供TSMC先进制程中AI相关具体占比，无法量化AI对季节性的抵消程度",
+        "未提供Q1 2025实际营收或出货量数据，无法验证季节性是否被完全消除",
+        "资料未定义'完全消除'的判定阈值"
+      ],
+      "follow_up": [
+        {
+          "action": "核查TSMC后续季报中Q1 2025分应用（手机/AI）营收与先进制程明细",
+          "reason": "可判断AI需求实际抵消手机季节性的幅度，验证C5推断",
+          "evidence_ids": [
+            "T06",
+            "T05"
+          ]
+        },
+        {
+          "action": "获取TSMC先进制程中AI加速器占比的官方披露",
+          "reason": "补充AI景气与先进制程结构的直接关联，支撑完全消除与否的结论",
+          "evidence_ids": [
+            "T05"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "0128cf52d113f1d11e9bdba4277ff885dd399399385c9e0e1e5e5369ce8566f6",
+        "latency_seconds": 8.917,
+        "usage": {
+          "prompt_tokens": 1234,
+          "completion_tokens": 784,
+          "total_tokens": 2018,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "e9de040db9edd6f8d63d14e4b25d4ab24a9c1dc117ab34f5aa1dca5d63a690b8"
+      }
+    ],
+    "input_sha256": "129457205c1251807d0e0f05569505824946292314054880efd0cfb35f3606eb",
+    "answer_sha256": "0b9a657b22a43d8c009d71ecc45c1cb727a7d861018a45898617b4e0afbb227d"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文列明T01/T02/T03数值且与来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文列明T04/T07毛利率净利率且与来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选正文称7nm及以下占晶圆营收74%引T05，与来源同",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选正文转述T06管理层预期手机季节性部分被AI抵消",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选基于T06推断AI仅部分抵消，未支持完全消除，与资料一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M01",
+          "present": false
+        },
+        {
+          "id": "M02",
+          "present": false
+        },
+        {
+          "id": "M03",
+          "present": false
+        },
+        {
+          "id": "M04",
+          "present": false
+        },
+        {
+          "id": "M05",
+          "present": false
+        },
+        {
+          "id": "M06",
+          "present": false
+        },
+        {
+          "id": "M07",
+          "present": false
+        },
+        {
+          "id": "M08",
+          "present": false
+        },
+        {
+          "id": "M09",
+          "present": false
+        },
+        {
+          "id": "M10",
+          "present": false
+        },
+        {
+          "id": "A01",
+          "present": false
+        },
+        {
+          "id": "A02",
+          "present": false
+        },
+        {
+          "id": "A03",
+          "present": false
+        },
+        {
+          "id": "A04",
+          "present": false
+        },
+        {
+          "id": "A05",
+          "present": false
+        },
+        {
+          "id": "A09",
+          "present": false
+        },
+        {
+          "id": "A06",
+          "present": false
+        },
+        {
+          "id": "A07",
+          "present": false
+        },
+        {
+          "id": "A08",
+          "present": false
+        },
+        {
+          "id": "T01",
+          "present": true,
+          "quote": "TSMC于2025-01-16披露Q4 2024先进制程（7nm及以下）占晶圆营收74%（T05），Q4营收868.46亿台币（T01）、同比增38.8%（T02）、美元增37.0%（T03）"
+        },
+        {
+          "id": "T02",
+          "present": true,
+          "quote": "Q4营收868.46亿台币（T01）、同比增38.8%（T02）、美元增37.0%（T03）"
+        },
+        {
+          "id": "T03",
+          "present": true,
+          "quote": "美元增37.0%（T03）"
+        },
+        {
+          "id": "T04",
+          "present": true,
+          "quote": "毛利率59.0%（T04）、净利率43.1%（T07）"
+        },
+        {
+          "id": "T07",
+          "present": true,
+          "quote": "毛利率59.0%（T04）、净利率43.1%（T07）"
+        },
+        {
+          "id": "T05",
+          "present": true,
+          "quote": "TSMC于2025-01-16披露Q4 2024先进制程（7nm及以下）占晶圆营收74%（T05）"
+        },
+        {
+          "id": "T06",
+          "present": true,
+          "quote": "管理层2025-01-16展望Q1 2025手机有季节性、部分被AI需求增长抵消（T06）"
+        },
+        {
+          "id": "I01",
+          "present": false
+        },
+        {
+          "id": "I02",
+          "present": false
+        },
+        {
+          "id": "I03",
+          "present": false
+        },
+        {
+          "id": "I04",
+          "present": false
+        },
+        {
+          "id": "I05",
+          "present": false
+        },
+        {
+          "id": "I06",
+          "present": false
+        },
+        {
+          "id": "F01",
+          "present": false
+        },
+        {
+          "id": "F02",
+          "present": false
+        },
+        {
+          "id": "F03",
+          "present": false
+        },
+        {
+          "id": "F04",
+          "present": false
+        },
+        {
+          "id": "F05",
+          "present": false
+        },
+        {
+          "id": "F06",
+          "present": false
+        },
+        {
+          "id": "F07",
+          "present": false
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "未提供TSMC先进制程中AI相关具体占比，无法量化AI对季节性的抵消程度"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选正确依据TSMC先进制程占比及管理层展望，指出AI仅部分抵消手机季节性，无法证实完全消除，符合资料且限制讲清"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "a86223331712e4c2109f1c4dabbb83bd616684fdfb3ac88490ac71c1b682952f",
+      "latency_seconds": 8.536,
+      "usage": {
+        "prompt_tokens": 4880,
+        "completion_tokens": 1073,
+        "total_tokens": 5953,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "b649625e3ca57bf1485abe0b11595448d1163400b2f8ccbd1e900c110450feda"
+    },
+    "input_sha256": "adf74f6c9f4be35dbf01f83a3afce5e169bd916f25cdab455d62dd68c6d16d79",
+    "answer_sha256": "0b9a657b22a43d8c009d71ecc45c1cb727a7d861018a45898617b4e0afbb227d",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "0b9a657b22a43d8c009d71ecc45c1cb727a7d861018a45898617b4e0afbb227d",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [
+      "ignored non-reference coverage IDs: A01,A02,A03,A04,A05,A06,A07,A08,A09,F01,F02,F03,F04,F05,F06,F07,I01,I02,I03,I04,I05,I06,M01,M02,M03,M04,M05,M06,M07,M08,M09,M10,T01,T02,T03,T04,T07"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T15:59:08.829808+00:00",
+  "wall_seconds": 17.465
+}

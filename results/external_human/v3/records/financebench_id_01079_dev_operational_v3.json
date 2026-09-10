@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01079",
+  "uid": "financebench_id_01079_dev",
+  "split": "development",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f109d5e9261693574d63ed3e933ef49c9f81e85fe92abcd1a567bad473294dee",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "c8e934d5dc0293e78d05e45521a4b9a48b9edf4a06ef820ecc7a097d55159b35",
+  "started_utc": "2026-09-09T18:09:22.839818+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "there is no specific information regarding major acquisitions by Amcor in fiscal years 2023, 2022, or 2021",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate claims no acquisition info in context, but evidence (AMCOR_2023_10K p63) lists three FY2023 acquisitions matching reference, so it explicitly declined despite available data."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "57f5bb6098d8e6d72f3082cd9e6a4f32ab3ad4238c66a33bafbae770da88babf",
+    "latency_seconds": 7.172,
+    "usage": {
+      "prompt_tokens": 2084,
+      "completion_tokens": 117,
+      "total_tokens": 2201,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6d723a50fd2b0e91461d735bb765bcd2515e79f0f6e62f66268a6a576c88e814"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

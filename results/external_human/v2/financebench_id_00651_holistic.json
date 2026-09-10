@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00651",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "602f5c146b75a40e08afd8d486c1a1d227c24b2cb7905e00989204e87b67d4d9",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "ee64ffbedb5cdb11bfd374a3fe9f9ded00882969542dbf14dce1f958eb37490a",
+  "started_utc": "2026-09-09T17:44:53.565074+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers 'not expected to accelerate' and correctly states FY2023 growth 3.5% vs FY2022 3.6%, matching reference and evidence; caveat on non-GAAP does not withhold answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0a50f11a05942d3516fa3174620f9b24ce9b8e59e17c95c2ecfde5998a2ff2b4",
+    "latency_seconds": 6.063,
+    "usage": {
+      "prompt_tokens": 1470,
+      "completion_tokens": 69,
+      "total_tokens": 1539,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c914cf219e18caa285d101af927bb47692e6375011a954614b5f3b8abd2f422c"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01981",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "dabb43d1ffcdb7f47fbc76751fe30dee5c514115853a08f197de9ea15808e543",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "935d3c8942d58f52288128bf382c6af281581fef80dd5c9ccc3d11149acd3fd3",
+  "started_utc": "2026-09-09T18:02:07.843060+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate concludes Amex retained card members in 2022, supported by evidence stating 'Card Member retention remained high' and record acquisitions, agreeing with reference 'Yes'."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9a057a5f460abf1e8e640f06c552c222de53037d3a24afc21029c1cec5b2c492",
+    "latency_seconds": 6.853,
+    "usage": {
+      "prompt_tokens": 1452,
+      "completion_tokens": 55,
+      "total_tokens": 1507,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "91057531f44e31c1ccc0e74d6b0ac2b8a3ce5a1b52f87392d2acec4b3429e2a5"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

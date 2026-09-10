@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01254",
+  "company": "MGM Resorts",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "20c7d62194f23f52a867b5af533de89f25029860a9a940d2234730824ec633df",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "64122767c9adb4500b93074057cec0bd3edd3ca95fd77304d4b4b299de35391c",
+  "started_utc": "2026-09-09T17:48:11.211687+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers yes with supporting evidence of $0.01/share dividend throughout 2022; caveat about 2023 suspension does not withhold the FY2022 answer.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "MGM Resorts common shareholders identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 specified and addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Dividend payment confirmed, no conflicting unit"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Yes, paid dividends in FY2022 per evidence"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence states $0.01/share annual dividend maintained throughout 2022"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e7b03768673f7b0d65d33762c754810a5607122820d2d6c7e99c001a8845d6f6",
+    "latency_seconds": 8.476,
+    "usage": {
+      "prompt_tokens": 1424,
+      "completion_tokens": 211,
+      "total_tokens": 1635,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bbd0968ca205c95e73116a4e51481fb0962c7d698fb4d4002bbbb51446f9b4e4"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

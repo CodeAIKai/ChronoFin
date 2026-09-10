@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_03282",
+  "company": "Netflix",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ebb50fa19a5811cfb7f221a96ea1f5e12cb4953fb50bc539bf1943cfac0bd78d",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d7cbf8b1e2eba1d59a7369c3a5ef3e072d4203b7b1cba1a0f0b0f9ba27da4cc9",
+  "started_utc": "2026-09-09T18:02:30.377073+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Evidence shows total current liabilities of $5,466,312 thousand at Dec 31 2017; candidate correctly converts to $5,466 million USD, matching reference $5466.00."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f3ef729c829ba207b4ee5ef48ee8173cd4a0c2b9cabd5306bff7e959774d7f45",
+    "latency_seconds": 8.557,
+    "usage": {
+      "prompt_tokens": 1660,
+      "completion_tokens": 61,
+      "total_tokens": 1721,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a668e705458d8b9adc462b9af53b293d92a37896d683829f680fa108ed76728d"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

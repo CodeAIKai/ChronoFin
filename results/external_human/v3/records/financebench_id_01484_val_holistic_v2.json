@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01484",
+  "uid": "financebench_id_01484_val",
+  "split": "new_response_validation",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "f555a91bce2483e4bd2bdc359927317c81d954a5724cf4d1ea8167359584ad5d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "d3b9794d91c6a80627702a08675e95c07fe1d46a58c03fa13f8cf8e23f672385",
+  "started_utc": "2026-09-09T18:11:27.420866+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate summarized US growth 3.0% and international reported decline 0.6% correctly but concluded US growth was lower than international operational growth of 9.1%, whereas question asks comparison of US sales growth to international sales growth (reported: US +3.0% vs intl -0.6%, so US outperformed). Reference states US increased 3.0% vs international decline 0.6%."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1b9fe9cff3f08102b0c5650ef6ec2d949dcd9d50a44c9b4257fa552d94386155",
+    "latency_seconds": 9.101,
+    "usage": {
+      "prompt_tokens": 1867,
+      "completion_tokens": 110,
+      "total_tokens": 1977,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f40e0bf6a45d928e3ef092a2bf4548db765866324fc34688c5c3080eafc66ffa"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

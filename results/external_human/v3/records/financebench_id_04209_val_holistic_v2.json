@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04209",
+  "uid": "financebench_id_04209_val",
+  "split": "new_response_validation",
+  "company": "Costco",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "d5ff08f4c9fbcd0c5f00099b157547cef4e7e539565e4341234aa72a1a1c52ff",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "128262e347ee972298b48a1205a1237f3e4b779cef83d1573496a1fa74542503",
+  "started_utc": "2026-09-10T01:31:35.560627+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states total assets of $59,268 million at FY2021 end, matching reference and balance sheet TOTAL ASSETS line for August 29, 2021."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "35bce34a52207fba1e815dbf34cd02f2b0e7134ed78160b77ff429ed4e539a24",
+    "latency_seconds": 8.468,
+    "usage": {
+      "prompt_tokens": 1647,
+      "completion_tokens": 57,
+      "total_tokens": 1704,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "362e3358f4d5ae18df6981eae87ae6e0faf813e12b74fe21f47adf0262fc945f"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

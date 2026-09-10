@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00720",
+  "uid": "financebench_id_00720_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "678c992c3b6daf3fe65a7e7bb317cde3ca5c42477a5f68e439aed0a54321b742",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "90c4691c6632e77e4c587c790be06e0babde709fdbe5c51453c41d55d80a0010",
+  "started_utc": "2026-09-09T18:07:46.220976+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot provide a specific answer to the question about what drove the gross margin change for American Express in that fiscal year.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer the gross margin question for AmEx FY2022, citing missing context, rather than stating gross margin is not useful per reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cc3871108be985b9e5c0fb398c242edd557acc87d8b75592750f7949c23a5b67",
+    "latency_seconds": 6.32,
+    "usage": {
+      "prompt_tokens": 2296,
+      "completion_tokens": 106,
+      "total_tokens": 2402,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "06b3efe24912f370df5363d9a199915285c0545c165784c7883f68f8b252e4aa"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

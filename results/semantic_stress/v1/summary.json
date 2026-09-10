@@ -1,0 +1,68 @@
+{
+  "planned": 60,
+  "records": 60,
+  "complete": 60,
+  "scope": "Constructed synthetic monetary and semantic contrast set; not real-world accuracy.",
+  "methods": {
+    "legacy": {
+      "n": 30,
+      "accuracy_failure_wrong": 0.8,
+      "equivalent_accepted": 2,
+      "equivalent_planned": 6,
+      "semantic_or_magnitude_errors_rejected": 22,
+      "negative_planned": 24,
+      "by_mutation": {
+        "equivalent": {
+          "n": 6,
+          "correct": 2
+        },
+        "tenfold": {
+          "n": 6,
+          "correct": 4
+        },
+        "period": {
+          "n": 6,
+          "correct": 6
+        },
+        "entity": {
+          "n": 6,
+          "correct": 6
+        },
+        "forecast_as_fact": {
+          "n": 6,
+          "correct": 6
+        }
+      }
+    },
+    "anchored": {
+      "n": 30,
+      "accuracy_failure_wrong": 1.0,
+      "equivalent_accepted": 6,
+      "equivalent_planned": 6,
+      "semantic_or_magnitude_errors_rejected": 24,
+      "negative_planned": 24,
+      "by_mutation": {
+        "equivalent": {
+          "n": 6,
+          "correct": 6
+        },
+        "tenfold": {
+          "n": 6,
+          "correct": 6
+        },
+        "period": {
+          "n": 6,
+          "correct": 6
+        },
+        "entity": {
+          "n": 6,
+          "correct": 6
+        },
+        "forecast_as_fact": {
+          "n": 6,
+          "correct": 6
+        }
+      }
+    }
+  }
+}

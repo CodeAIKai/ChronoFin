@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01319",
+  "uid": "financebench_id_01319_dev",
+  "split": "development",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "11c0ec500abc6f431fa95108bf9a9cda49c0cacfb9b5d3d99d8d543a1f46a649",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "19f584050fc98ccb61cd15549c331f2843a72b778a3774df99b718a00c1197da",
+  "started_utc": "2026-09-09T18:10:34.724849+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "there is no line item explicitly labeled as \"restructuring costs.\" Therefore, the quantity of restructuring costs directly outlined in the income statements for FY2022 is 0.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Income statement evidence for FY2022 lists no restructuring costs line item; candidate correctly states 0 per question instruction."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "061ccb9a166bfa32327fd5e1d43b58829af613953af57b2359bd192fac4567e8",
+    "latency_seconds": 10.151,
+    "usage": {
+      "prompt_tokens": 2146,
+      "completion_tokens": 106,
+      "total_tokens": 2252,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c0261b571abbc177d65a21b172f9df7b115112e2db0616697d1199db552cb715"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

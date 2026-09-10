@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00517",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "06d2c3128adc4f43bd92b13f565e21694a4bb8ceff392fdcd69d0f6834f85bad",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "96cdfd9e996ef540fe511799048a38f11f7c59d48173a5c81ce7901510953295",
+  "started_utc": "2026-09-09T17:32:50.168817+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate pasted Boeing 10-K cover/business text and did not answer whether any categories exceed 20% of FY2022 revenue. It is not a substantive answer and not a refusal statement, but it fails to provide the requested answer, so it is incorrect versus the reference which says yes with category percentages."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ecc407094ba6fbf21650b48bbdbb08dbe0d0b9b500bbf0333c05aa1906430dea",
+    "latency_seconds": 2.382,
+    "usage": {
+      "prompt_tokens": 3171,
+      "completion_tokens": 84,
+      "total_tokens": 3255,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "446127e1187e70622ddf4ae9f56b87d9d15d0847844262aef61135efa94eb2cf"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

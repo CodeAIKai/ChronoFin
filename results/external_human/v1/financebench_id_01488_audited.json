@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01488",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "838beed9ec833e9d831ea9dc2683a4789c63d198308fa8658d7cd276060b4349",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "275ca17e4f85472888fb549dd471aace370e716d0e7d98f459ec8adde5ebb4cb",
+  "started_utc": "2026-09-09T18:00:57.712765+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate claims no info on JnJ discontinued segment from Aug 30 2023, but evidence explicitly states Consumer Health (Kenvue formerly) presented as discontinued operations from completion on Aug 30 2023.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Johnson & Johnson business segment; candidate addresses JnJ segments."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period Aug 30 2023 onward specified in question and candidate."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No numeric unit; qualitative segment name requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says unknown; correct answer is Consumer Health business segment."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supports Consumer Health as discontinued op from Aug 30 2023, contradicting candidate's claim of no info."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a173b947460bb2ace9aa604c2fd7d417d24c023f7c3fdc38a60dd6eaa98151ff",
+    "latency_seconds": 10.993,
+    "usage": {
+      "prompt_tokens": 1578,
+      "completion_tokens": 235,
+      "total_tokens": 1813,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b31939b4e84288de5b8117aca360f5aeae46b9042836246df3921f7d1fb4e1e7"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

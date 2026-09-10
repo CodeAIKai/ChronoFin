@@ -1,0 +1,615 @@
+{
+  "case_id": "E11",
+  "split": "evaluation",
+  "group": "cross",
+  "task": "行业研报摘要",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:59:04.168839+00:00",
+  "protocol_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "lexical",
+    "query": {
+      "question": "综合 Meta AI 资本支出展望与 IEA 用电研究，写一段基础设施机会和约束简报。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I01",
+        "source_id": "iea25",
+        "locator": "current consumption section",
+        "role": "context",
+        "status": "estimate",
+        "text": "IEA estimated 2024 data-centre electricity use at 415 TWh, about 1.5% globally.",
+        "value": 415,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I02",
+        "source_id": "iea25",
+        "locator": "2030 outlook section",
+        "role": "support",
+        "status": "forecast",
+        "text": "IEA projected data-centre electricity demand of around 945 TWh in 2030.",
+        "value": 945,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I03",
+        "source_id": "iea25",
+        "locator": "grid integration section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Without action, grid constraints could delay around 20% of planned data-centre projects.",
+        "value": 20,
+        "unit": "%",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I04",
+        "source_id": "iea25",
+        "locator": "uncertainty section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "IEA scenario range for 2035 data-centre demand: 700–1700 TWh; adoption, efficiency and bottlenecks matter.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I05",
+        "source_id": "iea25",
+        "locator": "global demand growth section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Data centres represent roughly one-tenth of projected global electricity-demand growth through 2030.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "M01",
+        "source_id": "meta24",
+        "locator": "p1 annual revenue row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 revenue: USD 164501 million.",
+        "value": 164501,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M02",
+        "source_id": "meta24",
+        "locator": "p1 annual net income row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 net income: USD 62360 million.",
+        "value": 62360,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "partial",
+      "summary": "据IEA（2025-04-10）估算，2024年全球数据中心用电415 TWh（约1.5%），预计2030年达945 TWh，占同期全球用电增量约一成；若无所作为，电网约束或致20%规划数据中心项目延迟。Meta FY2024收入164501百万美元、净利62360百万美元，具资本支出能力。AI可提升电网与工业效率但部署存障。资料未含Meta AI资本支出具体展望，基础设施机会与约束仅能从用电侧与单家财报侧面勾勒，Meta侧支出规划尚缺。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA估算2024年数据中心用电量415 TWh，约占全球1.5%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA预测2030年数据中心电力需求约945 TWh",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "IEA称若无行动，电网约束或延迟约20%规划数据中心项目",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I03"
+          ],
+          "numbers": [
+            {
+              "source_id": "I03",
+              "value": 20,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "IEA称数据中心约占2023至2030全球用电增量的一成",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "IEA认为AI可改善电网管理与工业效率，但部署存障碍",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "I06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "Meta FY2024收入164501百万美元、净利62360百万美元，体现其投资能力",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "M02/M01*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未提供Meta AI资本支出具体金额或展望，无法量化其基础设施投入",
+        "IEA 2035情景区间700–1700 TWh仅作背景，未纳入本次简报核心约束测算",
+        "电网约束20%为IEA预测，未区分区域与运营商层面"
+      ],
+      "follow_up": [
+        {
+          "action": "提取Meta 10-K或财报电话会中AI/数据中心资本支出指引",
+          "reason": "补全Meta侧资本支出展望，使基础设施机会简报具供需双侧依据",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        },
+        {
+          "action": "核对IEA报告中电网约束20%对应的区域与项目类型",
+          "reason": "明确约束边界，避免将全球预测直接用于个股或区域判断",
+          "evidence_ids": [
+            "I03"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "partial",
+      "summary": "据IEA（2025-04-10）估算，2024年全球数据中心用电415 TWh（约1.5%），预计2030年达945 TWh，占同期全球用电增量约一成；若无所作为，电网约束或致20%规划数据中心项目延迟。Meta FY2024收入164501百万美元、净利62360百万美元，具资本支出能力。AI可提升电网与工业效率但部署存障。资料未含Meta AI资本支出具体展望，基础设施机会与约束仅能从用电侧与单家财报侧面勾勒，Meta侧支出规划尚缺。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "IEA估算2024年数据中心用电量415 TWh，约占全球1.5%",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "I01"
+          ],
+          "numbers": [
+            {
+              "source_id": "I01",
+              "value": 415,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IEA预测2030年数据中心电力需求约945 TWh",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I02"
+          ],
+          "numbers": [
+            {
+              "source_id": "I02",
+              "value": 945,
+              "unit": "TWh"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "IEA称若无行动，电网约束或延迟约20%规划数据中心项目",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "I03"
+          ],
+          "numbers": [
+            {
+              "source_id": "I03",
+              "value": 20,
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "IEA称数据中心约占2023至2030全球用电增量的一成",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "I05"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "IEA认为AI可改善电网管理与工业效率，但部署存障碍",
+          "kind": "inference",
+          "role": "driver",
+          "evidence_ids": [
+            "I06"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C6",
+          "text": "Meta FY2024收入164501百万美元、净利62360百万美元，体现其投资能力",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "M02/M01*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未提供Meta AI资本支出具体金额或展望，无法量化其基础设施投入",
+        "IEA 2035情景区间700–1700 TWh仅作背景，未纳入本次简报核心约束测算",
+        "电网约束20%为IEA预测，未区分区域与运营商层面"
+      ],
+      "follow_up": [
+        {
+          "action": "提取Meta 10-K或财报电话会中AI/数据中心资本支出指引",
+          "reason": "补全Meta侧资本支出展望，使基础设施机会简报具供需双侧依据",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        },
+        {
+          "action": "核对IEA报告中电网约束20%对应的区域与项目类型",
+          "reason": "明确约束边界，避免将全球预测直接用于个股或区域判断",
+          "evidence_ids": [
+            "I03"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "b84326c944075cb344e4c449767c972c77020f68b3f0ca6dc11f17300d5280b6",
+        "latency_seconds": 9.995,
+        "usage": {
+          "prompt_tokens": 1266,
+          "completion_tokens": 794,
+          "total_tokens": 2060,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "4b0353173ed9f43c4cb145f12438dd6eee0a0ac64040799fae3b67a01d120de6"
+      }
+    ],
+    "input_sha256": "614baf76a4e0f34156299937a65991709fd1eb98e9a782b6509256c37c999941",
+    "answer_sha256": "9c3e517a918fb3e8a25d62d266013f7d4a139ceccc5e7a32dce488830205bb10"
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T17:25:46.314029+00:00",
+  "wall_seconds": 20.695,
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文引用I01数据并陈述，与来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文引用I02预测并陈述，与来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选正文引用I03预测并陈述，与来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "contradicted",
+          "reason": "来源I05为'through 2030'且'roughly one-tenth of projected global electricity-demand growth'，候选写成'2023至2030'且'约占一成'，期间起算错误且未说明是增量占比",
+          "kind_valid": true,
+          "scope_valid": false,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选基于I06推断AI效率与障碍，与来源语义一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "partial",
+          "reason": "收入净利数据来自M01/M02正确，但required中M04(Meta FY2025 capex展望)缺失，未提资本支出能力来自支出展望",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M04",
+          "present": false
+        },
+        {
+          "id": "I02",
+          "present": true,
+          "quote": "预计2030年达945 TWh"
+        },
+        {
+          "id": "I03",
+          "present": true,
+          "quote": "电网约束或致20%规划数据中心项目延迟"
+        },
+        {
+          "id": "I04",
+          "present": false
+        },
+        {
+          "id": "M05",
+          "present": false
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "资料未提供Meta AI资本支出具体金额或展望，无法量化其基础设施投入"
+        }
+      ],
+      "summary_supported": false,
+      "follow_up_useful": true,
+      "direct_answer": false,
+      "reason": "候选缺失required的M04(Meta资本支出展望)与counter的I04/M05，且C4期间口径矛盾，摘要称Meta具资本支出能力但无M04支持，未综合Meta AI资本支出展望与IEA用电研究写完整简报"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "c25e93fbb869cdb0bb19a28e6366f819636f78ba17eb087c0074993b416ee0a7",
+      "latency_seconds": 10.446,
+      "usage": {
+        "prompt_tokens": 4901,
+        "completion_tokens": 583,
+        "total_tokens": 5484,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "6ff1f4a4dfca072541516557edc638ea5a5c3f07d9b4d2ed914aaa1b0d51a9bb"
+    },
+    "input_sha256": "88e880d9b6832a025b20056378338cb44e7149c80fc3502a375d0c3cf15770f4",
+    "answer_sha256": "9c3e517a918fb3e8a25d62d266013f7d4a139ceccc5e7a32dce488830205bb10",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "9c3e517a918fb3e8a25d62d266013f7d4a139ceccc5e7a32dce488830205bb10",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.6,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 0.333333,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 0.833333,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 74.967,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      },
+      {
+        "reason": "unsupported summary",
+        "cap": 65
+      },
+      {
+        "reason": "scope mismatch",
+        "cap": 60
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "resume_wall_seconds": 10.448,
+  "timing_scope": "Cumulative active processing across attempts; excludes downtime between attempts. Not fresh-run latency.",
+  "resumed_utc": "2026-09-09T17:25:46.314054+00:00",
+  "resume_history_file": "results/brief/v3/resume_history/v3/E11_lexical.before_resume_1788974735864954944.json"
+}

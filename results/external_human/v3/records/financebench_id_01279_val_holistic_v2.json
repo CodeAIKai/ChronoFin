@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01279",
+  "uid": "financebench_id_01279_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "5c670fcb3622cc9696ea070d6f374a740aa10c80a5652f89eb444e9e9d370ee7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "8524c3c198e0d132947973d9328203b6e13b6345d33315ec16ceeb8894875188",
+  "started_utc": "2026-09-09T18:10:24.286000+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate summarizes AMD's operating cash flow in FY22 but does not compare the three activity categories or state which brought in the most/least cash, thus withholding the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "87120d2e673abe7de338aebfd7427ee8a597ff7fbef810a824f3b941a75fb920",
+    "latency_seconds": 7.067,
+    "usage": {
+      "prompt_tokens": 2216,
+      "completion_tokens": 57,
+      "total_tokens": 2273,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c2f1de265c3852863bbca6a763643b72772bda5fed9c06caf7bdad7a7505269c"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

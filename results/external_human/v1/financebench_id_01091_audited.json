@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01091",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "8c1d4711bbf3ba9502c35ce833ac8823e5e689b0b4bef7af7266c5d459331c39",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2736bbcdb18475c6db8a907d7df0781164efe1012941e52f526aeab12bbd532b",
+  "started_utc": "2026-09-09T17:33:39.793902+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate ignored the question about FY2022 legal battles and instead described a deferred compensation plan, providing no substantive answer to the requested entity/period/metric.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Question asks Boeing legal battles; candidate discusses Boeing Executive Supplemental Savings Plan"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Question asks FY2022; candidate text not oriented to FY2022 legal matters"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Qualitative yes/no question; no numeric unit expected"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate did not answer yes/no on legal battles; off-topic"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supports legal actions in FY2022; candidate text unrelated and unsupported for question"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "60c345f271fb9a8cb1228f4748f12525c2d28b6c8dd3bff6a046146e8582c051",
+    "latency_seconds": 2.512,
+    "usage": {
+      "prompt_tokens": 1658,
+      "completion_tokens": 216,
+      "total_tokens": 1874,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6c0e7fa2bb80deeda574354c420fab815cdfc3d146cfeb37676942d17f98cd8f"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

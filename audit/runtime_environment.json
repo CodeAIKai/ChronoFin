@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-09-09T16:54:33.223987+00:00",
+  "platform": "Linux-5.15.0-119-generic-x86_64-with-glibc2.35",
+  "machine": "x86_64",
+  "core_python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "plotter_packages": {
+    "matplotlib": "3.10.5",
+    "numpy": "2.3.2",
+    "Pillow": "11.3.0",
+    "playwright": "1.62.0"
+  },
+  "venv_test_and_browser": {
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "packages": {
+      "pymupdf": "1.28.2",
+      "Pillow": "12.3.0",
+      "playwright": "1.62.0",
+      "streamlit": "1.63.0",
+      "numpy": "2.5.3"
+    }
+  },
+  "browser": {
+    "executable": "/root/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome",
+    "temporary_library_path": "/tmp/chronofin_browser_libs/usr/lib/x86_64-linux-gnu",
+    "note": "Temporary extracted system libraries used on this host only; not a dependency path required on another host."
+  },
+  "tested_scope": "Same Linux host. No claim of container, alternate Python version, or third-party reproduction."
+}

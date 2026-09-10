@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04481",
+  "uid": "financebench_id_04481_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "25cf6d32470acb5e615c4213305a6b5533c0dbb76af23b53a17e9a03dcb240f1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "c3cefc087ebd5f202deb1a7caf489d529539d7e94382de49138611e7ffa871b2",
+  "started_utc": "2026-09-10T01:32:14.521280+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computed unadjusted EBITDA as operating profit 11,512 + D&A 2,763 = 14,275; margin = 14,275 / 86,392 = 16.52%, matching evidence and reference 0.165 (16.5%). Substantive answer provided."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4ea9c2df27648296334a89d1d67e3d9ba979f2c1042f9c093b6f276d92f626d1",
+    "latency_seconds": 7.113,
+    "usage": {
+      "prompt_tokens": 3056,
+      "completion_tokens": 84,
+      "total_tokens": 3140,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c684ba4dff60ec3cee877d568270577145217d9ea31d499406b1d2e11b09bd52"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

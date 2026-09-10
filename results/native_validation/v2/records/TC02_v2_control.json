@@ -1,0 +1,403 @@
+{
+  "id": "TC02_v2_control",
+  "case_id": "TC02",
+  "base_version": "v2",
+  "kind": "v2_control",
+  "protocol_sha256": "7ce1ad78a9be46f184570a9d2da926c3617e2cca06bbe51cf5db82ac1359148f",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "有人用腾讯 2025Q2 新闻稿证明 2025年6月30日已经公开三角洲行动7月DAU突破2000万。核查披露时点。",
+      "as_of": "2025-06-30"
+    },
+    "evidence": [],
+    "excluded_ids": [
+      "P7AD084B61B1",
+      "P7AD084B62B1",
+      "P7AD084B63B1",
+      "P7AD084B64B1",
+      "P7AD084B65B1",
+      "P7AD084B66B1",
+      "P7AD084B67B1",
+      "P7AD084B68B1",
+      "P7AD084B69B1"
+    ],
+    "initial": {
+      "answerability": "unanswerable",
+      "summary": "根据提供的资料，证据列表为空，无法获取任何关于腾讯2025年Q2新闻稿、三角洲行动DAU或2025年6月30日披露时点的信息。因此，不能核查所谓‘2025年6月30日已公开三角洲行动7月DAU突破2000万’的披露时点，也无法确认该陈述的真伪。",
+      "claims": [],
+      "calculations": [],
+      "limitations": [
+        "无任何资料可供核查腾讯2025Q2新闻稿内容及三角洲行动DAU披露时点",
+        "无法判断2025年6月30日是否已公开7月DAU数据"
+      ],
+      "follow_up": [
+        {
+          "action": "获取腾讯2025年Q2官方新闻稿或披露文件并核对发布日期与数据截止日",
+          "reason": "可确认披露时点及‘7月DAU突破2000万’是否在2025-06-30前公开",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "unanswerable",
+      "summary": "根据提供的资料，证据列表为空，无法获取任何关于腾讯2025年Q2新闻稿、三角洲行动DAU或2025年6月30日披露时点的信息。因此，不能核查所谓“2025年6月30日已公开三角洲行动7月DAU突破2000万”的披露时点，也无法确认该陈述的真伪。资料中无任何官方报告或转述卡片可供核对，故该用户假设无法被验证或反驳。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "资料为空，无法核查腾讯2025Q2新闻稿及三角洲行动DAU披露时点",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无任何资料可供核查腾讯2025Q2新闻稿内容及三角洲行动DAU披露时点",
+        "无法判断2025年6月30日是否已公开7月DAU数据",
+        "不能将用户陈述视为事实或反证，因无证据支撑"
+      ],
+      "follow_up": [
+        {
+          "action": "获取腾讯2025年Q2官方新闻稿或披露文件并核对发布日期与数据截止日",
+          "reason": "可确认披露时点及“7月DAU突破2000万”是否在2025-06-30前公开",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "27b433ddb57015fdf5930a2b91a780e034e4708a573438b8e535e8bc1f20e01f",
+        "latency_seconds": 8.199,
+        "usage": {
+          "prompt_tokens": 623,
+          "completion_tokens": 208,
+          "total_tokens": 831,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "bd868802dfe6b57913c1e7885e0be7ca0ead08318b7e4da54ece871ea060fc4e"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "4f2425756a8f03cf860e8450af69549627a260c7670666881f04222a1154a67b",
+        "latency_seconds": 7.695,
+        "usage": {
+          "prompt_tokens": 873,
+          "completion_tokens": 261,
+          "total_tokens": 1134,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "e32071d4c591ed6feaf0d07df2467f0a92c7860b31da730c1ce9e31c37d1ccee"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "ae4e5eae776a9f0156373a06885c41e6798159033b904c0ea499e8d8ebeee309",
+        "latency_seconds": 8.601,
+        "usage": {
+          "prompt_tokens": 950,
+          "completion_tokens": 299,
+          "total_tokens": 1249,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "ba7204f55b04f55cbc8a610b0634753cbcf3cdfd6cc9a75b47a83b55b6fa08e5"
+      }
+    ],
+    "input_sha256": "636e0e2fee0da75034926532bb307b0c1afa594da01a9808433710663cbf17db",
+    "schema_failure": "claims length 1..30",
+    "schema_repaired": {
+      "answerability": "unanswerable",
+      "summary": "根据提供的资料，证据列表为空，无法获取任何关于腾讯2025年Q2新闻稿、三角洲行动DAU或2025年6月30日披露时点的信息。因此，不能核查所谓“2025年6月30日已公开三角洲行动7月DAU突破2000万”的披露时点，也无法确认该陈述的真伪。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "资料为空，无法核查腾讯2025Q2新闻稿及三角洲行动DAU披露时点",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无任何资料可供核查腾讯2025Q2新闻稿内容及三角洲行动DAU披露时点",
+        "无法判断2025年6月30日是否已公开7月DAU数据"
+      ],
+      "follow_up": [
+        {
+          "action": "获取腾讯2025年Q2官方新闻稿或披露文件并核对发布日期与数据截止日",
+          "reason": "可确认披露时点及“7月DAU突破2000万”是否在2025-06-30前公开",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "calculator_results": [],
+    "revision_raw": {
+      "answerability": "unanswerable",
+      "summary": "根据提供的资料，证据列表为空，无法获取任何关于腾讯2025年Q2新闻稿、三角洲行动DAU或2025年6月30日披露时点的信息。因此，不能核查所谓“2025年6月30日已公开三角洲行动7月DAU突破2000万”的披露时点，也无法确认该陈述的真伪。资料中无任何官方报告或转述卡片可供核对，故该用户假设无法被验证或反驳。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "资料为空，无法核查腾讯2025Q2新闻稿及三角洲行动DAU披露时点",
+          "kind": "unknown",
+          "role": "context",
+          "evidence_ids": [],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "无任何资料可供核查腾讯2025Q2新闻稿内容及三角洲行动DAU披露时点",
+        "无法判断2025年6月30日是否已公开7月DAU数据",
+        "不能将用户陈述视为事实或反证，因无证据支撑"
+      ],
+      "follow_up": [
+        {
+          "action": "获取腾讯2025年Q2官方新闻稿或披露文件并核对发布日期与数据截止日",
+          "reason": "可确认披露时点及“7月DAU突破2000万”是否在2025-06-30前公开",
+          "evidence_ids": []
+        }
+      ]
+    },
+    "answer_sha256": "01de7e62d4cea1421ff958140e786994655fd02b837b85e94d701b549441fe65",
+    "source_document": {
+      "id": "pdf_7ad084b68b67",
+      "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+      "pages": 9,
+      "bytes": 649814,
+      "metadata_identity": "pinned_official",
+      "title": "腾讯二零二五年第二季度业绩",
+      "entity": "腾讯",
+      "published_at": "2025-08-13",
+      "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 9,
+      "selected_ids": [],
+      "selected_pages": [],
+      "selection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "pipeline": "native_pdf_v2",
+    "extraction_raw": null,
+    "extraction_traces": [],
+    "extraction_audit": {
+      "facts_proposed": 0,
+      "facts_accepted": 0,
+      "rejected": [],
+      "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "quote_verification": "whitespace-normalized exact contiguous source match",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "parent_record_sha256": "998bfbe9dfd4528f6b73c33c51b454551978f1769b4f86cabe48036bc1015508",
+  "base_score": 100.0,
+  "raw_source_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "replay_material": {
+    "audit_cards": [],
+    "reference_case": {
+      "id": "TC02",
+      "question": "有人用腾讯 2025Q2 新闻稿证明 2025年6月30日已经公开三角洲行动7月DAU突破2000万。核查披露时点。",
+      "as_of": "2025-06-30",
+      "required": [],
+      "counter": [],
+      "point_definitions": {},
+      "limitations": [
+        "新闻稿2025年8月13日公开，晚于6月30日；不能利用未来披露内容。"
+      ],
+      "expected_answerability": "unanswerable"
+    }
+  },
+  "semantic": {
+    "version": "native-source-audit-5.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正确说明资料为空无法核查，与无来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "candidate_span_id": null
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题为核查披露时点，候选正确判定无资料不可回答，符合预期unanswerable"
+    },
+    "span_binding": [
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": null,
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正确说明资料为空无法核查，与无来源一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "candidate_span_id": null,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题为核查披露时点，候选正确判定无资料不可回答，符合预期unanswerable"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "6d0075e0022ad552747269ceebea7ac591a22d85ca09e47142e9e25e9a587230",
+      "latency_seconds": 2.461,
+      "usage": {
+        "prompt_tokens": 1569,
+        "completion_tokens": 132,
+        "total_tokens": 1701,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "3946e4f675a2da842974bdfb36ba8131c6c17499d3c64777c2b41b1a77ea4c8a"
+    },
+    "input_sha256": "a84658dfbccb1d228ba3633b55ded29c1ccdf949756485f0f6746c23eeb6445c",
+    "answer_sha256": "01de7e62d4cea1421ff958140e786994655fd02b837b85e94d701b549441fe65",
+    "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "01de7e62d4cea1421ff958140e786994655fd02b837b85e94d701b549441fe65",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 94.737,
+    "score": 94.737,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok"
+}

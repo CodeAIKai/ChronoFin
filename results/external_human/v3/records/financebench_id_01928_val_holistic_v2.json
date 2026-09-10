@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01928",
+  "uid": "financebench_id_01928_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "3b7055be82b76ee13acda8b78b51935348d0c600b4434d21e73a0ba59fceeb7b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "915597ad18e8ccaa2dab58e78d6648638b3b96962d64fedaa74e933c9d063d47",
+  "started_utc": "2026-09-10T01:27:56.375507+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate states adjusted non-GAAP EBITDA is not explicitly stated and withholds the answer, despite evidence showing Adjusted EBITDA of $2,018mn for FY2023."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0c99e74e823fa2cdae0e25ce5206755d9e4728cadefa40353bbc5d45c6de806b",
+    "latency_seconds": 12.262,
+    "usage": {
+      "prompt_tokens": 2578,
+      "completion_tokens": 61,
+      "total_tokens": 2639,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "af34b95748c067f2a6258e151e8ad1a8e7a4a61bb8d30c1dd3d7498cd6a3d019"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

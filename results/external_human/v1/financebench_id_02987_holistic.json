@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_02987",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e41014be9d6f138e0282f21d87298588e3999903f3c7b4073c34cd95fc9df007",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "dc73f58567b570ea43568706072c7e4dad3ea96e0fcd647f68b1f40afe86e107",
+  "started_utc": "2026-09-09T17:34:23.856772+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate provided only an excerpt of the 10-K cover page and business overview, with no calculation or answer for the fixed asset turnover ratio. Reference is 24.26; evidence shows FY2019 revenue $6,489M, avg PP&E (253+282)/2=267.5M, ratio=24.26. Candidate gave no substantive answer agreeing with reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4ab3f1b6a51380dcb63d6075ec4eebf8842fb3cd51b28b3fd0a7b91f7ea28a64",
+    "latency_seconds": 2.092,
+    "usage": {
+      "prompt_tokens": 5009,
+      "completion_tokens": 99,
+      "total_tokens": 5108,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "70cf5a695ac2820c8a0792035d6a8ba4aba5208dba36fd5fa9e88f0d02253006"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

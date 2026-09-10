@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03856",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9b4d63d5f4df87ab5e07a6bd2b2de4d20f3a75550ecd335161c83604066afcda",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "7c4b86ada0668c7623a1da4a3e63ad170b3933b5d7dcdc29991dfcebc3e81746",
+  "started_utc": "2026-09-09T17:34:42.040334+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.99,
+    "reason": "Candidate provided only exhibit list from filings, no operating cash flow ratio or calculation; reference is 0.83 (CFO 2,912,853 / total current liabilities 3,527,457 = 0.826 ≈ 0.83).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate did not identify or answer for Adobe's metric"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2017 period addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No ratio unit provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No numeric answer; reference 0.83 unsupported by candidate"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate text is exhibit index, not cash flow ratio support"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "29625f45dd1a1268183635477e688cf96346b733f425013f8ae2d7cccd903615",
+    "latency_seconds": 3.427,
+    "usage": {
+      "prompt_tokens": 6071,
+      "completion_tokens": 214,
+      "total_tokens": 6285,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bb04f4367e888081f1efbb3a110415e54951f1bd8ad4a8aea028bf1da25b6e6b"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01028",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "65a85de45945e88978eecab9d082d84c923092682ea80772720452e1ca60fdaf",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "9e1736aef098071461aa40ff162cde48cdbf7952d6318ede83e7b74ad25bbad2",
+  "started_utc": "2026-09-09T17:47:15.766764+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds answer, claims lack of access, and only explains how to obtain the info from filings; does not provide the requested geographies."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b8c26f2cd30895dff07483bb1c022e14d07db12966975de8e1fe75b8b81016c3",
+    "latency_seconds": 5.702,
+    "usage": {
+      "prompt_tokens": 1213,
+      "completion_tokens": 52,
+      "total_tokens": 1265,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "7ee10affc0583101bc851a014de96439168555f46336af31b6e43c0d18a425da"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01028_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01028_holistic.json",
+  "parent_sha256": "bf7329e70399ac16026807e2dd34d80e079d44c5fe44a51708e191c8c04bf917"
+}

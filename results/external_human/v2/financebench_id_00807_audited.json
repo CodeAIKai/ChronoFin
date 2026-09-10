@@ -1,0 +1,74 @@
+{
+  "id": "financebench_id_00807",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "eb1ecd981eb8cc7bfed771778efc85ce1a923a2fb58e865dd4995b908d08ff43",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "41ed74dd9b7f88c081dc8b305eccaedf22b9eb8aa20b08b629382e246ae8867c",
+  "started_utc": "2026-09-09T17:46:21.049078+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computes quick ratio as 0.85 using Jun 30 2023 balance sheet data, but reference states quick ratio was 0.96 by Jun'23 close; candidate's substantive answer (0.85, slightly below 1, not critical) conflicts with reference's 0.96 and implied 'needs improvement' conclusion. Evidence supports candidate's math (4258+56+4947)/10936=0.847, so evidence conflicts with reference.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M, correctly addressed"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period is Q2 FY2023 / Jun 30 2023, correctly used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Quick ratio is unitless multiple, candidate reports 0.85 consistent with ratio"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says quick ratio ≈0.85; reference says 0.96; conclusion differs materially"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Candidate's calc from evidence: (4258+56+4947)/10936=0.847≈0.85, math supported by evidence"
+      }
+    ],
+    "reference_conflict": true,
+    "reference_conflict_reason": "Reference states 3M quick ratio was 0.96 by Jun'23 close, but evidence balance sheet yields (4258+56+4947)/10936=0.847≈0.85; reference and evidence inconsistent on the metric value."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d27f36597e331b4c6ecb6bc2a0c1bbf61629f9fb4c071aa2eaed85ba0aa7ca48",
+    "latency_seconds": 11.172,
+    "usage": {
+      "prompt_tokens": 2270,
+      "completion_tokens": 378,
+      "total_tokens": 2648,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0d21d04150ca2c209d1144c72d04db92ea625302b87d8f01c00a289f7f5b95fc"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

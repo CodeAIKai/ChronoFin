@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01476",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "7e19acbd5ac43a4dd15f677c5a5f05b2243b2fe91dacb2d535ed92e415992ede",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "18f0f27c32d6aafd4d9578297f98402bef50e582a67716c79de7b3f9dc18c104",
+  "started_utc": "2026-09-09T17:48:58.249750+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states Pepsico raised core constant currency EPS growth guidance from 8% to 9%, a 1 percentage point increase, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f8a50379f69657bbd5be779aea49c924aea3624e9c547399e51248665badd00a",
+    "latency_seconds": 6.572,
+    "usage": {
+      "prompt_tokens": 997,
+      "completion_tokens": 53,
+      "total_tokens": 1050,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b25d98ca0f4a3268bf50b9aab80f720f5743decb9b0a18258fce206b43057ecb"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01476_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01476_holistic.json",
+  "parent_sha256": "5eccc5e2213ff2618cc31e36fe6206424c6e9c33ddbceb107b01899ea620cfcd"
+}

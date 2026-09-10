@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00669",
+  "company": "Johnson & Johnson",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b99f69ea555a266919e382e01d9ce225a1f9e220802c568df2476fa3c7ee1ea2",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "e22cd3e69fc9fd0c97c0e66935c34f5cf2c11b2e52de58fc200d526dcb597aa2",
+  "started_utc": "2026-09-09T17:59:19.877004+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate identifies FY2022 JnJ gross margin drivers matching reference and evidence: COVID-19 vaccine exit costs, Pharma currency impacts, MedTech/Consumer commodity inflation, partially offset by Consumer Health supply chain benefits; correctly states gross margin is useful, not a refusal.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is JnJ (Johnson & Johnson), correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Fiscal year 2022 (FY2022) addressed, matching question and reference."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No specific unit requested; qualitative drivers and $ billions context consistent with evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Core answer lists same drivers as reference/evidence and notes gross margin remains useful; no material omission."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence 10-K page 33 lists identical cost of products sold drivers; candidate explanation supported."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1bab1568ac8deb234887f4d1548caccc40a3cf96572c990bae60503bae658d39",
+    "latency_seconds": 9.748,
+    "usage": {
+      "prompt_tokens": 1275,
+      "completion_tokens": 256,
+      "total_tokens": 1531,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ff6ecd094ed24112697cb37d7eb2ee89964c32372e19275c1265c4cdc05ae57a"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

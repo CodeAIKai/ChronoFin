@@ -1,0 +1,148 @@
+{
+  "id": "U01_equivalent",
+  "base": 1,
+  "mutation": "equivalent",
+  "expected_supported": true,
+  "method": "legacy",
+  "protocol_sha256": "e856a7b4a757c28370abea0eb0ae83dd8d9ad5de1545487113d3e61bb225fec2",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "contradicted",
+          "reason": "来源S1为1.55 USD billion（15.5亿美元），候选写15.50亿美元但称已实现且数值单位换算虽等但正文写15.50亿与来源1.55 billion语义同；但来源status为observed即已实现，无矛盾于'已实现'，然而候选claim写15.50亿美元对应1.55billion正确，但问题要求陈述营业利润，候选数值正确。重新核对：1.55 USD billion = 15.5亿美元，候选写15.50亿美元数值一致，kind fact、source observed均支持。但原判矛盾误。应为supported。修正：",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "S1",
+          "present": true,
+          "quote": "虚构甲公司 FY2024 全年已经实现营业利润 15.50 亿美元。"
+        }
+      ],
+      "limitations": [],
+      "summary_supported": true,
+      "follow_up_useful": false,
+      "direct_answer": true,
+      "reason": "候选正确陈述了S1中虚构甲公司FY2024营业利润1.55 USD billion（即15.50亿美元），但follow_up未提出具体可查资料/指标名称及解释意义，仅泛述查年报。"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "47f91684068a9472252a82d0117b5a09b3fbfb8f13927d97b4994731f09a23b2",
+      "latency_seconds": 11.063,
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 295,
+        "total_tokens": 1060,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "225b9e3d09422c68e7e3db4418169334e1229cc851700d4a27e30c5e101797aa"
+    },
+    "input_sha256": "33e0ec0177dce48701940e6bcc99ed7ee8d2d5049d07c889585aca0232fd22be",
+    "answer_sha256": "3877933ff328887b9d134ffe1baa27b05e8076b80854cfd57a3c63ac3b963aa5",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "3877933ff328887b9d134ffe1baa27b05e8076b80854cfd57a3c63ac3b963aa5",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.2,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": null,
+        "status": "not_applicable"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 80.795,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "predicted_supported": false,
+  "decision_correct": false
+}

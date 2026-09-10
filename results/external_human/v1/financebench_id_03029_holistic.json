@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_03029",
+  "company": "3M",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "e799f511f9175354f86d7ad557e40fde590ebb6df6d6446147ab33b2d7f4a0ac",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d3871e495e46177f0388cd84e77ee1e0d602e7ed8390154301ab60bb9fa5250c",
+  "started_utc": "2026-09-09T17:34:24.009191+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states FY2018 capex of $1,577 million from PP&E purchases in investing activities, matching reference and evidence (2018 PP&E purchases of (1,577) million, i.e. $1,577M outflow)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ebbdaed14d1dd58ca78dfe99824bb1ef6b46d38813fed48c3478627e2b7e2920",
+    "latency_seconds": 2.198,
+    "usage": {
+      "prompt_tokens": 2894,
+      "completion_tokens": 70,
+      "total_tokens": 2964,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "fc6a184ffc4f56a874c79be534aa755a1370750b6f9204e3a478cbb485dc61b9"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

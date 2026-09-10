@@ -1,0 +1,220 @@
+{
+  "case_id": "D01",
+  "method": "anchored",
+  "order": "repeat",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+  "status": "ok",
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文列明营收164501百万美元与净利润62360百万美元，与M01、M02观测值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称广告曝光增11%与均价增10%驱动营收，对应M06观测事实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选写自由现金流52103百万美元且注明非GAAP口径扣财产购置与融资租约本金，与M07、M08一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选写Reality Labs亏损17729百万美元为反面证据，与M03观测值一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选写Q4因15.5亿美元法律拨备转回受益，与M10的1.55 billion USD等价且期间为Q4",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选写FY2025 capex 600–650亿与折旧减29亿为前瞻未实现，M04为forecast、M05为2.9 billion USD会计估计变更，均非事实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选写未提供FY2025全年营收指引为披露缺失，与M09 absence一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M01",
+          "present": true,
+          "quote": "营收 164501 百万美元"
+        },
+        {
+          "id": "M02",
+          "present": true,
+          "quote": "净利润 62360 百万美元"
+        },
+        {
+          "id": "M06",
+          "present": true,
+          "quote": "广告曝光增 11% 与均价增 10% 为核心经营驱动"
+        },
+        {
+          "id": "M07",
+          "present": true,
+          "quote": "自由现金流 52103 百万美元"
+        },
+        {
+          "id": "M03",
+          "present": true,
+          "quote": "Reality Labs 经营亏损 17729 百万美元"
+        },
+        {
+          "id": "M10",
+          "present": true,
+          "quote": "Q4 因 15.5 亿美元法律拨备转回压低费用率"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "FY2025 capex 与折旧变更尚未发生，实际影响未知"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选完整覆盖Meta FY2024盈利质量的业务驱动、利润与现金流、反面证据及后续核查，且正确区分预测与事实、标注非GAAP限制"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "0e53bf9cbcd6e842f360afaf4d8a441fe1681cdf7b07e455d57b24866bc98733",
+      "latency_seconds": 6.945,
+      "usage": {
+        "prompt_tokens": 5674,
+        "completion_tokens": 738,
+        "total_tokens": 6412,
+        "prompt_tokens_details": {
+          "cached_tokens": 5568
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "d8223cd7dd7bf6bce576036366041fb70f661221842d9fdbfcbd64621f29f219"
+    },
+    "input_sha256": "7668158abf82706abbb913ed3160384bf79cc404ea09f2d02fd9c963ccf8999a",
+    "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  }
+}

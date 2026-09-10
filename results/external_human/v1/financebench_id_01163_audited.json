@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01163",
+  "company": "Nike",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "f9e8070d34ff4f9e3cda92b48a59a0addfbd80a15cfe4d4761d7c10dd9eb1a4e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "551f38f8df0a20db9bf9e34e397a770e4c303ae0fc8b4161ddb56a91dea6b64c",
+  "started_utc": "2026-09-09T17:33:44.479873+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate provides only a closing statement for the 10-K filing and does not answer which cash flow activity brought in the most or lost the least for Nike FY2023.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not identify Nike cash flow activities."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Candidate mentions FY2023 only as filing context, not as analysis period."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No unit claimed."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer on operations/investing/financing comparison."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "No supporting claim made from evidence."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "09c7710f03913466411c7bfd513b437a0ee72891083d0d5438066ab23ea935f8",
+    "latency_seconds": 2.712,
+    "usage": {
+      "prompt_tokens": 2273,
+      "completion_tokens": 199,
+      "total_tokens": 2472,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0745d705d40c4d1099448e38c6aec9e8b2ec9258cac54ce4c7d50b9f26808a93"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

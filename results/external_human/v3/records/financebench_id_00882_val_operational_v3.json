@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00882",
+  "uid": "financebench_id_00882_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6c5f8246119e218c31e301ff2b5debe19a41cc069c47ff35dda8cbdf96771e22",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "6a31ac4e2218aa1cdf70196e39143dba688e2913d4cb9ae603bc8101b8bb2d09",
+  "started_utc": "2026-09-09T18:08:46.314712+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "The total amount PepsiCo may borrow under these agreements is the sum of the two, which is $4,200,000,000 + $4,200,000,000 = $8,400,000,000.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states two 2023 unsecured revolving credit agreements each $4.2B, total $8.4B, matching reference and evidence (8-K: 2023 364 Day and Five Year agreements each up to $4,200,000,000, effective May 26, 2023)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2496e196385da3f6cb573ae77abdbb1ba65ba221d3a7dc1136e6de03b7fc2027",
+    "latency_seconds": 6.7,
+    "usage": {
+      "prompt_tokens": 2886,
+      "completion_tokens": 158,
+      "total_tokens": 3044,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5045bf026ded2b64a0525cf58e50f5f3bfb12987876d05a4aba5c794bb9f30ab"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01865",
+  "uid": "financebench_id_01865_dev",
+  "split": "development",
+  "company": "3M",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a794ddac09dac00a3f6f4b3f0c9b5de537d2fd4f5971152163cfc874530f6090",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d73fac4fdba07b06d47434f270717f3b3ebf07b8ccf96afe6f2aaff21a9940da",
+  "started_utc": "2026-09-10T01:27:21.967250+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "it is not possible to determine which segment has dragged down 3M's overall growth in 2022",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states inability to determine the segment, while evidence shows Consumer organic sales -0.9% (only negative organic), matching reference that consumer segment shrunk 0.9% organically."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "89581587d46152cb6c0913240dd19e6b57a37abfa27dcf8dcc01004f3938410c",
+    "latency_seconds": 12.0,
+    "usage": {
+      "prompt_tokens": 1829,
+      "completion_tokens": 113,
+      "total_tokens": 1942,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "93d4da1c2e6bf8b2196f12942013cb625f7219c4a7024f6f42d1bf0168cb3f72"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_06741",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "72079381078ded72808475008358db1f9ae163afd2825bef0838966f2fdd3aa0",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "fa7b44bd176400dc456f4a170b1628e55a01e352c57713c2861548420fdb1a8a",
+  "started_utc": "2026-09-09T18:03:25.039741+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate responds with unrelated text about restricted stock agreement and does not provide any EBITDA margin calculation or answer for Walmart FY2018-FY2020.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not address Walmart EBITDA margin; discusses restricted stock agreement entity unrelated to question."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2018-FY2020 period addressed."
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No percent unit or margin value provided."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer; text is off-topic refusal-style response."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence on income/cash flow not used or referenced; candidate lacks support for question."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c8a0be29f7af939e30a78dfbd9371d6e50c8bc0a5edc901425729f54e7f1de61",
+    "latency_seconds": 9.483,
+    "usage": {
+      "prompt_tokens": 4200,
+      "completion_tokens": 216,
+      "total_tokens": 4416,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8a30744befc6e908cf859bc8b206bd68349f056d55464a5257a7aa0cc69934e4"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

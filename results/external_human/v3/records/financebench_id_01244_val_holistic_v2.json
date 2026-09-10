@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01244",
+  "uid": "financebench_id_01244_val",
+  "split": "new_response_validation",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "84cafea1eef31fdaacec37179c3edb5cfaba505c44e886fe225e20e1a9b1a2ae",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "1f95d5cdde0b473478be629fe6f9bc4f355cbff0b7ff52ccb9195dfd03f2ad9d",
+  "started_utc": "2026-09-09T18:10:01.022213+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states the text does not contain necessary info and it is not possible to determine the answer, withholding the conclusion despite evidence showing quarterly dividends of $0.55 in 2022 including Q2."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dce68ac18c642adecfed23dc344b531cd9113aca052fc38eaf33bcc9567dcd74",
+    "latency_seconds": 6.499,
+    "usage": {
+      "prompt_tokens": 1433,
+      "completion_tokens": 62,
+      "total_tokens": 1495,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1f6b5fb02ec07da862c170fea409044aeeb9863ce085a8dab36d78996243f1de"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

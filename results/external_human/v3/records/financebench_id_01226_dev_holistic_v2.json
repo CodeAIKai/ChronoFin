@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01226",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c5111956e72eab9675ceaa4b5546097c88b09deddfe4a786e5d149c4418ba595",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "e5b99fd7f20ba7e4505d62d42648402f852a2bf60b36f8a4bc380166b8aec83d",
+  "started_utc": "2026-09-09T17:47:59.017325+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.9,
+    "reason": "Candidate substantively answers the question, noting operating margin decreased ~1.7% and citing litigation (Combat Arms, PFAS), raw material/logistics costs, and divestiture impacts, consistent with evidence and reference. Does not refuse or claim indeterminable."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "23d5832217fb2708e8779d5117fa6d3e7211aedcef4a1dd9b86371a5cae70ff1",
+    "latency_seconds": 5.93,
+    "usage": {
+      "prompt_tokens": 1570,
+      "completion_tokens": 75,
+      "total_tokens": 1645,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "23b27ae4b32ad6e264cdd15e29d250b6e0d8fa478ce50835668523741e693fa3"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01226_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01226_holistic.json",
+  "parent_sha256": "29ac184eefddafd98455a4972fceac61ed9548d2c994fdf398c90f93938bbcba"
+}

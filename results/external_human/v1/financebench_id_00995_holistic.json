@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00995",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cd50e9048aa7020b598e633f80506b84a738a5d49cb78f7ac7f499d1b1926569",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ab738631c645fde5e2660fb1b443193348218308e9e5195a7db5d63af9e0e262",
+  "started_utc": "2026-09-09T17:33:32.738200+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate lists vague categories and specific examples (e.g., PlayStation 5, Mars rover, automotive) not supported by evidence/reference, and omits key reference items like DPUs, FPGAs, chipsets, embedded products. Does not match reference product/service breakdown."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b53258709fd95cf55ecce4aaf8a91df96dda4faa611e828864657edfd30209fd",
+    "latency_seconds": 1.934,
+    "usage": {
+      "prompt_tokens": 1506,
+      "completion_tokens": 78,
+      "total_tokens": 1584,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e7ea197c1f38b4392de27fe01671b11e1b2173bb115672e0a3f3fe37f17454d6"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

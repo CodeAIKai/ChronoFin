@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00222",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "be276834767d6067111cb04b472895454b17e688327d794b66fa859f53f18f80",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "220980b49e3c483314a5563e69737ed894a8c25e98fe02b1e6f3aca804dd63a8",
+  "started_utc": "2026-09-09T17:42:31.214991+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate computes quick ratio 1.57 from FY22 balance sheet evidence and concludes AMD has reasonably healthy liquidity, matching reference. It does not claim quick ratio irrelevant, so answers as requested."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a4eb050e195400ad862df926978938035d667c02dbb4f8fd7d93a6b1330409a8",
+    "latency_seconds": 6.549,
+    "usage": {
+      "prompt_tokens": 1919,
+      "completion_tokens": 59,
+      "total_tokens": 1978,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "886f21fc47d5aebc85eacba95dbf326cdb2f60b4cbee7ccb108a5087656ac20c"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00222_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00222_holistic.json",
+  "parent_sha256": "370bc85f8621f03296a229cbdb73cda746ee1810295f1ac7f61016605e42fa8a"
+}

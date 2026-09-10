@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00299",
+  "uid": "financebench_id_00299_val",
+  "split": "new_response_validation",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "6bd2d5f22f5e7c383ab3abd9c09caa2a3698776683887a0e18a7c818a3a8278b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "130938527c56cc26240d34eb541b207b5dbcb1337ff84c70705b10b31352296c",
+  "started_utc": "2026-09-09T18:05:24.766472+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds answer stating data not provided and asks for figures, despite evidence supplying segment net revenues; no substantive answer given."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "276e99e09d7b612b087eb47209173f262d1cee69b3380a1dfd579f786177f0c9",
+    "latency_seconds": 5.074,
+    "usage": {
+      "prompt_tokens": 1971,
+      "completion_tokens": 47,
+      "total_tokens": 2018,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9c3aca91097df873a89804d960484e1e08d917d985304145c4247b209a2059cf"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

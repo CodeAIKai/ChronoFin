@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01148",
+  "uid": "financebench_id_01148_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "da2a59cd2b02c331bc0fdcfa947488a574934e12e4ad172b77b72daf5663fe74",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "f2bdadac17508a0eb3111c8f5539ef9c9b7ddc48cb21cf69dc51cb08c257f414",
+  "started_utc": "2026-09-09T18:09:39.720923+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate does not answer the industry question; it describes bond notes instead of stating Amcor operates in packaging."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "668a414a8cbb4eb3b0aa179cf9c99aa5c065db95297d4dcf8d4d7e101a3588a4",
+    "latency_seconds": 6.597,
+    "usage": {
+      "prompt_tokens": 1399,
+      "completion_tokens": 43,
+      "total_tokens": 1442,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cfa4dadddf2bef37659d845072aaa477dfca5c6c85f0c20072da5ccb68121c9a"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

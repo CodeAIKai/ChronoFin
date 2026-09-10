@@ -1,0 +1,406 @@
+{
+  "sha256": "1a16987e23f063379eb1335517a0da1483122c95db6ba6be3d9b183e813b6ab6",
+  "files": {
+    "scripts/run_native_pdf_v4.py": "d601865ab2a5376d02dfc30dbe16e801f3755a36b8545ef5d81e0d11b52144fc",
+    "src/chronofin/pdf_research_v4.py": "330d76d081c43360fbec6ddc7947c7598c09694bb08b6d280964dcb0af0eb619",
+    "src/chronofin/native_generation_v4.py": "649854e05b953ff09af340c143fcdb3941d7f08bac40f7356e7f09d6aa3b7b3e",
+    "src/chronofin/span_evidence.py": "cc0cb0a1bb456242e638f3c6f4d8b68c7cfc0f871e714d8ffedafbe31b7a80c2",
+    "src/chronofin/pdf_research.py": "a6282fd4a511cf29e4afabed0fd44a3c1692191892e7fecb1dad41524b5e628b",
+    "src/chronofin/runtime.py": "699fc8e91b326739fb8da961eaf498b76048a3a3ba9e81b4f5241046f56e76f9",
+    "src/chronofin/grounded.py": "c47ffe513a0f78f54952bc78f3204e0a5ebe0cf8d5854e135ac78dfeed04cd79",
+    "src/chronofin/brief.py": "d574e3759bd15f2f89358a45b9e4f5f7ec2e4f4ffeb8f5e762adfa6371b14079",
+    "data/native/cases.json": "818b0af1b84e1ea47a3da9cffd053bbd081dba26538eb11d45ca628816af4db0",
+    "data/native/sources.json": "92b5367e5592cb6de16bad3d922d320d7aae04542d9a0d328f00ea4c5224cfda"
+  },
+  "jobs": [
+    {
+      "id": "meta24_after",
+      "source_id": "meta24",
+      "split": "known_source",
+      "case": {
+        "id": "meta24_after",
+        "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+        "as_of": "2025-06-01",
+        "required": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "counter": [
+          "R5",
+          "R6"
+        ],
+        "point_definitions": {
+          "R1": "Meta FY2024 revenue: USD 164501 million.",
+          "R2": "Meta FY2024 net income: USD 62360 million.",
+          "R3": "FY2024 ad impressions grew 11%; average ad price rose 10%.",
+          "R4": "Meta FY2024 free cash flow: USD 52103 million.",
+          "R5": "Reality Labs FY2024 operating loss: USD 17729 million.",
+          "R6": "Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses."
+        },
+        "limitations": [
+          "一次性因素不能代表持续经营改善"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "amazon24_after",
+      "source_id": "amazon24",
+      "split": "known_source",
+      "case": {
+        "id": "amazon24_after",
+        "question": "用 Amazon FY2024 财报解释 AWS 对集团利润的重要性，并评估利润改善是否同步转化为现金。",
+        "as_of": "2025-06-01",
+        "required": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "counter": [
+          "R5",
+          "R6"
+        ],
+        "point_definitions": {
+          "R1": "Amazon FY2024 net sales: USD 637959 million.",
+          "R2": "Amazon FY2024 operating income: USD 68593 million.",
+          "R3": "AWS FY2024 net sales: USD 107556 million.",
+          "R4": "AWS FY2024 operating income: USD 39834 million.",
+          "R5": "Amazon FY2024 free cash flow: USD 38219 million.",
+          "R6": "AWS operating margin: Q3 2024 38.1%; Q4 2024 36.9%."
+        },
+        "limitations": [
+          "不能把 AWS 的收入占比称为行业市场份额"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "meta24_before",
+      "source_id": "meta24",
+      "split": "known_source",
+      "case": {
+        "id": "meta24_before",
+        "question": "截至 2025-01-28，根据提供原件总结 Meta FY2024 经营表现。",
+        "as_of": "2025-01-28",
+        "required": [],
+        "counter": [],
+        "point_definitions": {},
+        "limitations": [
+          "给定原件尚未公开，不能利用未来披露内容。"
+        ],
+        "expected_answerability": "unanswerable"
+      }
+    },
+    {
+      "id": "NV01",
+      "source_id": "nvidia25",
+      "split": "new_source",
+      "case": {
+        "id": "NV01",
+        "question": "核查 NVIDIA FY2025 Q4 增长的质量：数据中心、毛利率和现金转化是否同向改善？提出后续核查。",
+        "as_of": "2025-12-01",
+        "required": [
+          "R1",
+          "R2"
+        ],
+        "counter": [
+          "R3",
+          "R4"
+        ],
+        "point_definitions": {
+          "R1": "Q4总收入39331百万美元，同比增78%，单季不是全年。",
+          "R2": "Q4数据中心收入35580百万美元，同比增93%。",
+          "R3": "Q4 GAAP毛利率73.0%，同比下降3个百分点；更复杂高成本系统是原因。",
+          "R4": "Q4经营现金流16628百万美元，低于上一季17629百万美元；应收和库存增加。"
+        },
+        "limitations": [
+          "营收增长不能证明毛利率和现金转化均环比改善。"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "NV02",
+      "source_id": "nvidia25",
+      "split": "new_source",
+      "case": {
+        "id": "NV02",
+        "question": "NVIDIA Q1 FY2026 已实现 430 亿美元营收和 71% GAAP 毛利率吗？根据当前文件纠正并区分口径。",
+        "as_of": "2025-12-01",
+        "required": [
+          "R1",
+          "R2"
+        ],
+        "counter": [
+          "R3"
+        ],
+        "point_definitions": {
+          "R1": "430亿美元是Q1 FY2026收入指引，中值上下2%。",
+          "R2": "Q1指引GAAP毛利率70.6%，非GAAP71.0%，各上下50基点。",
+          "R3": "该文件披露的是预测，不能冒充Q1已经实现的结果。"
+        },
+        "limitations": [
+          "没有提供Q1 FY2026最终实际收入或毛利率。"
+        ],
+        "expected_answerability": "partial"
+      }
+    },
+    {
+      "id": "NV03",
+      "source_id": "nvidia25",
+      "split": "new_source",
+      "case": {
+        "id": "NV03",
+        "question": "NVIDIA 的数据中心增长能否证明所有产品平台都在同步增长？总结两条反证并解释期间。",
+        "as_of": "2025-12-01",
+        "required": [
+          "R1",
+          "R2"
+        ],
+        "counter": [
+          "R3",
+          "R4"
+        ],
+        "point_definitions": {
+          "R1": "Q4数据中心收入35580百万美元，同比增93%。",
+          "R2": "Q4游戏收入2544百万美元，同比下降11%，环比下降22%。",
+          "R3": "Q4网络收入3024百万美元，同比下降9%，环比下降3%。",
+          "R4": "全年游戏增长9%不等于第四季度增长。"
+        },
+        "limitations": [
+          "区分第四季度与全年，不能由一个平台外推所有平台。"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "AP01",
+      "source_id": "apple25",
+      "split": "new_source",
+      "case": {
+        "id": "AP01",
+        "question": "Apple FY2025 利润增长是否同步变成现金？比较全年净利润、经营现金流与资本开支，给出有边界的结论。",
+        "as_of": "2025-12-01",
+        "required": [
+          "R1",
+          "R2"
+        ],
+        "counter": [
+          "R3",
+          "R4"
+        ],
+        "point_definitions": {
+          "R1": "全年净利润112010百万美元，上年93736百万美元。",
+          "R2": "全年经营现金流111482百万美元，低于上年118254百万美元。",
+          "R3": "购置物业厂房设备付款12715百万美元，高于上年9447百万美元。",
+          "R4": "经营现金流减少而净利润上升，二者不同步。"
+        },
+        "limitations": [
+          "披露是全年现金流，不可称为第四季度现金流。"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "AP02",
+      "source_id": "apple25",
+      "split": "new_source",
+      "case": {
+        "id": "AP02",
+        "question": "有人说 Apple Q4 FY2025 每股摊薄盈利同比翻近一倍，说明经营能力也近乎翻倍。结合上年税项调整核查。",
+        "as_of": "2025-12-01",
+        "required": [
+          "R1",
+          "R2"
+        ],
+        "counter": [
+          "R3"
+        ],
+        "point_definitions": {
+          "R1": "Q4 FY2025摊薄EPS1.85美元，Q4 FY2024 GAAP为0.97美元。",
+          "R2": "上年经税项调整EPS为1.64美元，按此比较本季约增长12.8%。",
+          "R3": "2024第四季度有10246百万美元一次性税项费用影响，同比GAAP比较受低基数影响。"
+        },
+        "limitations": [
+          "非GAAP调整不能替代GAAP；不能把税项低基数说成经营能力翻倍。"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "AP03",
+      "source_id": "apple25",
+      "split": "new_source",
+      "case": {
+        "id": "AP03",
+        "question": "Apple FY2025 全球增长是否说明大中华区和所有产品线均增长？用全年及季度表格核查。",
+        "as_of": "2025-12-01",
+        "required": [
+          "R1",
+          "R2"
+        ],
+        "counter": [
+          "R3",
+          "R4"
+        ],
+        "point_definitions": {
+          "R1": "全年总销售416161百万美元，高于391035百万美元。",
+          "R2": "全年大中华区64377百万美元，低于66952百万美元。",
+          "R3": "全年可穿戴家居配件35686百万美元，低于37005百万美元。",
+          "R4": "Q4大中华区14493百万美元，低于15033百万美元。"
+        },
+        "limitations": [
+          "不能由公司总体增长外推每个地区和产品线。"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "TC01",
+      "source_id": "tencent25q2",
+      "split": "new_source",
+      "case": {
+        "id": "TC01",
+        "question": "腾讯 2025 年第二季度 AI 投入与业务改善如何联系？写包含经营利润、现金流和投入约束的研究晨会简报。",
+        "as_of": "2025-12-01",
+        "required": [
+          "R1",
+          "R2",
+          "R3"
+        ],
+        "counter": [
+          "R4",
+          "R5"
+        ],
+        "point_definitions": {
+          "R1": "季度收入1845亿元，同比增15%。",
+          "R2": "非IFRS经营盈利692亿元同比增18%；IFRS经营盈利601亿元，不能混称。",
+          "R3": "游戏和营销服务增长与AI应用有关，营销服务收入358亿元增20%。",
+          "R4": "资本开支191亿元同比增119%。",
+          "R5": "自由现金流430亿元同比仅增7%，不能把收入增长等同现金增速。"
+        },
+        "limitations": [
+          "没有AI单独收益和投入归因，不能算出AI项目真实ROI。"
+        ],
+        "expected_answerability": "answerable"
+      }
+    },
+    {
+      "id": "TC02",
+      "source_id": "tencent25q2",
+      "split": "new_source",
+      "case": {
+        "id": "TC02",
+        "question": "有人用腾讯 2025Q2 新闻稿证明 2025年6月30日已经公开三角洲行动7月DAU突破2000万。核查披露时点。",
+        "as_of": "2025-06-30",
+        "required": [],
+        "counter": [],
+        "point_definitions": {},
+        "limitations": [
+          "新闻稿2025年8月13日公开，晚于6月30日；不能利用未来披露内容。"
+        ],
+        "expected_answerability": "unanswerable"
+      }
+    },
+    {
+      "id": "TC03",
+      "source_id": "tencent25q2",
+      "split": "new_source",
+      "case": {
+        "id": "TC03",
+        "question": "腾讯 2025 年第二季度非IFRS归母盈利同比增10%，剔除联营合营后增20%，这两个增速冲突吗？",
+        "as_of": "2025-12-01",
+        "required": [
+          "R1",
+          "R2"
+        ],
+        "counter": [
+          "R3"
+        ],
+        "point_definitions": {
+          "R1": "非IFRS归母盈利631亿元，同比增长10%。",
+          "R2": "剔除本季及去年同期非IFRS分占联营合营盈利后为568亿元，同比增长20%。",
+          "R3": "IFRS归母盈利556亿元，同比增长17%，是另一口径。"
+        },
+        "limitations": [
+          "不同调整范围不可混同，不能声称数字互相矛盾。"
+        ],
+        "expected_answerability": "answerable"
+      }
+    }
+  ],
+  "sources": {
+    "nvidia25": {
+      "id": "nvidia25",
+      "title": "NVIDIA Q4 and FY2025 CFO Commentary",
+      "entity": "NVIDIA",
+      "published_at": "2025-02-26",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf",
+      "official_landing": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2025/default.aspx",
+      "language": "en",
+      "sha256": "842a50961f0466d50584f8017200ab72c5a86c7438f0560cefb0506442149ce7",
+      "bytes": 82336,
+      "fetched_utc": "2026-09-09T17:59:51.140150+00:00",
+      "cache_path": "data/cache/native_expansion/nvidia25.pdf",
+      "license": "Original public financial disclosure; copyright retained by issuer, raw document excluded from distribution."
+    },
+    "tencent25q2": {
+      "id": "tencent25q2",
+      "title": "腾讯二零二五年第二季度业绩",
+      "entity": "腾讯",
+      "published_at": "2025-08-13",
+      "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf",
+      "official_landing": "https://www.tencent.com/zh-cn/investors/results/",
+      "language": "zh",
+      "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+      "bytes": 649814,
+      "fetched_utc": "2026-09-09T17:59:51.594874+00:00",
+      "cache_path": "data/cache/native_expansion/tencent25q2.pdf",
+      "license": "Original public financial disclosure; copyright retained by issuer, raw document excluded from distribution.",
+      "download_method": "Chromium normal navigation then authenticated browser-context fetch of same public document."
+    },
+    "apple25": {
+      "id": "apple25",
+      "title": "Apple FY2025 Q4 consolidated financial statements",
+      "entity": "Apple",
+      "published_at": "2025-10-30",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+      "official_landing": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/",
+      "language": "en",
+      "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+      "bytes": 4919649,
+      "fetched_utc": "2026-09-09T17:59:53.920965+00:00",
+      "cache_path": "data/cache/native_expansion/apple25.pdf",
+      "license": "Original public financial disclosure; copyright retained by issuer, raw document excluded from distribution."
+    },
+    "meta24": {
+      "id": "meta24",
+      "entity": "Meta",
+      "title": "Meta Q4 and FY2024 earnings release",
+      "published_at": "2025-01-29",
+      "period": "FY2024",
+      "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf",
+      "format": "pdf",
+      "license": "Facts and author paraphrases; original report copyright Meta",
+      "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+      "cache_path": "data/cache/brief/meta24.pdf"
+    },
+    "amazon24": {
+      "id": "amazon24",
+      "entity": "Amazon",
+      "title": "Amazon Q4 and FY2024 earnings release",
+      "published_at": "2025-02-06",
+      "period": "FY2024",
+      "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2024/q4/AMZN-Q4-2024-Earnings-Release.pdf",
+      "format": "pdf",
+      "license": "Facts and author paraphrases; original report copyright Amazon",
+      "sha256": "0435f36d49cc40373c1ec7d6a8aa77abf83f90f7774b477d69f28b3859e7fe72",
+      "cache_path": "data/cache/brief/amazon24.pdf"
+    }
+  },
+  "change_from_v3": "Source quotations copied by line range; judge quotes copied by candidate span ID; explicit unknown claim and at most one schema repair. All twelve regression cases rerun, including earlier losses; no independent blind-test claim.",
+  "author_reference": "Written before these 12 generations; judge only, never passed to extractor or generator."
+}

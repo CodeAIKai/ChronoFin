@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01964",
+  "uid": "financebench_id_01964_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "70cfb7a0712b14affd68d3443906334c1ca9eb28de40406bd99f18b0e5e1b34b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "33ff3f10e84a4dd8502d4aeb2aa081d4bc8ad3dd7340af088b3a6e532f9db7f6",
+  "started_utc": "2026-09-10T01:28:30.773398+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Total customer deposits, which represent a source of relatively stable funding, were $110.2 billion as of December 31, 2022.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate summarized balance sheet items but never stated the largest liability was customer deposits; it only listed deposits among funding sources without answering the specific question. Evidence shows customer deposits $110,239M is largest liability in 2022, matching reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "47058ae436f0176b5875b88787124a9c155801293c66b6e6da5e1386a3c2c0dc",
+    "latency_seconds": 12.282,
+    "usage": {
+      "prompt_tokens": 2356,
+      "completion_tokens": 125,
+      "total_tokens": 2481,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e4e9a5ba0e5d948608320d917274af68f6140c13b298b2368f1278b587bb54f2"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

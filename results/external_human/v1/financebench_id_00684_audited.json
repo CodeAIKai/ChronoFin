@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00684",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "878a6fa7d936484bfb7751d9f59e05a0dee1915a159f543059874d1ff5e2233d",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "f5fdad7ccd7025866101eb44b8db53c764d81c33eaea1689a88dffe5a353f033",
+  "started_utc": "2026-09-09T17:59:30.933030+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate claims gross margin improved in FY2023, but evidence shows gross profit fell from $2,820M (2022) to $2,725M (2023) on sales of $14,544M to $14,694M, so gross margin declined (~19.4% to ~18.5%). Reference also states slight decline of 0.8%. Candidate's core claim is opposite to evidence and reference.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate addresses Amcor (AMCOR) as requested."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY2023 vs FY2022, matching question."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate uses percentage gross margin, consistent with question/reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says margin improved; evidence shows gross margin declined from 19.4% to 18.5%."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Income statement evidence contradicts candidate's stated increase and figures."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a31e0c20a0c2fc251e075e33b414e06f2c9c1cef1a7ecec21dab69b0e89a0b98",
+    "latency_seconds": 10.289,
+    "usage": {
+      "prompt_tokens": 1376,
+      "completion_tokens": 275,
+      "total_tokens": 1651,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "fa9600b9a12de28f1a8d1d0914af1d9e9292dd4c5cf1abfcaab73d0c2e8f5c0a"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,163 @@
+{
+  "generated_utc": "2026-09-10T02:42:48.727035+00:00",
+  "version_status": {
+    "v1": {
+      "records": 15,
+      "ok": 9,
+      "errors": 6
+    },
+    "v2": {
+      "records": 15,
+      "ok": 14,
+      "errors": 1
+    },
+    "v3": {
+      "records": 60,
+      "ok": 60,
+      "errors": 0
+    }
+  },
+  "final_app_completed": 60,
+  "final_app_planned": 60,
+  "final_app_incomplete": 0,
+  "meta_planned": 30,
+  "meta_completed": 30,
+  "pending_online": 0,
+  "all_online_completed": true,
+  "experiment_completion": {
+    "brief_application": [
+      60,
+      60
+    ],
+    "brief_meta": [
+      30,
+      30
+    ],
+    "equal_call_application": [
+      80,
+      80
+    ],
+    "order_judgments": [
+      48,
+      48
+    ],
+    "external_human_v3": [
+      600,
+      600
+    ],
+    "semantic_stress": [
+      60,
+      60
+    ],
+    "native_pdf_v5": [
+      12,
+      12
+    ],
+    "native_final_validation": [
+      30,
+      30
+    ]
+  },
+  "complete_evaluation_pairs": [
+    {
+      "case_id": "E01",
+      "full_context": 65,
+      "lexical": 100.0,
+      "counterbrief": 100.0
+    },
+    {
+      "case_id": "E02",
+      "full_context": 100.0,
+      "lexical": 100.0,
+      "counterbrief": 100.0
+    },
+    {
+      "case_id": "E03",
+      "lexical": 89.5,
+      "full_context": 97.5,
+      "counterbrief": 93.5
+    },
+    {
+      "case_id": "E04",
+      "lexical": 55,
+      "full_context": 90.0,
+      "counterbrief": 100.0
+    },
+    {
+      "case_id": "E05",
+      "lexical": 55,
+      "full_context": 55,
+      "counterbrief": 96.0
+    },
+    {
+      "case_id": "E06",
+      "lexical": 100.0,
+      "full_context": 55,
+      "counterbrief": 100.0
+    },
+    {
+      "case_id": "E07",
+      "lexical": 65,
+      "full_context": 65,
+      "counterbrief": 100.0
+    },
+    {
+      "case_id": "E08",
+      "lexical": 100.0,
+      "full_context": 100.0,
+      "counterbrief": 100.0
+    },
+    {
+      "case_id": "E09",
+      "full_context": 100.0,
+      "counterbrief": 93.5,
+      "lexical": 100.0
+    },
+    {
+      "case_id": "E10",
+      "full_context": 96.0,
+      "lexical": 100.0,
+      "counterbrief": 94.0
+    },
+    {
+      "case_id": "E11",
+      "lexical": 55,
+      "full_context": 89.5,
+      "counterbrief": 93.5
+    },
+    {
+      "case_id": "E12",
+      "counterbrief": 100.0,
+      "lexical": 55,
+      "full_context": 55
+    },
+    {
+      "case_id": "E13",
+      "lexical": 96.0,
+      "full_context": 96.0,
+      "counterbrief": 96.0
+    },
+    {
+      "case_id": "E14",
+      "lexical": 100.0,
+      "full_context": 86.842,
+      "counterbrief": 93.421
+    },
+    {
+      "case_id": "E15",
+      "full_context": 96.0,
+      "counterbrief": 100.0,
+      "lexical": 96.0
+    }
+  ],
+  "complete_pair_means": {
+    "lexical": 84.43333333333334,
+    "full_context": 83.1228,
+    "counterbrief": 97.32806666666667
+  },
+  "reported_calls_lower_bound": 1755,
+  "reported_tokens_lower_bound": 6810665,
+  "native_final_version": "v5",
+  "public_repository_published": false,
+  "new_expert_annotation_executed": false
+}

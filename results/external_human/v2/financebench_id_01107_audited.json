@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01107",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "7c3371fa8360bfa8bc26c36e2994969da7a59dcac2b9c09a803a096fa3b23b7e",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "792c566cb5e0544d4a5ebad0266757c554bd437793e1e3c9e02a1ba1b222bf09",
+  "started_utc": "2026-09-09T17:47:37.450116+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers yes and lists material legal battles (U&C pricing, PBM, controlled substances/opioids) supported by 2022 10-K evidence covering 2020-2022 period; aligns with reference.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is CVS Health, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate states years 2020, 2021, 2022; evidence from 2022 10-K covers matters spanning those years."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Qualitative yes/no with litigation descriptions; no mismatched unit."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answers yes with specific battles matching reference and evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence details U&C, PBM, opioid litigation and $4.3B/$625M settlements supporting candidate."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "860c798e83ffc32eaf681ccc438ab43d7c1c9685fc79ee5a750f29fcba1de681",
+    "latency_seconds": 9.592,
+    "usage": {
+      "prompt_tokens": 4700,
+      "completion_tokens": 259,
+      "total_tokens": 4959,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d17f1471d38ff053d54dfc38eaeba2abfd997963b7bab19244740f3dcb1a3176"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

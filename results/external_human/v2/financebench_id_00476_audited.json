@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00476",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c963467d3e55fc121c5607e8fb6a51dc569a2d6c5dd237e6c7cc88caa666783e",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "111d433e03a1448d5dae5cc12c95f8fd4c0486855d27088f3790d75e4a4e5af6",
+  "started_utc": "2026-09-09T17:43:34.859405+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides general debt info but does not answer which debt securities are registered on a national exchange under American Express' name; evidence shows only common shares registered under 12(b), no debt securities, so correct answer is none. Candidate withholds requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "American Express identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "2022 referenced in context"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "question asks for security names, not numeric unit"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "fails to state none / list no debt securities registered"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "evidence shows only common shares registered, candidate ignores registration section"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "14d35cea1d21e5311445c60cefbbf6de12e5384978e77eeb026fde258d81b918",
+    "latency_seconds": 13.74,
+    "usage": {
+      "prompt_tokens": 2029,
+      "completion_tokens": 221,
+      "total_tokens": 2250,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d43ead0c5db02b55298589f866ac5b9d5e7ba50068e32e01e6940ad46d429658"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

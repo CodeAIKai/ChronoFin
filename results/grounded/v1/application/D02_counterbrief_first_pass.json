@@ -1,0 +1,752 @@
+{
+  "case_id": "D02",
+  "split": "dev",
+  "method": "counterbrief_first_pass",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "parent_record_sha256": "c845d5979164dfa93b9c23e76a6973477fe08017852150508b1e9451d362c8a4",
+  "started_utc": "2026-09-09T17:38:19.392497+00:00",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "counterbrief_first_pass",
+    "query": {
+      "question": "用 Amazon FY2024 财报解释 AWS 对集团利润的重要性，并评估利润改善是否同步转化为现金。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "A03",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual sales",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 net sales: USD 107556 million.",
+        "value": 107556,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A04",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 operating income: USD 39834 million.",
+        "value": 39834,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A02",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 operating income: USD 68593 million.",
+        "value": 68593,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A05",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "caution",
+        "status": "observed",
+        "text": "Amazon FY2024 free cash flow: USD 38219 million.",
+        "value": 38219,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A06",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 operating cash flow reached about USD 115.9 billion, a 36% increase.",
+        "value": 115.9,
+        "unit": "USD billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A08",
+        "source_id": "amazon24",
+        "locator": "p11 AWS quarterly margins",
+        "role": "caution",
+        "status": "observed",
+        "text": "AWS operating margin: Q3 2024 38.1%; Q4 2024 36.9%.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A09",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "context",
+        "status": "observed",
+        "text": "Amazon FY2023 free cash flow: USD 36813 million.",
+        "value": 36813,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A07",
+        "source_id": "amazon24",
+        "locator": "p10 FCF definition footnotes",
+        "role": "caution",
+        "status": "definition",
+        "text": "Amazon headline free cash flow deducts net property purchases; separate variants also deduct lease principal.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "依据 Amazon FY2024 财报，AWS 净销售额 107556 百万美元，占集团 16.860%；其经营利润 39834 百万美元，占集团经营利润 58.069%，是集团利润核心驱动。AWS 经营利润率约 37%，Q4 略降至 36.9%。集团 FY2024 经营现金流约 1159 亿美元，自由现金流 38219 百万美元，较 FY2023 仅增 3.835%，利润改善未同步转化为自由现金，主因资本开支（物业购置）吞噬现金，且 FCF 口径含租赁本金变体需留意。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024 净销售额占 Amazon 集团净销售额比例不足两成，但为重要业务板块",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ],
+          "numbers": [
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A01",
+              "value": 637959,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AWS FY2024 经营利润占集团经营利润近六成，是集团利润的核心驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AWS 经营利润率在 Q3 2024 为 38.1%，Q4 2024 小幅降至 36.9%，显示季末利润边际承压",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "A08"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "Amazon FY2024 经营现金流约 1159 亿美元，同比增 36%，利润表改善明显",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A06"
+          ],
+          "numbers": [
+            {
+              "source_id": "A06",
+              "value": 115.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "集团 FY2024 自由现金流 38219 百万美元，仅较 FY2023 的 36813 百万美元微增，利润改善未同步转化为自由现金",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A05",
+            "A09",
+            "A02",
+            "A04"
+          ],
+          "numbers": [
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A09",
+              "value": 36813,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "财报自由现金流口径扣除净物业购置，另有变体扣除租赁本金，直接跨期比较需谨慎",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "A07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "A03/A01*100",
+          "value": 16.86,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "A04/A02*100",
+          "value": 58.069,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "A05/A09*100-100",
+          "value": 3.835,
+          "unit": "%",
+          "evidence_ids": [
+            "A05",
+            "A09"
+          ]
+        }
+      ],
+      "limitations": [
+        "未披露 AWS 分部自由现金流，无法判断 AWS 自身利润现金转化效率",
+        "未提供集团资本开支明细，不能归因物业购置具体占比"
+      ],
+      "follow_up": [
+        {
+          "action": "提取 Amazon FY2024 现金流转投资中物业及设备购置分项金额",
+          "reason": "可量化资本开支对自由现金流的侵蚀，验证利润未转化现金的主因",
+          "evidence_ids": [
+            "A05",
+            "A07"
+          ]
+        },
+        {
+          "action": "核对 AWS 分部现金流量表或管理层讨论中的 AWS 资本支出",
+          "reason": "可判断 AWS 利润改善是否在其分部内同步形成现金",
+          "evidence_ids": [
+            "A03",
+            "A04"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "依据 Amazon FY2024 财报，AWS 净销售额 107556 百万美元，占集团 16.860%；其经营利润 39834 百万美元，占集团经营利润 58.069%，是集团利润核心驱动。AWS 经营利润率约 37%，Q4 略降至 36.9%。集团 FY2024 经营现金流约 1159 亿美元，自由现金流 38219 百万美元，较 FY2023 仅增 3.835%，利润改善未同步转化为自由现金，主因资本开支（物业购置）吞噬现金，且 FCF 口径含租赁本金变体需留意。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024 净销售额占 Amazon 集团净销售额比例不足两成，但为重要业务板块",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ],
+          "numbers": [
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A01",
+              "value": 637959,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AWS FY2024 经营利润占集团经营利润近六成，是集团利润的核心驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AWS 经营利润率在 Q3 2024 为 38.1%，Q4 2024 小幅降至 36.9%，显示季末利润边际承压",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "A08"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C4",
+          "text": "Amazon FY2024 经营现金流约 1159 亿美元，同比增 36%，利润表改善明显",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A06"
+          ],
+          "numbers": [
+            {
+              "source_id": "A06",
+              "value": 115.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "集团 FY2024 自由现金流 38219 百万美元，仅较 FY2023 的 36813 百万美元微增，利润改善未同步转化为自由现金",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A05",
+            "A09",
+            "A02",
+            "A04"
+          ],
+          "numbers": [
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A09",
+              "value": 36813,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "财报自由现金流口径扣除净物业购置，另有变体扣除租赁本金，直接跨期比较需谨慎",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "A07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "A03/A01*100",
+          "value": 16.86,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "A04/A02*100",
+          "value": 58.069,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "A05/A09*100-100",
+          "value": 3.835,
+          "unit": "%",
+          "evidence_ids": [
+            "A05",
+            "A09"
+          ]
+        }
+      ],
+      "limitations": [
+        "未披露 AWS 分部自由现金流，无法判断 AWS 自身利润现金转化效率",
+        "未提供集团资本开支明细，不能归因物业购置具体占比"
+      ],
+      "follow_up": [
+        {
+          "action": "提取 Amazon FY2024 现金流转投资中物业及设备购置分项金额",
+          "reason": "可量化资本开支对自由现金流的侵蚀，验证利润未转化现金的主因",
+          "evidence_ids": [
+            "A05",
+            "A07"
+          ]
+        },
+        {
+          "action": "核对 AWS 分部现金流量表或管理层讨论中的 AWS 资本支出",
+          "reason": "可判断 AWS 利润改善是否在其分部内同步形成现金",
+          "evidence_ids": [
+            "A03",
+            "A04"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "570cd5fd0a0026007adc5cf7c3248abe61e9e397effb44600e75fdc68cfb2512",
+        "latency_seconds": 11.028,
+        "usage": {
+          "prompt_tokens": 1429,
+          "completion_tokens": 1003,
+          "total_tokens": 2432,
+          "prompt_tokens_details": {
+            "cached_tokens": 64
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "a99c13cedc05d27603030a0e14043d4c4be263892860129ab0604c0c0c632021"
+      }
+    ],
+    "input_sha256": "86eb70b63fb306de09325d5ee44fae5654c4044b535503004e1ea13c2eff6df7",
+    "answer_sha256": "64f3964ee21010e090a2cb48548c4c63cc52feca9da554768bd57225d835af82"
+  },
+  "semantic": {
+    "version": "grounded-audit-1.0",
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选计算107556/637959=16.86%不足两成，证据A03/A01支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选计算39834/68593=58.069%近六成，证据A04/A02支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称AWS Q3 38.1% Q4 36.9%降，与A08原数据一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "partial",
+          "reason": "候选写'同比增36%'，A06仅称经营现金流增36%未提同比但FY口径隐含同比；金额115.9bn等价，但'利润表改善明显'为推断未单列证据",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "FCF 38219 vs 36813微增3.835%，推断利润未同步转化现金有A05/A09支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "A07定义FCF扣净物业购置及变体扣租赁本金，候选表述一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "A01",
+          "present": true,
+          "quote": "AWS 净销售额 107556 百万美元，占集团 16.860%"
+        },
+        {
+          "id": "A02",
+          "present": true,
+          "quote": "其经营利润 39834 百万美元，占集团经营利润 58.069%"
+        },
+        {
+          "id": "A03",
+          "present": true,
+          "quote": "AWS 净销售额 107556 百万美元"
+        },
+        {
+          "id": "A04",
+          "present": true,
+          "quote": "其经营利润 39834 百万美元"
+        },
+        {
+          "id": "A05",
+          "present": true,
+          "quote": "自由现金流 38219 百万美元"
+        },
+        {
+          "id": "A08",
+          "present": true,
+          "quote": "Q4 略降至 36.9%"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：用Amazon FY2024解释AWS利润重要性并评估现金转化，候选以A01-A05/A08覆盖且给出比例与FCF微增结论，但未覆盖限制'不能把AWS收入占比称为行业市场份额'（候选仅称集团内占比，未误称行业份额但限制未显式提及故false）"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "8488d2511a095c02e404262eebfc92b16a47986d0f6df0a14147034cbdf3d444",
+      "latency_seconds": 6.538,
+      "usage": {
+        "prompt_tokens": 5415,
+        "completion_tokens": 697,
+        "total_tokens": 6112,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "6a7835112d74929623ff48b39a59024620894da1cf9cab9e7947b89e879848ec"
+    },
+    "input_sha256": "804cf780a5af81dccfee2f677f9031a9e2c3059676a13ded056ccf3115a127f9",
+    "answer_sha256": "64f3964ee21010e090a2cb48548c4c63cc52feca9da554768bd57225d835af82",
+    "judge_prompt_sha256": "206adcc11c40c6b1ca30c01db38c65936f11cea8f64af65d0cbf88386d1b61e7"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "64f3964ee21010e090a2cb48548c4c63cc52feca9da554768bd57225d835af82",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.933333,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.9,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 93.6,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "incorrect numerical proof",
+        "cap": 55
+      }
+    ],
+    "issues": [
+      "calculation: K3"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "proof_feedback": {
+    "money": [
+      {
+        "claim_id": "C4",
+        "source_id": "A06",
+        "source_value": 115.9,
+        "source_unit": "USD billion",
+        "text_value": "1159",
+        "text_unit": "亿美元",
+        "numerically_equivalent": true,
+        "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+      }
+    ],
+    "calculations": [
+      {
+        "id": "K1",
+        "executed_value": 16.859390650496348,
+        "claimed_value": 16.86,
+        "unit": "%"
+      },
+      {
+        "id": "K2",
+        "executed_value": 58.07298120799499,
+        "claimed_value": 58.069,
+        "unit": "%"
+      },
+      {
+        "id": "K3",
+        "executed_value": 3.8193029636269813,
+        "claimed_value": 3.835,
+        "unit": "%"
+      }
+    ],
+    "citation_identity": [
+      {
+        "claim_id": "C1",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C2",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C3",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C4",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C5",
+        "unknown_ids": []
+      },
+      {
+        "claim_id": "C6",
+        "unknown_ids": []
+      }
+    ]
+  },
+  "status": "ok",
+  "new_work_wall_seconds": 6.545
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00517",
+  "uid": "financebench_id_00517_dev",
+  "split": "development",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "06d2c3128adc4f43bd92b13f565e21694a4bb8ceff392fdcd69d0f6834f85bad",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "96cdfd9e996ef540fe511799048a38f11f7c59d48173a5c81ce7901510953295",
+  "started_utc": "2026-09-09T18:06:11.922856+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "THE BOEING COMPANY",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate dumped an unrelated 10-K cover/business excerpt with no answer to whether categories exceed 20% of FY2022 revenue. Evidence shows Commercial Airplanes $25,867/66,608=38.8%, Defense $23,162/66,608=34.8%, Global Services $17,611/66,608=26.5% all >20%, but candidate did not state this."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "48e0ffbb49f3831817892fcefad4972322a22ee1abfa80aff06237ea2fb88114",
+    "latency_seconds": 7.519,
+    "usage": {
+      "prompt_tokens": 3375,
+      "completion_tokens": 139,
+      "total_tokens": 3514,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b4f77de3030641f9b0cc004ba772d722f9b64baa495b6857ba91f08bc7e9687e"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00476",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c963467d3e55fc121c5607e8fb6a51dc569a2d6c5dd237e6c7cc88caa666783e",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "111d433e03a1448d5dae5cc12c95f8fd4c0486855d27088f3790d75e4a4e5af6",
+  "started_utc": "2026-09-09T17:43:31.901800+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides general debt info but does not answer whether any debt securities are registered on a national exchange under American Express' name; it withholds the requested conclusion (none) and only discusses borrowings/debt."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e189855ed3542a3785605f257957b6b1132f70380897f283f5cdc969cdbd33dd",
+    "latency_seconds": 5.567,
+    "usage": {
+      "prompt_tokens": 1795,
+      "completion_tokens": 64,
+      "total_tokens": 1859,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "54545db58089a3cc816e7feed581d4dedf1b4c1d7a3c9ee1ff04a6388c34e468"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

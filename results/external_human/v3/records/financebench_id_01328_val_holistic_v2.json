@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01328",
+  "uid": "financebench_id_01328_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "2639baa363862a930fcbc1ba2a187cffe536ff09b0266bceb797380a7e957de4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "fa2e23ef4d60b5827198d4d7b0d05323937a737b40c1fd6ec0163bede6ab143c",
+  "started_utc": "2026-09-09T18:10:44.920914+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot provide the quantity and withholds the answer despite evidence showing $411 million in restructuring charges for FY2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0e10149c05e5e60d647c63ceaba8550024c6b8fa3514634fb9a1fe4fe66e3f43",
+    "latency_seconds": 8.852,
+    "usage": {
+      "prompt_tokens": 1491,
+      "completion_tokens": 48,
+      "total_tokens": 1539,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e50cbc0fe04edaff49cfbe30b7893afaa3798d43d40a2cec9780cef34d7f9a5a"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

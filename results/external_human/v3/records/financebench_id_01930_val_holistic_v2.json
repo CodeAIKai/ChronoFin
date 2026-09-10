@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01930",
+  "uid": "financebench_id_01930_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b7ec23af715482b9894e0ea311b22b167acd80d0f45067c7b1ade98150e53827",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "a4360f8e021218d5de0096092f2c28df556ff7ad52e6bc5eea655653405bf458",
+  "started_utc": "2026-09-10T01:28:07.105903+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate says real change is +$7M (0%) excluding FX, passthrough, one-off, but reference states real growth was flat (0% change, no material $ increase). Evidence shows total net sales 14,694 vs 14,544 = +150M; excluding FX (-426M), raw material pass-through (+776M per candidate context not in evidence but reference says flat) and disposed ops (-207M) yields ~+7M, but reference explicitly says Real Growth flat, so substantive answer of +$7M contradicts reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "50402bd06227f0ccf13b33f441f2d972ad454cf7134f24d6e86d9510a1758fbf",
+    "latency_seconds": 10.87,
+    "usage": {
+      "prompt_tokens": 1292,
+      "completion_tokens": 136,
+      "total_tokens": 1428,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "abee16a4cd557732b2b0bc063a6d40d797d19c0ccd99af495780f6c35d2a73a4"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

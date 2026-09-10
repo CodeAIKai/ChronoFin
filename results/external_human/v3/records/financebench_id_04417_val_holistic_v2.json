@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04417",
+  "uid": "financebench_id_04417_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c771aa6da8eb6dff67aac2281e7b658fc3cfa7027aeb94e2c56d7b0b9f8f6088",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "9259d5f96ab83988ce95c2d21e38b537a617745d590c5334939b9d90fb8ca9d1",
+  "started_utc": "2026-09-10T01:32:01.299839+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states FY2019 year-end inventories of $5,409 million USD, matching reference and balance sheet evidence (Merchandise inventories Feb 2, 2019 = 5,409)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d9ce68c4d1826a352770bd1728d762050d34312964d71fd72ac1c19cd5bd271b",
+    "latency_seconds": 8.404,
+    "usage": {
+      "prompt_tokens": 1632,
+      "completion_tokens": 62,
+      "total_tokens": 1694,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0dfaa7586adaf28427c3b10632f23e4b63c3ffdd94740ed7d430e9ce9b450fcd"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

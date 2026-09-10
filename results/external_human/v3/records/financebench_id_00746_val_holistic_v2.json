@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00746",
+  "uid": "financebench_id_00746_val",
+  "split": "new_response_validation",
+  "company": "Ulta Beauty",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "8828fa58e22a788a4353b751ff4942c8d45b91791cf88117bf3b3ced43237288",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "7c5e964d8fc273ae2fd9d12012e7708dcf921a98978a63d95db7f8e3870aad11",
+  "started_utc": "2026-09-09T18:08:04.795021+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate lists debt securities registered on an exchange, but evidence shows only common stock is registered under Section 12(b) and no debt securities are listed; reference states none exist."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cf9ecd26c5786e9762f347cc9b191811bb1b41f4dc4c6ad6f7281868fc387492",
+    "latency_seconds": 5.823,
+    "usage": {
+      "prompt_tokens": 1536,
+      "completion_tokens": 57,
+      "total_tokens": 1593,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0faf16428c5f29df841042c2dad2894a3e0f47c8724aff006a22bf14935eb8eb"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

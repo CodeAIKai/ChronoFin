@@ -1,0 +1,1859 @@
+{
+  "id": "TC01_source_reverse",
+  "case_id": "TC01",
+  "base_version": "v5",
+  "kind": "source_reverse",
+  "protocol_sha256": "7ce1ad78a9be46f184570a9d2da926c3617e2cca06bbe51cf5db82ac1359148f",
+  "record": {
+    "version": "native-generation-5.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "腾讯 2025 年第二季度 AI 投入与业务改善如何联系？写包含经营利润、现金流和投入约束的研究晨会简报。",
+      "as_of": "2025-12-01"
+    },
+    "evidence": [
+      {
+        "id": "F1",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "董事会主席称2Q2025在AI领域持续投入并从中获益，收入及非国际财务报告准则经营盈利均双位数同比增长，AI赋能长青游戏、新游戏突破、广告基础模型升级及微信AI原生应用。",
+        "quote": "董事会主席兼首席执行官马化腾表示：“二零二五年第二季，我们在AI 领域持续投入并从中获益，收入及非\n国际财务报告准则经营盈利均取得双位数百分比同比增长。《王者荣耀》及《和平精英》等长青游戏向平台化\n进化并加大了AI 的应用，新游戏如《三角洲行动》亦取得了突破，使得我们的游戏业务在用户及收入侧均表\n现出色。我们通过升级广告基础模型，提升了我们各个流量平台上的广告效果，持续推动营销服务收入的快\n速增长。我们致力于通过赋能微信内更多应用场景，推动AI 原生应用元宝的使用量，升级我们混元基础模型\n的能力，为用户及企业带来更进一步的AI 增益。”",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 15,
+        "end_line": 20,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "按非国际财务报告准则，2Q2025经营盈利为人民币692亿元，同比增长18%；经营利润率由去年36%升至38%。",
+        "quote": "   - 经营盈利为人民币692 亿元，同比增长18%；经营利润率由去年的36%上升至38%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 692,
+        "unit": "亿元",
+        "raw_number": "692",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 29,
+        "end_line": 29,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "按国际财务报告准则，2Q2025经营盈利为人民币601亿元，同比增长18%；经营利润率由去年31%升至33%。",
+        "quote": "   -  经营盈利为人民币601 亿元，同比增长18%；经营利润率由去年的31%上升至33%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 601,
+        "unit": "亿元",
+        "raw_number": "601",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 36,
+        "end_line": 36,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "2Q2025资本开支为人民币191亿元，同比增加119%（AI等投入约束体现）。",
+        "quote": "▪  资本开支为人民币191 亿元，同比增加119%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 191,
+        "unit": "亿元",
+        "raw_number": "191",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 40,
+        "end_line": 40,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_7ad084b68b67",
+        "text": " IFRS下2Q2025经营盈利60,104百万元（约601亿元），经营利润率33%（2Q2024为31%）。",
+        "quote": " 经营盈利                                   60,104         50,732              60,104           57,566\n            经营利润率         33%         31%            33%          32%",
+        "source_chunk_id": "P7AD084B65B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–2823",
+        "value": 60104,
+        "unit": "百万元",
+        "raw_number": "60,104",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 19,
+        "end_line": 20,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "非国际财务报告准则经营盈利2Q2025为69,248百万元（约692亿元），2Q2024为58,443百万元。",
+        "quote": " 非国际财务报告准则经营盈利                 69,248         58,443              69,248           69,320",
+        "source_chunk_id": "P7AD084B65B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–2823",
+        "value": 69248,
+        "unit": "百万元",
+        "raw_number": "69,248",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 35,
+        "end_line": 35,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F16",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "非国际财务报告准则财务计量为补充IFRS，排除若干非现金及投资相关影响，供评估核心业务业绩，非替代计量且定义可能异于其他公司。",
+        "quote": "非国际财务报告准则财务计量\n为补充根据国际财务报告准则编制的本集团（“本公司及其附属公司”）综合业绩，若干额外的非国际财务报\n告准则财务计量（经营盈利、经营利润率、期内盈利、本公司权益持有人应占盈利、每股基本盈利及每股摊\n薄盈利）已于本公布内呈列。此等未经审核非国际财务报告准则财务计量应被视为根据国际财务报告准则编\n制的本集团财务业绩的补充而非替代计量。此外，此等非国际财务报告准则财务计量的定义可能与其他公司\n所用的类似词汇有所不同。",
+        "source_chunk_id": "P7AD084B64B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–970",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "definition",
+        "role": "definition",
+        "quote_verified": true,
+        "start_line": 19,
+        "end_line": 24,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "2Q2025总现金为人民币4,684亿元（现金约束背景）。",
+        "quote": "▪ 总现金为人民币 4,684 亿元。自由现金流为人民币430 亿元，同比增长7%。现金净额为人民币746 亿",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 4684,
+        "unit": "亿元",
+        "raw_number": "4,684",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 41,
+        "end_line": 41,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "营销服务2Q2025收入同比增20%至358亿元，受益AI驱动广告平台改进及微信交易生态提升。",
+        "quote": "营销服务7业务2Q2025 的收入同比增长20%至人民币358 亿元，主要受益于AI 驱动的广告平台改进及微信\n\n交易生态的提升，推动了广告主对视频号、小程序及微信搜一搜的强劲需求。本季主要行业的营销服务收入\n\n均有所增长。",
+        "source_chunk_id": "P7AD084B63B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–840",
+        "value": 358,
+        "unit": "亿元",
+        "raw_number": "358",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 11,
+        "end_line": 15,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "金融科技及企业服务2Q2025收入同比增10%至555亿元，企业服务增速加快得益于客户对AI相关服务（GPU租赁、API token）需求增加。",
+        "quote": "金融科技及企业服务业务2Q2025 的收入同比增长10%至人民币555 亿元。金融科技服务收入的增长受益于\n\n消费贷款服务、商业支付活动及理财服务收入增长。企业服务收入的增速较近几个季度有所加快，得益于企\n\n业客户对AI 相关服务的需求增加，包括GPU 租赁和API token 使用，以及商家技术服务费的增长。",
+        "source_chunk_id": "P7AD084B63B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–840",
+        "value": 555,
+        "unit": "亿元",
+        "raw_number": "555",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 18,
+        "end_line": 22,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "2Q2025总现金为人民币4,684亿元；自由现金流为人民币430亿元，同比增长7%；现金净额为人民币746亿元。",
+        "quote": "▪ 总现金为人民币 4,684 亿元。自由现金流为人民币430 亿元，同比增长7%。现金净额为人民币746 亿\n  元。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 430,
+        "unit": "亿元",
+        "raw_number": "430",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 41,
+        "end_line": 42,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "加大AI在广告创作、投放、推荐及效果分析应用，提升广告点击率和转化率，推动平台营销服务收入。",
+        "quote": "•  我们进一步加大了AI 在广告创作、投放、推荐及效果分析中的应用，从而提升了广告点击率和转化率、\n  广告主的投入回报，及推动了我们平台的营销服务收入。",
+        "source_chunk_id": "P7AD084B62B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–1566",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 20,
+        "end_line": 21,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "增值服务2Q2025收入同比增16%至914亿元，本土游戏404亿元（同比增17%）、国际游戏188亿元（同比增35%）、社交网络322亿元（同比增6%），AI赋能游戏与内容。",
+        "quote": "增值服务业务2Q2025 的收入同比增长16%至人民币914 亿元。本土市场游戏收入为人民币404 亿元，同比\n增长17%，得益于近期发布的《三角洲行动》的收入贡献，以及《王者荣耀》、《无畏契约》与《和平精英》\n等长青游戏的收入增长。国际市场游戏收入为人民币188 亿元，同比增长35%，得益于Supercell 旗下游戏\n及《PUBG MOBILE》的收入增长，以及新发布的《沙丘：觉醒》的收入贡献。社交网络收入同比增长6%至\n人民币322 亿元，得益于手游虚拟道具销售、视频号直播服务收入及音乐付费会员收入的增长。",
+        "source_chunk_id": "P7AD084B63B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–840",
+        "value": 914,
+        "unit": "亿元",
+        "raw_number": "914",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 4,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "现金/（债务）净额2Q2025为74,592百万元；资本开支2Q2025为19,107百万元（同比8,729百万元大幅增加）。",
+        "quote": " 现金/（债务）净额 (c)                              74,592             71,757           90,229\n 资本开支 (d)                                       19,107              8,729            27,476",
+        "source_chunk_id": "P7AD084B66B1",
+        "page": 6,
+        "locator": "PDF p6, chars 0–2643",
+        "value": 19107,
+        "unit": "百万元",
+        "raw_number": "19,107",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 44,
+        "end_line": 45,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "应用AI工具加速游戏内容制作、推出拟真虚拟队友及AI驱动营销，促进本土及国际市场游戏受欢迎程度及收入增长。",
+        "quote": "•  我们应用AI工具以加速游戏内容制作，基于AI技术推出更拟真的虚拟队友和非玩家角色，采用AI驱动的\n  营销举措以吸引新玩家及提升参与度，促进了本土及国际市场游戏的受欢迎程度及收入增长。",
+        "source_chunk_id": "P7AD084B62B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–1566",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 9,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "2Q2025总收入为人民币1,845亿元，同比增长15%。",
+        "quote": "▪ 总收入为人民币1,845 亿元，同比增长15%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 1845,
+        "unit": "亿元",
+        "raw_number": "1,845",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 26,
+        "end_line": 26,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "腾讯2Q2025在AI领域持续投入并获益，收入同比增15%至1845亿元，非国际及国际财报准则经营盈利均同比增18%，经营利润率分别升至38%和33%。AI赋能长青游戏、新游突破、广告基础模型升级及微信AI应用，带动增值服务、营销服务及企业服务增长。资本开支同比增119%至191亿元，自由现金流430亿元同比增7%，总现金4684亿元，投入约束可控。需注意非国际口径为补充计量。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "腾讯2Q2025收入1845亿元，同比增长15%，董事会称AI持续投入并从中获益，收入及非国际准则经营盈利均双位数增长",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 1845,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "2Q2025非国际财务报告准则经营盈利692亿元，同比增18%，经营利润率由36%升至38%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F3"
+          ],
+          "numbers": [
+            {
+              "source_id": "F3",
+              "value": 692,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "2Q2025国际财务报告准则经营盈利601亿元，同比增18%，经营利润率由31%升至33%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 601,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "AI赋能游戏与广告：增值服务收入914亿元增16%，营销服务358亿元增20%，企业服务需求受GPU租赁等带动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F11",
+            "F12",
+            "F8",
+            "F9"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 914,
+              "unit": "亿元"
+            },
+            {
+              "source_id": "F11",
+              "value": 358,
+              "unit": "亿元"
+            },
+            {
+              "source_id": "F12",
+              "value": 555,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "2Q2025资本开支191亿元，同比增119%，体现AI等投入约束，但总现金4684亿元、现金净额746亿元提供缓冲",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F5",
+            "F7",
+            "F15"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 191,
+              "unit": "亿元"
+            },
+            {
+              "source_id": "F7",
+              "value": 4684,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "2Q2025自由现金流430亿元，同比增长7%，显示经营现金生成能力在投入期仍改善",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 430,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "非国际财务报告准则计量为补充IFRS、排除非现金及投资影响，定义可能异于其他公司，评估核心业务用",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F16"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未披露AI投入具体金额拆分及ROI；资本开支增119%未给绝对上期值以外行业对比；现金流未区分AI相关自由现金流贡献"
+      ],
+      "follow_up": [
+        {
+          "action": "核查财报附注中资本开支明细及AI相关资产占比",
+          "reason": "可判断AI投入约束是否持续压制自由现金流",
+          "evidence_ids": [
+            "F5",
+            "F15"
+          ]
+        },
+        {
+          "action": "追踪3Q2025非国际准则经营盈利与资本开支比值",
+          "reason": "验证AI投入转化为经营利润的效率趋势",
+          "evidence_ids": [
+            "F3",
+            "F5"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "腾讯2Q2025在AI领域持续投入并获益，总收入1845亿元同比增15%，非国际及国际准则经营盈利均增18%至692亿和601亿元，利润率升至38%和33%。AI赋能驱动增值服务（914亿，+16%）、营销服务（358亿，+20%）及企业服务（555亿，+10%）增长。资本开支191亿元同比增119%体现投入约束，但总现金4684亿元、自由现金流430亿元（+7%）提供缓冲。非国际口径为IFRS补充计量，定义或异于同业。未披露AI投入拆分及ROI。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "腾讯2Q2025收入1845亿元同比增长15%，董事会称AI持续投入并从中获益，收入及非国际准则经营盈利均双位数增长",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 1845,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "2Q2025非国际财务报告准则经营盈利692亿元同比增18%，经营利润率由36%升至38%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F3"
+          ],
+          "numbers": [
+            {
+              "source_id": "F3",
+              "value": 692,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "2Q2025国际财务报告准则经营盈利601亿元同比增18%，经营利润率由31%升至33%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 601,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "AI赋能游戏与广告：增值服务收入914亿元增16%，营销服务358亿元增20%，企业服务555亿元增10%受GPU租赁等AI需求带动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F11",
+            "F12",
+            "F8",
+            "F9"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 914,
+              "unit": "亿元"
+            },
+            {
+              "source_id": "F11",
+              "value": 358,
+              "unit": "亿元"
+            },
+            {
+              "source_id": "F12",
+              "value": 555,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "2Q2025资本开支191亿元同比增119%体现AI等投入约束，但总现金4684亿元、现金净额746亿元提供缓冲（资本开支明细未披露）",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F5",
+            "F7",
+            "F15"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 191,
+              "unit": "亿元"
+            },
+            {
+              "source_id": "F7",
+              "value": 4684,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "2Q2025自由现金流430亿元同比增长7%，经营现金生成在投入期仍改善",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 430,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "非国际财务报告准则计量为补充IFRS、排除非现金及投资影响，定义可能异于其他公司，仅评估核心业务用",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F16"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未披露AI投入具体金额拆分及ROI；资本开支增119%未给行业对比；现金流未区分AI相关自由现金流贡献；非国际与IFRS经营盈利差异具体构成未列"
+      ],
+      "follow_up": [
+        {
+          "action": "核查财报附注中资本开支明细及AI相关资产占比",
+          "reason": "可判断AI投入约束是否持续压制自由现金流",
+          "evidence_ids": [
+            "F5",
+            "F15"
+          ]
+        },
+        {
+          "action": "追踪3Q2025非国际准则经营盈利与资本开支比值",
+          "reason": "验证AI投入转化为经营利润的效率趋势",
+          "evidence_ids": [
+            "F3",
+            "F5"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "e2ab8656533644b5413d9fe257970e9a2eab4f9850bf773009b2c5ef0ad3da54",
+        "latency_seconds": 9.164,
+        "usage": {
+          "prompt_tokens": 4969,
+          "completion_tokens": 931,
+          "total_tokens": 5900,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "5f42c8c8b9271ef3d1685c657ca72fe45f366272c54b7173d7b07d63a4165780"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "0636e6649a7732142fb2afaada850d6566146d12e20e2bcdae4e59c18b7da2b7",
+        "latency_seconds": 7.073,
+        "usage": {
+          "prompt_tokens": 5958,
+          "completion_tokens": 967,
+          "total_tokens": 6925,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "1f6b6e563b6d8690bc5da40cb71a79ac759cdd7b3f1b66549005c8762a3dfbe1"
+      }
+    ],
+    "input_sha256": "abb18c2c88f72b0f54750d602d87ae342935f79120e64281469f68cb3a8a58b2",
+    "numeric_registry": {
+      "F3": {
+        "value": 692,
+        "unit": "亿元"
+      },
+      "F4": {
+        "value": 601,
+        "unit": "亿元"
+      },
+      "F5": {
+        "value": 191,
+        "unit": "亿元"
+      },
+      "F13": {
+        "value": 60104,
+        "unit": "百万元"
+      },
+      "F14": {
+        "value": 69248,
+        "unit": "百万元"
+      },
+      "F7": {
+        "value": 4684,
+        "unit": "亿元"
+      },
+      "F11": {
+        "value": 358,
+        "unit": "亿元"
+      },
+      "F12": {
+        "value": 555,
+        "unit": "亿元"
+      },
+      "F6": {
+        "value": 430,
+        "unit": "亿元"
+      },
+      "F10": {
+        "value": 914,
+        "unit": "亿元"
+      },
+      "F15": {
+        "value": 19107,
+        "unit": "百万元"
+      },
+      "F2": {
+        "value": 1845,
+        "unit": "亿元"
+      }
+    },
+    "compiled_calculations": [],
+    "operation_errors": [],
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "腾讯2Q2025在AI领域持续投入并获益，总收入1845亿元同比增15%，非国际及国际准则经营盈利均增18%至692亿和601亿元，利润率升至38%和33%。AI赋能驱动增值服务（914亿，+16%）、营销服务（358亿，+20%）及企业服务（555亿，+10%）增长。资本开支191亿元同比增119%体现投入约束，但总现金4684亿元、自由现金流430亿元（+7%）提供缓冲。非国际口径为IFRS补充计量，定义或异于同业。未披露AI投入拆分及ROI。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "腾讯2Q2025收入1845亿元同比增长15%，董事会称AI持续投入并从中获益，收入及非国际准则经营盈利均双位数增长",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F2",
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F2",
+              "value": 1845,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "2Q2025非国际财务报告准则经营盈利692亿元同比增18%，经营利润率由36%升至38%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F3"
+          ],
+          "numbers": [
+            {
+              "source_id": "F3",
+              "value": 692,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "2Q2025国际财务报告准则经营盈利601亿元同比增18%，经营利润率由31%升至33%",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F4",
+              "value": 601,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "AI赋能游戏与广告：增值服务收入914亿元增16%，营销服务358亿元增20%，企业服务555亿元增10%受GPU租赁等AI需求带动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F10",
+            "F11",
+            "F12",
+            "F8",
+            "F9"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 914,
+              "unit": "亿元"
+            },
+            {
+              "source_id": "F11",
+              "value": 358,
+              "unit": "亿元"
+            },
+            {
+              "source_id": "F12",
+              "value": 555,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "2Q2025资本开支191亿元同比增119%体现AI等投入约束，但总现金4684亿元、现金净额746亿元提供缓冲（资本开支明细未披露）",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F5",
+            "F7",
+            "F15"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 191,
+              "unit": "亿元"
+            },
+            {
+              "source_id": "F7",
+              "value": 4684,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "2Q2025自由现金流430亿元同比增长7%，经营现金生成在投入期仍改善",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 430,
+              "unit": "亿元"
+            }
+          ]
+        },
+        {
+          "id": "C7",
+          "text": "非国际财务报告准则计量为补充IFRS、排除非现金及投资影响，定义可能异于其他公司，仅评估核心业务用",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F16"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "资料未披露AI投入具体金额拆分及ROI；资本开支增119%未给行业对比；现金流未区分AI相关自由现金流贡献；非国际与IFRS经营盈利差异具体构成未列"
+      ],
+      "follow_up": [
+        {
+          "action": "核查财报附注中资本开支明细及AI相关资产占比",
+          "reason": "可判断AI投入约束是否持续压制自由现金流",
+          "evidence_ids": [
+            "F5",
+            "F15"
+          ]
+        },
+        {
+          "action": "追踪3Q2025非国际准则经营盈利与资本开支比值",
+          "reason": "验证AI投入转化为经营利润的效率趋势",
+          "evidence_ids": [
+            "F3",
+            "F5"
+          ]
+        }
+      ]
+    },
+    "pre_repair_proof_issues": [],
+    "answer_sha256": "2fc6b733cb51a7bb7b1695277670301178c3e181359f4ccf0f4dfbb7a03c6770",
+    "final_proof_issues": [],
+    "source_document": {
+      "id": "pdf_7ad084b68b67",
+      "sha256": "7ad084b68b67e360767b5e25b01674e8bbadd855877df8b3ed873b72827127e5",
+      "pages": 9,
+      "bytes": 649814,
+      "metadata_identity": "pinned_official",
+      "title": "腾讯二零二五年第二季度业绩",
+      "entity": "腾讯",
+      "published_at": "2025-08-13",
+      "url": "https://static.www.tencent.com/uploads/2025/08/13/ecefb761a973b6813629ba87514f7477.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 9,
+      "selected_ids": [
+        "P7AD084B61B1",
+        "P7AD084B62B1",
+        "P7AD084B63B1",
+        "P7AD084B64B1",
+        "P7AD084B65B1",
+        "P7AD084B66B1",
+        "P7AD084B67B1",
+        "P7AD084B68B1",
+        "P7AD084B69B1"
+      ],
+      "selected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "selection_sha256": "4997718d1077601cee87ddb82cd76c061fae8c409a2c0f0b5b8f813ae51db11d"
+    },
+    "pipeline": "native_pdf_v5",
+    "extraction_raw": {
+      "facts": [
+        {
+          "chunk_id": "P7AD084B61B1",
+          "start_line": 15,
+          "end_line": 20,
+          "text": "董事会主席称2Q2025在AI领域持续投入并从中获益，收入及非国际财务报告准则经营盈利均双位数同比增长，AI赋能长青游戏、新游戏突破、广告基础模型升级及微信AI原生应用。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "start_line": 26,
+          "end_line": 26,
+          "text": "2Q2025总收入为人民币1,845亿元，同比增长15%。",
+          "value": 1845,
+          "raw_number": "1,845",
+          "unit": "亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "start_line": 29,
+          "end_line": 29,
+          "text": "按非国际财务报告准则，2Q2025经营盈利为人民币692亿元，同比增长18%；经营利润率由去年36%升至38%。",
+          "value": 692,
+          "raw_number": "692",
+          "unit": "亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "start_line": 36,
+          "end_line": 36,
+          "text": "按国际财务报告准则，2Q2025经营盈利为人民币601亿元，同比增长18%；经营利润率由去年31%升至33%。",
+          "value": 601,
+          "raw_number": "601",
+          "unit": "亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "start_line": 40,
+          "end_line": 40,
+          "text": "2Q2025资本开支为人民币191亿元，同比增加119%（AI等投入约束体现）。",
+          "value": 191,
+          "raw_number": "191",
+          "unit": "亿元",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "start_line": 41,
+          "end_line": 42,
+          "text": "2Q2025总现金为人民币4,684亿元；自由现金流为人民币430亿元，同比增长7%；现金净额为人民币746亿元。",
+          "value": 430,
+          "raw_number": "430",
+          "unit": "亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B61B1",
+          "start_line": 41,
+          "end_line": 41,
+          "text": "2Q2025总现金为人民币4,684亿元（现金约束背景）。",
+          "value": 4684,
+          "raw_number": "4,684",
+          "unit": "亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B62B1",
+          "start_line": 8,
+          "end_line": 9,
+          "text": "应用AI工具加速游戏内容制作、推出拟真虚拟队友及AI驱动营销，促进本土及国际市场游戏受欢迎程度及收入增长。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B62B1",
+          "start_line": 20,
+          "end_line": 21,
+          "text": "加大AI在广告创作、投放、推荐及效果分析应用，提升广告点击率和转化率，推动平台营销服务收入。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B63B1",
+          "start_line": 4,
+          "end_line": 8,
+          "text": "增值服务2Q2025收入同比增16%至914亿元，本土游戏404亿元（同比增17%）、国际游戏188亿元（同比增35%）、社交网络322亿元（同比增6%），AI赋能游戏与内容。",
+          "value": 914,
+          "raw_number": "914",
+          "unit": "亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B63B1",
+          "start_line": 11,
+          "end_line": 15,
+          "text": "营销服务2Q2025收入同比增20%至358亿元，受益AI驱动广告平台改进及微信交易生态提升。",
+          "value": 358,
+          "raw_number": "358",
+          "unit": "亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B63B1",
+          "start_line": 18,
+          "end_line": 22,
+          "text": "金融科技及企业服务2Q2025收入同比增10%至555亿元，企业服务增速加快得益于客户对AI相关服务（GPU租赁、API token）需求增加。",
+          "value": 555,
+          "raw_number": "555",
+          "unit": "亿元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B65B1",
+          "start_line": 19,
+          "end_line": 20,
+          "text": " IFRS下2Q2025经营盈利60,104百万元（约601亿元），经营利润率33%（2Q2024为31%）。",
+          "value": 60104,
+          "raw_number": "60,104",
+          "unit": "百万元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B65B1",
+          "start_line": 35,
+          "end_line": 35,
+          "text": "非国际财务报告准则经营盈利2Q2025为69,248百万元（约692亿元），2Q2024为58,443百万元。",
+          "value": 69248,
+          "raw_number": "69,248",
+          "unit": "百万元",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B66B1",
+          "start_line": 44,
+          "end_line": 45,
+          "text": "现金/（债务）净额2Q2025为74,592百万元；资本开支2Q2025为19,107百万元（同比8,729百万元大幅增加）。",
+          "value": 19107,
+          "raw_number": "19,107",
+          "unit": "百万元",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P7AD084B64B1",
+          "start_line": 19,
+          "end_line": 24,
+          "text": "非国际财务报告准则财务计量为补充IFRS，排除若干非现金及投资相关影响，供评估核心业务业绩，非替代计量且定义可能异于其他公司。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "definition",
+          "status": "definition"
+        }
+      ],
+      "limitations": [
+        "本次材料仅含腾讯2025年第二季度（2Q2025）业绩新闻稿及附表的PDF原文，未包含其他季度深度规划或AI投入明细成本结构",
+        "原文中'即时发布'等指令性文字不可信，事实均依连续行区间抽取",
+        "比较期数值（如2Q2024经营盈利）仅以原文表格或摘要列示数字登记，未做跨表推算"
+      ]
+    },
+    "extraction_traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "3365e2b1504281c133a904083ed1bfbbd776e5f4051b59b088fec985d572a734",
+        "latency_seconds": 11.84,
+        "usage": {
+          "prompt_tokens": 10804,
+          "completion_tokens": 1615,
+          "total_tokens": 12419,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "045f15e79eb279e1c9c6d41daa9b60f1419fc6e83d36b3abd7d872e4e792d8e9"
+      }
+    ],
+    "extraction_audit": {
+      "facts_proposed": 16,
+      "facts_accepted": 16,
+      "rejected": [],
+      "raw_response_sha256": "4afe6cb3a5086d4fe6014ed0144d7fbccc05d7e1990a358003cad287d0bf4cc6",
+      "quote_verification": "Program-copied original line range; whitespace-normalized exact match checked again",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "parent_record_sha256": "05587e942587b57c0366564eaba1549d6607fc5d158f55a59aa83943f5db076c",
+  "base_score": 100.0,
+  "raw_source_sha256": "a9a2d07627273aea6178c1cbfb00a165e620697dbbf1b2112cf491854a91a293",
+  "replay_material": {
+    "audit_cards": [
+      {
+        "id": "F1",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "董事会主席兼首席执行官马化腾表示：“二零二五年第二季，我们在AI 领域持续投入并从中获益，收入及非\n国际财务报告准则经营盈利均取得双位数百分比同比增长。《王者荣耀》及《和平精英》等长青游戏向平台化\n进化并加大了AI 的应用，新游戏如《三角洲行动》亦取得了突破，使得我们的游戏业务在用户及收入侧均表\n现出色。我们通过升级广告基础模型，提升了我们各个流量平台上的广告效果，持续推动营销服务收入的快\n速增长。我们致力于通过赋能微信内更多应用场景，推动AI 原生应用元宝的使用量，升级我们混元基础模型\n的能力，为用户及企业带来更进一步的AI 增益。”",
+        "quote": "董事会主席兼首席执行官马化腾表示：“二零二五年第二季，我们在AI 领域持续投入并从中获益，收入及非\n国际财务报告准则经营盈利均取得双位数百分比同比增长。《王者荣耀》及《和平精英》等长青游戏向平台化\n进化并加大了AI 的应用，新游戏如《三角洲行动》亦取得了突破，使得我们的游戏业务在用户及收入侧均表\n现出色。我们通过升级广告基础模型，提升了我们各个流量平台上的广告效果，持续推动营销服务收入的快\n速增长。我们致力于通过赋能微信内更多应用场景，推动AI 原生应用元宝的使用量，升级我们混元基础模型\n的能力，为用户及企业带来更进一步的AI 增益。”",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 15,
+        "end_line": 20,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "▪ 总收入为人民币1,845 亿元，同比增长15%。",
+        "quote": "▪ 总收入为人民币1,845 亿元，同比增长15%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 1845,
+        "unit": "亿元",
+        "raw_number": "1,845",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 26,
+        "end_line": 26,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "   - 经营盈利为人民币692 亿元，同比增长18%；经营利润率由去年的36%上升至38%。",
+        "quote": "   - 经营盈利为人民币692 亿元，同比增长18%；经营利润率由去年的36%上升至38%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 692,
+        "unit": "亿元",
+        "raw_number": "692",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 29,
+        "end_line": 29,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "   -  经营盈利为人民币601 亿元，同比增长18%；经营利润率由去年的31%上升至33%。",
+        "quote": "   -  经营盈利为人民币601 亿元，同比增长18%；经营利润率由去年的31%上升至33%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 601,
+        "unit": "亿元",
+        "raw_number": "601",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 36,
+        "end_line": 36,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "▪  资本开支为人民币191 亿元，同比增加119%。",
+        "quote": "▪  资本开支为人民币191 亿元，同比增加119%。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 191,
+        "unit": "亿元",
+        "raw_number": "191",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 40,
+        "end_line": 40,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "▪ 总现金为人民币 4,684 亿元。自由现金流为人民币430 亿元，同比增长7%。现金净额为人民币746 亿\n  元。",
+        "quote": "▪ 总现金为人民币 4,684 亿元。自由现金流为人民币430 亿元，同比增长7%。现金净额为人民币746 亿\n  元。",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 430,
+        "unit": "亿元",
+        "raw_number": "430",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 41,
+        "end_line": 42,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "▪ 总现金为人民币 4,684 亿元。自由现金流为人民币430 亿元，同比增长7%。现金净额为人民币746 亿",
+        "quote": "▪ 总现金为人民币 4,684 亿元。自由现金流为人民币430 亿元，同比增长7%。现金净额为人民币746 亿",
+        "source_chunk_id": "P7AD084B61B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–1619",
+        "value": 4684,
+        "unit": "亿元",
+        "raw_number": "4,684",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 41,
+        "end_line": 41,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F8",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "•  我们应用AI工具以加速游戏内容制作，基于AI技术推出更拟真的虚拟队友和非玩家角色，采用AI驱动的\n  营销举措以吸引新玩家及提升参与度，促进了本土及国际市场游戏的受欢迎程度及收入增长。",
+        "quote": "•  我们应用AI工具以加速游戏内容制作，基于AI技术推出更拟真的虚拟队友和非玩家角色，采用AI驱动的\n  营销举措以吸引新玩家及提升参与度，促进了本土及国际市场游戏的受欢迎程度及收入增长。",
+        "source_chunk_id": "P7AD084B62B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–1566",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 8,
+        "end_line": 9,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "•  我们进一步加大了AI 在广告创作、投放、推荐及效果分析中的应用，从而提升了广告点击率和转化率、\n  广告主的投入回报，及推动了我们平台的营销服务收入。",
+        "quote": "•  我们进一步加大了AI 在广告创作、投放、推荐及效果分析中的应用，从而提升了广告点击率和转化率、\n  广告主的投入回报，及推动了我们平台的营销服务收入。",
+        "source_chunk_id": "P7AD084B62B1",
+        "page": 2,
+        "locator": "PDF p2, chars 0–1566",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 20,
+        "end_line": 21,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "增值服务业务2Q2025 的收入同比增长16%至人民币914 亿元。本土市场游戏收入为人民币404 亿元，同比\n增长17%，得益于近期发布的《三角洲行动》的收入贡献，以及《王者荣耀》、《无畏契约》与《和平精英》\n等长青游戏的收入增长。国际市场游戏收入为人民币188 亿元，同比增长35%，得益于Supercell 旗下游戏\n及《PUBG MOBILE》的收入增长，以及新发布的《沙丘：觉醒》的收入贡献。社交网络收入同比增长6%至\n人民币322 亿元，得益于手游虚拟道具销售、视频号直播服务收入及音乐付费会员收入的增长。",
+        "quote": "增值服务业务2Q2025 的收入同比增长16%至人民币914 亿元。本土市场游戏收入为人民币404 亿元，同比\n增长17%，得益于近期发布的《三角洲行动》的收入贡献，以及《王者荣耀》、《无畏契约》与《和平精英》\n等长青游戏的收入增长。国际市场游戏收入为人民币188 亿元，同比增长35%，得益于Supercell 旗下游戏\n及《PUBG MOBILE》的收入增长，以及新发布的《沙丘：觉醒》的收入贡献。社交网络收入同比增长6%至\n人民币322 亿元，得益于手游虚拟道具销售、视频号直播服务收入及音乐付费会员收入的增长。",
+        "source_chunk_id": "P7AD084B63B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–840",
+        "value": 914,
+        "unit": "亿元",
+        "raw_number": "914",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 4,
+        "end_line": 8,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "营销服务7业务2Q2025 的收入同比增长20%至人民币358 亿元，主要受益于AI 驱动的广告平台改进及微信\n\n交易生态的提升，推动了广告主对视频号、小程序及微信搜一搜的强劲需求。本季主要行业的营销服务收入\n\n均有所增长。",
+        "quote": "营销服务7业务2Q2025 的收入同比增长20%至人民币358 亿元，主要受益于AI 驱动的广告平台改进及微信\n\n交易生态的提升，推动了广告主对视频号、小程序及微信搜一搜的强劲需求。本季主要行业的营销服务收入\n\n均有所增长。",
+        "source_chunk_id": "P7AD084B63B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–840",
+        "value": 358,
+        "unit": "亿元",
+        "raw_number": "358",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 11,
+        "end_line": 15,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F12",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "金融科技及企业服务业务2Q2025 的收入同比增长10%至人民币555 亿元。金融科技服务收入的增长受益于\n\n消费贷款服务、商业支付活动及理财服务收入增长。企业服务收入的增速较近几个季度有所加快，得益于企\n\n业客户对AI 相关服务的需求增加，包括GPU 租赁和API token 使用，以及商家技术服务费的增长。",
+        "quote": "金融科技及企业服务业务2Q2025 的收入同比增长10%至人民币555 亿元。金融科技服务收入的增长受益于\n\n消费贷款服务、商业支付活动及理财服务收入增长。企业服务收入的增速较近几个季度有所加快，得益于企\n\n业客户对AI 相关服务的需求增加，包括GPU 租赁和API token 使用，以及商家技术服务费的增长。",
+        "source_chunk_id": "P7AD084B63B1",
+        "page": 3,
+        "locator": "PDF p3, chars 0–840",
+        "value": 555,
+        "unit": "亿元",
+        "raw_number": "555",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 18,
+        "end_line": 22,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_7ad084b68b67",
+        "text": " 经营盈利                                   60,104         50,732              60,104           57,566\n            经营利润率         33%         31%            33%          32%",
+        "quote": " 经营盈利                                   60,104         50,732              60,104           57,566\n            经营利润率         33%         31%            33%          32%",
+        "source_chunk_id": "P7AD084B65B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–2823",
+        "value": 60104,
+        "unit": "百万元",
+        "raw_number": "60,104",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 19,
+        "end_line": 20,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_7ad084b68b67",
+        "text": " 非国际财务报告准则经营盈利                 69,248         58,443              69,248           69,320",
+        "quote": " 非国际财务报告准则经营盈利                 69,248         58,443              69,248           69,320",
+        "source_chunk_id": "P7AD084B65B1",
+        "page": 5,
+        "locator": "PDF p5, chars 0–2823",
+        "value": 69248,
+        "unit": "百万元",
+        "raw_number": "69,248",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true,
+        "start_line": 35,
+        "end_line": 35,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_7ad084b68b67",
+        "text": " 现金/（债务）净额 (c)                              74,592             71,757           90,229\n 资本开支 (d)                                       19,107              8,729            27,476",
+        "quote": " 现金/（债务）净额 (c)                              74,592             71,757           90,229\n 资本开支 (d)                                       19,107              8,729            27,476",
+        "source_chunk_id": "P7AD084B66B1",
+        "page": 6,
+        "locator": "PDF p6, chars 0–2643",
+        "value": 19107,
+        "unit": "百万元",
+        "raw_number": "19,107",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true,
+        "start_line": 44,
+        "end_line": 45,
+        "quote_binding": "program-copied original line range"
+      },
+      {
+        "id": "F16",
+        "source_id": "pdf_7ad084b68b67",
+        "text": "非国际财务报告准则财务计量\n为补充根据国际财务报告准则编制的本集团（“本公司及其附属公司”）综合业绩，若干额外的非国际财务报\n告准则财务计量（经营盈利、经营利润率、期内盈利、本公司权益持有人应占盈利、每股基本盈利及每股摊\n薄盈利）已于本公布内呈列。此等未经审核非国际财务报告准则财务计量应被视为根据国际财务报告准则编\n制的本集团财务业绩的补充而非替代计量。此外，此等非国际财务报告准则财务计量的定义可能与其他公司\n所用的类似词汇有所不同。",
+        "quote": "非国际财务报告准则财务计量\n为补充根据国际财务报告准则编制的本集团（“本公司及其附属公司”）综合业绩，若干额外的非国际财务报\n告准则财务计量（经营盈利、经营利润率、期内盈利、本公司权益持有人应占盈利、每股基本盈利及每股摊\n薄盈利）已于本公布内呈列。此等未经审核非国际财务报告准则财务计量应被视为根据国际财务报告准则编\n制的本集团财务业绩的补充而非替代计量。此外，此等非国际财务报告准则财务计量的定义可能与其他公司\n所用的类似词汇有所不同。",
+        "source_chunk_id": "P7AD084B64B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–970",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "腾讯",
+        "published_at": "2025-08-13",
+        "status": "source_excerpt",
+        "role": "definition",
+        "quote_verified": true,
+        "start_line": 19,
+        "end_line": 24,
+        "quote_binding": "program-copied original line range"
+      }
+    ],
+    "reference_case": {
+      "id": "TC01",
+      "question": "腾讯 2025 年第二季度 AI 投入与业务改善如何联系？写包含经营利润、现金流和投入约束的研究晨会简报。",
+      "as_of": "2025-12-01",
+      "required": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "counter": [
+        "R4",
+        "R5"
+      ],
+      "point_definitions": {
+        "R1": "季度收入1845亿元，同比增15%。",
+        "R2": "非IFRS经营盈利692亿元同比增18%；IFRS经营盈利601亿元，不能混称。",
+        "R3": "游戏和营销服务增长与AI应用有关，营销服务收入358亿元增20%。",
+        "R4": "资本开支191亿元同比增119%。",
+        "R5": "自由现金流430亿元同比仅增7%，不能把收入增长等同现金增速。"
+      },
+      "limitations": [
+        "没有AI单独收益和投入归因，不能算出AI项目真实ROI。"
+      ],
+      "expected_answerability": "answerable"
+    }
+  },
+  "semantic": {
+    "version": "native-source-audit-5.0",
+    "raw_judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选C1称收入1845亿增15%、AI投入获益及非国际经营盈利双位数增长，与F2、F1一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选C2非IFRS经营盈利692亿增18%、利润率36%升至38%，与F3一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选C3 IFRS经营盈利601亿增18%、利润率31%升至33%，与F4一致且未混称",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选C4增值914亿+16%、营销358亿+20%、企业555亿+10%且AI需求带动，与F10/F11/F12/F8/F9一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选C5资本开支191亿增119%、总现金4684亿、净额746亿，与F5/F7/F15一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选C6自由现金流430亿增7%，与F6一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选C7非国际准则补充IFRS、定义或异于同业，与F16一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C1"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C2"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C4"
+        },
+        {
+          "id": "R4",
+          "present": true,
+          "candidate_span_id": "C5"
+        },
+        {
+          "id": "R5",
+          "present": true,
+          "candidate_span_id": "C6"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选完整覆盖腾讯2Q2025 AI投入与业务改善联系，含经营利润、现金流及投入约束，且覆盖全部必备信息点与反例"
+    },
+    "span_binding": [
+      {
+        "group": "coverage",
+        "id": "R1",
+        "candidate_span_id": "C1",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R2",
+        "candidate_span_id": "C2",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R3",
+        "candidate_span_id": "C4",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R4",
+        "candidate_span_id": "C5",
+        "bound": true
+      },
+      {
+        "group": "coverage",
+        "id": "R5",
+        "candidate_span_id": "C6",
+        "bound": true
+      },
+      {
+        "group": "limitations",
+        "id": 0,
+        "candidate_span_id": "LIMIT0",
+        "bound": true
+      }
+    ],
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选C1称收入1845亿增15%、AI投入获益及非国际经营盈利双位数增长，与F2、F1一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选C2非IFRS经营盈利692亿增18%、利润率36%升至38%，与F3一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选C3 IFRS经营盈利601亿增18%、利润率31%升至33%，与F4一致且未混称",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选C4增值914亿+16%、营销358亿+20%、企业555亿+10%且AI需求带动，与F10/F11/F12/F8/F9一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选C5资本开支191亿增119%、总现金4684亿、净额746亿，与F5/F7/F15一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选C6自由现金流430亿增7%，与F6一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选C7非国际准则补充IFRS、定义或异于同业，与F16一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "R1",
+          "present": true,
+          "candidate_span_id": "C1",
+          "quote": "腾讯2Q2025收入1845亿元同比增长15%，董事会称AI持续投入并从中获益，收入及非国际准则经营盈利均双位数增长"
+        },
+        {
+          "id": "R2",
+          "present": true,
+          "candidate_span_id": "C2",
+          "quote": "2Q2025非国际财务报告准则经营盈利692亿元同比增18%，经营利润率由36%升至38%"
+        },
+        {
+          "id": "R3",
+          "present": true,
+          "candidate_span_id": "C4",
+          "quote": "AI赋能游戏与广告：增值服务收入914亿元增16%，营销服务358亿元增20%，企业服务555亿元增10%受GPU租赁等AI需求带动"
+        },
+        {
+          "id": "R4",
+          "present": true,
+          "candidate_span_id": "C5",
+          "quote": "2Q2025资本开支191亿元同比增119%体现AI等投入约束，但总现金4684亿元、现金净额746亿元提供缓冲（资本开支明细未披露）"
+        },
+        {
+          "id": "R5",
+          "present": true,
+          "candidate_span_id": "C6",
+          "quote": "2Q2025自由现金流430亿元同比增长7%，经营现金生成在投入期仍改善"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "candidate_span_id": "LIMIT0",
+          "quote": "资料未披露AI投入具体金额拆分及ROI；资本开支增119%未给行业对比；现金流未区分AI相关自由现金流贡献；非国际与IFRS经营盈利差异具体构成未列"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选完整覆盖腾讯2Q2025 AI投入与业务改善联系，含经营利润、现金流及投入约束，且覆盖全部必备信息点与反例"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "fca6f3e92d395946fcc795f7f7e35ce803824f4c0d6e3bbd4b04328f675bbbeb",
+      "latency_seconds": 6.235,
+      "usage": {
+        "prompt_tokens": 13572,
+        "completion_tokens": 662,
+        "total_tokens": 14234,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "ae31d1f30c6df7d205238d1e29b991359aa1ff399b816a0a8f4552c074cb9ee8"
+    },
+    "input_sha256": "7a50fa47fbc15e9c8e014303627be98de8594985255872871f4d58f432dd7733",
+    "answer_sha256": "2fc6b733cb51a7bb7b1695277670301178c3e181359f4ccf0f4dfbb7a03c6770",
+    "judge_prompt_sha256": "5ec0fcc2551b5b95fc118b713686a41325d07ba63f70e05abc251076279e688d"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "2fc6b733cb51a7bb7b1695277670301178c3e181359f4ccf0f4dfbb7a03c6770",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok"
+}

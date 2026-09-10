@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04412",
+  "uid": "financebench_id_04412_dev",
+  "split": "development",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "88e8b90249365384ecb8a546f0f55a33925910c9079dcaba0dc21ee532c6b7a6",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "7b382bcd1b7838817276bf4588ee82ab5e1e563cc541b160324682e232b158b4",
+  "started_utc": "2026-09-10T01:31:53.724487+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Total assets were $50.7 billion at December 31, 2020 versus $47.5 billion at December 31, 2019.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided financial summary including revenue ($65.4B) and total assets (FY20 $50.7B, FY19 $47.5B) but never computed or stated the asset turnover ratio (65.398/(50.710+47.528)/2 = 1.33). It failed to answer the specific requested metric."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3a4ed9d198bf3ec4f479699af846f9aeff2b7a947bfebec452ed9f408d028477",
+    "latency_seconds": 7.574,
+    "usage": {
+      "prompt_tokens": 3170,
+      "completion_tokens": 149,
+      "total_tokens": 3319,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c701752ede97946e03739ed658f38a516177d241a86c46623673efe38d96ce58"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

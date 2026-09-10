@@ -1,0 +1,67 @@
+{
+  "utc": "2026-09-09T15:53:49.129171+00:00",
+  "executed_source": "/root/autodl-tmp/Tencent/Tencent/code",
+  "results": [
+    {
+      "case": "before",
+      "status": "ok",
+      "answerability": "unanswerable",
+      "score": 40.0,
+      "gates": [
+        "forged, missing, or non-exact citation",
+        "answer omits one or more detected query metric slots",
+        "substantive entity, fiscal-period, or unit mismatch"
+      ],
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "8a8d03dd3c52018086eb276e53b85e3b3776a67315cc25b97de163a6d296d860",
+        "latency_seconds": 14.736,
+        "usage": {
+          "prompt_tokens": 4766,
+          "completion_tokens": 961,
+          "total_tokens": 5727,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "776338b24f393aa6d710cfbe062b325e6b52d3b08258fd52de5a42908307bb29"
+      }
+    },
+    {
+      "case": "after",
+      "status": "ok",
+      "answerability": "partial",
+      "score": 20.0,
+      "gates": [
+        "answerability contradicts the supplied oracle",
+        "refusal lacks exact negative evidence or a registry-verified future exclusion"
+      ],
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "f0a74505978d6d1e810bc5496dbfe251b1004d637c3e7d5e3a71951c6bc075c6",
+        "latency_seconds": 11.445,
+        "usage": {
+          "prompt_tokens": 5002,
+          "completion_tokens": 1173,
+          "total_tokens": 6175,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "10ce26f3f40357fde37715bd92b523965dc1c610a7ac46f3e750ed007801001a"
+      }
+    }
+  ]
+}

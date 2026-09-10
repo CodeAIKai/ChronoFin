@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_06741",
+  "uid": "financebench_id_06741_dev",
+  "split": "development",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "72079381078ded72808475008358db1f9ae163afd2825bef0838966f2fdd3aa0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "8790a97fdb80cbe03f6e1f434d0f9e315c7f9c94be0dcafc8f13729302ef8f8a",
+  "started_utc": "2026-09-10T01:33:30.838079+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "Here is a summary of the key points regarding the restricted stock agreement",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided unrelated summary about restricted stock agreement instead of calculating Walmart FY2018-FY2020 3-year average unadjusted EBITDA % margin; no financial answer given."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "847c897826447f33052aeec0e32a1b4e8e2fd17c9e611bbb85f5895c9904e72c",
+    "latency_seconds": 8.834,
+    "usage": {
+      "prompt_tokens": 4218,
+      "completion_tokens": 99,
+      "total_tokens": 4317,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "160072b28ce643a3be755e9d15c149590439fd740a671274550af55fd63fa515"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

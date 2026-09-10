@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_10130",
+  "uid": "financebench_id_10130_dev",
+  "split": "development",
+  "company": "Corning",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c088e290dde814dc4a21de3d11d4b1fd3e9b97be5f4005f0efc9aa7fa06b428e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "07a9403363df6a2a497366802a7b582468ffc1a117b3d575f3315fcac25d4243",
+  "started_utc": "2026-09-10T01:34:09.587581+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, Corning's FY2020 days payable outstanding is 50 days.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate computed DPO=50 days using correct inputs (avg AP $1,381M, COGS $7,772M, inv change $118M) but rounded to 50 instead of 63.86; actual 365*1381/7890=63.86 per reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e82f4cc19d3fa93ed6ac619149d9f6354326b40286865eee57a4f8c83204b7c6",
+    "latency_seconds": 9.669,
+    "usage": {
+      "prompt_tokens": 3673,
+      "completion_tokens": 125,
+      "total_tokens": 3798,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8d58661a918faeedec525684f0af79a057a13d3d3162ddbcecd8b5c73be09f89"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

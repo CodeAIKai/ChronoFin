@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00407",
+  "uid": "financebench_id_00407_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "c105a3101c9304d9e23d7a1b86bc8fee95c6eb51a0e4c97ecc8b8ee6febdfcb0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "c956e947733c256d02757bdbffc1e12c228c43f9598e0453c9339dcff0ccf240",
+  "started_utc": "2026-09-09T18:05:44.403780+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "cannot be determined from the text of the filing alone",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot determine which debt type received largest short-term investment, while evidence shows corporate bonds $416,420k are largest among listed short-term debt investments for June 30 2023 (H1 FY2023)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "35cec08f25aaf1a3df648e0a4edc6d64d8d1571cea74f45640154427a8b4e12b",
+    "latency_seconds": 5.459,
+    "usage": {
+      "prompt_tokens": 1767,
+      "completion_tokens": 109,
+      "total_tokens": 1876,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "975e5e9091db157786c6d6442ad2cf048560e6c888e08471c9760de07d5756c5"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

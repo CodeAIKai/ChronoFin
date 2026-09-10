@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03849",
+  "uid": "financebench_id_03849_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "0e8d418e585342c43dcba436d517b1970dfa43f2e175b2d8fd704a6fb72f9753",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "345c485eb58ad99c99bc488893dba649886ade2749eaac8c36fdd08959cf99aa",
+  "started_utc": "2026-09-10T01:31:01.621106+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, the FY2018 - FY2020 3 year average of capex as a % of revenue for MGM Resorts is 7.8%, rounded to one decimal place.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate computed from evidence cash flow capex (1486843,739006,270579) and income stmt revenue (11763096,12899672,5162082) giving 12.6%,5.7%,5.2% avg 7.8%. Reference says 0.079 (7.9%); candidate 7.8% differs slightly due to rounding intermediate values, but method and evidence support ~7.8% vs reference 7.9%."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "af994a33b5fcf9b058e2f2b620d119f28f1dc4e8e6ff27ead05ef3cc50bef208",
+    "latency_seconds": 7.816,
+    "usage": {
+      "prompt_tokens": 6243,
+      "completion_tokens": 185,
+      "total_tokens": 6428,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ed80e0169cda32a03c200c9fd759e71376e98965535fb2dbc46cc7b32e300c20"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

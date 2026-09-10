@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03473",
+  "uid": "financebench_id_03473_val",
+  "split": "new_response_validation",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "39b9e66e0b614ec9f0b9961f69bc9ebcb037c3945175f75c26bf20c3f6e35edb",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "343ebf1b59c7a26bc6542463da29eac77c96003a63566bf587bcf02bb37cef79",
+  "started_utc": "2026-09-10T01:30:31.821729+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Rounded to two decimal places, the ROA for Coca-Cola for FY2017 is 1.42%.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate computed ROA as 1.248B/87.583B=1.42%, but reference answer is 0.01 (1%). Evidence supports net income 1248M and avg assets 87583M giving ~1.42%, which conflicts with reference 0.01; candidate answer does not match reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5d298ca32bb3c6cbdd1200bb3b0335e0d2df6f5ab222ecc372d09e2452e2188a",
+    "latency_seconds": 10.021,
+    "usage": {
+      "prompt_tokens": 4132,
+      "completion_tokens": 140,
+      "total_tokens": 4272,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bc0dcda1156ca0f18ef491d34e7da2cb1d21d765c14480330ece270fd179a358"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

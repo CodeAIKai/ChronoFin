@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01865",
+  "company": "3M",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a794ddac09dac00a3f6f4b3f0c9b5de537d2fd4f5971152163cfc874530f6090",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d73fac4fdba07b06d47434f270717f3b3ebf07b8ccf96afe6f2aaff21a9940da",
+  "started_utc": "2026-09-09T18:01:18.497693+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence shows Consumer segment had -0.9% organic sales (excluding M&A/divestitures/translation), so it dragged growth; candidate refused claiming info unavailable, contradicting evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cd8264185415b267e6aa153e5505e88c696ef4421bf7b8bb317c614b664f0878",
+    "latency_seconds": 6.54,
+    "usage": {
+      "prompt_tokens": 1625,
+      "completion_tokens": 60,
+      "total_tokens": 1685,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "675504d2136b69cc419eac5f56eff9697bb5a01c6e79d921bb237d9196745b62"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

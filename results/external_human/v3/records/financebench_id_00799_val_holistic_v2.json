@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00799",
+  "uid": "financebench_id_00799_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "5fc1ec66fbfba3c86a53fcd949fd5f75ac56e54da239b82eb3781e030418fdc0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "bebb983f53eaa2d9490ade4ec1bc53cbef7415ddc2884151764872c9c05d1056",
+  "started_utc": "2026-09-09T18:08:20.753259+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate computed quick ratio as (cash + receivables)/current liabilities, yielding 0.573 (FY2023) and 0.531 (FY2022), but reference states quick ratio improved from 0.67 to 0.69 times. Candidate's values and method disagree with reference; also direction stated as improved but with wrong magnitudes, and reference's specific figures not matched. Evidence alone does not show 0.67/0.69 but candidate's answer is materially wrong vs reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c5ce5fc7394e115b0dcb17577c0768a3cb3ec07c9e3c27ee9b663f423d3830b4",
+    "latency_seconds": 4.684,
+    "usage": {
+      "prompt_tokens": 2242,
+      "completion_tokens": 126,
+      "total_tokens": 2368,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bfaf057fceed389d0387e291f6d1af55c6214949e068491321e26029a4d8ff1e"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,637 @@
+{
+  "case_id": "D01",
+  "split": "dev",
+  "group": "meta24",
+  "task": "财报阅读",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:49:34.036778+00:00",
+  "protocol_sha256": "9c9470eb4679aec8b97927f8beee4b2e4c5abed2aa9a13a14b745f0848544cf4",
+  "record": {
+    "version": "counterbrief-1.1",
+    "strategy": "lexical",
+    "query": {
+      "question": "为研究晨会概括 Meta FY2024 盈利质量：业务驱动、利润与现金流、反面证据和后续核查。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "M01",
+        "source_id": "meta24",
+        "locator": "p1 annual revenue row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 revenue: USD 164501 million.",
+        "value": 164501,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M02",
+        "source_id": "meta24",
+        "locator": "p1 annual net income row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 net income: USD 62360 million.",
+        "value": 62360,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M03",
+        "source_id": "meta24",
+        "locator": "p9 segment operating results",
+        "role": "caution",
+        "status": "observed",
+        "text": "Reality Labs FY2024 operating loss: USD 17729 million.",
+        "value": -17729,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M06",
+        "source_id": "meta24",
+        "locator": "p1 annual ad metrics",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 ad impressions grew 11%; average ad price rose 10%.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M07",
+        "source_id": "meta24",
+        "locator": "p10 annual free cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 free cash flow: USD 52103 million.",
+        "value": 52103,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M04",
+        "source_id": "meta24",
+        "locator": "p2 CFO outlook",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Meta anticipated FY2025 capital expenditures of USD 60–65 billion; guidance, not realized spending.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M05",
+        "source_id": "meta24",
+        "locator": "p2 depreciation footnote",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Longer server lives were expected to reduce FY2025 depreciation by USD 2.9 billion; an accounting-estimate change.",
+        "value": 2.9,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M09",
+        "source_id": "meta24",
+        "locator": "p2 revenue outlook",
+        "role": "caution",
+        "status": "absence",
+        "text": "Meta provided no FY2025 full-year revenue guidance in this release.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "partial",
+      "summary": "Meta FY2024 盈利质量显示核心广告业务驱动强劲：营收 164501 million USD，净收入 62360 million USD，自由现金流 52103 million USD，广告展示量增 11%、均价涨 10%（M01,M02,M06,M07）。反面证据为 Reality Labs 经营亏损 17729 million USD（M03）。但资料未提供毛利率、经营利润率等盈利质量细节，且 FY2025 资本开支指引 60–65 billion USD、折旧政策变更减 2.9 billion USD 仅为预测或会计估计，未提供收入指引（M04,M05,M09）。后续需核查分部利润与现金流转化。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Meta FY2024 营收为 164501 million USD，由广告展示量增 11% 与均价涨 10% 驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "M01",
+            "M06"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Meta FY2024 净收入 62360 million USD，自由现金流 52103 million USD，利润变现能力较强",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M02",
+            "M07"
+          ],
+          "numbers": [
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M07",
+              "value": 52103,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Reality Labs FY2024 经营亏损 17729 million USD，为盈利质量反面证据",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M03"
+          ],
+          "numbers": [
+            {
+              "source_id": "M03",
+              "value": -17729,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Meta 预计 FY2025 资本开支 60–65 billion USD，为指引而非实际支出",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "M04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "服务器寿命延长预计减少 FY2025 折旧 2.9 billion USD，属会计估计变更",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "M05"
+          ],
+          "numbers": [
+            {
+              "source_id": "M05",
+              "value": 2.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Meta 本次未提供 FY2025 全年营收指引",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M09"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "M02/M01*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "M07/M02*100",
+          "value": 83.561,
+          "unit": "%",
+          "evidence_ids": [
+            "M02",
+            "M07"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未提供毛利率、经营利润率、分部营收与利润等盈利质量细节",
+        "FY2025 资本开支与折旧为预测/指引，非 FY2024 实际",
+        "未提供现金流与净利润差异的具体归因"
+      ],
+      "follow_up": [
+        {
+          "action": "核查 Meta FY2024 分部经营利润与现金流数据",
+          "reason": "可补充盈利质量的结构性证据，验证核心业务变现效率",
+          "evidence_ids": [
+            "M03",
+            "M07"
+          ]
+        },
+        {
+          "action": "核对年报附注中折旧与资本开支实际数",
+          "reason": "判断 FY2025 指引对盈利质量的潜在稀释风险",
+          "evidence_ids": [
+            "M04",
+            "M05"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "partial",
+      "summary": "Meta FY2024 盈利质量显示核心广告业务驱动强劲：营收 164501 million USD，净收入 62360 million USD，自由现金流 52103 million USD，广告展示量增 11%、均价涨 10%（M01,M02,M06,M07）。反面证据为 Reality Labs 经营亏损 17729 million USD（M03）。但资料未提供毛利率、经营利润率等盈利质量细节，且 FY2025 资本开支指引 60–65 billion USD、折旧政策变更减 2.9 billion USD 仅为预测或会计估计，未提供收入指引（M04,M05,M09）。后续需核查分部利润与现金流转化。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Meta FY2024 营收为 164501 million USD，由广告展示量增 11% 与均价涨 10% 驱动",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "M01",
+            "M06"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Meta FY2024 净收入 62360 million USD，自由现金流 52103 million USD，利润变现能力较强",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M02",
+            "M07"
+          ],
+          "numbers": [
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M07",
+              "value": 52103,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Reality Labs FY2024 经营亏损 17729 million USD，为盈利质量反面证据",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "M03"
+          ],
+          "numbers": [
+            {
+              "source_id": "M03",
+              "value": -17729,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Meta 预计 FY2025 资本开支 60–65 billion USD，为指引而非实际支出",
+          "kind": "forecast",
+          "role": "risk",
+          "evidence_ids": [
+            "M04"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C5",
+          "text": "服务器寿命延长预计减少 FY2025 折旧 2.9 billion USD，属会计估计变更",
+          "kind": "forecast",
+          "role": "context",
+          "evidence_ids": [
+            "M05"
+          ],
+          "numbers": [
+            {
+              "source_id": "M05",
+              "value": 2.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Meta 本次未提供 FY2025 全年营收指引",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M09"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "M02/M01*100",
+          "value": 37.909,
+          "unit": "%",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "M07/M02*100",
+          "value": 83.561,
+          "unit": "%",
+          "evidence_ids": [
+            "M02",
+            "M07"
+          ]
+        }
+      ],
+      "limitations": [
+        "资料未提供毛利率、经营利润率、分部营收与利润等盈利质量细节",
+        "FY2025 资本开支与折旧为预测/指引，非 FY2024 实际",
+        "未提供现金流与净利润差异的具体归因"
+      ],
+      "follow_up": [
+        {
+          "action": "核查 Meta FY2024 分部经营利润与现金流数据",
+          "reason": "可补充盈利质量的结构性证据，验证核心业务变现效率",
+          "evidence_ids": [
+            "M03",
+            "M07"
+          ]
+        },
+        {
+          "action": "核对年报附注中折旧与资本开支实际数",
+          "reason": "判断 FY2025 指引对盈利质量的潜在稀释风险",
+          "evidence_ids": [
+            "M04",
+            "M05"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "3d582fb7d66a55a11bc02402d106432f3b44cce77b52db7c1710ea8d4604dac8",
+        "latency_seconds": 10.433,
+        "usage": {
+          "prompt_tokens": 1211,
+          "completion_tokens": 873,
+          "total_tokens": 2084,
+          "prompt_tokens_details": {
+            "cached_tokens": 320
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "8f569c3fb358bb33a7ccac862b14ba8914cad512ccf6881a7e082c086d4d1a2f"
+      }
+    ],
+    "input_sha256": "3689c417281ca0788eb37c7374309baffd02b3bf3d0aeede06790629a61d66c0",
+    "answer_sha256": "6c25b7b9ea6a99e2f2bf23716936b6515c29663f1ca321d3794a9a9600324073"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文列明营收164501 million USD及广告量价增幅，与M01/M06一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选正文给出净收入与自由现金流数值，与M02/M07一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选正文引Reality Labs亏损17729 million USD，与M03一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选正文称预计FY2025资本开支60–65 billion USD为指引非实际，与M04 forecast一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选正文称折旧减少2.9 billion USD属会计估计，与M05 forecast一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选正文称未提供FY2025营收指引，与M09 absence一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M01",
+          "present": true,
+          "quote": "营收 164501 million USD"
+        },
+        {
+          "id": "M02",
+          "present": true,
+          "quote": "净收入 62360 million USD"
+        },
+        {
+          "id": "M06",
+          "present": true,
+          "quote": "广告展示量增 11%、均价涨 10%"
+        },
+        {
+          "id": "M07",
+          "present": true,
+          "quote": "自由现金流 52103 million USD"
+        },
+        {
+          "id": "M03",
+          "present": true,
+          "quote": "Reality Labs 经营亏损 17729 million USD"
+        },
+        {
+          "id": "M10",
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": false,
+      "reason": "候选未覆盖counter M10（Q4法律损失减少一次性因素），且未讲清一次性因素不代表持续经营改善的限制，故partial"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "b9084c2e1c6b7c076e2f52ccd4cce7b8486202661775b6db2ae561e2ccfdee78",
+      "latency_seconds": 4.579,
+      "usage": {
+        "prompt_tokens": 4815,
+        "completion_tokens": 577,
+        "total_tokens": 5392,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "d6a950b3e1e2ea3338cb188ccd2ff942e0edd002c707491077b81dd5c6b103a1"
+    },
+    "input_sha256": "da638737603d11e35e07dcea470184aa2a1da1074341f9e2af8044482ae73d05",
+    "answer_sha256": "6c25b7b9ea6a99e2f2bf23716936b6515c29663f1ca321d3794a9a9600324073",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.1",
+    "answer_sha256": "6c25b7b9ea6a99e2f2bf23716936b6515c29663f1ca321d3794a9a9600324073",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.857143,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 85.786,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "incorrect numerical proof",
+        "cap": 55
+      }
+    ],
+    "issues": [
+      "calculation: K2"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T15:49:49.121604+00:00",
+  "wall_seconds": 15.085
+}

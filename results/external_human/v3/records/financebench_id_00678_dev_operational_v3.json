@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00678",
+  "uid": "financebench_id_00678_dev",
+  "split": "development",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "1051de6161bb15d27de792bd20bed02746380ea6075d32d13a3cafe78cca5218",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "60d8d5e2596a8aa93c542c0bece947c2d8832d23d9b7fc5fa750ffac54057038",
+  "started_utc": "2026-09-09T18:07:15.096017+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "(a)    Timing of Deferral Elections",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate returned Boeing deferred compensation plan document text unrelated to FY2022 gross margin question; no answer on margin profile provided."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c321b71f1218b55dc259aa02b6c2ad5dd3f4921aba7d38154bcdc117a4d93cf0",
+    "latency_seconds": 8.201,
+    "usage": {
+      "prompt_tokens": 3197,
+      "completion_tokens": 82,
+      "total_tokens": 3279,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "60a20c78081b3874f1164946fcbb702bcbb947bc6a81f46f1a7f5880b1f46f4d"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

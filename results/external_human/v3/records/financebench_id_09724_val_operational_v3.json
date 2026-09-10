@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_09724",
+  "uid": "financebench_id_09724_val",
+  "split": "new_response_validation",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "099f638a55d0b1b17dba3217b300b478a32e8662a250f8ad3815f16cc5568aa4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "d5796545d3890b013c2d0044a92065d2019a02d8dbc028b639c98722f03c1250",
+  "started_utc": "2026-09-10T01:34:07.738671+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, Coca Cola's FY2021 COGS percentage margin is approximately 39.73%.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate used FY2021 evidence: COGS $15,357M / Net Operating Revenues $38,655M = 0.3973 = 39.73%, matching reference 0.397 (39.7%)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9e07f8ba8df87eedf55d73e31519dcd3b8979f4336f5b0130caa4508a1ffcc77",
+    "latency_seconds": 8.061,
+    "usage": {
+      "prompt_tokens": 1623,
+      "completion_tokens": 116,
+      "total_tokens": 1739,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6b12437d64197a002749ea5fbe635a4dc89ca24246cd49091d554d81db241758"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

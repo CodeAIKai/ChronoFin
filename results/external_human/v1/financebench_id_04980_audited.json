@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04980",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "80bca5a04a365994173dd0ff4db5d13ccd6616d091ec8d16502f8be8f6264559",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ec328017ef99a4f27129b697544b361b04d6cad879256659a45f6db0d41b8ff4",
+  "started_utc": "2026-09-09T18:02:52.100721+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence shows PepsiCo FY2021 Consolidated Statement of Cash Flows with Capital spending of (4,625) million = $4.625B ≈ $4.60B. Candidate refused claiming no PepsiCo data, contradicting evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Evidence explicitly names PepsiCo, Inc. Consolidated Statement of Cash Flows"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2021 (Dec 25, 2021) column present in evidence"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Evidence in millions; 4,625 million = 4.625 billion USD, matches requested USD billions"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave refusal; correct answer is ~$4.60B from Capital spending (4,625 million)"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate claims info absent, but evidence contains exact PepsiCo capex figure"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7da487227da5d44100a084eb5d422ab5b8d88907295a3ad7229e75d74580c8f9",
+    "latency_seconds": 11.669,
+    "usage": {
+      "prompt_tokens": 1871,
+      "completion_tokens": 256,
+      "total_tokens": 2127,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "92172a66cecaf5edf0f59264b7f529ba8f410d6590277ad776f6b044984068c1"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

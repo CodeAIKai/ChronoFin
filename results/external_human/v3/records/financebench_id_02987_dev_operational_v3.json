@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02987",
+  "uid": "financebench_id_02987_dev",
+  "split": "development",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e41014be9d6f138e0282f21d87298588e3999903f3c7b4073c34cd95fc9df007",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "043b5ad49cdabd8f44c01fc910da2330bdc92791d101e8284ed7c448efa8aee4",
+  "started_utc": "2026-09-10T01:29:38.771480+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "The Company was originally incorporated in California in 1979 and was reincorporated in Delaware in December 1992.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate dumped 10-K cover/business text with no fixed asset turnover calculation or figures; off_topic document dump, not a substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "704d21b164a422ae687766cbe99927757fe97d4de4398e9b60985bada1b40cad",
+    "latency_seconds": 11.664,
+    "usage": {
+      "prompt_tokens": 5213,
+      "completion_tokens": 101,
+      "total_tokens": 5314,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d90582592058c9055db4bfb38e880eb55147037e72a72d882c557ca86404d802"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

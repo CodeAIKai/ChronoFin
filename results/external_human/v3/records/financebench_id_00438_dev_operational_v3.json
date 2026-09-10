@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00438",
+  "uid": "financebench_id_00438_dev",
+  "split": "development",
+  "company": "Adobe",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "5bc1db2a60e8ed0c65df55b59d2c029c6c87027bff496a4945360e49a28fc89c",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "9d59ebc33ca193f3e0b3df53b52e120be1451f5c23ac2c452c8c1f5b435ef557",
+  "started_utc": "2026-09-09T18:05:45.408267+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Adobe's operating margin profile did not improve from FY2021 to FY2022; instead, it showed a slight decrease.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate computed FY2022 margin 34.63% vs FY2021 36.76% from evidence income/revenue, matching reference decline 36.8% to 34.6%; correctly states no improvement as of FY2022 and does not claim metric unuseful."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7073eb8c9001400704b5e401ab06523a13bf09f233b91d4e1da88b3c4b7f1645",
+    "latency_seconds": 5.825,
+    "usage": {
+      "prompt_tokens": 2042,
+      "completion_tokens": 129,
+      "total_tokens": 2171,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8cc547271b8f962307e5bdce237be71ff4713870d72b9b0e8501c735721dc170"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04302",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "df33d6ba568a6a5cc56b4882b4d361d73ddfe5bbad712abc28083066818ff358",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "96104b96966f92cacb75098636df6ecdab11bc10599773ed1419292117d9783c",
+  "started_utc": "2026-09-09T17:34:52.234099+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot calculate due to missing figures, but evidence provides revenues and COGS for FY2016-2018; it gives method instead of answering, so it is a refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a96c93a36c78ba8a6cd1766cfef389eb6c26610b1e574ee9b3e9395e028cda69",
+    "latency_seconds": 2.168,
+    "usage": {
+      "prompt_tokens": 1367,
+      "completion_tokens": 60,
+      "total_tokens": 1427,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4da2b810f5fce432da97b0c71f9a9bc19ecbce9d8e12dd0466950bf5c7808211"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

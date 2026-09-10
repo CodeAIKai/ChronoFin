@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_07507",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "be1418293956f29a82f2b623771f324a2cc4292276c57fd3b9cf9c6cc635e536",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "f7923868f370f1a55229a9562d9a8bb8f7932e9cbcff5388c1b7d7ef5bf18d69",
+  "started_utc": "2026-09-09T17:54:40.600644+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computed (1494-903)/903 = 65.2%, but evidence shows operating income 1,493,602k (1493.602M) in 2016 and 903,095k (903.095M) in 2015; correct YoY change = (1493.602-903.095)/903.095 = 65.4%, matching reference 0.654. Candidate's 65.2% is misrounded/wrong calc.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Adobe unadjusted operating income identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2015 to FY2016 used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer given in percents to one decimal"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "65.2% vs correct 65.4% per evidence and reference"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Used income statement operating income figures, though arithmetic wrong"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fb360884dac7d01601d2e498ee93bc8034672be773775850c39c9cd05a6bda1a",
+    "latency_seconds": 9.756,
+    "usage": {
+      "prompt_tokens": 2107,
+      "completion_tokens": 277,
+      "total_tokens": 2384,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3ed86396aa01ca395973ca1a93ca4ab26ef762ed8c095c132bbf5ee64f7a3fdf"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04080",
+  "uid": "financebench_id_04080_val",
+  "split": "new_response_validation",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b3f3b214bd8f35c16a17a7988d631fbdef654d84e1a4ef0ae15b9d473f68d0c4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "eb414eb961bdbb92b81cc69d0ed37d36647066cd81b4e38e758da7793ce3e3ed",
+  "started_utc": "2026-09-10T01:31:20.121561+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the inventory turnover ratio for FY2021 is 3.46, rounded to two decimal places.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate computed 24576 / ((6854+7367)/2) = 24576/7110 = 3.46, matching reference and evidence (COGS 24576m, inventories 6854m FY2021 and 7367m FY2020)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "59ccfec5eda68a5e3192b7619521cdf7e4f1943096fe1cd0fe597df042951474",
+    "latency_seconds": 6.263,
+    "usage": {
+      "prompt_tokens": 2685,
+      "completion_tokens": 124,
+      "total_tokens": 2809,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4e266c83effb701da57c12a96ae43960402ff315da198d1d1a9b16e53c5a64d5"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

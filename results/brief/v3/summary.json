@@ -1,0 +1,131 @@
+{
+  "generated_utc": "2026-09-09T17:29:36.527478+00:00",
+  "n_results": 60,
+  "failures": 0,
+  "human_annotation_executed": false,
+  "scope": "Author-designed small visible public-source study, not blind or human-validated",
+  "strategies": {
+    "dev/lexical": {
+      "n": 5,
+      "successes": 5,
+      "mean_score_failure_zero": 80.1,
+      "source_group_bootstrap95": [
+        62.9,
+        97.0
+      ],
+      "mean_tokens_reported": 7639,
+      "mean_wall_seconds": 17.4,
+      "gate_rate": 0.4
+    },
+    "dev/full_context": {
+      "n": 5,
+      "successes": 5,
+      "mean_score_failure_zero": 80.7,
+      "source_group_bootstrap95": [
+        63.2,
+        98.2
+      ],
+      "mean_tokens_reported": 10505.4,
+      "mean_wall_seconds": 18.94,
+      "gate_rate": 0.4
+    },
+    "dev/counterbrief": {
+      "n": 5,
+      "successes": 5,
+      "mean_score_failure_zero": 97.2,
+      "source_group_bootstrap95": [
+        95.2,
+        99.2
+      ],
+      "mean_tokens_reported": 11208.8,
+      "mean_wall_seconds": 24.41,
+      "gate_rate": 0.0
+    },
+    "evaluation/lexical": {
+      "n": 15,
+      "successes": 15,
+      "mean_score_failure_zero": 84.433,
+      "source_group_bootstrap95": [
+        69.417,
+        92.389
+      ],
+      "mean_tokens_reported": 7183.2,
+      "mean_wall_seconds": 15.18,
+      "gate_rate": 0.3333333333333333
+    },
+    "evaluation/full_context": {
+      "n": 15,
+      "successes": 15,
+      "mean_score_failure_zero": 83.123,
+      "source_group_bootstrap95": [
+        69.625,
+        90.205
+      ],
+      "mean_tokens_reported": 9782.7,
+      "mean_wall_seconds": 14.57,
+      "gate_rate": 0.3333333333333333
+    },
+    "evaluation/counterbrief": {
+      "n": 15,
+      "successes": 15,
+      "mean_score_failure_zero": 97.328,
+      "source_group_bootstrap95": [
+        96.834,
+        97.75
+      ],
+      "mean_tokens_reported": 10314.7,
+      "mean_wall_seconds": 24.32,
+      "gate_rate": 0.0
+    }
+  },
+  "paired_differences": {
+    "dev/counterbrief-minus-lexical": {
+      "n": 5,
+      "mean": 17.1,
+      "wins": 3,
+      "ties": 2,
+      "losses": 0,
+      "source_group_bootstrap95": [
+        0.3,
+        34.8
+      ],
+      "independence_note": "Resamples source groups, not individual claims; cross-source group overlaps and small n limit inference"
+    },
+    "dev/counterbrief-minus-full_context": {
+      "n": 5,
+      "mean": 16.5,
+      "wins": 2,
+      "ties": 2,
+      "losses": 1,
+      "source_group_bootstrap95": [
+        -0.6,
+        34.8
+      ],
+      "independence_note": "Resamples source groups, not individual claims; cross-source group overlaps and small n limit inference"
+    },
+    "evaluation/counterbrief-minus-lexical": {
+      "n": 15,
+      "mean": 12.895,
+      "wins": 7,
+      "ties": 5,
+      "losses": 3,
+      "source_group_bootstrap95": [
+        4.991,
+        27.583
+      ],
+      "independence_note": "Resamples source groups, not individual claims; cross-source group overlaps and small n limit inference"
+    },
+    "evaluation/counterbrief-minus-full_context": {
+      "n": 15,
+      "mean": 14.205,
+      "wins": 9,
+      "ties": 3,
+      "losses": 3,
+      "source_group_bootstrap95": [
+        7.231,
+        27.833
+      ],
+      "independence_note": "Resamples source groups, not individual claims; cross-source group overlaps and small n limit inference"
+    }
+  }
+}

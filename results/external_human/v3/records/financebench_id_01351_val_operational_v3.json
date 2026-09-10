@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01351",
+  "uid": "financebench_id_01351_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "23089c3e466d0063b9463a72da5f44ea54ce9fbbca5df0888ac313587acf5bb1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "ce787e3b4b3a644cdf8100a564caf016629c1510aca88c56f016cec768871078",
+  "started_utc": "2026-09-09T18:11:01.744104+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "The effective tax rate for American Express decreased from 24.6 percent in FY2021 to 21.6 percent in FY2022.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states effective tax rate dropped from 24.6% (FY2021) to 21.6% (FY2022), matching reference and evidence table showing Effective tax rate 21.6% 2022, 24.6% 2021."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "90f60232c66e3bb4c876f5213ab43c263ff0e63a07732ad42d234d71ed146467",
+    "latency_seconds": 9.594,
+    "usage": {
+      "prompt_tokens": 2480,
+      "completion_tokens": 131,
+      "total_tokens": 2611,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ca41ea2b64ade543eaf74273acbd3ad76f74f219cf19a3b017a4ca3feddf3f3a"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

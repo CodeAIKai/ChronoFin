@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00724",
+  "uid": "financebench_id_00724_val",
+  "split": "new_response_validation",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "8220688e281e6a469b370a39af53f12bf14ddce29f90db379ee61deec38c30b4",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "04f1cb032699f174fd2382f5c3ec63d08d5c799ab304fd1b59adfde9cc7bcc95",
+  "started_utc": "2026-09-09T18:07:54.765085+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate correctly identifies Developed Rest of World as the region with the biggest Q2 2023 YoY revenue drop (-74%), matching reference and evidence table."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b28cc5091d6f48ef327bdc64c9418bc50059dd953fec0f34406359a854192027",
+    "latency_seconds": 6.483,
+    "usage": {
+      "prompt_tokens": 2095,
+      "completion_tokens": 52,
+      "total_tokens": 2147,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "37478502cc3dd1a6f641d9e5d00bce1539c9aea896b2ca457d5ea126ea0fc9aa"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

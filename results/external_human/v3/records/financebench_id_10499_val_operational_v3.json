@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_10499",
+  "uid": "financebench_id_10499_val",
+  "split": "new_response_validation",
+  "company": "Kraft Heinz",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ce6eab31e696aae7c4cf9e32584900eb3d4dafbd857d677f1deb0bb3d3b2a9b7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "b8adf6f283e5428f8af1e3a93393ea4850f0bdac3115ce5904260aa080d8c3ad",
+  "started_utc": "2026-09-10T01:34:36.771844+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Therefore, the inventory turnover ratio for Kraft Heinz for FY2019 is approximately 6.25 (rounded to two decimal places).",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate used FY2019 COGS $16,830M and avg inventory ($2,721M+$2,667M)/2=$2,694M from evidence, computing 16830/2694≈6.25 matching reference 6.25."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "024ab0d2c0745798313a3e3630e1d22c79f386c3216969dfdf9d0f1b8e802997",
+    "latency_seconds": 7.407,
+    "usage": {
+      "prompt_tokens": 3114,
+      "completion_tokens": 129,
+      "total_tokens": 3243,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a181bce9598fedab2243d9bfcb0f17e93385d9f520f1fbe6fff5b1e8391c777f"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

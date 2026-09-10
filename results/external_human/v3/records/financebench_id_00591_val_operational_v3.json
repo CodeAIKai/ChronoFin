@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00591",
+  "uid": "financebench_id_00591_val",
+  "split": "new_response_validation",
+  "company": "Adobe",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "6e3ca12abfedebaef6e22186869fc035c0799a605430f3367a449857b9ef43d3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "04dfb51408bd6b540504b17c2e15b04593f9541dd7f8d98d5e6ac5969833980c",
+  "started_utc": "2026-09-09T18:06:46.681215+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "yes Adobe has shown an improving free cash flow conversion in FY2022 compared to FY2021",
+    "content_correct": true,
+    "confidence": 0.85,
+    "reference_conflict": true,
+    "reason": "Candidate says FCF conversion 154% in 2022 vs 141% in 2021 (improving), reference says 156% vs 143% (~13% improvement). Both agree Adobe improved FCF conversion in FY2022; exact percentages differ (reference_conflict on numerals). Evidence cash flow statement shows net income $4756M/$4822M and operating cash $7838M; candidate's 154%/141% approximates FCF/net income using $7.4B/$4.8B, direction and conclusion match reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "aafc25ae435382a98ce4bc2ba234797b74337a5bcf707643c090861e10884a2b",
+    "latency_seconds": 7.093,
+    "usage": {
+      "prompt_tokens": 2494,
+      "completion_tokens": 181,
+      "total_tokens": 2675,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d1dcfb071e902d3399bcf455a56c7d37b7e37ee0bfdb636e993c351195db12ba"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.85,
+  "reference_conflict": true
+}

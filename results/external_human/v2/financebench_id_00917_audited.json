@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00917",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "25e71b61d13164f0e90a5632aa3ebab5c86b4cf93262479ad7c8bfcbced9a13a",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "4563bd1859ba10d1831e1bbd21bb58e57e4d72d47c684b8f0ecaf5e9215ea138",
+  "started_utc": "2026-09-09T17:46:48.447449+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states context lacks FY22 AMD operating margin info and declines to answer, despite evidence containing FY22 operating income decrease driver. Withholds requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references AMD as requested entity"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY22 as requested period"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question asks qualitative driver; no unit requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refuses to provide driver, claiming no FY22 info, but evidence shows AMD FY22 operating income decrease driven by Xilinx amortization"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate ignores supplied evidence that answers question"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7a9089b5e2ca24846cc2e5891bf7456689aaefa93e466675ae293e20c2f19fb4",
+    "latency_seconds": 9.279,
+    "usage": {
+      "prompt_tokens": 1916,
+      "completion_tokens": 217,
+      "total_tokens": 2133,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b3604b1ed61ce44dcf465c64711c65d02516a8dd671f93e7ba1d6bb5b2b0f71a"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

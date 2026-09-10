@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04700",
+  "uid": "financebench_id_04700_dev",
+  "split": "development",
+  "company": "Microsoft",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "1fbcf7fb3db56932be579b804599046280ef1c0bc80cc0f910c30582da1fd7f8",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "57e161e8d9e9ad04c2044ceb7d1ffcd1ff14b76179650f3923a1e40145363255",
+  "started_utc": "2026-09-10T01:32:29.605337+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "The FY2016 COGS (Cost of Goods Sold) for Microsoft was $32,780 million USD.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states FY2016 total cost of revenue (COGS) = $32,780 million, matching reference 32780 and evidence Income Statements 'Total cost of revenue' 2016 = 32,780 (in millions)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "dfdb6cbdd0d92845e53d9f2535ed7ee4aab785e6d326c1658bf5d6e192fdf8e3",
+    "latency_seconds": 9.193,
+    "usage": {
+      "prompt_tokens": 2055,
+      "completion_tokens": 116,
+      "total_tokens": 2171,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0cd918dff2d37f62aaf7cdc685fa8061b736d5d9756d268c790ec47441105698"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01279",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a03cb1cc98561e086a9e728999f9cae741e3d7f109a5a3fbd498f1429fc754f1",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "5815134b6eb96131b7f5635eae31af590926001da7df404cc35d456e464b96ea",
+  "started_utc": "2026-09-09T18:00:41.954851+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate refused claiming no AMD FY22 cash flow data, but evidence explicitly provides AMD consolidated cash flows for 2022: operating +3565M, investing +1999M, financing -3264M. Operating brought in most cash, matching reference. Candidate's refusal is wrong.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Evidence is AMD consolidated statements, entity correct"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Evidence year ended Dec 31 2022 = FY22"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Amounts in millions USD, consistent with question cash flow"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave no substantive answer and falsely claimed missing data; correct answer is operations per evidence and reference"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence directly supports operating cash flow most; candidate ignored it"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "51195e2922a0911a0b4f43888b25006a870c79e996064629bf2f77748535e4e9",
+    "latency_seconds": 10.205,
+    "usage": {
+      "prompt_tokens": 2131,
+      "completion_tokens": 235,
+      "total_tokens": 2366,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3c2d7304ad20278fc96f40552d1a13bc30e9647fbbcc923f206765e5ac0437dd"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

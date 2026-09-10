@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04254",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "568a474defec66b2bcd6d3acad37277187278d01668228c5ead578af22e62b7d",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "91c1ac9277f55705db7bcf7d8dd4d45bf26774de54980b34a826a3e58d8cf90c",
+  "started_utc": "2026-09-09T17:52:54.205537+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states it cannot provide the requested information and only explains how to obtain it, without giving the substantive EBITDA figure.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity American Water Works identified in question."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2021 specified in question."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "USD millions requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer provided; candidate withholds answer."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate does not use supplied evidence to answer; evidence shows operating income 1196 + D&A 636 = 1832."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4609ce11eaefd027e603600089d4fda519c34414d0ec8483cc2df7b239b07380",
+    "latency_seconds": 9.569,
+    "usage": {
+      "prompt_tokens": 3850,
+      "completion_tokens": 211,
+      "total_tokens": 4061,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d4987af38cc4c68c839c35626a2722a09a8588388fcdafbf4dee5688f2ab9cc2"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

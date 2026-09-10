@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01279",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a03cb1cc98561e086a9e728999f9cae741e3d7f109a5a3fbd498f1429fc754f1",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "5815134b6eb96131b7f5635eae31af590926001da7df404cc35d456e464b96ea",
+  "started_utc": "2026-09-09T17:48:21.515354+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it cannot answer due to missing AMD FY22 cash flow data, despite evidence containing AMD's FY22 cash flow statement.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Question asks about AMD; candidate references AMD but claims no data."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Question asks FY22; candidate mentions FY22 but claims no data."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question asks cash flow; candidate discusses cash flow data absence."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate withholds answer, says cannot determine due to missing info."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence clearly provides AMD FY22 operating/investing/financing cash flows; candidate incorrectly claims absence."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "573a073be691ef07261da4ac3fa1200547b72bba0c6e1d3243ee18794873a8a8",
+    "latency_seconds": 9.489,
+    "usage": {
+      "prompt_tokens": 2249,
+      "completion_tokens": 230,
+      "total_tokens": 2479,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9b481ece3486ce638893a880014028aa9074a922285b4104c4b51d236e4bff05"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

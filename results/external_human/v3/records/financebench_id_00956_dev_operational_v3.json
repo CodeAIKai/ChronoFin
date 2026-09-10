@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00956",
+  "uid": "financebench_id_00956_dev",
+  "split": "development",
+  "company": "Johnson & Johnson",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "771ba39fcde2b6fd7f282d0458c0ed03816dda56fd77dc38d01288c8404a4460",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "2de94a95f9fcd5aeb2620fa29d86cfb7dc81a9c3c8b97cb373a2ad2af71ec20b",
+  "started_utc": "2026-09-09T18:08:57.450276+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "The results are not that of a high growth business in FY2022.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate concludes JnJ FY2022 not high growth, matching reference; evidence shows sales grew only 1.3% in FY2022, supporting low growth claim."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cae3cb7fd53c232560a0de1dbc3ad23167cfcf005c0c2f1154f6cbb6d70c84cb",
+    "latency_seconds": 7.185,
+    "usage": {
+      "prompt_tokens": 1654,
+      "completion_tokens": 97,
+      "total_tokens": 1751,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e12fb1cd80b8d1d14b4d069801e2ac87e19365c28514b3c7c2f6a57e56bf4234"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

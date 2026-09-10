@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00460",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "aeea948243f8a36578937863422f3c265c19dfe324f903a4fc4f96c5711f3859",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "789d4f369ae0970634d0d97a75585dd04371ff29773364d2d18a0fc156b3cf27",
+  "started_utc": "2026-09-09T17:43:21.350668+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate states Best Buy stores decreased from 930 (Q2 FY2023) to 907 (Q2 FY2024), but evidence shows Best Buy stores were 930 at end of Q2 FY2023 and 907 at end of Q2 FY2024 — this part matches. However, reference asks about change between Q2 FY2024 and FY2023 and states total stores declined from 982 to 969 (1.32%). Candidate's answer on Best Buy-branded stores is numerically supported by evidence, but the question's context (reference and evidence total table) implies all Best Buy stores (total) changed 982 to 969. Candidate's core claim of 'Best Buy stores' as 930->907 is correct per evidence for the Best Buy line, yet it misses the total-store perspective and references wrong base if interpreted as all stores. Given reference uses total 982->969 and candidate uses 930->907 (Best Buy only), the substantive answer is a different metric/entity scope than requested, making it incorrect.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Question asks number of Best Buy stores; evidence distinguishes 'Best Buy' line (930->907) vs Total (982->969). Candidate used Best Buy line, reference used Total."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Both Q2 FY2023 and Q2 FY2024 used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Store count in units."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says decrease 23 (930->907) for Best Buy; reference says decline 1.32% (982->969) for total stores. Different numbers."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table shows Best Buy 930 end FY2023, 907 end FY2024; supports candidate's specific claim but not reference total."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8b7ed4f9d8bf4b74acb898b679e4c9e79515ae81d56104195f6ea598a8cd9b56",
+    "latency_seconds": 13.507,
+    "usage": {
+      "prompt_tokens": 2854,
+      "completion_tokens": 461,
+      "total_tokens": 3315,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "21bd8f24b8bca499a648ce9990365576117c331018057fbf81d62ea3006ea18a"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

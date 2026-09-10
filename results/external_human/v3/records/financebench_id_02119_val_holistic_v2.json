@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_02119",
+  "uid": "financebench_id_02119_val",
+  "split": "new_response_validation",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "9a6776616c21ccbd86cfc662c63140c5d83786a8b79896263fdd58ae06ff9cb3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "48e7dcf5e7bfb01e1212dccac15255d4ee616916dd4e3da69ea4c7d93318b702",
+  "started_utc": "2026-09-10T01:29:04.167298+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds the answer and only explains how to obtain it, saying data is missing, despite evidence providing TBVPS of $66.56 which the reference uses as the answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "432c4e9b6e8fa1eddb84ad58505037a11fc11b6ef36dcce35006e1a91f2b7137",
+    "latency_seconds": 8.29,
+    "usage": {
+      "prompt_tokens": 1180,
+      "completion_tokens": 59,
+      "total_tokens": 1239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "79dc5e4f226f4239df11c727474e70e8457aeeb15b5f8f6df8532f439929d72f"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01226",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c5111956e72eab9675ceaa4b5546097c88b09deddfe4a786e5d149c4418ba595",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "e5b99fd7f20ba7e4505d62d42648402f852a2bf60b36f8a4bc380166b8aec83d",
+  "started_utc": "2026-09-09T17:33:46.984715+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.9,
+    "reason": "Candidate identifies FY2022 3M operating margin decrease (19.1% vs 20.8%, -1.7%) and attributes it to litigation (Combat Arms, PFAS), raw material/logistics costs, divestiture impacts, offset by pricing/productivity. Evidence supports litigation/PFAS/exit/Russia/divestiture charges and cost inflation; reference cites same one-off drivers. No refusal, no material error.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M, correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 specified and used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Margin in %, percentage points; consistent with question"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "States margin decreased and lists drivers matching reference/evidence"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence 10-K shows margin 19.1% vs 20.8% and special item costs for litigation/PFAS/exit/divestiture; candidate explanation supported"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6d4380c831bdfb733886c9b7703d72e7f0ddf3bfa35b372230eced0baae4d68a",
+    "latency_seconds": 5.857,
+    "usage": {
+      "prompt_tokens": 1686,
+      "completion_tokens": 275,
+      "total_tokens": 1961,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c2e322f339a88db6ff3971436fe031898991b51a2216f3d922142d25c9d4f7af"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

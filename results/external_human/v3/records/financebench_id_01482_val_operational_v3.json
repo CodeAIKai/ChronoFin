@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01482",
+  "uid": "financebench_id_01482_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "e06539cceb6e4254f8a6b0fee123f58676fd261dd021a1f2bc7bc10eac67e12b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "6957c03afb63e532a9f10e2de1bd2dc78918fc3698c979e68600b7c690e734df",
+  "started_utc": "2026-09-09T18:11:22.222893+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the proposal was defeated",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states proposal was defeated with votes For 19,718,780 and Against 977,228,788, matching evidence item (8) and reference that the congruency report proposal was defeated."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f3b63efb3d1d88abaa26989b38c20741720b6ebe198ce070a4344c9dd8270a0e",
+    "latency_seconds": 9.143,
+    "usage": {
+      "prompt_tokens": 1030,
+      "completion_tokens": 92,
+      "total_tokens": 1122,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f5ca26208f4cc5d02ff36539c8dac62cd11f81c24b60ed1b086e01aff743f695"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

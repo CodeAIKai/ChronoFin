@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00407",
+  "uid": "financebench_id_00407_dev",
+  "split": "development",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "9a1153d8b359fa319e89b4f3d77cdda865b92e45ca52924431fee5dec35b7a38",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "abb04931d8451069faec7767cce73ca5669f1902a4941e0022aa8af7c351a5ba",
+  "started_utc": "2026-09-09T18:05:41.079353+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but the information provided does not include specific details about short-term investments for MGM in the first half of the fiscal year 2023.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it lacks data for H1 FY2023 short-term investments and asks for relevant data, declining to answer despite evidence showing corporate bonds $416,420k largest short-term investment per 10Q."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a5bc1a64d197eec38faa0e34713643634f411bb9c4a9cfc87ee666dccb768e7b",
+    "latency_seconds": 5.901,
+    "usage": {
+      "prompt_tokens": 1718,
+      "completion_tokens": 126,
+      "total_tokens": 1844,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "16dbdaa6205abd8cebb680c081161201bc9d8e147be45c540707da9b09701b48"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

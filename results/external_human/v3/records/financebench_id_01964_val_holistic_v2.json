@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01964",
+  "uid": "financebench_id_01964_val",
+  "split": "new_response_validation",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "70cfb7a0712b14affd68d3443906334c1ca9eb28de40406bd99f18b0e5e1b34b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "33ff3f10e84a4dd8502d4aeb2aa081d4bc8ad3dd7340af088b3a6e532f9db7f6",
+  "started_utc": "2026-09-10T01:28:30.041727+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate provides balance sheet details including customer deposits but never states the largest liability; it withholds the requested conclusion and only summarizes funding sources."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3242f70021e998549a33bf27f9b2a5de17a80c4dab623f35930f62e297df066e",
+    "latency_seconds": 11.082,
+    "usage": {
+      "prompt_tokens": 2221,
+      "completion_tokens": 49,
+      "total_tokens": 2270,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c20829bc1944c0d8affba0fc4549f1c56dde0330e520fc39dd0b66b430ed2139"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

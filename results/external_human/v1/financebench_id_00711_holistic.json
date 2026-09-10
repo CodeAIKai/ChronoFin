@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00711",
+  "company": "Johnson & Johnson",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0f8f3e2d12b79790b385f7a1e77bd975f4bd8192d4256c1dea8a3118f12f8c42",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "3d54e7e2fba55b99b4a2a9cfa000b272ca597cedb30e699030a19d7cc70b5ef9",
+  "started_utc": "2026-09-09T17:59:51.123212+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot answer due to missing data and does not provide the inventory turnover or explain why conventional inventory management may be meaningless; it gives no substantive answer despite evidence being available."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f90df518afc1c65328e3de7b0f16fcef47795b26b1a3f46a1b60aac17e39da80",
+    "latency_seconds": 6.955,
+    "usage": {
+      "prompt_tokens": 1965,
+      "completion_tokens": 58,
+      "total_tokens": 2023,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "69ca2de43501cd39f538d766458cad927a3883b6679f6a975597a7f86ab477a6"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

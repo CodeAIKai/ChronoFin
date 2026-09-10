@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04784",
+  "uid": "financebench_id_04784_val",
+  "split": "new_response_validation",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a592da62340f69f4e29c3083d49b1fe2cdbbda33a95afd6d81972c8ba993535a",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "3eea856a6cdc2698cf9cdc94fe40ce5356ec9f46cde7afd5eee6b11a3fc66732",
+  "started_utc": "2026-09-10T01:32:44.466899+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate states info not provided and withholds the answer, asking for figures instead of computing from supplied evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e06f560927367eb7919b2661f9e5ab78d6d31a451fe4cf01dad6216a9eb8e1fe",
+    "latency_seconds": 8.621,
+    "usage": {
+      "prompt_tokens": 1763,
+      "completion_tokens": 43,
+      "total_tokens": 1806,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b1c928104b11ec4478964babc99dd51b994e052a4229acd303a74cac5556c7d2"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

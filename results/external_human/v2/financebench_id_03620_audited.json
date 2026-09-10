@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_03620",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4d7c3f2d30621d6c8785e37170e1ca07f4cc5928c862cf8c81eaa29e297f0b31",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "ec39cc9c79dcdf8ca5e65eceac72c20df17fba25b455e19aaf8e48b3de16928b",
+  "started_utc": "2026-09-09T17:51:59.675125+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate declines to provide the requested numeric answer and only explains how to calculate it using external filings, without giving the FY2022 figure despite evidence being supplied.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Identifies PepsiCo as subject"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "References FY2022 / fiscal year ended Dec 31, 2022"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Mentions USD millions context via instructions to use filings"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive numeric answer provided; withholds conclusion"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Does not use supplied evidence to compute or state answer"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "41be6d2ff517d0e54a640422d0f100507b10769e4117150c3d64004c19b9b25d",
+    "latency_seconds": 9.57,
+    "usage": {
+      "prompt_tokens": 3304,
+      "completion_tokens": 215,
+      "total_tokens": 3519,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9b92669f0409f6b517979f26abfdbd5584ffa5847dfa5ee134d019e971c993b0"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

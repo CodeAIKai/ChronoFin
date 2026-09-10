@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00460",
+  "uid": "financebench_id_00460_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2b5a6da552ffb1c4ac7996308517a37541970e02c2337bb29c1eee889b9386ab",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "b1f6387fad00ab74ec2ad785f6b219a425f826d3bac2d939c4ab7107d06ec805",
+  "started_utc": "2026-09-09T18:05:51.234798+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate reports only Best Buy branded stores (930 vs 907, -23) but reference and evidence show total stores declined from 982 to 969 (-1.32%). Question asks number of Best Buy stores ambiguously; evidence table 'Total' is 982 to 969, matching reference. Candidate omitted total and used wrong subset counts versus reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "07c406f2e93d4d8ba87fd2f8bff0ab947021608fd78795a8453c37a5d3b55e43",
+    "latency_seconds": 5.865,
+    "usage": {
+      "prompt_tokens": 2706,
+      "completion_tokens": 93,
+      "total_tokens": 2799,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c2603d912a52397a570f95507bd67c6e9a1d64e8a8e12ae793337e78381b2ce1"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

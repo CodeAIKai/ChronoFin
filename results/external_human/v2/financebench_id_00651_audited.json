@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00651",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "602f5c146b75a40e08afd8d486c1a1d227c24b2cb7905e00989204e87b67d4d9",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "ee64ffbedb5cdb11bfd374a3fe9f9ded00882969542dbf14dce1f958eb37490a",
+  "started_utc": "2026-09-09T17:44:54.081579+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate explicitly concludes adjusted EPS growth is not accelerating in FY2023 and decelerates from 3.6% to 3.5%, matching reference and evidence.",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate addresses Johnson & Johnson (J&J) adjusted EPS."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Compares FY2022 (3.6%) and FY2023 guide (3.5%)."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Uses percentage growth rates as in question/reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "States growth not accelerating, decelerates slightly by 0.1pp, agrees with reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows FY2022 adj EPS +3.6%, FY2023 guide +3.5%."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7f8729ef32f2a6c2670c8b9aeb7cf96a859a1204179881261f11198856651b4a",
+    "latency_seconds": 9.092,
+    "usage": {
+      "prompt_tokens": 1704,
+      "completion_tokens": 248,
+      "total_tokens": 1952,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "170154f6995c707228443eb3bcfb889c0b42ea4561d43dc094206ff93f11379e"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

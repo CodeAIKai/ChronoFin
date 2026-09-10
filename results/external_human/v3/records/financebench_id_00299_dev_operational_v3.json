@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00299",
+  "uid": "financebench_id_00299_dev",
+  "split": "development",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4c1caf9a3d7927ca4ab4d17d691e94db372b6e26083704b6683845036ce77b01",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "29375774264be0dc318136cc2e46a9b9d76eea61aef4130fca86cf6237d58456",
+  "started_utc": "2026-09-09T18:05:22.848081+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the Corporate segment, with a total net revenue of $(473) million",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate identifies Corporate segment as lowest Q1 2021 net revenue at $(473) million, matching reference and evidence table showing Corporate Total net revenue $ (473) million vs other positive segments."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7fe4510d47909f9288a812e118128056a316f639d1b336bd48af3970110c27fc",
+    "latency_seconds": 5.681,
+    "usage": {
+      "prompt_tokens": 2167,
+      "completion_tokens": 101,
+      "total_tokens": 2268,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6b173bf8039e0fe895c3c51ae0f9d1158915b809a3b7e2ef6bd6b333b775daa1"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

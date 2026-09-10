@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01964",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c5d14620b70e71dda5f980a56ad86a33783bc38eaaace2d3559bb49aa0001853",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "2352b022fcc41d192fffc6fe590efeded2e3424ceb8bd8c4a5dffeabdbdf2742",
+  "started_utc": "2026-09-09T17:50:24.592967+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence shows Customer deposits ($110,239M) was largest liability in 2022; candidate wrongly claims Membership Rewards liability ($12,789M) which is not even in the provided balance sheet and is far smaller."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8c5bd0570783384d5289ccf836dd84cc60b1c6b0b6a7e9a09f074b4f17cb8152",
+    "latency_seconds": 7.802,
+    "usage": {
+      "prompt_tokens": 1930,
+      "completion_tokens": 67,
+      "total_tokens": 1997,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "76d707627c807af0f58b6298f2e25a9924a04f1069cae6e12317e884ef1b3684"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01964_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01964_holistic.json",
+  "parent_sha256": "d0e1e4799cfcd4ff3b77cfb0f87e14a389c8d9f2dcbdaef3d0a65f1bc3ffd8d3"
+}

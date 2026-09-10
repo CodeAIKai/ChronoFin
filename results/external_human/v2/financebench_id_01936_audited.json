@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01936",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cfa4b9dfed26385d87209cd138f35b897c01617308e470de0f6ae1ae9f58f26c",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "cbb363933b3799f115719d8c7d10f399f33200b41365b622df5eaa75f7133d03",
+  "started_utc": "2026-09-09T17:50:21.751552+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.9,
+    "reason": "Candidate describes nature/purpose but misstates that activities 'primarily involve response to Russia-Ukraine conflict and continued integration of Bemis' for Q2 FY2023 close; evidence says Q2 FY2023 (Dec 31 2022) activities primarily comprised Russia-Ukraine, while Bemis integration was substantially completed end FY2022 and was FY2021 activity. Also reference states 87% employee-related; candidate gives breakdown but does not state 87% employee liability proportion. Substantive answer provided but contains period/scope error vs evidence.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity AMCOR restructuring liability correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Candidate says Bemis integration continued into Q2 FY2023 close, but evidence shows it was substantially completed end FY2022 and Q2 2023 activity primarily Russia-Ukraine"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Uses $ millions consistent with evidence"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Misattributes nature (Bemis continued) and omits 87% employee liability reference proportion"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence does not support Bemis as primary Q2 FY2023 activity; supports Russia-Ukraine and completed Bemis integration"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c801191c4903a54e9d27d914a86a12468847303a6aa0e7d6187492fdac220f4f",
+    "latency_seconds": 9.857,
+    "usage": {
+      "prompt_tokens": 1506,
+      "completion_tokens": 338,
+      "total_tokens": 1844,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3ca819d178e68748c5ae4a1cfdbf7639a5d0b3296b5b54604d8c56fd1733ad41"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

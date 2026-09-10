@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00382",
+  "uid": "financebench_id_00382_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "38d87db5262ebcdf21bc624550b2aef69ce0ae7879844e2264e0395339756cf8",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "870013cb131679c9090bda3d6f962af37484554f200414d4ca076340c5b4c6ed",
+  "started_utc": "2026-09-09T18:05:33.098883+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate identifies Las Vegas Strip Resorts as highest EBITDAR contributor in FY2022 using evidence (Adjusted Property EBITDAR $3,142,308, highest among regions), matching reference's Las Vegas resorts region. Substantive answer provided."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1fa6569d3ec8cc79f599be2f85f00d26126bb7e4cb3e0d60b47c72148c17acbb",
+    "latency_seconds": 5.983,
+    "usage": {
+      "prompt_tokens": 1770,
+      "completion_tokens": 72,
+      "total_tokens": 1842,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "95a00b1a9c69068dcb5d5f2ccb67f58fd5a0b359ad32cb28381b5bc968491d24"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

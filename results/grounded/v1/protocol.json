@@ -1,0 +1,33 @@
+{
+  "sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "files": {
+    "src/chronofin/grounded.py": "c47ffe513a0f78f54952bc78f3204e0a5ebe0cf8d5854e135ac78dfeed04cd79",
+    "src/chronofin/brief.py": "d574e3759bd15f2f89358a45b9e4f5f7ec2e4f4ffeb8f5e762adfa6371b14079",
+    "src/chronofin/reliability.py": "709aad7bf5d26f7db0eae139fd2e8222836ea30f6c6c35e6c189fecedda92f9d",
+    "scripts/run_grounded_experiments.py": "219d5f4853498fe1ecde83158fcb1ee2ec984f82c3985fb5f6fca22079799a5a",
+    "data/brief/cards.json": "996fb4f3c9fcba7d829cd54b19289766d98878043ad22748054681151a82f441",
+    "data/brief/cases.json": "b0190df9d3fe458f7afe2adad3bb7d291724707122e5707cea503b0e7ac05203"
+  },
+  "parent_v3_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "application_methods": [
+    "full_context",
+    "counterbrief_first_pass",
+    "full_context_revision",
+    "counterbrief"
+  ],
+  "order_cases": [
+    "D01",
+    "D02",
+    "D04",
+    "D05",
+    "E11",
+    "E12"
+  ],
+  "orders": [
+    "original",
+    "reverse",
+    "shuffle",
+    "repeat"
+  ],
+  "scope": "Visible author-designed regression; reused v3 generated drafts. Equal-call control uses a generic revision of the same saved full-context draft."
+}

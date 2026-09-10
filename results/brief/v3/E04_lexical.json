@@ -1,0 +1,493 @@
+{
+  "case_id": "E04",
+  "split": "evaluation",
+  "group": "cross",
+  "task": "财报阅读",
+  "strategy": "lexical",
+  "started_utc": "2026-09-09T15:57:53.345322+00:00",
+  "protocol_sha256": "0f0226d79b04898a01d36535f68a4584df190d1b650ea4e20cd13b45c6b69cfa",
+  "record": {
+    "version": "counterbrief-1.2",
+    "strategy": "lexical",
+    "query": {
+      "question": "比较 Meta 与 Amazon FY2024 自由现金流，能否直接据数值大小断言现金创造效率更高？",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A02",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 operating income: USD 68593 million.",
+        "value": 68593,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A03",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual sales",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 net sales: USD 107556 million.",
+        "value": 107556,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A04",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 operating income: USD 39834 million.",
+        "value": 39834,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A05",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "caution",
+        "status": "observed",
+        "text": "Amazon FY2024 free cash flow: USD 38219 million.",
+        "value": 38219,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A06",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 operating cash flow reached about USD 115.9 billion, a 36% increase.",
+        "value": 115.9,
+        "unit": "USD billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "M01",
+        "source_id": "meta24",
+        "locator": "p1 annual revenue row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 revenue: USD 164501 million.",
+        "value": 164501,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M02",
+        "source_id": "meta24",
+        "locator": "p1 annual net income row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 net income: USD 62360 million.",
+        "value": 62360,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "partial",
+      "summary": "资料仅提供 Amazon FY2024 自由现金流为 USD 38219 million（A05），但未提供 Meta FY2024 自由现金流数值，仅知 Meta 收入 USD 164501 million（M01）与净利 USD 62360 million（M02）。因此无法直接比较两者自由现金流大小。即便获得数值，自由现金流绝对值受企业规模与资本开支影响，不能直接断言现金创造效率更高，效率应结合收入或资产等相对指标评估。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Amazon FY2024 自由现金流为 USD 38219 million",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A05"
+          ],
+          "numbers": [
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Meta FY2024 收入与净利分别为 USD 164501 million 与 USD 62360 million，但自由现金流未披露",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "因 Meta 自由现金流数据缺失，无法比较两公司 FY2024 自由现金流绝对值",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A05",
+            "M01",
+            "M02"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "inference: 即使获得 Meta 自由现金流，仅凭绝对值大小也不能断言现金创造效率更高，需结合规模指标",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "A05",
+            "M01"
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "Meta FY2024 自由现金流数值未知，无法完成两公司比较",
+        "现金创造效率需相对比率而非绝对值，资料未提供相关效率计算所需完整数据"
+      ],
+      "follow_up": [
+        {
+          "action": "获取 Meta FY2024 自由现金流官方数值",
+          "reason": "补全比较基础，可计算自由现金流与收入比以评估效率",
+          "evidence_ids": [
+            "M01",
+            "A05"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "partial",
+      "summary": "资料仅提供 Amazon FY2024 自由现金流为 USD 38219 million（A05），但未提供 Meta FY2024 自由现金流数值，仅知 Meta 收入 USD 164501 million（M01）与净利 USD 62360 million（M02）。因此无法直接比较两者自由现金流大小。即便获得数值，自由现金流绝对值受企业规模与资本开支影响，不能直接断言现金创造效率更高，效率应结合收入或资产等相对指标评估。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Amazon FY2024 自由现金流为 USD 38219 million",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A05"
+          ],
+          "numbers": [
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Meta FY2024 收入与净利分别为 USD 164501 million 与 USD 62360 million，但自由现金流未披露",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "M01",
+            "M02"
+          ],
+          "numbers": [
+            {
+              "source_id": "M01",
+              "value": 164501,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "M02",
+              "value": 62360,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "因 Meta 自由现金流数据缺失，无法比较两公司 FY2024 自由现金流绝对值",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A05",
+            "M01",
+            "M02"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "inference: 即使获得 Meta 自由现金流，仅凭绝对值大小也不能断言现金创造效率更高，需结合规模指标",
+          "kind": "inference",
+          "role": "context",
+          "evidence_ids": [
+            "A05",
+            "M01"
+          ]
+        }
+      ],
+      "calculations": [],
+      "limitations": [
+        "Meta FY2024 自由现金流数值未知，无法完成两公司比较",
+        "现金创造效率需相对比率而非绝对值，资料未提供相关效率计算所需完整数据"
+      ],
+      "follow_up": [
+        {
+          "action": "获取 Meta FY2024 自由现金流官方数值",
+          "reason": "补全比较基础，可计算自由现金流与收入比以评估效率",
+          "evidence_ids": [
+            "M01",
+            "A05"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "fa8286f6dfb89fffeeca2c33f453eb7ab63ecfd84c241b5bd85a8cde76afa61a",
+        "latency_seconds": 5.319,
+        "usage": {
+          "prompt_tokens": 1237,
+          "completion_tokens": 520,
+          "total_tokens": 1757,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "4affb01e80e9b806cd3b5d1bcc1360ed8bc2521e781d72ef05b1e9dc4c491501"
+      }
+    ],
+    "input_sha256": "efb176107b1baa2a2ab650423687f8dcad4469aae14dd1193c8ee22200f25f76",
+    "answer_sha256": "1c780ae26ea12751af25b940df08bc001a3c8cdd9bf00addfa9da5fece63300f"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文引用A05数值且一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "partial",
+          "reason": "候选称Meta自由现金流未披露，但来源M07已提供USD 52103 million，语义矛盾于事实",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "contradicted",
+          "reason": "候选称Meta FCF缺失无法比较，但M07已观测到Meta FCF 52103 million，可比较",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选推断绝对值不能断言效率更高需规模指标，符合限制逻辑",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M07",
+          "present": false,
+          "quote": ""
+        },
+        {
+          "id": "A05",
+          "present": true,
+          "quote": "Amazon FY2024 自由现金流为 USD 38219 million（A05）"
+        },
+        {
+          "id": "M08",
+          "present": false,
+          "quote": ""
+        },
+        {
+          "id": "A07",
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": false,
+      "follow_up_useful": true,
+      "direct_answer": false,
+      "reason": "候选误称Meta FY2024自由现金流未披露，忽略M07已提供52103 million，导致无法正确比较且未覆盖口径差异限制"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "8c8f59d38e7d104a60d1ce7a1847d9a9c34037aeaf1dcc71278321fbae3ac493",
+      "latency_seconds": 4.314,
+      "usage": {
+        "prompt_tokens": 4620,
+        "completion_tokens": 400,
+        "total_tokens": 5020,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "468bc0f9a7c082a422bbadb54045149b146208b7ffe8e641255737fcdbfa053a"
+    },
+    "input_sha256": "6c35728c006074b9be582ec47edb6e53b5b1f0f92d33d6ceb8c85b7f1f1f8859",
+    "answer_sha256": "1c780ae26ea12751af25b940df08bc001a3c8cdd9bf00addfa9da5fece63300f",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "1c780ae26ea12751af25b940df08bc001a3c8cdd9bf00addfa9da5fece63300f",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 0.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 66.5,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      },
+      {
+        "reason": "unsupported summary",
+        "cap": 65
+      },
+      {
+        "reason": "missing all material counterevidence",
+        "cap": 65
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T15:58:02.987329+00:00",
+  "wall_seconds": 9.642
+}

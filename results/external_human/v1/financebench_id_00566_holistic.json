@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00566",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "63acb38897c954211fab38688b19bf3fa18a887cfac6bfe4abfbfa40bb5e85f3",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "bd0ffd694557ff6d5dcdf530b9c6c736a7550a4f3b2526bfe0a9739a80e19ec7",
+  "started_utc": "2026-09-09T17:32:57.838273+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate correctly states Verizon's total debt was $150,639M in 2022 vs $150,868M in 2021, a $229M decrease, matching reference and evidence. Answer agrees debt did not increase."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "aec5fd04f041851645fa0ff12314e0fd489f18962384df4c49679d0cfd61ff2e",
+    "latency_seconds": 1.889,
+    "usage": {
+      "prompt_tokens": 2204,
+      "completion_tokens": 68,
+      "total_tokens": 2272,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "343b38417256a5fd2d1cd8069c59a380cbc0906fc911bf95d468f913fdc2e60f"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

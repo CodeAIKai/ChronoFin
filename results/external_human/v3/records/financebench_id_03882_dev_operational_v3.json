@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03882",
+  "uid": "financebench_id_03882_dev",
+  "split": "development",
+  "company": "Amcor",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "879cc6aa6fc003f36fab071183b1fd3fa7346b91cc6e16b760705f1e2b1ef8a7",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "bddfe8f5b8961ca4bef350236b034e2ddb8f4670dee3b8389f7b3989497dbb47",
+  "started_utc": "2026-09-10T01:31:09.441056+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but the information provided does not include the balance sheet details necessary to determine Amcor's year-end accounts receivable (AR) for fiscal year 2020.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines, stating balance sheet details are missing, but evidence contains Amcor FY2020 balance sheet with Trade receivables, net 1,615.9 (USD millions)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cae9f81d6ee68206fef1955c65292d4d8abcdbcfc9c76d451a7cddb6de87ca26",
+    "latency_seconds": 9.285,
+    "usage": {
+      "prompt_tokens": 2206,
+      "completion_tokens": 124,
+      "total_tokens": 2330,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "d011b624143916e5d3ecd856cb410f850ab67e75069691e96df73354815a2a15"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

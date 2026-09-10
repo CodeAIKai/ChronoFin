@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04660",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "693d27e05ce5de300ff7697c0b64506b8c4957c53119403cafcae75352a9a07b",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "7abee35878c652d904ae112dbc91fa7512778ebbb8e4ae2284f68d6597ec064d",
+  "started_utc": "2026-09-09T17:35:00.391003+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence provides FY2016 total current assets (1,001,425) and total current liabilities (577,464); ratio = 1,001,425/577,464 = 1.73, matching reference. Candidate refused claiming figures absent, which is false.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Block (Square), correctly identified in question and evidence."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2016 (Dec 31, 2016) balance sheet data available in evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Ratio is unitless, rounded to two decimals as requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave no answer and falsely claimed missing data; correct answer is 1.73."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate's refusal is unsupported; evidence contains needed figures."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "43e0ad0f0f3ddf8880ca1f1cd0fdd7ab30a3a4f3449307132c2aed764fae7092",
+    "latency_seconds": 3.015,
+    "usage": {
+      "prompt_tokens": 2098,
+      "completion_tokens": 245,
+      "total_tokens": 2343,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f2a1c6e2c6b6bbb5cfb1457a2b62a6cdb7e1bc8d4cde008c879247cdfb425950"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

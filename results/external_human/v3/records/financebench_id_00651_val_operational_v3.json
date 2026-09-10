@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00651",
+  "uid": "financebench_id_00651_val",
+  "split": "new_response_validation",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "862ed710bd86636bdf6b238483f8312a8d10c7fb37b7ed4e01d836f89a5ced6a",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "ee315609a74c372bf6dfafa1775620b9e4e2291e194661a941884232245e2ea0",
+  "started_utc": "2026-09-09T18:07:08.824897+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Yes, growth in Johnson & Johnson's adjusted EPS is expected to accelerate in FY2023.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Reference and evidence both show FY2022 adjusted EPS growth 3.6% and FY2023 guided 3.5%, a deceleration. Candidate claims acceleration, contradicting evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "60496068aabf5d11df9eeabfc6b29e4045875edc00827311163c8c69b3d362bd",
+    "latency_seconds": 6.268,
+    "usage": {
+      "prompt_tokens": 1476,
+      "completion_tokens": 104,
+      "total_tokens": 1580,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2a685c834a0a0623f64d94eb1392bed537e9dca9ee6e3341bbd3bb6a798e3fef"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

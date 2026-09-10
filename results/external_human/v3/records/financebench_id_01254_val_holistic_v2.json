@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01254",
+  "uid": "financebench_id_01254_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "6ca93459dd562c44f6a49cac8b0be26203fb7649ae42fae6c59b3295af0c11fe",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "91ff7c99741821862598b900cbf7f1dcd78669ecc27255c7523b137c5fbf488d",
+  "started_utc": "2026-09-09T18:10:06.525790+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate claims MGM did not pay dividends in FY2022, but evidence and reference show it maintained $0.01/share annual dividend throughout 2022, so it did pay. Conclusion contradicts evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3e9313b03ba75eff383e996b41a7dff7335a96e3a7f01e3334d8413ec830ed35",
+    "latency_seconds": 9.868,
+    "usage": {
+      "prompt_tokens": 1327,
+      "completion_tokens": 63,
+      "total_tokens": 1390,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "066bb94dd39b4b99c99eca09f73e51e4a88bd4e1f3ab871497d50e6d47768c5a"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

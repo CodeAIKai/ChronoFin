@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_03031",
+  "uid": "financebench_id_03031_val",
+  "split": "new_response_validation",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "bab43055f1db5f9a2c3cda86dea291f924de41f7a1c9586c582cf46cb91cb14e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "a3e2c2486a5ccb83ee1791ea9faba43c7282f902c68101c77e02eb81d1106dd5",
+  "started_utc": "2026-09-10T01:29:57.920154+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate computes NWC as 19,815 - 13,997 = 5,818 million (stated as $5.818 billion), matching reference 5818 and evidence balance sheet totals."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5bd1605a1d9076bec5b3b7d0fd675f94fdf63ec3389cec5068733c696fccbe40",
+    "latency_seconds": 11.421,
+    "usage": {
+      "prompt_tokens": 1531,
+      "completion_tokens": 61,
+      "total_tokens": 1592,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "01039d0981e7fb52537ebba102a3274c74e552f44961e10a691ae3500139b3d0"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

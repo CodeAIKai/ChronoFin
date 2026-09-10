@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00499",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "e25b399f98d3c5b8f1f6298d91b85fcaedabd152de7365187b6abb0036c0bdd9",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "5eeffc407b2d9bc8a4bbd45133cd19e209c2bc06cbf6c4cbaf52e88a96024a3f",
+  "started_utc": "2026-09-09T17:43:46.934199+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it is not possible to determine capital intensity and claims evidence lacks CAPEX/fixed asset ratios, withholding the requested conclusion despite evidence providing data to compute them (PP&E net 9,178; total assets 46,455; PP&E purchases 1,749; net sales 34,229).",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate addresses 3M as requested entity."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references FY2022 as in question."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No specific unit requested; candidate discusses ratios/data generally."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refuses to answer instead of providing yes/no with metrics; evidence supports computable CAPEX/Revenue ~5.1% and Fixed/Total ~19.8%."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate falsely claims filing lacks specific metrics; evidence contains PP&E, total assets, CAPEX."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8fa7d39ca1f142fc8fa845ab9b77b05d8cf1d2fd2110dcace292f98a961f1f05",
+    "latency_seconds": 6.048,
+    "usage": {
+      "prompt_tokens": 3586,
+      "completion_tokens": 277,
+      "total_tokens": 3863,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "7302621598cbd8e88cf3bfa734fc71ffc5ae90ebb86f830894b202d16389a1d2"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

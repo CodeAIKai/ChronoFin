@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00799",
+  "uid": "financebench_id_00799_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "5fc1ec66fbfba3c86a53fcd949fd5f75ac56e54da239b82eb3781e030418fdc0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "bebb983f53eaa2d9490ade4ec1bc53cbef7415ddc2884151764872c9c05d1056",
+  "started_utc": "2026-09-09T18:08:21.583109+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Amcor's quick ratio has improved from approximately 0.531 in FY2022 to approximately 0.573 in FY2023.",
+    "content_correct": false,
+    "confidence": 0.9,
+    "reference_conflict": true,
+    "reason": "Reference states quick ratio improved from 0.67 (FY2022) to 0.69 (FY2023); candidate computed 0.531 to 0.573 using only cash+receivables/total current liabilities, disagreeing with reference values and direction magnitude. Candidate says improved FY22->FY23, reference says improved FY23 vs FY22 (0.67 to 0.69), both say improved but numerals conflict."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "efb1976dd0bbb13741c15bf32031c4f0c21c26bb10a08f1c00be316a8c2ec96e",
+    "latency_seconds": 7.474,
+    "usage": {
+      "prompt_tokens": 2377,
+      "completion_tokens": 167,
+      "total_tokens": 2544,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "632299d105d0d8189db33b9bf720ce0b17169ba798dd73b21e71f15757b214f4"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": true
+}

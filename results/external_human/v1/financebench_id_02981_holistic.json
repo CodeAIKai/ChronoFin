@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_02981",
+  "company": "Corning",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "233b7fed3126bce1eb20a1a99db92926b912a8c07c392a8864853a6666ab554e",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "7e9092db1e55d62e413d85d8fa216d181ead2816625e30505c464ad6422e8d7c",
+  "started_utc": "2026-09-09T17:34:21.865196+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate used unsubstantiated margins (14.9%, 16.8%, 17.3%) yielding 16.3%. Evidence shows operating income of 1,306/11,503=11.3%, 509/11,303=4.5%, 2,112/14,082=15.0%; average ~10.3% matching reference, not candidate's figures."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "75aef900dc2e1d08649341c6287bf6d481e33bb9f2fd1729e15dd868be2fb048",
+    "latency_seconds": 2.727,
+    "usage": {
+      "prompt_tokens": 2021,
+      "completion_tokens": 106,
+      "total_tokens": 2127,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "07926f14298adbdff86e82fb002b6510ee79b3ae6a50b343e7178fde5f9f1525"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

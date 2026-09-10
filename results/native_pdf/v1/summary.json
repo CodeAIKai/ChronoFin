@@ -1,0 +1,47 @@
+{
+  "planned": 3,
+  "complete": 1,
+  "records": [
+    {
+      "id": "meta24_after",
+      "status": "error",
+      "score": null,
+      "error": "judge coverage IDs incomplete/duplicated",
+      "extraction": null,
+      "source": null
+    },
+    {
+      "id": "amazon24_after",
+      "status": "error",
+      "score": null,
+      "error": "judge coverage IDs incomplete/duplicated",
+      "extraction": null,
+      "source": null
+    },
+    {
+      "id": "meta24_before",
+      "status": "ok",
+      "score": 100.0,
+      "error": null,
+      "extraction": {
+        "facts_proposed": 0,
+        "facts_accepted": 0,
+        "rejected": [],
+        "raw_response_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "quote_verification": "whitespace-normalized exact contiguous source match",
+        "limitation": "Quote existence and raw numeric equality do not independently prove the correct fiscal column or semantic interpretation."
+      },
+      "source": {
+        "id": "pdf_6cce34aa0fb3",
+        "sha256": "6cce34aa0fb397601128854d3e71a0a43e0737eae552d2a65cc41da500205365",
+        "pages": 10,
+        "bytes": 177759,
+        "metadata_identity": "pinned_official",
+        "title": "Meta Q4 and FY2024 earnings release",
+        "entity": "Meta",
+        "published_at": "2025-01-29",
+        "url": "https://investor.atmeta.com/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-FINAL.pdf"
+      }
+    }
+  ]
+}

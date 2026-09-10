@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_07507",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "be1418293956f29a82f2b623771f324a2cc4292276c57fd3b9cf9c6cc635e536",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "ab495767a322393e36ed3c65cfabf014919d37a99aeffab0fd60b35dfa414b7d",
+  "started_utc": "2026-09-09T18:03:28.993176+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Evidence shows operating income 2016=$1,493,602k, 2015=$903,095k; YoY change = (1493602-903095)/903095 = 65.4%, not 65.2% as candidate computed. Reference is 65.4%."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "32581502fd6595f5a617d9864b4d40e7d4da9ee61cb1344a69c39902688ebafd",
+    "latency_seconds": 7.186,
+    "usage": {
+      "prompt_tokens": 1805,
+      "completion_tokens": 84,
+      "total_tokens": 1889,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ee98b9f1fc57c7d3ce17e5d2b0e10e2a707b58a03f469df1df7e8fd684c2fd3a"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

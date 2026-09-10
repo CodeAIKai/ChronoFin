@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00476",
+  "uid": "financebench_id_00476_dev",
+  "split": "development",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c963467d3e55fc121c5607e8fb6a51dc569a2d6c5dd237e6c7cc88caa666783e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "111d433e03a1448d5dae5cc12c95f8fd4c0486855d27088f3790d75e4a4e5af6",
+  "started_utc": "2026-09-09T18:05:59.099888+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Here are the key points on American Express's short-term borrowings and debt:",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Question asks which debt securities registered on national exchange under AmEx name as of 2022; reference says none. Evidence shows only Common Shares (AXP) on NYSE, no debt securities registered. Candidate gives unrelated debt summary, does not state none, so incorrect."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "85c6bb8d544f3f69b61f02f7d906f37093622419048cc93fbaf2fe6f58ac84f1",
+    "latency_seconds": 5.593,
+    "usage": {
+      "prompt_tokens": 1930,
+      "completion_tokens": 120,
+      "total_tokens": 2050,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "941d29e29e3aee17748d042064811382814e4593c8fbc97a45f1f1e377fb5be8"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

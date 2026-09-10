@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_04412",
+  "uid": "financebench_id_04412_val",
+  "split": "new_response_validation",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0a57b5d6f8e4e18d88d54aac9240dc58c24febe5a958365b6469e19bffedf8af",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "8ea2fc47cb5b34c40693043c138906476ea12331fed82c2215f0d989e8186845",
+  "started_utc": "2026-09-10T01:31:55.893437+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I'm sorry, but the information provided does not include Lockheed Martin's FY2020 revenue, which is necessary to calculate the asset turnover ratio.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly states it cannot calculate ratio due to missing FY2020 revenue, though evidence shows Total net sales 2020 = $65,398M and total assets 2020=$50,710M, 2019=$47,528M (avg=$49,119M; ratio=1.33). Candidate declined to answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "89de14db7b10ab56e483957d0fc2cf065ec7740b0358f7095549cc720bcabac5",
+    "latency_seconds": 8.575,
+    "usage": {
+      "prompt_tokens": 2909,
+      "completion_tokens": 150,
+      "total_tokens": 3059,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e3e43e7ef48cee94dfc5de29c4c2d7195865d1418811ad777c2e460527f5abc6"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

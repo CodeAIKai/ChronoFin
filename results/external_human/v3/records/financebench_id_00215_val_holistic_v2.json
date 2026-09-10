@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00215",
+  "uid": "financebench_id_00215_val",
+  "split": "new_response_validation",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "78910d9dd0782241d152f560ac517dbe3d89a802bb646b2707eeddc1fae80886",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "3ecf4b61bc997f12a00906989e2815ad397b77557589876fe8c88d74de8f3cbf",
+  "started_utc": "2026-09-09T18:05:01.871219+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers 'Yes, Verizon is capital intensive' using FY2022 evidence (capex, PP&E, licenses, depreciation) consistent with reference conclusion and supplied evidence showing heavy asset investment."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b0518e027c4863882a6d08a22a3d8badfdfa23b93c102bc9702235fed5e9980e",
+    "latency_seconds": 5.732,
+    "usage": {
+      "prompt_tokens": 3376,
+      "completion_tokens": 62,
+      "total_tokens": 3438,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "74d2396f795e0ea3f9ede88bf01a15b3904f0a97f7ab702aad2c1a27a8af9d83"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

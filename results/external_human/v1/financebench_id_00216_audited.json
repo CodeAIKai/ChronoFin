@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00216",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "d8cc105e7cd58564cae29bd1f241f306dcd00386ff4b1cc0ff9f0c1b1b60c221",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "8224336c16127f68ef10a5c4aa518408b5d3d1039362a68f2f71ffc2fb66a269",
+  "started_utc": "2026-09-09T17:32:26.215309+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate claims no direct info on Verizon FY2022 quick ratio and cannot assess, but evidence provides balance sheet data to compute quick ratio (cash 2605 + AR net 24506 = 27111; current liabilities 50171; QR ≈ 0.54), matching reference's unhealthy liquidity conclusion. Candidate also misstates that AR is missing when it is present.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Verizon, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2022 (Dec 31 2022) balance sheet supplied in evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Quick ratio is dimensionless; candidate did not compute but referenced ratio concept correctly."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refused to answer using quick ratio citing missing data, but reference says QR≈0.54 unhealthy; evidence supports computing QR."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate says AR not included and QR not relevant/available, but evidence includes AR net and totals to compute QR≈0.54."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f1708d6f929eb2a66a4805cd1c947d8b74dace93d6c0d50cd43966cce76ac71d",
+    "latency_seconds": 4.664,
+    "usage": {
+      "prompt_tokens": 2121,
+      "completion_tokens": 286,
+      "total_tokens": 2407,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "dbfe45f24dfe851f29a9361a212902322231d3e074f064fa168790f464adf301"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

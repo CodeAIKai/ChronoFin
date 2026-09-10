@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00288",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "998a1746640ed831b9408b555c084eb063dd566f077b1655d7eb10f4086ced30",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "a2f78804c481d59730260b63a760921ba08a44ce9bc491f643c0d442d6b96243",
+  "started_utc": "2026-09-09T17:32:30.881659+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate confirms a drop in Cash & Cash equivalents from FY2023 ($1,874M) to Q2 FY2024 ($1,093M) using evidence figures, agreeing with reference's yes and ~42% decline (781/1874≈41.7%)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "07db5a51a0520f4d094546497b2d68592d3dd3a75624964e15b1e35fde0ed4fe",
+    "latency_seconds": 2.074,
+    "usage": {
+      "prompt_tokens": 3365,
+      "completion_tokens": 76,
+      "total_tokens": 3441,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "658adfc7496116198b94ef6afde86635201f8143244a09441383989d516e9d8e"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

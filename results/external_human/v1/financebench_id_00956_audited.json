@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00956",
+  "company": "Johnson & Johnson",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "771ba39fcde2b6fd7f282d0458c0ed03816dda56fd77dc38d01288c8404a4460",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2de94a95f9fcd5aeb2620fa29d86cfb7dc81a9c3c8b97cb373a2ad2af71ec20b",
+  "started_utc": "2026-09-09T17:33:31.928448+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate concludes JnJ FY2022 is not a high growth business, supported by 1.3% sales growth evidence matching reference's 1.3% and negative stance.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is JnJ (Johnson & Johnson), correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Fiscal year 2022 (FY2022) addressed, matches question and reference."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Growth expressed in percent, consistent with reference's 1.3% sales growth."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Candidate answers no/not high growth, agreeing with reference's no and citing 1.3% sales growth."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence shows worldwide sales increased 1.3% in 2022, supporting candidate's core claim and reference."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1935e97c3e977c2f5926f8eeaac48981b4208600e89fcbc092f8ee626aba09bd",
+    "latency_seconds": 2.998,
+    "usage": {
+      "prompt_tokens": 1635,
+      "completion_tokens": 246,
+      "total_tokens": 1881,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "749b52601f524887377c5618faa70d688d96cf8f7e804b8d075904c564729a75"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

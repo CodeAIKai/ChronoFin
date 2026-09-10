@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00702",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "264828c5c7d1bf6ad3f4d6648e761d33d97897944e6e1770e428a17b6aa9465b",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "b12c84bc8af12dd7b32ec19a6aaf6f39bdfacb2e36e18cbe51449363ea93861c",
+  "started_utc": "2026-09-09T17:59:41.722262+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate claims no non-standard events increased 2019 net income, but evidence shows (Gain) on completion of Consumer Healthcare JV transaction of (8,107) million in 2019, a non-operating gain that substantially increased net income, matching reference.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Pfizer, correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period is 2019, candidate addresses 2019"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No specific unit requested; qualitative yes/no with gain context"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says no such events; correct answer is yes (Consumer Healthcare JV gain of $8,107M)"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence explicitly lists (Gain) on completion of Consumer Healthcare JV transaction (8,107) for 2019, contradicting candidate's claim of no mention"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "8d52f8c483b50aefcf55c891e6d9228b2b63b886b53e9af8ef5d1d5380bc9461",
+    "latency_seconds": 9.399,
+    "usage": {
+      "prompt_tokens": 1699,
+      "completion_tokens": 253,
+      "total_tokens": 1952,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8220237f95997599b375fa1aa6f631fd6cd2eac0775d8419c9945fff2cbe7a7f"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

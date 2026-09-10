@@ -1,0 +1,16 @@
+case_id,split,group,task,strategy,status,score,wall_seconds,reported_tokens,model_calls,gates,temporal,citations,faithfulness,numeric,materiality,counterevidence,scope,uncertainty,usefulness,safety
+D01,dev,meta24,财报阅读,counterbrief,error,,56.537,0,0,,,,,,,,,,,
+D01,dev,meta24,财报阅读,full_context,error,,43.695,0,0,,,,,,,,,,,
+D01,dev,meta24,财报阅读,lexical,error,,128.392,0,0,,,,,,,,,,,
+D02,dev,amazon24,财报阅读,counterbrief,ok,40,178.187,23916,3,invalid citation identity; incorrect numerical proof; answerability mismatch,1.0,1.0,1.0,0.863636,1.0,1.0,1.0,0.4375,1.0,1.0
+D02,dev,amazon24,财报阅读,full_context,ok,40,95.432,17994,2,incorrect numerical proof; answerability mismatch,1.0,1.0,1.0,0.75,1.0,1.0,1.0,0.5,1.0,1.0
+D02,dev,amazon24,财报阅读,lexical,ok,40,101.517,14738,2,incorrect numerical proof; answerability mismatch,1.0,1.0,1.0,0.823529,0.5,1.0,1.0,0.5,1.0,1.0
+D03,dev,tsmc24,公开数据问答,counterbrief,error,,67.068,0,0,,,,,,,,,,,
+D03,dev,tsmc24,公开数据问答,full_context,ok,55,66.685,15972,2,incorrect numerical proof,1.0,1.0,1.0,0.714286,1.0,1.0,1.0,0.5,1.0,1.0
+D03,dev,tsmc24,公开数据问答,lexical,ok,55,89.345,14169,2,incorrect numerical proof,1.0,1.0,1.0,0.714286,1.0,1.0,1.0,0.5,1.0,1.0
+D04,dev,iea25,行业研报摘要,counterbrief,ok,40,137.037,19995,3,answerability mismatch,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+D04,dev,iea25,行业研报摘要,full_context,ok,96.0,98.303,17760,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+D04,dev,iea25,行业研报摘要,lexical,ok,95.429,96.542,14978,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.428571,1.0,1.0
+D05,dev,fed25,行业研报摘要,counterbrief,error,,34.729,0,0,,,,,,,,,,,
+D05,dev,fed25,行业研报摘要,full_context,ok,96.0,84.975,16113,2,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0
+D05,dev,fed25,行业研报摘要,lexical,error,,37.138,0,0,,,,,,,,,,,

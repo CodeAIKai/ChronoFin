@@ -1,0 +1,6 @@
+{
+  "pass": false,
+  "stage": "copy_fingerprint",
+  "reason": "Fingerprint included local src/chronofin.egg-info build metadata, while copy correctly excluded it. No source-code byte differences.",
+  "resolution": "Align fingerprint exclusion with copy exclusion for *.egg-info; rerun full checkout verification."
+}

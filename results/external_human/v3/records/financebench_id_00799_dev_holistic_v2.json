@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00799",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "656f3c008a4e6b8fa59130d05c2f576ffb122c0f3fc77135a5ca83ac7962d421",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "5520ee046af9ed3a4345704b62bc4e0fcc706fd0569a166d00298c63f5ade028",
+  "started_utc": "2026-09-09T17:46:14.594745+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate describes Senior Notes and does not address quick ratio trend or state that it is not a relevant metric; withholds requested conclusion entirely."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1e0629d2571dd8e585aa4ccfbd4bac7183751e324213e9602970eeaa466dbaab",
+    "latency_seconds": 6.453,
+    "usage": {
+      "prompt_tokens": 2149,
+      "completion_tokens": 49,
+      "total_tokens": 2198,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c9e7d172950b81cbedbccda3f8f32608ef3b841816a490eb5f463ad0b191b122"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00799_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00799_holistic.json",
+  "parent_sha256": "4c82d5090ef0aeb4f057220d514cd13a9400631b2b95364991d6dad6e8c6bd3a"
+}

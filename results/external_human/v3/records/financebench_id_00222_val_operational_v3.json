@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00222",
+  "uid": "financebench_id_00222_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "a83d2d940f0b019b5b091106386c9f08889a63d8eb62a8ab10dfe42bddc88b0b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "646351ee6ab06c72fd059717f4f6507ac1d0f4f15eb3209402a2c3f224588b45",
+  "started_utc": "2026-09-09T18:05:11.918651+00:00",
+  "judgment": {
+    "label": "refusal",
+    "response_mode": "explicit_refusal",
+    "mode_quote": "I cannot determine AMD's liquidity profile or its quick ratio for FY22 as the provided text does not mention AMD or provide specific data related to AMD's financials.",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate explicitly declines to answer, stating provided text lacks AMD FY22 data, despite evidence containing AMD 2022 10-K balance sheet with figures to compute quick ratio."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "49e44f6b753b897d0b764ae76b23a2a5ccc3e50c9529f95a35d4deed379e2f36",
+    "latency_seconds": 6.482,
+    "usage": {
+      "prompt_tokens": 1944,
+      "completion_tokens": 118,
+      "total_tokens": 2062,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8a83d897dfa68f98df2f86ddff50e6492b98d07455c0a28d57f8f61f693cf927"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

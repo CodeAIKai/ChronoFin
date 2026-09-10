@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01091",
+  "uid": "financebench_id_01091_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "79989ed15016bbffeb8dfb25c29326143a89b40f29323ed610b0558ef65bef65",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "c211f06749b0a01e2e3accf6f9720076cd3ff1838b30e183869bb222ca3d2288",
+  "started_utc": "2026-09-09T18:09:31.065420+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "it can be inferred that there are no reported materially important ongoing legal battles from FY2022 in the provided excerpts.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Reference says yes, Boeing reported multiple lawsuits from 2018/2019 crashes. Evidence (Boeing 2022 10K p.112) states 'Multiple legal actions have been filed against us as a result of the October 29, 2018 accident... and March 10, 2019 accident... We cannot reasonably estimate a range of loss... from any remaining pending lawsuits' — these are ongoing legal battles in FY2022. Candidate incorrectly infers none were reported from FY2022."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "eab5a823c9cf21effa9dfaa23eb64af71e22762e1562ff9bb15290e2d2f63886",
+    "latency_seconds": 7.057,
+    "usage": {
+      "prompt_tokens": 1530,
+      "completion_tokens": 176,
+      "total_tokens": 1706,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "69e8ec215f9be314d82d77a0d5b4f688ce22eecc94b11d16745b953a2f6d0874"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

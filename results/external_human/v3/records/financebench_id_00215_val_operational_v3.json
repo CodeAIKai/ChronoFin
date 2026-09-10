@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00215",
+  "uid": "financebench_id_00215_val",
+  "split": "new_response_validation",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "78910d9dd0782241d152f560ac517dbe3d89a802bb646b2707eeddc1fae80886",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "3ecf4b61bc997f12a00906989e2815ad397b77557589876fe8c88d74de8f3cbf",
+  "started_utc": "2026-09-09T18:05:02.636927+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "Verizon Communications Inc. (Verizon) is a capital-intensive business.",
+    "content_correct": true,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Candidate answers 'yes' that Verizon is capital intensive for FY2022, agreeing with reference. Evidence shows $307,689M PP&E, $149,796M wireless licenses, $23.1B capex and $136,835M revenue supporting capital-intensive characterization, though reference's specific ratio 2.774729 is not cited by candidate."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "55fbe5923ae5feb96c6dcfbd9b3e21e58cadcbf7cf3fa4a39de0396558ce4202",
+    "latency_seconds": 6.921,
+    "usage": {
+      "prompt_tokens": 3511,
+      "completion_tokens": 135,
+      "total_tokens": 3646,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "96713d9aea3d5dd6b08f85cfafb49d4cf0a694dbc8f05b2ebf7444fcbc61abaf"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

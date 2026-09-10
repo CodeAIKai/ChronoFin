@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_03838",
+  "uid": "financebench_id_03838_val",
+  "split": "new_response_validation",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f4b8c1d683c9b5ecbc51a22e6b47106f15954a4d6f9a28647601f98f75c8f1cb",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "4d902e7068c02b1bb1d4c50998421c4c68ff54b25deda10d64db56a840aa0858",
+  "started_utc": "2026-09-10T01:30:53.724250+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate does not provide the requested growth rate; it withholds an answer citing cut-off text and offers to assist instead."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7579ca42fc6920200c2671c6c7f1839a1092ab50f7f87bd01142ad25558a0738",
+    "latency_seconds": 7.825,
+    "usage": {
+      "prompt_tokens": 1779,
+      "completion_tokens": 46,
+      "total_tokens": 1825,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a11e33340f079c19fea3491da4dd60d487a47185c313bcd348e3510c9712235c"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

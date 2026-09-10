@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00206",
+  "company": "JPMorgan",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "5e3d562d75b532af1d032ee72ab918c3a7fcac26104e5d5f260fda939a499db3",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "805c09033ce2a80f118c9b7c9f2d9cd526b2c969558cc47dd5559340f06d77f1",
+  "started_utc": "2026-09-09T17:42:15.880166+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate states gross margins are not relevant for financial firm JPM and explains why (focus on net interest margin, ROE, etc.), agreeing with reference. Despite saying data lacking, it substantively answers the conditional by stating non-relevance."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1bf38c794d2f16b9bc4759e333cdfb37f91313ed10e0984aedeb745bc2addcf5",
+    "latency_seconds": 5.468,
+    "usage": {
+      "prompt_tokens": 2097,
+      "completion_tokens": 69,
+      "total_tokens": 2166,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b9bd98d8f7fc8274dcb3f57d532e8d3cb8eedf3180d221b65a9a40a2f6c6329c"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00206_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00206_holistic.json",
+  "parent_sha256": "57dc62f746940dd8e842869991b8d4cad6b4c9e914a10ac77ebb04cf8167866b"
+}

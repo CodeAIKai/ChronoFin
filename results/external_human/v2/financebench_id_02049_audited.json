@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_02049",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "d8c7f9a34e581031c60b1491f92cf15bb0eda2594ef046d965dbb0f48773a346",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "257dc56cfd66db779f0dd0c467df55b7901a48899d806e9255b91354158c29e1",
+  "started_utc": "2026-09-09T17:50:43.654206+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers yes, JPM VaR risk decreased in Q2 2023 vs Q2 2022, matching reference and evidence (Total VaR $54M to $47M, decrease of $7M).",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is JPM, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period is Q2 2023 vs Q2 2022 (three months ended June 30), correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Metric is VaR in millions USD; candidate uses $ million consistently."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Answer is yes, decreased, matching reference and evidence."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Cites average Total VaR $54M (2022) vs $47M (2023) and $7M decrease from evidence."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5137e569a90c1654b82c046942ccb0d56fcc1cd1e4877de243b9576b02b88814",
+    "latency_seconds": 9.664,
+    "usage": {
+      "prompt_tokens": 2189,
+      "completion_tokens": 263,
+      "total_tokens": 2452,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cb17ef60fd8febf86b47d344cc1460dc0206e007cf0d9de44460b27a02232b34"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

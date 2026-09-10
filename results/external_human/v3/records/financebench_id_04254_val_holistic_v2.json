@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04254",
+  "uid": "financebench_id_04254_val",
+  "split": "new_response_validation",
+  "company": "American Water Works",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c052881493cca6bc04a7ee32fffb171ce8a5d1f8141e2acec8890d8179d90357",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "c55acf19c994de149dbf9dbadfc6c2ab67dcb2dd57e19ab020851491fc9a65e5",
+  "started_utc": "2026-09-10T01:31:41.454252+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate provides substantive answer of $1,832 million, matching reference 1832 and evidence (operating income $1,196M + depreciation & amortization $636M from statements)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b65780fdc6a48c59f61a9f362196ac76bdf82c5f2b330480248aed158bf3c85f",
+    "latency_seconds": 7.48,
+    "usage": {
+      "prompt_tokens": 3638,
+      "completion_tokens": 59,
+      "total_tokens": 3697,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b2b89fd8f1ea72045d09c1b41962d44af1d0959a9f1eedc62f56a61d397ff08f"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

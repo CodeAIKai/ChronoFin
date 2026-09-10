@@ -1,0 +1,228 @@
+{
+  "case_id": "D01",
+  "method": "legacy",
+  "order": "reverse",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+  "status": "ok",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文列明Meta FY2024营收164501百万美元与净利润62360百万美元，与M01、M02一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称广告曝光增11%与均价增10%驱动营收，引用M06原数据",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称FCF 52103百万美元且非GAAP口径，与M07、M08定义吻合",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称Reality Labs亏损17729百万美元为反面证据，与M03一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "contradicted",
+          "reason": "候选写'15.5亿美元法律拨备转回'，但M10原文为'USD 1.55 billion reduction in accrued legal losses'即15.5亿应为1.55亿，数值放大10倍且'转回'措辞虽近但金额错误",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": false
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选称FY2025 capex 600-650亿与折旧减29亿为前瞻，对应M04、M05且标明未实现",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C7",
+          "verdict": "supported",
+          "reason": "候选称未提供FY2025营收指引，与M09缺失指引一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "M01",
+          "present": true,
+          "quote": "营收 164501 百万美元"
+        },
+        {
+          "id": "M02",
+          "present": true,
+          "quote": "净利润 62360 百万美元"
+        },
+        {
+          "id": "M06",
+          "present": true,
+          "quote": "广告曝光增 11% 与均价增 10%"
+        },
+        {
+          "id": "M07",
+          "present": true,
+          "quote": "自由现金流 52103 百万美元"
+        },
+        {
+          "id": "M03",
+          "present": true,
+          "quote": "Reality Labs 经营亏损 17729 百万美元"
+        },
+        {
+          "id": "M10",
+          "present": true,
+          "quote": "Q4 因 15.5 亿美元法律拨备转回压低费用率"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "Q4 费用因 15.5 亿美元法律损失拨备转回而受益，压低当期费用率，非常态经营。"
+        }
+      ],
+      "summary_supported": false,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "最重要问题：候选将M10的1.55亿美元误写为15.5亿美元，且摘要沿用错误，导致反面证据金额矛盾并损害摘要支持性"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "3c80ec8222dbc30a4796fa6a3fa55efeaf3dc8e1ab4216b1f70a7fdbe0a128c4",
+      "latency_seconds": 6.13,
+      "usage": {
+        "prompt_tokens": 5215,
+        "completion_tokens": 756,
+        "total_tokens": 5971,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "d903bd589b27e5c013bd0249aace09a07a8f44d024ffd7fdcf57341cd63fb0fb"
+    },
+    "input_sha256": "89bc1149b6f4f48e31c8b731168fd57e63a7a742dfd9e60ea343b056d32abb03",
+    "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "e26cb7c8c1e8e7bd21ab0e074b5bdd637431aaeef7832d0b725d06f255b5e3d8",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 0.685714,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.857143,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 92.629,
+    "score": 55,
+    "gates": [
+      {
+        "reason": "contradicted claim",
+        "cap": 55
+      },
+      {
+        "reason": "unsupported summary",
+        "cap": 65
+      }
+    ],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  }
+}

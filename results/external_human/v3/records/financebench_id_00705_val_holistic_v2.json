@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00705",
+  "uid": "financebench_id_00705_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "f2e46ad5714a4316d6eca99c89a7364b7723f548b79a628681726edb8b1c663f",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "e88157246c76cc1dea71b2c1e4b6f39d05c056f09308ec0c6070563fd6dd977b",
+  "started_utc": "2026-09-09T18:07:35.123371+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states $400 million increase, matching reference and evidence (new $4.2B five-year agreement replaced prior $3.8B, difference $400M)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "76272a1a3a6eeedb2372f12c5aa8bc62d3eac9161e443aec279d49b20b003118",
+    "latency_seconds": 6.653,
+    "usage": {
+      "prompt_tokens": 2161,
+      "completion_tokens": 55,
+      "total_tokens": 2216,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "09a7b042f14b3845f69392a1d71e145175e437f9e6199f7eeddb46b456064553"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

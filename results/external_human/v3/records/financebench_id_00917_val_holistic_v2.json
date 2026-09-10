@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00917",
+  "uid": "financebench_id_00917_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "20713d5204f551b2760c304d3ae85fd97136e7a4c9a12aa3c101e600f8e0d020",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "0e2c2435a47db1d443193cda60f389aa54f85755bd6759d8c8e9ec216a3e81df",
+  "started_utc": "2026-09-09T18:08:49.574062+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate only summarizes the document and does not answer what drove operating margin change or state that the metric is not useful; it withholds the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bfa117b673ab2b5e51270ac6108cabf8d17fc9fc8d1cd38dcb54a4dc46438145",
+    "latency_seconds": 5.578,
+    "usage": {
+      "prompt_tokens": 1668,
+      "completion_tokens": 52,
+      "total_tokens": 1720,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9bad107b96f23a443664d8239c30b830bb766629bf4f50d48646556de05bf13d"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

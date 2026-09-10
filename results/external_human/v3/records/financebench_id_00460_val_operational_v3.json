@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00460",
+  "uid": "financebench_id_00460_val",
+  "split": "new_response_validation",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2b5a6da552ffb1c4ac7996308517a37541970e02c2337bb29c1eee889b9386ab",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "b1f6387fad00ab74ec2ad785f6b219a425f826d3bac2d939c4ab7107d06ec805",
+  "started_utc": "2026-09-09T18:05:53.132679+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Yes, there was a change in the number of Best Buy stores between Q2 of FY2024 and FY2023.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate reports Best Buy-branded stores fell from 930 (Q2 FY2023 end) to 907 (Q2 FY2024 end), but reference says total stores declined 1.32% from 982 to 969. Evidence table shows Total segment stores 982->969 and Best Buy branded 930->907; candidate answered 'Best Buy stores' but reference means total domestic stores, causing conflict and wrong metric scope."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "806623ae5ec838191fe16a3f50c345a975943353324fe176f36ce78967987a08",
+    "latency_seconds": 5.964,
+    "usage": {
+      "prompt_tokens": 2841,
+      "completion_tokens": 161,
+      "total_tokens": 3002,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a0e89158ca70206ca90ceec593d4812b1706a856ce8530be0aff6586769c06a0"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

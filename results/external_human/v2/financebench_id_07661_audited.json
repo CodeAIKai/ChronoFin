@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_07661",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "022c094b228aa7c57280368b6511731376c22e19bc19da7f8320f00ea1d71168",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "3f3e681cfe0f57ce50aeac373e97cc5d3713a0f33148847b0fed39b51fc58b3a",
+  "started_utc": "2026-09-09T17:54:46.350643+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states info not provided and declines to answer, despite evidence containing Square FY2020 operating cash flow of 381,603 thousand = 381.603 million (~382 million).",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Requested entity is Block/Square; candidate acknowledges it but claims absent."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Requested FY2020; candidate references FY2020."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Requested USD millions; candidate did not provide any number."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate withholds answer instead of providing ~382 million."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence clearly shows Square FY2020 net cash provided by operating activities 381,603 thousand = 381.6 million, contradicting candidate's claim of missing data."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5fe99a8e5cfc8347e169bcd94db31347e8a92502a5105b63ae24414db3079479",
+    "latency_seconds": 12.253,
+    "usage": {
+      "prompt_tokens": 3128,
+      "completion_tokens": 249,
+      "total_tokens": 3377,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5e9b5504520b6cb4683965813859a6ed902ebaa45377c41954ed2065635c2f34"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

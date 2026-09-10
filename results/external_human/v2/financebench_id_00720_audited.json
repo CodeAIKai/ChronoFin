@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_00720",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "36c7be23558c700c1447ce1939e6f34aec43492628f3703eb6a35e4fcc142bce",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "69300092a1f833412f0576c43edbc5eb9b549bd67f9a68cbb9e32cafdae267c5",
+  "started_utc": "2026-09-09T17:45:37.746163+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it lacks access to FY2022 documents and only explains how to obtain answer and gives generic reasoning on gross margin irrelevance without affirming reference conclusion using evidence; withholds requested conclusion.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Identifies American Express as entity in discussion"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Mentions FY2022 / fiscal year ended Dec 31 2022"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No metric unit requested since gross margin not asserted"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Does not state gross margin not useful per reference; withholds conclusion and says cannot access data"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Does not use supplied evidence to support any substantive answer"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "88503d4bf5949ff38ff15e670b6d667ac45d0346e83db666b494fa0cbb627b2a",
+    "latency_seconds": 9.639,
+    "usage": {
+      "prompt_tokens": 2445,
+      "completion_tokens": 230,
+      "total_tokens": 2675,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "30964715e4f97118835f2a135cc57dafed84742a1cfb775219888b5d8172c9f2"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

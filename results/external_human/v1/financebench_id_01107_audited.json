@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01107",
+  "company": "CVS Health",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "7c3371fa8360bfa8bc26c36e2994969da7a59dcac2b9c09a803a096fa3b23b7e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "09ce11472e1487cfcfc5b97b9c90a4fbb673c75fb6f08a0a45870c6ec45180de",
+  "started_utc": "2026-09-09T17:33:41.177818+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers yes and lists the same material legal battle categories (usual and customary pricing, PBM litigation, controlled substances/opioid) as reference, with evidence from 2022 10-K supporting these ongoing matters across 2020-2022 context. Settlement amounts match evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is CVS Health, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Question asks 2022, 2021, 2020; evidence from 2022 10-K covers matters spanning these years (e.g., 2021 OH verdict, 2022 settlements)."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "No numeric unit requested; qualitative yes/no with case descriptions."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Candidate says yes with material legal battles; reference says yes with same categories."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence supports usual/customary, PBM, opioid litigation and $4.3B/$625M settlements."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "83fd511bfe7070ebea3e775d654582afe4e0489388cccc1e15df2bb910ff408d",
+    "latency_seconds": 5.393,
+    "usage": {
+      "prompt_tokens": 4583,
+      "completion_tokens": 276,
+      "total_tokens": 4859,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f862ecec8fbd21d73595266eb3450b2bb50be801565fc28fd5a98b28858b153c"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

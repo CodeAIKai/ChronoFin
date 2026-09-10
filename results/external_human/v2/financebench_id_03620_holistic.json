@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_03620",
+  "company": "PepsiCo",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "4d7c3f2d30621d6c8785e37170e1ca07f4cc5928c862cf8c81eaa29e297f0b31",
+  "reference_text_differs": true,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "ec39cc9c79dcdf8ca5e65eceac72c20df17fba25b455e19aaf8e48b3de16928b",
+  "started_utc": "2026-09-09T17:51:59.352726+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds the requested figure and only explains how to calculate it using external filings, providing no substantive answer despite evidence being supplied."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "fb3f0785c4f47e97a6885e7cafe220d8966285998c319b034bd38d22239b0122",
+    "latency_seconds": 6.724,
+    "usage": {
+      "prompt_tokens": 3070,
+      "completion_tokens": 49,
+      "total_tokens": 3119,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "60e2ea76e3f296fdd016b995fce365e3ab7e2d0a73ef8f35f2b78c30364f9896"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

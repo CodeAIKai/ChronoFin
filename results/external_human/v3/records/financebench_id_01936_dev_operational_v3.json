@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01936",
+  "uid": "financebench_id_01936_dev",
+  "split": "development",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cfa4b9dfed26385d87209cd138f35b897c01617308e470de0f6ae1ae9f58f26c",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "cbb363933b3799f115719d8c7d10f399f33200b41365b622df5eaa75f7133d03",
+  "started_utc": "2026-09-10T01:28:19.095906+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "The nature of AMCOR's restructuring liability as of Q2 of FY2023 close is related to costs associated with the company's restructuring activities.",
+    "content_correct": false,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Reference states 87% of restructuring liability is employee liabilities; candidate gives nature/purpose but says activities primarily involve Russia-Ukraine conflict and Bemis integration, and omits the 87% employee-liability reference fact. Evidence shows Q2 FY2023 (Dec 31, 2022) liability $93m with $81m employee (87%), but candidate does not align with reference's specific nature claim."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "70aaff479ef6526ba7430e46ab524506da73e56eeedf7c0e2a0e071a2a7cc361",
+    "latency_seconds": 10.944,
+    "usage": {
+      "prompt_tokens": 1407,
+      "completion_tokens": 163,
+      "total_tokens": 1570,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a3ae5f09db97af4f01322db64c9a6405012b63e93c771c8d958f300f90aeade0"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

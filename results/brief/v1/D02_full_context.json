@@ -1,0 +1,1120 @@
+{
+  "case_id": "D02",
+  "split": "dev",
+  "group": "amazon24",
+  "task": "财报阅读",
+  "strategy": "full_context",
+  "started_utc": "2026-09-09T15:42:25.969627+00:00",
+  "protocol_sha256": "c8eadc99a15c3bc0ac28586bff1dcace39cb229a3ff928cbdd680165d3e63ab2",
+  "record": {
+    "version": "counterbrief-1.0",
+    "strategy": "full_context",
+    "query": {
+      "question": "用 Amazon FY2024 财报解释 AWS 对集团利润的重要性，并评估利润改善是否同步转化为现金。",
+      "as_of": "2025-06-01"
+    },
+    "evidence": [
+      {
+        "id": "A03",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual sales",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 net sales: USD 107556 million.",
+        "value": 107556,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A04",
+        "source_id": "amazon24",
+        "locator": "p11 AWS annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "AWS FY2024 operating income: USD 39834 million.",
+        "value": 39834,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A01",
+        "source_id": "amazon24",
+        "locator": "p10 annual net sales",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 net sales: USD 637959 million.",
+        "value": 637959,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A02",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating income",
+        "role": "support",
+        "status": "observed",
+        "text": "Amazon FY2024 operating income: USD 68593 million.",
+        "value": 68593,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A05",
+        "source_id": "amazon24",
+        "locator": "p10 annual free cash flow",
+        "role": "caution",
+        "status": "observed",
+        "text": "Amazon FY2024 free cash flow: USD 38219 million; FY2023: USD 36813 million.",
+        "value": 38219,
+        "unit": "USD million",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A06",
+        "source_id": "amazon24",
+        "locator": "p10 annual operating cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 operating cash flow reached about USD 115.9 billion, a 36% increase.",
+        "value": 115.9,
+        "unit": "USD billion",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A08",
+        "source_id": "amazon24",
+        "locator": "p11 AWS quarterly margins",
+        "role": "caution",
+        "status": "observed",
+        "text": "AWS operating margin: Q3 2024 38.1%; Q4 2024 36.9%.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "A07",
+        "source_id": "amazon24",
+        "locator": "p10 FCF definition footnotes",
+        "role": "caution",
+        "status": "definition",
+        "text": "Amazon headline free cash flow deducts net property purchases; separate variants also deduct lease principal.",
+        "value": null,
+        "unit": "",
+        "entity": "Amazon",
+        "published_at": "2025-02-06"
+      },
+      {
+        "id": "M01",
+        "source_id": "meta24",
+        "locator": "p1 annual revenue row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 revenue: USD 164501 million.",
+        "value": 164501,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M02",
+        "source_id": "meta24",
+        "locator": "p1 annual net income row",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 net income: USD 62360 million.",
+        "value": 62360,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M03",
+        "source_id": "meta24",
+        "locator": "p9 segment operating results",
+        "role": "caution",
+        "status": "observed",
+        "text": "Reality Labs FY2024 operating loss: USD 17729 million.",
+        "value": -17729,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M06",
+        "source_id": "meta24",
+        "locator": "p1 annual ad metrics",
+        "role": "support",
+        "status": "observed",
+        "text": "FY2024 ad impressions grew 11%; average ad price rose 10%.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M07",
+        "source_id": "meta24",
+        "locator": "p10 annual free cash flow",
+        "role": "support",
+        "status": "observed",
+        "text": "Meta FY2024 free cash flow: USD 52103 million.",
+        "value": 52103,
+        "unit": "USD million",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "I01",
+        "source_id": "iea25",
+        "locator": "current consumption section",
+        "role": "context",
+        "status": "estimate",
+        "text": "IEA estimated 2024 data-centre electricity use at 415 TWh, about 1.5% globally.",
+        "value": 415,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "M04",
+        "source_id": "meta24",
+        "locator": "p2 CFO outlook",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Meta anticipated FY2025 capital expenditures of USD 60–65 billion; guidance, not realized spending.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M05",
+        "source_id": "meta24",
+        "locator": "p2 depreciation footnote",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Longer server lives were expected to reduce FY2025 depreciation by USD 2.9 billion; an accounting-estimate change.",
+        "value": 2.9,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M09",
+        "source_id": "meta24",
+        "locator": "p2 revenue outlook",
+        "role": "caution",
+        "status": "absence",
+        "text": "Meta provided no FY2025 full-year revenue guidance in this release.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "T01",
+        "source_id": "tsmc24",
+        "locator": "opening results paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "TSMC Q4 2024 revenue: TWD 868.46 billion.",
+        "value": 868.46,
+        "unit": "TWD billion",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T02",
+        "source_id": "tsmc24",
+        "locator": "year-over-year paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 38.8% measured in TWD.",
+        "value": 38.8,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T03",
+        "source_id": "tsmc24",
+        "locator": "USD results paragraph",
+        "role": "context",
+        "status": "observed",
+        "text": "Q4 2024 revenue grew 37.0% measured in USD.",
+        "value": 37.0,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T04",
+        "source_id": "tsmc24",
+        "locator": "margin paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Q4 2024 gross margin was 59.0%; net profit margin was 43.1%.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "F01",
+        "source_id": "fed25",
+        "locator": "overview opening",
+        "role": "context",
+        "status": "observed",
+        "text": "The assessment uses market conditions and data through April 11, 2025.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F02",
+        "source_id": "fed25",
+        "locator": "asset valuations",
+        "role": "caution",
+        "status": "observed",
+        "text": "Equity valuations remained high versus expected earnings; liquidity deteriorated, with generally orderly functioning.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F03",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "caution",
+        "status": "observed",
+        "text": "Hedge-fund leverage indicators were near decade highs and concentrated in larger funds.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F04",
+        "source_id": "fed25",
+        "locator": "financial leverage",
+        "role": "support",
+        "status": "observed",
+        "text": "Banks remained broadly resilient, with most reporting capital well above regulatory requirements.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F05",
+        "source_id": "fed25",
+        "locator": "household and business debt",
+        "role": "support",
+        "status": "observed",
+        "text": "Business and household debt vulnerabilities were moderate; debt relative to GDP had declined.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F06",
+        "source_id": "fed25",
+        "locator": "funding risks",
+        "role": "support",
+        "status": "observed",
+        "text": "Funding vulnerabilities had declined to moderate levels; runnable liabilities remained a persistent risk.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "F07",
+        "source_id": "fed25",
+        "locator": "household credit",
+        "role": "caution",
+        "status": "observed",
+        "text": "Credit-card and auto delinquencies exceeded pre-pandemic levels, especially among non-prime borrowers.",
+        "value": null,
+        "unit": "",
+        "entity": "Federal Reserve / US financial system",
+        "published_at": "2025-05-07"
+      },
+      {
+        "id": "I02",
+        "source_id": "iea25",
+        "locator": "2030 outlook section",
+        "role": "support",
+        "status": "forecast",
+        "text": "IEA projected data-centre electricity demand of around 945 TWh in 2030.",
+        "value": 945,
+        "unit": "TWh",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I03",
+        "source_id": "iea25",
+        "locator": "grid integration section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Without action, grid constraints could delay around 20% of planned data-centre projects.",
+        "value": 20,
+        "unit": "%",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I04",
+        "source_id": "iea25",
+        "locator": "uncertainty section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "IEA scenario range for 2035 data-centre demand: 700–1700 TWh; adoption, efficiency and bottlenecks matter.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I05",
+        "source_id": "iea25",
+        "locator": "global demand growth section",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Data centres represent roughly one-tenth of projected global electricity-demand growth through 2030.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "I06",
+        "source_id": "iea25",
+        "locator": "energy efficiency section",
+        "role": "support",
+        "status": "forecast",
+        "text": "AI applications could improve grid management and industrial efficiency; deployment barriers remain.",
+        "value": null,
+        "unit": "",
+        "entity": "IEA / data centres",
+        "published_at": "2025-04-10"
+      },
+      {
+        "id": "M08",
+        "source_id": "meta24",
+        "locator": "p4 non-GAAP definition",
+        "role": "caution",
+        "status": "definition",
+        "text": "Meta free cash flow deducts property purchases and finance-lease principal; non-GAAP comparability is limited.",
+        "value": null,
+        "unit": "",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "M10",
+        "source_id": "meta24",
+        "locator": "p1 expense footnote",
+        "role": "caution",
+        "status": "observed",
+        "text": "Q4 expenses benefited from a USD 1.55 billion reduction in accrued legal losses.",
+        "value": 1.55,
+        "unit": "USD billion",
+        "entity": "Meta",
+        "published_at": "2025-01-29"
+      },
+      {
+        "id": "T05",
+        "source_id": "tsmc24",
+        "locator": "technology mix paragraph",
+        "role": "support",
+        "status": "observed",
+        "text": "Nodes of 7nm or smaller contributed 74% of Q4 wafer revenue.",
+        "value": 74,
+        "unit": "%",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      },
+      {
+        "id": "T06",
+        "source_id": "tsmc24",
+        "locator": "CFO outlook paragraph",
+        "role": "caution",
+        "status": "forecast",
+        "text": "Management expected smartphone seasonality in Q1 2025, partly offset by AI demand growth.",
+        "value": null,
+        "unit": "",
+        "entity": "TSMC",
+        "published_at": "2025-01-16"
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "partial",
+      "summary": "基于Amazon FY2024财报，AWS净销售额107556百万美元仅占集团16.860%，但营业利润39834百万美元占集团营业利润68593百万美元的58.081%，营业利润率37.062%，凸显其为集团利润核心驱动。集团FY2024经营现金流约1159亿美元（增36%），但自由现金流仅38219百万美元，较FY2023的36813百万美元微增，且AWS利润达集团FCF的104.225%。因缺FY2023营业利润，利润改善幅度未知；但经营现金大增未同步转化为自由现金，资本支出拖累明显。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024 operating income 39834 million USD，占 Amazon 集团 operating income 68593 million USD 的 58.081%，是集团利润核心驱动。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AWS FY2024 net sales 107556 million USD 仅占集团 net sales 637959 million USD 的 16.860%，收入占比远低于利润占比。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ],
+          "numbers": [
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A01",
+              "value": 637959,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AWS FY2024 operating margin 约 37.062%，Q3、Q4 季度 margin 分别为 38.1% 与 36.9%，盈利性高。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "A04",
+            "A03",
+            "A08"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Amazon FY2024 free cash flow 38219 million USD，较 FY2023 的 36813 million USD 仅微增；经营现金流增36%但自由现金转化弱，推断利润现金转化不充分。",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A05",
+            "A06"
+          ],
+          "numbers": [
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A05",
+              "value": 36813,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A06",
+              "value": 115.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "AWS operating income 39834 million USD 是集团 free cash flow 38219 million USD 的 104.225%，表明集团自由现金未完全覆盖 AWS 利润，资本支出拖累。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "A04",
+            "A05"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Amazon headline FCF 扣除 net property purchases 等，定义致利润与自由现金口径差异。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "A04/A02*100",
+          "value": 58.081,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "A03/A01*100",
+          "value": 16.86,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "A04/A03*100",
+          "value": 37.062,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A03"
+          ]
+        },
+        {
+          "id": "K4",
+          "expression": "(A06*1000)/A02*100",
+          "value": 169.041,
+          "unit": "%",
+          "evidence_ids": [
+            "A06",
+            "A02"
+          ]
+        },
+        {
+          "id": "K5",
+          "expression": "A04/A05*100",
+          "value": 104.225,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A05"
+          ]
+        }
+      ],
+      "limitations": [
+        "未提供 Amazon FY2023 集团及 AWS 营业利润绝对值，无法精确计算利润同比改善幅度",
+        "未披露 AWS 单独资本支出与折旧，现金转化评估仅基于集团整体 FCF 及定义"
+      ],
+      "follow_up": [
+        {
+          "action": "核查 Amazon FY2023 10-K 中分部及集团营业利润以计算 AWS 利润 YoY",
+          "reason": "可确认利润改善幅度是否真实同步于现金",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ]
+        },
+        {
+          "action": "获取 AWS 资本支出与租赁本金支出明细",
+          "reason": "解释 FCF 低于 AWS 营业利润的具体缺口",
+          "evidence_ids": [
+            "A05",
+            "A07"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "partial",
+      "summary": "基于Amazon FY2024财报，AWS净销售额107556百万美元仅占集团16.860%，但营业利润39834百万美元占集团营业利润68593百万美元的58.081%，营业利润率37.062%，凸显其为集团利润核心驱动。集团FY2024经营现金流约1159亿美元（增36%），但自由现金流仅38219百万美元，较FY2023的36813百万美元微增，且AWS利润达集团FCF的104.225%。因缺FY2023营业利润，利润改善幅度未知；但经营现金大增未同步转化为自由现金，资本支出拖累明显。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "AWS FY2024 operating income 39834 million USD，占 Amazon 集团 operating income 68593 million USD 的 58.081%，是集团利润核心驱动。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A02",
+              "value": 68593,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AWS FY2024 net sales 107556 million USD 仅占集团 net sales 637959 million USD 的 16.860%，收入占比远低于利润占比。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ],
+          "numbers": [
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A01",
+              "value": 637959,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AWS FY2024 operating margin 约 37.062%，Q3、Q4 季度 margin 分别为 38.1% 与 36.9%，盈利性高。",
+          "kind": "fact",
+          "role": "driver",
+          "evidence_ids": [
+            "A04",
+            "A03",
+            "A08"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A03",
+              "value": 107556,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Amazon FY2024 free cash flow 38219 million USD，较 FY2023 的 36813 million USD 仅微增；经营现金流增36%但自由现金转化弱，推断利润现金转化不充分。",
+          "kind": "inference",
+          "role": "risk",
+          "evidence_ids": [
+            "A05",
+            "A06"
+          ],
+          "numbers": [
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A05",
+              "value": 36813,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A06",
+              "value": 115.9,
+              "unit": "USD billion"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "AWS operating income 39834 million USD 是集团 free cash flow 38219 million USD 的 104.225%，表明集团自由现金未完全覆盖 AWS 利润，资本支出拖累。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "A04",
+            "A05"
+          ],
+          "numbers": [
+            {
+              "source_id": "A04",
+              "value": 39834,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "A05",
+              "value": 38219,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Amazon headline FCF 扣除 net property purchases 等，定义致利润与自由现金口径差异。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "A07"
+          ],
+          "numbers": []
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "A04/A02*100",
+          "value": 58.081,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "A03/A01*100",
+          "value": 16.86,
+          "unit": "%",
+          "evidence_ids": [
+            "A03",
+            "A01"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "A04/A03*100",
+          "value": 37.062,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A03"
+          ]
+        },
+        {
+          "id": "K4",
+          "expression": "(A06*1000)/A02*100",
+          "value": 169.041,
+          "unit": "%",
+          "evidence_ids": [
+            "A06",
+            "A02"
+          ]
+        },
+        {
+          "id": "K5",
+          "expression": "A04/A05*100",
+          "value": 104.225,
+          "unit": "%",
+          "evidence_ids": [
+            "A04",
+            "A05"
+          ]
+        }
+      ],
+      "limitations": [
+        "未提供 Amazon FY2023 集团及 AWS 营业利润绝对值，无法精确计算利润同比改善幅度",
+        "未披露 AWS 单独资本支出与折旧，现金转化评估仅基于集团整体 FCF 及定义"
+      ],
+      "follow_up": [
+        {
+          "action": "核查 Amazon FY2023 10-K 中分部及集团营业利润以计算 AWS 利润 YoY",
+          "reason": "可确认利润改善幅度是否真实同步于现金",
+          "evidence_ids": [
+            "A04",
+            "A02"
+          ]
+        },
+        {
+          "action": "获取 AWS 资本支出与租赁本金支出明细",
+          "reason": "解释 FCF 低于 AWS 营业利润的具体缺口",
+          "evidence_ids": [
+            "A05",
+            "A07"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "69e1bb1a870a732867cbe0c231cc97bb7f02d4f44650ca739141ca4e1fb7ae31",
+        "latency_seconds": 50.981,
+        "usage": {
+          "prompt_tokens": 3835,
+          "completion_tokens": 4777,
+          "total_tokens": 8612,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3539
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "low",
+        "request_id_sha256": "cf4c4cd9111eecc52f882900f991d76c69085f0d1693e6f8350a7cb43f951f6b"
+      }
+    ],
+    "input_sha256": "b92467577d81ed38f734722ed73cd3807e4b8fa2171f38ce33b72020094d02ec",
+    "answer_sha256": "6c40faeaa20819a69ed102b2494948e887fdd9a8d6eb29a1b7013d9d06b3fa55"
+  },
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "A04与A02数值及占比计算正确，事实匹配",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "A03与A01数值及占比正确，仅集团内占比未称市场份",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "全年margin由A04/A03算出，季度margin引A08一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "FCF与OCF数据来自A05/A06，推断现金转化弱合理",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "A04/A05比值104.225%计算正确",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "A07定义描述准确",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "A01",
+          "present": true,
+          "quote": "集团 net sales 637959 million USD"
+        },
+        {
+          "id": "A02",
+          "present": true,
+          "quote": "Amazon 集团 operating income 68593 million USD"
+        },
+        {
+          "id": "A03",
+          "present": true,
+          "quote": "AWS FY2024 net sales 107556 million USD"
+        },
+        {
+          "id": "A04",
+          "present": true,
+          "quote": "AWS FY2024 operating income 39834 million USD"
+        },
+        {
+          "id": "A05",
+          "present": true,
+          "quote": "Amazon FY2024 free cash flow 38219 million USD，较 FY2023 的 36813 million USD"
+        },
+        {
+          "id": "A08",
+          "present": true,
+          "quote": "Q3、Q4 季度 margin 分别为 38.1% 与 36.9%"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "缺FY2023营业利润使利润改善幅度未知，但AWS利润重要性及经营现金未同步转化为自由现金已用FY2024数据评估"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "e87f5c8334ffc37d002271e7440c5ea6b72c2722419a5098adb7daa168bf5655",
+      "latency_seconds": 44.439,
+      "usage": {
+        "prompt_tokens": 5123,
+        "completion_tokens": 4259,
+        "total_tokens": 9382,
+        "prompt_tokens_details": {
+          "cached_tokens": 3776
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3669
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "low",
+      "request_id_sha256": "e8cabfe1f6173e9432c81b707245f473a431b8887a40e0848e581d31d29b2c6d"
+    },
+    "input_sha256": "7bdb021bae0e54e8dea6645b3d82f412d12b623aa149ca575377fffd5d8bfd33",
+    "answer_sha256": "6c40faeaa20819a69ed102b2494948e887fdd9a8d6eb29a1b7013d9d06b3fa55",
+    "judge_prompt_sha256": "f95bd1a0306ed7510142ba1c2e0b25b058b287d2730f75a768d0da8b65ee7d14"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.0",
+    "answer_sha256": "6c40faeaa20819a69ed102b2494948e887fdd9a8d6eb29a1b7013d9d06b3fa55",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 0.75,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 0.5,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 93.0,
+    "score": 40,
+    "gates": [
+      {
+        "reason": "incorrect numerical proof",
+        "cap": 55
+      },
+      {
+        "reason": "answerability mismatch",
+        "cap": 40
+      }
+    ],
+    "issues": [
+      "numeric binding: C4",
+      "calculation: K1",
+      "calculation: K3",
+      "calculation: K4"
+    ],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  },
+  "status": "ok",
+  "finished_utc": "2026-09-09T15:44:01.401380+00:00",
+  "wall_seconds": 95.432
+}

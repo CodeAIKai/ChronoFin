@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_08135",
+  "uid": "financebench_id_08135_val",
+  "split": "new_response_validation",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "54cb3c305ce6dd068ca0a887e3b11176371519a2777c5a143bf943506d89c006",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "3bd5d49ffeb3f84bc6ff09d3b73c3a1df9ba524dcfc257d5e063eb279cad00aa",
+  "started_utc": "2026-09-10T01:33:59.324347+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate withholds the requested calculation and only explains how to compute it, saying it cannot answer without provided figures despite evidence supplying them."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ebd7768c5eb2e3f9466440ae96ca8d6350bdc17fe69be93e017270cd1b16ef60",
+    "latency_seconds": 4.35,
+    "usage": {
+      "prompt_tokens": 1535,
+      "completion_tokens": 48,
+      "total_tokens": 1583,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e7c333d9f6b4fd56a20fd33dd054dee04a02d32caabd0f3a05118f400fc90f98"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

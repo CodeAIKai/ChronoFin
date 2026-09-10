@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_01902",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "8c9604d2b4f561e1237f19e79483d84752b236986a789aeacd20ab25a7731456",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "82689a31a869a29d774f6683c90ab9e90bd05eaed13d89e4e28a7b205ab70e31",
+  "started_utc": "2026-09-09T17:49:48.973349+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states answer cannot be determined from filing and withholds the requested category, even though evidence shows Entertainment had 9.0% growth (best by top line) in Domestic Q2 FY2024.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Question asks Best Buy domestic product category; candidate addresses Best Buy domestic."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate references Q2 FY2024 as unspecified period needing breakdown."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Question asks best by top line; candidate does not provide metric."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refuses to answer instead of stating Entertainment."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence provides category growth rates showing Entertainment best, contradicting cannot-determine claim."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "484f09654644a1899c2a725f289d7eb43a53e28e1f1c2889244f04412f83acfd",
+    "latency_seconds": 8.6,
+    "usage": {
+      "prompt_tokens": 2075,
+      "completion_tokens": 237,
+      "total_tokens": 2312,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ab8d989f217f15f502fffcd744ac983f8f0de90440cca93cf110dc434fcf16eb"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

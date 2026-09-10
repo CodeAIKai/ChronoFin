@@ -1,0 +1,176 @@
+E01 lexical ok 100.0
+E01 full_context ok 65
+E02 full_context ok 100.0
+E02 lexical ok 100.0
+E01 counterbrief ok 100.0
+E02 counterbrief ok 100.0
+E03 lexical ok 89.5
+E03 full_context ok 97.5
+E04 lexical ok 55
+E03 counterbrief ok 93.5
+E04 full_context ok 90.0
+E04 counterbrief ok 100.0
+E05 lexical ok 55
+E05 full_context ok 55
+E06 full_context error None
+E06 counterbrief error None
+E06 lexical ok 100.0
+E05 counterbrief ok 96.0
+E07 full_context error None
+E08 lexical error None
+E08 full_context error None
+E08 counterbrief error None
+E07 lexical ok 65
+E09 full_context error None
+E07 counterbrief error None
+E09 counterbrief error None
+E10 full_context error None
+E10 lexical error None
+E10 counterbrief error None
+E09 lexical ok 100.0
+E11 lexical error None
+E12 lexical error None
+E11 full_context error None
+E12 full_context error None
+E12 counterbrief error None
+E13 lexical error None
+E13 full_context error None
+E13 counterbrief error None
+E14 full_context error None
+E14 counterbrief error None
+E15 lexical error None
+E15 full_context error None
+E15 counterbrief error None
+E14 lexical error None
+E11 counterbrief error None
+{
+  "generated_utc": "2026-09-09T15:59:19.726621+00:00",
+  "n_results": 60,
+  "failures": 27,
+  "human_annotation_executed": false,
+  "scope": "Author-designed small visible public-source study, not blind or human-validated",
+  "strategies": {
+    "dev/lexical": {
+      "n": 5,
+      "successes": 5,
+      "mean_score_failure_zero": 80.1,
+      "source_group_bootstrap95": [
+        62.9,
+        97.0
+      ],
+      "mean_tokens_reported": 7639,
+      "mean_wall_seconds": 17.4,
+      "gate_rate": 0.4
+    },
+    "dev/full_context": {
+      "n": 5,
+      "successes": 5,
+      "mean_score_failure_zero": 80.7,
+      "source_group_bootstrap95": [
+        63.2,
+        98.2
+      ],
+      "mean_tokens_reported": 10505.4,
+      "mean_wall_seconds": 18.94,
+      "gate_rate": 0.4
+    },
+    "dev/counterbrief": {
+      "n": 5,
+      "successes": 5,
+      "mean_score_failure_zero": 97.2,
+      "source_group_bootstrap95": [
+        95.2,
+        99.2
+      ],
+      "mean_tokens_reported": 11208.8,
+      "mean_wall_seconds": 24.41,
+      "gate_rate": 0.0
+    },
+    "evaluation/lexical": {
+      "n": 15,
+      "successes": 8,
+      "mean_score_failure_zero": 44.3,
+      "source_group_bootstrap95": [
+        13.75,
+        72.583
+      ],
+      "mean_tokens_reported": 4014.5,
+      "mean_wall_seconds": 8.32,
+      "gate_rate": 0.2
+    },
+    "evaluation/full_context": {
+      "n": 15,
+      "successes": 5,
+      "mean_score_failure_zero": 27.167,
+      "source_group_bootstrap95": [
+        4.583,
+        55.833
+      ],
+      "mean_tokens_reported": 3907.4,
+      "mean_wall_seconds": 6.51,
+      "gate_rate": 0.13333333333333333
+    },
+    "evaluation/counterbrief": {
+      "n": 15,
+      "successes": 5,
+      "mean_score_failure_zero": 32.633,
+      "source_group_bootstrap95": [
+        8.0,
+        65.25
+      ],
+      "mean_tokens_reported": 3485.3,
+      "mean_wall_seconds": 9.01,
+      "gate_rate": 0.0
+    }
+  },
+  "paired_differences": {
+    "dev/counterbrief-minus-lexical": {
+      "n": 5,
+      "mean": 17.1,
+      "wins": 3,
+      "ties": 2,
+      "losses": 0,
+      "source_group_bootstrap95": [
+        0.3,
+        34.8
+      ],
+      "independence_note": "Resamples source groups, not individual claims; cross-source group overlaps and small n limit inference"
+    },
+    "dev/counterbrief-minus-full_context": {
+      "n": 5,
+      "mean": 16.5,
+      "wins": 2,
+      "ties": 2,
+      "losses": 1,
+      "source_group_bootstrap95": [
+        -0.6,
+        34.8
+      ],
+      "independence_note": "Resamples source groups, not individual claims; cross-source group overlaps and small n limit inference"
+    },
+    "evaluation/counterbrief-minus-lexical": {
+      "n": 15,
+      "mean": -11.667,
+      "wins": 3,
+      "ties": 9,
+      "losses": 3,
+      "source_group_bootstrap95": [
+        -32.194,
+        7.944
+      ],
+      "independence_note": "Resamples source groups, not individual claims; cross-source group overlaps and small n limit inference"
+    },
+    "evaluation/counterbrief-minus-full_context": {
+      "n": 15,
+      "mean": 5.467,
+      "wins": 3,
+      "ties": 11,
+      "losses": 1,
+      "source_group_bootstrap95": [
+        0.833,
+        12.806
+      ],
+      "independence_note": "Resamples source groups, not individual claims; cross-source group overlaps and small n limit inference"
+    }
+  }
+}

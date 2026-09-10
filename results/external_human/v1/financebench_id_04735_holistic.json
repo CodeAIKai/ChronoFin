@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_04735",
+  "company": "Adobe",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "d8ac00941788c3a11cf78ecfc6e234c20ef979bb1bdeab61b63d30e11812efbd",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2095c501f58edcf2423b5861cf1c7eeea79783a26aa2d9f98506949a0dae3536",
+  "started_utc": "2026-09-09T17:35:03.408182+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate output is signature/exhibit boilerplate text, not a substantive answer to the operating cash flow ratio question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a0accde727dbeac8d0b69b9a2922739d252329305feb310611e2194da5c70e2d",
+    "latency_seconds": 1.95,
+    "usage": {
+      "prompt_tokens": 6797,
+      "completion_tokens": 44,
+      "total_tokens": 6841,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b546674dfa8bf6cf1cc27fb1b1a6dbfd13ef4419ee4c12003b6b7fa6b35dd62a"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

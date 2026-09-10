@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00566",
+  "company": "Verizon",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "63acb38897c954211fab38688b19bf3fa18a887cfac6bfe4abfbfa40bb5e85f3",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "bd0ffd694557ff6d5dcdf530b9c6c736a7550a4f3b2526bfe0a9739a80e19ec7",
+  "started_utc": "2026-09-09T17:44:14.328125+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers 'No' with debt figures from evidence (2022: $150,639M, 2021: $150,868M) showing $229M decrease, matching reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "78b5d9f179324baafb8f26edf54b80d8d874450a92927640bca7a8eae05ff6ac",
+    "latency_seconds": 6.976,
+    "usage": {
+      "prompt_tokens": 2273,
+      "completion_tokens": 64,
+      "total_tokens": 2337,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "393ebd9c320db9d7fd25b06fb1ff8e2f67439c712c6421f39c64160aa862c1a4"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00566_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00566_holistic.json",
+  "parent_sha256": "4c5bdc153edad447d8212a0405cd88934cc4b12997005ac649f2bd56858c81c8"
+}

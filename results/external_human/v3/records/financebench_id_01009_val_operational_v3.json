@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01009",
+  "uid": "financebench_id_01009_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b26e45ffd083ef9044091c1e22357b319a3cb5fc39acbee430163dbd8ed8cc90",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "be2df8253f5dad269f7598ebcb8fe668cbd3959b03e89d59b6d7bef62464304d",
+  "started_utc": "2026-09-09T18:09:10.653867+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "These seven reportable segments represent the primary geographies where PepsiCo operates.",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate lists FLNA/QFNA/PBNA (North America), LatAm, Europe, AMESA (Africa, Middle East, South Asia), APAC (Asia Pacific, Australia, New Zealand, China) matching reference geographies: North America, Latin America, Europe, Africa, Middle East, South Asia, Asia Pacific, Australia, New Zealand and China."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "61d213343d8bb95ca1cb79ff15065337236d4d423e9a3f236a6e7aacc249426b",
+    "latency_seconds": 7.704,
+    "usage": {
+      "prompt_tokens": 3228,
+      "completion_tokens": 137,
+      "total_tokens": 3365,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e2b80b93169256f0d621ef4dc40cedd80153ee8f9466b7d81fb3cb44f41a3761"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

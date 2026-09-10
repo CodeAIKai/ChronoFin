@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00394",
+  "company": "JPMorgan",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "984b6079b0942ef11686d7618e62bd52fa16fa58d7a8bf7e82b47c38277d4d6b",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "dde779e31cfe1dc434176d9cb5b4dce11cb190407f4391d71c6e959efb2334e9",
+  "started_utc": "2026-09-09T17:43:03.726983+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate claims evidence lacks segment net income for Q2 2022 and withholds the answer, despite evidence listing Q2 2022 net income per segment (CIB $3725M highest). This is refusal per rules."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0221ed570455d0716e555cd9aac36a596afe59d2356a2e3f591854c1bf518c97",
+    "latency_seconds": 6.887,
+    "usage": {
+      "prompt_tokens": 2868,
+      "completion_tokens": 68,
+      "total_tokens": 2936,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "190310e9549854f9b136822a365f971f362e3574daf764aa430c5e7bf8f30a0e"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00540",
+  "uid": "financebench_id_00540_val",
+  "split": "new_response_validation",
+  "company": "AES Corporation",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "dd2936ccb341d74b106b863f963dc4289eb189cc065e0e2b76883b3569f85371",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "7bd9a190f20c4d2d0d3a1fe91b1e7099258a4cc84403fe91879654f6968d3418",
+  "started_utc": "2026-09-09T18:06:23.664843+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "This means that AES Corporation turned over its inventory roughly 12.13 times in the fiscal year 2022.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate computed inventory turnover as 12.13 using cost of sales $10,069M / avg inventory $829.5M, but reference states AES converted inventory 9.5 times in FY2022. The candidate's calculated ratio disagrees with the supplied reference of 9.5 times, and the candidate did not state the reference figure or reconcile the difference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e171364ea1b5597daae3a2033d664504bf277f6da65ea9e117e362d709886740",
+    "latency_seconds": 6.833,
+    "usage": {
+      "prompt_tokens": 3333,
+      "completion_tokens": 146,
+      "total_tokens": 3479,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2d773eefbd85ad81d893d6ef3fe6466e238724adaa40621f5b84f425dc2020fd"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

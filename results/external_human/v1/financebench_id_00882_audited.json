@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00882",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "ce7e888cd60f3db547c6ef7e6c25ce2a3764f4fab044a7e10441b8379881811e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "6c33a85f80a5f328a1a89b6827c44b0bc0f6239846c64b331d86bea46dbdaa38",
+  "started_utc": "2026-09-09T18:00:24.475348+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it cannot provide the information due to knowledge cutoff and does not give the requested amount; no substantive answer is offered.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity Pepsico identified in question and candidate context."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period as of May 26, 2023 noted in question; candidate declines due to cutoff."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is USD; candidate gives no numeric answer."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate refuses to answer; no $8.4B or other amount provided."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows two $4.2B agreements totaling $8.4B, but candidate does not use it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "528ecf21f5442ef06f7eb5ffd65f35d7ec05dad1f011bf0e1ec5a15c63b60abc",
+    "latency_seconds": 9.514,
+    "usage": {
+      "prompt_tokens": 2787,
+      "completion_tokens": 223,
+      "total_tokens": 3010,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2cc800caae89a503e720b9ce41a26edbdad1dfc777b2fbbe10e9616a85b3a781"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

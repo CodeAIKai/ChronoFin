@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01079",
+  "uid": "financebench_id_01079_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "8317ccbe51260737b635b1b3fdbbfd97ce3e049e0df85bc87cf92b123ea6e88c",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "535ffd4b982037c91931755ec2cee2ea25399d7e4359daa7f96e59ec63962408",
+  "started_utc": "2026-09-09T18:09:23.805234+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate answers about 1.125% Senior Notes, not major acquisitions in FY2023/22/21; withholds requested acquisitions entirely."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "04de570e9fd356211b7cf8b7e69edee49dd4d6d7d678e388352f3cc77eb872a4",
+    "latency_seconds": 7.259,
+    "usage": {
+      "prompt_tokens": 2293,
+      "completion_tokens": 51,
+      "total_tokens": 2344,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c6b59ef38a2604db48e58abee4b2b70d336e76d32031a0a88e3305e6aa495b82"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

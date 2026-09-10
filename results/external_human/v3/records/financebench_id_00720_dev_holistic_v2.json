@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_00720",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "36c7be23558c700c1447ce1939e6f34aec43492628f3703eb6a35e4fcc142bce",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "69300092a1f833412f0576c43edbc5eb9b549bd67f9a68cbb9e32cafdae267c5",
+  "started_utc": "2026-09-09T17:45:37.608744+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate withholds the requested conclusion (gross margin not useful) by claiming lack of access and only explains how to obtain answer / gives generic explanation without stating the required conclusion as its answer. It does not provide the substantive answer that gross margin is not a useful metric per reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "334e34d5830d81e53b00ed0cd8efe8ec32a7b459f67c87117b92dfc90a28486e",
+    "latency_seconds": 5.97,
+    "usage": {
+      "prompt_tokens": 2211,
+      "completion_tokens": 78,
+      "total_tokens": 2289,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9b4eef3d13a1379f35309b9bd1dbdfa8b8d530e962cd06abf267ef7aefc073e9"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_00720_dev",
+  "reused_from": "results/external_human/v2/financebench_id_00720_holistic.json",
+  "parent_sha256": "24b8fc7ab3b7d2bfbca21d560f4f4ca968b9e7408f2e6f22bdf541b1d30df9ae"
+}

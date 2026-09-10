@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00678",
+  "company": "Boeing",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "1051de6161bb15d27de792bd20bed02746380ea6075d32d13a3cafe78cca5218",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "60d8d5e2596a8aa93c542c0bece947c2d8832d23d9b7fc5fa750ffac54057038",
+  "started_utc": "2026-09-09T17:59:25.093764+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate responds with unrelated Boeing deferred compensation plan text, not answering the gross margin question or stating metric unusefulness."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "78303d6493b5d3a3973ccdb5989c5f4eb73cf05379748d829e91f3d251b42c71",
+    "latency_seconds": 5.838,
+    "usage": {
+      "prompt_tokens": 2993,
+      "completion_tokens": 45,
+      "total_tokens": 3038,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b2c550d91b9c05a4c4cd9be83c3b49c2c174e0ce9b53468a6758099794ae5ee0"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

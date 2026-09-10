@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_04672",
+  "uid": "financebench_id_04672_val",
+  "split": "new_response_validation",
+  "company": "3M",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "612c9e030839725680b2bb441d5d8e941e206d37e0b2f7de74a9712fad848716",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "262fd33bbf6ffcf4dc158301c1e1294f22b7de8982e42b3cc074f4753d85e797",
+  "started_utc": "2026-09-10T01:32:26.862258+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate discusses derivatives and hedge accounting from notes, never provides FY2018 net PPNE (property, plant and equipment net = $8.738B) as requested from balance sheet."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "169f1e97d2b6cd6372de3eba89f9d803b79f872c3bedf0a25c6ef681253d077b",
+    "latency_seconds": 7.73,
+    "usage": {
+      "prompt_tokens": 2767,
+      "completion_tokens": 59,
+      "total_tokens": 2826,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e8373ced2429673c5feec07743f6ef3b47ac2fe7165150d551ff97762240ca59"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

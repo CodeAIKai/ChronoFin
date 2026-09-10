@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00070",
+  "company": "American Water Works",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "5c80a3cfc9067b4ca00fe8489047d9ad18f0d07f8254489fa3f0d1bdd182e3ec",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "fa7ba6c05bc4a22b225fba25dec498fcb5f6810df039540fcd0b303c7f52a84e",
+  "started_utc": "2026-09-09T17:32:18.064779+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate correctly computes negative working capital of -$1,561M for FY2022 from evidence (current assets $1,250M minus current liabilities $2,811M), agreeing with reference. It also addresses relevance for utility with explanation, matching question's conditional."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1fa24f8be25e82716b7508840fd250372d9ba40016e542a49dcd47c3c24d3f9d",
+    "latency_seconds": 3.056,
+    "usage": {
+      "prompt_tokens": 2116,
+      "completion_tokens": 75,
+      "total_tokens": 2191,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a659e33b672ec2af41bcaa78c1e64e3f6cb598720b379fbfbe8f4f52236e7da6"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

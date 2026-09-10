@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_08286",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "3e6d85eece5889beb03f2dcfedd314e2b64553ba932c56f5842cdf030f59aa80",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "2cf1feb1d021a1c4a25fc37c2f9039793039ad1616af47097f12f6893da3409c",
+  "started_utc": "2026-09-09T18:03:52.287553+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate states Amazon FY2019 net income was $11.6 billion, which equals $11,600 million and rounds from evidence/reference net income of $11,588 million (USD millions). Entity, period, metric, unit all match.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Amazon.com, Inc. as per evidence income statement"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2019 (Year Ended Dec 31, 2019)"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate $11.6 billion = 11,600 million USD, matches requested USD millions"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Net income $11.6B approximates reference $11,588M from income statement"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence income statement shows Net income 2019 $11,588M; candidate's $11.6B consistent"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "02fd2d6448f316111149d745e011b19d3bb50eff301054bf335e457c72cc6f78",
+    "latency_seconds": 9.984,
+    "usage": {
+      "prompt_tokens": 1849,
+      "completion_tokens": 250,
+      "total_tokens": 2099,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e528207b6ef3e37a2bdaf810c6a55ada1d0a1043421a622ad4637c88bd536199"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

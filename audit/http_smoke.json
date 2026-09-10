@@ -1,0 +1,19 @@
+{
+  "/api/config": {
+    "http_status": 200,
+    "valid_json": true
+  },
+  "/api/experiments?run=v3": {
+    "http_status": 200,
+    "valid_json": true,
+    "completed": 33
+  },
+  "/api/result?run=v3&name=D04_counterbrief": {
+    "http_status": 200,
+    "valid_json": true
+  },
+  "invalid_question_rejected": {
+    "http_status": 400,
+    "model_calls": 0
+  }
+}

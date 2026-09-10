@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_06272",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "160777a667b19da0a6f653e891769c74455e9c85c82ecaf40e4a5160cd026b67",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "0e00b2773f1287c719dbcb00a6c5a78ac5c2673bfb1becd48ecf86b4d41fd74e",
+  "started_utc": "2026-09-09T17:54:19.322744+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate withholds the requested answer, claims lack of access to data, and only explains how to calculate the ratio without providing the FY2022 payout ratio."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "88ac58dc863ddc0de3841ea6df77c56535be08cc680599397cc888b06385c0db",
+    "latency_seconds": 7.36,
+    "usage": {
+      "prompt_tokens": 3351,
+      "completion_tokens": 54,
+      "total_tokens": 3405,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "0c31cd3939832ee9f4b3eeae7f5bfdd8dd47b1656a41d66cf191da9acc4bb99a"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

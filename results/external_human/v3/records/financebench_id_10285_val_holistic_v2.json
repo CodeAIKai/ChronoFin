@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_10285",
+  "uid": "financebench_id_10285_val",
+  "split": "new_response_validation",
+  "company": "Boeing",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "637da5d0efe57be87ce9de2df2713630ca1cc474dab0b9c3c9a7f072caebc022",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "c9290a50662088037eac2173d1c8d4dac5ff123792ce1a046d68bf0f0078f57e",
+  "started_utc": "2026-09-10T01:34:23.900281+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate directly answers $12,645 million for Boeing FY2018 net PP&E, matching reference and balance sheet evidence (Property, plant and equipment, net: 12,645 for Dec 31, 2018)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3bb6742aeebea2fc3d0845f11951c8409739b0a2f6a4ccc22179a42d0ffbb89b",
+    "latency_seconds": 7.115,
+    "usage": {
+      "prompt_tokens": 1654,
+      "completion_tokens": 66,
+      "total_tokens": 1720,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "af2c8bc40b91c6da5ac477a99dd3580f627c6f2587a305f60c92195125f08c9c"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

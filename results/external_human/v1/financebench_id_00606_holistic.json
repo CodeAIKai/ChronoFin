@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00606",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "436e091b4702e44bc598e708a2f4a2ebe39dc7c46f24fe974ec18e0b8109c502",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "a1a3f8c11dff24673f6f7aef9a8cb073a4b7407fe74a0b917d47bd83ad24bc99",
+  "started_utc": "2026-09-09T17:59:06.961423+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Reference states wages expense as % of net sales increased in FY2023 (defined as 12 months ended Jan 28, 2023, fiscal 2022). Candidate claims it decreased, contradicting reference. Evidence shows SG&A % decreased but store payroll/benefits deleveraged due to wage investments; reference explicitly says wages expense % increased."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "74efd10c922acf753f523fb078f215dfc6c822c2aaea24adae69c4c81d3b3a34",
+    "latency_seconds": 4.63,
+    "usage": {
+      "prompt_tokens": 1752,
+      "completion_tokens": 93,
+      "total_tokens": 1845,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c7d78390544b9c20d6aa8dfa57b37e05986e7d9d0eae5f2d5ca989a82a708524"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

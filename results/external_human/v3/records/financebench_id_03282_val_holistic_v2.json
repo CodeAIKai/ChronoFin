@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_03282",
+  "uid": "financebench_id_03282_val",
+  "split": "new_response_validation",
+  "company": "Netflix",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e9ded9326cc7249ddece26a3d73d9cf1fd923c53c501700035d7bd6f7f3c6bc3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "bdfb2e486a1f7ec8d39f0e5a2f24f4686ef08394419ce5ce9355011a9065b805",
+  "started_utc": "2026-09-10T01:30:14.402488+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate provides only an excerpt of the 10-K cover/business text and does not state or compute Netflix's FY2017 total current liabilities; it withholds the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "cc0c210e1530d9692eb9f4386be852988bfdafd969d44d3bce72985b45e9716c",
+    "latency_seconds": 11.903,
+    "usage": {
+      "prompt_tokens": 3779,
+      "completion_tokens": 57,
+      "total_tokens": 3836,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a8c24f071beab045b532a770de15ae5d5e6f5d1c5172968f574334a05b74f178"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00601",
+  "company": "Ulta Beauty",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4aceffecb5fa45f2c5b7949e517adae1d9792b768c2dd93ca351b76fab538ce6",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "c62da4021fe60e0765090f8199d9a15bbdf5a0f9f86807bceb2525515bdff819",
+  "started_utc": "2026-09-09T17:33:01.484487+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate says reduction driven by 'leverage of marketing expenses' but evidence and reference state 'lower marketing expenses and leverage of incentive compensation'. Misstates driver by attributing leverage to marketing rather than lower marketing expense."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7b147e62d01db2dc49e7bd7e3db4b6baa4485ff1940299690f70310cdc1e476a",
+    "latency_seconds": 2.294,
+    "usage": {
+      "prompt_tokens": 1917,
+      "completion_tokens": 64,
+      "total_tokens": 1981,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "33391844f1c3089aea9d31b59cc2a2677d1ee660d4a62ad1606c82330f7e6a0e"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

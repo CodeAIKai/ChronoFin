@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_01474",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "734777394b593885326377c2a8471d6393f451c389e8658b27e3884ff08c1bdf",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "99a796da6ba446dc1baa095e4734956245af5f6f092a68ebe84fbcfe2f7fc3c4",
+  "started_utc": "2026-09-09T17:48:52.710411+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate substantively answers that PepsiCo raised FY2023 guidance due to a strong start to the year with resilient categories/geographies, matching reference and evidence; includes supporting detail without refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "58ecdf2241901b8adcdfe4789b37ef2c17bb59ea184cf7359a499fbcd6359205",
+    "latency_seconds": 6.668,
+    "usage": {
+      "prompt_tokens": 1053,
+      "completion_tokens": 60,
+      "total_tokens": 1113,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "91f911bbebba8088a58bf394e328b5f3417f9c995e624d5aef5378655cbf72fe"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_01474_dev",
+  "reused_from": "results/external_human/v2/financebench_id_01474_holistic.json",
+  "parent_sha256": "fe45d3f031c10f18e33a745270e4eee9327edacbc49a407d37f285ad58b5b0ca"
+}

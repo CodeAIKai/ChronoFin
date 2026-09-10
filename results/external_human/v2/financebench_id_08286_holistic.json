@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_08286",
+  "company": "Amazon",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "3e6d85eece5889beb03f2dcfedd314e2b64553ba932c56f5842cdf030f59aa80",
+  "reference_text_differs": true,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "eec03d20078b5198ee6424c7956a23058871a67d6c750e924c85591c307b6080",
+  "started_utc": "2026-09-09T17:55:03.193008+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.95,
+    "reason": "Candidate provides summary and states net income $11.6B but does not give the requested net income attributable to shareholders in USD millions (11,588). It withholds the specific conclusion/figure requested and only narrates from statements without answering the precise question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a24d041fe4cdacb31c9e0d8062a4560499b3dba58489a9640dbc100933be463f",
+    "latency_seconds": 10.092,
+    "usage": {
+      "prompt_tokens": 1731,
+      "completion_tokens": 74,
+      "total_tokens": 1805,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "7e9cce565e14f45bf1690de0710076d908ff37a08320fabf5bc95284247be616"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

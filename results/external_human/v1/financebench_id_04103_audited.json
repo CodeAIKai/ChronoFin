@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_04103",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e106ef835bc32f7b4a55483ac91c850bf1ac2037cb8d66c01d18b1d3831bbf31",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "b49fac175aad4bba58e4eeb9b18d914ab7c01f7bb6b41a07542fb87f7dd89aa6",
+  "started_utc": "2026-09-09T18:02:36.962328+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.99,
+    "reason": "Candidate returned unrelated bond prospectus text for euro-zone banks, not General Mills FY2019 CCC; no substantive answer to question.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate text concerns unnamed euro-zone banks/notes, not General Mills"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No FY2019 or fiscal period addressed"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No days (CCC unit) provided"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No CCC value or calculation; irrelevant boilerplate"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows General Mills financials; candidate ignores it entirely"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "efcb5824f9a0f335f733d1a6c01c68a7bfb49f97a806f2196582025b373c05f1",
+    "latency_seconds": 8.568,
+    "usage": {
+      "prompt_tokens": 6322,
+      "completion_tokens": 193,
+      "total_tokens": 6515,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "33106ecc3b8cb5ac623f94bd9b413dc46692460edf6fd3f9c309570ae7fc2829"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

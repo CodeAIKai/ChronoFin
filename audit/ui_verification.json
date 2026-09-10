@@ -1,0 +1,51 @@
+{
+  "utc": "2026-09-10T02:45:27.632089+00:00",
+  "checks": [
+    {
+      "check": "replay_inputs_locked",
+      "pass": true
+    },
+    {
+      "check": "actual_saved_hy3_brief_renders",
+      "pass": true,
+      "claims": 6
+    },
+    {
+      "check": "citation_navigation",
+      "pass": true
+    },
+    {
+      "check": "ten_dimension_audit",
+      "pass": true
+    },
+    {
+      "check": "judge_disagreement_visible",
+      "pass": true
+    },
+    {
+      "check": "simulated_missing_record_clears_stale_answer",
+      "pass": true,
+      "fixture": "Explicit 404 transport fixture; not a real failed experiment."
+    },
+    {
+      "check": "live_custom_inputs_enabled",
+      "pass": true,
+      "model_called": false
+    },
+    {
+      "check": "download_complete_record",
+      "pass": true
+    },
+    {
+      "check": "final_native_v5_chinese_pdf_replay",
+      "pass": true
+    },
+    {
+      "check": "invalid_cross_period_calculation_warning_visible",
+      "pass": true
+    }
+  ],
+  "browser_page_errors": [],
+  "pass": true,
+  "note": "Real Chromium clicks and response rendering; live API end-to-end traces are reported separately."
+}

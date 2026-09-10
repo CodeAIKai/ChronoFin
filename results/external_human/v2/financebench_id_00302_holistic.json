@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_00302",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ac3d04d48db39f70eccf70baaa65a810d37566f034d52f789c80b441b93c817e",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "2aae2529f84bf6ac2fa358a254b5186e3b9360df72b0050d9d5a30413581f2f2",
+  "started_utc": "2026-09-09T17:42:53.332079+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate substantively answers yes with figures from evidence (PP&E $13,745M FY20 to $14,882M FY21, increase $1,137M), matching reference that PPNE grew positively YoY."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9270e8d35101ec51a1a12a0a335373b3dc87a83df7061a696b05beea7920b6fd",
+    "latency_seconds": 6.168,
+    "usage": {
+      "prompt_tokens": 1476,
+      "completion_tokens": 66,
+      "total_tokens": 1542,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e56c038fd3d32a8dcce76bb9ec8940d1f7f341acb356d591bf3031be6cbef4bc"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

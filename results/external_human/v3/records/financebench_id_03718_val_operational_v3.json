@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03718",
+  "uid": "financebench_id_03718_val",
+  "split": "new_response_validation",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "ea22871da8034956faa8036c67fdbc83d31403eed93c14454936c0492860be1d",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "2e29ae14f922f0a675d376003ee486d2f360e2f75415d4c29cbc3be211df5b9e",
+  "started_utc": "2026-09-10T01:30:50.521139+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Rounded to one decimal place, the 2-year total revenue CAGR for Lockheed Martin from FY2020 to FY2022 is 0.4%.",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Candidate computed CAGR as 0.4% using net sales 65398 (2022) and 65398 (2020) from evidence statement of earnings. Reference value is 0.004 (0.4%), which matches candidate's 0.4% numerically, but reference is given as 0.004 (i.e., 0.4%) while candidate's correct computed CAGR from evidence is ~0.447%->0.4%; however reference 0.004 equals 0.4% so no numeric conflict on percentage. Actually reference 0.004 = 0.4% so matches candidate 0.4%; but evidence supports 0.447% rounding to 0.4%. Wait: reference 0.004 as proportion = 0.4%, candidate 0.4% agrees. Yet label should be correct? Re-evaluate: reference 0.004 likely proportion 0.004 = 0.4%. Candidate answer 0.4% matches. Evidence net sales 65984/65398 CAGR=0.447%->0.4%. So content_correct true. Correction: label correct."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "da1cede4143668093d98af0a9b027b28525e1f6bfda41aee02aba4f4fd08a589",
+    "latency_seconds": 9.38,
+    "usage": {
+      "prompt_tokens": 2142,
+      "completion_tokens": 321,
+      "total_tokens": 2463,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2259f397ab80ab05dccae7507309ee2462308375f2458c928d04174550b42f22"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

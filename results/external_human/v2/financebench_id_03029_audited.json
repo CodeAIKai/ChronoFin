@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_03029",
+  "company": "3M",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "e799f511f9175354f86d7ad557e40fde590ebb6df6d6446147ab33b2d7f4a0ac",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "565f35914234d14a0e1f2907abc0d6adb9b33ed8b22ece43b033041930787919",
+  "started_utc": "2026-09-09T17:51:21.677542+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.99,
+    "reason": "Candidate states FY2018 capex for 3M is $1,577 million from cash flow statement PP&E purchases, matching reference 1577 and evidence showing (1,577) for 2018 PP&E purchases (magnitude 1577 million USD).",
+    "response_mode": "answered",
+    "content_correct": true,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is 3M, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 (year ended Dec 31, 2018) correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "USD millions requested and provided."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "1577 million matches reference and evidence magnitude."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Cites Cash Flows from Investing Activities PP&E purchases, present in evidence as (1,577) for 2018."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "580fc706e7becd1653f842d0395fb1b6e9eb51c8ee0cd70ddbb4fc05d2cacbad",
+    "latency_seconds": 9.807,
+    "usage": {
+      "prompt_tokens": 3195,
+      "completion_tokens": 250,
+      "total_tokens": 3445,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "23c1873ac5515fe31ce4642401a87ae0aad9299cdf658a4043a980c803973619"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

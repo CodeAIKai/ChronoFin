@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01936",
+  "uid": "financebench_id_01936_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "21b2f924e0ade3d9a26119687f8a9e245649c102d4af938c0c185e7dd61cfcaa",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "c3d08890fb0dc2bb1d7259790e184a10f59a329772bed1b1279dd604992a8be1",
+  "started_utc": "2026-09-10T01:28:21.237391+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.9,
+    "reason": "Candidate describes a Q2 FY2023 initiative, but evidence shows Q2 FY2023 (Dec 31, 2022) liability was from prior Russia-Ukraine and Bemis plans, not a new enterprise-wide initiative. Also fails to state 87% employee-related nature per reference."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0e0401985996665e707044998f79460511ebb8f9dcdf48a7807b74c0fac804f0",
+    "latency_seconds": 9.535,
+    "usage": {
+      "prompt_tokens": 1139,
+      "completion_tokens": 82,
+      "total_tokens": 1221,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "eb38ff1d59e2c62e51760957dc7e33b31672f7b33c04a4845ba2bca34659cf78"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

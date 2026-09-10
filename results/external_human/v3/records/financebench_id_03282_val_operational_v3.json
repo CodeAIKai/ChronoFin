@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_03282",
+  "uid": "financebench_id_03282_val",
+  "split": "new_response_validation",
+  "company": "Netflix",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e9ded9326cc7249ddece26a3d73d9cf1fd923c53c501700035d7bd6f7f3c6bc3",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "bdfb2e486a1f7ec8d39f0e5a2f24f4686ef08394419ce5ce9355011a9065b805",
+  "started_utc": "2026-09-10T01:30:18.678430+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "As of June 30, 2017, the aggregate market value of voting stock held by non-affiliates",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate dumped 10-K cover/forward/business text and never stated Netflix FY2017 total current liabilities. Evidence balance sheet shows Total current liabilities 5,466,312 thousand = 5,466 million, matching reference 5466, but candidate provided no answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6af938be72f59fc17f77d59446f8acb5ee4f95600303ad8b6fabc991c1f8050c",
+    "latency_seconds": 10.647,
+    "usage": {
+      "prompt_tokens": 3914,
+      "completion_tokens": 126,
+      "total_tokens": 4040,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "29908799539f339576e363861d8a4264af019fe28d73e9988b854b4e8190c386"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

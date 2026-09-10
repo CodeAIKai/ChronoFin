@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_02419",
+  "uid": "financebench_id_02419_val",
+  "split": "new_response_validation",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "bcdec9b73a3d2a99a431881946f6e080f652ebc810f4e4786d51206dd7c8f2b1",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "ce159ad48dcd5ca800b110a50022f4621f3c3607c47e3891457682398506d90a",
+  "started_utc": "2026-09-10T01:29:20.040450+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "We expect to incur costs of approximately $700 million in connection with separating Upjohn, of which approximately 90% has been incurred since inception and through the second quarter of 2023.",
+    "content_correct": false,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Candidate dumped 10-Q cover/financials and an MD&A excerpt about separation costs incurred through Q2 2023, but never answered whether Pfizer is spinning off a large segment as of Q2 2023; reference says yes spinning off Upjohn. Unrelated document dump/summary without explicit answer is incorrect."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "e64a34ea3b9aa9d69237ae441d7a45059ddf896aad39458e027eb60c4557178f",
+    "latency_seconds": 12.576,
+    "usage": {
+      "prompt_tokens": 3906,
+      "completion_tokens": 151,
+      "total_tokens": 4057,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "8f16f7a5bc281d2c0fb94768e6a080112f90d6883c0c450b89a21c0f339b5103"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

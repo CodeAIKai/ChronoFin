@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01928",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "0390b60d7d071c1962d7a6dd946a1fc7fb0154f8d242154b78c9e725e2f63503",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d78e4187d656a347d0532b9443c974e323813bfa819956937908c55eaaa0e1ae",
+  "started_utc": "2026-09-09T18:01:40.923309+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate states Amcor Adjusted Non-GAAP EBITDA for FY2023 (twelve months ended June 30, 2023) was $2,018 million, matching reference and evidence table showing Adjusted EBITDA 2,018 for that period."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2eb6a5b523494fd8dd57cea44b76a6684d0ced1edf70eaf653cfd1b84cdcaa6f",
+    "latency_seconds": 7.087,
+    "usage": {
+      "prompt_tokens": 2494,
+      "completion_tokens": 77,
+      "total_tokens": 2571,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e2a54793597d96f8a1dffa573f5bc2a9202121655e036aa390588067e605a3f9"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

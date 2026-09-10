@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_00563",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2d42ebd6ad3216d88abb0f05f79b0287a52b6f27773dbe55fa9a7e62ef35a580",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d56d5748695d556a596f412f74386c2bf73967ba0af0f4c921c4a78722e100fc",
+  "started_utc": "2026-09-09T17:32:56.357547+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states 'This is the end of the filing.' with no substantive answer to the question about segment sales growth."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ee653a362d758a9bde1c1fccde07ee7c687d4d39dfb40f99eb70634a28e550c7",
+    "latency_seconds": 2.187,
+    "usage": {
+      "prompt_tokens": 1125,
+      "completion_tokens": 45,
+      "total_tokens": 1170,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "a0020587d649a0aceb60c953d3070ced3a45b1b022f6e3972338fcdf155466d7"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

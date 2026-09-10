@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00807",
+  "uid": "financebench_id_00807_val",
+  "split": "new_response_validation",
+  "company": "3M",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "211e7c81229c2dcbc28c4dbf0ce36f037fcd833d420511f5a0d738ae42a51266",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "0987da9d498c8ece8bf5a61438125ce5426bc0b71149fec54b11e5feae8a4130",
+  "started_utc": "2026-09-09T18:08:25.437478+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "3M's quick ratio for Q2 2023 was 1.44",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": true,
+    "reason": "Reference states 3M quick ratio Jun'23 was 0.96 (not healthy, below 1x). Candidate claims 1.44 and healthy. Evidence balance sheet Jun 30 2023: quick assets = 4258+56+4947=9261M; current liabilities=10936M; ratio=0.847, not 1.44. Candidate numeral and conclusion both conflict with reference and evidence."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d0185eef7fc2a100ca3f72a39543ee4c4ed29de46ae55c46b757ec06b202f4cf",
+    "latency_seconds": 8.285,
+    "usage": {
+      "prompt_tokens": 1986,
+      "completion_tokens": 154,
+      "total_tokens": 2140,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "75ccadf54400a6a3c0ca0e0e90d7e6067a8d34c7bd4b47c0a6d47891c88f81af"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": true
+}

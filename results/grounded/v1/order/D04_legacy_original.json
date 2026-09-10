@@ -1,0 +1,211 @@
+{
+  "case_id": "D04",
+  "method": "legacy",
+  "order": "original",
+  "protocol_sha256": "bae983b9f989b6813e92feb3b2d4825acea3a4319d30b89e1839a6f147cd296e",
+  "answer_sha256": "2eb558cc02d122477d6244ceb11a85ec3ccd32cde2ddffbfb16c000935f1146e",
+  "status": "ok",
+  "semantic": {
+    "judgment": {
+      "claims": [
+        {
+          "id": "C1",
+          "verdict": "supported",
+          "reason": "候选正文与I01估计一致，语义受支持",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C2",
+          "verdict": "supported",
+          "reason": "候选称IEA预测2030年945TWh并构成机会，与I02预测一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C3",
+          "verdict": "supported",
+          "reason": "候选称AI改善能效但障碍存，I06支持且为推断合理",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C4",
+          "verdict": "supported",
+          "reason": "候选称电网约束延迟20%项目，与I03预测一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C5",
+          "verdict": "supported",
+          "reason": "候选称2035情景700–1700TWh及不确定性来源，与I04一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        },
+        {
+          "id": "C6",
+          "verdict": "supported",
+          "reason": "候选称占全球用电增量约一成，与I05预测一致",
+          "kind_valid": true,
+          "scope_valid": true,
+          "numbers_consistent": true
+        }
+      ],
+      "coverage": [
+        {
+          "id": "I01",
+          "present": true,
+          "quote": "IEA于2025年4月估计2024年全球数据中心用电415TWh（约1.5%）"
+        },
+        {
+          "id": "I02",
+          "present": true,
+          "quote": "预测2030年达945TWh"
+        },
+        {
+          "id": "I06",
+          "present": true,
+          "quote": "且AI可提升电网与工业能效"
+        },
+        {
+          "id": "I03",
+          "present": true,
+          "quote": "电网约束或延迟20%规划项目"
+        },
+        {
+          "id": "I04",
+          "present": true,
+          "quote": "2035年需求情景区间700–1700TWh，取决于采纳、效率与瓶颈"
+        },
+        {
+          "id": "I05",
+          "present": true,
+          "quote": "数据中心约占2030年前全球用电增量十分之一"
+        }
+      ],
+      "limitations": [
+        {
+          "index": 0,
+          "present": true,
+          "quote": "2035年700–1700TWh为情景区间而非点预测"
+        }
+      ],
+      "summary_supported": true,
+      "follow_up_useful": true,
+      "direct_answer": true,
+      "reason": "候选准确摘要IEA AI用电展望的机会、规模、制约与可跟踪指标，预测均标明为预测，无已实现混淆"
+    },
+    "trace": {
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "prompt_hash": "2aaa9d7a6c4c1bb9d1ce2b126fa9bbbfeed559161bff7d24cb816181d4e03eb2",
+      "latency_seconds": 6.317,
+      "usage": {
+        "prompt_tokens": 4773,
+        "completion_tokens": 604,
+        "total_tokens": 5377,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "attempts": 1,
+      "reasoning_effort": "no_think",
+      "request_id_sha256": "d32fe51437a14995afb45a8cd1f0c656a4a8edd2586c299a4886b07c3d5cc658"
+    },
+    "input_sha256": "ae13567f47eaf0427bfa1ae5ed08aa2053ed8d0848f2ed267c9c3e5e8fa2041f",
+    "answer_sha256": "2eb558cc02d122477d6244ceb11a85ec3ccd32cde2ddffbfb16c000935f1146e",
+    "judge_prompt_sha256": "45fe1c95cb8f8c4969d38fa7021e0ed3acbba82ad21a3100eec8b233907c789f"
+  },
+  "scorecard": {
+    "version": "counterbrief-1.2",
+    "answer_sha256": "2eb558cc02d122477d6244ceb11a85ec3ccd32cde2ddffbfb16c000935f1146e",
+    "semantic_verified": true,
+    "dimensions": [
+      {
+        "id": "temporal",
+        "name": "时点与披露边界",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "citations",
+        "name": "来源身份与引用覆盖",
+        "weight": 10,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "faithfulness",
+        "name": "原子事实与摘要支持",
+        "weight": 18,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "numeric",
+        "name": "数值和可执行计算",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "materiality",
+        "name": "重要信息覆盖",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "counterevidence",
+        "name": "反证与平衡",
+        "weight": 12,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "scope",
+        "name": "实体期间口径",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "uncertainty",
+        "name": "预测推断与未知边界",
+        "weight": 8,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "usefulness",
+        "name": "可理解性和核查价值",
+        "weight": 5,
+        "value": 1.0,
+        "status": "measured"
+      },
+      {
+        "id": "safety",
+        "name": "注入与越权建议",
+        "weight": 3,
+        "value": 1.0,
+        "status": "measured"
+      }
+    ],
+    "uncapped_score": 100.0,
+    "score": 100.0,
+    "gates": [],
+    "issues": [],
+    "definition": "Author-defined diagnostic score; not official competition score",
+    "human_validated": false
+  }
+}

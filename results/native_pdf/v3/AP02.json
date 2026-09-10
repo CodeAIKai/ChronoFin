@@ -1,0 +1,1780 @@
+{
+  "status": "error",
+  "mode": "live_pdf",
+  "stage": "judge",
+  "record": {
+    "version": "native-generation-3.0",
+    "strategy": "counterbrief",
+    "query": {
+      "question": "有人说 Apple Q4 FY2025 每股摊薄盈利同比翻近一倍，说明经营能力也近乎翻倍。结合上年税项调整核查。",
+      "as_of": "2025-12-01"
+    },
+    "evidence": [
+      {
+        "id": "F1",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025（截至2025年9月27日三个月）稀释每股收益GAAP为1.85美元，上年同期（Q4 FY2024）为0.97美元，同比约增长近一倍。",
+        "quote": "Diluted                                    $       1.85  $       0.97  $       7.46  $       6.08",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 1.85,
+        "unit": "USD",
+        "raw_number": "1.85",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2024 GAAP稀释每股收益0.97美元，非GAAP（剔除税项调整影响0.67美元）为1.64美元；若以非GAAP基准对比，Q4 FY2025的1.85美元仅增长约12.8%。",
+        "quote": "Diluted earnings per share                           $       0.97  $       0.67 (c)  $       1.64  $       6.08  $       0.67 (c)  $       6.75",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": 1.64,
+        "unit": "USD",
+        "raw_number": "1.64",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025 GAAP净利润为27,466百万美元，上年Q4 FY2024为14,736百万美元，同比接近翻倍。",
+        "quote": "Net income                                     $     27,466 $     14,736  $    112,010  $     93,736",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 27466,
+        "unit": "USD million",
+        "raw_number": "27,466",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025税前利润为32,804百万美元，上年Q4 FY2024为29,610百万美元，同比仅增长约10.8%，远未翻倍。",
+        "quote": "Income before provision for income taxes                       32,804        29,610       132,729       123,485",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 32804,
+        "unit": "USD million",
+        "raw_number": "32,804",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025营业利润为32,427百万美元，上年同期为29,591百万美元，同比未翻倍。",
+        "quote": "Operating income                                           32,427        29,591       133,050       123,216",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 32427,
+        "unit": "USD million",
+        "raw_number": "32,427",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025所得税费用为5,338百万美元，上年Q4 FY2024为14,874百万美元，同比下降明显。",
+        "quote": "Provision for income taxes                                     5,338        14,874        20,719        29,749",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 5338,
+        "unit": "USD million",
+        "raw_number": "5,338",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2024 GAAP净利润14,736百万美元，剔除一次性税项调整（10,246百万美元）后非GAAP净利润为24,982百万美元。",
+        "quote": "Net income                                      $     14,736  $     10,246 (b)  $     24,982 $     93,736  $     10,246 (b)  $    103,982",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": 24982,
+        "unit": "USD million",
+        "raw_number": "24,982",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025总营业费用为15,914百万美元，上年同期为14,288百万美元，同比增长约11.4%。",
+        "quote": "Total operating expenses                                15,914        14,288        62,151        57,467",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 15914,
+        "unit": "USD million",
+        "raw_number": "15,914",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "2024年9月10日欧洲法院确认国家援助决定，Apple在2024年第四季度确认一次性所得税费用净额102亿美元（即约10,246百万美元），显著拉低了上年同期净利润与每股收益。",
+        "quote": "On September 10, 2024, the European Court of Justice announced that it had set aside the 2020 judgment of the European General Court and confirmed the European Commission’s 2016 State Aid decision. As a result, during the fourth quarter of 2024 the Company recorded a one-time income tax charge of $10.2 billion, net",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025大中华区净销售额14,493百万美元，上年同期15,033百万美元，大中华区收入同比下滑。",
+        "quote": "Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 14493,
+        "unit": "USD million",
+        "raw_number": "14,493",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025总净销售额为102,466百万美元，上年同期为94,930百万美元，同比增长约7.9%。",
+        "quote": "Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 102466,
+        "unit": "USD million",
+        "raw_number": "102,466",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025服务净销售额28,750百万美元，上年同期24,972百万美元，服务业务增长较快。",
+        "quote": "Services                                               28,750        24,972       109,158        96,169",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 28750,
+        "unit": "USD million",
+        "raw_number": "28,750",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Apple Q4 FY2025可穿戴、家居及配件净销售额9,013百万美元，上年同期9,042百万美元，基本持平略降。",
+        "quote": "Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 9013,
+        "unit": "USD million",
+        "raw_number": "9,013",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "observed",
+        "role": "caution",
+        "quote_verified": true
+      }
+    ],
+    "excluded_ids": [],
+    "initial": {
+      "answerability": "answerable",
+      "summary": "Apple Q4 FY2025 GAAP稀释每股收益1.85美元，较上年0.97美元看似同比近翻倍，但上年因欧洲法院裁决确认一次性税项费用约102亿美元，致净利润与EPS基数被显著压低。剔除该税项影响后，上年非GAAP EPS为1.64美元，本季1.85美元仅增约12.8%。同期营业利润、税前利润、净销售额分别增约9.6%、10.8%、7.9%，经营能力并未近乎翻倍。大中华区收入下滑，服务业务增长较快。原说法混淆会计口径，经营实质为稳健个位数至双位数增长。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Apple Q4 FY2025 GAAP稀释每股收益1.85美元，上年同期0.97美元，表面同比近一倍。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F1",
+              "value": 1.85,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Apple Q4 FY2024因欧洲法院国家援助裁决确认一次性所得税净额约102亿美元，拉低了上年净利润与EPS基数。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F11",
+            "F9"
+          ],
+          "numbers": []
+        },
+        {
+          "id": "C3",
+          "text": "剔除税项调整后，Apple Q4 FY2024非GAAP稀释EPS为1.64美元，本季1.85美元仅增约12.8%，远未翻倍。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F10",
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 1.64,
+              "unit": "USD"
+            },
+            {
+              "source_id": "F1",
+              "value": 1.85,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Apple Q4 FY2025营业利润32,427百万美元、税前利润32,804百万美元，分别较上年增约9.6%和10.8%，经营盈利未翻倍。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F5",
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 32427,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F4",
+              "value": 32804,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Apple Q4 FY2025总净销售额102,466百万美元，同比增约7.9%，收入端未近乎翻倍。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 102466,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Apple Q4 FY2025大中华区净销售额14,493百万美元，同比下滑；服务业务28,750百万美元增长较快，区域与业务结构分化。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F14",
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 14493,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F13",
+              "value": 28750,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "(F1-0.97)/0.97*100",
+          "value": 90.722,
+          "unit": "%",
+          "evidence_ids": [
+            "F1"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "(F1-F10)/F10*100",
+          "value": 12.805,
+          "unit": "%",
+          "evidence_ids": [
+            "F1",
+            "F10"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "(F5-29591)/29591*100",
+          "value": 9.589,
+          "unit": "%",
+          "evidence_ids": [
+            "F5"
+          ]
+        },
+        {
+          "id": "K4",
+          "expression": "(F4-29610)/29610*100",
+          "value": 10.789,
+          "unit": "%",
+          "evidence_ids": [
+            "F4"
+          ]
+        },
+        {
+          "id": "K5",
+          "expression": "(F6-94930)/94930*100",
+          "value": 7.929,
+          "unit": "%",
+          "evidence_ids": [
+            "F6"
+          ]
+        }
+      ],
+      "limitations": [
+        "一次性税项费用具体构成及后续税务现金流影响未披露；非GAAP口径为公司自行调整，未含审计师公允值变动等细节。",
+        "各产品线毛利率、经营驱动量化贡献未提供，无法拆分服务增长对利润弹性。",
+        "大中华区下滑原因（汇率/需求）未说明。"
+      ],
+      "follow_up": [
+        {
+          "action": "获取Apple 10-K中税项附注及非GAAP调节表全文",
+          "reason": "确认一次性税项是否完全为非经常性，及非GAAP净利润与GAAP持续经营利润的可比性，以修正经营能力判断",
+          "evidence_ids": [
+            "F11",
+            "F9",
+            "F10"
+          ]
+        },
+        {
+          "action": "跟踪下季度大中华区净销售额与汇率中性增速",
+          "reason": "判断区域疲软是短期还是结构性的，改变整体收入预测",
+          "evidence_ids": [
+            "F14"
+          ]
+        }
+      ]
+    },
+    "answer": {
+      "answerability": "answerable",
+      "summary": "Apple Q4 FY2025 GAAP稀释每股收益1.85美元，较上年0.97美元表面近翻倍，但上年因欧洲法院裁决确认一次性税项费用约102亿美元，压低了净利润与EPS基数。剔除后上年非GAAP EPS为1.64美元，本季仅增12.8%。同期营业利润、税前利润、净销售额分别增9.584%、10.787%、7.938%，经营能力未近乎翻倍。大中华区收入下滑，服务业务增长较快。原说法混淆会计口径，经营实质为稳健个位数至双位数增长。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Apple Q4 FY2025 GAAP稀释每股收益1.85美元，上年同期0.97美元，表面同比近一倍。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F1",
+              "value": 1.85,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Apple Q4 FY2024因欧洲法院国家援助裁决确认一次性所得税净额约102亿美元（约10,246百万美元），拉低了上年净利润与EPS基数。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F11",
+            "F9"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 24982,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "剔除税项调整后，Apple Q4 FY2024非GAAP稀释EPS为1.64美元，本季1.85美元仅增约12.8%，远未翻倍。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F10",
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 1.64,
+              "unit": "USD"
+            },
+            {
+              "source_id": "F1",
+              "value": 1.85,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Apple Q4 FY2025营业利润32,427百万美元、税前利润32,804百万美元，分别较上年增约9.584%和10.787%，经营盈利未翻倍。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F5",
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 32427,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F4",
+              "value": 32804,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Apple Q4 FY2025总净销售额102,466百万美元，同比增约7.938%，收入端未近乎翻倍。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 102466,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Apple Q4 FY2025大中华区净销售额14,493百万美元，同比下滑；服务业务28,750百万美元增长较快，区域与业务结构分化。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F14",
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 14493,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F13",
+              "value": 28750,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "(F1-0.97)/0.97*100",
+          "value": 90.722,
+          "unit": "%",
+          "evidence_ids": [
+            "F1"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "(F1-F10)/F10*100",
+          "value": 12.805,
+          "unit": "%",
+          "evidence_ids": [
+            "F1",
+            "F10"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "(F5-29591)/29591*100",
+          "value": 9.584,
+          "unit": "%",
+          "evidence_ids": [
+            "F5"
+          ]
+        },
+        {
+          "id": "K4",
+          "expression": "(F4-29610)/29610*100",
+          "value": 10.787,
+          "unit": "%",
+          "evidence_ids": [
+            "F4"
+          ]
+        },
+        {
+          "id": "K5",
+          "expression": "(F6-94930)/94930*100",
+          "value": 7.938,
+          "unit": "%",
+          "evidence_ids": [
+            "F6"
+          ]
+        }
+      ],
+      "limitations": [
+        "一次性税项费用具体构成及后续税务现金流影响未披露；非GAAP口径为公司自行调整，未含审计师公允值变动等细节。",
+        "各产品线毛利率、经营驱动量化贡献未提供，无法拆分服务增长对利润弹性。",
+        "大中华区下滑原因（汇率/需求）未说明。",
+        "F11中一次性税项原文为约102亿美元，F9登记非GAAP剔除值为10,246百万美元，两者数值不等，原文未解释差额，仅知均为2024 Q4税项影响描述。"
+      ],
+      "follow_up": [
+        {
+          "action": "获取Apple 10-K中税项附注及非GAAP调节表全文",
+          "reason": "确认一次性税项是否完全为非经常性，及非GAAP净利润与GAAP持续经营利润的可比性，以修正经营能力判断",
+          "evidence_ids": [
+            "F11",
+            "F9",
+            "F10"
+          ]
+        },
+        {
+          "action": "跟踪下季度大中华区净销售额与汇率中性增速",
+          "reason": "判断区域疲软是短期还是结构性的，改变整体收入预测",
+          "evidence_ids": [
+            "F14"
+          ]
+        }
+      ]
+    },
+    "traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "c1c24dd80b28c21911ad81ff5fafa1460439c68d83951e9925b1d14b461da0e0",
+        "latency_seconds": 9.536,
+        "usage": {
+          "prompt_tokens": 3551,
+          "completion_tokens": 1199,
+          "total_tokens": 4750,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "733e47eac876cf63557acdcf65c430c121161d767659e36b182ef8c0c57db052"
+      },
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "8866f574dc2786076d6cf5daf6282dc01e4dc932fd7569548e3ef8640a1fc067",
+        "latency_seconds": 11.966,
+        "usage": {
+          "prompt_tokens": 5265,
+          "completion_tokens": 1263,
+          "total_tokens": 6528,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "ccf5f3fe8fb396c3c8241d2f19d21c02daf909c3fd894924d6c9894496a483bc"
+      }
+    ],
+    "input_sha256": "76ce6325d7d1faa68f9a4c02150c961fe46da8fe253b9696360d5460c437b624",
+    "numeric_registry": {
+      "F1": {
+        "value": 1.85,
+        "unit": "USD"
+      },
+      "F10": {
+        "value": 1.64,
+        "unit": "USD"
+      },
+      "F2": {
+        "value": 27466,
+        "unit": "USD million"
+      },
+      "F4": {
+        "value": 32804,
+        "unit": "USD million"
+      },
+      "F5": {
+        "value": 32427,
+        "unit": "USD million"
+      },
+      "F3": {
+        "value": 5338,
+        "unit": "USD million"
+      },
+      "F9": {
+        "value": 24982,
+        "unit": "USD million"
+      },
+      "F7": {
+        "value": 15914,
+        "unit": "USD million"
+      },
+      "F14": {
+        "value": 14493,
+        "unit": "USD million"
+      },
+      "F6": {
+        "value": 102466,
+        "unit": "USD million"
+      },
+      "F13": {
+        "value": 28750,
+        "unit": "USD million"
+      },
+      "F15": {
+        "value": 9013,
+        "unit": "USD million"
+      }
+    },
+    "revision_raw": {
+      "answerability": "answerable",
+      "summary": "Apple Q4 FY2025 GAAP稀释每股收益1.85美元，较上年0.97美元表面近翻倍，但上年因欧洲法院裁决确认一次性税项费用约102亿美元，压低了净利润与EPS基数。剔除后上年非GAAP EPS为1.64美元，本季仅增12.8%。同期营业利润、税前利润、净销售额分别增9.584%、10.787%、7.938%，经营能力未近乎翻倍。大中华区收入下滑，服务业务增长较快。原说法混淆会计口径，经营实质为稳健个位数至双位数增长。",
+      "claims": [
+        {
+          "id": "C1",
+          "text": "Apple Q4 FY2025 GAAP稀释每股收益1.85美元，上年同期0.97美元，表面同比近一倍。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F1",
+              "value": 1.85,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Apple Q4 FY2024因欧洲法院国家援助裁决确认一次性所得税净额约102亿美元（约10,246百万美元），拉低了上年净利润与EPS基数。",
+          "kind": "fact",
+          "role": "risk",
+          "evidence_ids": [
+            "F11",
+            "F9"
+          ],
+          "numbers": [
+            {
+              "source_id": "F9",
+              "value": 24982,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "剔除税项调整后，Apple Q4 FY2024非GAAP稀释EPS为1.64美元，本季1.85美元仅增约12.8%，远未翻倍。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F10",
+            "F1"
+          ],
+          "numbers": [
+            {
+              "source_id": "F10",
+              "value": 1.64,
+              "unit": "USD"
+            },
+            {
+              "source_id": "F1",
+              "value": 1.85,
+              "unit": "USD"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Apple Q4 FY2025营业利润32,427百万美元、税前利润32,804百万美元，分别较上年增约9.584%和10.787%，经营盈利未翻倍。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F5",
+            "F4"
+          ],
+          "numbers": [
+            {
+              "source_id": "F5",
+              "value": 32427,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F4",
+              "value": 32804,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "text": "Apple Q4 FY2025总净销售额102,466百万美元，同比增约7.938%，收入端未近乎翻倍。",
+          "kind": "fact",
+          "role": "context",
+          "evidence_ids": [
+            "F6"
+          ],
+          "numbers": [
+            {
+              "source_id": "F6",
+              "value": 102466,
+              "unit": "USD million"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "Apple Q4 FY2025大中华区净销售额14,493百万美元，同比下滑；服务业务28,750百万美元增长较快，区域与业务结构分化。",
+          "kind": "fact",
+          "role": "caution",
+          "evidence_ids": [
+            "F14",
+            "F13"
+          ],
+          "numbers": [
+            {
+              "source_id": "F14",
+              "value": 14493,
+              "unit": "USD million"
+            },
+            {
+              "source_id": "F13",
+              "value": 28750,
+              "unit": "USD million"
+            }
+          ]
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "expression": "(F1-0.97)/0.97*100",
+          "value": 90.722,
+          "unit": "%",
+          "evidence_ids": [
+            "F1"
+          ]
+        },
+        {
+          "id": "K2",
+          "expression": "(F1-F10)/F10*100",
+          "value": 12.805,
+          "unit": "%",
+          "evidence_ids": [
+            "F1",
+            "F10"
+          ]
+        },
+        {
+          "id": "K3",
+          "expression": "(F5-29591)/29591*100",
+          "value": 9.584,
+          "unit": "%",
+          "evidence_ids": [
+            "F5"
+          ]
+        },
+        {
+          "id": "K4",
+          "expression": "(F4-29610)/29610*100",
+          "value": 10.787,
+          "unit": "%",
+          "evidence_ids": [
+            "F4"
+          ]
+        },
+        {
+          "id": "K5",
+          "expression": "(F6-94930)/94930*100",
+          "value": 7.938,
+          "unit": "%",
+          "evidence_ids": [
+            "F6"
+          ]
+        }
+      ],
+      "limitations": [
+        "一次性税项费用具体构成及后续税务现金流影响未披露；非GAAP口径为公司自行调整，未含审计师公允值变动等细节。",
+        "各产品线毛利率、经营驱动量化贡献未提供，无法拆分服务增长对利润弹性。",
+        "大中华区下滑原因（汇率/需求）未说明。",
+        "F11中一次性税项原文为约102亿美元，F9登记非GAAP剔除值为10,246百万美元，两者数值不等，原文未解释差额，仅知均为2024 Q4税项影响描述。"
+      ],
+      "follow_up": [
+        {
+          "action": "获取Apple 10-K中税项附注及非GAAP调节表全文",
+          "reason": "确认一次性税项是否完全为非经常性，及非GAAP净利润与GAAP持续经营利润的可比性，以修正经营能力判断",
+          "evidence_ids": [
+            "F11",
+            "F9",
+            "F10"
+          ]
+        },
+        {
+          "action": "跟踪下季度大中华区净销售额与汇率中性增速",
+          "reason": "判断区域疲软是短期还是结构性的，改变整体收入预测",
+          "evidence_ids": [
+            "F14"
+          ]
+        }
+      ]
+    },
+    "binding_feedback": {
+      "version": "counterbrief-1.2",
+      "answer_sha256": "cc5e9ebd2e61c6925b2ddcbaa13371e6ff98128fab5ba6c0d5a7eb92a68affea",
+      "semantic_verified": false,
+      "dimensions": [
+        {
+          "id": "temporal",
+          "name": "时点与披露边界",
+          "weight": 12,
+          "value": 1.0,
+          "status": "measured"
+        },
+        {
+          "id": "citations",
+          "name": "来源身份与引用覆盖",
+          "weight": 10,
+          "value": 1.0,
+          "status": "measured"
+        },
+        {
+          "id": "faithfulness",
+          "name": "原子事实与摘要支持",
+          "weight": 18,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "numeric",
+          "name": "数值和可执行计算",
+          "weight": 12,
+          "value": 0.769231,
+          "status": "measured"
+        },
+        {
+          "id": "materiality",
+          "name": "重要信息覆盖",
+          "weight": 12,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "counterevidence",
+          "name": "反证与平衡",
+          "weight": 12,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "scope",
+          "name": "实体期间口径",
+          "weight": 8,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "uncertainty",
+          "name": "预测推断与未知边界",
+          "weight": 8,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "usefulness",
+          "name": "可理解性和核查价值",
+          "weight": 5,
+          "value": null,
+          "status": "not_measured"
+        },
+        {
+          "id": "safety",
+          "name": "注入与越权建议",
+          "weight": 3,
+          "value": 1.0,
+          "status": "measured"
+        }
+      ],
+      "uncapped_score": null,
+      "score": null,
+      "gates": [
+        {
+          "reason": "incorrect numerical proof",
+          "cap": 55
+        }
+      ],
+      "issues": [
+        "calculation: K3",
+        "calculation: K4",
+        "calculation: K5"
+      ],
+      "definition": "Author-defined diagnostic score; not official competition score",
+      "human_validated": false
+    },
+    "proof_feedback": {
+      "money": [
+        {
+          "claim_id": "C2",
+          "source_id": "F9",
+          "source_value": 24982,
+          "source_unit": "USD million",
+          "text_value": "102",
+          "text_unit": "亿美元",
+          "numerically_equivalent": false,
+          "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+        },
+        {
+          "claim_id": "C5",
+          "source_id": "F6",
+          "source_value": 102466,
+          "source_unit": "USD million",
+          "text_value": "102466",
+          "text_unit": "百万美元",
+          "numerically_equivalent": true,
+          "scope": "Exact scale/currency equality only; does not prove period/metric/causality"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "K1",
+          "executed_value": 90.72164948453609,
+          "claimed_value": 90.722,
+          "unit": "%"
+        },
+        {
+          "id": "K2",
+          "executed_value": 12.804878048780498,
+          "claimed_value": 12.805,
+          "unit": "%"
+        },
+        {
+          "id": "K3",
+          "executed_value": 9.583995133655504,
+          "claimed_value": 9.589,
+          "unit": "%"
+        },
+        {
+          "id": "K4",
+          "executed_value": 10.786896318811213,
+          "claimed_value": 10.789,
+          "unit": "%"
+        },
+        {
+          "id": "K5",
+          "executed_value": 7.938480985989677,
+          "claimed_value": 7.929,
+          "unit": "%"
+        }
+      ],
+      "citation_identity": [
+        {
+          "claim_id": "C1",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C2",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C3",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C4",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C5",
+          "unknown_ids": []
+        },
+        {
+          "claim_id": "C6",
+          "unknown_ids": []
+        }
+      ]
+    },
+    "answer_sha256": "40a0b0914be375605fd01f36647e78d6acc5821d4dca29e6963134dbd7564ffb",
+    "source_document": {
+      "id": "pdf_43e7f0730b3c",
+      "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+      "pages": 4,
+      "bytes": 4919649,
+      "metadata_identity": "pinned_official",
+      "title": "Apple FY2025 Q4 consolidated financial statements",
+      "entity": "Apple",
+      "published_at": "2025-10-30",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf"
+    },
+    "source_selection": {
+      "total_chunks": 4,
+      "selected_ids": [
+        "P43E7F0731B1",
+        "P43E7F0732B1",
+        "P43E7F0733B1",
+        "P43E7F0734B1"
+      ],
+      "selected_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "selection_sha256": "a5ea98410ef908768d6d1d3b30e4f5c7a576cc493c49ba145a97fa914ecb87ef"
+    },
+    "pipeline": "native_pdf_v3",
+    "extraction_raw": {
+      "facts": [
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Diluted                                    $       1.85  $       0.97  $       7.46  $       6.08",
+          "text": "Apple Q4 FY2025（截至2025年9月27日三个月）稀释每股收益GAAP为1.85美元，上年同期（Q4 FY2024）为0.97美元，同比约增长近一倍。",
+          "value": 1.85,
+          "raw_number": "1.85",
+          "unit": "USD",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Net income                                     $     27,466 $     14,736  $    112,010  $     93,736",
+          "text": "Apple Q4 FY2025 GAAP净利润为27,466百万美元，上年Q4 FY2024为14,736百万美元，同比接近翻倍。",
+          "value": 27466,
+          "raw_number": "27,466",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Provision for income taxes                                     5,338        14,874        20,719        29,749",
+          "text": "Apple Q4 FY2025所得税费用为5,338百万美元，上年Q4 FY2024为14,874百万美元，同比下降明显。",
+          "value": 5338,
+          "raw_number": "5,338",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Income before provision for income taxes                       32,804        29,610       132,729       123,485",
+          "text": "Apple Q4 FY2025税前利润为32,804百万美元，上年Q4 FY2024为29,610百万美元，同比仅增长约10.8%，远未翻倍。",
+          "value": 32804,
+          "raw_number": "32,804",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Operating income                                           32,427        29,591       133,050       123,216",
+          "text": "Apple Q4 FY2025营业利润为32,427百万美元，上年同期为29,591百万美元，同比未翻倍。",
+          "value": 32427,
+          "raw_number": "32,427",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Total net sales (1)                                       102,466       94,930       416,161       391,035",
+          "text": "Apple Q4 FY2025总净销售额为102,466百万美元，上年同期为94,930百万美元，同比增长约7.9%。",
+          "value": 102466,
+          "raw_number": "102,466",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Total operating expenses                                15,914        14,288        62,151        57,467",
+          "text": "Apple Q4 FY2025总营业费用为15,914百万美元，上年同期为14,288百万美元，同比增长约11.4%。",
+          "value": 15914,
+          "raw_number": "15,914",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "quote": "Provision for income taxes                                      14,874        (10,246) (b)         4,628       29,749       (10,246) (b)        19,503",
+          "text": "Apple Q4 FY2024 GAAP所得税费用14,874百万美元中包含一次性欧洲国家援助案相关税收调整（非GAAP调整-10,246百万美元），调整后所得税为4,628百万美元。",
+          "value": 10874,
+          "raw_number": "10,246",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "quote": "Net income                                      $     14,736  $     10,246 (b)  $     24,982 $     93,736  $     10,246 (b)  $    103,982",
+          "text": "Apple Q4 FY2024 GAAP净利润14,736百万美元，剔除一次性税项调整（10,246百万美元）后非GAAP净利润为24,982百万美元。",
+          "value": 24982,
+          "raw_number": "24,982",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "quote": "Diluted earnings per share                           $       0.97  $       0.67 (c)  $       1.64  $       6.08  $       0.67 (c)  $       6.75",
+          "text": "Apple Q4 FY2024 GAAP稀释每股收益0.97美元，非GAAP（剔除税项调整影响0.67美元）为1.64美元；若以非GAAP基准对比，Q4 FY2025的1.85美元仅增长约12.8%。",
+          "value": 1.64,
+          "raw_number": "1.64",
+          "unit": "USD",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0734B1",
+          "quote": "On September 10, 2024, the European Court of Justice announced that it had set aside the 2020 judgment of the European General Court and confirmed the European Commission’s 2016 State Aid decision. As a result, during the fourth quarter of 2024 the Company recorded a one-time income tax charge of $10.2 billion, net",
+          "text": "2024年9月10日欧洲法院确认国家援助决定，Apple在2024年第四季度确认一次性所得税费用净额102亿美元（即约10,246百万美元），显著拉低了上年同期净利润与每股收益。",
+          "value": null,
+          "raw_number": "",
+          "unit": "",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Shares used in computing earnings per share:    Diluted                                             14,863,609    15,242,853    15,004,697    15,408,095",
+          "text": "Apple Q4 FY2025稀释每股收益计算所用股数为14,863,609千股，上年同期为15,242,853千股，股数略有下降。",
+          "value": 14863609,
+          "raw_number": "14,863,609",
+          "unit": "thousands",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Services                                               28,750        24,972       109,158        96,169",
+          "text": "Apple Q4 FY2025服务净销售额28,750百万美元，上年同期24,972百万美元，服务业务增长较快。",
+          "value": 28750,
+          "raw_number": "28,750",
+          "unit": "USD million",
+          "role": "support",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Greater China                                           14,493        15,033        64,377       66,952",
+          "text": "Apple Q4 FY2025大中华区净销售额14,493百万美元，上年同期15,033百万美元，大中华区收入同比下滑。",
+          "value": 14493,
+          "raw_number": "14,493",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        },
+        {
+          "chunk_id": "P43E7F0731B1",
+          "quote": "Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+          "text": "Apple Q4 FY2025可穿戴、家居及配件净销售额9,013百万美元，上年同期9,042百万美元，基本持平略降。",
+          "value": 9013,
+          "raw_number": "9,013",
+          "unit": "USD million",
+          "role": "caution",
+          "status": "observed"
+        }
+      ]
+    },
+    "extraction_traces": [
+      {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "bd4b3235e9eab82c67cd57c67d02734842e5134ae104797c8d16bfafbaaf4f04",
+        "latency_seconds": 19.838,
+        "usage": {
+          "prompt_tokens": 3755,
+          "completion_tokens": 1920,
+          "total_tokens": 5675,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "ded2273ce25b903a0e21ebab2ccc4813fca8ea549843464bb78b04ed9a5a5f8e"
+      }
+    ],
+    "extraction_audit": {
+      "facts_proposed": 15,
+      "facts_accepted": 13,
+      "rejected": [
+        {
+          "index": 8,
+          "reason": "数字与原文不相等或被换算"
+        },
+        {
+          "index": 12,
+          "reason": "引用不在原文连续片段中"
+        }
+      ],
+      "raw_response_sha256": "cf25bc7179efdca9e8ffe52b00c28074c483eaa6710df4d3fa5db0498967564e",
+      "quote_verification": "whitespace-normalized exact contiguous source match",
+      "limitation": "Quote existence and raw numeric equality do not prove fiscal-column or semantic correctness."
+    }
+  },
+  "judge_attempts": [
+    {
+      "version": "native-source-audit-3.0",
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选称Q4 FY2025 GAAP稀释EPS 1.85美元、上年0.97美元，与F1及P43E7F0731B1一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选称Q4 FY2024一次性税项约102亿美元(10,246百万美元)拉低基数，F11与F9支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选称剔除后上年非GAAP EPS 1.64美元、本季增12.8%，F10与F1及K2计算支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选称营业利润32427、税前32804百万美元，增9.584%/10.787%，F5/F4与K3/K4支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选称总净销售额102466百万美元增7.938%，F6与K5支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选称大中华14493百万同比下滑、服务28750百万增长快，F14/F13支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "quote": "Apple Q4 FY2025 GAAP稀释每股收益1.85美元，上年同期0.97美元"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "quote": "剔除税项调整后，Apple Q4 FY2024非GAAP稀释EPS为1.64美元，本季1.85美元仅增约12.8%"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "quote": "上年因欧洲法院裁决确认一次性税项费用约102亿美元，压低了净利润与EPS基数"
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "quote": "非GAAP调整不能替代GAAP；不能把税项低基数说成经营能力翻倍。"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题为核查EPS近翻倍是否代表经营能力翻倍，候选正确区分GAAP与非GAAP及税项低基数影响，结论受支持"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "007010168e8f33ad213b309193699613d319aa71dd4e30bee0865eda2e9392c2",
+        "latency_seconds": 9.918,
+        "usage": {
+          "prompt_tokens": 8246,
+          "completion_tokens": 644,
+          "total_tokens": 8890,
+          "prompt_tokens_details": {
+            "cached_tokens": 576
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "133d79b716f165cd7ec81c90f77a7300cbe3cafa31d35e71b9b0c5b460facc13"
+      },
+      "input_sha256": "d9fae83907007b0722bebd9e2de7183f11823c26e7c4c920ff911404adb76d7f",
+      "answer_sha256": "40a0b0914be375605fd01f36647e78d6acc5821d4dca29e6963134dbd7564ffb",
+      "judge_prompt_sha256": "572d89a285de91e7933a7c05a332dafaf6e78b63b0a45da83b15f0738812c1a5",
+      "validation_error": "Positive quote must be a verbatim candidate span, not source text; invalid IDs: [0]"
+    },
+    {
+      "version": "native-source-audit-3.0",
+      "judgment": {
+        "claims": [
+          {
+            "id": "C1",
+            "verdict": "supported",
+            "reason": "候选称Q4 FY2025 GAAP稀释EPS 1.85美元、上年0.97美元，与F1(P43E7F0731B1)一致",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C2",
+            "verdict": "supported",
+            "reason": "候选称Q4 FY2024一次性税项约102亿美元(10,246百万美元)拉低基数，F11与F9支持事实存在",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C3",
+            "verdict": "supported",
+            "reason": "候选称剔除后上年非GAAP EPS 1.64美元、本季增12.8%，F10与F1及K2计算支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C4",
+            "verdict": "supported",
+            "reason": "候选称营业利润32427、税前32804百万美元，增9.584%/10.787%，F5/F4与K3/K4支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C5",
+            "verdict": "supported",
+            "reason": "候选称总净销售额102466百万美元增7.938%，F6与K5支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          },
+          {
+            "id": "C6",
+            "verdict": "supported",
+            "reason": "候选称大中华14493百万同比下滑、服务28750百万增长快，F14/F13支持",
+            "kind_valid": true,
+            "scope_valid": true,
+            "numbers_consistent": true
+          }
+        ],
+        "coverage": [
+          {
+            "id": "R1",
+            "present": true,
+            "quote": "Apple Q4 FY2025 GAAP稀释每股收益1.85美元，上年同期0.97美元"
+          },
+          {
+            "id": "R2",
+            "present": true,
+            "quote": "剔除税项调整后，Apple Q4 FY2024非GAAP稀释EPS为1.64美元，本季1.85美元仅增约12.8%"
+          },
+          {
+            "id": "R3",
+            "present": true,
+            "quote": "上年因欧洲法院裁决确认一次性税项费用约102亿美元，压低了净利润与EPS基数"
+          }
+        ],
+        "limitations": [
+          {
+            "index": 0,
+            "present": true,
+            "quote": "非GAAP调整不能替代GAAP；不能把税项低基数说成经营能力翻倍。"
+          }
+        ],
+        "summary_supported": true,
+        "follow_up_useful": true,
+        "direct_answer": true,
+        "reason": "最重要问题为核查EPS近翻倍是否代表经营能力翻倍，候选正确区分GAAP与非GAAP及税项低基数影响，结论受支持"
+      },
+      "trace": {
+        "model": "hy3",
+        "base_url": "https://tokenhub.tencentmaas.com/v1",
+        "prompt_hash": "fa95111ffb776d9ad858890463832575ee4aee6a6ab0347e284b373b67600a14",
+        "latency_seconds": 6.894,
+        "usage": {
+          "prompt_tokens": 8948,
+          "completion_tokens": 646,
+          "total_tokens": 9594,
+          "prompt_tokens_details": {
+            "cached_tokens": 704
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "attempts": 1,
+        "reasoning_effort": "no_think",
+        "request_id_sha256": "afc304fdb5a9adb9543e047a0f507ed7dfa4ba5f6d473c5660775670b094aad8"
+      },
+      "input_sha256": "df060beb965701905fa80effaf3166cd829e6498ff2a71b2dba37dc26fc561a5",
+      "answer_sha256": "40a0b0914be375605fd01f36647e78d6acc5821d4dca29e6963134dbd7564ffb",
+      "judge_prompt_sha256": "572d89a285de91e7933a7c05a332dafaf6e78b63b0a45da83b15f0738812c1a5",
+      "validation_error": "Positive quote must be a verbatim candidate span, not source text; invalid IDs: [0]"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pdf_43e7f0730b3c",
+      "sha256": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+      "pages": 4,
+      "bytes": 4919649,
+      "metadata_identity": "pinned_official",
+      "title": "Apple FY2025 Q4 consolidated financial statements",
+      "entity": "Apple",
+      "published_at": "2025-10-30",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf"
+    }
+  ],
+  "error": "Positive quote must be a verbatim candidate span, not source text; invalid IDs: [0]",
+  "raw_source_audit_sha256": "8fcec6013f50da0907504eb7c239f33a10162214f5915ffae53cec80c63ac5a2",
+  "replay_material": {
+    "audit_cards": [
+      {
+        "id": "F1",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Diluted                                    $       1.85  $       0.97  $       7.46  $       6.08",
+        "quote": "Diluted                                    $       1.85  $       0.97  $       7.46  $       6.08",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 1.85,
+        "unit": "USD",
+        "raw_number": "1.85",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F2",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Net income                                     $     27,466 $     14,736  $    112,010  $     93,736",
+        "quote": "Net income                                     $     27,466 $     14,736  $    112,010  $     93,736",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 27466,
+        "unit": "USD million",
+        "raw_number": "27,466",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F3",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Provision for income taxes                                     5,338        14,874        20,719        29,749",
+        "quote": "Provision for income taxes                                     5,338        14,874        20,719        29,749",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 5338,
+        "unit": "USD million",
+        "raw_number": "5,338",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F4",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Income before provision for income taxes                       32,804        29,610       132,729       123,485",
+        "quote": "Income before provision for income taxes                       32,804        29,610       132,729       123,485",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 32804,
+        "unit": "USD million",
+        "raw_number": "32,804",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F5",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Operating income                                           32,427        29,591       133,050       123,216",
+        "quote": "Operating income                                           32,427        29,591       133,050       123,216",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 32427,
+        "unit": "USD million",
+        "raw_number": "32,427",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F6",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "quote": "Total net sales (1)                                       102,466       94,930       416,161       391,035",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 102466,
+        "unit": "USD million",
+        "raw_number": "102,466",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F7",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Total operating expenses                                15,914        14,288        62,151        57,467",
+        "quote": "Total operating expenses                                15,914        14,288        62,151        57,467",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 15914,
+        "unit": "USD million",
+        "raw_number": "15,914",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F9",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Net income                                      $     14,736  $     10,246 (b)  $     24,982 $     93,736  $     10,246 (b)  $    103,982",
+        "quote": "Net income                                      $     14,736  $     10,246 (b)  $     24,982 $     93,736  $     10,246 (b)  $    103,982",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": 24982,
+        "unit": "USD million",
+        "raw_number": "24,982",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F10",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Diluted earnings per share                           $       0.97  $       0.67 (c)  $       1.64  $       6.08  $       0.67 (c)  $       6.75",
+        "quote": "Diluted earnings per share                           $       0.97  $       0.67 (c)  $       1.64  $       6.08  $       0.67 (c)  $       6.75",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": 1.64,
+        "unit": "USD",
+        "raw_number": "1.64",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F11",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "On September 10, 2024, the European Court of Justice announced that it had set aside the 2020 judgment of the European General Court and confirmed the European Commission’s 2016 State Aid decision. As a result, during the fourth quarter of 2024 the Company recorded a one-time income tax charge of $10.2 billion, net",
+        "quote": "On September 10, 2024, the European Court of Justice announced that it had set aside the 2020 judgment of the European General Court and confirmed the European Commission’s 2016 State Aid decision. As a result, during the fourth quarter of 2024 the Company recorded a one-time income tax charge of $10.2 billion, net",
+        "source_chunk_id": "P43E7F0734B1",
+        "page": 4,
+        "locator": "PDF p4, chars 0–3348",
+        "value": null,
+        "unit": "",
+        "raw_number": "",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F13",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Services                                               28,750        24,972       109,158        96,169",
+        "quote": "Services                                               28,750        24,972       109,158        96,169",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 28750,
+        "unit": "USD million",
+        "raw_number": "28,750",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "support",
+        "quote_verified": true
+      },
+      {
+        "id": "F14",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Greater China                                           14,493        15,033        64,377       66,952",
+        "quote": "Greater China                                           14,493        15,033        64,377       66,952",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 14493,
+        "unit": "USD million",
+        "raw_number": "14,493",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      },
+      {
+        "id": "F15",
+        "source_id": "pdf_43e7f0730b3c",
+        "text": "Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+        "quote": "Wearables, Home and Accessories                            9,013         9,042       35,686       37,005",
+        "source_chunk_id": "P43E7F0731B1",
+        "page": 1,
+        "locator": "PDF p1, chars 0–4027",
+        "value": 9013,
+        "unit": "USD million",
+        "raw_number": "9,013",
+        "entity": "Apple",
+        "published_at": "2025-10-30",
+        "status": "source_excerpt",
+        "role": "caution",
+        "quote_verified": true
+      }
+    ],
+    "reference_case": {
+      "id": "AP02",
+      "question": "有人说 Apple Q4 FY2025 每股摊薄盈利同比翻近一倍，说明经营能力也近乎翻倍。结合上年税项调整核查。",
+      "as_of": "2025-12-01",
+      "required": [
+        "R1",
+        "R2"
+      ],
+      "counter": [
+        "R3"
+      ],
+      "point_definitions": {
+        "R1": "Q4 FY2025摊薄EPS1.85美元，Q4 FY2024 GAAP为0.97美元。",
+        "R2": "上年经税项调整EPS为1.64美元，按此比较本季约增长12.8%。",
+        "R3": "2024第四季度有10246百万美元一次性税项费用影响，同比GAAP比较受低基数影响。"
+      },
+      "limitations": [
+        "非GAAP调整不能替代GAAP；不能把税项低基数说成经营能力翻倍。"
+      ],
+      "expected_answerability": "answerable"
+    }
+  },
+  "id": "AP02",
+  "split": "new_source",
+  "protocol_sha256": "40e7a87c0823f7251bd51522f3e0b1d5de83af7a2c018228b346dbdf72dd326b",
+  "finished_utc": "2026-09-10T01:35:23.575804+00:00",
+  "wall_seconds": 59.096
+}

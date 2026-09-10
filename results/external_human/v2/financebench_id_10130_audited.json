@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_10130",
+  "company": "Corning",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "c088e290dde814dc4a21de3d11d4b1fd3e9b97be5f4005f0efc9aa7fa06b428e",
+  "reference_text_differs": false,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "07a9403363df6a2a497366802a7b582468ffc1a117b3d575f3315fcac25d4243",
+  "started_utc": "2026-09-09T17:55:21.184656+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate computed DPO as 50 days using correct inputs but wrong arithmetic; 365*1381/7890 = 63.86, matching reference. Rounding to two decimals required but candidate gave 50 (integer, materially wrong).",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Corning Incorporated, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2020 DPO with FY2019-FY2020 average AP and inventory change, correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "DPO in days, candidate reported days."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate answer 50 days; correct per formula and evidence is 63.86 days."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Used AP 1587/1174, COGS 7772, inv 2320/2438 from evidence; inputs correct but math wrong."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "7e85f86b6f67730246278e61b45728771ba7e4f91cfb18592346f4d1be3b919d",
+    "latency_seconds": 9.831,
+    "usage": {
+      "prompt_tokens": 3772,
+      "completion_tokens": 270,
+      "total_tokens": 4042,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2d4ed4124d25764ba77c6cd63364f09d67ff8c1e25539b61f876cd332b11e93a"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

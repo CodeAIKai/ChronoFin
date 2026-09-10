@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_03473",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "6e986afce56e9bc760e76f3c2313d66dec260c1afdcad89805ca8a0445522ba0",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "6eaebcab18fcfa0eea57cdd96fd4db41fd88f5a668cf6f3120938399c2197d96",
+  "started_utc": "2026-09-09T17:51:47.128226+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate provided substantive ROA answer (7.13%) using wrong net income ($14,293M vs evidence net income attributable $1,248M) and wrong assets ($199,203M/$201,536M vs evidence $87,896M/$87,270M). Correct ROA from evidence is ~0.01, matching reference. Answer is incorrect, not refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6ee4475e109e4f7ebe3a10b5af3f903c5d274c6621be9e64ab9b59897ae0bb85",
+    "latency_seconds": 7.574,
+    "usage": {
+      "prompt_tokens": 3960,
+      "completion_tokens": 100,
+      "total_tokens": 4060,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "2146afeb56cf41c81053bc96d22f45430c6bd9c73ecab39dd51029a88eb48bd9"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_03473_dev",
+  "reused_from": "results/external_human/v2/financebench_id_03473_holistic.json",
+  "parent_sha256": "c7cd906e1125bd23126e34a19f70fb5afcbe857891e8284ae8c3a7b7b466f37e"
+}

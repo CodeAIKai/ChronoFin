@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01491",
+  "uid": "financebench_id_01491_val",
+  "split": "new_response_validation",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4b10602c275df3b7ed117c8a8c7b516ebdb100e948cadac70a784b4747df01fa",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "04195ef6d9c2d3ec1e471ed57adcbe232eb6664faace84e7dba06ccc7a0028ad",
+  "started_utc": "2026-09-10T01:27:06.609471+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate provides the requested cash proceeds amount of $13.2 billion, matching the reference and evidence (secured $13.2 billion in cash proceeds from Kenvue separation as of Aug 30, 2023)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "93d8e67a2d2561020d533f25a8d6b350676a0b23d977e722fca26d5a9b9101e1",
+    "latency_seconds": 10.392,
+    "usage": {
+      "prompt_tokens": 1463,
+      "completion_tokens": 65,
+      "total_tokens": 1528,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "980b838af490b6dd0782aaa80aeb651da22387e043f976bed79c04d2c79c04f6"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

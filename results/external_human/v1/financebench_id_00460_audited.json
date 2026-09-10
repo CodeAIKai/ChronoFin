@@ -1,0 +1,70 @@
+{
+  "id": "financebench_id_00460",
+  "company": "Best Buy",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "aeea948243f8a36578937863422f3c265c19dfe324f903a4fc4f96c5711f3859",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "789d4f369ae0970634d0d97a75585dd04371ff29773364d2d18a0fc156b3cf27",
+  "started_utc": "2026-09-09T17:32:43.018284+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate states Best Buy stores fell from 930 (Q2 FY2023) to 907 (Q2 FY2024), but evidence shows Best Buy-branded stores were 930 at end Q2 FY2023 and 907 at end Q2 FY2024 — this part matches. However, reference defines the change as total Domestic segment stores (982 to 969, -1.32%), not Best Buy-branded only. The question asks 'number of Best Buy stores'; candidate answered for Best Buy-branded stores correctly per evidence, but reference answer uses total stores and says 982 to 969. Since question says 'Best Buy stores' and evidence separates 'Best Buy' from 'Total', candidate's numbers are supported for Best Buy-branded. Yet reference explicitly says decline from 982 to 969 (total). The candidate's core answer (change occurred, decrease) is correct qualitatively, but numeric values conflict with reference's scope. Given reference uses total stores as 'Best Buy stores', candidate's 930/907 is materially wrong vs reference scope.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Best Buy stores; candidate used Best Buy-branded line."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Q2 FY2023 vs Q2 FY2024 used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Store count, no unit conversion."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says 930 to 907; reference says 982 to 969 total. Scope mismatch makes numeric answer wrong vs reference."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table shows Best Buy 930->907, Total 982->969."
+      }
+    ],
+    "reference_conflict": true,
+    "reference_conflict_reason": "Reference treats 'Best Buy stores' as total Domestic segment stores (982 to 969) while evidence separates Best Buy-branded (930 to 907) from Total (982 to 969)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "946370491c475abb9961d314aee8df829e8d68d5e92a1e10edc6ca560403c717",
+    "latency_seconds": 6.682,
+    "usage": {
+      "prompt_tokens": 2736,
+      "completion_tokens": 458,
+      "total_tokens": 3194,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "c2903e2058a246c645a4733870d7a46078fa25f1e2faf3d60c142e3d56c168b2"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": true
+}

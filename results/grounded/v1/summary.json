@@ -1,0 +1,234 @@
+{
+  "application_planned": 80,
+  "application_complete": 80,
+  "order_planned": 48,
+  "order_complete": 48,
+  "application": {
+    "dev/full_context": {
+      "n": 5,
+      "complete": 5,
+      "mean_score_failure_zero": 81.5,
+      "mean_pipeline_tokens": 10819.2,
+      "note": "Pipeline tokens count saved draft generation once per method; actual newly billed calls reported separately."
+    },
+    "dev/counterbrief_first_pass": {
+      "n": 5,
+      "complete": 5,
+      "mean_score_failure_zero": 90.2,
+      "mean_pipeline_tokens": 8442.2,
+      "note": "Pipeline tokens count saved draft generation once per method; actual newly billed calls reported separately."
+    },
+    "dev/full_context_revision": {
+      "n": 5,
+      "complete": 5,
+      "mean_score_failure_zero": 82.0,
+      "mean_pipeline_tokens": 16643,
+      "note": "Pipeline tokens count saved draft generation once per method; actual newly billed calls reported separately."
+    },
+    "dev/counterbrief": {
+      "n": 5,
+      "complete": 5,
+      "mean_score_failure_zero": 98.0,
+      "mean_pipeline_tokens": 11537,
+      "note": "Pipeline tokens count saved draft generation once per method; actual newly billed calls reported separately."
+    },
+    "evaluation/full_context": {
+      "n": 15,
+      "complete": 15,
+      "mean_score_failure_zero": 83.38946666666666,
+      "mean_pipeline_tokens": 10131.4,
+      "note": "Pipeline tokens count saved draft generation once per method; actual newly billed calls reported separately."
+    },
+    "evaluation/counterbrief_first_pass": {
+      "n": 15,
+      "complete": 15,
+      "mean_score_failure_zero": 82.6228,
+      "mean_pipeline_tokens": 7649.066666666667,
+      "note": "Pipeline tokens count saved draft generation once per method; actual newly billed calls reported separately."
+    },
+    "evaluation/full_context_revision": {
+      "n": 15,
+      "complete": 15,
+      "mean_score_failure_zero": 86.5228,
+      "mean_pipeline_tokens": 15382.666666666666,
+      "note": "Pipeline tokens count saved draft generation once per method; actual newly billed calls reported separately."
+    },
+    "evaluation/counterbrief": {
+      "n": 15,
+      "complete": 15,
+      "mean_score_failure_zero": 91.8614,
+      "mean_pipeline_tokens": 10676.8,
+      "note": "Pipeline tokens count saved draft generation once per method; actual newly billed calls reported separately."
+    }
+  },
+  "order": {
+    "legacy": {
+      "D01": {
+        "scores": {
+          "reverse": 55,
+          "original": 96.0,
+          "shuffle": 100.0,
+          "repeat": 96.0
+        },
+        "range": 45.0,
+        "n": 4
+      },
+      "D02": {
+        "scores": {
+          "original": 97.0,
+          "reverse": 97.0,
+          "shuffle": 90.0,
+          "repeat": 97.0
+        },
+        "range": 7.0,
+        "n": 4
+      },
+      "D04": {
+        "scores": {
+          "original": 100.0,
+          "reverse": 100.0,
+          "shuffle": 100.0,
+          "repeat": 100.0
+        },
+        "range": 0.0,
+        "n": 4
+      },
+      "D05": {
+        "scores": {
+          "original": 96.0,
+          "reverse": 96.0,
+          "shuffle": 93.0,
+          "repeat": 96.0
+        },
+        "range": 3.0,
+        "n": 4
+      },
+      "E11": {
+        "scores": {
+          "original": 93.5,
+          "reverse": 93.5,
+          "shuffle": 93.5,
+          "repeat": 93.5
+        },
+        "range": 0.0,
+        "n": 4
+      },
+      "E12": {
+        "scores": {
+          "original": 100.0,
+          "reverse": 100.0,
+          "shuffle": 100.0,
+          "repeat": 100.0
+        },
+        "range": 0.0,
+        "n": 4
+      }
+    },
+    "anchored": {
+      "D01": {
+        "scores": {
+          "original": 100.0,
+          "reverse": 100.0,
+          "shuffle": 100.0,
+          "repeat": 100.0
+        },
+        "range": 0.0,
+        "n": 4
+      },
+      "D02": {
+        "scores": {
+          "original": 94.0,
+          "reverse": 100.0,
+          "shuffle": 100.0,
+          "repeat": 97.0
+        },
+        "range": 6.0,
+        "n": 4
+      },
+      "D04": {
+        "scores": {
+          "original": 100.0,
+          "reverse": 100.0,
+          "shuffle": 100.0,
+          "repeat": 100.0
+        },
+        "range": 0.0,
+        "n": 4
+      },
+      "D05": {
+        "scores": {
+          "original": 96.0,
+          "reverse": 96.0,
+          "shuffle": 96.0,
+          "repeat": 96.0
+        },
+        "range": 0.0,
+        "n": 4
+      },
+      "E11": {
+        "scores": {
+          "original": 93.5,
+          "reverse": 89.5,
+          "shuffle": 89.5,
+          "repeat": 93.5
+        },
+        "range": 4.0,
+        "n": 4
+      },
+      "E12": {
+        "scores": {
+          "original": 100.0,
+          "reverse": 96.0,
+          "shuffle": 96.0,
+          "repeat": 100.0
+        },
+        "range": 4.0,
+        "n": 4
+      }
+    }
+  },
+  "paired": {
+    "dev/counterbrief-minus-full_context": {
+      "n": 5,
+      "mean": 16.5,
+      "wins": 2,
+      "ties": 2,
+      "losses": 1
+    },
+    "dev/counterbrief-minus-full_context_revision": {
+      "n": 5,
+      "mean": 16.0,
+      "wins": 2,
+      "ties": 2,
+      "losses": 1
+    },
+    "dev/counterbrief-minus-counterbrief_first_pass": {
+      "n": 5,
+      "mean": 7.8,
+      "wins": 1,
+      "ties": 4,
+      "losses": 0
+    },
+    "evaluation/counterbrief-minus-full_context": {
+      "n": 15,
+      "mean": 8.471933333333334,
+      "wins": 7,
+      "ties": 5,
+      "losses": 3
+    },
+    "evaluation/counterbrief-minus-full_context_revision": {
+      "n": 15,
+      "mean": 5.3386000000000005,
+      "wins": 8,
+      "ties": 4,
+      "losses": 3
+    },
+    "evaluation/counterbrief-minus-counterbrief_first_pass": {
+      "n": 15,
+      "mean": 9.2386,
+      "wins": 9,
+      "ties": 4,
+      "losses": 2
+    }
+  }
+}

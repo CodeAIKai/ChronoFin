@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_03031",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "e8c43bb44652858334e005d1f6e7ca31e85c7e252262bcea6563ce85c17c73cc",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "e76da7c9aab8895d4f1b07ef20f5542fa8d763b515edf9419f570255a39e2026",
+  "started_utc": "2026-09-09T17:34:25.950815+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states no balance sheet was provided and declines to answer, despite evidence containing the required figures (current assets 19,815; liabilities 13,997; NWC=5,818). It gives no substantive answer."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "80452fa639521c7257b078757ee77e478ef31344e1984b99cfebf23c77438589",
+    "latency_seconds": 2.339,
+    "usage": {
+      "prompt_tokens": 1405,
+      "completion_tokens": 67,
+      "total_tokens": 1472,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6a91359b1cd5dccbb45cbeb1ad1af879be5d1e41b49364e606439a52c3e7a80f"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

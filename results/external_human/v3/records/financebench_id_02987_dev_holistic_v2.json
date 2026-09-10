@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_02987",
+  "company": "Activision Blizzard",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "e41014be9d6f138e0282f21d87298588e3999903f3c7b4073c34cd95fc9df007",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "043b5ad49cdabd8f44c01fc910da2330bdc92791d101e8284ed7c448efa8aee4",
+  "started_utc": "2026-09-09T17:51:14.881824+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides only an excerpt of the 10-K cover and business overview, with no substantive answer, calculation, or stated ratio for FY2019 fixed asset turnover."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4072ae5f56cf0d050d3a4941da5041cb12dcc3b639239d0c36277b8a339848b3",
+    "latency_seconds": 6.795,
+    "usage": {
+      "prompt_tokens": 5078,
+      "completion_tokens": 55,
+      "total_tokens": 5133,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "01e24094b5172e7e1af2a2c679969423a94ff7d6e870e7c17a4e093c4bb9d540"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_02987_dev",
+  "reused_from": "results/external_human/v2/financebench_id_02987_holistic.json",
+  "parent_sha256": "46eca2510a0da37968d946475e6feb8e6f41fb6b98912131ea80f65c76866a37"
+}

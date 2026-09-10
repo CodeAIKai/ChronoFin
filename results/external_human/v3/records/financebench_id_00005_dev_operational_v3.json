@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00005",
+  "uid": "financebench_id_00005_dev",
+  "split": "development",
+  "company": "Corning",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "08af333c3c480de7a3963d4aab36e7d239246a09a1f8f575f03f9276f404f01e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "aba5daeadfbfdf2bc435e17c73eeb106d122e88d1f8a83e489aa00652e80c4b3",
+  "started_utc": "2026-09-09T18:04:46.037093+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "Here are the key points I took away from the Corning Incorporated Executive Supplemental Pension Plan",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate provided unrelated summary of Corning's Executive Supplemental Pension Plan instead of answering whether FY2022 working capital was positive or stating metric irrelevance. Question about working capital ($7,453M current assets - $5,175M current liabilities = $2,278M positive per evidence) was not addressed."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d1dcf8b3398095d4f718d8cd3f862fcf529188600740ec88e96ce8ba4ddaa893",
+    "latency_seconds": 3.053,
+    "usage": {
+      "prompt_tokens": 2209,
+      "completion_tokens": 132,
+      "total_tokens": 2341,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3e484063859cfdf1a516d32ad70dd20a9fe14eafd753123a604bc6c95cc33bdb"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_04412",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "88e8b90249365384ecb8a546f0f55a33925910c9079dcaba0dc21ee532c6b7a6",
+  "reference_text_differs": false,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "7b382bcd1b7838817276bf4588ee82ab5e1e563cc541b160324682e232b158b4",
+  "started_utc": "2026-09-09T17:53:03.776205+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides financial highlights and data but does not compute or state the asset turnover ratio (65,398 / ((50,710+47,528)/2) = 1.33). It withholds the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6f06478f679734489fca1d64214ceb1e5c1c8763dcf3348cc4239607ec40f371",
+    "latency_seconds": 6.712,
+    "usage": {
+      "prompt_tokens": 3035,
+      "completion_tokens": 67,
+      "total_tokens": 3102,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "fe1c18e2ab52727c3c76c262fc50c78f43fc2966289d71476ea990ab7a989bad"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_04412_dev",
+  "reused_from": "results/external_human/v2/financebench_id_04412_holistic.json",
+  "parent_sha256": "28017704d0a3367eda2866eee1cc1a9e90ca88a3562138c5e47fb02f69982e49"
+}

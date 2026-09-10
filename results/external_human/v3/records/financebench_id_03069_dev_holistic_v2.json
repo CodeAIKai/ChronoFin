@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_03069",
+  "company": "AMD",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "7b2eae5d540d7cf2d447ad6fc97b77ac14d4dd285804eba026e831fbf9dbf943",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "03b778344208806fe690b10f8088ecb2aac7385f5c185abb095d46eab40e11bf",
+  "started_utc": "2026-09-09T17:51:31.486436+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot provide the FY2015 D&A % margin because the necessary data is not included, and only explains how to calculate it, despite evidence containing AMD revenue (3991) and D&A (167) for FY2015."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "579acd2e777db5ace7c99b1b0ebefdf227d2a68882b941907dfde8b5b5c00be6",
+    "latency_seconds": 6.696,
+    "usage": {
+      "prompt_tokens": 3026,
+      "completion_tokens": 71,
+      "total_tokens": 3097,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "63d5c4d416c44649b6b446663d05d59b3657e52bf831b65307d3fbce77552f89"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_03069_dev",
+  "reused_from": "results/external_human/v2/financebench_id_03069_holistic.json",
+  "parent_sha256": "b0d08afda22422ad7a7d58f7cf42d63cf3ecf4111785c2b3d92d617e2418fae6"
+}

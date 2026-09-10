@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_02608",
+  "company": "Best Buy",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "13eecd8187aa00d7beabe0d3c9432400dd6376cd21e327f1f0119c3b9c821f06",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "484a2b5ccb57aeba7c04d68fc6378467e6cce90ada16275d4628bfd71c61da91",
+  "started_utc": "2026-09-09T17:51:03.851216+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate response is about disclosure controls effectiveness, not the requested 3-year average net profit margin; it withholds the answer entirely."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "44e1495fa01ec946e29936296f246ec99309a7443f69b3a9b67ec633e1115818",
+    "latency_seconds": 6.643,
+    "usage": {
+      "prompt_tokens": 1815,
+      "completion_tokens": 48,
+      "total_tokens": 1863,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "6d45ce6fe80ed171ad1828a6eb880c55709167b3636570f9fdb49b93187533cc"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_02608_dev",
+  "reused_from": "results/external_human/v2/financebench_id_02608_holistic.json",
+  "parent_sha256": "308e2e4b0af30278bb3e30a81528f9ffe724d3f14406abf61892a2461495fb10"
+}

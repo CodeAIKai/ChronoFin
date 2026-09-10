@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03849",
+  "company": "MGM Resorts",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "fc21dfa8f0f804586c3f657b5133e4da85a9814c063c3938088957a82d4a3db0",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "b847138b1eab642b8f5ae941f0320b67d9f28aae085e883f30800473743616af",
+  "started_utc": "2026-09-09T17:34:40.101454+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate computed FY2018-2020 capex/revenue per year using evidence revenues and capital expenditures, averaged to 7.8% which rounds near reference 7.9% (difference due to rounding method; substantive answer agrees).",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "MGM Resorts identified correctly"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018-FY2020 used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer in percents as requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "3yr avg capex% = 7.8% vs ref 7.9%, reasonable rounding"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Revenues and capex from evidence statements match candidate numbers"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "52edd83114f3b212f274733738c7dd1238313d590ca52fc149e99f802700c612",
+    "latency_seconds": 2.868,
+    "usage": {
+      "prompt_tokens": 6311,
+      "completion_tokens": 218,
+      "total_tokens": 6529,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cd50e7bcb91acd90f02911878698bd109d09b62590fb0a0047d1639041646c6a"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

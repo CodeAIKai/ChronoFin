@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01474",
+  "uid": "financebench_id_01474_val",
+  "split": "new_response_validation",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "2108523a29eb5a279ba79ec7f0efb8feabd2d0a333227599f56911172e57a0c5",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "a9d9696640d0e606c7121801cdbd7d5dbaba3a59d6a538fff582ca3aeb0b5908",
+  "started_utc": "2026-09-09T18:11:06.286628+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate substantively answers why Pepsico raised FY2023 guidance, citing strong Q1 start and resilient categories/geographies, consistent with reference 'strong start' and evidence quote; provides accurate supporting metrics."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c2cf761576b390a2a868ee4eb8c26491191d7035cc36b34196d0ab262bb740a2",
+    "latency_seconds": 8.544,
+    "usage": {
+      "prompt_tokens": 1172,
+      "completion_tokens": 63,
+      "total_tokens": 1235,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "1d2b2c235347e2cd4d7c942707712d8d167d3bffc9b46d6a15c42144cd256933"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

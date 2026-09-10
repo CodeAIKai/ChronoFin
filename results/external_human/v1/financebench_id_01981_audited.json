@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01981",
+  "company": "American Express",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "dabb43d1ffcdb7f47fbc76751fe30dee5c514115853a08f197de9ea15808e543",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "935d3c8942d58f52288128bf382c6af281581fef80dd5c9ccc3d11149acd3fd3",
+  "started_utc": "2026-09-09T18:02:08.767098+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate concludes Amex retained/grew card members in 2022; evidence states Card Member retention remained high and new acquisitions record, supporting retention. Reference says Yes.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "American Express / Amex card members"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "2022"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "qualitative retention yes/no"
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Candidate says retention high/successful, agrees with Yes"
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence: 'Card Member retention remained high' and record acquisitions in 2022"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "75af46956dd07e2ff086df858e9b3a90b74fca75da9f7f44b31e0acf4128de11",
+    "latency_seconds": 9.075,
+    "usage": {
+      "prompt_tokens": 1637,
+      "completion_tokens": 190,
+      "total_tokens": 1827,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "cab2f22dbb44a884adcadcd473f6d713a4dcd44cd6db371e627ef2f0b7f53679"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

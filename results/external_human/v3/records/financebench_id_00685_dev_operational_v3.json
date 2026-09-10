@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_00685",
+  "uid": "financebench_id_00685_dev",
+  "split": "development",
+  "company": "Best Buy",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "a0c3b0bb5cf49df13b12b7ec3c00810033beee9679dc67155682e172a0a405f0",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "9e331cfc8908e07343661a077e758645595bfd81f0e8e3be21599fa29d24ebf2",
+  "started_utc": "2026-09-09T18:07:24.807595+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "answered",
+    "mode_quote": "Best Buy's gross margins appear relatively consistent, fluctuating within a narrow range from year-to-year",
+    "content_correct": false,
+    "confidence": 0.9,
+    "reference_conflict": false,
+    "reason": "Evidence shows FY2023 revenue 46,298 and COGS 36,386 => gross margin 21.4%; FY2022 51,761 and 40,121 => 22.5%; FY2021 47,262 and 36,689 => 22.4%. Candidate claims FY2021 margin 22.4% (correct) but states range 21.3%-22.5% and 'fluctuated between 21.3% and 22.5%' with FY2023 21.4% down from 22.5%; evidence supports ~21.4/22.5/22.4, no 21.3%. Reference says minor 1.1% decline FY22-FY23; candidate says consistent within ~2% which matches reference direction but invents 21.3% low and misstates FY2021 as 22.4% up from 22.4% (same). Material margin figure error makes answer incorrect."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "08525b5e7beb91cc9e5d93413da04ba2f252b44c69e85a9b84bfbdb5a346df02",
+    "latency_seconds": 7.635,
+    "usage": {
+      "prompt_tokens": 2002,
+      "completion_tokens": 274,
+      "total_tokens": 2276,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "23b108f3cee7bf413207c116ed1cb3e711fe4f70a12af16acf2922ca068f4438"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

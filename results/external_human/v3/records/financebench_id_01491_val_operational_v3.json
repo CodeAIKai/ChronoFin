@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01491",
+  "uid": "financebench_id_01491_val",
+  "split": "new_response_validation",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "4b10602c275df3b7ed117c8a8c7b516ebdb100e948cadac70a784b4747df01fa",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "04195ef6d9c2d3ec1e471ed57adcbe232eb6664faace84e7dba06ccc7a0028ad",
+  "started_utc": "2026-09-10T01:27:10.892405+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "amounted to $13.2 billion",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states $13.2 billion cash proceeds from Kenvue separation; reference says $13.2 billion and evidence (Aug 30 2023 8-K) states 'Company secured $13.2 billion in cash proceeds from the Kenvue debt offering and initial public offering', matching entity, period, metric and amount."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "496d94304e7acbe74a8d89f829fecc6f45e48a5eecdcd87e7fb1fbb19d380f7c",
+    "latency_seconds": 11.072,
+    "usage": {
+      "prompt_tokens": 1598,
+      "completion_tokens": 124,
+      "total_tokens": 1722,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4e899f21cff3f6ca6ed3db80f6707bd083f3db38b4749ea14a9b19e16527c88b"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

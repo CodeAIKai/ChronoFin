@@ -1,0 +1,46 @@
+{
+  "id": "financebench_id_07661",
+  "company": "Block",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "022c094b228aa7c57280368b6511731376c22e19bc19da7f8320f00ea1d71168",
+  "reference_text_differs": true,
+  "method": "holistic_v2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "input_sha256": "3f3e681cfe0f57ce50aeac373e97cc5d3713a0f33148847b0fed39b51fc58b3a",
+  "started_utc": "2026-09-09T17:54:45.092488+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states the provided info does not include Block/Square FY2020 operating cash flow and withholds the answer, despite evidence showing Net cash provided by operating activities of 381,603 thousand (i.e., 382 million)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "b116820a496b1f1de1d326c06b92abc4935b3ad95c0bbe5b5e9b5901dd9c1e8f",
+    "latency_seconds": 9.185,
+    "usage": {
+      "prompt_tokens": 2894,
+      "completion_tokens": 68,
+      "total_tokens": 2962,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "b03a4799a2eab7a28b0636b6d2763982f0ac852dd70fea7d2445d44c2228720b"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false,
+  "split": "development",
+  "uid": "financebench_id_07661_dev",
+  "reused_from": "results/external_human/v2/financebench_id_07661_holistic.json",
+  "parent_sha256": "880940b9b2fa5225e2edfd571670729db15bfbf56bf4a402a9d4c70cb64b0b44"
+}

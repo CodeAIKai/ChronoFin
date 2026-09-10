@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00005",
+  "uid": "financebench_id_00005_val",
+  "split": "new_response_validation",
+  "company": "Corning",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "5514f10b4a4c285d9d40c4f78a6edf1f8a999a2bf6e88552f958cdecfb1c8845",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "6a0f7eedb50c1d552053ba6af89140fce4c4d28b1b6e70fd0d6dcfa21fc5aa00",
+  "started_utc": "2026-09-09T18:04:46.038699+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate provides substantive answer that Corning has positive working capital in FY2022 ($2,278M from total current assets minus total current liabilities per evidence), agreeing with reference's positive conclusion; reference's $831M used narrower operating definition but both confirm positive. No refusal."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9e49f76116a5334db3171e2675839f0644ee2bceb051f27fd4330539a074aaae",
+    "latency_seconds": 3.447,
+    "usage": {
+      "prompt_tokens": 1928,
+      "completion_tokens": 76,
+      "total_tokens": 2004,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "5714b3fe6abe9726f92e531a6c2524c3cb09d425059625738856ad968d6dfb37"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

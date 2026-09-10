@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01163",
+  "uid": "financebench_id_01163_val",
+  "split": "new_response_validation",
+  "company": "Nike",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "ecb6c1e821520bbb18cfa971629b2968862ddad54f6d2c8f38d8759c72359e8b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "4922617e543aa2a8465598120bdfa369211e168415cdab016473778fd345766d",
+  "started_utc": "2026-09-09T18:09:46.320859+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "Hello! How may I help you today?",
+    "content_correct": null,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate returned a generic greeting instead of answering which cash flow activity brought in most/least cash for Nike FY2023; unrelated to question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "6d8b79b78d8dd819dc1a3f53961491ca13f9a604041da0e7a33fe81036f08526",
+    "latency_seconds": 6.132,
+    "usage": {
+      "prompt_tokens": 2258,
+      "completion_tokens": 86,
+      "total_tokens": 2344,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "e419d9095cad2f8fb2b3b23252cb5de070698491e7458e23429c9151d742d9b7"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

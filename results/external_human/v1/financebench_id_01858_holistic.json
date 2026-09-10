@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_01858",
+  "company": "3M",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "0f076d7e9e5654b58ef08f233338e43cb69c07092a61e6930722f02ecc80142b",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "5ebba2b781199b7343301af4372311c0e133a47753cd581a05643eb826ac4267",
+  "started_utc": "2026-09-09T18:01:14.246093+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.95,
+    "reason": "Candidate agrees with reference that 3M has a stable dividend trend with 65 consecutive years of increases, supported by evidence showing 65th consecutive year increase in 2023."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "d1a15d92966956e46c69943bc090ba3080363e3716be370497cc20e6ac13cf05",
+    "latency_seconds": 5.389,
+    "usage": {
+      "prompt_tokens": 1544,
+      "completion_tokens": 57,
+      "total_tokens": 1601,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "681bdfc3748e5ea2d657ce31fd545adc6a9e0941e43b0102854d6126ae6447c8"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

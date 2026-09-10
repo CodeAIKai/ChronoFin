@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_03471",
+  "uid": "financebench_id_03471_val",
+  "split": "new_response_validation",
+  "company": "General Mills",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "2c61a67d440f3182bb42a3f1f4a80af423840763c6971ac479fe24f0ed12fc6e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "fa6af8d6b876f73d3d1eacb6bfc345a8b534b746ceb9efb814ab2d667af2aef9",
+  "started_utc": "2026-09-10T01:30:21.720891+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate computed 5121.3/7491.5 ≈ 0.6835, rounded to 0.68, matching reference and balance sheet evidence for FY2020 current assets/liabilities."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c6893af0c280342f82e143022634f21fb8feea303172ab3dd998d56b9d4deb62",
+    "latency_seconds": 10.099,
+    "usage": {
+      "prompt_tokens": 2088,
+      "completion_tokens": 63,
+      "total_tokens": 2151,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "05ad2e025cc2c44c612ebf58026f3f8f6011b090c066b13577aa80deebd846d5"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

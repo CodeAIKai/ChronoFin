@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00563",
+  "uid": "financebench_id_00563_val",
+  "split": "new_response_validation",
+  "company": "AMD",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "b811b89a4949d689270d4a1f04189caf60ec3870b54388a4fe655c05b021afec",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "83f780091e12e3c7266fc30e633a50228be6bf2716a4820cad10c946d9a722b6",
+  "started_utc": "2026-09-09T18:06:32.322516+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 0.98,
+    "reason": "Candidate identifies Data Center as the segment with the largest proportional sales increase (64%) excluding Embedded, matching reference and evidence (Data Center +64%, Gaming +21%, Client -10%)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "64c3335a879160768fe2057367bf809e95bdf21c12480fa9eb9f72285989884b",
+    "latency_seconds": 4.966,
+    "usage": {
+      "prompt_tokens": 1330,
+      "completion_tokens": 59,
+      "total_tokens": 1389,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "35443b0e2dc1bda2c73b15869eeae5d3777349acbaafee62b67859a9655a41bc"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

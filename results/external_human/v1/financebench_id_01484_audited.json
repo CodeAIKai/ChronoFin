@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01484",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "8a1b3a2b73412364afb44fda37e200f43413c928fcd503842ecaf4c92320149e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "fa27df882f3939fa9452fcb94751c18921157310b2c30c2f86c3118d09262c54",
+  "started_utc": "2026-09-09T18:00:49.982422+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Evidence (JnJ 2022Q4 earnings regional sales) explicitly shows JnJ FY2022 US sales +3.0% and international sales (0.6)%, contradicting candidate's claim of no JnJ data. Reference matches evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Evidence is Johnson & Johnson (JnJ) earnings doc; candidate wrongly says no JnJ mention."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Question asks FY2022; evidence full year table provides FY2022."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Metric is % growth; evidence and reference use %."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says insufficient info; correct answer is US +3.0% vs intl -0.6% per evidence/reference."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence directly supports JnJ regional sales growth; candidate's refusal unsupported."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "43384294fd7e40cc4f240b68deba4539c03a413e7fd7759c7dbe5ec35f1aa021",
+    "latency_seconds": 7.25,
+    "usage": {
+      "prompt_tokens": 1947,
+      "completion_tokens": 261,
+      "total_tokens": 2208,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "dd95d96c0218d6ce64c21433058b59beb9afdb9a7911fdb6da078198dda5bd69"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_00859",
+  "uid": "financebench_id_00859_val",
+  "split": "new_response_validation",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "9788d0e00d28bf6a854d56c475b571a65599b7f7681a6c142b702f1227ed70b5",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "66daeff4f325e946688157da14a723c58d5d42e124e22200c0b29697e14ef951",
+  "started_utc": "2026-09-09T18:08:39.025839+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate discusses employee benefits and severance, not derivative instruments or their notional values, and does not answer which derivative had highest notional value in FY 2021."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "c9a1b57ac2ea44b71c0f592ef6af04bd405f18e12020846e17a88617e47b2b6a",
+    "latency_seconds": 7.287,
+    "usage": {
+      "prompt_tokens": 1736,
+      "completion_tokens": 56,
+      "total_tokens": 1792,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "ae1ead13720bc441d7d417a79472e85dd55f3323100d9b79639fe9c58e847b3e"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01487",
+  "uid": "financebench_id_01487_val",
+  "split": "new_response_validation",
+  "company": "Johnson & Johnson",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "42ea08df3dac6892502c378c9ff2900f5e786d9226b04a1f36b6d028ca7447b2",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "c0292d82b6272994e1da8a4ce48639e6f373757badeed4fa59d0767bc5094a5a",
+  "started_utc": "2026-09-10T01:26:46.524257+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it cannot determine the answer due to missing info, withholding the conclusion despite evidence showing net earnings % was 20.0 in Q2 FY2022 and 20.1 in Q2 FY2023."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "04a648231e1832f10929ad05e74401fd7a67135b571b4bd7a144579f7007912e",
+    "latency_seconds": 6.466,
+    "usage": {
+      "prompt_tokens": 1605,
+      "completion_tokens": 66,
+      "total_tokens": 1671,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "de8e03e0ca2a7579d0c3d634804705a1a11dae6ef1a478bfff0033e55335d994"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

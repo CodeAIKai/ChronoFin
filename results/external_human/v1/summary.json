@@ -1,0 +1,137 @@
+{
+  "n_questions_planned": 150,
+  "n_records": 300,
+  "model": "hy3",
+  "human_label_origin": "Published FinanceBench author annotations, not new project annotators",
+  "scope": "Correctness/refusal classification only; not human validation of all ten open-ended dimensions. Public benchmark contamination cannot be excluded.",
+  "strategies": {
+    "holistic": {
+      "n": 150,
+      "accuracy_failure_wrong": 0.7066666666666667,
+      "macro_f1": 0.700959380289463,
+      "balanced_accuracy": 0.6992202414562663,
+      "cohen_kappa": 0.5606151388056722,
+      "confusion_matrix": {
+        "correct": {
+          "correct": 48,
+          "incorrect": 7,
+          "refusal": 0,
+          "error": 0
+        },
+        "incorrect": {
+          "correct": 2,
+          "incorrect": 31,
+          "refusal": 13,
+          "error": 0
+        },
+        "refusal": {
+          "correct": 1,
+          "incorrect": 21,
+          "refusal": 27,
+          "error": 0
+        }
+      },
+      "selective_confidence_085": {
+        "coverage": 1.0,
+        "metrics": {
+          "n": 150,
+          "accuracy_failure_wrong": 0.7066666666666667,
+          "macro_f1": 0.700959380289463,
+          "balanced_accuracy": 0.6992202414562663,
+          "cohen_kappa": 0.5606151388056722,
+          "confusion_matrix": {
+            "correct": {
+              "correct": 48,
+              "incorrect": 7,
+              "refusal": 0,
+              "error": 0
+            },
+            "incorrect": {
+              "correct": 2,
+              "incorrect": 31,
+              "refusal": 13,
+              "error": 0
+            },
+            "refusal": {
+              "correct": 1,
+              "incorrect": 21,
+              "refusal": 27,
+              "error": 0
+            }
+          }
+        }
+      },
+      "errors": 0
+    },
+    "audited": {
+      "n": 150,
+      "accuracy_failure_wrong": 0.64,
+      "macro_f1": 0.6248101214615843,
+      "balanced_accuracy": 0.6258610954263129,
+      "cohen_kappa": 0.4594594594594595,
+      "confusion_matrix": {
+        "correct": {
+          "correct": 51,
+          "incorrect": 4,
+          "refusal": 0,
+          "error": 0
+        },
+        "incorrect": {
+          "correct": 3,
+          "incorrect": 24,
+          "refusal": 19,
+          "error": 0
+        },
+        "refusal": {
+          "correct": 1,
+          "incorrect": 27,
+          "refusal": 21,
+          "error": 0
+        }
+      },
+      "selective_confidence_085": {
+        "coverage": 0.98,
+        "metrics": {
+          "n": 147,
+          "accuracy_failure_wrong": 0.6326530612244898,
+          "macro_f1": 0.6137627009300575,
+          "balanced_accuracy": 0.6147387496224705,
+          "cohen_kappa": 0.4482902418682235,
+          "confusion_matrix": {
+            "correct": {
+              "correct": 51,
+              "incorrect": 4,
+              "refusal": 0,
+              "error": 0
+            },
+            "incorrect": {
+              "correct": 3,
+              "incorrect": 21,
+              "refusal": 19,
+              "error": 0
+            },
+            "refusal": {
+              "correct": 1,
+              "incorrect": 27,
+              "refusal": 21,
+              "error": 0
+            }
+          }
+        }
+      },
+      "errors": 0
+    }
+  },
+  "paired": {
+    "n": 150,
+    "company_groups": 32,
+    "mean_accuracy_difference": -0.06666666666666667,
+    "company_bootstrap95": [
+      -0.13043478260869565,
+      -0.006535947712418301
+    ],
+    "improved": 4,
+    "worsened": 14
+  },
+  "reported_tokens": 750072
+}

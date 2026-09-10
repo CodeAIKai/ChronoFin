@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01163",
+  "uid": "financebench_id_01163_val",
+  "split": "new_response_validation",
+  "company": "Nike",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "ecb6c1e821520bbb18cfa971629b2968862ddad54f6d2c8f38d8759c72359e8b",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "4922617e543aa2a8465598120bdfa369211e168415cdab016473778fd345766d",
+  "started_utc": "2026-09-09T18:09:43.820851+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 1.0,
+    "reason": "Candidate responds with a generic greeting and does not attempt to answer the question about Nike's FY2023 cash flow activities."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "5fbf5f21a9959873c725bc94e739ebba5fcca5d9083067082cdc0ab7414106a1",
+    "latency_seconds": 7.014,
+    "usage": {
+      "prompt_tokens": 2123,
+      "completion_tokens": 46,
+      "total_tokens": 2169,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "da20baa542314a45feb8c514609c4fcd8c6ff5924ea7e592d270a38b8f3e149b"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_04302",
+  "company": "Nike",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "df33d6ba568a6a5cc56b4882b4d361d73ddfe5bbad712abc28083066818ff358",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "53b9e609bf48ab669f1c83c83db34027f84de34173db5823f4bd8c686cd8a566",
+  "started_utc": "2026-09-09T17:52:59.454259+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states data not provided and withholds the requested calculation/answer despite evidence containing COGS and revenue for FY2016-FY2018.",
+    "response_mode": "refused",
+    "content_correct": null,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Candidate references Nike implicitly via question context"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Candidate acknowledges FY2016-FY2018 needed"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Candidate knows percent unit required"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No substantive answer given; claims cannot be determined"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supplies revenues and COGS; candidate incorrectly says absent"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "2354ed04c6637b19b5c09b3e0717d50f2c4885e16e07b11926314e07e46e2b25",
+    "latency_seconds": 9.523,
+    "usage": {
+      "prompt_tokens": 1669,
+      "completion_tokens": 202,
+      "total_tokens": 1871,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bf83147af39568153d317f3d02658226669e4bbd80fda1ed0f01dc9838601013"
+  },
+  "original_model_label": "refusal",
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

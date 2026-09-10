@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00724",
+  "company": "Pfizer",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "f8835ad8b841dda2e2f6210e8af669268cc6077bb94fac6df1ea8b59a4aae8f0",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "1faf619d4d19ed348944bbfbdd56d67117bf77dc906d261d06b1ee514f76254b",
+  "started_utc": "2026-09-09T18:00:08.815899+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.99,
+    "reason": "Candidate states it lacks access to data and does not identify any region, instead instructing user to consult filings; no substantive answer provided.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": false,
+        "reason": "Candidate does not name Pfizer region; refuses to answer."
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "No Q2 2023 YoY period addressed."
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "No percentage basis provided."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No answer given; refusal."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate not based on evidence; evidence shows Developed Rest of World -74% is largest drop."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "1fba20cfb7e0c8130708ec3ecc12f45b47ea270a4ba1329880fb99d82fca1920",
+    "latency_seconds": 9.365,
+    "usage": {
+      "prompt_tokens": 2229,
+      "completion_tokens": 197,
+      "total_tokens": 2426,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "225beb1bf91829d01239b4f995f0cb9547d009b9f64f55b0952ca770d9839e6a"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

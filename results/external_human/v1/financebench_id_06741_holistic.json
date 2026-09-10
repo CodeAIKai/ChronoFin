@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_06741",
+  "company": "Walmart",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "72079381078ded72808475008358db1f9ae163afd2825bef0838966f2fdd3aa0",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "fa7b44bd176400dc456f4a170b1628e55a01e352c57713c2861548420fdb1a8a",
+  "started_utc": "2026-09-09T18:03:23.526706+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.99,
+    "reason": "Candidate responded with unrelated restricted stock agreement text and did not provide the requested 3-year average unadjusted EBITDA % margin for Walmart (reference: 6.2%)."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0173c4947b96014fc36fc53e972ce446e20e0e4dc54ef6939e7d05150efdd757",
+    "latency_seconds": 7.203,
+    "usage": {
+      "prompt_tokens": 4015,
+      "completion_tokens": 57,
+      "total_tokens": 4072,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "77ad5df2a9ad127e19fe2a20071d420073878f667ea5d898db5074abfb687ed2"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.99,
+  "reference_conflict": false
+}

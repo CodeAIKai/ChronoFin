@@ -1,0 +1,41 @@
+{
+  "id": "financebench_id_03473",
+  "company": "Coca-Cola",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "6e986afce56e9bc760e76f3c2313d66dec260c1afdcad89805ca8a0445522ba0",
+  "method": "holistic",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "6118792a68f1b80fa906bbbbaf22fe390bcc6175db60300618613c50da149fe0",
+  "started_utc": "2026-09-09T17:34:30.201485+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate used wrong net income ($14,293M vs actual consolidated net income $1,283M or net income attributable $1,248M) and wrong total assets ($199,203M/$201,536M vs actual $87,896M/$87,270M), yielding 7.13% instead of reference 0.01. Evidence confirms Coca-Cola data was supplied, so refusal premise invalid."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "bc4c3f6a0c9c955b33f59471958af2963f401cd172ccce3c7fd7845147a5e322",
+    "latency_seconds": 2.515,
+    "usage": {
+      "prompt_tokens": 3891,
+      "completion_tokens": 106,
+      "total_tokens": 3997,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "24229f0d13a48c8c688e285f274cbfabe561844e5277cc671fd9b31978fbd9e1"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

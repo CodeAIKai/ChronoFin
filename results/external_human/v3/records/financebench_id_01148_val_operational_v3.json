@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01148",
+  "uid": "financebench_id_01148_val",
+  "split": "new_response_validation",
+  "company": "Amcor",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "da2a59cd2b02c331bc0fdcfa947488a574934e12e4ad172b77b72daf5663fe74",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "f2bdadac17508a0eb3111c8f5539ef9c9b7ddc48cb21cf69dc51cb08c257f414",
+  "started_utc": "2026-09-09T18:09:40.521178+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "response_mode": "off_topic",
+    "mode_quote": "Here are the key points regarding the description of Amcor's 1.125% Senior Notes due 2027",
+    "content_correct": false,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Question asks AMCOR's primary industry; candidate dumps unrelated bond note details and never states packaging industry, failing to answer the specific question."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "f96a329068d30dff4027ab05eeea9a4a12945b3b9a5a2d4e05ec4fdd3be41e02",
+    "latency_seconds": 7.7,
+    "usage": {
+      "prompt_tokens": 1534,
+      "completion_tokens": 101,
+      "total_tokens": 1635,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bffec0c662520257784d2adab433b57ef5a18057736a382fb2c562d91d5bc3a4"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

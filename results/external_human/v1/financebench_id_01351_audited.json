@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01351",
+  "company": "American Express",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "2ce9a3d3a672e015be6d5095722692a44dfde121839fc0a66793eb5ef0435645",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "d113ea7abb4aa854ef1e3530dd244aa6c7fb05971d7fd7e9ae219861006744a9",
+  "started_utc": "2026-09-09T17:33:58.544808+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate answered about short-term borrowings and debt, not effective tax rate change; failed to address requested metric entirely.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "American Express identified in candidate context"
+      },
+      {
+        "aspect": "period",
+        "pass": false,
+        "reason": "Candidate discusses FY2021/FY2022 borrowings, not effective tax rate period requested"
+      },
+      {
+        "aspect": "unit",
+        "pass": false,
+        "reason": "Candidate uses $ and %, not the effective tax rate % change requested"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "No answer on effective tax rate change (24.6% to 21.6%, drop of 3.0pp) provided"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence shows effective tax rate 21.6% (2022) vs 24.6% (2021); candidate text unrelated"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "4c8e1e4911bb5f7fa952cd954778e2db4af093d9dbe7cb7ce0a8a80e658c7924",
+    "latency_seconds": 3.594,
+    "usage": {
+      "prompt_tokens": 2753,
+      "completion_tokens": 231,
+      "total_tokens": 2984,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "bf3171297a2dd02c17d63c239a6fa551f11cce0736d6411f20b6d5c2ce26a79c"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00917",
+  "company": "AMD",
+  "question_type": "domain-relevant",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "25e71b61d13164f0e90a5632aa3ebab5c86b4cf93262479ad7c8bfcbced9a13a",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "4563bd1859ba10d1831e1bbd21bb58e57e4d72d47c684b8f0ecaf5e9215ea138",
+  "started_utc": "2026-09-09T17:33:28.787984+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate refused/claimed no FY22 info, but evidence (AMD 2022 10K) explicitly states operating income decrease in FY22 was primarily driven by amortization of intangible assets from Xilinx acquisition, matching reference.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is AMD, correctly identified in candidate."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Requested FY22; candidate addresses FY22 but claims lack of data."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Qualitative driver, no unit mismatch."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate says no info and cannot answer; correct answer per evidence is amortization of Xilinx intangibles drove operating margin/income decrease."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence directly provides FY22 driver; candidate's claim of missing info is unsupported."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "48029ed46c278e4aa648aa9fc917bbbb9b3284a14b40696a839a11fc579a2579",
+    "latency_seconds": 4.766,
+    "usage": {
+      "prompt_tokens": 1798,
+      "completion_tokens": 239,
+      "total_tokens": 2037,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3640e83adf043c049c837c63d5ad34498d3699d39eae8a307eecf2b7726f34d6"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

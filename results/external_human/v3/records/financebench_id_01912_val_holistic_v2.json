@@ -1,0 +1,43 @@
+{
+  "id": "financebench_id_01912",
+  "uid": "financebench_id_01912_val",
+  "split": "new_response_validation",
+  "company": "MGM Resorts",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_sharedStore.jsonl",
+  "human_label": "refusal",
+  "candidate_sha256": "0297fc011030fd1cb54048fef55f34b92f88c1b5c343e19d37e87446c5e6a260",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "holistic_v2",
+  "input_sha256": "01f1ed1eb0f37863418a66adff00f4dac2f4a10e7a97fc4cd2f89f22639407b2",
+  "started_utc": "2026-09-10T01:27:48.759867+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate states it lacks FY2022 data and withholds the answer, claiming info only up to 2020, despite evidence containing FY2022 regional revenues. This is a refusal to provide the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "ad74d6f1a2361f025099e6f902268b06bbdfc2af29713e877a420b21673137ab",
+    "latency_seconds": 10.298,
+    "usage": {
+      "prompt_tokens": 2958,
+      "completion_tokens": 64,
+      "total_tokens": 3022,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "58ecb45a5dca5c024a290f8d438c8d3e50808ff4580ce36f29247b2f95243d9d"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

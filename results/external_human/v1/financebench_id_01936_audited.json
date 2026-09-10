@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_01936",
+  "company": "Amcor",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "cfa4b9dfed26385d87209cd138f35b897c01617308e470de0f6ae1ae9f58f26c",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "cbb363933b3799f115719d8c7d10f399f33200b41365b622df5eaa75f7133d03",
+  "started_utc": "2026-09-09T18:01:58.082969+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.9,
+    "reason": "Candidate describes nature/purpose with broad narrative but fails to state the key reference fact that 87% of the restructuring liability is employee-related; also mislabels Q2 FY2023 close (Dec 31, 2022) as including Bemis integration as ongoing, while evidence says Bemis integration substantially completed end FY2022 and Q2 activities primarily Russia-Ukraine. Core quantitative composition omitted.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is AMCOR, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period Q2 FY2023 close = Dec 31, 2022, candidate uses that date."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Uses $ millions consistent with evidence."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Missing reference's 87% employee-liability proportion; misstates Bemis as continuing driver in Q2."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supports employee $81m of $93m (87%) but candidate does not surface this; narrative partly supported but key claim absent."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "0f66cc27e68026febc71f093344ec50e9a47c986bb5f39a047190fe75890f2d8",
+    "latency_seconds": 9.759,
+    "usage": {
+      "prompt_tokens": 1388,
+      "completion_tokens": 285,
+      "total_tokens": 1673,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "4a20fcb316ef079a108b67130f12023ec6cacc1a1ea68372b47093ce82acdfbd"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.9,
+  "reference_conflict": false
+}

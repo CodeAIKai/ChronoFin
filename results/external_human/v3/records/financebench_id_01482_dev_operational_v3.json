@@ -1,0 +1,48 @@
+{
+  "id": "financebench_id_01482",
+  "uid": "financebench_id_01482_dev",
+  "split": "development",
+  "company": "PepsiCo",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "e3a819a006bb7a9f0d94665c7f07415b0ecc600dcc65dbede39dad7e4b225a9e",
+  "protocol_sha256": "4119616d8614ab6254916439205c687346fb6d1015069adb5b6686667329037b",
+  "method": "operational_v3",
+  "input_sha256": "5f918b633685efcfe9a003c45b2d657a0a1126732aab0df2c49a8f61f3acc292",
+  "started_utc": "2026-09-09T18:11:16.766452+00:00",
+  "judgment": {
+    "label": "correct",
+    "response_mode": "answered",
+    "mode_quote": "the proposal was defeated",
+    "content_correct": true,
+    "confidence": 0.95,
+    "reference_conflict": false,
+    "reason": "Candidate states proposal was defeated with For 19,718,780 and Against 977,228,788, matching reference 'defeated' and evidence item (8) congruency report on net-zero emissions policies defeated with identical vote counts."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9a8f7f3bc9a582713a6fd60b6e79a7d4cd43d06aacb165537896a3d38409743a",
+    "latency_seconds": 10.575,
+    "usage": {
+      "prompt_tokens": 989,
+      "completion_tokens": 101,
+      "total_tokens": 1090,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "9a81a4629505c1f601b61e6a8f8793f89c040b6e154df5b39d0b4dc12621de1c"
+  },
+  "original_model_label": "correct",
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

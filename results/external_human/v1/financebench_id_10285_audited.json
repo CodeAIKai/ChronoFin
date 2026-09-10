@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_10285",
+  "company": "Boeing",
+  "question_type": "metrics-generated",
+  "source_file": "gpt-4-1106-preview_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "a9738259dbfc75f5a8893a94d7925995311220ade411afc4cd0a280e54752b2e",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "6cb928f1f0752e7fd118a45efac52ea1dea3cb979ea92ec95881717dffb4b904",
+  "started_utc": "2026-09-09T17:35:17.687736+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate pasted 10-K cover/boilerplate text and did not state Boeing FY2018 net PP&E of $12,645 million; no substantive answer provided.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Boeing, identified in candidate text."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2018 / Dec 31 2018 referenced in candidate and evidence."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Requested USD millions; evidence states dollars in millions."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate gave no numeric answer; reference is $12,645 million."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Candidate text does not contain PP&E figure; evidence shows 12,645 but candidate omitted it."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "3a9d20b347f6758d967f47c02a1699145f609f13182b2af892221ec0348bdf49",
+    "latency_seconds": 3.934,
+    "usage": {
+      "prompt_tokens": 3898,
+      "completion_tokens": 221,
+      "total_tokens": 4119,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 2,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f694aa8ada568a96353706f274d7cb7e4dc2456427771cf1f516fee125b007af"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

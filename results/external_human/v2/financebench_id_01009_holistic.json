@@ -1,0 +1,42 @@
+{
+  "id": "financebench_id_01009",
+  "company": "PepsiCo",
+  "question_type": "domain-relevant",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "incorrect",
+  "candidate_sha256": "dad901c194b4b193bc9269f2de56c01507de94b0a1954ccb0d2aeb01e1badc31",
+  "reference_text_differs": false,
+  "method": "holistic",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "43a4b285e2ea3aaf9c0b6c1274656ed3382794e81217b502496f1f8a2cf99d5a",
+  "started_utc": "2026-09-09T17:47:08.969310+00:00",
+  "judgment": {
+    "label": "refusal",
+    "confidence": 0.98,
+    "reason": "Candidate provides financial highlights and operations summary but never lists the geographies Pepsico primarily operates in, withholding the requested conclusion."
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "9fa89e35ed8912ac4131f9d6068a5db4948940d116954f571f4a91555b6c4763",
+    "latency_seconds": 6.796,
+    "usage": {
+      "prompt_tokens": 3287,
+      "completion_tokens": 47,
+      "total_tokens": 3334,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "f97e5be590e21e117693ddb7d50844e9bb19952737f4f5a66cbad113155b75f7"
+  },
+  "status": "ok",
+  "prediction": "refusal",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

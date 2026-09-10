@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_03718",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "f9d8ad68929f070c74d5abb881facdc9a072381da0debe6260edc7b13de30a78",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "9d889756eca15c593a1e1efcc47cf9d2f826fb0e5ed7b003583cf4002c6cbb41",
+  "started_utc": "2026-09-09T17:34:37.851964+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.95,
+    "reason": "Candidate reports 0.5% CAGR using FY2020 $65.4B and FY2022 $66.0B, but evidence shows Total net sales of $65,398M (65.4B) in 2020 and $65,984M (66.0B) in 2022. CAGR = (65984/65398)^(1/2)-1 = 0.446% ≈ 0.4% per reference, not 0.5%. Candidate's rounded answer is materially wrong vs reference and evidence.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Lockheed Martin, correctly identified"
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period FY2020 to FY2022 correctly used"
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Unit is percents, rounded to one decimal, candidate complied"
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "Candidate answer 0.5% vs correct 0.4% from evidence/reference"
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence supports 65,398M (2020) and 65,984M (2022); CAGR computes to 0.4%, not 0.5%"
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "eefebe2696c72853cbed8fa66bc145a8cf767c25ec4c5f368ec7231712f9bae9",
+    "latency_seconds": 4.186,
+    "usage": {
+      "prompt_tokens": 1913,
+      "completion_tokens": 318,
+      "total_tokens": 2231,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "53264f3174ba22ae7d04ef5677bd8af41c274b107f43ba5a94cc6772b4794a14"
+  },
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.95,
+  "reference_conflict": false
+}

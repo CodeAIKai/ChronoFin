@@ -1,0 +1,69 @@
+{
+  "id": "financebench_id_00859",
+  "company": "Verizon",
+  "question_type": "novel-generated",
+  "source_file": "gpt-4-1106-preview_oracle.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "c94ca4d4e825c166647ef17b623e2b8ad7a890f0b80be93e136d5ebc46ca0eea",
+  "method": "audited",
+  "protocol_sha256": "e8bf9cfbb65cb809e850a9eff44569534119daa512c7ce96dcf1523a317ca400",
+  "input_sha256": "f6e6f339c9f688001656f152268bec711aed38895ccfc5f0b1bae289c7691879",
+  "started_utc": "2026-09-09T17:33:26.444063+00:00",
+  "judgment": {
+    "label": "correct",
+    "confidence": 1.0,
+    "reason": "Candidate correctly identifies cross currency swaps as the derivative with highest notional value in FY2021 ($32,502 million), matching reference and evidence table.",
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Verizon derivative instruments; candidate addresses Verizon derivatives."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "FY2021 / At Dec 31 2021 per evidence table."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Notional value in millions of dollars, matches evidence and reference."
+      },
+      {
+        "aspect": "answer",
+        "pass": true,
+        "reason": "Cross currency swaps, $32,502 million, highest among listed derivatives."
+      },
+      {
+        "aspect": "support",
+        "pass": true,
+        "reason": "Evidence table shows cross currency swaps 32,502 > interest rate swaps 19,779 > others."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "88baffb0a5ecd5e1ed2b8c8a907ec8eef129e657bc6e6e7d67148b66a041382e",
+    "latency_seconds": 3.164,
+    "usage": {
+      "prompt_tokens": 1555,
+      "completion_tokens": 223,
+      "total_tokens": 1778,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3ef4e153dcb58b999b9faed896dd0dc57ee047574064e6c92584799d035dc8a4"
+  },
+  "status": "ok",
+  "prediction": "correct",
+  "confidence": 1.0,
+  "reference_conflict": false
+}

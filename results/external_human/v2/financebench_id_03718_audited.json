@@ -1,0 +1,73 @@
+{
+  "id": "financebench_id_03718",
+  "company": "Lockheed Martin",
+  "question_type": "metrics-generated",
+  "source_file": "claude-2_inContext.jsonl",
+  "human_label": "correct",
+  "candidate_sha256": "f9d8ad68929f070c74d5abb881facdc9a072381da0debe6260edc7b13de30a78",
+  "reference_text_differs": true,
+  "method": "audited",
+  "protocol_sha256": "17e48c20ec5e31180d3ea741468b56a5e4bf97c1aa346d5eded732c44479a824",
+  "input_sha256": "32564dd96fecdb53bf09f4b38a63f6948e1044f3d4f9c0c22ed1446d45fe8b55",
+  "started_utc": "2026-09-09T17:52:06.077234+00:00",
+  "judgment": {
+    "label": "incorrect",
+    "confidence": 0.98,
+    "reason": "Candidate states 2yr revenue CAGR is 0.5% using FY2020 $65.4B and FY2022 $66.0B. Evidence shows total net sales FY2020=65,398M ($65.398B) and FY2022=65,984M ($65.984B). CAGR=((65984/65398)^(1/2)-1)=0.00446=0.4% rounded to one decimal, matching reference 0.004 (0.4%). Candidate's 0.5% is wrong and uses incorrect revenue figures.",
+    "response_mode": "answered",
+    "content_correct": false,
+    "checks": [
+      {
+        "aspect": "entity",
+        "pass": true,
+        "reason": "Entity is Lockheed Martin, correctly identified."
+      },
+      {
+        "aspect": "period",
+        "pass": true,
+        "reason": "Period FY2020 to FY2022 (2-year) correctly used."
+      },
+      {
+        "aspect": "unit",
+        "pass": true,
+        "reason": "Answer given in percents as requested."
+      },
+      {
+        "aspect": "answer",
+        "pass": false,
+        "reason": "CAGR stated as 0.5%; correct is 0.4% (reference 0.004). Also used wrong revenue bases ($65.4B/$66.0B vs $65.398B/$65.984B)."
+      },
+      {
+        "aspect": "support",
+        "pass": false,
+        "reason": "Evidence from income statement contradicts candidate's revenue numbers and resulting CAGR."
+      }
+    ],
+    "reference_conflict": false
+  },
+  "trace": {
+    "model": "hy3",
+    "base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_hash": "a1279ee524a543b228a8208a59a6f6c289ae3e3fb6e0c072a091bfcd7d2729ef",
+    "latency_seconds": 9.973,
+    "usage": {
+      "prompt_tokens": 2030,
+      "completion_tokens": 349,
+      "total_tokens": 2379,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "reasoning_effort": "no_think",
+    "request_id_sha256": "3d9025f40d107a327a03670c36611e0a048e1049e6b19ec5fa3909736299c173"
+  },
+  "original_model_label": "incorrect",
+  "status": "ok",
+  "prediction": "incorrect",
+  "confidence": 0.98,
+  "reference_conflict": false
+}

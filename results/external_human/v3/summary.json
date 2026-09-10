@@ -1,0 +1,141 @@
+{
+  "planned": 600,
+  "records": 600,
+  "complete": 600,
+  "groups": {
+    "development/holistic_v2": {
+      "n": 150,
+      "accuracy_failure_wrong": 0.7466666666666667,
+      "macro_f1": 0.7051162233405224,
+      "balanced_accuracy": 0.7310101906375198,
+      "cohen_kappa": 0.6173212487411884,
+      "confusion_matrix": {
+        "correct": {
+          "correct": 50,
+          "incorrect": 5,
+          "refusal": 0,
+          "error": 0
+        },
+        "incorrect": {
+          "correct": 1,
+          "incorrect": 14,
+          "refusal": 31,
+          "error": 0
+        },
+        "refusal": {
+          "correct": 1,
+          "incorrect": 0,
+          "refusal": 48,
+          "error": 0
+        }
+      }
+    },
+    "development/operational_v3": {
+      "n": 150,
+      "accuracy_failure_wrong": 0.9333333333333333,
+      "macro_f1": 0.9342092615288492,
+      "balanced_accuracy": 0.9374660536151219,
+      "cohen_kappa": 0.9000999000999002,
+      "confusion_matrix": {
+        "correct": {
+          "correct": 47,
+          "incorrect": 8,
+          "refusal": 0,
+          "error": 0
+        },
+        "incorrect": {
+          "correct": 1,
+          "incorrect": 45,
+          "refusal": 0,
+          "error": 0
+        },
+        "refusal": {
+          "correct": 1,
+          "incorrect": 0,
+          "refusal": 48,
+          "error": 0
+        }
+      }
+    },
+    "new_response_validation/holistic_v2": {
+      "n": 150,
+      "accuracy_failure_wrong": 0.78,
+      "macro_f1": 0.7478391434913174,
+      "balanced_accuracy": 0.7624338624338625,
+      "cohen_kappa": 0.6656534954407296,
+      "confusion_matrix": {
+        "correct": {
+          "correct": 54,
+          "incorrect": 8,
+          "refusal": 1,
+          "error": 0
+        },
+        "incorrect": {
+          "correct": 2,
+          "incorrect": 19,
+          "refusal": 21,
+          "error": 0
+        },
+        "refusal": {
+          "correct": 1,
+          "incorrect": 0,
+          "refusal": 44,
+          "error": 0
+        }
+      }
+    },
+    "new_response_validation/operational_v3": {
+      "n": 150,
+      "accuracy_failure_wrong": 0.9,
+      "macro_f1": 0.9,
+      "balanced_accuracy": 0.9058201058201059,
+      "cohen_kappa": 0.8486682808716706,
+      "confusion_matrix": {
+        "correct": {
+          "correct": 54,
+          "incorrect": 9,
+          "refusal": 0,
+          "error": 0
+        },
+        "incorrect": {
+          "correct": 2,
+          "incorrect": 38,
+          "refusal": 2,
+          "error": 0
+        },
+        "refusal": {
+          "correct": 1,
+          "incorrect": 1,
+          "refusal": 43,
+          "error": 0
+        }
+      }
+    }
+  },
+  "split_note": "150 development responses already evaluated; 150 new response selections on the same questions and companies. Not a blind or unseen-company test.",
+  "primary": "Three-class agreement with published human labels; failures count wrong.",
+  "paired": {
+    "development": {
+      "n": 150,
+      "company_groups": 32,
+      "mean_accuracy_difference": 0.18666666666666668,
+      "company_bootstrap95": [
+        0.10596026490066225,
+        0.28187919463087246
+      ],
+      "improved": 31,
+      "worsened": 3
+    },
+    "new_response_validation": {
+      "n": 150,
+      "company_groups": 32,
+      "mean_accuracy_difference": 0.12,
+      "company_bootstrap95": [
+        0.06474820143884892,
+        0.18045112781954886
+      ],
+      "improved": 21,
+      "worsened": 3
+    }
+  }
+}
