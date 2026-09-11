@@ -9,6 +9,11 @@
       "detail": ""
     },
     {
+      "name": "single_demo_version",
+      "pass": true,
+      "detail": "使用说明.md, 时政_demo.mp4"
+    },
+    {
       "name": "dataset_unique_and_sourced",
       "pass": true,
       "detail": ""

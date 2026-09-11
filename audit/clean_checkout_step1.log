@@ -163,6 +163,6 @@ test_temporary_path_canonicalization_removes_pip_cache_path (tests.test_submissi
 test_tracked_cached_pdf_fails (tests.test_submission_verifier.SubmissionVerifierUnitTests.test_tracked_cached_pdf_fails) ... ok
 
 ----------------------------------------------------------------------
-Ran 162 tests in 27.101s
+Ran 162 tests in 22.511s
 
 OK

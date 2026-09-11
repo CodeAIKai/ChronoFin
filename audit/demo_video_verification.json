@@ -1,6 +1,6 @@
 {
   "pass": true,
-  "file": "demo/时证_参赛演示_完整版_配音.mp4",
+  "file": "demo/时政_demo.mp4",
   "sha256": "c1ba83d1a762bc4e17cc165636e74648249556baf02297aa4fe2e2f35b1f59d8",
   "duration_seconds": 89,
   "video_frames": 2225,
@@ -8,9 +8,63 @@
   "complete_decode": true,
   "audio_peak": 0.79296875,
   "audio_video_timeline_correlation": 0.999988738568828,
-  "chapter_seek_checks_passed": 8,
-  "pause_verified": true,
-  "browser_errors": [],
   "demo_record": "results/demo/TC01_demo.json",
-  "scope": "Programmatic media decode, timing, waveform and browser playback verification. Chinese synthetic narration. Stored real Hy3 response replay."
+  "scope": "Media bytes are unchanged from the verified 89-second narrated recording. Stored real Hy3 response replay. Media decode, timing and waveform results refer to these identical bytes; current playback checks are recorded separately below.",
+  "current_playback_verification": {
+    "utc": "2026-09-11T03:14:52.328271+00:00",
+    "pass": true,
+    "complete_decode": true,
+    "browser": "Chromium, native HTML video controls in a temporary verification page",
+    "metadata": {
+      "duration": 89,
+      "width": 1440,
+      "height": 1000,
+      "controls": true
+    },
+    "audio_signal_peak": 0.3505910634994507,
+    "pause_holds_position": true,
+    "seek_checks": [
+      {
+        "requested_seconds": 0,
+        "actual_seconds": 0,
+        "pass": true
+      },
+      {
+        "requested_seconds": 9,
+        "actual_seconds": 9,
+        "pass": true
+      },
+      {
+        "requested_seconds": 22,
+        "actual_seconds": 22,
+        "pass": true
+      },
+      {
+        "requested_seconds": 35,
+        "actual_seconds": 35,
+        "pass": true
+      },
+      {
+        "requested_seconds": 47,
+        "actual_seconds": 47,
+        "pass": true
+      },
+      {
+        "requested_seconds": 62,
+        "actual_seconds": 62,
+        "pass": true
+      },
+      {
+        "requested_seconds": 70,
+        "actual_seconds": 70,
+        "pass": true
+      },
+      {
+        "requested_seconds": 79,
+        "actual_seconds": 79,
+        "pass": true
+      }
+    ],
+    "browser_errors": []
+  }
 }
