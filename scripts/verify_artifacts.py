@@ -20,7 +20,8 @@ def main():
     required=['README.md','.env.example','requirements-lock.txt','research_app.py','web/index.html',
        'docs/官方要求与原项目审计.md','docs/调研与方案选择.md','docs/开放式评估方法.md',
        'docs/数据与复现说明.md','docs/最终实验分析报告.md','docs/迭代与评审问题记录.md',
-       'docs/项目说明.md','assets/chronofin_demo_actual.gif','audit/demo_recording.json',
+       'docs/项目说明.md','demo/时证_参赛演示_完整版_配音.mp4','demo/完整版使用说明.md',
+       'results/demo/TC01_demo.json','results/demo/revision_protocol.json','assets/chronofin_demo_actual.gif','audit/demo_recording.json',
        'audit/ui_verification.json','audit/ui_live_verification.json','audit/extended_verification.json',
        'audit/external_source_verification.json','audit/final_tests.log','results/final_status.json']
     check('required_files',all((ROOT/n).is_file() for n in required),','.join(n for n in required if not (ROOT/n).is_file()))

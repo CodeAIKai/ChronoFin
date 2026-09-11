@@ -4,7 +4,7 @@
 
 从“这份报告说了什么”继续追问“哪些原文支持结论、哪些信息削弱结论、当时究竟知道什么”。上传文字 PDF 或使用公开资料，得到带引用的研究简报、事实/预测/推断区分、待核查事项和十维审计。所有原始模型回答、修订及失败都可追溯。系统不承诺投资收益。
 
-[76 秒中文配音演示](demo/时证_参赛演示_配音版.mp4) · [演示播放说明](demo/参赛版使用说明.md) · [完整实验报告](docs/最终实验分析报告.md) · [项目说明](docs/项目说明.md) · [材料索引](提交材料索引.md)
+[89 秒中文配音演示](demo/时证_参赛演示_完整版_配音.mp4) · [演示播放说明](demo/完整版使用说明.md) · [完整实验报告](docs/最终实验分析报告.md) · [项目说明](docs/项目说明.md) · [材料索引](提交材料索引.md)
 
 ## 应用与评估架构
 
@@ -34,7 +34,7 @@ pip install -e . --no-deps
 python research_app.py --port 8787
 ```
 
-打开 `http://127.0.0.1:8787`。无密钥也可回放已保存的真实结果；选择「回放原生 PDF 实测」查看腾讯TC01、口径难例AP02或披露前TC02。点击证据编号可核查原文与来源，下载按钮导出完整JSON。
+打开 `http://127.0.0.1:8787`。无密钥也可回放已保存的真实结果；选择「回放原生 PDF 实测」查看“TC01 · 研究简报演示”、口径难例AP02或披露前TC02。点击证据编号可核查原文与来源，下载按钮导出完整JSON。
 
 实时调用需在启动服务前设置环境变量，示例见 [.env.example](.env.example)。应用读取进程环境，**不会自动加载 `.env`**。可在终端隐式输入密钥：
 
@@ -62,6 +62,7 @@ PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -t . -v
 python scripts/run_brief_experiments.py --phase replay --run v3
 python scripts/verify_extended.py
 python scripts/verify_artifacts.py
+python scripts/verify_demo_record.py
 python scripts/verify_clean_checkout.py
 ```
 
@@ -80,12 +81,14 @@ python scripts/verify_clean_checkout.py
 | `results/external_human/`、`semantic_stress/` | 公开人工标签实验和金额/语义难例 |
 | `results/native_pdf/`、`native_validation/` | 原生PDF历次成功、失败、复评及攻击记录 |
 | `docs/` | 官方要求逐项对应、调研、评估定义、分析和项目说明 |
-| `audit/`、`assets/`、`demo/` | 实验与运行证据、结果图表、76 秒配音演示与校验 |
+| `audit/`、`assets/`、`demo/` | 实验与运行证据、结果图表、89 秒配音演示与校验 |
 
 [官方要求与原项目审计](docs/官方要求与原项目审计.md) · [一手论文与开源调研](docs/调研与方案选择.md) · [十维定义](docs/开放式评估方法.md) · [问题驱动迭代](docs/迭代与评审问题记录.md)
 
 已有多维金融评估与反证研究；本作品贡献在于可操作的组合设计、原文/候选双端片段绑定、财务运算见证，以及保留负结果的实证验证，不声称领域首创或超越论文榜单。局限包括作者可见的较小开放式样本、同Hy3家族裁判偏差、尚无新专家盲标和研究员试用。外部FinanceBench一致性只验证三分类，不能替代十维专家验证。
 
 自有代码 [Apache-2.0](LICENSE)；字体附OFL许可；FinanceBench标为CC-BY-NC-4.0，原数据与历史回答不随本包再分发，需从作者固定版本自行下载。第三方财报和引用保留原权利，不能统一重新许可为Apache。
+
+完整视频使用的腾讯案例另存于 [results/demo/](results/demo/)，由Hy3基于原文修订并重新评判，不计入原12题回归或对照均值。
 
 历史规则评估器的方法与实验文档标有适用版本；当前开放式应用以本 README 和完整实验报告为入口。`results/` 与 `audit/` 保存各阶段的冻结协议、原始回答及运行记录，其中历史状态字段描述记录生成时的状态。

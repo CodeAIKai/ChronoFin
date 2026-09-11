@@ -25,6 +25,18 @@ from chronofin.review_notes import review_notes
 SOURCES,CARDS,CASES=read_data(ROOT)
 NATIVE_CASES=json.loads((ROOT/'data/native/cases.json').read_text())
 LIMIT=threading.BoundedSemaphore(2)
+DEMO_RECORDS={'TC01_demo':ROOT/'results/demo/TC01_demo.json'}
+
+def native_choices():
+    choices=[]
+    for name,path in DEMO_RECORDS.items():
+        if path.is_file():
+            result=json.loads(path.read_text())
+            if result.get('status')=='ok':
+                q=result['record']['query']
+                choices.append({'id':name,'label':'TC01 · 研究简报演示','question':q['question'],'as_of':q['as_of']})
+    return choices+[{'id':j['id'],'question':j['case']['question'],'as_of':j['case']['as_of']}for j in NATIVE_CASES]
+
 
 def runs():
     return sorted([p.name for p in (ROOT/'results/brief').glob('*') if p.is_dir() and (p/'protocol.json').exists()],reverse=True)
@@ -48,7 +60,7 @@ class Handler(BaseHTTPRequestHandler):
             if url.path=='/api/config':
                 return self.send({'cases':[{k:v for k,v in c.items() if k in {'id','question','as_of','task','split'}} for c in CASES],
                                   'sources':SOURCES,'cards':CARDS,'runs':runs(),'live_available':bool(os.getenv('HY3_API_KEY')),
-                                  'native_cases':[{'id':j['id'],'question':j['case']['question'],'as_of':j['case']['as_of']}for j in NATIVE_CASES]})
+                                  'native_cases':native_choices()})
             if url.path=='/api/result':
                 path=locate(qs.get('run',['v2'])[0],qs.get('name',['D01_counterbrief'])[0])
                 if not path.exists():return self.send({'error':'此案例尚无该版本的实测结果'},404)
@@ -60,7 +72,7 @@ class Handler(BaseHTTPRequestHandler):
             if url.path=='/api/native_result':
                 name=qs.get('name',['meta24_after'])[0]
                 if not re.fullmatch(r'[A-Za-z0-9_-]+',name):raise ValueError('invalid record name')
-                path=ROOT/'results/native_pdf/v5'/(name+'.json')
+                path=DEMO_RECORDS.get(name,ROOT/'results/native_pdf/v5'/(name+'.json'))
                 if not path.exists():return self.send({'error':'该原生 PDF 实验尚无完成记录'},404)
                 result=json.loads(path.read_text());result['mode']='replay_pdf';result['review_notes']=review_notes(result);return self.send(result)
             if url.path=='/api/experiments':

@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "file": "demo/时证_参赛演示_完整版_配音.mp4",
+  "sha256": "c1ba83d1a762bc4e17cc165636e74648249556baf02297aa4fe2e2f35b1f59d8",
+  "duration_seconds": 89,
+  "video_frames": 2225,
+  "frames_per_second": 25,
+  "complete_decode": true,
+  "audio_peak": 0.79296875,
+  "audio_video_timeline_correlation": 0.999988738568828,
+  "chapter_seek_checks_passed": 8,
+  "pause_verified": true,
+  "browser_errors": [],
+  "demo_record": "results/demo/TC01_demo.json",
+  "scope": "Programmatic media decode, timing, waveform and browser playback verification. Chinese synthetic narration. Stored real Hy3 response replay."
+}

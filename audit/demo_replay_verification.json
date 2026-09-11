@@ -1,0 +1,9 @@
+{
+  "pass": true,
+  "case": "TC01_demo",
+  "answer_sha256": "293b3becbc877857aae4a70d2f32ef511bfaaf90b5c9569f08ce2d6a63da2dba",
+  "fresh_judgment_bound": true,
+  "score_recomputed": 100.0,
+  "parent_record_unchanged": true,
+  "scope": "Demonstration revision; excluded from the original benchmark aggregates."
+}
